@@ -11,6 +11,13 @@
     "lib/",
     "src/"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Autopedia/react-native-ui"
+  },
+  "bugs": {
+    "url": "https://github.com/Autopedia/react-native-ui/issues"
+  },
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
