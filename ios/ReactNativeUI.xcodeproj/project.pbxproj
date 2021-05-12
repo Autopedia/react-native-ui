@@ -11,9 +11,15 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		14E6F9C60CF5409FBD93F296 /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 86087D6F1A6D4105B51D971F /* NotoSansKR-Regular.otf */; };
+		1A3B03DA81284B2887F7A4D4 /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FDB3DF7390B54E8281CD8C83 /* NotoSansKR-Medium.otf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8659F7FC1B9E4A329FC8571C /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A36B31BB7144A76BCF69FA7 /* NotoSansKR-Black.otf */; };
+		86F47E57A9DA45D69E615B2B /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0FA2246112EC446095DD3EFA /* NotoSansKR-Bold.otf */; };
 		9399BB92B966662EA25545B5 /* libPods-ReactNativeUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 516A2A6FE59D276BDBE23606 /* libPods-ReactNativeUI.a */; };
+		9C7DC2D224EE41EEAEC79E29 /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2920CCEEBC464F098DDC56D6 /* NotoSansKR-Thin.otf */; };
 		BDBDAAF243C26A809A152237 /* libPods-ReactNativeUI-ReactNativeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1B908B5BB2E073DD318182 /* libPods-ReactNativeUI-ReactNativeUITests.a */; };
+		DFE69A223F7B4A1181890C90 /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D21306B629284270957FE486 /* NotoSansKR-Light.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +36,26 @@
 		00E356EE1AD99517003FC87E /* ReactNativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactNativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ReactNativeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeUITests.m; sourceTree = "<group>"; };
+		0A36B31BB7144A76BCF69FA7 /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansKR-Black.otf"; path = "../src/assets/fonts/NotoSansKR-Black.otf"; sourceTree = "<group>"; };
+		0FA2246112EC446095DD3EFA /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansKR-Bold.otf"; path = "../src/assets/fonts/NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ReactNativeUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ReactNativeUI/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ReactNativeUI/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactNativeUI/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeUI/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeUI/main.m; sourceTree = "<group>"; };
+		2920CCEEBC464F098DDC56D6 /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansKR-Thin.otf"; path = "../src/assets/fonts/NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
 		33DF00735A1D15926AD49800 /* Pods-ReactNativeUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeUI.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeUI/Pods-ReactNativeUI.release.xcconfig"; sourceTree = "<group>"; };
 		516A2A6FE59D276BDBE23606 /* libPods-ReactNativeUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9208037749C7522111A0B3 /* Pods-ReactNativeUI-ReactNativeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeUI-ReactNativeUITests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeUI-ReactNativeUITests/Pods-ReactNativeUI-ReactNativeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactNativeUI/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82E79FEF4612A3C0AF4C1E9A /* Pods-ReactNativeUI-ReactNativeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeUI-ReactNativeUITests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeUI-ReactNativeUITests/Pods-ReactNativeUI-ReactNativeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		86087D6F1A6D4105B51D971F /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansKR-Regular.otf"; path = "../src/assets/fonts/NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
 		CA1B908B5BB2E073DD318182 /* libPods-ReactNativeUI-ReactNativeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeUI-ReactNativeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21306B629284270957FE486 /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansKR-Light.otf"; path = "../src/assets/fonts/NotoSansKR-Light.otf"; sourceTree = "<group>"; };
 		D9A60D844451FE8DCE7579E6 /* Pods-ReactNativeUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeUI.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeUI/Pods-ReactNativeUI.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FDB3DF7390B54E8281CD8C83 /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansKR-Medium.otf"; path = "../src/assets/fonts/NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +134,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				C19EB304F6D582354EBE4C63 /* Pods */,
+				AD00BF3FF0CE4E3EB42B32B7 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -135,6 +148,20 @@
 				00E356EE1AD99517003FC87E /* ReactNativeUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AD00BF3FF0CE4E3EB42B32B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0A36B31BB7144A76BCF69FA7 /* NotoSansKR-Black.otf */,
+				0FA2246112EC446095DD3EFA /* NotoSansKR-Bold.otf */,
+				D21306B629284270957FE486 /* NotoSansKR-Light.otf */,
+				FDB3DF7390B54E8281CD8C83 /* NotoSansKR-Medium.otf */,
+				86087D6F1A6D4105B51D971F /* NotoSansKR-Regular.otf */,
+				2920CCEEBC464F098DDC56D6 /* NotoSansKR-Thin.otf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		C19EB304F6D582354EBE4C63 /* Pods */ = {
@@ -243,6 +270,12 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				8659F7FC1B9E4A329FC8571C /* NotoSansKR-Black.otf in Resources */,
+				86F47E57A9DA45D69E615B2B /* NotoSansKR-Bold.otf in Resources */,
+				DFE69A223F7B4A1181890C90 /* NotoSansKR-Light.otf in Resources */,
+				1A3B03DA81284B2887F7A4D4 /* NotoSansKR-Medium.otf in Resources */,
+				14E6F9C60CF5409FBD93F296 /* NotoSansKR-Regular.otf in Resources */,
+				9C7DC2D224EE41EEAEC79E29 /* NotoSansKR-Thin.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

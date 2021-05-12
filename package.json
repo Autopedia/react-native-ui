@@ -39,7 +39,7 @@
     "@react-native-community/async-storage": "^1.12.1",
     "@react-native-community/eslint-config": "^2.0.0",
     "@storybook/addon-actions": "^5.3",
-    "@storybook/addon-knobs": "^5.3",
+    "@storybook/addon-knobs": "^6.2.9",
     "@storybook/addon-links": "^5.3",
     "@storybook/addon-ondevice-actions": "^5.3.23",
     "@storybook/addon-ondevice-knobs": "^5.3.25",
@@ -79,6 +79,9 @@
     ],
     "transformIgnorePatterns": [
       "nodemodules/(?!(react-native-swipe-gestures)/)"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/__mocks__/globalMocks.ts"
     ]
   },
   "react-native-builder-bob": {
