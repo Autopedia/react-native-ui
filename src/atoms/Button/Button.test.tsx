@@ -15,7 +15,7 @@ describe('[Button] Unit Test', () => {
 
     const button = shallow(<Button onPress={onPressMock}>{textMock}</Button>);
 
-    button.dive().simulate('press');
+    button.simulate('press');
     expect(onPressMock).toHaveBeenCalledTimes(1);
   });
 });

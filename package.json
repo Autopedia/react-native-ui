@@ -86,6 +86,7 @@
       "json",
       "node"
     ],
+    "testRegex" : "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
     "transformIgnorePatterns": [
       "nodemodules/(?!(react-native-swipe-gestures)/)"
     ],
