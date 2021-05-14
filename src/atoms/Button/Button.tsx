@@ -7,9 +7,9 @@ import {
   ButtonLayout,
   ButtonSize,
   ButtonType,
-} from './Button.types';
+} from '@atoms/Button/Button.types';
 
-import Icon from '../Icon';
+import Icon from '@atoms/Icon';
 
 import lodash from 'lodash';
 

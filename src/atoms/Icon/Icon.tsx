@@ -3,7 +3,7 @@ import {
   ImageOnlyStyleKeys,
   ImageStyleKeys,
   pickStyle,
-} from '../../styles/utils';
+} from '@styles/utils';
 import lodash from 'lodash';
 import React from 'react';
 import {

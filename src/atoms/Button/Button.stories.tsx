@@ -2,11 +2,14 @@ import { boolean, select, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import React from 'react';
 import styled from 'styled-components/native';
-import SThemeDecorator from '../../decorators/styled-components.decorator';
-import { ButtonColor, ButtonLayout, ButtonSize } from './Button.types';
+import SThemeDecorator from '@decorators/styled-components.decorator';
+import {
+  ButtonColor,
+  ButtonLayout,
+  ButtonSize,
+} from '@atoms/Button/Button.types';
 
-import Button from '../Button';
-
+import Button from '@atoms/Button';
 storiesOf('Atoms/Button', module)
   .addDecorator(SThemeDecorator)
   .add(
