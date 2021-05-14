@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms/Button Default 1`] = `
+exports[`Storyshots Atoms/Button Color/Default 1`] = `
 <View
   style={
     Array [
@@ -10,6 +10,10 @@ exports[`Storyshots Atoms/Button Default 1`] = `
         "flexGrow": 1,
         "flexShrink": 1,
         "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
       },
     ]
   }
@@ -26,11 +30,14 @@ exports[`Storyshots Atoms/Button Default 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
+        "alignItems": "center",
         "backgroundColor": "#FFFFFF",
         "borderColor": "#D9D9D9",
         "borderRadius": 4,
         "borderWidth": 1,
         "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
         "opacity": 1,
         "paddingBottom": 10,
         "paddingLeft": 16,
@@ -39,8 +46,1613 @@ exports[`Storyshots Atoms/Button Default 1`] = `
       }
     }
   >
-    <Text>
-      Hello Button
+    <Text
+      color="default"
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Default
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#007AFF",
+        "borderColor": "black",
+        "borderRadius": 4,
+        "borderStyle": "solid",
+        "borderWidth": 0,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      color="primary"
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Primary
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FEE500",
+        "borderColor": "black",
+        "borderRadius": 4,
+        "borderStyle": "solid",
+        "borderWidth": 0,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      color="kakao"
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Kakao
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#000000",
+        "borderColor": "black",
+        "borderRadius": 4,
+        "borderStyle": "solid",
+        "borderWidth": 0,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      color="apple"
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Apple
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      color="google"
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Google
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Button Color/Link 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      color="default"
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#007AFF",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+      type="link"
+    >
+      Default
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      color="muted"
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#8C8C8C",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+      type="link"
+    >
+      Muted
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Button Disabled 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Default
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F5F5F5",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      disabled={true}
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#8C8C8C",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Default Disabled
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#007AFF",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+      type="link"
+    >
+      Link
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      disabled={true}
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#8C8C8C",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+      type="link"
+    >
+      Link Disabled
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Button Icon/Absolute 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/icons/shop/shop.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "tintColor": "#1F1F1F",
+          },
+          Object {
+            "height": 20,
+            "left": 16,
+            "position": "absolute",
+            "width": 20,
+          },
+        ]
+      }
+    />
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Absolute Icon Left
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Absolute Icon Right
+    </Text>
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/icons/shop/shop.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "tintColor": "#1F1F1F",
+          },
+          Object {
+            "height": 20,
+            "position": "absolute",
+            "right": 16,
+            "width": 20,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Button Icon/Default 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/icons/shop/shop.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "tintColor": "#1F1F1F",
+          },
+          Object {
+            "height": 20,
+            "marginRight": 6,
+            "width": 20,
+          },
+        ]
+      }
+    />
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Icon Left
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Icon Right
+    </Text>
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/icons/shop/shop.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "tintColor": "#1F1F1F",
+          },
+          Object {
+            "height": 20,
+            "marginLeft": 6,
+            "width": 20,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/icons/shop/shop.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "tintColor": "#1F1F1F",
+          },
+          Object {
+            "height": 20,
+            "marginRight": 6,
+            "width": 20,
+          },
+        ]
+      }
+    />
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Block Icon Left
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Block Icon Right
+    </Text>
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/icons/shop/shop.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "tintColor": "#1F1F1F",
+          },
+          Object {
+            "height": 20,
+            "marginLeft": 6,
+            "width": 20,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Button Layout/Block 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Block Button
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Button Layout/Inline 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+      Object {
+        "flexDirection": "row",
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginRight": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Btn 1
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginRight": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Btn 2
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginRight": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Btn 3
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Btn 4
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Button Layout/Sticky 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#007AFF",
+        "borderColor": "black",
+        "borderStyle": "solid",
+        "borderWidth": 0,
+        "bottom": 0,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      color="primary"
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Sticky Button
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Button Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      color="default"
+      disabled={false}
+      includeFontPadding={false}
+      size="md"
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Button
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Button Size 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "opacity": 1,
+        "paddingBottom": 6,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 6,
+      }
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      size="sm"
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 13,
+            "lineHeight": 19,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Small
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      size="md"
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Medium
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingBottom": 14,
+        "paddingLeft": 20,
+        "paddingRight": 20,
+        "paddingTop": 14,
+      }
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      size="lg"
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Bold",
+            "fontSize": 20,
+            "lineHeight": 29,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Large
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Button Type 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Default
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#007AFF",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+      type="link"
+    >
+      Link
     </Text>
   </View>
 </View>
