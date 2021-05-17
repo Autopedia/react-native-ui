@@ -1657,3 +1657,795 @@ exports[`Storyshots Atoms/Button Type 1`] = `
   </View>
 </View>
 `;
+
+exports[`Storyshots Atoms/TextInput Multiline 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#D9D9D9",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "paddingBottom": 10,
+            "paddingLeft": 12,
+            "paddingRight": 12,
+            "paddingTop": 10,
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        editable={true}
+        onChangeText={[Function]}
+        placeholderTextColor="#8C8C8C"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "color": "#1F1F1F",
+              "fontSize": 15,
+              "height": 22,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+            },
+            Object {},
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value="Single Line"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#D9D9D9",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "paddingBottom": 10,
+            "paddingLeft": 12,
+            "paddingRight": 12,
+            "paddingTop": 10,
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        editable={true}
+        multiline={true}
+        numberOfLines={3}
+        onChangeText={[Function]}
+        placeholderTextColor="#8C8C8C"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "color": "#1F1F1F",
+              "fontSize": 15,
+              "height": 66,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+              "textAlignVertical": "top",
+            },
+            Object {},
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value="Multi Line Long Text Multi Line Long Text Multi Line Long Text Multi Line Long Text Multi Line Long Text "
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/TextInput Placeholder 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#D9D9D9",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "paddingBottom": 10,
+            "paddingLeft": 12,
+            "paddingRight": 12,
+            "paddingTop": 10,
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        editable={true}
+        onChangeText={[Function]}
+        placeholder="Placeholder"
+        placeholderTextColor="#8C8C8C"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "color": "#1F1F1F",
+              "fontSize": 15,
+              "height": 22,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+            },
+            Object {},
+          ]
+        }
+        underlineColorAndroid="transparent"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/TextInput Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+        Object {},
+      ]
+    }
+  >
+    <View
+      disabled={false}
+      secureTextEntry={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#D9D9D9",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "paddingBottom": 10,
+            "paddingLeft": 12,
+            "paddingRight": 12,
+            "paddingTop": 10,
+            "position": "relative",
+          },
+        ]
+      }
+      suffix={false}
+    >
+      <TextInput
+        allowFontScaling={true}
+        disabled={false}
+        editable={true}
+        multiline={false}
+        numberOfLines={3}
+        onChangeText={[Function]}
+        placeholder="placeholder"
+        placeholderTextColor="#8C8C8C"
+        rejectResponderTermination={true}
+        secureTextEntry={false}
+        style={
+          Array [
+            Object {
+              "color": "#1F1F1F",
+              "fontSize": 15,
+              "height": 22,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+            },
+            Object {},
+          ]
+        }
+        suffix={false}
+        underlineColorAndroid="transparent"
+        value="Text Input"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#D9D9D9",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "paddingBottom": 10,
+            "paddingLeft": 12,
+            "paddingRight": 12,
+            "paddingTop": 10,
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        editable={true}
+        onChangeText={[Function]}
+        placeholderTextColor="#8C8C8C"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "color": "#1F1F1F",
+              "fontSize": 15,
+              "height": 22,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+            },
+            Object {},
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value="Example Text"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
+    }
+  >
+    <View
+      secureTextEntry={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#D9D9D9",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "paddingBottom": 10,
+            "paddingLeft": 12,
+            "paddingRight": 12,
+            "paddingTop": 10,
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        editable={true}
+        onChangeText={[Function]}
+        placeholderTextColor="#8C8C8C"
+        rejectResponderTermination={true}
+        secureTextEntry={true}
+        style={
+          Array [
+            Object {
+              "color": "#1F1F1F",
+              "fontSize": 15,
+              "height": 22,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+            },
+            Object {},
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value="Example Text"
+      />
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "opacity": 1,
+            "paddingBottom": 4,
+            "paddingLeft": 4,
+            "paddingRight": 4,
+            "paddingTop": 4,
+            "position": "absolute",
+            "right": 8,
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/icons/eye/eye-opened.png",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "tintColor": "#1F1F1F",
+              },
+              Object {},
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+        Object {},
+      ]
+    }
+  >
+    <View
+      disabled={true}
+      secureTextEntry={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5F5",
+            "borderColor": "#D9D9D9",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "paddingBottom": 10,
+            "paddingLeft": 12,
+            "paddingRight": 12,
+            "paddingTop": 10,
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        disabled={true}
+        editable={false}
+        onChangeText={[Function]}
+        placeholderTextColor="#8C8C8C"
+        rejectResponderTermination={true}
+        secureTextEntry={true}
+        style={
+          Array [
+            Object {
+              "color": "#8C8C8C",
+              "fontSize": 15,
+              "height": 22,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+            },
+            Object {},
+          ]
+        }
+        underlineColorAndroid="transparent"
+        value="Example Text"
+      />
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "opacity": 1,
+            "paddingBottom": 4,
+            "paddingLeft": 4,
+            "paddingRight": 4,
+            "paddingTop": 4,
+            "position": "absolute",
+            "right": 8,
+          }
+        }
+      >
+        <Image
+          disabled={true}
+          source={
+            Object {
+              "testUri": "../../../src/assets/icons/eye/eye-opened.png",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "tintColor": "#8C8C8C",
+              },
+              Object {},
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/TextInput Suffix 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderBottomRightRadius": 0,
+            "borderColor": "#D9D9D9",
+            "borderRadius": 4,
+            "borderTopRightRadius": 0,
+            "borderWidth": 1,
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "paddingBottom": 10,
+            "paddingLeft": 12,
+            "paddingRight": 12,
+            "paddingTop": 10,
+            "position": "relative",
+          },
+        ]
+      }
+      suffix={
+        <Text>
+          Suffix
+        </Text>
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        editable={true}
+        onChangeText={[Function]}
+        placeholderTextColor="#8C8C8C"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "color": "#1F1F1F",
+              "fontSize": 15,
+              "height": 22,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+            },
+            Object {},
+          ]
+        }
+        suffix={
+          <Text>
+            Suffix
+          </Text>
+        }
+        underlineColorAndroid="transparent"
+        value="Text Input with Suffix"
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderBottomRightRadius": 4,
+            "borderColor": "#D9D9D9",
+            "borderLeftWidth": 0,
+            "borderTopRightRadius": 4,
+            "borderWidth": 1,
+            "justifyContent": "center",
+            "paddingBottom": 8,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 8,
+          },
+        ]
+      }
+    >
+      <Text>
+        Suffix
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/TextInput Type 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#D9D9D9",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "paddingBottom": 10,
+            "paddingLeft": 12,
+            "paddingRight": 12,
+            "paddingTop": 10,
+            "position": "relative",
+          },
+        ]
+      }
+      type="default"
+    >
+      <TextInput
+        allowFontScaling={true}
+        editable={true}
+        onChangeText={[Function]}
+        placeholderTextColor="#8C8C8C"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "color": "#1F1F1F",
+              "fontSize": 15,
+              "height": 22,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+            },
+            Object {},
+          ]
+        }
+        type="default"
+        underlineColorAndroid="transparent"
+        value="Default Text Input"
+      />
+    </View>
+  </View>
+</View>
+`;
