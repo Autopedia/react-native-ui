@@ -69,11 +69,22 @@ const TextInput = (props: TextInputProps) => {
     secureTextEntry: props.secureTextEntry && !showText,
     style: pickStyle(props.style, TextOnlyStyleKeys),
     onChangeText: value => {
+      let propValue = value;
+
+      if (props.disabled) {
+        return;
+      }
+      if (props.keyboardType && props.keyboardType === 'numeric') {
+        propValue = propValue.replace(/\D/g, '');
+      }
+      if (propValue.length === 0) {
+        return;
+      }
       if (props.onChange) {
-        props.onChange(value);
+        props.onChange(propValue);
       }
       if (props.onChangeText) {
-        props.onChangeText(value);
+        props.onChangeText(propValue);
       }
     },
   };
