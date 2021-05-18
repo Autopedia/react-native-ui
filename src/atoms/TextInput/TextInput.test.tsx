@@ -12,51 +12,57 @@ describe('[TextInput] Unit Test', () => {
   const TEST_TEXT = 'test';
   const TEST_TEXT_NUMERIC = '1111';
   const TEST_TEXT_MIXED = '1a1b1c1d';
+  const MOCK_VALUE_DEFAULT = '1234';
+
+  let mockValue: string;
+  let onChangeTextMock: jest.Mock;
+
+  beforeEach(() => {
+    mockValue = MOCK_VALUE_DEFAULT;
+    onChangeTextMock = jest.fn();
+    onChangeTextMock.mockImplementation(
+      (newValue: string) => (mockValue = newValue),
+    );
+  });
 
   it('should fire onChangeText event', () => {
-    const onChangeTextMock = jest.fn();
-
     const wrapper = shallow(<TextInput onChangeText={onChangeTextMock} />);
     const textInput = wrapper.find('Styled(TextInput)');
     textInput.simulate('changeText', TEST_TEXT);
+
     expect(onChangeTextMock).toHaveBeenCalledTimes(1);
     expect(onChangeTextMock).toHaveBeenCalledWith(TEST_TEXT);
   });
 
   it('should not change binded value when disabled', () => {
-    let value = 'original';
-    const onChangeText = (newValue: string) => (value = newValue);
-
     const wrapper = shallow(
-      <TextInput disabled value={value} onChangeText={onChangeText} />,
+      <TextInput disabled value={mockValue} onChangeText={onChangeTextMock} />,
     );
     const textInput = wrapper.find('Styled(TextInput)');
     textInput.simulate('changeText', TEST_TEXT);
 
-    expect(value).toEqual('original');
+    expect(mockValue).toEqual(MOCK_VALUE_DEFAULT);
+    expect(onChangeTextMock).toHaveBeenCalledTimes(0);
   });
 
   it('should reject non-numeric input when keyboard type is numeric', () => {
-    let value = '1234';
-    const onChangeText = (newValue: string) => (value = newValue);
-
     const wrapper = shallow(
       <TextInput
-        value={value}
+        value={mockValue}
         keyboardType="numeric"
-        onChangeText={onChangeText}
+        onChangeText={onChangeTextMock}
       />,
     );
 
     const textInput = wrapper.find('Styled(TextInput)');
 
     textInput.simulate('changeText', TEST_TEXT);
-    expect(value).toEqual('1234');
+    expect(mockValue).toEqual(MOCK_VALUE_DEFAULT);
 
     textInput.simulate('changeText', TEST_TEXT_NUMERIC);
-    expect(value).toEqual(TEST_TEXT_NUMERIC);
+    expect(mockValue).toEqual(TEST_TEXT_NUMERIC);
 
     textInput.simulate('changeText', TEST_TEXT_MIXED);
-    expect(value).toEqual(TEST_TEXT_NUMERIC);
+    expect(mockValue).toEqual(TEST_TEXT_NUMERIC);
   });
 });
