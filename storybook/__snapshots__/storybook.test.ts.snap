@@ -1068,190 +1068,195 @@ exports[`Storyshots Atoms/Button Layout/Inline 1`] = `
         "paddingRight": 10,
         "paddingTop": 10,
       },
-      Object {
-        "flexDirection": "row",
-      },
     ]
   }
 >
   <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
         "flexDirection": "row",
-        "justifyContent": "center",
-        "marginRight": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
       }
     }
   >
-    <Text
-      includeFontPadding={false}
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 15,
-            "lineHeight": 22,
-            "textAlign": "center",
-          },
-        ]
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#D9D9D9",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginRight": 5,
+          "opacity": 1,
+          "paddingBottom": 10,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 10,
+        }
       }
     >
-      Btn 1
-    </Text>
-  </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginRight": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
-    }
-  >
-    <Text
-      includeFontPadding={false}
+      <Text
+        includeFontPadding={false}
+        style={
+          Array [
+            Object {
+              "color": "#1F1F1F",
+              "fontFamily": "NotoSansKR-Regular",
+              "fontSize": 15,
+              "lineHeight": 22,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Btn 1
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 15,
-            "lineHeight": 22,
-            "textAlign": "center",
-          },
-        ]
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#D9D9D9",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginRight": 5,
+          "opacity": 1,
+          "paddingBottom": 10,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 10,
+        }
       }
     >
-      Btn 2
-    </Text>
-  </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginRight": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
-    }
-  >
-    <Text
-      includeFontPadding={false}
+      <Text
+        includeFontPadding={false}
+        style={
+          Array [
+            Object {
+              "color": "#1F1F1F",
+              "fontFamily": "NotoSansKR-Regular",
+              "fontSize": 15,
+              "lineHeight": 22,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Btn 2
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 15,
-            "lineHeight": 22,
-            "textAlign": "center",
-          },
-        ]
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#D9D9D9",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginRight": 5,
+          "opacity": 1,
+          "paddingBottom": 10,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 10,
+        }
       }
     >
-      Btn 3
-    </Text>
-  </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
-    }
-  >
-    <Text
-      includeFontPadding={false}
+      <Text
+        includeFontPadding={false}
+        style={
+          Array [
+            Object {
+              "color": "#1F1F1F",
+              "fontFamily": "NotoSansKR-Regular",
+              "fontSize": 15,
+              "lineHeight": 22,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Btn 3
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 15,
-            "lineHeight": 22,
-            "textAlign": "center",
-          },
-        ]
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#D9D9D9",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "opacity": 1,
+          "paddingBottom": 10,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 10,
+        }
       }
     >
-      Btn 4
-    </Text>
+      <Text
+        includeFontPadding={false}
+        style={
+          Array [
+            Object {
+              "color": "#1F1F1F",
+              "fontFamily": "NotoSansKR-Regular",
+              "fontSize": 15,
+              "lineHeight": 22,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Btn 4
+      </Text>
+    </View>
   </View>
 </View>
 `;
@@ -2447,5 +2452,578 @@ exports[`Storyshots Atoms/TextInput Type 1`] = `
       />
     </View>
   </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Typography Bold 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Text
+    bold={true}
+    style={
+      Array [
+        Object {
+          "color": "#1F1F1F",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Medium",
+          "fontSize": 15,
+          "lineHeight": 22,
+          "textDecorationColor": "#1F1F1F",
+        },
+      ]
+    }
+  >
+    Bold Paragraph
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#1F1F1F",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 15,
+          "lineHeight": 22,
+          "textDecorationColor": "#1F1F1F",
+        },
+      ]
+    }
+  >
+    Normal Paragraph
+  </Text>
+</View>
+`;
+
+exports[`Storyshots Atoms/Typography Color 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Text
+    color="default"
+    size={3}
+    style={
+      Array [
+        Object {
+          "color": "#000000",
+          "fontFamily": "NotoSansKR-Medium",
+          "fontSize": 22,
+          "lineHeight": 35,
+          "marginBottom": 12,
+          "textDecorationColor": "#000000",
+        },
+      ]
+    }
+  >
+    Default Heading
+  </Text>
+  <Text
+    color="primary"
+    size={3}
+    style={
+      Array [
+        Object {
+          "color": "#007AFF",
+          "fontFamily": "NotoSansKR-Medium",
+          "fontSize": 22,
+          "lineHeight": 35,
+          "marginBottom": 12,
+          "textDecorationColor": "#007AFF",
+        },
+      ]
+    }
+  >
+    Primary Heading
+  </Text>
+  <Text
+    color="error"
+    size={3}
+    style={
+      Array [
+        Object {
+          "color": "#EB5757",
+          "fontFamily": "NotoSansKR-Medium",
+          "fontSize": 22,
+          "lineHeight": 35,
+          "marginBottom": 12,
+          "textDecorationColor": "#EB5757",
+        },
+      ]
+    }
+  >
+    Error Heading
+  </Text>
+  <Text
+    color="muted"
+    size={3}
+    style={
+      Array [
+        Object {
+          "color": "#8C8C8C",
+          "fontFamily": "NotoSansKR-Medium",
+          "fontSize": 22,
+          "lineHeight": 35,
+          "marginBottom": 12,
+          "textDecorationColor": "#8C8C8C",
+        },
+      ]
+    }
+  >
+    Muted Heading
+  </Text>
+  <Text
+    color="default"
+    style={
+      Array [
+        Object {
+          "color": "#1F1F1F",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 15,
+          "lineHeight": 22,
+          "textDecorationColor": "#1F1F1F",
+        },
+      ]
+    }
+  >
+    Default Paragraph
+  </Text>
+  <Text
+    color="primary"
+    style={
+      Array [
+        Object {
+          "color": "#007AFF",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 15,
+          "lineHeight": 22,
+          "textDecorationColor": "#007AFF",
+        },
+      ]
+    }
+  >
+    Primary Paragraph
+  </Text>
+  <Text
+    color="error"
+    style={
+      Array [
+        Object {
+          "color": "#EB5757",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 15,
+          "lineHeight": 22,
+          "textDecorationColor": "#EB5757",
+        },
+      ]
+    }
+  >
+    Error Paragraph
+  </Text>
+  <Text
+    color="muted"
+    style={
+      Array [
+        Object {
+          "color": "#8C8C8C",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 15,
+          "lineHeight": 22,
+          "textDecorationColor": "#8C8C8C",
+        },
+      ]
+    }
+  >
+    Muted Paragraph
+  </Text>
+</View>
+`;
+
+exports[`Storyshots Atoms/Typography Link 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Text
+    color="default"
+    style={
+      Array [
+        Object {
+          "color": "#1F1F1F",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 15,
+          "lineHeight": 22,
+          "textDecorationColor": "#1F1F1F",
+          "textDecorationLine": "underline",
+        },
+      ]
+    }
+    underlined={true}
+  >
+    Default Link
+  </Text>
+  <Text
+    color="primary"
+    style={
+      Array [
+        Object {
+          "color": "#007AFF",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 15,
+          "lineHeight": 22,
+          "textDecorationColor": "#007AFF",
+          "textDecorationLine": "underline",
+        },
+      ]
+    }
+    underlined={true}
+  >
+    Primary Link
+  </Text>
+  <Text
+    color="muted"
+    style={
+      Array [
+        Object {
+          "color": "#8C8C8C",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 15,
+          "lineHeight": 22,
+          "textDecorationColor": "#8C8C8C",
+          "textDecorationLine": "underline",
+        },
+      ]
+    }
+    underlined={true}
+  >
+    Muted Link
+  </Text>
+</View>
+`;
+
+exports[`Storyshots Atoms/Typography Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Text
+    color="default"
+    size={1}
+    style={
+      Array [
+        Object {
+          "color": "#000000",
+          "fontFamily": "NotoSansKR-Bold",
+          "fontSize": 34,
+          "lineHeight": 55,
+          "marginBottom": 16,
+          "textDecorationColor": "#000000",
+        },
+      ]
+    }
+  >
+    Heading
+  </Text>
+</View>
+`;
+
+exports[`Storyshots Atoms/Typography Selectable 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Text
+    selectable={true}
+    style={
+      Array [
+        Object {
+          "color": "#1F1F1F",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 15,
+          "lineHeight": 22,
+          "textDecorationColor": "#1F1F1F",
+        },
+      ]
+    }
+  >
+    Selectable Paragraph
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#1F1F1F",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 15,
+          "lineHeight": 22,
+          "textDecorationColor": "#1F1F1F",
+        },
+      ]
+    }
+  >
+    Not Selectable Paragraph
+  </Text>
+</View>
+`;
+
+exports[`Storyshots Atoms/Typography Type 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Text
+    size={1}
+    style={
+      Array [
+        Object {
+          "color": "#000000",
+          "fontFamily": "NotoSansKR-Bold",
+          "fontSize": 34,
+          "lineHeight": 55,
+          "marginBottom": 16,
+          "textDecorationColor": "#000000",
+        },
+      ]
+    }
+  >
+    Heading1
+  </Text>
+  <Text
+    size={2}
+    style={
+      Array [
+        Object {
+          "color": "#000000",
+          "fontFamily": "NotoSansKR-Bold",
+          "fontSize": 28,
+          "lineHeight": 40,
+          "marginBottom": 12,
+          "textDecorationColor": "#000000",
+        },
+      ]
+    }
+  >
+    Heading2
+  </Text>
+  <Text
+    size={3}
+    style={
+      Array [
+        Object {
+          "color": "#000000",
+          "fontFamily": "NotoSansKR-Medium",
+          "fontSize": 22,
+          "lineHeight": 35,
+          "marginBottom": 12,
+          "textDecorationColor": "#000000",
+        },
+      ]
+    }
+  >
+    Heading3
+  </Text>
+  <Text
+    size={4}
+    style={
+      Array [
+        Object {
+          "color": "#000000",
+          "fontFamily": "NotoSansKR-Medium",
+          "fontSize": 20,
+          "lineHeight": 29,
+          "textDecorationColor": "#000000",
+        },
+      ]
+    }
+  >
+    Heading4
+  </Text>
+  <Text
+    size={5}
+    style={
+      Array [
+        Object {
+          "color": "#000000",
+          "fontFamily": "NotoSansKR-Medium",
+          "fontSize": 18,
+          "lineHeight": 26,
+          "textDecorationColor": "#000000",
+        },
+      ]
+    }
+  >
+    Heading5
+  </Text>
+  <Text
+    size="lg"
+    style={
+      Array [
+        Object {
+          "color": "#1F1F1F",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 18,
+          "lineHeight": 26,
+          "textDecorationColor": "#1F1F1F",
+        },
+      ]
+    }
+  >
+    Paragraph-lg
+  </Text>
+  <Text
+    size="md"
+    style={
+      Array [
+        Object {
+          "color": "#1F1F1F",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 15,
+          "lineHeight": 22,
+          "textDecorationColor": "#1F1F1F",
+        },
+      ]
+    }
+  >
+    Paragraph-md
+  </Text>
+  <Text
+    size="sm"
+    style={
+      Array [
+        Object {
+          "color": "#1F1F1F",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 13,
+          "lineHeight": 19,
+          "textDecorationColor": "#1F1F1F",
+        },
+      ]
+    }
+  >
+    Paragraph-s
+  </Text>
+  <Text
+    size="xs"
+    style={
+      Array [
+        Object {
+          "color": "#1F1F1F",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 11,
+          "lineHeight": 16,
+          "textDecorationColor": "#1F1F1F",
+        },
+      ]
+    }
+  >
+    Paragraph-xs
+  </Text>
 </View>
 `;
