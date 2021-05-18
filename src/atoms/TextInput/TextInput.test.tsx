@@ -34,7 +34,7 @@ describe('[TextInput] Unit Test', () => {
     expect(onChangeTextMock).toHaveBeenCalledWith(TEST_TEXT);
   });
 
-  it('should not change binded value when disabled', () => {
+  it('should not call onChangeText when disabled', () => {
     const wrapper = shallow(
       <TextInput disabled value={mockValue} onChangeText={onChangeTextMock} />,
     );
