@@ -80,12 +80,9 @@ const TextInput = (props: TextInputProps) => {
       if (propValue.length === 0) {
         return;
       }
-      if (props.onChange) {
-        props.onChange(propValue);
-      }
-      if (props.onChangeText) {
-        props.onChangeText(propValue);
-      }
+
+      props.onChange?.(propValue);
+      props.onChangeText?.(propValue);
     },
   };
 
