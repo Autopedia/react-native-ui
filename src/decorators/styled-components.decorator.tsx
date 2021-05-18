@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components/native';
 import { theme } from '../styles';
 
-const SThemeDecorator = storyFn => (
+const SThemeDecorator = (storyFn: any) => (
   <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
 );
 
