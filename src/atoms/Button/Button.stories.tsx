@@ -1,8 +1,9 @@
+import React from 'react';
 import { boolean, select, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
-import React from 'react';
-import styled from 'styled-components/native';
+import { View } from 'react-native';
 import SThemeDecorator from '@decorators/styled-components.decorator';
+import CenterContainerDecorator from '@decorators/center-container.decorator';
 import {
   ButtonColor,
   ButtonLayout,
@@ -12,6 +13,7 @@ import {
 import Button from '@atoms/Button';
 storiesOf('Atoms/Button', module)
   .addDecorator(SThemeDecorator)
+  .addDecorator(CenterContainerDecorator)
   .add(
     'Playground',
     () => {
@@ -26,25 +28,23 @@ storiesOf('Atoms/Button', module)
       const layoutOptions: ButtonLayout[] = ['inline', 'block', 'sticky'];
 
       return (
-        <SCenterContainer>
-          <Button
-            size={select('size', sizeOptions, 'md')}
-            color={select('color', colorOptions, 'default')}
-            layout={select('layout', layoutOptions, 'inline')}
-            disabled={boolean('disabled', false)}
-            icon={
-              boolean('icon', false) &&
-              require('../../assets/icons/shop/shop.png')
-            }
-            iconPosition={select('iconPosition', ['left', 'right'], 'left')}
-            absoluteIcon={boolean('absoluteIcon', false)}
-            onPress={e => {
-              e.persist();
-            }}
-          >
-            {text('text', 'Button')}
-          </Button>
-        </SCenterContainer>
+        <Button
+          size={select('size', sizeOptions, 'md')}
+          color={select('color', colorOptions, 'default')}
+          layout={select('layout', layoutOptions, 'inline')}
+          disabled={boolean('disabled', false)}
+          icon={
+            boolean('icon', false) &&
+            require('../../assets/icons/shop/shop.png')
+          }
+          iconPosition={select('iconPosition', ['left', 'right'], 'left')}
+          absoluteIcon={boolean('absoluteIcon', false)}
+          onPress={e => {
+            e.persist();
+          }}
+        >
+          {text('text', 'Button')}
+        </Button>
       );
     },
     {
@@ -53,7 +53,7 @@ storiesOf('Atoms/Button', module)
   )
   .add('Size', () => {
     return (
-      <SCenterContainer>
+      <>
         <Button
           size="sm"
           onPress={e => {
@@ -80,12 +80,12 @@ storiesOf('Atoms/Button', module)
         >
           Large
         </Button>
-      </SCenterContainer>
+      </>
     );
   })
   .add('Type', () => {
     return (
-      <SCenterContainer>
+      <>
         <Button
           onPress={e => {
             e.persist();
@@ -102,12 +102,12 @@ storiesOf('Atoms/Button', module)
         >
           Link
         </Button>
-      </SCenterContainer>
+      </>
     );
   })
   .add('Disabled', () => {
     return (
-      <SCenterContainer>
+      <>
         <Button
           onPress={e => {
             e.persist();
@@ -143,12 +143,12 @@ storiesOf('Atoms/Button', module)
         >
           Link Disabled
         </Button>
-      </SCenterContainer>
+      </>
     );
   })
   .add('Color/Default', () => {
     return (
-      <SCenterContainer>
+      <>
         <Button
           color="default"
           onPress={e => {
@@ -193,12 +193,12 @@ storiesOf('Atoms/Button', module)
         >
           Google
         </Button>
-      </SCenterContainer>
+      </>
     );
   })
   .add('Color/Link', () => {
     return (
-      <SCenterContainer>
+      <>
         <Button
           type="link"
           color="default"
@@ -218,12 +218,12 @@ storiesOf('Atoms/Button', module)
         >
           Muted
         </Button>
-      </SCenterContainer>
+      </>
     );
   })
   .add('Layout/Inline', () => {
     return (
-      <SCenterContainer style={{ flexDirection: 'row' }}>
+      <View style={{ flexDirection: 'row' }}>
         <Button
           onPress={e => {
             e.persist();
@@ -255,41 +255,37 @@ storiesOf('Atoms/Button', module)
         >
           Btn 4
         </Button>
-      </SCenterContainer>
+      </View>
     );
   })
   .add('Layout/Block', () => {
     return (
-      <SCenterContainer>
-        <Button
-          layout="block"
-          onPress={e => {
-            e.persist();
-          }}
-        >
-          Block Button
-        </Button>
-      </SCenterContainer>
+      <Button
+        layout="block"
+        onPress={e => {
+          e.persist();
+        }}
+      >
+        Block Button
+      </Button>
     );
   })
   .add('Layout/Sticky', () => {
     return (
-      <SCenterContainer>
-        <Button
-          color="primary"
-          layout="sticky"
-          onPress={e => {
-            e.persist();
-          }}
-        >
-          Sticky Button
-        </Button>
-      </SCenterContainer>
+      <Button
+        color="primary"
+        layout="sticky"
+        onPress={e => {
+          e.persist();
+        }}
+      >
+        Sticky Button
+      </Button>
     );
   })
   .add('Icon/Default', () => {
     return (
-      <SCenterContainer>
+      <>
         <Button
           icon={require('../../assets/icons/shop/shop.png')}
           onPress={e => {
@@ -330,12 +326,12 @@ storiesOf('Atoms/Button', module)
         >
           Block Icon Right
         </Button>
-      </SCenterContainer>
+      </>
     );
   })
   .add('Icon/Absolute', () => {
     return (
-      <SCenterContainer>
+      <>
         <Button
           layout="block"
           icon={require('../../assets/icons/shop/shop.png')}
@@ -359,13 +355,6 @@ storiesOf('Atoms/Button', module)
         >
           Absolute Icon Right
         </Button>
-      </SCenterContainer>
+      </>
     );
   });
-
-const SCenterContainer = styled.View`
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-`;
