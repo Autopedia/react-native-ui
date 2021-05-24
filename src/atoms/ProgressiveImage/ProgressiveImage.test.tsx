@@ -36,7 +36,7 @@ describe('[ProgressiveImage] Unit Test', () => {
     expect(onErrorMock).toHaveBeenCalledTimes(1);
   });
 
-  it('should change source to alternative on error', () => {
+  it('should render a fallback image on error', () => {
     const wrapper = shallow(<ProgressiveImage source={{ uri: 'wrong' }} />);
     wrapper.find('FastImage').simulate('error');
 

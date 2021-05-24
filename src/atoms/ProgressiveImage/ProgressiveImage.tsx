@@ -22,7 +22,7 @@ const ProgressiveImage: React.FC<FastImageProps> = props => {
     if (props.onError) {
       props.onError();
     }
-    setSource(require('@assets/images/on-image-load-fail.png'));
+    setSource(require('@assets/images/image-fallback.png'));
   };
 
   return (
