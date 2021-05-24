@@ -5,5 +5,15 @@ import Icon from './Icon';
 import SelectOption from './SelectOption';
 import TextInput from './TextInput';
 import Typograph from './Typography';
+import ProgressiveImage from './ProgressiveImage';
 
-export { Button, Divider, FormDivider, Icon, SelectOption, TextInput, Typograph };
+export {
+  Button,
+  Divider,
+  FormDivider,
+  Icon,
+  SelectOption,
+  TextInput,
+  Typograph,
+  ProgressiveImage,
+};
