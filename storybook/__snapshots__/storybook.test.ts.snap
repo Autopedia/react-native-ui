@@ -1663,6 +1663,1292 @@ exports[`Storyshots Atoms/Button Type 1`] = `
 </View>
 `;
 
+exports[`Storyshots Atoms/Checkbox Default 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "opacity": 1,
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/icons/checkbox/checkbox-checked.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "tintColor": "#1F1F1F",
+          },
+          Object {
+            "marginRight": 4,
+          },
+        ]
+      }
+    />
+    <Text>
+      defaultValue : true
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "opacity": 1,
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/icons/checkbox/checkbox-unchecked.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "tintColor": "#1F1F1F",
+          },
+          Object {
+            "marginRight": 4,
+          },
+        ]
+      }
+    />
+    <Text>
+      defaultValue : false
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Checkbox Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "opacity": 1,
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/icons/checkbox/checkbox-unchecked.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "tintColor": "#1F1F1F",
+          },
+          Object {
+            "marginRight": 4,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Divider Margin 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    margin={0}
+    style={
+      Array [
+        Object {
+          "borderBottomColor": "#F5F5F5",
+          "borderBottomWidth": 1,
+          "height": 0,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "borderBottomColor": "#F5F5F5",
+          "borderBottomWidth": 1,
+          "height": 0,
+          "marginBottom": 16,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 16,
+          "width": "100%",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Storyshots Atoms/Divider Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    margin={16}
+    style={
+      Array [
+        Object {
+          "borderBottomColor": "#F5F5F5",
+          "borderBottomWidth": 1,
+          "height": 0,
+          "marginBottom": 16,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 16,
+          "width": "100%",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Storyshots Atoms/FormDivider Invisible 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "borderBottomColor": "#D9D9D9",
+          "borderBottomWidth": 1,
+          "height": 0,
+          "marginBottom": 8,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 8,
+          "width": "100%",
+        },
+      ]
+    }
+  />
+  <View
+    invisible={true}
+    style={
+      Array [
+        Object {
+          "height": 0,
+          "marginBottom": 8,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 8,
+          "width": "100%",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Storyshots Atoms/FormDivider Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    invisible={false}
+    style={
+      Array [
+        Object {
+          "borderBottomColor": "#D9D9D9",
+          "borderBottomWidth": 1,
+          "height": 0,
+          "marginBottom": 8,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 8,
+          "width": "100%",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#E6F6FF",
+        "borderColor": "#2997FF",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      layout="block"
+      selected={true}
+      style={
+        Array [
+          Object {
+            "color": "#007AFF",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 18,
+            "lineHeight": 26,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block label selected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      layout="block"
+      selected={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 18,
+            "lineHeight": 26,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block label unselected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#F5F5F5",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      disabled={true}
+      layout="block"
+      selected={true}
+      style={
+        Array [
+          Object {
+            "color": "#8C8C8C",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 18,
+            "lineHeight": 26,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block label disabled
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#E6F6FF",
+        "borderColor": "#2997FF",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      layout="block"
+      selected={true}
+      size="sm"
+      style={
+        Array [
+          Object {
+            "color": "#007AFF",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block small label selected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      layout="block"
+      selected={false}
+      size="sm"
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block small label unselected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#F5F5F5",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      disabled={true}
+      layout="block"
+      selected={true}
+      size="sm"
+      style={
+        Array [
+          Object {
+            "color": "#8C8C8C",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block small label disabled
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#E6F6FF",
+        "borderColor": "#2997FF",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 12,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 12,
+      }
+    }
+  >
+    <Text
+      layout="block"
+      selected={true}
+      style={
+        Array [
+          Object {
+            "color": "#007AFF",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 18,
+            "lineHeight": 26,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block label selected
+    </Text>
+    <Text
+      layout="block"
+      selected={true}
+      style={
+        Array [
+          Object {
+            "color": "#007AFF",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 13,
+            "lineHeight": 19,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block sublabel selected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 12,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 12,
+      }
+    }
+  >
+    <Text
+      layout="block"
+      selected={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 18,
+            "lineHeight": 26,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block label unselected
+    </Text>
+    <Text
+      layout="block"
+      selected={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 13,
+            "lineHeight": 19,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block sublabel unselected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#F5F5F5",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 12,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 12,
+      }
+    }
+  >
+    <Text
+      disabled={true}
+      layout="block"
+      selected={true}
+      style={
+        Array [
+          Object {
+            "color": "#8C8C8C",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 18,
+            "lineHeight": 26,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block label disabled
+    </Text>
+    <Text
+      disabled={true}
+      layout="block"
+      selected={true}
+      style={
+        Array [
+          Object {
+            "color": "#8C8C8C",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 13,
+            "lineHeight": 19,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block sublabel disabled
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#E6F6FF",
+        "borderColor": "#2997FF",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      layout="block"
+      selected={true}
+      size="sm"
+      style={
+        Array [
+          Object {
+            "color": "#007AFF",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block small label selected
+    </Text>
+    <Text
+      layout="block"
+      selected={true}
+      size="sm"
+      style={
+        Array [
+          Object {
+            "color": "#007AFF",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 13,
+            "lineHeight": 19,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block small sublabel selected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      layout="block"
+      selected={false}
+      size="sm"
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block small label unselected
+    </Text>
+    <Text
+      layout="block"
+      selected={false}
+      size="sm"
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 13,
+            "lineHeight": 19,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block small sublabel unselected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#F5F5F5",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      disabled={true}
+      layout="block"
+      selected={true}
+      size="sm"
+      style={
+        Array [
+          Object {
+            "color": "#8C8C8C",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block small label disabled
+    </Text>
+    <Text
+      disabled={true}
+      layout="block"
+      selected={true}
+      size="sm"
+      style={
+        Array [
+          Object {
+            "color": "#8C8C8C",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 13,
+            "lineHeight": 19,
+          },
+        ]
+      }
+      value={null}
+    >
+      Block small sublabel disabled
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/SelectOption Inline 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#E6F6FF",
+        "borderColor": "#2997FF",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 0,
+        "marginLeft": 2,
+        "marginRight": 2,
+        "marginTop": 0,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      layout="inline"
+      selected={true}
+      style={
+        Array [
+          Object {
+            "color": "#007AFF",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+        ]
+      }
+      value={null}
+    >
+      Inline label selected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 0,
+        "marginLeft": 2,
+        "marginRight": 2,
+        "marginTop": 0,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      layout="inline"
+      selected={false}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+        ]
+      }
+      value={null}
+    >
+      Inline label unselected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#F5F5F5",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 0,
+        "marginLeft": 2,
+        "marginRight": 2,
+        "marginTop": 0,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      disabled={true}
+      layout="inline"
+      selected={true}
+      style={
+        Array [
+          Object {
+            "color": "#8C8C8C",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+        ]
+      }
+      value={null}
+    >
+      Inline label selected
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/SelectOption Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 0,
+        "marginLeft": 2,
+        "marginRight": 2,
+        "marginTop": 0,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      disabled={false}
+      layout="inline"
+      selected={false}
+      size="md"
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+        ]
+      }
+      value={null}
+    >
+      Label
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`Storyshots Atoms/TextInput Multiline 1`] = `
 <View
   style={
