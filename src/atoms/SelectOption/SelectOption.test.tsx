@@ -8,7 +8,7 @@ import React from 'react';
 import SelectOption from './SelectOption';
 import { shallow } from 'enzyme';
 
-describe('[Button] Unit Test', () => {
+describe('[SelectOption] Unit Test', () => {
   it('should fire onPress event with the value', () => {
     const mockedValue = 'value';
     const onPressMock = jest.fn();
