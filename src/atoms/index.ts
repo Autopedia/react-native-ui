@@ -1,6 +1,8 @@
 import Button from './Button';
+import Divider from './Divider';
+import FormDivider from './FormDivider';
 import Icon from './Icon';
 import TextInput from './TextInput';
 import Typograph from './Typography';
-import Divider from './Divider';
-export { Button, Icon, TextInput, Typograph, Divider };
+
+export { Button, Divider, FormDivider, Icon, TextInput, Typograph };
