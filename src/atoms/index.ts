@@ -4,7 +4,8 @@ import FormDivider from './FormDivider';
 import Icon from './Icon';
 import SelectOption from './SelectOption';
 import TextInput from './TextInput';
-import Typograph from './Typography';
+import Typography from './Typography';
+import Checkbox from './Checkbox';
 import ProgressiveImage from './ProgressiveImage';
 
 export {
@@ -14,6 +15,7 @@ export {
   Icon,
   SelectOption,
   TextInput,
-  Typograph,
+  Typography,
+  Checkbox,
   ProgressiveImage,
 };

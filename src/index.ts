@@ -1,4 +1,22 @@
 import './styles/styled';
-import { Button } from './atoms';
+import {
+  Button,
+  Checkbox,
+  Divider,
+  FormDivider,
+  Icon,
+  SelectOption,
+  TextInput,
+  Typography,
+} from './atoms';
 
-export { Button };
+export {
+  Button,
+  Checkbox,
+  Divider,
+  FormDivider,
+  Icon,
+  SelectOption,
+  TextInput,
+  Typography,
+};
