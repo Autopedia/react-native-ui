@@ -2,4 +2,5 @@ import Button from './Button';
 import Icon from './Icon';
 import TextInput from './TextInput';
 import Typograph from './Typography';
-export { Button, Icon, TextInput, Typograph };
+import SelectOption from './SelectOption';
+export { Button, Icon, TextInput, Typograph, SelectOption };
