@@ -21,6 +21,7 @@ storiesOf('Atoms/ProgressiveImage', module)
   })
   .add('Loading', () => {
     // Give no source to make image loading continuously
+    // @ts-ignore
     return <ProgressiveImage style={{ width: 200, height: 200 }} />;
   })
   .add('Fail', () => {
