@@ -4,20 +4,17 @@ import styled from 'styled-components/native';
 
 import Icon from '@atoms/Icon';
 
-interface CheckboxProps extends BaseInputProps<boolean> {
-  reverse?: boolean;
-}
+interface CheckboxProps extends BaseInputProps<boolean> {}
+
 const Checkbox: React.FC<CheckboxProps> = props => {
   const [checked, setChecked] = React.useState<boolean>(
-    props.reverse ? !props.defaultValue : Boolean(props.defaultValue),
+    props.value || props.defaultValue || false,
   );
 
   const onPress = () => {
     setChecked(checked => {
-      const value = props.reverse ? Boolean(checked) : !checked;
-
       if (props.onChange) {
-        props.onChange(value);
+        props.onChange(!checked);
       }
       return !checked;
     });
