@@ -6,6 +6,7 @@ import SelectOption from './SelectOption';
 import TextInput from './TextInput';
 import Typography from './Typography';
 import Checkbox from './Checkbox';
+import ProgressiveImage from './ProgressiveImage';
 
 export {
   Button,
@@ -16,4 +17,5 @@ export {
   TextInput,
   Typography,
   Checkbox,
+  ProgressiveImage,
 };
