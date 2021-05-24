@@ -11,6 +11,7 @@ import {
 } from '@atoms/Button/Button.types';
 
 import Button from '@atoms/Button';
+import { action } from '@storybook/addon-actions';
 storiesOf('Atoms/Button', module)
   .addDecorator(SThemeDecorator)
   .addDecorator(CenterContainerDecorator)
@@ -39,9 +40,7 @@ storiesOf('Atoms/Button', module)
           }
           iconPosition={select('iconPosition', ['left', 'right'], 'left')}
           absoluteIcon={boolean('absoluteIcon', false)}
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
         >
           {text('text', 'Button')}
         </Button>
@@ -56,28 +55,19 @@ storiesOf('Atoms/Button', module)
       <>
         <Button
           size="sm"
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Small
         </Button>
         <Button
           size="md"
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Medium
         </Button>
-        <Button
-          size="lg"
-          onPress={e => {
-            e.persist();
-          }}
-        >
+        <Button size="lg" onPress={e => action('onPress')(e.nativeEvent)}>
           Large
         </Button>
       </>
@@ -87,19 +77,12 @@ storiesOf('Atoms/Button', module)
     return (
       <>
         <Button
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Default
         </Button>
-        <Button
-          type="link"
-          onPress={e => {
-            e.persist();
-          }}
-        >
+        <Button type="link" onPress={e => action('onPress')(e.nativeEvent)}>
           Link
         </Button>
       </>
@@ -109,27 +92,21 @@ storiesOf('Atoms/Button', module)
     return (
       <>
         <Button
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Default
         </Button>
         <Button
           disabled
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Default Disabled
         </Button>
         <Button
           type="link"
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Link
@@ -137,9 +114,7 @@ storiesOf('Atoms/Button', module)
         <Button
           type="link"
           disabled
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
         >
           Link Disabled
         </Button>
@@ -151,46 +126,33 @@ storiesOf('Atoms/Button', module)
       <>
         <Button
           color="default"
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Default
         </Button>
         <Button
           color="primary"
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Primary
         </Button>
         <Button
           color="kakao"
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Kakao
         </Button>
         <Button
           color="apple"
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Apple
         </Button>
-        <Button
-          color="google"
-          onPress={e => {
-            e.persist();
-          }}
-        >
+        <Button color="google" onPress={e => action('onPress')(e.nativeEvent)}>
           Google
         </Button>
       </>
@@ -202,9 +164,7 @@ storiesOf('Atoms/Button', module)
         <Button
           type="link"
           color="default"
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Default
@@ -212,9 +172,7 @@ storiesOf('Atoms/Button', module)
         <Button
           type="link"
           color="muted"
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
         >
           Muted
         </Button>
@@ -225,47 +183,30 @@ storiesOf('Atoms/Button', module)
     return (
       <View style={{ flexDirection: 'row' }}>
         <Button
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginRight: 5 }}
         >
           Btn 1
         </Button>
         <Button
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginRight: 5 }}
         >
           Btn 2
         </Button>
         <Button
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginRight: 5 }}
         >
           Btn 3
         </Button>
-        <Button
-          onPress={e => {
-            e.persist();
-          }}
-        >
-          Btn 4
-        </Button>
+        <Button onPress={e => action('onPress')(e.nativeEvent)}>Btn 4</Button>
       </View>
     );
   })
   .add('Layout/Block', () => {
     return (
-      <Button
-        layout="block"
-        onPress={e => {
-          e.persist();
-        }}
-      >
+      <Button layout="block" onPress={e => action('onPress')(e.nativeEvent)}>
         Block Button
       </Button>
     );
@@ -275,9 +216,7 @@ storiesOf('Atoms/Button', module)
       <Button
         color="primary"
         layout="sticky"
-        onPress={e => {
-          e.persist();
-        }}
+        onPress={e => action('onPress')(e.nativeEvent)}
       >
         Sticky Button
       </Button>
@@ -288,9 +227,7 @@ storiesOf('Atoms/Button', module)
       <>
         <Button
           icon={require('../../assets/icons/shop/shop.png')}
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Icon Left
@@ -298,9 +235,7 @@ storiesOf('Atoms/Button', module)
         <Button
           icon={require('../../assets/icons/shop/shop.png')}
           iconPosition="right"
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Icon Right
@@ -308,9 +243,7 @@ storiesOf('Atoms/Button', module)
         <Button
           layout="block"
           icon={require('../../assets/icons/shop/shop.png')}
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Block Icon Left
@@ -319,9 +252,7 @@ storiesOf('Atoms/Button', module)
           layout="block"
           icon={require('../../assets/icons/shop/shop.png')}
           iconPosition="right"
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Block Icon Right
@@ -336,9 +267,7 @@ storiesOf('Atoms/Button', module)
           layout="block"
           icon={require('../../assets/icons/shop/shop.png')}
           absoluteIcon
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Absolute Icon Left
@@ -348,9 +277,7 @@ storiesOf('Atoms/Button', module)
           icon={require('../../assets/icons/shop/shop.png')}
           iconPosition="right"
           absoluteIcon
-          onPress={e => {
-            e.persist();
-          }}
+          onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Absolute Icon Right
