@@ -8,6 +8,7 @@ import {
   SelectOption,
   TextInput,
   Typography,
+  LoadingOverlay,
   FormLabel,
 } from './atoms';
 
@@ -20,5 +21,6 @@ export {
   SelectOption,
   TextInput,
   Typography,
+  LoadingOverlay,
   FormLabel,
 };
