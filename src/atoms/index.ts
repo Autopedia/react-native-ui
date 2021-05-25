@@ -9,7 +9,7 @@ import Checkbox from './Checkbox';
 import ProgressiveImage from './ProgressiveImage';
 import LoadingOverlay from './LoadingOverlay';
 import FormLabel from './FormLabel';
-
+import Markdown from './Markdown';
 
 export {
   Button,
@@ -23,4 +23,5 @@ export {
   ProgressiveImage,
   LoadingOverlay,
   FormLabel,
+  Markdown,
 };
