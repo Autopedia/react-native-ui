@@ -7,3 +7,4 @@ import '@atoms/SelectOption/SelectOption.stories';
 import '@atoms/Checkbox/Checkbox.stories';
 import '@atoms/ProgressiveImage/ProgressiveImage.stories';
 import '@atoms/Icon/Icon.stories';
+import '@atoms/LoadingOverlay/LoadingOverlay.stories';
