@@ -53,7 +53,7 @@ describe('[Icon] Unit Test', () => {
     expect(onPressMock).toHaveBeenCalledTimes(0);
   });
 
-  it('should not fire onPress event if disabled, but not touchable', () => {
+  it('should not fire onPress event if touchable, but disabled', () => {
     const onPressMock = jest.fn();
 
     const icon = shallow(
