@@ -5,6 +5,7 @@ import CenterContainerDecorator from '@decorators/center-container.decorator';
 import TextInput from './TextInput';
 import { boolean, number, text } from '@storybook/addon-knobs';
 import { Text } from 'react-native';
+import { action } from '@storybook/addon-actions';
 
 storiesOf('Atoms/TextInput', module)
   .addDecorator(SThemeDecorator)
@@ -12,7 +13,7 @@ storiesOf('Atoms/TextInput', module)
   .add('Playground', () => {
     return (
       <TextInput
-        value={text('value', 'Text Input')}
+        defaultValue="Text Input"
         placeholder={text('placeholder', 'placeholder')}
         secureTextEntry={boolean('secureTextEntry', false)}
         disabled={boolean('disabled', false)}
@@ -21,11 +22,18 @@ storiesOf('Atoms/TextInput', module)
           min: 1,
         })}
         suffix={boolean('suffix', false) && <Text>Suffix</Text>}
+        onChangeText={v => action('onChangeText')(v)}
       />
     );
   })
   .add('Type', () => {
-    return <TextInput type="default" value="Default Text Input" />;
+    return (
+      <TextInput
+        type="default"
+        defaultValue="Default Text Input"
+        onChangeText={v => action('onChangeText')(v)}
+      />
+    );
   })
   .add('Placeholder', () => {
     return <TextInput placeholder="Placeholder" />;
@@ -33,13 +41,23 @@ storiesOf('Atoms/TextInput', module)
   .add('SecureTextEntry', () => {
     return (
       <>
-        <TextInput value="Example Text" style={{ marginBottom: 5 }} />
+        <TextInput
+          defaultValue="Example Text"
+          style={{ marginBottom: 5 }}
+          onChangeText={v => action('onChangeText')(v)}
+        />
         <TextInput
           secureTextEntry
-          value="Example Text"
+          defaultValue="Example Text"
           style={{ marginBottom: 5 }}
+          onChangeText={v => action('onChangeText')(v)}
         />
-        <TextInput secureTextEntry disabled value="Example Text" />
+        <TextInput
+          secureTextEntry
+          disabled
+          defaultValue="Example Text"
+          onChangeText={v => action('onChangeText')(v)}
+        />
       </>
     );
   })
@@ -47,13 +65,26 @@ storiesOf('Atoms/TextInput', module)
     const longText = 'Multi Line Long Text '.repeat(5);
     return (
       <>
-        <TextInput value="Single Line" style={{ marginBottom: 5 }} />
-        <TextInput multiline numberOfLines={3} value={longText} />
+        <TextInput
+          defaultValue="Single Line"
+          style={{ marginBottom: 5 }}
+          onChangeText={v => action('onChangeText')(v)}
+        />
+        <TextInput
+          multiline
+          numberOfLines={3}
+          defaultValue={longText}
+          onChangeText={v => action('onChangeText')(v)}
+        />
       </>
     );
   })
   .add('Suffix', () => {
     return (
-      <TextInput value="Text Input with Suffix" suffix={<Text>Suffix</Text>} />
+      <TextInput
+        defaultValue="Text Input with Suffix"
+        suffix={<Text>Suffix</Text>}
+        onChangeText={v => action('onChangeText')(v)}
+      />
     );
   });
