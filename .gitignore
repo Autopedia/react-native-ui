@@ -60,3 +60,6 @@ buck-out/
 
 /lib
 *.tgz
+
+# Storybook Snapshot
+storybook/__snapshots__
