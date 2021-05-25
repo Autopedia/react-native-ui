@@ -611,7 +611,7 @@ exports[`Storyshots Atoms/Button Icon/Absolute 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#1F1F1F",
+            "tintColor": undefined,
           },
           Object {
             "height": 20,
@@ -693,7 +693,7 @@ exports[`Storyshots Atoms/Button Icon/Absolute 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#1F1F1F",
+            "tintColor": undefined,
           },
           Object {
             "height": 20,
@@ -763,7 +763,7 @@ exports[`Storyshots Atoms/Button Icon/Default 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#1F1F1F",
+            "tintColor": undefined,
           },
           Object {
             "height": 20,
@@ -843,7 +843,7 @@ exports[`Storyshots Atoms/Button Icon/Default 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#1F1F1F",
+            "tintColor": undefined,
           },
           Object {
             "height": 20,
@@ -892,7 +892,7 @@ exports[`Storyshots Atoms/Button Icon/Default 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#1F1F1F",
+            "tintColor": undefined,
           },
           Object {
             "height": 20,
@@ -973,7 +973,7 @@ exports[`Storyshots Atoms/Button Icon/Default 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#1F1F1F",
+            "tintColor": undefined,
           },
           Object {
             "height": 20,
@@ -1708,7 +1708,7 @@ exports[`Storyshots Atoms/Checkbox Default 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#1F1F1F",
+            "tintColor": undefined,
           },
           Object {
             "marginRight": 4,
@@ -1747,7 +1747,7 @@ exports[`Storyshots Atoms/Checkbox Default 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#1F1F1F",
+            "tintColor": undefined,
           },
           Object {
             "marginRight": 4,
@@ -1807,7 +1807,7 @@ exports[`Storyshots Atoms/Checkbox Playground 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#1F1F1F",
+            "tintColor": undefined,
           },
           Object {
             "marginRight": 4,
@@ -1998,6 +1998,363 @@ exports[`Storyshots Atoms/FormDivider Playground 1`] = `
       ]
     }
   />
+</View>
+`;
+
+exports[`Storyshots Atoms/Icon Color 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Image
+    color="default"
+    source={
+      Object {
+        "testUri": "../../../src/assets/icons/camera/camera.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "tintColor": "#1F1F1F",
+        },
+        Object {
+          "backgroundColor": "#E3E3E3",
+        },
+      ]
+    }
+  />
+  <Image
+    color="primary"
+    source={
+      Object {
+        "testUri": "../../../src/assets/icons/camera/camera.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "tintColor": "#FFFFFF",
+        },
+        Object {
+          "backgroundColor": "#E3E3E3",
+        },
+      ]
+    }
+  />
+  <Image
+    color="kakao"
+    source={
+      Object {
+        "testUri": "../../../src/assets/icons/camera/camera.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "tintColor": "#000000",
+        },
+        Object {
+          "backgroundColor": "#E3E3E3",
+        },
+      ]
+    }
+  />
+  <Image
+    color="apple"
+    source={
+      Object {
+        "testUri": "../../../src/assets/icons/camera/camera.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "tintColor": "#FFFFFF",
+        },
+        Object {
+          "backgroundColor": "#E3E3E3",
+        },
+      ]
+    }
+  />
+  <Image
+    color="google"
+    source={
+      Object {
+        "testUri": "../../../src/assets/icons/camera/camera.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "tintColor": "#000000",
+        },
+        Object {
+          "backgroundColor": "#E3E3E3",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Storyshots Atoms/Icon Disabled 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Image
+    color="default"
+    disabled={true}
+    source={
+      Object {
+        "testUri": "../../../src/assets/icons/camera/camera.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "tintColor": "#8C8C8C",
+        },
+        Object {
+          "backgroundColor": "#E3E3E3",
+        },
+      ]
+    }
+  />
+  <Image
+    color="primary"
+    disabled={true}
+    source={
+      Object {
+        "testUri": "../../../src/assets/icons/camera/camera.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "tintColor": "#8C8C8C",
+        },
+        Object {
+          "backgroundColor": "#E3E3E3",
+        },
+      ]
+    }
+  />
+  <Image
+    color="kakao"
+    disabled={true}
+    source={
+      Object {
+        "testUri": "../../../src/assets/icons/camera/camera.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "tintColor": "#8C8C8C",
+        },
+        Object {
+          "backgroundColor": "#E3E3E3",
+        },
+      ]
+    }
+  />
+  <Image
+    color="apple"
+    disabled={true}
+    source={
+      Object {
+        "testUri": "../../../src/assets/icons/camera/camera.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "tintColor": "#8C8C8C",
+        },
+        Object {
+          "backgroundColor": "#E3E3E3",
+        },
+      ]
+    }
+  />
+  <Image
+    color="google"
+    disabled={true}
+    source={
+      Object {
+        "testUri": "../../../src/assets/icons/camera/camera.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "tintColor": "#8C8C8C",
+        },
+        Object {
+          "backgroundColor": "#E3E3E3",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Storyshots Atoms/Icon Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+      }
+    }
+  >
+    <Image
+      color="#000000"
+      disabled={false}
+      source={
+        Object {
+          "testUri": "../../../src/assets/icons/camera/camera.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "tintColor": "#000000",
+          },
+          Object {
+            "backgroundColor": "#E3E3E3",
+          },
+        ]
+      }
+    />
+  </View>
+  <Text>
+    backgroundColor is set to grey for convienience.
+  </Text>
+</View>
+`;
+
+exports[`Storyshots Atoms/Icon Touchable 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+      }
+    }
+  >
+    <Image
+      color="default"
+      source={
+        Object {
+          "testUri": "../../../src/assets/icons/camera/camera.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "tintColor": "#1F1F1F",
+          },
+          Object {
+            "backgroundColor": "#E3E3E3",
+          },
+        ]
+      }
+    />
+  </View>
 </View>
 `;
 
@@ -3723,7 +4080,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
           style={
             Array [
               Object {
-                "tintColor": "#1F1F1F",
+                "tintColor": undefined,
               },
               Object {},
             ]
@@ -3794,7 +4151,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
       />
       <View
         accessible={true}
-        focusable={true}
+        focusable={false}
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
