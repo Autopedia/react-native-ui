@@ -13,10 +13,11 @@ import {
   StyleProp,
 } from 'react-native';
 import styled from 'styled-components/native';
+import { ButtonColor } from '@atoms/Button/Button.types';
 
 interface IconProps {
   source: any;
-  color?: string;
+  color?: string | ButtonColor;
   touchable?: boolean;
   disabled?: boolean;
   onPress?: (event: GestureResponderEvent) => void;
@@ -29,6 +30,7 @@ type SIconProps = Pick<IconProps, 'color' | 'disabled' | 'source' | 'style'>;
 const Icon: React.FC<IconProps> = props => {
   const touchableProps = {
     ...lodash.pick(props, ['disabled', 'onPress']),
+    onPress: props.disabled ? undefined : props.onPress,
     style: pickStyle(props.style, FlexStyleKeys),
   };
   const iconProps = {
@@ -60,6 +62,10 @@ const SIcon = styled.Image<SIconProps>`
   /* color (default: undefined) */
   ${props => {
     switch (props.color) {
+      case 'default':
+        return `
+              tint-color: ${props.theme.colors.ON_DEFAULT};
+            `;
       case 'primary':
         return `
               tint-color: ${props.theme.colors.ON_PRIMARY};
@@ -90,7 +96,7 @@ const SIcon = styled.Image<SIconProps>`
             `;
       default:
         return `
-              tint-color: ${props.theme.colors.ON_DEFAULT};
+              tint-color: ${props.color};
             `;
     }
   }}
