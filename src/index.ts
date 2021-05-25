@@ -9,6 +9,7 @@ import {
   TextInput,
   Typography,
   LoadingOverlay,
+  FormLabel,
 } from './atoms';
 
 export {
@@ -21,4 +22,5 @@ export {
   TextInput,
   Typography,
   LoadingOverlay,
+  FormLabel,
 };
