@@ -7,6 +7,7 @@ import TextInput from './TextInput';
 import Typography from './Typography';
 import Checkbox from './Checkbox';
 import ProgressiveImage from './ProgressiveImage';
+import FormLabel from './FormLabel';
 
 export {
   Button,
@@ -18,4 +19,5 @@ export {
   Typography,
   Checkbox,
   ProgressiveImage,
+  FormLabel,
 };
