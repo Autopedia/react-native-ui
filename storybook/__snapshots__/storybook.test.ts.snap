@@ -2001,6 +2001,299 @@ exports[`Storyshots Atoms/FormDivider Playground 1`] = `
 </View>
 `;
 
+exports[`Storyshots Atoms/ProgressiveImage Fail 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+      ]
+    }
+  >
+    <BVLinearGradient
+      colors={
+        Array [
+          4294309365,
+          4292467161,
+        ]
+      }
+      endPoint={
+        Object {
+          "x": 0.5,
+          "y": 1,
+        }
+      }
+      locations={null}
+      startPoint={
+        Object {
+          "x": 0.5,
+          "y": 0,
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 72,
+            "position": "absolute",
+            "width": 72,
+            "zIndex": 1,
+          },
+          Object {
+            "height": 200,
+            "width": 200,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "height": 200,
+            "width": 200,
+          },
+        ]
+      }
+    >
+      <FastImageView
+        onFastImageError={[Function]}
+        onFastImageLoad={[Function]}
+        resizeMode="cover"
+        source={
+          Object {
+            "uri": "wrong",
+          }
+        }
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/ProgressiveImage Image 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+      ]
+    }
+  >
+    <BVLinearGradient
+      colors={
+        Array [
+          4294309365,
+          4292467161,
+        ]
+      }
+      endPoint={
+        Object {
+          "x": 0.5,
+          "y": 1,
+        }
+      }
+      locations={null}
+      startPoint={
+        Object {
+          "x": 0.5,
+          "y": 0,
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 72,
+            "position": "absolute",
+            "width": 72,
+            "zIndex": 1,
+          },
+          Object {
+            "height": 200,
+            "width": 200,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "height": 200,
+            "width": 200,
+          },
+        ]
+      }
+    >
+      <FastImageView
+        onFastImageError={[Function]}
+        onFastImageLoad={[Function]}
+        resizeMode="cover"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/shop-thumbnail.png",
+          }
+        }
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/ProgressiveImage Loading 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+      ]
+    }
+  >
+    <BVLinearGradient
+      colors={
+        Array [
+          4294309365,
+          4292467161,
+        ]
+      }
+      endPoint={
+        Object {
+          "x": 0.5,
+          "y": 1,
+        }
+      }
+      locations={null}
+      startPoint={
+        Object {
+          "x": 0.5,
+          "y": 0,
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 72,
+            "position": "absolute",
+            "width": 72,
+            "zIndex": 1,
+          },
+          Object {
+            "height": 200,
+            "width": 200,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "height": 200,
+            "width": 200,
+          },
+        ]
+      }
+    >
+      <FastImageView
+        onFastImageError={[Function]}
+        onFastImageLoad={[Function]}
+        resizeMode="cover"
+        source={null}
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
 exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
 <View
   style={

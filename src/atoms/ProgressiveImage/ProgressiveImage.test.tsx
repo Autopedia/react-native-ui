@@ -41,7 +41,7 @@ describe('[ProgressiveImage] Unit Test', () => {
     wrapper.find('FastImage').simulate('error');
 
     expect(wrapper.find('FastImage').prop('source')).toEqual(
-      require('@assets/images/on-image-load-fail.png'),
+      require('@assets/images/image-fallback.png'),
     );
   });
 });
