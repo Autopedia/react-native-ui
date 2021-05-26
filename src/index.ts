@@ -10,6 +10,7 @@ import {
   Typography,
   LoadingOverlay,
   FormLabel,
+  Markdown,
 } from './atoms';
 
 export {
@@ -23,4 +24,5 @@ export {
   Typography,
   LoadingOverlay,
   FormLabel,
+  Markdown,
 };
