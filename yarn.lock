@@ -3000,6 +3000,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-native-maps@^0.24.2":
+  version "0.24.2"
+  resolved "https://registry.yarnpkg.com/@types/react-native-maps/-/react-native-maps-0.24.2.tgz#f88aa0b30a470066c749a2786c52aca356bd4f38"
+  integrity sha512-4nunEtRw4DoER/oagEofZkwdOVmHV2p3FvMrs6aVjVV+WlXnQWs5fIosqdeWI3OJI5SLsAL+6/HRZxGuQ0ts0Q==
+  dependencies:
+    react-native-maps "*"
+
 "@types/react-native-video@^5.0.5":
   version "5.0.5"
   resolved "https://registry.yarnpkg.com/@types/react-native-video/-/react-native-video-5.0.5.tgz#4177e16e3da87b1b1e04d8b7a7e45237401f40ff"
@@ -11851,7 +11858,7 @@ react-native-linear-gradient@^2.5.6:
   resolved "https://registry.yarnpkg.com/react-native-linear-gradient/-/react-native-linear-gradient-2.5.6.tgz#96215cbc5ec7a01247a20890888aa75b834d44a0"
   integrity sha512-HDwEaXcQIuXXCV70O+bK1rizFong3wj+5Q/jSyifKFLg0VWF95xh8XQgfzXwtq0NggL9vNjPKXa016KuFu+VFg==
 
-react-native-maps@^0.28.0:
+react-native-maps@*, react-native-maps@^0.28.0:
   version "0.28.0"
   resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.28.0.tgz#1913dd4977652ddfc317d39c7cb7d78a8e513784"
   integrity sha512-F+k5ZT9hhl+iXR1H+5ZcoHOEB5lPu9gCIwtA4lI/LoI9nfa9xFvr1vMiLIv44jzeGNzbE3+/R81IpcNDMJ5uDg==
@@ -11887,6 +11894,7 @@ react-native-parsed-text@^0.0.22:
   integrity sha512-hfD83RDXZf9Fvth3DowR7j65fMnlqM9PpxZBGWkzVcUTFtqe6/yPcIoIAgrJbKn6YmtzkivmhWE2MCE4JKBXrQ==
   dependencies:
     prop-types "^15.7.x"
+
 react-native-rate@^1.2.6:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/react-native-rate/-/react-native-rate-1.2.6.tgz#85c817caf0feac459bf9d4eb8fd9a245932b0f4d"

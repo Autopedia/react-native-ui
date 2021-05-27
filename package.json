@@ -36,8 +36,8 @@
     "react-native-fast-image": "^8.3.4",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-linear-gradient": "^2.5.6",
-    "react-native-parsed-text": "^0.0.22",
     "react-native-maps": "^0.28.0",
+    "react-native-parsed-text": "^0.0.22",
     "react-native-rate": "^1.2.6",
     "react-native-video": "^5.1.1",
     "styled-components": "^5.3.0"
@@ -62,6 +62,7 @@
     "@types/lodash": "^4.14.168",
     "@types/react-native": "^0.64.0",
     "@types/react-native-actionsheet": "^2.4.2",
+    "@types/react-native-maps": "^0.24.2",
     "@types/react-native-video": "^5.0.5",
     "@types/react-test-renderer": "^16.9.2",
     "@types/styled-components": "^5.1.9",

@@ -6,26 +6,8 @@ import {
 } from '@styles/utils';
 import lodash from 'lodash';
 import React from 'react';
-import {
-  FlexStyle,
-  GestureResponderEvent,
-  ImageStyle,
-  StyleProp,
-} from 'react-native';
 import styled from 'styled-components/native';
-import { ButtonColor } from '@atoms/Button/Button.types';
-
-interface IconProps {
-  source: any;
-  color?: string | ButtonColor;
-  touchable?: boolean;
-  disabled?: boolean;
-  onPress?: (event: GestureResponderEvent) => void;
-  style?: StyleProp<Omit<ImageStyle, 'color'> | FlexStyle>;
-}
-
-type STouchableProps = Pick<IconProps, 'disabled' | 'onPress' | 'style'>;
-type SIconProps = Pick<IconProps, 'color' | 'disabled' | 'source' | 'style'>;
+import { IconProps, STouchableProps, SIconProps } from './Icon.types';
 
 const Icon: React.FC<IconProps> = props => {
   const touchableProps = {
