@@ -11,6 +11,7 @@ import {
   LoadingOverlay,
   FormLabel,
   Markdown,
+  Message,
 } from './atoms';
 
 export {
@@ -25,4 +26,5 @@ export {
   LoadingOverlay,
   FormLabel,
   Markdown,
+  Message,
 };

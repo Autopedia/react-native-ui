@@ -9,7 +9,11 @@ import Checkbox from './Checkbox';
 import ProgressiveImage from './ProgressiveImage';
 import LoadingOverlay from './LoadingOverlay';
 import FormLabel from './FormLabel';
+<<<<<<< Updated upstream
 import Markdown from './Markdown';
+=======
+import Message from './Message';
+>>>>>>> Stashed changes
 
 export {
   Button,
@@ -23,5 +27,9 @@ export {
   ProgressiveImage,
   LoadingOverlay,
   FormLabel,
+<<<<<<< Updated upstream
   Markdown,
+=======
+  Message,
+>>>>>>> Stashed changes
 };

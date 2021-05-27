@@ -28,12 +28,18 @@
     "prepare": "bob build"
   },
   "dependencies": {
+    "@react-navigation/native": "^5.9.4",
     "lodash": "^4.17.21",
     "react": "17.0.1",
     "react-native": "0.64.0",
+    "react-native-actionsheet": "^2.4.2",
     "react-native-fast-image": "^8.3.4",
+    "react-native-gesture-handler": "^1.10.3",
     "react-native-linear-gradient": "^2.5.6",
     "react-native-parsed-text": "^0.0.22",
+    "react-native-maps": "^0.28.0",
+    "react-native-rate": "^1.2.6",
+    "react-native-video": "^5.1.1",
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
@@ -55,6 +61,8 @@
     "@types/jest": "^26.0.23",
     "@types/lodash": "^4.14.168",
     "@types/react-native": "^0.64.0",
+    "@types/react-native-actionsheet": "^2.4.2",
+    "@types/react-native-video": "^5.0.5",
     "@types/react-test-renderer": "^16.9.2",
     "@types/styled-components": "^5.1.9",
     "@types/styled-components-react-native": "^5.1.1",
