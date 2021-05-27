@@ -83,12 +83,14 @@ export const SShopButtons = styled.View`
     margin-top: ${props.theme.spacing.SPACE_6};
   `}
 `;
+
 export const SShopButton = styled(Button)`
   flex: 1;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 `;
+
 export const SShopButtonIcon = styled(Icon)`
   ${props => `
     margin-right: ${props.theme.spacing.SPACE_2};

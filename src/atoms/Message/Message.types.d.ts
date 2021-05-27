@@ -1,9 +1,7 @@
+import { GestureResponderEvent } from 'react-native';
+
 export type BaseMessageProps = {
   mine?: boolean;
-  timestamp?: boolean;
-  createdAt: string | Date;
-  status: 'pending' | 'sended' | 'failed';
-  unread?: number;
 };
 
 export type TextMessageProps = BaseMessageProps & {
@@ -16,7 +14,7 @@ export type ImageMessageProps = BaseMessageProps & {
   url: string;
   width: number;
   height: number;
-  onPressImage: () => void;
+  onPressImage: (e: GestureResponderEvent) => void;
 };
 
 export type VideoMessageProps = BaseMessageProps & {
@@ -51,8 +49,8 @@ export type ShopMessageProps = BaseMessageProps & {
   address: string;
   lat: number;
   lng: number;
-  onPressDetail: () => void;
-  onPressNavigate: () => void;
+  onPressDetail: (e: GestureResponderEvent) => void;
+  onPressNavigate: (e: GestureResponderEvent) => void;
 };
 
 export type FeedbackMessageProps = BaseMessageProps & {
@@ -62,7 +60,7 @@ export type FeedbackMessageProps = BaseMessageProps & {
 
 export type ReviewMessageProps = BaseMessageProps & {
   type: 'review';
-  onPressReview: () => void;
+  onPressReview: (e: GestureResponderEvent) => void;
 };
 
 export type EndMessageProps = BaseMessageProps & {

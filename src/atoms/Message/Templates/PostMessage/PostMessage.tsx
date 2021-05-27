@@ -1,16 +1,20 @@
 import React from 'react';
-import { EventMessageProps } from '../Message.types';
-import { linebreakRemover } from '@utils/formatters';
 import Typography from '@atoms/Typography';
-import { SContent, SContentThumbnail, SContentInfo } from '../Message.styles';
+import { linebreakRemover } from '@utils/formatters';
+import {
+  SContent,
+  SContentThumbnail,
+  SContentInfo,
+} from '../../Message.styles';
+import { PostMessageProps } from '../../Message.types';
 
-const EventMessage: React.FC<EventMessageProps> = ({ title, thumbnailUrl }) => {
+const PostMessage: React.FC<PostMessageProps> = ({ thumbnailUrl, title }) => {
   return (
     <SContent>
       <SContentThumbnail source={{ uri: thumbnailUrl }} />
       <SContentInfo>
         <Typography.Paragraph size="xs" color="muted">
-          닥터차 이벤트
+          닥터차 포스트
         </Typography.Paragraph>
         <Typography.Heading size={5}>
           {linebreakRemover(title)}
@@ -20,4 +24,4 @@ const EventMessage: React.FC<EventMessageProps> = ({ title, thumbnailUrl }) => {
   );
 };
 
-export default EventMessage;
+export default PostMessage;

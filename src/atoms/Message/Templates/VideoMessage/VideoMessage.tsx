@@ -4,14 +4,14 @@ import Video from 'react-native-video';
 import { durationFormatter } from '@utils/formatters';
 import Icon from '@atoms/Icon';
 import Typography from '@atoms/Typography';
-import { VideoMessageProps } from '../Message.types';
+import { VideoMessageProps } from '../../Message.types';
 import {
   MAX_WIDTH,
   SVideoMessage,
   SVideo,
   SImage,
   SVideoOverlay,
-} from '../Message.styles';
+} from '../../Message.styles';
 
 const VideoMessage: React.FC<VideoMessageProps> = ({
   url,

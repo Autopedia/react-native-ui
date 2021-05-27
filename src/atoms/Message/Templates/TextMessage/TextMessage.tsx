@@ -1,8 +1,8 @@
 import React from 'react';
-import { TextMessageProps } from '../Message.types';
+import { TextMessageProps } from '../../Message.types';
 import colors from '@styles/colors';
 import Markdown from '@atoms/Markdown';
-import { SMyTextMessage, SOtherTextMessage } from '../message.styles';
+import { SMyTextMessage, SOtherTextMessage } from '../../Message.styles';
 
 const TextMessage: React.FC<TextMessageProps> = ({ mine, text }) => {
   return mine ? (

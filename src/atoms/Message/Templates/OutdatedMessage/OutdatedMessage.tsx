@@ -1,7 +1,8 @@
 import { Alert } from 'react-native';
 import Button from '@atoms/Button';
-import { CardMessage } from '.';
-import { OutdatedMessageProps } from '../Message.types';
+import React from 'react';
+import { CardMessage } from '../';
+import { OutdatedMessageProps } from '../../Message.types';
 
 const OutdatedMessage: React.FC<OutdatedMessageProps> = ({
   onPressFinish,
@@ -21,7 +22,7 @@ const OutdatedMessage: React.FC<OutdatedMessageProps> = ({
     ]);
   };
   const dayMention = days ? `${days}일 동안 ` : '';
-  const outdatedMessageProps = {
+  const props = {
     title: '상담이 자동종료될\n예정입니다',
     description:
       dayMention +
@@ -39,7 +40,7 @@ const OutdatedMessage: React.FC<OutdatedMessageProps> = ({
     ),
   };
 
-  return <CardMessage {...outdatedMessageProps} />;
+  return <CardMessage {...props} />;
 };
 
 export default OutdatedMessage;

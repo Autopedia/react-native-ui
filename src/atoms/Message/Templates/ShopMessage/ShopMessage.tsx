@@ -2,7 +2,7 @@ import React from 'react';
 import { LatLng, Marker, Region } from 'react-native-maps';
 import Typography from '@atoms/Typography';
 import { Spacing } from '@styles';
-import { ShopMessageProps } from '../Message.types';
+import { ShopMessageProps } from '../../Message.types';
 import {
   SShop,
   SMap,
@@ -10,7 +10,7 @@ import {
   SShopButtons,
   SShopButton,
   SShopButtonIcon,
-} from '../Message.styles';
+} from '../../Message.styles';
 
 const ShopMessage: React.FC<ShopMessageProps> = ({
   name,

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Spacing } from '@styles';
 import Typography from '@atoms/Typography';
-import { SCard } from '../Message.styles';
+import { SCard } from '../../Message.styles';
 
 interface CardMessageProps {
   title: string;

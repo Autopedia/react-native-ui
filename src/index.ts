@@ -1,4 +1,5 @@
-import './styles/styled';
+import './styles/styled.d';
+
 import {
   Button,
   Checkbox,
