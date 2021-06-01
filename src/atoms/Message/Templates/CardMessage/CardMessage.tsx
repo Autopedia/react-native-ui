@@ -1,7 +1,8 @@
 import React from 'react';
 import { Spacing } from '@styles';
 import Typography from '@atoms/Typography';
-import { SCard } from '../../Message.styles';
+import { MAX_WIDTH } from '../../Message.styles';
+import styled from 'styled-components/native';
 
 interface CardMessageProps {
   title: string;
@@ -28,5 +29,14 @@ const CardMessage: React.FC<CardMessageProps> = ({
     </SCard>
   );
 };
+
+const SCard = styled.View`
+  ${props => props.theme.base.message}
+  ${props => `
+    width: ${MAX_WIDTH}px;
+    background-color: ${props.theme.colors.WHITE};
+    padding: ${props.theme.spacing.SPACE_14};
+  `}
+`;
 
 export default CardMessage;

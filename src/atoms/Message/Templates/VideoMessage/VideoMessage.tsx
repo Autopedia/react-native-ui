@@ -1,17 +1,12 @@
 import React from 'react';
 import { ActivityIndicator } from 'react-native';
-import Video from 'react-native-video';
 import { durationFormatter } from '@utils/formatters';
 import Icon from '@atoms/Icon';
 import Typography from '@atoms/Typography';
 import { VideoMessageProps } from '../../Message.types';
-import {
-  MAX_WIDTH,
-  SVideoMessage,
-  SVideo,
-  SImage,
-  SVideoOverlay,
-} from '../../Message.styles';
+import { MAX_WIDTH, SImage } from '../../Message.styles';
+import styled from 'styled-components/native';
+import Video, { LoadError } from 'react-native-video';
 
 const VideoMessage: React.FC<VideoMessageProps> = ({
   url,
@@ -48,7 +43,8 @@ const VideoMessage: React.FC<VideoMessageProps> = ({
     setState('SUCCESS');
   };
 
-  const onError = () => {
+  const onError = (error: LoadError) => {
+    console.log(error.error);
     setState('ERROR');
     setSize({ width: 0, height: 0 });
   };
@@ -97,5 +93,25 @@ const VideoMessage: React.FC<VideoMessageProps> = ({
     </SVideoMessage>
   );
 };
+
+const SVideoMessage = styled.View`
+  position: relative;
+  overflow: hidden;
+  ${props => `
+    border-radius: ${props.theme.spacing.SPACE_14};
+  `}
+`;
+
+const SVideo = styled(Video)``;
+const SVideoOverlay = styled.TouchableOpacity`
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+`;
 
 export default VideoMessage;

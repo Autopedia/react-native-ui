@@ -10,7 +10,7 @@ import CounselCaseMessage from './CounselCaseMessage';
 import FeedbackMessage from './FeedbackMessage';
 import ReviewMessage from './ReviewMessage';
 import EndMessage from './EndMessage';
-import OutDatedMessage from './OutdatedMessage';
+import OutdatedMessage from './OutdatedMessage';
 import UnhandledMessage from './UnhandledMessage';
 
 export {
@@ -26,6 +26,6 @@ export {
   FeedbackMessage,
   ReviewMessage,
   EndMessage,
-  OutDatedMessage,
+  OutdatedMessage,
   UnhandledMessage,
 };

@@ -2001,6 +2001,140 @@ exports[`Storyshots Atoms/FormDivider Playground 1`] = `
 </View>
 `;
 
+exports[`Storyshots Atoms/FormLabel Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginBottom": 3,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+        ]
+      }
+    >
+      FormLabel
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/FormLabel Required 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginBottom": 3,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+        ]
+      }
+    >
+      Default FormLabel
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginBottom": 3,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+        ]
+      }
+    >
+      Required FormLabel
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#EB5757",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+        ]
+      }
+    >
+      *
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`Storyshots Atoms/Icon Color 1`] = `
 <View
   style={
@@ -2358,6 +2492,2330 @@ exports[`Storyshots Atoms/Icon Touchable 1`] = `
 </View>
 `;
 
+exports[`Storyshots Atoms/LoadingOverlay Default 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "bottom": 0,
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 9999999,
+        },
+      ]
+    }
+  >
+    <ActivityIndicator
+      animating={true}
+      color="#007AFF"
+      hidesWhenStopped={true}
+      size="small"
+    />
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Markdown Pattern 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#1F1F1F",
+        "fontSize": 15,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      default Markdown
+    </Text>
+  </Text>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#1F1F1F",
+        "fontSize": 15,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+          Object {
+            "fontWeight": "bold",
+          },
+        ]
+      }
+    >
+      Bold Markdown
+    </Text>
+  </Text>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#1F1F1F",
+        "fontSize": 15,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+          Object {
+            "textDecorationLine": "underline",
+          },
+        ]
+      }
+    >
+      010-1234-5678
+    </Text>
+  </Text>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#1F1F1F",
+        "fontSize": 15,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+          Object {
+            "textDecorationLine": "underline",
+          },
+        ]
+      }
+    >
+      https://doctor-cha.com/
+    </Text>
+  </Text>
+</View>
+`;
+
+exports[`Storyshots Atoms/Markdown Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#000000",
+        "fontSize": 15,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+          Object {
+            "fontWeight": "bold",
+          },
+        ]
+      }
+    >
+      Markdown Bold
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      
+Markdown Normal
+
+    </Text>
+    <Text
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+          Object {
+            "textDecorationLine": "underline",
+          },
+        ]
+      }
+    >
+      010-1234-5678
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      
+
+    </Text>
+    <Text
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+          Object {
+            "textDecorationLine": "underline",
+          },
+        ]
+      }
+    >
+      https://doctor-cha.com/
+    </Text>
+  </Text>
+</View>
+`;
+
+exports[`Storyshots Atoms/Markdown Selectable 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#1F1F1F",
+        "fontSize": 15,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      Selectable Markdown
+    </Text>
+  </Text>
+  <Text
+    selectable={false}
+    style={
+      Object {
+        "color": "#1F1F1F",
+        "fontSize": 15,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      Unselectable Markdown
+    </Text>
+  </Text>
+</View>
+`;
+
+exports[`Storyshots Atoms/Markdown TextColor 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#1F1F1F",
+        "fontSize": 15,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      default Markdown
+    </Text>
+  </Text>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "red",
+        "fontSize": 15,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "red",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      red Markdown
+    </Text>
+  </Text>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "blue",
+        "fontSize": 15,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "blue",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      blue Markdown
+    </Text>
+  </Text>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#E3E3E3",
+        "fontSize": 15,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#E3E3E3",
+            "fontSize": 15,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      #E3E3E3 Markdown
+    </Text>
+  </Text>
+</View>
+`;
+
+exports[`Storyshots Atoms/Message/CardMessage Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 14,
+            "overflow": "hidden",
+            "paddingBottom": 14,
+            "paddingLeft": 14,
+            "paddingRight": 14,
+            "paddingTop": 14,
+            "shadowColor": "rgba(0,0,0,0.1)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+            "width": 487.5,
+          },
+        ]
+      }
+    >
+      <Text
+        size={5}
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontFamily": "NotoSansKR-Medium",
+              "fontSize": 18,
+              "lineHeight": 26,
+              "textDecorationColor": "#000000",
+            },
+          ]
+        }
+      >
+        Title
+      </Text>
+      <Text
+        color="muted"
+        size="sm"
+        style={
+          Array [
+            Object {
+              "color": "#8C8C8C",
+              "flexShrink": 1,
+              "flexWrap": "wrap",
+              "fontFamily": "NotoSansKR-Regular",
+              "fontSize": 13,
+              "lineHeight": 19,
+              "textDecorationColor": "#8C8C8C",
+            },
+            Object {
+              "marginVertical": 10,
+            },
+          ]
+        }
+      >
+        Description
+      </Text>
+      <Text>
+        Footer
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Message/CounselCaseMessage Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 14,
+            "overflow": "hidden",
+            "shadowColor": "rgba(0,0,0,0.1)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+            "width": 487.5,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "position": "relative",
+            },
+          ]
+        }
+      >
+        <BVLinearGradient
+          colors={
+            Array [
+              4294309365,
+              4292467161,
+            ]
+          }
+          endPoint={
+            Object {
+              "x": 0.5,
+              "y": 1,
+            }
+          }
+          locations={null}
+          startPoint={
+            Object {
+              "x": 0.5,
+              "y": 0,
+            }
+          }
+          style={
+            Array [
+              Object {
+                "height": 72,
+                "position": "absolute",
+                "width": 72,
+                "zIndex": 1,
+              },
+              Object {
+                "height": 130,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Array [
+                Object {
+                  "height": 130,
+                  "width": "100%",
+                },
+              ],
+            ]
+          }
+        >
+          <FastImageView
+            onFastImageError={[Function]}
+            onFastImageLoad={[Function]}
+            resizeMode="cover"
+            source={
+              Object {
+                "uri": "https://picsum.photos/200/200",
+              }
+            }
+            style={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          color="muted"
+          size="xs"
+          style={
+            Array [
+              Object {
+                "color": "#8C8C8C",
+                "flexShrink": 1,
+                "flexWrap": "wrap",
+                "fontFamily": "NotoSansKR-Regular",
+                "fontSize": 11,
+                "lineHeight": 16,
+                "textDecorationColor": "#8C8C8C",
+              },
+            ]
+          }
+        >
+          닥터차 상담사례
+        </Text>
+        <Text
+          size={5}
+          style={
+            Array [
+              Object {
+                "color": "#000000",
+                "fontFamily": "NotoSansKR-Medium",
+                "fontSize": 18,
+                "lineHeight": 26,
+                "textDecorationColor": "#000000",
+              },
+            ]
+          }
+        >
+          Title
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Message/EndConfirmedMessage Default 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "flex-start",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 14,
+            "borderTopLeftRadius": 0,
+            "flexDirection": "row",
+            "maxWidth": 487.5,
+            "overflow": "hidden",
+            "paddingBottom": 6,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 6,
+            "shadowColor": "rgba(0,0,0,0.1)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+          },
+        ]
+      }
+    >
+      <Text
+        color="muted"
+        style={
+          Array [
+            Object {
+              "color": "#8C8C8C",
+              "flexShrink": 1,
+              "flexWrap": "wrap",
+              "fontFamily": "NotoSansKR-Regular",
+              "fontSize": 15,
+              "lineHeight": 22,
+              "textDecorationColor": "#8C8C8C",
+            },
+          ]
+        }
+      >
+        상담이 종료되었습니다.
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 14,
+            "overflow": "hidden",
+            "paddingBottom": 14,
+            "paddingLeft": 14,
+            "paddingRight": 14,
+            "paddingTop": 14,
+            "shadowColor": "rgba(0,0,0,0.1)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+            "width": 487.5,
+          },
+        ]
+      }
+    >
+      <Text
+        size={5}
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontFamily": "NotoSansKR-Medium",
+              "fontSize": 18,
+              "lineHeight": 26,
+              "textDecorationColor": "#000000",
+            },
+          ]
+        }
+      >
+        상담이 종료되었습니다
+      </Text>
+      <Text
+        color="muted"
+        size="sm"
+        style={
+          Array [
+            Object {
+              "color": "#8C8C8C",
+              "flexShrink": 1,
+              "flexWrap": "wrap",
+              "fontFamily": "NotoSansKR-Regular",
+              "fontSize": 13,
+              "lineHeight": 19,
+              "textDecorationColor": "#8C8C8C",
+            },
+            Object {
+              "marginVertical": 10,
+            },
+          ]
+        }
+      >
+        상담은 만족스러우셨나요?
+24시간 후에 상담이 자동 종료됩니다!
+계속 상담을 진행하시면 자동 종료는 취소됩니다.
+      </Text>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "borderColor": "#EB5757",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "opacity": 1,
+            "paddingBottom": 6,
+            "paddingLeft": 12,
+            "paddingRight": 12,
+            "paddingTop": 6,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          color="error"
+          disabled={false}
+          includeFontPadding={false}
+          size="sm"
+          style={
+            Array [
+              Object {
+                "color": "#EB5757",
+                "fontFamily": "NotoSansKR-Regular",
+                "fontSize": 13,
+                "lineHeight": 19,
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          지금 상담 종료하기
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Message/EventMessage Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 14,
+          "overflow": "hidden",
+          "shadowColor": "rgba(0,0,0,0.1)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 2,
+          "width": 487.5,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <BVLinearGradient
+        colors={
+          Array [
+            4294309365,
+            4292467161,
+          ]
+        }
+        endPoint={
+          Object {
+            "x": 0.5,
+            "y": 1,
+          }
+        }
+        locations={null}
+        startPoint={
+          Object {
+            "x": 0.5,
+            "y": 0,
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 72,
+              "position": "absolute",
+              "width": 72,
+              "zIndex": 1,
+            },
+            Object {
+              "height": 130,
+              "width": "100%",
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "overflow": "hidden",
+            },
+            Array [
+              Object {
+                "height": 130,
+                "width": "100%",
+              },
+            ],
+          ]
+        }
+      >
+        <FastImageView
+          onFastImageError={[Function]}
+          onFastImageLoad={[Function]}
+          resizeMode="cover"
+          source={
+            Object {
+              "uri": "https://picsum.photos/200/200",
+            }
+          }
+          style={
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+          },
+        ]
+      }
+    >
+      <Text
+        color="muted"
+        size="xs"
+        style={
+          Array [
+            Object {
+              "color": "#8C8C8C",
+              "flexShrink": 1,
+              "flexWrap": "wrap",
+              "fontFamily": "NotoSansKR-Regular",
+              "fontSize": 11,
+              "lineHeight": 16,
+              "textDecorationColor": "#8C8C8C",
+            },
+          ]
+        }
+      >
+        닥터차 이벤트
+      </Text>
+      <Text
+        size={5}
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontFamily": "NotoSansKR-Medium",
+              "fontSize": 18,
+              "lineHeight": 26,
+              "textDecorationColor": "#000000",
+            },
+          ]
+        }
+      >
+        Title
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Message/FeedbackMessage Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 14,
+            "overflow": "hidden",
+            "paddingBottom": 14,
+            "paddingLeft": 14,
+            "paddingRight": 14,
+            "paddingTop": 14,
+            "shadowColor": "rgba(0,0,0,0.1)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+            "width": 487.5,
+          },
+        ]
+      }
+    >
+      <Text
+        size={5}
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontFamily": "NotoSansKR-Medium",
+              "fontSize": 18,
+              "lineHeight": 26,
+              "textDecorationColor": "#000000",
+            },
+          ]
+        }
+      >
+        피드백을 남겨주세요!
+      </Text>
+      <Text
+        color="muted"
+        size="sm"
+        style={
+          Array [
+            Object {
+              "color": "#8C8C8C",
+              "flexShrink": 1,
+              "flexWrap": "wrap",
+              "fontFamily": "NotoSansKR-Regular",
+              "fontSize": 13,
+              "lineHeight": 19,
+              "textDecorationColor": "#8C8C8C",
+            },
+            Object {
+              "marginVertical": 10,
+            },
+          ]
+        }
+      >
+        상담은 만족스러우셨나요?
+상담 내용에 대한 피드백을 바탕으로 더욱 발전하는 닥터차가 되겠습니다!
+      </Text>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#D9D9D9",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "opacity": 1,
+            "paddingBottom": 6,
+            "paddingLeft": 12,
+            "paddingRight": 12,
+            "paddingTop": 6,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          includeFontPadding={false}
+          size="sm"
+          style={
+            Array [
+              Object {
+                "color": "#1F1F1F",
+                "fontFamily": "NotoSansKR-Regular",
+                "fontSize": 13,
+                "lineHeight": 19,
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          피드백 남기기
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Message/ImageMessage Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "position": "relative",
+            },
+          ]
+        }
+      >
+        <BVLinearGradient
+          colors={
+            Array [
+              4294309365,
+              4292467161,
+            ]
+          }
+          endPoint={
+            Object {
+              "x": 0.5,
+              "y": 1,
+            }
+          }
+          locations={null}
+          startPoint={
+            Object {
+              "x": 0.5,
+              "y": 0,
+            }
+          }
+          style={
+            Array [
+              Object {
+                "height": 72,
+                "position": "absolute",
+                "width": 72,
+                "zIndex": 1,
+              },
+              Object {
+                "borderRadius": 14,
+                "overflow": "hidden",
+              },
+              Object {
+                "height": 487.5,
+                "width": 487.5,
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Array [
+                Object {
+                  "borderRadius": 14,
+                  "overflow": "hidden",
+                },
+                Object {
+                  "height": 487.5,
+                  "width": 487.5,
+                },
+              ],
+            ]
+          }
+        >
+          <FastImageView
+            onFastImageError={[Function]}
+            onFastImageLoad={[Function]}
+            resizeMode="cover"
+            source={
+              Object {
+                "uri": "https://picsum.photos/200/200",
+              }
+            }
+            style={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Message/OutdatedMessage Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 14,
+            "overflow": "hidden",
+            "paddingBottom": 14,
+            "paddingLeft": 14,
+            "paddingRight": 14,
+            "paddingTop": 14,
+            "shadowColor": "rgba(0,0,0,0.1)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+            "width": 487.5,
+          },
+        ]
+      }
+    >
+      <Text
+        size={5}
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontFamily": "NotoSansKR-Medium",
+              "fontSize": 18,
+              "lineHeight": 26,
+              "textDecorationColor": "#000000",
+            },
+          ]
+        }
+      >
+        상담이 자동종료될
+예정입니다
+      </Text>
+      <Text
+        color="muted"
+        size="sm"
+        style={
+          Array [
+            Object {
+              "color": "#8C8C8C",
+              "flexShrink": 1,
+              "flexWrap": "wrap",
+              "fontFamily": "NotoSansKR-Regular",
+              "fontSize": 13,
+              "lineHeight": 19,
+              "textDecorationColor": "#8C8C8C",
+            },
+            Object {
+              "marginVertical": 10,
+            },
+          ]
+        }
+      >
+        1일 동안 대화기록이 없어 24시간 뒤에 상담이 자동종료될 예정입니다.
+상담 진행을 원하시면, 채팅을 해주세요!
+      </Text>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "borderColor": "#EB5757",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "opacity": 1,
+            "paddingBottom": 6,
+            "paddingLeft": 12,
+            "paddingRight": 12,
+            "paddingTop": 6,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          color="error"
+          disabled={false}
+          includeFontPadding={false}
+          size="sm"
+          style={
+            Array [
+              Object {
+                "color": "#EB5757",
+                "fontFamily": "NotoSansKR-Regular",
+                "fontSize": 13,
+                "lineHeight": 19,
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          지금 상담 종료하기
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Message/PostMessage Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 14,
+            "overflow": "hidden",
+            "shadowColor": "rgba(0,0,0,0.1)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+            "width": 487.5,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "position": "relative",
+            },
+          ]
+        }
+      >
+        <BVLinearGradient
+          colors={
+            Array [
+              4294309365,
+              4292467161,
+            ]
+          }
+          endPoint={
+            Object {
+              "x": 0.5,
+              "y": 1,
+            }
+          }
+          locations={null}
+          startPoint={
+            Object {
+              "x": 0.5,
+              "y": 0,
+            }
+          }
+          style={
+            Array [
+              Object {
+                "height": 72,
+                "position": "absolute",
+                "width": 72,
+                "zIndex": 1,
+              },
+              Object {
+                "height": 130,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Array [
+                Object {
+                  "height": 130,
+                  "width": "100%",
+                },
+              ],
+            ]
+          }
+        >
+          <FastImageView
+            onFastImageError={[Function]}
+            onFastImageLoad={[Function]}
+            resizeMode="cover"
+            source={
+              Object {
+                "uri": "https://picsum.photos/200/200",
+              }
+            }
+            style={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          color="muted"
+          size="xs"
+          style={
+            Array [
+              Object {
+                "color": "#8C8C8C",
+                "flexShrink": 1,
+                "flexWrap": "wrap",
+                "fontFamily": "NotoSansKR-Regular",
+                "fontSize": 11,
+                "lineHeight": 16,
+                "textDecorationColor": "#8C8C8C",
+              },
+            ]
+          }
+        >
+          닥터차 포스트
+        </Text>
+        <Text
+          size={5}
+          style={
+            Array [
+              Object {
+                "color": "#000000",
+                "fontFamily": "NotoSansKR-Medium",
+                "fontSize": 18,
+                "lineHeight": 26,
+                "textDecorationColor": "#000000",
+              },
+            ]
+          }
+        >
+          Title New Line Title
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Message/ReviewMessage Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 14,
+            "overflow": "hidden",
+            "paddingBottom": 14,
+            "paddingLeft": 14,
+            "paddingRight": 14,
+            "paddingTop": 14,
+            "shadowColor": "rgba(0,0,0,0.1)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+            "width": 487.5,
+          },
+        ]
+      }
+    >
+      <Text
+        size={5}
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontFamily": "NotoSansKR-Medium",
+              "fontSize": 18,
+              "lineHeight": 26,
+              "textDecorationColor": "#000000",
+            },
+          ]
+        }
+      >
+        리뷰를 남겨주세요!
+      </Text>
+      <Text
+        color="muted"
+        size="sm"
+        style={
+          Array [
+            Object {
+              "color": "#8C8C8C",
+              "flexShrink": 1,
+              "flexWrap": "wrap",
+              "fontFamily": "NotoSansKR-Regular",
+              "fontSize": 13,
+              "lineHeight": 19,
+              "textDecorationColor": "#8C8C8C",
+            },
+            Object {
+              "marginVertical": 10,
+            },
+          ]
+        }
+      >
+        상담은 만족스러우셨나요?
+앱스토어에 리뷰를 남겨주시면 닥터차의 발전에 큰 도움이 됩니다!
+      </Text>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#D9D9D9",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "opacity": 1,
+            "paddingBottom": 6,
+            "paddingLeft": 12,
+            "paddingRight": 12,
+            "paddingTop": 6,
+            "width": "100%",
+          }
+        }
+      >
+        <Text
+          includeFontPadding={false}
+          size="sm"
+          style={
+            Array [
+              Object {
+                "color": "#1F1F1F",
+                "fontFamily": "NotoSansKR-Regular",
+                "fontSize": 13,
+                "lineHeight": 19,
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          앱스토어 리뷰 남기기
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 14,
+            "overflow": "hidden",
+            "shadowColor": "rgba(0,0,0,0.1)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+            "width": 487.5,
+          },
+        ]
+      }
+    >
+      <AIRMap
+        handlePanDrag={false}
+        initialRegion={
+          Object {
+            "latitude": 123,
+            "latitudeDelta": 0.01,
+            "longitude": 123,
+            "longitudeDelta": 0.01,
+          }
+        }
+        onChange={[Function]}
+        onLayout={[Function]}
+        onMapReady={[Function]}
+        onMarkerPress={[Function]}
+        pitchEnabled={false}
+        region={null}
+        rotateEnabled={false}
+        scrollEnabled={false}
+        style={
+          Array [
+            Object {
+              "height": 130,
+              "width": "100%",
+            },
+          ]
+        }
+        zoomEnabled={false}
+      >
+        <AIRMapMarker
+          coordinate={
+            Object {
+              "latitude": 123,
+              "longitude": 123,
+            }
+          }
+          description="Seoul, South Korea"
+          onPress={[Function]}
+          stopPropagation={false}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "position": "absolute",
+              },
+              undefined,
+            ]
+          }
+          title="Name"
+        />
+      </AIRMap>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          size={5}
+          style={
+            Array [
+              Object {
+                "color": "#000000",
+                "fontFamily": "NotoSansKR-Medium",
+                "fontSize": 18,
+                "lineHeight": 26,
+                "textDecorationColor": "#000000",
+              },
+            ]
+          }
+        >
+          Name
+        </Text>
+        <Text
+          color="muted"
+          size="sm"
+          style={
+            Array [
+              Object {
+                "color": "#8C8C8C",
+                "flexShrink": 1,
+                "flexWrap": "wrap",
+                "fontFamily": "NotoSansKR-Regular",
+                "fontSize": 13,
+                "lineHeight": 19,
+                "textDecorationColor": "#8C8C8C",
+              },
+            ]
+          }
+        >
+          Seoul, South Korea
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+                "marginTop": 6,
+              },
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "borderColor": "#D9D9D9",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "flexBasis": 0,
+                "flexDirection": "row",
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "justifyContent": "center",
+                "marginRight": 4,
+                "opacity": 1,
+                "paddingBottom": 6,
+                "paddingLeft": 12,
+                "paddingRight": 12,
+                "paddingTop": 6,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "testUri": "../../../src/assets/icons/shop/shop.png",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "tintColor": undefined,
+                  },
+                  Object {
+                    "marginRight": 2,
+                  },
+                ]
+              }
+            />
+            <Text
+              size="sm"
+              style={
+                Array [
+                  Object {
+                    "color": "#1F1F1F",
+                    "flexShrink": 1,
+                    "flexWrap": "wrap",
+                    "fontFamily": "NotoSansKR-Regular",
+                    "fontSize": 13,
+                    "lineHeight": 19,
+                    "textDecorationColor": "#1F1F1F",
+                  },
+                ]
+              }
+            >
+              상세 정보
+            </Text>
+          </View>
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "borderColor": "#D9D9D9",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "flexBasis": 0,
+                "flexDirection": "row",
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "justifyContent": "center",
+                "opacity": 1,
+                "paddingBottom": 6,
+                "paddingLeft": 12,
+                "paddingRight": 12,
+                "paddingTop": 6,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "testUri": "../../../src/assets/icons/map/map.png",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "tintColor": undefined,
+                  },
+                  Object {
+                    "marginRight": 2,
+                  },
+                ]
+              }
+            />
+            <Text
+              size="sm"
+              style={
+                Array [
+                  Object {
+                    "color": "#1F1F1F",
+                    "flexShrink": 1,
+                    "flexWrap": "wrap",
+                    "fontFamily": "NotoSansKR-Regular",
+                    "fontSize": 13,
+                    "lineHeight": 19,
+                    "textDecorationColor": "#1F1F1F",
+                  },
+                ]
+              }
+            >
+              길찾기
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Message/TextMessage Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#006CE0",
+            "borderRadius": 14,
+            "borderTopRightRadius": 0,
+            "flexDirection": "row",
+            "maxWidth": 487.5,
+            "overflow": "hidden",
+            "paddingBottom": 6,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 6,
+            "shadowColor": "rgba(0,0,0,0.1)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+          },
+        ]
+      }
+    >
+      <Text
+        selectable={true}
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontSize": 15,
+            "lineHeight": 22,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 15,
+                "lineHeight": 22,
+              },
+              undefined,
+            ]
+          }
+        >
+          Text
+        </Text>
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Message/UnhandledMessage Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#006CE0",
+            "borderRadius": 14,
+            "borderTopRightRadius": 0,
+            "flexDirection": "row",
+            "maxWidth": 487.5,
+            "overflow": "hidden",
+            "paddingBottom": 6,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 6,
+            "shadowColor": "rgba(0,0,0,0.1)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+          },
+        ]
+      }
+    >
+      <Text
+        color="primaryExtraLight"
+        size="sm"
+        style={
+          Array [
+            Object {
+              "color": "#E6F6FF",
+              "flexShrink": 1,
+              "flexWrap": "wrap",
+              "fontFamily": "NotoSansKR-Regular",
+              "fontSize": 13,
+              "lineHeight": 19,
+              "textDecorationColor": "#E6F6FF",
+            },
+          ]
+        }
+      >
+        지원하지 않는 형태의 메세지입니다.
+        
+
+        앱을 최신 버전으로 업데이트 해주세요!
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`Storyshots Atoms/ProgressiveImage Fail 1`] = `
 <View
   style={
@@ -2710,7 +5168,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block label selected
     </Text>
@@ -2756,7 +5214,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block label unselected
     </Text>
@@ -2803,7 +5261,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block label disabled
     </Text>
@@ -2850,7 +5308,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block small label selected
     </Text>
@@ -2897,7 +5355,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block small label unselected
     </Text>
@@ -2945,7 +5403,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block small label disabled
     </Text>
@@ -3012,7 +5470,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block label selected
     </Text>
@@ -3029,7 +5487,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block sublabel selected
     </Text>
@@ -3075,7 +5533,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block label unselected
     </Text>
@@ -3092,7 +5550,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block sublabel unselected
     </Text>
@@ -3139,7 +5597,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block label disabled
     </Text>
@@ -3157,7 +5615,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block sublabel disabled
     </Text>
@@ -3204,7 +5662,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block small label selected
     </Text>
@@ -3222,7 +5680,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block small sublabel selected
     </Text>
@@ -3269,7 +5727,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block small label unselected
     </Text>
@@ -3287,7 +5745,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block small sublabel unselected
     </Text>
@@ -3335,7 +5793,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block small label disabled
     </Text>
@@ -3354,7 +5812,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Block small sublabel disabled
     </Text>
@@ -3423,7 +5881,7 @@ exports[`Storyshots Atoms/SelectOption Inline 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Inline label selected
     </Text>
@@ -3471,7 +5929,7 @@ exports[`Storyshots Atoms/SelectOption Inline 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Inline label unselected
     </Text>
@@ -3520,7 +5978,7 @@ exports[`Storyshots Atoms/SelectOption Inline 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Inline label selected
     </Text>
@@ -3591,7 +6049,7 @@ exports[`Storyshots Atoms/SelectOption Playground 1`] = `
           },
         ]
       }
-      value={null}
+      value="value"
     >
       Label
     </Text>
@@ -3650,6 +6108,7 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
     >
       <TextInput
         allowFontScaling={true}
+        defaultValue="Single Line"
         editable={true}
         onChangeText={[Function]}
         placeholderTextColor="#8C8C8C"
@@ -3673,7 +6132,6 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
           ]
         }
         underlineColorAndroid="transparent"
-        value="Single Line"
       />
     </View>
   </View>
@@ -3708,6 +6166,7 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
     >
       <TextInput
         allowFontScaling={true}
+        defaultValue="Multi Line Long Text Multi Line Long Text Multi Line Long Text Multi Line Long Text Multi Line Long Text "
         editable={true}
         multiline={true}
         numberOfLines={3}
@@ -3734,7 +6193,6 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
           ]
         }
         underlineColorAndroid="transparent"
-        value="Multi Line Long Text Multi Line Long Text Multi Line Long Text Multi Line Long Text Multi Line Long Text "
       />
     </View>
   </View>
@@ -3872,6 +6330,7 @@ exports[`Storyshots Atoms/TextInput Playground 1`] = `
     >
       <TextInput
         allowFontScaling={true}
+        defaultValue="Text Input"
         disabled={false}
         editable={true}
         multiline={false}
@@ -3901,7 +6360,6 @@ exports[`Storyshots Atoms/TextInput Playground 1`] = `
         }
         suffix={false}
         underlineColorAndroid="transparent"
-        value="Text Input"
       />
     </View>
   </View>
@@ -3959,6 +6417,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
     >
       <TextInput
         allowFontScaling={true}
+        defaultValue="Example Text"
         editable={true}
         onChangeText={[Function]}
         placeholderTextColor="#8C8C8C"
@@ -3982,7 +6441,6 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
           ]
         }
         underlineColorAndroid="transparent"
-        value="Example Text"
       />
     </View>
   </View>
@@ -4020,6 +6478,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
     >
       <TextInput
         allowFontScaling={true}
+        defaultValue="Example Text"
         editable={true}
         onChangeText={[Function]}
         placeholderTextColor="#8C8C8C"
@@ -4044,7 +6503,6 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
           ]
         }
         underlineColorAndroid="transparent"
-        value="Example Text"
       />
       <View
         accessible={true}
@@ -4122,6 +6580,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
     >
       <TextInput
         allowFontScaling={true}
+        defaultValue="Example Text"
         disabled={true}
         editable={false}
         onChangeText={[Function]}
@@ -4147,7 +6606,6 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
           ]
         }
         underlineColorAndroid="transparent"
-        value="Example Text"
       />
       <View
         accessible={true}
@@ -4252,6 +6710,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
     >
       <TextInput
         allowFontScaling={true}
+        defaultValue="Text Input with Suffix"
         editable={true}
         onChangeText={[Function]}
         placeholderTextColor="#8C8C8C"
@@ -4280,7 +6739,6 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
           </Text>
         }
         underlineColorAndroid="transparent"
-        value="Text Input with Suffix"
       />
     </View>
     <View
@@ -4360,6 +6818,7 @@ exports[`Storyshots Atoms/TextInput Type 1`] = `
     >
       <TextInput
         allowFontScaling={true}
+        defaultValue="Default Text Input"
         editable={true}
         onChangeText={[Function]}
         placeholderTextColor="#8C8C8C"
@@ -4384,7 +6843,6 @@ exports[`Storyshots Atoms/TextInput Type 1`] = `
         }
         type="default"
         underlineColorAndroid="transparent"
-        value="Default Text Input"
       />
     </View>
   </View>

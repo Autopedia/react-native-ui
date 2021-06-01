@@ -14,7 +14,7 @@ import {
   FeedbackMessage,
   ReviewMessage,
   EndMessage,
-  OutDatedMessage,
+  OutdatedMessage,
   UnhandledMessage,
 } from './Templates';
 
@@ -35,36 +35,27 @@ const getMessage = (props: MessageProps): React.ReactNode => {
     case 'endconfirmed':
       return <EndConfirmedMessage {...props} />;
 
-    /* Mine only message */
+    /* Others only message */
     case 'end':
-      if (props.mine) break;
       return <EndMessage {...props} />;
     case 'outdated':
-      if (props.mine) break;
-      return <OutDatedMessage {...props} />;
+      return <OutdatedMessage {...props} />;
     case 'feedback':
-      if (props.mine) break;
       return <FeedbackMessage {...props} />;
     case 'review':
-      if (props.mine) break;
       return <ReviewMessage {...props} />;
 
-    /* Others only message */
+    /* Mine only message */
     case 'event':
-      if (!props.mine) break;
       return <EventMessage {...props} />;
     case 'post':
-      if (!props.mine) break;
       return <PostMessage {...props} />;
     case 'counsel':
-      if (!props.mine) break;
       return <CounselCaseMessage {...props} />;
 
-    default:
-      break;
+    // default:
+    //   return <UnhandledMessage mine={props.mine} />;
   }
-
-  return <UnhandledMessage mine={props.mine} />;
 };
 
 const SMessage = styled.View`

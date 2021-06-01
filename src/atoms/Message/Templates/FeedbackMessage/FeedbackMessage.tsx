@@ -18,18 +18,18 @@ const FeedbackMessage: React.FC<FeedbackMessageProps> = ({ link }) => {
     }
   };
 
-  const props = {
-    title: '피드백을 남겨주세요!',
-    description:
-      '상담은 만족스러우셨나요?\n상담 내용에 대한 피드백을 바탕으로 더욱 발전하는 닥터차가 되겠습니다!',
-    footer: (
-      <Button layout="block" size="sm" onPress={openFeedback}>
-        피드백 남기기
-      </Button>
-    ),
-  };
+  const title = '피드백을 남겨주세요!';
+  const description =
+    '상담은 만족스러우셨나요?\n상담 내용에 대한 피드백을 바탕으로 더욱 발전하는 닥터차가 되겠습니다!';
+  const footer = (
+    <Button layout="block" size="sm" onPress={openFeedback}>
+      피드백 남기기
+    </Button>
+  );
 
-  return <CardMessage {...props} />;
+  return (
+    <CardMessage title={title} description={description} footer={footer} />
+  );
 };
 
 export default FeedbackMessage;

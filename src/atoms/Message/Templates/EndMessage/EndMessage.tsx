@@ -18,24 +18,24 @@ const EndMessage: React.FC<EndMessageProps> = ({ onPressFinish, disabled }) => {
     ]);
   };
 
-  const endMessageProps = {
-    title: '상담이 종료되었습니다',
-    description:
-      '상담은 만족스러우셨나요?\n24시간 후에 상담이 자동 종료됩니다!\n계속 상담을 진행하시면 자동 종료는 취소됩니다.',
-    footer: (
-      <Button
-        layout="block"
-        size="sm"
-        color="error"
-        disabled={disabled}
-        onPress={finishChat}
-      >
-        지금 상담 종료하기
-      </Button>
-    ),
-  };
+  const title = '상담이 종료되었습니다';
+  const description =
+    '상담은 만족스러우셨나요?\n24시간 후에 상담이 자동 종료됩니다!\n계속 상담을 진행하시면 자동 종료는 취소됩니다.';
+  const footer = (
+    <Button
+      layout="block"
+      size="sm"
+      color="error"
+      disabled={disabled}
+      onPress={finishChat}
+    >
+      지금 상담 종료하기
+    </Button>
+  );
 
-  return <CardMessage {...endMessageProps} />;
+  return (
+    <CardMessage title={title} description={description} footer={footer} />
+  );
 };
 
 export default EndMessage;

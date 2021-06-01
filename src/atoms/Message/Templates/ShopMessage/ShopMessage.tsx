@@ -3,14 +3,11 @@ import { LatLng, Marker, Region } from 'react-native-maps';
 import Typography from '@atoms/Typography';
 import { Spacing } from '@styles';
 import { ShopMessageProps } from '../../Message.types';
-import {
-  SShop,
-  SMap,
-  SShopInfo,
-  SShopButtons,
-  SShopButton,
-  SShopButtonIcon,
-} from '../../Message.styles';
+import { MAX_WIDTH } from '../../Message.styles';
+import styled from 'styled-components/native';
+import Button from '@atoms/Button';
+import Icon from '@atoms/Icon';
+import MapView from 'react-native-maps';
 
 const ShopMessage: React.FC<ShopMessageProps> = ({
   name,
@@ -64,5 +61,46 @@ const ShopMessage: React.FC<ShopMessageProps> = ({
     </SShop>
   );
 };
+
+const SShop = styled.View`
+  ${props => props.theme.base.message}
+  ${props => `
+    width: ${MAX_WIDTH}px;
+    background-color: ${props.theme.colors.WHITE};
+  `}
+`;
+
+const SShopInfo = styled.View`
+  ${props => `
+    background-color: ${props.theme.colors.WHITE};
+    padding: ${props.theme.spacing.SPACE_10};
+  `}
+`;
+const SShopButtons = styled.View`
+  flex-direction: row;
+  ${props => `
+    margin-top: ${props.theme.spacing.SPACE_6};
+  `}
+`;
+
+const SShopButton = styled(Button)`
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+
+const SShopButtonIcon = styled(Icon)`
+  ${props => `
+    margin-right: ${props.theme.spacing.SPACE_2};
+  `}
+`;
+
+const SMap = styled(MapView)`
+  ${props => `
+    width: 100%;
+    height: ${props.theme.spacing.SPACE_130};
+  `}
+`;
 
 export default ShopMessage;

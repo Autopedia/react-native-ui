@@ -14,7 +14,7 @@ storiesOf('Atoms/Message/PostMessage', module)
     return (
       <PostMessage
         type="post"
-        title={text('title', 'Title')}
+        title={text('title', 'Title\nNew Line Title')}
         thumbnailUrl={text('thumbnailUrl', 'https://picsum.photos/200/200')}
       />
     );
