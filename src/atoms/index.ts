@@ -10,6 +10,7 @@ import ProgressiveImage from './ProgressiveImage';
 import LoadingOverlay from './LoadingOverlay';
 import FormLabel from './FormLabel';
 import Markdown from './Markdown';
+import Message from './Message';
 
 export {
   Button,
@@ -24,4 +25,5 @@ export {
   LoadingOverlay,
   FormLabel,
   Markdown,
+  Message,
 };

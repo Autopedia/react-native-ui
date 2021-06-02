@@ -1,50 +1,15 @@
 import React from 'react';
-import { GestureResponderEvent, TextStyle, ViewStyle } from 'react-native';
 import styled from 'styled-components/native';
 import {
-  ButtonColor,
-  ButtonIconPosition,
-  ButtonLayout,
   ButtonSize,
-  ButtonType,
+  ButtonProps,
+  SButtonTextProps,
+  SIconProps,
 } from '@atoms/Button/Button.types';
 
 import Icon from '@atoms/Icon';
 
 import lodash from 'lodash';
-
-interface ButtonProps {
-  /**
-   * layout (default : inline)
-   * @inline    button width determined by the inner text
-   * @block     button expands to maximum length possible
-   * @sticky    button expands to maximum length and fixed at the bottom
-   */
-  layout?: ButtonLayout;
-
-  type?: ButtonType;
-  size?: ButtonSize;
-  color?: ButtonColor;
-  loading?: boolean;
-  disabled?: boolean;
-
-  icon?: any;
-  iconPosition?: ButtonIconPosition;
-
-  /**
-   * absoluteIcon (default: false)
-   * !!NOT compatible with DEFAULT layout button!!
-   * @true    position of the icon fixed to one side of the button (corresponding to iconPosition)
-   */
-  absoluteIcon?: boolean;
-  style?: ViewStyle;
-  onPress: (event: GestureResponderEvent) => void;
-}
-
-type SButtonTextProps = TextStyle &
-  Pick<ButtonProps, 'type' | 'size' | 'color' | 'disabled'>;
-
-type SIconProps = Pick<ButtonProps, 'size' | 'iconPosition' | 'absoluteIcon'>;
 
 const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
   const buttonTextProps = lodash.pick(props, [

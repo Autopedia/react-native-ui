@@ -1,2 +1,4 @@
 import initStoryshots from '@storybook/addon-storyshots';
-initStoryshots({});
+initStoryshots({
+  storyKindRegex: /^((?!.*VideoMessage.*).)*$/gm,
+});

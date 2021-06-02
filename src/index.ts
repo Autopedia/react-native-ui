@@ -1,4 +1,5 @@
-import './styles/styled';
+import './styles/styled.d';
+
 import {
   Button,
   Checkbox,
@@ -11,6 +12,7 @@ import {
   LoadingOverlay,
   FormLabel,
   Markdown,
+  Message,
 } from './atoms';
 
 export {
@@ -25,4 +27,5 @@ export {
   LoadingOverlay,
   FormLabel,
   Markdown,
+  Message,
 };

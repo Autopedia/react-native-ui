@@ -10,3 +10,4 @@ import '@atoms/Icon/Icon.stories';
 import '@atoms/LoadingOverlay/LoadingOverlay.stories';
 import '@atoms/FormLabel/FormLabel.stories';
 import '@atoms/Markdown/Markdown.stories';
+import '@atoms/Message/Message.stories';
