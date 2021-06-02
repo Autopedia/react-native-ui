@@ -14,7 +14,7 @@ storiesOf('Atoms/Message/VideoMessage', module)
     return (
       <VideoMessage
         type="video"
-        url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+        url="https://image.doctor-cha.com/extra/sample.mp4"
         width={number('width', 200)}
         height={number('height', 200)}
         duration={number('duration', 30)}
