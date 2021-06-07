@@ -11,6 +11,7 @@ import LoadingOverlay from './LoadingOverlay';
 import FormLabel from './FormLabel';
 import Markdown from './Markdown';
 import Message from './Message';
+import Sign from './Sign';
 
 export {
   Button,
@@ -26,4 +27,5 @@ export {
   FormLabel,
   Markdown,
   Message,
+  Sign,
 };
