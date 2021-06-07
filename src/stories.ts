@@ -11,4 +11,5 @@ import '@atoms/LoadingOverlay/LoadingOverlay.stories';
 import '@atoms/FormLabel/FormLabel.stories';
 import '@atoms/Markdown/Markdown.stories';
 import '@atoms/Message/Message.stories';
+import '@atoms/Switch/Switch.stories';
 import '@atoms/Sign/Sign.stories';

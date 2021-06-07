@@ -11,6 +11,7 @@ import LoadingOverlay from './LoadingOverlay';
 import FormLabel from './FormLabel';
 import Markdown from './Markdown';
 import Message from './Message';
+import Switch from './Switch';
 import Sign from './Sign';
 
 export {
@@ -27,5 +28,6 @@ export {
   FormLabel,
   Markdown,
   Message,
+  Switch,
   Sign,
 };
