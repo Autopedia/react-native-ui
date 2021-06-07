@@ -7,36 +7,41 @@ import {
   ViewStyle,
 } from 'react-native';
 
-// eslint-disable-next-line prettier/prettier
-const Switch: React.FC<Omit<SwitchProps, 'thumbColor' | 'trackColor'>> =
-  props => {
-    const [value, setValue] = useState<boolean>(props.value || false);
+interface ISwitchProps {
+  value?: boolean;
+  defaultValue?: boolean;
+  disabled?: boolean;
+  onValueChange?: (value: boolean) => void;
+}
 
-    const onValueChange = (newValue: boolean) => {
-      if (props.disabled) return;
-      if (props.onValueChange) {
-        props.onValueChange(newValue);
-      }
-      setValue(newValue);
-    };
+const Switch: React.FC<ISwitchProps> = props => {
+  const [sValue, setSValue] = useState<boolean>(props.defaultValue || false);
 
-    const style: ViewStyle | undefined =
-      Platform.OS === 'ios'
-        ? {
-            transform: [{ scaleX: 0.75 }, { scaleY: 0.75 }],
-          }
-        : undefined;
-
-    return (
-      <RNSwtich
-        value={value}
-        onValueChange={onValueChange}
-        disabled={props.disabled}
-        thumbColor={Colors.WHITE}
-        trackColor={{ true: Colors.PRIMARY, false: Colors.DISABLED }}
-        style={style}
-      />
-    );
+  const onValueChange = (newValue: boolean) => {
+    if (props.disabled) return;
+    if (props.onValueChange) {
+      props.onValueChange(newValue);
+    }
+    setSValue(newValue);
   };
+
+  const style: ViewStyle | undefined =
+    Platform.OS === 'ios'
+      ? {
+          transform: [{ scaleX: 0.75 }, { scaleY: 0.75 }],
+        }
+      : undefined;
+
+  return (
+    <RNSwtich
+      value={props.value ? props.value : sValue}
+      onValueChange={onValueChange}
+      disabled={props.disabled}
+      thumbColor={Colors.WHITE}
+      trackColor={{ true: Colors.PRIMARY, false: Colors.DISABLED }}
+      style={style}
+    />
+  );
+};
 
 export default Switch;

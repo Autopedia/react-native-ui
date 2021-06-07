@@ -10,9 +10,11 @@ storiesOf('Atoms/Switch', module)
   .addDecorator(SThemeDecorator)
   .addDecorator(CenterContainerDecorator)
   .add('Playground', () => {
+    const useValue = boolean('useValue', false);
     return (
       <Switch
-        value={boolean('value', true)}
+        value={useValue ? boolean('value', true) : undefined}
+        defaultValue={boolean('defaultValue', false)}
         disabled={boolean('disabled', false)}
         onValueChange={e => action('onValueChange')(e)}
       />
