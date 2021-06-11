@@ -1,3 +1,4 @@
 import Article from './Article';
+import Rating from './Rating';
 
-export { Article };
+export { Article, Rating };

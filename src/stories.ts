@@ -15,3 +15,4 @@ import '@atoms/Switch/Switch.stories';
 import '@atoms/Sign/Sign.stories';
 
 import '@molecules/Article/Article.stories';
+import '@molecules/Rating/Rating.stories';
