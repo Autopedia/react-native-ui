@@ -96,9 +96,7 @@ const SContainer = styled.TouchableOpacity<SContainerProps>`
         return `
           flex-direction: row;
           justify-content: center;
-          margin: 0px ${props.theme.spacing.SPACE_2};
-          ${props.first ? 'margin-left: 0px;' : ''}
-          ${props.last ? 'margin-right: 0px;' : ''}
+          margin: ${props.theme.spacing.SPACE_2};
         `;
     }
   }}
