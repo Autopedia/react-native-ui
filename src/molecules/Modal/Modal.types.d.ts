@@ -1,4 +1,4 @@
-export type ModalHandler = {
+export type ModalHandle = {
   open: () => void;
   close: () => void;
 };

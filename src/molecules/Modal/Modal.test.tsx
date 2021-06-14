@@ -7,7 +7,7 @@ import 'jest-styled-components';
 import React, { useRef } from 'react';
 import Modal from './Modal';
 import { shallow } from 'enzyme';
-import { ModalHandler } from './Modal.types';
+import { ModalHandle } from './Modal.types';
 import { Text } from 'react-native';
 
 const TestComponent: React.FC = () => {
@@ -15,7 +15,7 @@ const TestComponent: React.FC = () => {
 };
 
 const ModalWrapper: React.FC = () => {
-  const modalRef = useRef<ModalHandler>(null);
+  const modalRef = useRef<ModalHandle>(null);
 
   return (
     <Modal ref={modalRef}>

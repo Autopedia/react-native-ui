@@ -1,5 +1,5 @@
 import Typography from '@atoms/Typography';
-import { ModalHandler } from './Modal.types';
+import { ModalHandle } from './Modal.types';
 import { Spacing } from '@styles';
 import React, { useImperativeHandle } from 'react';
 import { Dimensions, Modal as RNModal } from 'react-native';
@@ -9,39 +9,37 @@ interface ModalProps {
   children?: React.ReactNode;
 }
 
-const Modal = React.forwardRef<ModalHandler, ModalProps>(
-  ({ children }, ref) => {
-    const [visible, setVisible] = React.useState(false);
+const Modal = React.forwardRef<ModalHandle, ModalProps>(({ children }, ref) => {
+  const [visible, setVisible] = React.useState(false);
 
-    useImperativeHandle(
-      ref,
-      () => ({
-        open() {
-          setVisible(true);
-        },
-        close() {
-          setVisible(false);
-        },
-      }),
-      [],
-    );
+  useImperativeHandle(
+    ref,
+    () => ({
+      open() {
+        setVisible(true);
+      },
+      close() {
+        setVisible(false);
+      },
+    }),
+    [],
+  );
 
-    return (
-      <RNModal
-        transparent
-        visible={visible}
-        onRequestClose={() => setVisible(false)}
-      >
-        <SModalBackground>
-          <SModalContainer>{children}</SModalContainer>
-          <SExit color="white" bold onPress={() => setVisible(false)}>
-            닫기
-          </SExit>
-        </SModalBackground>
-      </RNModal>
-    );
-  },
-);
+  return (
+    <RNModal
+      transparent
+      visible={visible}
+      onRequestClose={() => setVisible(false)}
+    >
+      <SModalBackground>
+        <SModalContainer>{children}</SModalContainer>
+        <SExit color="white" bold onPress={() => setVisible(false)}>
+          닫기
+        </SExit>
+      </SModalBackground>
+    </RNModal>
+  );
+});
 
 const SModalBackground = styled.View`
   position: absolute;

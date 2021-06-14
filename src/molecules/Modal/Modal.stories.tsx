@@ -4,11 +4,11 @@ import CenterContainerDecorator from '../../decorators/center-container.decorato
 import SThemeDecorator from '../../decorators/styled-components.decorator';
 import Modal from '.';
 import { Text } from 'react-native';
-import { ModalHandler } from './Modal.types';
+import { ModalHandle } from './Modal.types';
 import Button from '@atoms/Button';
 
 const ModalWrapper: React.FC = () => {
-  const modal = useRef<ModalHandler>(null);
+  const modal = useRef<ModalHandle>(null);
 
   useEffect(() => {
     modal.current?.open();
