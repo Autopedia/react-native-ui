@@ -133,6 +133,9 @@
       ],
       "@decorators/(.*)$": [
         "<rootDir>/src/decorators/$1"
+      ],
+      "@global/(.*)$": [
+        "<rootDir>/src/global/$1"
       ]
     }
   },

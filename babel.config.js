@@ -14,6 +14,7 @@ module.exports = {
           '@molecules': './src/molecules',
           '@organisms': './src/organisms',
           '@decorators': './src/decorators',
+          '@global': './src/global',
         },
       },
     ],
