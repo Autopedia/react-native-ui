@@ -7,7 +7,7 @@ import 'jest-styled-components';
 import React from 'react';
 import Select from './Select';
 import { shallow } from 'enzyme';
-import { SelectOption } from '../../atoms/SelectOption/SelectOption.types';
+import { SelectOption } from '@atoms/SelectOption/SelectOption.types';
 
 describe('[Select] Unit Test', () => {
   const dummyOptions: SelectOption<string>[] = [

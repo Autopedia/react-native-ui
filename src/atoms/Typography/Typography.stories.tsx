@@ -1,7 +1,7 @@
 import React from 'react';
 import { boolean, select, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
-import SThemeDecorator from '../../decorators/styled-components.decorator';
+import SThemeDecorator from '@decorators/styled-components.decorator';
 import {
   HeadingSize,
   ParagraphSize,
@@ -9,7 +9,7 @@ import {
 } from './Typography.types';
 
 import Typography from './Typography';
-import CenterContainerDecorator from '../../decorators/center-container.decorator';
+import CenterContainerDecorator from '@decorators/center-container.decorator';
 
 const { Heading, Paragraph } = Typography;
 

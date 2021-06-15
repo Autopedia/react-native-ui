@@ -35,8 +35,7 @@ storiesOf('Atoms/Button', module)
           layout={select('layout', layoutOptions, 'inline')}
           disabled={boolean('disabled', false)}
           icon={
-            boolean('icon', false) &&
-            require('../../assets/icons/shop/shop.png')
+            boolean('icon', false) && require('@assets/icons/shop/shop.png')
           }
           iconPosition={select('iconPosition', ['left', 'right'], 'left')}
           absoluteIcon={boolean('absoluteIcon', false)}
@@ -226,14 +225,14 @@ storiesOf('Atoms/Button', module)
     return (
       <>
         <Button
-          icon={require('../../assets/icons/shop/shop.png')}
+          icon={require('@assets/icons/shop/shop.png')}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Icon Left
         </Button>
         <Button
-          icon={require('../../assets/icons/shop/shop.png')}
+          icon={require('@assets/icons/shop/shop.png')}
           iconPosition="right"
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
@@ -242,7 +241,7 @@ storiesOf('Atoms/Button', module)
         </Button>
         <Button
           layout="block"
-          icon={require('../../assets/icons/shop/shop.png')}
+          icon={require('@assets/icons/shop/shop.png')}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
@@ -250,7 +249,7 @@ storiesOf('Atoms/Button', module)
         </Button>
         <Button
           layout="block"
-          icon={require('../../assets/icons/shop/shop.png')}
+          icon={require('@assets/icons/shop/shop.png')}
           iconPosition="right"
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
@@ -265,7 +264,7 @@ storiesOf('Atoms/Button', module)
       <>
         <Button
           layout="block"
-          icon={require('../../assets/icons/shop/shop.png')}
+          icon={require('@assets/icons/shop/shop.png')}
           absoluteIcon
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
@@ -274,7 +273,7 @@ storiesOf('Atoms/Button', module)
         </Button>
         <Button
           layout="block"
-          icon={require('../../assets/icons/shop/shop.png')}
+          icon={require('@assets/icons/shop/shop.png')}
           iconPosition="right"
           absoluteIcon
           onPress={e => action('onPress')(e.nativeEvent)}

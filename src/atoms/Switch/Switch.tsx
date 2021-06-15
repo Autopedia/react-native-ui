@@ -1,29 +1,34 @@
 import { Colors } from '@styles';
-import React, { useState } from 'react';
-import {
-  Platform,
-  Switch as RNSwtich,
-  SwitchProps,
-  ViewStyle,
-} from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { Platform, Switch as RNSwtich, ViewStyle } from 'react-native';
 
 interface ISwitchProps {
-  value?: boolean;
+  value?: boolean | undefined;
   defaultValue?: boolean;
   disabled?: boolean;
   onValueChange?: (value: boolean) => void;
 }
 
 const Switch: React.FC<ISwitchProps> = props => {
-  const [sValue, setSValue] = useState<boolean>(props.defaultValue || false);
+  const [innerValue, setInnerValue] = useState<boolean>(
+    props.defaultValue || false,
+  );
+
+  const switchValue = props.value || innerValue;
 
   const onValueChange = (newValue: boolean) => {
     if (props.disabled) return;
     if (props.onValueChange) {
       props.onValueChange(newValue);
     }
-    setSValue(newValue);
+    setInnerValue(newValue);
   };
+
+  useEffect(() => {
+    if (props.defaultValue !== undefined) {
+      setInnerValue(props.defaultValue);
+    }
+  }, [props.defaultValue]);
 
   const style: ViewStyle | undefined =
     Platform.OS === 'ios'
@@ -34,9 +39,9 @@ const Switch: React.FC<ISwitchProps> = props => {
 
   return (
     <RNSwtich
-      value={props.value ? props.value : sValue}
+      value={switchValue}
       onValueChange={onValueChange}
-      disabled={props.disabled}
+      disabled={props.disabled || false}
       thumbColor={Colors.WHITE}
       trackColor={{ true: Colors.PRIMARY, false: Colors.DISABLED }}
       style={style}

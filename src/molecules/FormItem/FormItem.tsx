@@ -1,6 +1,7 @@
 import Typography from '@atoms/Typography';
 import FormLabel from '@atoms/FormLabel';
-import { BaseInputElement, IterableProps } from './FormItem.types';
+import { IterableProps } from '@global/types';
+import { BaseInputElement } from '@global/types';
 import { Fonts, Spacing } from '@styles';
 import lodash from 'lodash';
 import React from 'react';
@@ -9,7 +10,7 @@ import { Animated } from 'react-native';
 import styled from 'styled-components/native';
 
 interface FormItemProps<V> extends IterableProps {
-  children: BaseInputElement<V>;
+  children: BaseInputElement<V | null>;
   name: string;
   label?: string;
   rules?: RegisterOptions;

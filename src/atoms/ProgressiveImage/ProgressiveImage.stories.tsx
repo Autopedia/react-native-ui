@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react-native';
-import CenterContainerDecorator from '../../decorators/center-container.decorator';
-import SThemeDecorator from '../../decorators/styled-components.decorator';
+import CenterContainerDecorator from '@decorators/center-container.decorator';
+import SThemeDecorator from '@decorators/styled-components.decorator';
 import ProgressiveImage from './ProgressiveImage';
 import { action } from '@storybook/addon-actions';
 

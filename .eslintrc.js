@@ -20,6 +20,7 @@ module.exports = {
           '@atoms': './src/atoms',
           '@molecules': './src/molecules',
           '@organisms': './src/organisms',
+          '@global': './src/global',
         },
       },
     },
