@@ -26,11 +26,12 @@ describe('[Select] Unit Test', () => {
       <Select options={dummyOptions} onChange={onChangeMock} />,
     );
 
-    const selectOption = select.find('SelectOption').at(1);
+    const selectOption = select.find('SelectOption').at(1).dive();
 
     selectOption.simulate('press');
 
     expect(onChangeMock).toHaveBeenCalledTimes(1);
+    expect(onChangeMock).toHaveBeenCalledWith(dummyOptions[1].value);
   });
 
   it('should not fire onChange event when disabled', () => {

@@ -23,7 +23,7 @@ interface SContainerProps {
 
 const Select = <V extends React.Key>(props: SelectProps<V>) => {
   const [innerValue, setInnerValue] = useState<V>(
-    props.defaultValue || props.options[0].value,
+    props.defaultValue || props.options[0]?.value,
   );
 
   const selectValue = props.value || innerValue;

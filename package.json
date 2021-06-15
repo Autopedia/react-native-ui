@@ -29,7 +29,6 @@
   },
   "dependencies": {
     "@react-navigation/native": "^5.9.4",
-    "cuid": "^2.1.8",
     "lodash": "^4.17.21",
     "react": "17.0.1",
     "react-native": "0.64.0",

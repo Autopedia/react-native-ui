@@ -41,6 +41,14 @@ storiesOf('Molecules/Select', module)
       />
     );
   })
+  .add('Options', () => {
+    return (
+      <>
+        <Select options={[]} layout="inline" />
+        <Select options={dummyOptions} layout="inline" />
+      </>
+    );
+  })
   .add('Layout', () => {
     return (
       <>
