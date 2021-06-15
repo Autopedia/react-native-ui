@@ -6228,6 +6228,7 @@ exports[`Storyshots Atoms/Switch Value 1`] = `
 >
   <RCTSwitch
     accessibilityRole="switch"
+    disabled={false}
     onChange={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
@@ -6256,6 +6257,7 @@ exports[`Storyshots Atoms/Switch Value 1`] = `
   />
   <RCTSwitch
     accessibilityRole="switch"
+    disabled={false}
     onChange={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
@@ -6341,6 +6343,7 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
         onChangeText={[Function]}
         placeholderTextColor="#8C8C8C"
         rejectResponderTermination={true}
+        secureTextEntry={false}
         style={
           Array [
             Object {
@@ -6401,6 +6404,7 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
         onChangeText={[Function]}
         placeholderTextColor="#8C8C8C"
         rejectResponderTermination={true}
+        secureTextEntry={false}
         style={
           Array [
             Object {
@@ -6481,6 +6485,7 @@ exports[`Storyshots Atoms/TextInput Placeholder 1`] = `
         placeholder="Placeholder"
         placeholderTextColor="#8C8C8C"
         rejectResponderTermination={true}
+        secureTextEntry={false}
         style={
           Array [
             Object {
@@ -6650,6 +6655,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
         onChangeText={[Function]}
         placeholderTextColor="#8C8C8C"
         rejectResponderTermination={true}
+        secureTextEntry={false}
         style={
           Array [
             Object {
@@ -6758,6 +6764,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
         }
       >
         <Image
+          disabled={false}
           source={
             Object {
               "testUri": "../../../src/assets/icons/eye/eye-opened.png",
@@ -6943,6 +6950,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
         onChangeText={[Function]}
         placeholderTextColor="#8C8C8C"
         rejectResponderTermination={true}
+        secureTextEntry={false}
         style={
           Array [
             Object {
@@ -7051,6 +7059,7 @@ exports[`Storyshots Atoms/TextInput Type 1`] = `
         onChangeText={[Function]}
         placeholderTextColor="#8C8C8C"
         rejectResponderTermination={true}
+        secureTextEntry={false}
         style={
           Array [
             Object {
@@ -7974,6 +7983,7 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
           onChangeText={[Function]}
           placeholderTextColor="#8C8C8C"
           rejectResponderTermination={true}
+          secureTextEntry={false}
           style={
             Array [
               Object {
@@ -8071,8 +8081,8 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "backgroundColor": "#E6F6FF",
-            "borderColor": "#2997FF",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#D9D9D9",
             "borderRadius": 4,
             "borderWidth": 1,
             "flexDirection": "row",
@@ -8093,11 +8103,11 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
           first={true}
           last={false}
           layout="inline"
-          selected={true}
+          selected={false}
           style={
             Array [
               Object {
-                "color": "#007AFF",
+                "color": "#1F1F1F",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 15,
                 "lineHeight": 22,
@@ -12787,8 +12797,8 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#E6F6FF",
-          "borderColor": "#2997FF",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#D9D9D9",
           "borderRadius": 4,
           "borderWidth": 1,
           "flexDirection": "row",
@@ -12809,11 +12819,11 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
         first={true}
         last={false}
         layout="inline"
-        selected={true}
+        selected={false}
         style={
           Array [
             Object {
-              "color": "#007AFF",
+              "color": "#1F1F1F",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 15,
               "lineHeight": 22,
@@ -12951,8 +12961,8 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#E6F6FF",
-          "borderColor": "#2997FF",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#D9D9D9",
           "borderRadius": 4,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -12971,11 +12981,11 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
         first={true}
         last={false}
         layout="block"
-        selected={true}
+        selected={false}
         style={
           Array [
             Object {
-              "color": "#007AFF",
+              "color": "#1F1F1F",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 18,
               "lineHeight": 26,
@@ -13158,8 +13168,8 @@ exports[`Storyshots Molecules/Select Options 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#E6F6FF",
-          "borderColor": "#2997FF",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#D9D9D9",
           "borderRadius": 4,
           "borderWidth": 1,
           "flexDirection": "row",
@@ -13180,11 +13190,11 @@ exports[`Storyshots Molecules/Select Options 1`] = `
         first={true}
         last={false}
         layout="inline"
-        selected={true}
+        selected={false}
         style={
           Array [
             Object {
-              "color": "#007AFF",
+              "color": "#1F1F1F",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 15,
               "lineHeight": 22,
@@ -13538,8 +13548,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#E6F6FF",
-          "borderColor": "#2997FF",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#D9D9D9",
           "borderRadius": 4,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -13558,12 +13568,12 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         first={true}
         last={false}
         layout="block"
-        selected={true}
+        selected={false}
         size="sm"
         style={
           Array [
             Object {
-              "color": "#007AFF",
+              "color": "#1F1F1F",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 15,
               "lineHeight": 22,
@@ -13719,8 +13729,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#E6F6FF",
-          "borderColor": "#2997FF",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#D9D9D9",
           "borderRadius": 4,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -13739,12 +13749,12 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         first={true}
         last={false}
         layout="block"
-        selected={true}
+        selected={false}
         size="md"
         style={
           Array [
             Object {
-              "color": "#007AFF",
+              "color": "#1F1F1F",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 18,
               "lineHeight": 26,
@@ -13900,8 +13910,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#E6F6FF",
-          "borderColor": "#2997FF",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#D9D9D9",
           "borderRadius": 4,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -13920,12 +13930,12 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         first={true}
         last={false}
         layout="block"
-        selected={true}
+        selected={false}
         size="lg"
         style={
           Array [
             Object {
-              "color": "#007AFF",
+              "color": "#1F1F1F",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 18,
               "lineHeight": 26,
