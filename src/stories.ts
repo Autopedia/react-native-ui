@@ -18,3 +18,4 @@ import '@molecules/Article/Article.stories';
 import '@molecules/ListItem/ListItem.stories';
 import '@molecules/Rating/Rating.stories';
 import '@molecules/Modal/Modal.stories';
+import '@molecules/Select/Select.stories';
