@@ -10,7 +10,7 @@ import { Animated } from 'react-native';
 import styled from 'styled-components/native';
 
 interface FormItemProps<V> extends IterableProps {
-  children: BaseInputElement<V>;
+  children: BaseInputElement<V | null>;
   name: string;
   label?: string;
   rules?: RegisterOptions;
