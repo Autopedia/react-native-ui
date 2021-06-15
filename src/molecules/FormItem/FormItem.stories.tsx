@@ -4,7 +4,6 @@ import CenterContainerDecorator from '@decorators/center-container.decorator';
 import SThemeDecorator from '@decorators/styled-components.decorator';
 import FormItem from './FormItem';
 import { Text } from 'react-native';
-import { text } from '@storybook/addon-knobs';
 import TextInput from '@atoms/TextInput';
 import Select from '@molecules/Select';
 import Checkbox from '@atoms/Checkbox';
