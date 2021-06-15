@@ -1,6 +1,10 @@
 import { storiesOf } from '@storybook/react-native';
 import React from 'react';
-import { SelectLayout, SelectOption, SelectSize } from './Select.types';
+import {
+  SelectLayout,
+  SelectOption,
+  SelectSize,
+} from '@atoms/SelectOption/SelectOption.types';
 import CenterContainerDecorator from '@decorators/center-container.decorator';
 import SThemeDecorator from '@decorators/styled-components.decorator';
 import Select from './Select';
@@ -31,11 +35,13 @@ storiesOf('Molecules/Select', module)
 
     return (
       <Select
+        {...(useFixedValue
+          ? { value: select('value', valueOptions, 'Option 1') }
+          : {})}
         options={dummyOptions}
         layout={select('layout', layoutOptions, 'inline')}
         size={select('size', sizeOptions, 'md')}
         disabled={boolean('disabled', false)}
-        value={useFixedValue ? select('value', valueOptions, 'Option 1') : null}
         defaultValue={select('defaultValue', valueOptions, 'Option 1')}
         onChange={e => action('onChange')(e)}
       />

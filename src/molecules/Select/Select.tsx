@@ -1,20 +1,22 @@
-import ASelectOption from '@atoms/SelectOption';
+import Option from '@atoms/SelectOption';
+import { BaseInputProps } from '@global/types';
 import {
-  BaseInputProps,
   SelectLayout,
   SelectOption,
   SelectSize,
-} from './Select.types';
+} from '@atoms/SelectOption/SelectOption.types';
 import lodash from 'lodash';
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components/native';
 
-interface SelectProps<V> extends BaseInputProps<V> {
+interface SelectProps<V> {
+  defaultValue?: V | null;
+  value?: V | null;
+  onChange?: (value: V | null) => void;
   options: Array<SelectOption<V>>;
   layout?: SelectLayout;
   size?: SelectSize;
   disabled?: boolean;
-  value?: V | null;
 }
 
 interface SContainerProps {
@@ -22,8 +24,8 @@ interface SContainerProps {
 }
 
 const Select = <V extends React.Key>(props: SelectProps<V>) => {
-  const [innerValue, setInnerValue] = useState<V>(
-    props.defaultValue || props.options[0]?.value,
+  const [innerValue, setInnerValue] = useState<V | null | undefined>(
+    props.defaultValue,
   );
 
   const selectValue = props.value || innerValue;
@@ -84,5 +86,5 @@ export type SelectElement<V> = React.ReactElement<
   SelectProps<V>,
   typeof Select
 >;
-export const Option = ASelectOption;
+
 export default Select;

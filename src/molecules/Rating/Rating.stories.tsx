@@ -2,8 +2,8 @@ import { action } from '@storybook/addon-actions';
 import { boolean, number, select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import React from 'react';
-import CenterContainerDecorator from '../../decorators/center-container.decorator';
-import SThemeDecorator from '../../decorators/styled-components.decorator';
+import CenterContainerDecorator from '@decorators/center-container.decorator';
+import SThemeDecorator from '@decorators/styled-components.decorator';
 import Rating from './Rating';
 import { RatingSize } from './Rating.types';
 
@@ -20,9 +20,9 @@ storiesOf('Molecules/Rating', module)
         label={boolean('label', true)}
         count={number('count', 1)}
         editable={boolean('editable', true)}
-        value={
-          useFixedValue ? number('value', 1, { max: 5, min: 0 }) : undefined
-        }
+        {...(useFixedValue
+          ? { value: number('value', 1, { max: 5, min: 0 }) }
+          : {})}
         defaultValue={number('defaultValue', 1, { max: 5, min: 0 })}
         onChange={v => action('onChange')(v)}
       />

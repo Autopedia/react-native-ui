@@ -1,7 +1,7 @@
 import { boolean } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
-import CenterContainerDecorator from '../../decorators/center-container.decorator';
-import SThemeDecorator from '../../decorators/styled-components.decorator';
+import CenterContainerDecorator from '@decorators/center-container.decorator';
+import SThemeDecorator from '@decorators/styled-components.decorator';
 import FormDivider from './FormDivider';
 import React from 'react';
 

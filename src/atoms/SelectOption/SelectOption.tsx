@@ -1,9 +1,5 @@
-import {
-  IterableProps,
-  SelectLayout,
-  SelectSize,
-  SelectOption as TSelectOption,
-} from './SelectOption.types';
+import { IterableProps } from '@global/types';
+import { SelectLayout, SelectSize } from './SelectOption.types';
 import lodash from 'lodash';
 import React from 'react';
 import styled from 'styled-components/native';

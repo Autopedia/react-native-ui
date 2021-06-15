@@ -1,4 +1,4 @@
-import { BaseInputProps } from './Checkbox.types';
+import { BaseInputProps } from '@global/types';
 import React from 'react';
 import styled from 'styled-components/native';
 

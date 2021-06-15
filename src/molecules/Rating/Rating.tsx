@@ -6,7 +6,7 @@ import lodash from 'lodash';
 import React, { useEffect, useState } from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
 import styled from 'styled-components/native';
-import { BaseInputProps } from '@atoms/TextInput/TextInput.types';
+import { BaseInputProps } from '@global/types';
 
 const TOTAL = 5;
 const OFFSET = 0.0865625;
@@ -16,7 +16,6 @@ interface IProps extends BaseInputProps<number> {
   label?: boolean;
   count?: number;
   editable?: boolean;
-  value?: number;
   style?: StyleProp<ViewStyle>;
 }
 

@@ -1,10 +1,9 @@
 import { storiesOf } from '@storybook/react-native';
-import CenterContainerDecorator from '../../decorators/center-container.decorator';
-import SThemeDecorator from '../../decorators/styled-components.decorator';
+import CenterContainerDecorator from '@decorators/center-container.decorator';
+import SThemeDecorator from '@decorators/styled-components.decorator';
 import React from 'react';
 import Markdown from './Markdown';
 import { boolean, color, text } from '@storybook/addon-knobs';
-import { Text } from 'react-native';
 
 storiesOf('Atoms/Markdown', module)
   .addDecorator(SThemeDecorator)

@@ -1,4 +1,4 @@
-import { BaseInputProps } from './TextInput.types';
+import { BaseInputProps } from '@global/types';
 import { Colors, Fonts } from '@styles';
 import { TextOnlyStyleKeys, ViewStyleKeys, pickStyle } from '@styles/utils';
 import lodash from 'lodash';
@@ -14,12 +14,12 @@ import Icon from '@atoms/Icon';
 
 export interface TextInputProps
   /**
-   * Commonly used props of BaseInputProps
+   * Commonly used props of RNTextInputProps
    * @onChangeText refers to event when user changes the text of the component
    * @keyboardType refers to the type of the keyboard shown
    *               when user pressed the component for the first time
    */
-  extends BaseInputProps<any>,
+  extends BaseInputProps<string>,
     Omit<
       RNTextInputProps,
       | 'editable'
@@ -66,7 +66,9 @@ const TextInput = (props: TextInputProps) => {
     ]),
     editable: !props.disabled,
     placeholderTextColor: Colors.MUTED,
-    secureTextEntry: props.secureTextEntry && !showText,
+    secureTextEntry: props.secureTextEntry
+      ? props.secureTextEntry && !showText
+      : false,
     style: pickStyle(props.style, TextOnlyStyleKeys),
     onChangeText: value => {
       let propValue = value;
@@ -93,7 +95,7 @@ const TextInput = (props: TextInputProps) => {
         {props.secureTextEntry && (
           <SIcon
             touchable
-            disabled={props.disabled}
+            disabled={props.disabled || false}
             onPress={() => {
               setShowText(showText => (props.disabled ? false : !showText));
             }}
