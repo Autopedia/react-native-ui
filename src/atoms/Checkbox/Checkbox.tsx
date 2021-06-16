@@ -8,8 +8,10 @@ interface CheckboxProps extends BaseInputProps<boolean> {}
 
 const Checkbox: React.FC<CheckboxProps> = props => {
   const [checked, setChecked] = React.useState<boolean>(
-    props.value || props.defaultValue || false,
+    props.defaultValue || false,
   );
+
+  const checkboxValue = props.value || checked;
 
   const onPress = () => {
     setChecked(checked => {
@@ -24,7 +26,7 @@ const Checkbox: React.FC<CheckboxProps> = props => {
     <SContainer onPress={onPress}>
       <SIcon
         source={
-          checked
+          checkboxValue
             ? require('@assets/icons/checkbox/checkbox-checked.png')
             : require('@assets/icons/checkbox/checkbox-unchecked.png')
         }
