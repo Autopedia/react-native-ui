@@ -30,10 +30,17 @@ const Select = <V extends React.Key>(props: SelectProps<V>) => {
 
   const selectValue = props.value || innerValue;
 
-  const onPress = (newValue: V) => {
-    if (props.value || props.disabled) return;
-    props.onChange?.(newValue);
-    setInnerValue(newValue);
+  const onPress = (newValue: V | null) => {
+    if (props.disabled) return;
+
+    let targetValue = newValue;
+
+    if (targetValue === selectValue) {
+      targetValue = null;
+    }
+
+    props.onChange?.(targetValue);
+    setInnerValue(targetValue);
   };
 
   const containerProps: SContainerProps = lodash.pick(props, 'layout');

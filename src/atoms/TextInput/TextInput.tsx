@@ -79,9 +79,6 @@ const TextInput = (props: TextInputProps) => {
       if (props.keyboardType && props.keyboardType === 'numeric') {
         propValue = propValue.replace(/\D/g, '');
       }
-      if (propValue.length === 0) {
-        return;
-      }
 
       props.onChange?.(propValue);
       props.onChangeText?.(propValue);
