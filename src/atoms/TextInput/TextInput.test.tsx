@@ -56,13 +56,13 @@ describe('[TextInput] Unit Test', () => {
 
     const textInput = wrapper.find('Styled(TextInput)');
 
-    textInput.simulate('changeText', TEST_TEXT);
+    textInput.simulate('changeText', MOCK_VALUE_DEFAULT + TEST_TEXT);
     expect(mockValue).toEqual(MOCK_VALUE_DEFAULT);
 
-    textInput.simulate('changeText', TEST_TEXT_NUMERIC);
-    expect(mockValue).toEqual(TEST_TEXT_NUMERIC);
+    textInput.simulate('changeText', MOCK_VALUE_DEFAULT + TEST_TEXT_NUMERIC);
+    expect(mockValue).toEqual(MOCK_VALUE_DEFAULT + TEST_TEXT_NUMERIC);
 
-    textInput.simulate('changeText', TEST_TEXT_MIXED);
-    expect(mockValue).toEqual(TEST_TEXT_NUMERIC);
+    textInput.simulate('changeText', MOCK_VALUE_DEFAULT + TEST_TEXT_MIXED);
+    expect(mockValue).toEqual(MOCK_VALUE_DEFAULT + TEST_TEXT_NUMERIC);
   });
 });
