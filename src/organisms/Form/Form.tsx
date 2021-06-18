@@ -29,7 +29,6 @@ const Form = <I extends Record<string, any>>({
       //@ts-ignore
       type V = I[typeof element.props.name];
       const child = element as FormItemElement<V>;
-
       let grandChild = child.props.children as BaseInputElement<V>;
 
       return React.cloneElement(
@@ -77,7 +76,7 @@ const Form = <I extends Record<string, any>>({
   useEffect(() => {
     fields.forEach(field => {
       form.register(field.name as Path<I>, field.rules);
-      if (defaultValues && defaultValues[field.name]) {
+      if (defaultValues?.[field.name]) {
         form.setValue(field.name as Path<I>, defaultValues[field.name], {
           shouldDirty: true,
         });
