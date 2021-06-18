@@ -76,7 +76,7 @@ describe('[Form] Unit Test', () => {
 
     const textInput = formWrapper.find('TextInput');
 
-    textInput.simulate('change', 'testValue');
+    textInput.simulate('change', TEST_VALUE);
 
     expect(form.setValue).toHaveBeenCalledTimes(1);
     expect(form.setValue).toHaveBeenCalledWith(TEST_NAME, TEST_VALUE, {
