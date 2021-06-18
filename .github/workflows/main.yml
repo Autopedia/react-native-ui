@@ -16,5 +16,6 @@ jobs:
     steps:
       - name: run test
         run: |
+          cd src
           yarn install
           yarn test
