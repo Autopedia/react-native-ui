@@ -2,21 +2,21 @@
 
 # React Native UI
 
-A React Native UI components for React Native app services of doctor-cha.
+닥터차 앱을 위한 React Native UI 컴포넌트 라이브러리 입니다.
 
-## Updates
+## 업데이트
 
 - `v1.0.0` : 2021.06.21
 
 ---
 
-## Development Guideline
+## 개발 가이드라인
 
-This guideline assumes that you can run react-native project properly(includes simulator).
+이 가이드라인은 당신이 React Native 개발 환경을 정상적으로 구동시킬 수 있다고 가정합니다.
 
-You need 3 tabs of terminal.
+총 3개의 터미널 탭이 필요합니다.
 
-On the first tab,
+첫번째 탭에 하단의 명령어를 실행하세요.
 
 ```bash
 git clone https://github.com/Autopedia/react-native-ui.git
@@ -25,42 +25,42 @@ yarn install
 yarn storybook
 ```
 
-This will open storybook UI on your default browser.
+성공적으로 실행되었다면, 브라우저에 storybook UI가 열립니다.
 
-On the second tab,
+두번째 탭에 다음과 같이 명령어를 실행하세요.
 
 ```bash
 yarn start
 ```
 
-This will start metro server.
+해당 명령어는 React Native metro 서버를 실행합니다.
 
-On the third tab,
+마지막 탭에 다음과 같이 명령어를 실행하세요.
 
 ```bash
 yarn ios #IOS
 yarn android #Android
 ```
 
-This will build the project and show storybook UI on your simulator.
+이 명령어는 프로젝트를 빌드하여 시뮬레이터에 storybook UI를 실행합니다.
 
 ---
 
-## Test Guideline
+## 테스트 가이드라인
 
-To run whole test,
+모든 테스트 코드를 실행하려면,
 
 ```bash
 yarn test
 ```
 
-To run specific test,
+특정한 테스트 코드를 실행하려면,
 
 ```bash
 yarn test path/to/test/file
 ```
 
-To update snapshot,
+테스트 스냅샷을 업데이트 하려면,
 
 ```bash
 yarn test -u
@@ -68,9 +68,8 @@ yarn test -u
 
 ---
 
-## Rules
+## 규칙
 
-- NO DIRECT COMMIT : You MUST NOT commit directly to master/develop branch. It is forbidden by rules, but keep in mind.
-- TEST AFTER IMPLEMENTATION : You need to run test everytime you implemented something. Your code should pass whole test unless you need to update the test code.
-
-**If you updated any test code, you should describe which, and why you updated the test code at Pull Request.**
+- master/develop 브랜치에 직접 커밋 금지. 반드시 다른 브랜치에 작업하시고 PR을 만들어주세요.
+- 반드시 개발 후에 테스트 해주세요. 테스트 코드를 업데이트하지 않는 한, 모든 테스트를 통과해야합니다.
+- 만일 테스트 코드를 업데이트 했다면 어떤 테스트를 수정했는지, 왜 수정했는지를 PR에 기술해주세요.
