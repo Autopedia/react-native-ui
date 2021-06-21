@@ -15,7 +15,10 @@ storiesOf('Molecules/Article', module)
       <Article
         title={text('title', 'title')}
         body={text('body', 'body')}
-        date={text('date', new Date().toISOString().substring(0, 10))}
+        date={text(
+          'date',
+          new Date('2021-06-21').toISOString().substring(0, 10),
+        )}
       />
     );
   });
