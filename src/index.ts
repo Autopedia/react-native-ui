@@ -1,3 +1,5 @@
-import { Button } from './atoms';
+import './styles/styled.d';
 
-export { Button };
+export * from './atoms';
+export * from './molecules';
+export * from './organisms';
