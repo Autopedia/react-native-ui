@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
 import {
-  ButtonSize,
   ButtonProps,
   SButtonTextProps,
   SIconProps,
@@ -10,305 +9,188 @@ import {
 import Icon from '@atoms/Icon';
 
 import lodash from 'lodash';
+import {
+  SystemColor,
+  SystemColorKey,
+  systemColorMap,
+  systemColors,
+} from '@styles/sytem-colors';
+import { grayscaleColors } from '@styles/grayscale-colors';
 
 const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
-  const buttonTextProps = lodash.pick(props, [
-    'type',
-    'size',
-    'color',
-    'disabled',
-  ]);
-
+  const buttonTextProps = lodash.pick(props, ['textColor', 'disabled']);
   const iconProps = lodash.pick(props, [
-    'size',
-    'color',
+    'type',
+    'disabled',
     'iconPosition',
     'absoluteIcon',
-    'disabled',
   ]);
 
+  const getUnderlayColor = () => {
+    if (props.type === 'text') return grayscaleColors.GRAY_300;
+
+    const color = props.color || 'primary';
+    switch (color) {
+      case 'white':
+        return grayscaleColors.GRAY_300;
+      case 'black':
+        return grayscaleColors.GRAY_700;
+      default:
+        const darkColor = (color + '_dark') as SystemColor;
+        return systemColors[systemColorMap[darkColor] as SystemColorKey];
+    }
+  };
+
   return (
-    <SContainer {...props}>
-      {props.icon && props.iconPosition !== 'right' && (
-        <SIcon source={props.icon} {...iconProps} />
-      )}
-      {typeof children === 'string' ? (
-        <SButtonText includeFontPadding={false} {...buttonTextProps}>
-          {children}
-        </SButtonText>
-      ) : (
-        children
-      )}
-      {props.icon && props.iconPosition === 'right' && (
-        <SIcon source={props.icon} {...iconProps} />
-      )}
+    <SContainer {...props} underlayColor={getUnderlayColor()}>
+      <>
+        {props.icon && props.iconPosition !== 'right' && (
+          <SIcon source={props.icon} color={props.textColor} {...iconProps} />
+        )}
+        {typeof children === 'string' ? (
+          <SButtonText includeFontPadding={false} {...buttonTextProps}>
+            {children}
+          </SButtonText>
+        ) : (
+          children
+        )}
+        {props.icon && props.iconPosition === 'right' && (
+          <SIcon source={props.icon} color={props.textColor} {...iconProps} />
+        )}
+      </>
     </SContainer>
   );
 };
 
-const SContainer = styled.TouchableOpacity<ButtonProps>`
+const SContainer = styled.TouchableHighlight<ButtonProps>`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
-  /* layout (default: inline) */
+  /* type (default: inline) */
   ${props => {
-    const layout = props.layout || 'inline';
-    switch (layout) {
+    const type = props.type || 'inline';
+    switch (type) {
       case 'inline':
-        break;
-      case 'block':
-        return 'width: 100%;';
-      case 'sticky':
         return `
-          position: absolute;
-          bottom: 0;
+          padding: ${props.theme.spacing.SPACE_14}
+        `;
+
+      case 'block':
+        return `
+          padding: ${props.theme.spacing.SPACE_14}
           width: 100%;
+        `;
+      case 'text':
+        return `
+          border: none;
+          padding: ${props.theme.spacing.SPACE_2}
         `;
     }
   }}
 
-  /* type (default: default) */
+  /* tile (default: false) */
   ${props => {
-    const type = props.type || 'default';
-    const layout = props.layout || 'inline';
-    if (type === 'link' || layout === 'sticky') {
+    if (props.tile || props.type === 'text') {
       return;
     }
-
     return `
-      border-radius: ${props.theme.border.BORDER_RADIUS};
+      border-radius: ${props.theme.spacing.SPACE_26};
       border-width: ${props.theme.border.BORDER_WIDTH};
     `;
   }}
 
-  /* size (default: md) */
-  ${props => {
-    const size = props.size || 'md';
-    switch (size) {
-      case 'sm':
-        return `
-          padding: ${props.theme.spacing.SPACE_6} ${props.theme.spacing.SPACE_12};
-        `;
-      case 'md':
-        return `
-          padding: ${props.theme.spacing.SPACE_10} ${props.theme.spacing.SPACE_16};
-        `;
-      case 'lg':
-        return `
-          padding: ${props.theme.spacing.SPACE_14} ${props.theme.spacing.SPACE_20};
-        `;
-    }
-  }}
-
   /* color (default: default) */
   ${props => {
-    const type = props.type || 'default';
-    if (type === 'link') {
+    const type = props.type || 'inline';
+    const color = props.color || 'primary';
+
+    if (type === 'text') {
       return;
     }
 
-    switch (props.color) {
-      case 'primary':
-        return `
-          border: none;
-          background-color: ${props.theme.colors.PRIMARY};
-        `;
-      case 'primaryExtraLight':
-        return `
-          border: none;
-          background-color: ${props.theme.colors.PRIMARY_EXTRALIGHT};
-        `;
-      case 'error':
-        return `
-          border-color: ${props.theme.colors.ERROR};
-        `;
-      case 'dark':
-        return `
-          border: none;
-          background-color: ${props.theme.colors.DARK};
-        `;
-      case 'apple':
-        return `
-          border: none;
-          background-color: ${props.theme.colors.APPLE};
-        `;
-      case 'google':
-        return `
-          border-color: ${props.theme.colors.BORDER_GOOGLE};
-          background-color: ${props.theme.colors.GOOGLE};
-        `;
-      case 'kakao':
-        return `
-          border: none;
-          background-color: ${props.theme.colors.KAKAO};
-        `;
-      default:
-        return `
-          border-color: ${props.theme.colors.BORDER_DEFAULT};
-          background-color: ${props.theme.colors.DEFAULT};
-        `;
-    }
+    const backgroundColor =
+      systemColors[systemColorMap[color as SystemColor] as SystemColorKey];
+
+    return `
+      border: none;
+      background-color: ${backgroundColor};  
+    `;
   }}
 
   /* disabled (default: false) */
   ${props => {
-    const type = props.type || 'default';
-    if (type === 'link') {
-      return;
-    }
-
     if (props.disabled) {
-      return `
-        border-color: ${props.theme.colors.BORDER_DEFAULT};
-        background-color: ${props.theme.colors.DISABLED};
-      `;
+      if (props.type === 'text') return `opacity: 0.5`;
+
+      const color = props.color || 'primary';
+
+      switch (color) {
+        case 'white':
+          break;
+        case 'black':
+          return `
+            background-color: ${grayscaleColors.GRAY_300}
+          `;
+        default:
+          const disabledColor = (color + '_light') as SystemColor;
+          return `
+          background-color: ${
+            systemColors[systemColorMap[disabledColor] as SystemColorKey]
+          }
+        `;
+      }
     }
   }}
 `;
 
 const SButtonText = styled.Text<SButtonTextProps>`
   text-align: center;
-
-  /* size (default : md) */
   ${props => {
-    const size = props.size || 'md';
-    switch (size) {
-      case 'sm':
-        return `
-          font-size: ${props.theme.fonts.size.XXS};
-          font-family: ${props.theme.fonts.family.REGULAR};
-        `;
-      case 'md':
-        return `
-          font-size: ${props.theme.fonts.size.XS};
-          font-family: ${props.theme.fonts.family.REGULAR};
-        `;
-      case 'lg':
-        return `
-          font-size: ${props.theme.fonts.size.M};
-          font-family: ${props.theme.fonts.family.BOLD};
-        `;
-    }
+    return `
+      font-family: ${props.theme.fonts.family.MEDIUM}  
+    `;
   }}
+  /* textColor */
+  ${props => {
+    if (props.textColor) {
+      if (Object.keys(systemColorMap).includes(props.textColor)) {
+        const colorKey = systemColorMap[props.textColor as SystemColor];
+        const color = systemColors[colorKey as SystemColorKey];
 
-  /* color */
-  ${props => {
-    const type = props.type || 'default';
-    switch (type) {
-      case 'link':
-        switch (props.color) {
-          case 'muted':
-            return `
-              color: ${props.theme.colors.MUTED};
-            `;
-          case 'error':
-            return `
-              color: ${props.theme.colors.ERROR};
-            `;
-          default:
-            return `
-              color: ${props.theme.colors.PRIMARY};
-            `;
-        }
-      case 'default':
-        switch (props.color) {
-          case 'primary':
-            return `
-              color: ${props.theme.colors.ON_PRIMARY};
-            `;
-          case 'error':
-            return `
-              color: ${props.theme.colors.ERROR};
-            `;
-          case 'muted':
-            return `
-              color: ${props.theme.colors.MUTED};
-            `;
-          case 'dark':
-            return `
-              color: ${props.theme.colors.WHITE};
-            `;
-          case 'apple':
-            return `
-              color: ${props.theme.colors.ON_APPLE};
-            `;
-          case 'google':
-            return `
-              color: ${props.theme.colors.ON_GOOGLE};
-            `;
-          case 'kakao':
-            return `
-              color: ${props.theme.colors.ON_KAKAO};
-            `;
-          default:
-            return `
-              color: ${props.theme.colors.ON_DEFAULT};
-            `;
-        }
+        return `color: ${color}`;
+      } else {
+        return `color: ${props.textColor}`;
+      }
     }
-  }} 
-  
-  /* disabled */
+    return `
+      color: ${props.theme.colors.WHITE}
+     `;
+  }} /* disabled */
   ${props => {
-    return props.disabled && `color: ${props.theme.colors.ON_DISABLED};`;
+    if (props.disabled) {
+      return `
+        opacity: 0.5;
+      `;
+    }
   }}
 `;
 
 const SIcon = styled(Icon)<SIconProps>`
-  ${props => {
-    const size = props.size || 'md';
-    switch (size) {
-      case 'sm':
-        return `
-          width: ${props.theme.fonts.size.S};
-          height: ${props.theme.fonts.size.S};;
-        `;
-      case 'md':
-        return `
-          width: ${props.theme.fonts.size.M};
-          height: ${props.theme.fonts.size.M};;
-        `;
-      case 'lg':
-        return `
-          width: ${props.theme.fonts.size.L};
-          height: ${props.theme.fonts.size.L};;
-        `;
-    }
-  }}
-
   ${props => {
     const SIconPosition = props.iconPosition || 'left';
     const SMargin = `margin-${
       props.iconPosition === 'right' ? 'left' : 'right'
     }`;
 
-    const getSpacing = (size: ButtonSize = 'md', isAbsolute: boolean) => {
-      switch (size) {
-        case 'sm':
-          return isAbsolute
-            ? props.theme.spacing.SPACE_12
-            : props.theme.spacing.SPACE_4;
-        case 'md':
-          return isAbsolute
-            ? props.theme.spacing.SPACE_16
-            : props.theme.spacing.SPACE_6;
-        case 'lg':
-          return isAbsolute
-            ? props.theme.spacing.SPACE_20
-            : props.theme.spacing.SPACE_8;
-      }
-    };
-
-    if (props.absoluteIcon) {
+    if (props.type === 'block' && props.absoluteIcon) {
       return `
         position:absolute;
-        ${SIconPosition} : ${getSpacing(props.size, true)}
+        ${SIconPosition} : ${props.theme.spacing.SPACE_16}
       `;
     }
 
     return `
-    ${SMargin}: ${getSpacing(props.size, false)}
+    ${SMargin}: ${props.theme.spacing.SPACE_6}
     `;
   }}
 `;

@@ -7,6 +7,12 @@ import {
 import lodash from 'lodash';
 import React from 'react';
 import styled from 'styled-components/native';
+import {
+  SystemColor,
+  SystemColorKey,
+  systemColorMap,
+  systemColors,
+} from '../../styles/sytem-colors';
 import { IconProps, STouchableProps, SIconProps } from './Icon.types';
 
 const Icon: React.FC<IconProps> = props => {
@@ -43,48 +49,23 @@ const STouchable = styled.TouchableOpacity<STouchableProps>`
 const SIcon = styled.Image<SIconProps>`
   /* color (default: undefined) */
   ${props => {
-    switch (props.color) {
-      case 'default':
-        return `
-              tint-color: ${props.theme.colors.ON_DEFAULT};
-            `;
-      case 'primary':
-        return `
-              tint-color: ${props.theme.colors.ON_PRIMARY};
-            `;
-      case 'error':
-        return `
-              tint-color: ${props.theme.colors.ERROR};
-            `;
-      case 'muted':
-        return `
-              tint-color: ${props.theme.colors.MUTED};
-            `;
-      case 'dark':
-        return `
-              tint-color: ${props.theme.colors.WHITE};
-            `;
-      case 'apple':
-        return `
-              tint-color: ${props.theme.colors.ON_APPLE};
-            `;
-      case 'google':
-        return `
-              tint-color: ${props.theme.colors.ON_GOOGLE};
-            `;
-      case 'kakao':
-        return `
-              tint-color: ${props.theme.colors.ON_KAKAO};
-            `;
-      default:
-        return `
-              tint-color: ${props.color};
-            `;
+    if (props.color) {
+      if (Object.keys(systemColorMap).includes(props.color)) {
+        const colorKey = systemColorMap[props.color as SystemColor];
+        const color = systemColors[colorKey as SystemColorKey];
+
+        return `tint-color: ${color}`;
+      } else {
+        return `tint-color: ${props.color}`;
+      }
     }
+    return `
+      tint-color: ${props.theme.colors.WHITE}
+     `;
   }}
 
   /* disabled (default: false) */
-  ${props => props.disabled && `tint-color: ${props.theme.colors.GREY};`}
+  ${props => props.disabled && `opacity: 0.5`}
 `;
 
 export default Icon;

@@ -1,17 +1,6 @@
 import { ViewStyle, GestureResponderEvent, TextStyle } from 'react-native';
-export type ButtonLayout = 'inline' | 'block' | 'sticky';
-export type ButtonType = 'default' | 'link';
-export type ButtonSize = 'sm' | 'md' | 'lg';
-export type ButtonColor =
-  | 'default'
-  | 'primary'
-  | 'primaryExtraLight'
-  | 'muted'
-  | 'error'
-  | 'dark'
-  | 'apple'
-  | 'google'
-  | 'kakao';
+import { SystemColor, SystemColorMain } from '@styles/sytem-colors';
+export type ButtonType = 'inline' | 'block' | 'text';
 export type ButtonIconPosition = 'left' | 'right';
 
 export interface ButtonProps {
@@ -21,11 +10,11 @@ export interface ButtonProps {
    * @block     button expands to maximum length possible
    * @sticky    button expands to maximum length and fixed at the bottom
    */
-  layout?: ButtonLayout;
 
   type?: ButtonType;
-  size?: ButtonSize;
-  color?: ButtonColor;
+  tile?: boolean;
+  color?: SystemColorMain;
+  textColor?: SystemColor | string;
   loading?: boolean;
   disabled?: boolean;
 
@@ -38,14 +27,15 @@ export interface ButtonProps {
    * @true    position of the icon fixed to one side of the button (corresponding to iconPosition)
    */
   absoluteIcon?: boolean;
+
   style?: ViewStyle;
   onPress: (event: GestureResponderEvent) => void;
 }
 
 export type SButtonTextProps = TextStyle &
-  Pick<ButtonProps, 'type' | 'size' | 'color' | 'disabled'>;
+  Pick<ButtonProps, 'textColor' | 'disabled'>;
 
 export type SIconProps = Pick<
   ButtonProps,
-  'size' | 'iconPosition' | 'absoluteIcon'
+  'type' | 'disabled' | 'iconPosition' | 'absoluteIcon'
 >;

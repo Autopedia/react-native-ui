@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms/Button Color/Default 1`] = `
+exports[`Storyshots Atoms/Button AbsoluteIcon 1`] = `
 <View
   style={
     Array [
@@ -29,39 +29,59 @@ exports[`Storyshots Atoms/Button Color/Default 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#007AFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/icons/shop/shop.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "tintColor": "#FFFFFF",
+          },
+          Object {
+            "left": 16,
+            "position": "absolute",
+          },
+        ]
+      }
+    />
     <Text
-      color="default"
       includeFontPadding={false}
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
       }
     >
-      Default
+      Absolute Icon Left
     </Text>
   </View>
   <View
@@ -75,34 +95,122 @@ exports[`Storyshots Atoms/Button Color/Default 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#007AFF",
-        "borderColor": "black",
-        "borderRadius": 4,
-        "borderStyle": "solid",
-        "borderWidth": 0,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#007AFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Text
-      color="primary"
       includeFontPadding={false}
       style={
         Array [
           Object {
             "color": "#FFFFFF",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "fontFamily": "NotoSansKR-Medium",
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Absolute Icon Right
+    </Text>
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/icons/shop/shop.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "tintColor": "#FFFFFF",
+          },
+          Object {
+            "position": "absolute",
+            "right": 16,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Button Color/Block 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#007AFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
@@ -122,87 +230,41 @@ exports[`Storyshots Atoms/Button Color/Default 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FEE500",
-        "borderColor": "black",
-        "borderRadius": 4,
-        "borderStyle": "solid",
-        "borderWidth": 0,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#48CF7C",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Text
-      color="kakao"
-      includeFontPadding={false}
-      style={
-        Array [
-          Object {
-            "color": "#000000",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
-            "textAlign": "center",
-          },
-        ]
-      }
-    >
-      Kakao
-    </Text>
-  </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#000000",
-        "borderColor": "black",
-        "borderRadius": 4,
-        "borderStyle": "solid",
-        "borderWidth": 0,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
-    }
-  >
-    <Text
-      color="apple"
       includeFontPadding={false}
       style={
         Array [
           Object {
             "color": "#FFFFFF",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
       }
     >
-      Apple
+      Success
     </Text>
   </View>
   <View
@@ -216,44 +278,138 @@ exports[`Storyshots Atoms/Button Color/Default 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FA4339",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Text
-      color="google"
       includeFontPadding={false}
       style={
         Array [
           Object {
-            "color": "#000000",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
       }
     >
-      Google
+      Error
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontFamily": "NotoSansKR-Medium",
+            "textAlign": "center",
+          },
+        ]
+      }
+      textColor="black"
+    >
+      White
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#000000",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Black
     </Text>
   </View>
 </View>
 `;
 
-exports[`Storyshots Atoms/Button Color/Link 1`] = `
+exports[`Storyshots Atoms/Button Color/Inline 1`] = `
 <View
   style={
     Array [
@@ -282,36 +438,40 @@ exports[`Storyshots Atoms/Button Color/Link 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#007AFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Text
-      color="default"
       includeFontPadding={false}
       style={
         Array [
           Object {
-            "color": "#007AFF",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
       }
-      type="link"
     >
-      Default
+      Primary
     </Text>
   </View>
   <View
@@ -325,35 +485,378 @@ exports[`Storyshots Atoms/Button Color/Link 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#48CF7C",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Text
-      color="muted"
       includeFontPadding={false}
       style={
         Array [
           Object {
-            "color": "#8C8C8C",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
       }
-      type="link"
     >
-      Muted
+      Success
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FA4339",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Error
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+        },
+      ]
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontFamily": "NotoSansKR-Medium",
+            "textAlign": "center",
+          },
+        ]
+      }
+      textColor="black"
+    >
+      White
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#000000",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+        },
+      ]
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Black
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Button Color/Text 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "black",
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 2,
+          "paddingLeft": 2,
+          "paddingRight": 2,
+          "paddingTop": 2,
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#007AFF",
+            "fontFamily": "NotoSansKR-Medium",
+            "textAlign": "center",
+          },
+        ]
+      }
+      textColor="primary"
+    >
+      Primary
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "black",
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 2,
+          "paddingLeft": 2,
+          "paddingRight": 2,
+          "paddingTop": 2,
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#48CF7C",
+            "fontFamily": "NotoSansKR-Medium",
+            "textAlign": "center",
+          },
+        ]
+      }
+      textColor="success"
+    >
+      Success
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "black",
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 2,
+          "paddingLeft": 2,
+          "paddingRight": 2,
+          "paddingTop": 2,
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#FA4339",
+            "fontFamily": "NotoSansKR-Medium",
+            "textAlign": "center",
+          },
+        ]
+      }
+      textColor="error"
+    >
+      Error
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "black",
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 2,
+          "paddingLeft": 2,
+          "paddingRight": 2,
+          "paddingTop": 2,
+        },
+      ]
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontFamily": "NotoSansKR-Medium",
+            "textAlign": "center",
+          },
+        ]
+      }
+      textColor="black"
+    >
+      Black
     </Text>
   </View>
 </View>
@@ -388,21 +891,25 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#007AFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Text
@@ -410,10 +917,8 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
@@ -433,21 +938,25 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#F5F5F5",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#BDDBFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Text
@@ -456,10 +965,9 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
       style={
         Array [
           Object {
-            "color": "#8C8C8C",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
+            "opacity": 0.5,
             "textAlign": "center",
           },
         ]
@@ -479,17 +987,26 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#007AFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Text
@@ -497,17 +1014,14 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
       style={
         Array [
           Object {
-            "color": "#007AFF",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
       }
-      type="link"
     >
-      Link
+      Block
     </Text>
   </View>
   <View
@@ -521,16 +1035,23 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#BDDBFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+      ]
     }
   >
     <Text
@@ -539,23 +1060,113 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
       style={
         Array [
           Object {
-            "color": "#8C8C8C",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
+            "opacity": 0.5,
             "textAlign": "center",
           },
         ]
       }
-      type="link"
     >
-      Link Disabled
+      Block Disabled
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "black",
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 2,
+          "paddingLeft": 2,
+          "paddingRight": 2,
+          "paddingTop": 2,
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontFamily": "NotoSansKR-Medium",
+            "textAlign": "center",
+          },
+        ]
+      }
+      textColor="black"
+    >
+      Text
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "black",
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "opacity": 0.5,
+          "paddingBottom": 2,
+          "paddingLeft": 2,
+          "paddingRight": 2,
+          "paddingTop": 2,
+        },
+      ]
+    }
+  >
+    <Text
+      disabled={true}
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontFamily": "NotoSansKR-Medium",
+            "opacity": 0.5,
+            "textAlign": "center",
+          },
+        ]
+      }
+      textColor="black"
+    >
+      Text Disabled
     </Text>
   </View>
 </View>
 `;
 
-exports[`Storyshots Atoms/Button Icon/Absolute 1`] = `
+exports[`Storyshots Atoms/Button Icon 1`] = `
 <View
   style={
     Array [
@@ -584,22 +1195,25 @@ exports[`Storyshots Atoms/Button Icon/Absolute 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#007AFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Image
@@ -611,164 +1225,10 @@ exports[`Storyshots Atoms/Button Icon/Absolute 1`] = `
       style={
         Array [
           Object {
-            "tintColor": undefined,
+            "tintColor": "#FFFFFF",
           },
           Object {
-            "height": 20,
-            "left": 16,
-            "position": "absolute",
-            "width": 20,
-          },
-        ]
-      }
-    />
-    <Text
-      includeFontPadding={false}
-      style={
-        Array [
-          Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
-            "textAlign": "center",
-          },
-        ]
-      }
-    >
-      Absolute Icon Left
-    </Text>
-  </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-        "width": "100%",
-      }
-    }
-  >
-    <Text
-      includeFontPadding={false}
-      style={
-        Array [
-          Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
-            "textAlign": "center",
-          },
-        ]
-      }
-    >
-      Absolute Icon Right
-    </Text>
-    <Image
-      source={
-        Object {
-          "testUri": "../../../src/assets/icons/shop/shop.png",
-        }
-      }
-      style={
-        Array [
-          Object {
-            "tintColor": undefined,
-          },
-          Object {
-            "height": 20,
-            "position": "absolute",
-            "right": 16,
-            "width": 20,
-          },
-        ]
-      }
-    />
-  </View>
-</View>
-`;
-
-exports[`Storyshots Atoms/Button Icon/Default 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexBasis": 0,
-        "flexGrow": 1,
-        "flexShrink": 1,
-        "justifyContent": "center",
-        "paddingBottom": 10,
-        "paddingLeft": 10,
-        "paddingRight": 10,
-        "paddingTop": 10,
-      },
-    ]
-  }
->
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
-    }
-  >
-    <Image
-      source={
-        Object {
-          "testUri": "../../../src/assets/icons/shop/shop.png",
-        }
-      }
-      style={
-        Array [
-          Object {
-            "tintColor": undefined,
-          },
-          Object {
-            "height": 20,
             "marginRight": 6,
-            "width": 20,
           },
         ]
       }
@@ -778,10 +1238,8 @@ exports[`Storyshots Atoms/Button Icon/Default 1`] = `
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
@@ -801,21 +1259,25 @@ exports[`Storyshots Atoms/Button Icon/Default 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#007AFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Text
@@ -823,10 +1285,8 @@ exports[`Storyshots Atoms/Button Icon/Default 1`] = `
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
@@ -843,12 +1303,10 @@ exports[`Storyshots Atoms/Button Icon/Default 1`] = `
       style={
         Array [
           Object {
-            "tintColor": undefined,
+            "tintColor": "#FFFFFF",
           },
           Object {
-            "height": 20,
             "marginLeft": 6,
-            "width": 20,
           },
         ]
       }
@@ -865,22 +1323,26 @@ exports[`Storyshots Atoms/Button Icon/Default 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#007AFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Image
@@ -892,12 +1354,10 @@ exports[`Storyshots Atoms/Button Icon/Default 1`] = `
       style={
         Array [
           Object {
-            "tintColor": undefined,
+            "tintColor": "#FFFFFF",
           },
           Object {
-            "height": 20,
             "marginRight": 6,
-            "width": 20,
           },
         ]
       }
@@ -907,10 +1367,8 @@ exports[`Storyshots Atoms/Button Icon/Default 1`] = `
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
@@ -930,22 +1388,26 @@ exports[`Storyshots Atoms/Button Icon/Default 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#007AFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Text
@@ -953,10 +1415,8 @@ exports[`Storyshots Atoms/Button Icon/Default 1`] = `
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
@@ -973,38 +1433,15 @@ exports[`Storyshots Atoms/Button Icon/Default 1`] = `
       style={
         Array [
           Object {
-            "tintColor": undefined,
+            "tintColor": "#FFFFFF",
           },
           Object {
-            "height": 20,
             "marginLeft": 6,
-            "width": 20,
           },
         ]
       }
     />
   </View>
-</View>
-`;
-
-exports[`Storyshots Atoms/Button Layout/Block 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexBasis": 0,
-        "flexGrow": 1,
-        "flexShrink": 1,
-        "justifyContent": "center",
-        "paddingBottom": 10,
-        "paddingLeft": 10,
-        "paddingRight": 10,
-        "paddingTop": 10,
-      },
-    ]
-  }
->
   <View
     accessible={true}
     focusable={true}
@@ -1016,269 +1453,59 @@ exports[`Storyshots Atoms/Button Layout/Block 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "black",
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 2,
+          "paddingLeft": 2,
+          "paddingRight": 2,
+          "paddingTop": 2,
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
+    <Image
+      color="black"
+      source={
+        Object {
+          "testUri": "../../../src/assets/icons/shop/shop.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "tintColor": "#000000",
+          },
+          Object {
+            "marginRight": 6,
+          },
+        ]
+      }
+    />
     <Text
       includeFontPadding={false}
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#000000",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
       }
+      textColor="black"
     >
-      Block Button
+      Text Icon Left
     </Text>
   </View>
-</View>
-`;
-
-exports[`Storyshots Atoms/Button Layout/Inline 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexBasis": 0,
-        "flexGrow": 1,
-        "flexShrink": 1,
-        "justifyContent": "center",
-        "paddingBottom": 10,
-        "paddingLeft": 10,
-        "paddingRight": 10,
-        "paddingTop": 10,
-      },
-    ]
-  }
->
-  <View
-    style={
-      Object {
-        "flexDirection": "row",
-      }
-    }
-  >
-    <View
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
-          "borderWidth": 1,
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "marginRight": 5,
-          "opacity": 1,
-          "paddingBottom": 10,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 10,
-        }
-      }
-    >
-      <Text
-        includeFontPadding={false}
-        style={
-          Array [
-            Object {
-              "color": "#1F1F1F",
-              "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 14,
-              "lineHeight": 22,
-              "textAlign": "center",
-            },
-          ]
-        }
-      >
-        Btn 1
-      </Text>
-    </View>
-    <View
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
-          "borderWidth": 1,
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "marginRight": 5,
-          "opacity": 1,
-          "paddingBottom": 10,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 10,
-        }
-      }
-    >
-      <Text
-        includeFontPadding={false}
-        style={
-          Array [
-            Object {
-              "color": "#1F1F1F",
-              "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 14,
-              "lineHeight": 22,
-              "textAlign": "center",
-            },
-          ]
-        }
-      >
-        Btn 2
-      </Text>
-    </View>
-    <View
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
-          "borderWidth": 1,
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "marginRight": 5,
-          "opacity": 1,
-          "paddingBottom": 10,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 10,
-        }
-      }
-    >
-      <Text
-        includeFontPadding={false}
-        style={
-          Array [
-            Object {
-              "color": "#1F1F1F",
-              "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 14,
-              "lineHeight": 22,
-              "textAlign": "center",
-            },
-          ]
-        }
-      >
-        Btn 3
-      </Text>
-    </View>
-    <View
-      accessible={true}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
-          "borderWidth": 1,
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "opacity": 1,
-          "paddingBottom": 10,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 10,
-        }
-      }
-    >
-      <Text
-        includeFontPadding={false}
-        style={
-          Array [
-            Object {
-              "color": "#1F1F1F",
-              "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 14,
-              "lineHeight": 22,
-              "textAlign": "center",
-            },
-          ]
-        }
-      >
-        Btn 4
-      </Text>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`Storyshots Atoms/Button Layout/Sticky 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexBasis": 0,
-        "flexGrow": 1,
-        "flexShrink": 1,
-        "justifyContent": "center",
-        "paddingBottom": 10,
-        "paddingLeft": 10,
-        "paddingRight": 10,
-        "paddingTop": 10,
-      },
-    ]
-  }
->
   <View
     accessible={true}
     focusable={true}
@@ -1290,42 +1517,58 @@ exports[`Storyshots Atoms/Button Layout/Sticky 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#007AFF",
-        "borderColor": "black",
-        "borderStyle": "solid",
-        "borderWidth": 0,
-        "bottom": 0,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-        "position": "absolute",
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "black",
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 2,
+          "paddingLeft": 2,
+          "paddingRight": 2,
+          "paddingTop": 2,
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Text
-      color="primary"
       includeFontPadding={false}
       style={
         Array [
           Object {
-            "color": "#FFFFFF",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#000000",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
       }
+      textColor="black"
     >
-      Sticky Button
+      Text Icon Right
     </Text>
+    <Image
+      color="black"
+      source={
+        Object {
+          "testUri": "../../../src/assets/icons/shop/shop.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "tintColor": "#000000",
+          },
+          Object {
+            "marginLeft": 6,
+          },
+        ]
+      }
+    />
   </View>
 </View>
 `;
@@ -1359,38 +1602,37 @@ exports[`Storyshots Atoms/Button Playground 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#007AFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+        },
+      ]
     }
   >
     <Text
-      color="default"
       disabled={false}
       includeFontPadding={false}
-      size="md"
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
       }
+      textColor="white"
     >
       Button
     </Text>
@@ -1398,7 +1640,7 @@ exports[`Storyshots Atoms/Button Playground 1`] = `
 </View>
 `;
 
-exports[`Storyshots Atoms/Button Size 1`] = `
+exports[`Storyshots Atoms/Button Tile 1`] = `
 <View
   style={
     Array [
@@ -1427,39 +1669,41 @@ exports[`Storyshots Atoms/Button Size 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 6,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 6,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#007AFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Text
       includeFontPadding={false}
-      size="sm"
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 12,
-            "lineHeight": 19,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
       }
     >
-      Small
+      Default
     </Text>
   </View>
   <View
@@ -1473,84 +1717,40 @@ exports[`Storyshots Atoms/Button Size 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#007AFF",
+          "borderColor": "black",
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Text
       includeFontPadding={false}
-      size="md"
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
       }
     >
-      Medium
-    </Text>
-  </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "opacity": 1,
-        "paddingBottom": 14,
-        "paddingLeft": 20,
-        "paddingRight": 20,
-        "paddingTop": 14,
-      }
-    }
-  >
-    <Text
-      includeFontPadding={false}
-      size="lg"
-      style={
-        Array [
-          Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Bold",
-            "fontSize": 20,
-            "lineHeight": 29,
-            "textAlign": "center",
-          },
-        ]
-      }
-    >
-      Large
+      Tile
     </Text>
   </View>
 </View>
@@ -1585,21 +1785,25 @@ exports[`Storyshots Atoms/Button Type 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 5,
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#007AFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Text
@@ -1607,16 +1811,14 @@ exports[`Storyshots Atoms/Button Type 1`] = `
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
       }
     >
-      Default
+      Inline
     </Text>
   </View>
   <View
@@ -1630,16 +1832,26 @@ exports[`Storyshots Atoms/Button Type 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#007AFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
     }
   >
     <Text
@@ -1647,17 +1859,57 @@ exports[`Storyshots Atoms/Button Type 1`] = `
       style={
         Array [
           Object {
-            "color": "#007AFF",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
       }
-      type="link"
     >
-      Link
+      Block
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "black",
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 2,
+          "paddingLeft": 2,
+          "paddingRight": 2,
+          "paddingTop": 2,
+        },
+      ]
+    }
+  >
+    <Text
+      includeFontPadding={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontFamily": "NotoSansKR-Medium",
+            "textAlign": "center",
+          },
+        ]
+      }
+      textColor="black"
+    >
+      Text
     </Text>
   </View>
 </View>
@@ -1708,7 +1960,7 @@ exports[`Storyshots Atoms/Checkbox Default 1`] = `
       style={
         Array [
           Object {
-            "tintColor": undefined,
+            "tintColor": "#FFFFFF",
           },
           Object {
             "marginRight": 4,
@@ -1747,7 +1999,7 @@ exports[`Storyshots Atoms/Checkbox Default 1`] = `
       style={
         Array [
           Object {
-            "tintColor": undefined,
+            "tintColor": "#FFFFFF",
           },
           Object {
             "marginRight": 4,
@@ -1807,7 +2059,7 @@ exports[`Storyshots Atoms/Checkbox Playground 1`] = `
       style={
         Array [
           Object {
-            "tintColor": undefined,
+            "tintColor": "#FFFFFF",
           },
           Object {
             "marginRight": 4,
@@ -2154,24 +2406,6 @@ exports[`Storyshots Atoms/Icon Color 1`] = `
   }
 >
   <Image
-    color="default"
-    source={
-      Object {
-        "testUri": "../../../src/assets/icons/camera/camera.png",
-      }
-    }
-    style={
-      Array [
-        Object {
-          "tintColor": "#1F1F1F",
-        },
-        Object {
-          "backgroundColor": "#E3E3E3",
-        },
-      ]
-    }
-  />
-  <Image
     color="primary"
     source={
       Object {
@@ -2181,7 +2415,7 @@ exports[`Storyshots Atoms/Icon Color 1`] = `
     style={
       Array [
         Object {
-          "tintColor": "#FFFFFF",
+          "tintColor": "#007AFF",
         },
         Object {
           "backgroundColor": "#E3E3E3",
@@ -2190,7 +2424,43 @@ exports[`Storyshots Atoms/Icon Color 1`] = `
     }
   />
   <Image
-    color="kakao"
+    color="success"
+    source={
+      Object {
+        "testUri": "../../../src/assets/icons/camera/camera.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "tintColor": "#48CF7C",
+        },
+        Object {
+          "backgroundColor": "#E3E3E3",
+        },
+      ]
+    }
+  />
+  <Image
+    color="error"
+    source={
+      Object {
+        "testUri": "../../../src/assets/icons/camera/camera.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "tintColor": "#FA4339",
+        },
+        Object {
+          "backgroundColor": "#E3E3E3",
+        },
+      ]
+    }
+  />
+  <Image
+    color="black"
     source={
       Object {
         "testUri": "../../../src/assets/icons/camera/camera.png",
@@ -2208,7 +2478,7 @@ exports[`Storyshots Atoms/Icon Color 1`] = `
     }
   />
   <Image
-    color="apple"
+    color="white"
     source={
       Object {
         "testUri": "../../../src/assets/icons/camera/camera.png",
@@ -2218,24 +2488,6 @@ exports[`Storyshots Atoms/Icon Color 1`] = `
       Array [
         Object {
           "tintColor": "#FFFFFF",
-        },
-        Object {
-          "backgroundColor": "#E3E3E3",
-        },
-      ]
-    }
-  />
-  <Image
-    color="google"
-    source={
-      Object {
-        "testUri": "../../../src/assets/icons/camera/camera.png",
-      }
-    }
-    style={
-      Array [
-        Object {
-          "tintColor": "#000000",
         },
         Object {
           "backgroundColor": "#E3E3E3",
@@ -2265,25 +2517,6 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
   }
 >
   <Image
-    color="default"
-    disabled={true}
-    source={
-      Object {
-        "testUri": "../../../src/assets/icons/camera/camera.png",
-      }
-    }
-    style={
-      Array [
-        Object {
-          "tintColor": "#8C8C8C",
-        },
-        Object {
-          "backgroundColor": "#E3E3E3",
-        },
-      ]
-    }
-  />
-  <Image
     color="primary"
     disabled={true}
     source={
@@ -2294,7 +2527,8 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
     style={
       Array [
         Object {
-          "tintColor": "#8C8C8C",
+          "opacity": 0.5,
+          "tintColor": "#007AFF",
         },
         Object {
           "backgroundColor": "#E3E3E3",
@@ -2303,7 +2537,7 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
     }
   />
   <Image
-    color="kakao"
+    color="success"
     disabled={true}
     source={
       Object {
@@ -2313,7 +2547,8 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
     style={
       Array [
         Object {
-          "tintColor": "#8C8C8C",
+          "opacity": 0.5,
+          "tintColor": "#48CF7C",
         },
         Object {
           "backgroundColor": "#E3E3E3",
@@ -2322,7 +2557,7 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
     }
   />
   <Image
-    color="apple"
+    color="error"
     disabled={true}
     source={
       Object {
@@ -2332,7 +2567,8 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
     style={
       Array [
         Object {
-          "tintColor": "#8C8C8C",
+          "opacity": 0.5,
+          "tintColor": "#FA4339",
         },
         Object {
           "backgroundColor": "#E3E3E3",
@@ -2341,7 +2577,7 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
     }
   />
   <Image
-    color="google"
+    color="black"
     disabled={true}
     source={
       Object {
@@ -2351,7 +2587,28 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
     style={
       Array [
         Object {
-          "tintColor": "#8C8C8C",
+          "opacity": 0.5,
+          "tintColor": "#000000",
+        },
+        Object {
+          "backgroundColor": "#E3E3E3",
+        },
+      ]
+    }
+  />
+  <Image
+    color="white"
+    disabled={true}
+    source={
+      Object {
+        "testUri": "../../../src/assets/icons/camera/camera.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "opacity": 0.5,
+          "tintColor": "#FFFFFF",
         },
         Object {
           "backgroundColor": "#E3E3E3",
@@ -2471,7 +2728,7 @@ exports[`Storyshots Atoms/Icon Touchable 1`] = `
     }
   >
     <Image
-      color="default"
+      color="primary"
       source={
         Object {
           "testUri": "../../../src/assets/icons/camera/camera.png",
@@ -2480,7 +2737,7 @@ exports[`Storyshots Atoms/Icon Touchable 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#1F1F1F",
+            "tintColor": "#007AFF",
           },
           Object {
             "backgroundColor": "#E3E3E3",
@@ -3414,34 +3671,32 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
-            "alignItems": "center",
-            "borderColor": "#FA4339",
-            "borderRadius": 4,
-            "borderWidth": 1,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "opacity": 1,
-            "paddingBottom": 6,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 6,
-            "width": "100%",
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#FA4339",
+              "borderColor": "black",
+              "borderRadius": 26,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 14,
+              "paddingRight": 14,
+              "paddingTop": 14,
+            },
+          ]
         }
       >
         <Text
-          color="error"
           disabled={false}
           includeFontPadding={false}
-          size="sm"
           style={
             Array [
               Object {
-                "color": "#FA4339",
-                "fontFamily": "NotoSansKR-Regular",
-                "fontSize": 12,
-                "lineHeight": 19,
+                "color": "#FFFFFF",
+                "fontFamily": "NotoSansKR-Medium",
                 "textAlign": "center",
               },
             ]
@@ -3720,33 +3975,31 @@ exports[`Storyshots Atoms/Message/FeedbackMessage Playground 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#FFFFFF",
-            "borderColor": "#D9D9D9",
-            "borderRadius": 4,
-            "borderWidth": 1,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "opacity": 1,
-            "paddingBottom": 6,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 6,
-            "width": "100%",
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#007AFF",
+              "borderColor": "black",
+              "borderRadius": 26,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 14,
+              "paddingRight": 14,
+              "paddingTop": 14,
+            },
+          ]
         }
       >
         <Text
           includeFontPadding={false}
-          size="sm"
           style={
             Array [
               Object {
-                "color": "#1F1F1F",
-                "fontFamily": "NotoSansKR-Regular",
-                "fontSize": 12,
-                "lineHeight": 19,
+                "color": "#FFFFFF",
+                "fontFamily": "NotoSansKR-Medium",
                 "textAlign": "center",
               },
             ]
@@ -3993,34 +4246,32 @@ exports[`Storyshots Atoms/Message/OutdatedMessage Playground 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
-            "alignItems": "center",
-            "borderColor": "#FA4339",
-            "borderRadius": 4,
-            "borderWidth": 1,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "opacity": 1,
-            "paddingBottom": 6,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 6,
-            "width": "100%",
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#FA4339",
+              "borderColor": "black",
+              "borderRadius": 26,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 14,
+              "paddingRight": 14,
+              "paddingTop": 14,
+            },
+          ]
         }
       >
         <Text
-          color="error"
           disabled={false}
           includeFontPadding={false}
-          size="sm"
           style={
             Array [
               Object {
-                "color": "#FA4339",
-                "fontFamily": "NotoSansKR-Regular",
-                "fontSize": 12,
-                "lineHeight": 19,
+                "color": "#FFFFFF",
+                "fontFamily": "NotoSansKR-Medium",
                 "textAlign": "center",
               },
             ]
@@ -4308,33 +4559,31 @@ exports[`Storyshots Atoms/Message/ReviewMessage Playground 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#FFFFFF",
-            "borderColor": "#D9D9D9",
-            "borderRadius": 4,
-            "borderWidth": 1,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "opacity": 1,
-            "paddingBottom": 6,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 6,
-            "width": "100%",
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#007AFF",
+              "borderColor": "black",
+              "borderRadius": 26,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 14,
+              "paddingRight": 14,
+              "paddingTop": 14,
+            },
+          ]
         }
       >
         <Text
           includeFontPadding={false}
-          size="sm"
           style={
             Array [
               Object {
-                "color": "#1F1F1F",
-                "fontFamily": "NotoSansKR-Regular",
-                "fontSize": 12,
-                "lineHeight": 19,
+                "color": "#FFFFFF",
+                "fontFamily": "NotoSansKR-Medium",
                 "textAlign": "center",
               },
             ]
@@ -4494,7 +4743,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
             Array [
               Object {
                 "flexDirection": "row",
-                "marginTop": 6,
+                "marginTop": 12,
               },
             ]
           }
@@ -4510,24 +4759,33 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#FFFFFF",
-                "borderColor": "#D9D9D9",
-                "borderRadius": 4,
-                "borderWidth": 1,
-                "flexBasis": 0,
-                "flexDirection": "row",
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "justifyContent": "center",
-                "marginRight": 4,
-                "opacity": 1,
-                "paddingBottom": 6,
-                "paddingLeft": 12,
-                "paddingRight": 12,
-                "paddingTop": 6,
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#007AFF",
+                  "borderColor": "black",
+                  "borderRadius": 26,
+                  "borderStyle": "solid",
+                  "borderWidth": 0,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "paddingBottom": 14,
+                  "paddingLeft": 14,
+                  "paddingRight": 14,
+                  "paddingTop": 14,
+                },
+                Object {
+                  "alignItems": "center",
+                  "flexBasis": 0,
+                  "flexDirection": "row",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "justifyContent": "center",
+                },
+                Object {
+                  "marginRight": 10,
+                },
+              ]
             }
           >
             <Image
@@ -4539,25 +4797,22 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               style={
                 Array [
                   Object {
-                    "tintColor": undefined,
+                    "tintColor": "#FFFFFF",
                   },
                   Object {
-                    "marginRight": 2,
+                    "marginRight": 6,
                   },
                 ]
               }
             />
             <Text
-              size={2}
+              includeFontPadding={false}
               style={
                 Array [
                   Object {
-                    "color": "#000000",
-                    "flexShrink": 1,
-                    "flexWrap": "wrap",
-                    "fontFamily": "NotoSansKR-Regular",
-                    "fontSize": 14,
-                    "lineHeight": 22,
+                    "color": "#FFFFFF",
+                    "fontFamily": "NotoSansKR-Medium",
+                    "textAlign": "center",
                   },
                 ]
               }
@@ -4576,23 +4831,30 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#FFFFFF",
-                "borderColor": "#D9D9D9",
-                "borderRadius": 4,
-                "borderWidth": 1,
-                "flexBasis": 0,
-                "flexDirection": "row",
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "justifyContent": "center",
-                "opacity": 1,
-                "paddingBottom": 6,
-                "paddingLeft": 12,
-                "paddingRight": 12,
-                "paddingTop": 6,
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#007AFF",
+                  "borderColor": "black",
+                  "borderRadius": 26,
+                  "borderStyle": "solid",
+                  "borderWidth": 0,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "paddingBottom": 14,
+                  "paddingLeft": 14,
+                  "paddingRight": 14,
+                  "paddingTop": 14,
+                },
+                Object {
+                  "alignItems": "center",
+                  "flexBasis": 0,
+                  "flexDirection": "row",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "justifyContent": "center",
+                },
+              ]
             }
           >
             <Image
@@ -4604,25 +4866,22 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               style={
                 Array [
                   Object {
-                    "tintColor": undefined,
+                    "tintColor": "#FFFFFF",
                   },
                   Object {
-                    "marginRight": 2,
+                    "marginRight": 6,
                   },
                 ]
               }
             />
             <Text
-              size={2}
+              includeFontPadding={false}
               style={
                 Array [
                   Object {
-                    "color": "#000000",
-                    "flexShrink": 1,
-                    "flexWrap": "wrap",
-                    "fontFamily": "NotoSansKR-Regular",
-                    "fontSize": 14,
-                    "lineHeight": 22,
+                    "color": "#FFFFFF",
+                    "fontFamily": "NotoSansKR-Medium",
+                    "textAlign": "center",
                   },
                 ]
               }
@@ -6752,7 +7011,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
           style={
             Array [
               Object {
-                "tintColor": undefined,
+                "tintColor": "#FFFFFF",
               },
               Object {},
             ]
@@ -6856,7 +7115,8 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
           style={
             Array [
               Object {
-                "tintColor": "#8C8C8C",
+                "opacity": 0.5,
+                "tintColor": "#FFFFFF",
               },
               Object {},
             ]
@@ -8338,7 +8598,7 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
         style={
           Array [
             Object {
-              "tintColor": undefined,
+              "tintColor": "#FFFFFF",
             },
             Object {
               "marginRight": 4,
@@ -9220,7 +9480,7 @@ exports[`Storyshots Molecules/ListItem Playground 1`] = `
         style={
           Array [
             Object {
-              "tintColor": undefined,
+              "tintColor": "#FFFFFF",
             },
             Object {},
           ]
@@ -9334,7 +9594,7 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
         style={
           Array [
             Object {
-              "tintColor": undefined,
+              "tintColor": "#FFFFFF",
             },
             Object {},
           ]
@@ -9417,7 +9677,7 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
         style={
           Array [
             Object {
-              "tintColor": undefined,
+              "tintColor": "#FFFFFF",
             },
             Object {},
           ]
@@ -9531,7 +9791,7 @@ exports[`Storyshots Molecules/ListItem Suffix 1`] = `
         style={
           Array [
             Object {
-              "tintColor": undefined,
+              "tintColor": "#FFFFFF",
             },
             Object {},
           ]
@@ -9718,7 +9978,7 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
         style={
           Array [
             Object {
-              "tintColor": undefined,
+              "tintColor": "#FFFFFF",
             },
             Object {},
           ]
@@ -9801,7 +10061,7 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
         style={
           Array [
             Object {
-              "tintColor": undefined,
+              "tintColor": "#FFFFFF",
             },
             Object {},
           ]
@@ -9841,20 +10101,22 @@ exports[`Storyshots Molecules/Modal Default 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "opacity": 1,
-        "paddingBottom": 10,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 10,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#007AFF",
+          "borderColor": "black",
+          "borderRadius": 26,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 14,
+          "paddingRight": 14,
+          "paddingTop": 14,
+        },
+      ]
     }
   >
     <Text
@@ -9862,10 +10124,8 @@ exports[`Storyshots Molecules/Modal Default 1`] = `
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
         ]
@@ -14408,7 +14668,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
               style={
                 Array [
                   Object {
-                    "tintColor": undefined,
+                    "tintColor": "#FFFFFF",
                   },
                   Object {},
                 ]
@@ -14748,7 +15008,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           style={
             Array [
               Object {
-                "tintColor": undefined,
+                "tintColor": "#FFFFFF",
               },
               Object {
                 "marginRight": 4,

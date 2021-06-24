@@ -6,19 +6,19 @@ import CenterContainerDecorator from '@decorators/center-container.decorator';
 import SThemeDecorator from '@decorators/styled-components.decorator';
 import Icon from './Icon';
 import { Text } from 'react-native';
-import { ButtonColor } from '../Button/Button.types';
+import { SystemColorMain } from '../../styles/sytem-colors';
 
 storiesOf('Atoms/Icon', module)
   .addDecorator(SThemeDecorator)
   .addDecorator(CenterContainerDecorator)
   .add('Playground', () => {
     const usePredefinedColor = boolean('usePredefinedColor', false);
-    const colorOptions: ButtonColor[] = [
-      'default',
+    const colorOptions: SystemColorMain[] = [
       'primary',
-      'kakao',
-      'apple',
-      'google',
+      'success',
+      'error',
+      'black',
+      'white',
     ];
     return (
       <>
@@ -26,7 +26,7 @@ storiesOf('Atoms/Icon', module)
           source={require('@assets/icons/camera/camera.png')}
           color={
             usePredefinedColor
-              ? select('color', colorOptions, 'default')
+              ? select('color', colorOptions, 'primary')
               : color('color', '#000000')
           }
           touchable={boolean('touchable', true)}
@@ -43,31 +43,31 @@ storiesOf('Atoms/Icon', module)
       <>
         <Icon
           source={require('@assets/icons/camera/camera.png')}
-          color="default"
-          style={{ backgroundColor: '#E3E3E3' }}
-          onPress={e => action('onPress')(e.nativeEvent)}
-        />
-        <Icon
-          source={require('@assets/icons/camera/camera.png')}
           color="primary"
           style={{ backgroundColor: '#E3E3E3' }}
           onPress={e => action('onPress')(e.nativeEvent)}
         />
         <Icon
           source={require('@assets/icons/camera/camera.png')}
-          color="kakao"
+          color="success"
           style={{ backgroundColor: '#E3E3E3' }}
           onPress={e => action('onPress')(e.nativeEvent)}
         />
         <Icon
           source={require('@assets/icons/camera/camera.png')}
-          color="apple"
+          color="error"
           style={{ backgroundColor: '#E3E3E3' }}
           onPress={e => action('onPress')(e.nativeEvent)}
         />
         <Icon
           source={require('@assets/icons/camera/camera.png')}
-          color="google"
+          color="black"
+          style={{ backgroundColor: '#E3E3E3' }}
+          onPress={e => action('onPress')(e.nativeEvent)}
+        />
+        <Icon
+          source={require('@assets/icons/camera/camera.png')}
+          color="white"
           style={{ backgroundColor: '#E3E3E3' }}
           onPress={e => action('onPress')(e.nativeEvent)}
         />
@@ -79,7 +79,7 @@ storiesOf('Atoms/Icon', module)
       <Icon
         source={require('@assets/icons/camera/camera.png')}
         touchable
-        color="default"
+        color="primary"
         style={{ backgroundColor: '#E3E3E3' }}
         onPress={e => action('onPress')(e.nativeEvent)}
       />
@@ -90,13 +90,6 @@ storiesOf('Atoms/Icon', module)
       <>
         <Icon
           source={require('@assets/icons/camera/camera.png')}
-          color="default"
-          disabled
-          style={{ backgroundColor: '#E3E3E3' }}
-          onPress={e => action('onPress')(e.nativeEvent)}
-        />
-        <Icon
-          source={require('@assets/icons/camera/camera.png')}
           color="primary"
           disabled
           style={{ backgroundColor: '#E3E3E3' }}
@@ -104,21 +97,28 @@ storiesOf('Atoms/Icon', module)
         />
         <Icon
           source={require('@assets/icons/camera/camera.png')}
-          color="kakao"
+          color="success"
           disabled
           style={{ backgroundColor: '#E3E3E3' }}
           onPress={e => action('onPress')(e.nativeEvent)}
         />
         <Icon
           source={require('@assets/icons/camera/camera.png')}
-          color="apple"
+          color="error"
           disabled
           style={{ backgroundColor: '#E3E3E3' }}
           onPress={e => action('onPress')(e.nativeEvent)}
         />
         <Icon
           source={require('@assets/icons/camera/camera.png')}
-          color="google"
+          color="black"
+          disabled
+          style={{ backgroundColor: '#E3E3E3' }}
+          onPress={e => action('onPress')(e.nativeEvent)}
+        />
+        <Icon
+          source={require('@assets/icons/camera/camera.png')}
+          color="white"
           disabled
           style={{ backgroundColor: '#E3E3E3' }}
           onPress={e => action('onPress')(e.nativeEvent)}

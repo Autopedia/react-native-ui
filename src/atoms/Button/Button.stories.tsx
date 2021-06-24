@@ -4,72 +4,40 @@ import { storiesOf } from '@storybook/react-native';
 import { View } from 'react-native';
 import SThemeDecorator from '@decorators/styled-components.decorator';
 import CenterContainerDecorator from '@decorators/center-container.decorator';
-import {
-  ButtonColor,
-  ButtonLayout,
-  ButtonSize,
-} from '@atoms/Button/Button.types';
 
 import Button from '@atoms/Button';
 import { action } from '@storybook/addon-actions';
+import { ButtonType } from './Button.types';
+import { SystemColorMain } from '../../styles/sytem-colors';
+
 storiesOf('Atoms/Button', module)
   .addDecorator(SThemeDecorator)
   .addDecorator(CenterContainerDecorator)
-  .add(
-    'Playground',
-    () => {
-      const sizeOptions: ButtonSize[] = ['sm', 'md', 'lg'];
-      const colorOptions: ButtonColor[] = [
-        'default',
-        'primary',
-        'kakao',
-        'apple',
-        'google',
-      ];
-      const layoutOptions: ButtonLayout[] = ['inline', 'block', 'sticky'];
 
-      return (
-        <Button
-          size={select('size', sizeOptions, 'md')}
-          color={select('color', colorOptions, 'default')}
-          layout={select('layout', layoutOptions, 'inline')}
-          disabled={boolean('disabled', false)}
-          icon={
-            boolean('icon', false) && require('@assets/icons/shop/shop.png')
-          }
-          iconPosition={select('iconPosition', ['left', 'right'], 'left')}
-          absoluteIcon={boolean('absoluteIcon', false)}
-          onPress={e => action('onPress')(e.nativeEvent)}
-        >
-          {text('text', 'Button')}
-        </Button>
-      );
-    },
-    {
-      notes: 'Hi there',
-    },
-  )
-  .add('Size', () => {
+  .add('Playground', () => {
+    const typeOptions: ButtonType[] = ['block', 'inline', 'text'];
+    const colorOptions: SystemColorMain[] = [
+      'primary',
+      'success',
+      'error',
+      'black',
+      'white',
+    ];
+
     return (
-      <>
-        <Button
-          size="sm"
-          onPress={e => action('onPress')(e.nativeEvent)}
-          style={{ marginBottom: 5 }}
-        >
-          Small
-        </Button>
-        <Button
-          size="md"
-          onPress={e => action('onPress')(e.nativeEvent)}
-          style={{ marginBottom: 5 }}
-        >
-          Medium
-        </Button>
-        <Button size="lg" onPress={e => action('onPress')(e.nativeEvent)}>
-          Large
-        </Button>
-      </>
+      <Button
+        type={select('type', typeOptions, 'inline')}
+        color={select('color', colorOptions, 'primary')}
+        textColor={select('textColor', colorOptions, 'white')}
+        tile={boolean('tile', false)}
+        disabled={boolean('disabled', false)}
+        icon={boolean('icon', false) && require('@assets/icons/shop/shop.png')}
+        iconPosition={select('iconPosition', ['left', 'right'], 'left')}
+        absoluteIcon={boolean('absoluteIcon', false)}
+        onPress={e => action('onPress')(e.nativeEvent)}
+      >
+        {text('text', 'Button')}
+      </Button>
     );
   })
   .add('Type', () => {
@@ -79,10 +47,43 @@ storiesOf('Atoms/Button', module)
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
+          Inline
+        </Button>
+        <Button
+          type="block"
+          onPress={e => action('onPress')(e.nativeEvent)}
+          style={{ marginBottom: 5 }}
+        >
+          Block
+        </Button>
+
+        <Button
+          type="text"
+          textColor="black"
+          onPress={e => action('onPress')(e.nativeEvent)}
+        >
+          Text
+        </Button>
+      </>
+    );
+  })
+  .add('Tile', () => {
+    return (
+      <>
+        <Button
+          type="block"
+          onPress={e => action('onPress')(e.nativeEvent)}
+          style={{ marginBottom: 5 }}
+        >
           Default
         </Button>
-        <Button type="link" onPress={e => action('onPress')(e.nativeEvent)}>
-          Link
+        <Button
+          type="block"
+          tile
+          onPress={e => action('onPress')(e.nativeEvent)}
+          style={{ marginBottom: 5 }}
+        >
+          Tile
         </Button>
       </>
     );
@@ -104,32 +105,41 @@ storiesOf('Atoms/Button', module)
           Default Disabled
         </Button>
         <Button
-          type="link"
+          type="block"
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
-          Link
+          Block
         </Button>
         <Button
-          type="link"
+          type="block"
           disabled
           onPress={e => action('onPress')(e.nativeEvent)}
         >
-          Link Disabled
+          Block Disabled
+        </Button>
+        <Button
+          type="text"
+          textColor="black"
+          onPress={e => action('onPress')(e.nativeEvent)}
+          style={{ marginBottom: 5 }}
+        >
+          Text
+        </Button>
+        <Button
+          type="text"
+          textColor="black"
+          disabled
+          onPress={e => action('onPress')(e.nativeEvent)}
+        >
+          Text Disabled
         </Button>
       </>
     );
   })
-  .add('Color/Default', () => {
+  .add('Color/Inline', () => {
     return (
       <>
-        <Button
-          color="default"
-          onPress={e => action('onPress')(e.nativeEvent)}
-          style={{ marginBottom: 5 }}
-        >
-          Default
-        </Button>
         <Button
           color="primary"
           onPress={e => action('onPress')(e.nativeEvent)}
@@ -138,90 +148,115 @@ storiesOf('Atoms/Button', module)
           Primary
         </Button>
         <Button
-          color="kakao"
+          color="success"
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
-          Kakao
+          Success
         </Button>
         <Button
-          color="apple"
+          color="error"
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
-          Apple
+          Error
         </Button>
-        <Button color="google" onPress={e => action('onPress')(e.nativeEvent)}>
-          Google
+        <Button
+          color="white"
+          textColor="black"
+          onPress={e => action('onPress')(e.nativeEvent)}
+        >
+          White
+        </Button>
+        <Button color="black" onPress={e => action('onPress')(e.nativeEvent)}>
+          Black
         </Button>
       </>
     );
   })
-  .add('Color/Link', () => {
+  .add('Color/Block', () => {
     return (
       <>
         <Button
-          type="link"
-          color="default"
+          type="block"
+          color="primary"
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
-          Default
+          Primary
         </Button>
         <Button
-          type="link"
-          color="muted"
+          type="block"
+          color="success"
+          onPress={e => action('onPress')(e.nativeEvent)}
+          style={{ marginBottom: 5 }}
+        >
+          Success
+        </Button>
+        <Button
+          type="block"
+          color="error"
+          onPress={e => action('onPress')(e.nativeEvent)}
+          style={{ marginBottom: 5 }}
+        >
+          Error
+        </Button>
+        <Button
+          type="block"
+          color="white"
+          textColor="black"
           onPress={e => action('onPress')(e.nativeEvent)}
         >
-          Muted
+          White
+        </Button>
+        <Button
+          type="block"
+          color="black"
+          onPress={e => action('onPress')(e.nativeEvent)}
+        >
+          Black
         </Button>
       </>
     );
   })
-  .add('Layout/Inline', () => {
+  .add('Color/Text', () => {
     return (
-      <View style={{ flexDirection: 'row' }}>
+      <>
         <Button
+          type="text"
+          textColor="primary"
           onPress={e => action('onPress')(e.nativeEvent)}
-          style={{ marginRight: 5 }}
+          style={{ marginBottom: 5 }}
         >
-          Btn 1
+          Primary
         </Button>
         <Button
+          type="text"
+          textColor="success"
           onPress={e => action('onPress')(e.nativeEvent)}
-          style={{ marginRight: 5 }}
+          style={{ marginBottom: 5 }}
         >
-          Btn 2
+          Success
         </Button>
         <Button
+          type="text"
+          textColor="error"
           onPress={e => action('onPress')(e.nativeEvent)}
-          style={{ marginRight: 5 }}
+          style={{ marginBottom: 5 }}
         >
-          Btn 3
+          Error
         </Button>
-        <Button onPress={e => action('onPress')(e.nativeEvent)}>Btn 4</Button>
-      </View>
+        <Button
+          type="text"
+          textColor="black"
+          onPress={e => action('onPress')(e.nativeEvent)}
+        >
+          Black
+        </Button>
+      </>
     );
   })
-  .add('Layout/Block', () => {
-    return (
-      <Button layout="block" onPress={e => action('onPress')(e.nativeEvent)}>
-        Block Button
-      </Button>
-    );
-  })
-  .add('Layout/Sticky', () => {
-    return (
-      <Button
-        color="primary"
-        layout="sticky"
-        onPress={e => action('onPress')(e.nativeEvent)}
-      >
-        Sticky Button
-      </Button>
-    );
-  })
-  .add('Icon/Default', () => {
+  .add('Icon', () => {
     return (
       <>
         <Button
@@ -240,7 +275,7 @@ storiesOf('Atoms/Button', module)
           Icon Right
         </Button>
         <Button
-          layout="block"
+          type="block"
           icon={require('@assets/icons/shop/shop.png')}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
@@ -248,7 +283,7 @@ storiesOf('Atoms/Button', module)
           Block Icon Left
         </Button>
         <Button
-          layout="block"
+          type="block"
           icon={require('@assets/icons/shop/shop.png')}
           iconPosition="right"
           onPress={e => action('onPress')(e.nativeEvent)}
@@ -256,14 +291,33 @@ storiesOf('Atoms/Button', module)
         >
           Block Icon Right
         </Button>
+        <Button
+          type="text"
+          textColor="black"
+          icon={require('@assets/icons/shop/shop.png')}
+          onPress={e => action('onPress')(e.nativeEvent)}
+          style={{ marginBottom: 5 }}
+        >
+          Text Icon Left
+        </Button>
+        <Button
+          type="text"
+          textColor="black"
+          icon={require('@assets/icons/shop/shop.png')}
+          iconPosition="right"
+          onPress={e => action('onPress')(e.nativeEvent)}
+          style={{ marginBottom: 5 }}
+        >
+          Text Icon Right
+        </Button>
       </>
     );
   })
-  .add('Icon/Absolute', () => {
+  .add('AbsoluteIcon', () => {
     return (
       <>
         <Button
-          layout="block"
+          type="block"
           icon={require('@assets/icons/shop/shop.png')}
           absoluteIcon
           onPress={e => action('onPress')(e.nativeEvent)}
@@ -272,7 +326,7 @@ storiesOf('Atoms/Button', module)
           Absolute Icon Left
         </Button>
         <Button
-          layout="block"
+          type="block"
           icon={require('@assets/icons/shop/shop.png')}
           iconPosition="right"
           absoluteIcon

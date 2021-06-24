@@ -4,10 +4,10 @@ import {
   ImageStyle,
   FlexStyle,
 } from 'react-native';
-import { ButtonColor } from '@atoms/Button/Button.types';
+import { SystemColor } from '../../styles/sytem-colors';
 export interface IconProps {
   source: any;
-  color?: string | ButtonColor;
+  color?: SystemColor | string;
   touchable?: boolean;
   disabled?: boolean;
   onPress?: (event: GestureResponderEvent) => void;
