@@ -4576,6 +4576,7 @@ exports[`Storyshots Atoms/Message/ReviewMessage Playground 1`] = `
               "paddingLeft": 14,
               "paddingRight": 14,
               "paddingTop": 14,
+              "width": "100%",
             },
           ]
         }
