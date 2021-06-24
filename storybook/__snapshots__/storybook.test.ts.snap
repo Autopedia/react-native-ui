@@ -4775,7 +4775,7 @@ exports[`Storyshots Atoms/Message/UnhandledMessage Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#BDDBFF",
+              "color": "#E0ECFA",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
@@ -6059,7 +6059,7 @@ exports[`Storyshots Atoms/Sign Playground 1`] = `
       Array [
         Object {
           "alignSelf": "center",
-          "backgroundColor": "#BDDBFF",
+          "backgroundColor": "#E0ECFA",
           "borderRadius": 20,
           "paddingBottom": 4,
           "paddingLeft": 12,
