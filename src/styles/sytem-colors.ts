@@ -12,16 +12,16 @@ export const systemColors = {
 };
 
 export const systemColorMap = {
-  primary: systemColors.PRIMARY,
-  primary_dark: systemColors.PRIMARY_DARK,
-  primary_light: systemColors.PRIMARY_LIGHT,
-  primary_extralight: systemColors.PRIMARY_EXTRALIGHT,
-  success: systemColors.SUCCESS,
-  success_dark: systemColors.SUCCESS_DARK,
-  error: systemColors.ERROR,
-  error_dark: systemColors.ERROR_DARK,
-  black: systemColors.BLACK,
-  white: systemColors.WHITE,
+  primary: 'PRIMARY',
+  primary_dark: 'PRIMARY_DARK',
+  primary_light: 'PRIMARY_LIGHT',
+  primary_extralight: 'PRIMARY_EXTRALIGHT',
+  success: 'SUCCESS',
+  success_dark: 'SUCCESS_DARK',
+  error: 'ERROR',
+  error_dark: 'ERROR_DARK',
+  black: 'BLACK',
+  white: 'WHITE',
 };
 
 export type SystemColorKey = keyof typeof systemColors;
