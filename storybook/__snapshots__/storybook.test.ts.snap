@@ -6560,16 +6560,21 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
         Array [
           Object {
             "backgroundColor": "#FFFFFF",
-            "borderColor": "#D9D9D9",
-            "borderRadius": 4,
-            "borderWidth": 1,
+            "borderRadius": 16,
             "flexGrow": 1,
             "justifyContent": "center",
-            "paddingBottom": 10,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 10,
+            "paddingBottom": 14,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 14,
             "position": "relative",
+            "shadowColor": "rgba(0, 0, 0, 0.1)",
+            "shadowOffset": Object {
+              "height": 8,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 24,
           },
         ]
       }
@@ -6579,7 +6584,7 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
         defaultValue="Single Line"
         editable={true}
         onChangeText={[Function]}
-        placeholderTextColor="#8C8C8C"
+        placeholderTextColor="#C6CACF"
         rejectResponderTermination={true}
         secureTextEntry={false}
         style={
@@ -6619,16 +6624,21 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
         Array [
           Object {
             "backgroundColor": "#FFFFFF",
-            "borderColor": "#D9D9D9",
-            "borderRadius": 4,
-            "borderWidth": 1,
+            "borderRadius": 16,
             "flexGrow": 1,
             "justifyContent": "center",
-            "paddingBottom": 10,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 10,
+            "paddingBottom": 14,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 14,
             "position": "relative",
+            "shadowColor": "rgba(0, 0, 0, 0.1)",
+            "shadowOffset": Object {
+              "height": 8,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 24,
           },
         ]
       }
@@ -6640,7 +6650,7 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
         multiline={true}
         numberOfLines={3}
         onChangeText={[Function]}
-        placeholderTextColor="#8C8C8C"
+        placeholderTextColor="#C6CACF"
         rejectResponderTermination={true}
         secureTextEntry={false}
         style={
@@ -6702,16 +6712,21 @@ exports[`Storyshots Atoms/TextInput Placeholder 1`] = `
         Array [
           Object {
             "backgroundColor": "#FFFFFF",
-            "borderColor": "#D9D9D9",
-            "borderRadius": 4,
-            "borderWidth": 1,
+            "borderRadius": 16,
             "flexGrow": 1,
             "justifyContent": "center",
-            "paddingBottom": 10,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 10,
+            "paddingBottom": 14,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 14,
             "position": "relative",
+            "shadowColor": "rgba(0, 0, 0, 0.1)",
+            "shadowOffset": Object {
+              "height": 8,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 24,
           },
         ]
       }
@@ -6721,7 +6736,7 @@ exports[`Storyshots Atoms/TextInput Placeholder 1`] = `
         editable={true}
         onChangeText={[Function]}
         placeholder="Placeholder"
-        placeholderTextColor="#8C8C8C"
+        placeholderTextColor="#C6CACF"
         rejectResponderTermination={true}
         secureTextEntry={false}
         style={
@@ -6784,16 +6799,21 @@ exports[`Storyshots Atoms/TextInput Playground 1`] = `
         Array [
           Object {
             "backgroundColor": "#FFFFFF",
-            "borderColor": "#D9D9D9",
-            "borderRadius": 4,
-            "borderWidth": 1,
+            "borderRadius": 16,
             "flexGrow": 1,
             "justifyContent": "center",
-            "paddingBottom": 10,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 10,
+            "paddingBottom": 14,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 14,
             "position": "relative",
+            "shadowColor": "rgba(0, 0, 0, 0.1)",
+            "shadowOffset": Object {
+              "height": 8,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 24,
           },
         ]
       }
@@ -6808,7 +6828,7 @@ exports[`Storyshots Atoms/TextInput Playground 1`] = `
         numberOfLines={3}
         onChangeText={[Function]}
         placeholder="placeholder"
-        placeholderTextColor="#8C8C8C"
+        placeholderTextColor="#C6CACF"
         rejectResponderTermination={true}
         secureTextEntry={false}
         style={
@@ -6872,16 +6892,21 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
         Array [
           Object {
             "backgroundColor": "#FFFFFF",
-            "borderColor": "#D9D9D9",
-            "borderRadius": 4,
-            "borderWidth": 1,
+            "borderRadius": 16,
             "flexGrow": 1,
             "justifyContent": "center",
-            "paddingBottom": 10,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 10,
+            "paddingBottom": 14,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 14,
             "position": "relative",
+            "shadowColor": "rgba(0, 0, 0, 0.1)",
+            "shadowOffset": Object {
+              "height": 8,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 24,
           },
         ]
       }
@@ -6891,7 +6916,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
         defaultValue="Example Text"
         editable={true}
         onChangeText={[Function]}
-        placeholderTextColor="#8C8C8C"
+        placeholderTextColor="#C6CACF"
         rejectResponderTermination={true}
         secureTextEntry={false}
         style={
@@ -6934,16 +6959,21 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
         Array [
           Object {
             "backgroundColor": "#FFFFFF",
-            "borderColor": "#D9D9D9",
-            "borderRadius": 4,
-            "borderWidth": 1,
+            "borderRadius": 16,
             "flexGrow": 1,
             "justifyContent": "center",
-            "paddingBottom": 10,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 10,
+            "paddingBottom": 14,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 14,
             "position": "relative",
+            "shadowColor": "rgba(0, 0, 0, 0.1)",
+            "shadowOffset": Object {
+              "height": 8,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 24,
           },
         ]
       }
@@ -6953,7 +6983,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
         defaultValue="Example Text"
         editable={true}
         onChangeText={[Function]}
-        placeholderTextColor="#8C8C8C"
+        placeholderTextColor="#C6CACF"
         rejectResponderTermination={true}
         secureTextEntry={true}
         style={
@@ -7038,15 +7068,21 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
           Object {
             "backgroundColor": "#F5F5F5",
             "borderColor": "#D9D9D9",
-            "borderRadius": 4,
-            "borderWidth": 1,
+            "borderRadius": 16,
             "flexGrow": 1,
             "justifyContent": "center",
-            "paddingBottom": 10,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 10,
+            "paddingBottom": 14,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 14,
             "position": "relative",
+            "shadowColor": "rgba(0, 0, 0, 0.1)",
+            "shadowOffset": Object {
+              "height": 8,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 24,
           },
         ]
       }
@@ -7057,7 +7093,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
         disabled={true}
         editable={false}
         onChangeText={[Function]}
-        placeholderTextColor="#8C8C8C"
+        placeholderTextColor="#C6CACF"
         rejectResponderTermination={true}
         secureTextEntry={true}
         style={
@@ -7162,17 +7198,22 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
           Object {
             "backgroundColor": "#FFFFFF",
             "borderBottomRightRadius": 0,
-            "borderColor": "#D9D9D9",
-            "borderRadius": 4,
+            "borderRadius": 16,
             "borderTopRightRadius": 0,
-            "borderWidth": 1,
             "flexGrow": 1,
             "justifyContent": "center",
-            "paddingBottom": 10,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 10,
+            "paddingBottom": 14,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 14,
             "position": "relative",
+            "shadowColor": "rgba(0, 0, 0, 0.1)",
+            "shadowOffset": Object {
+              "height": 8,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 24,
           },
         ]
       }
@@ -7187,7 +7228,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
         defaultValue="Text Input with Suffix"
         editable={true}
         onChangeText={[Function]}
-        placeholderTextColor="#8C8C8C"
+        placeholderTextColor="#C6CACF"
         rejectResponderTermination={true}
         secureTextEntry={false}
         style={
@@ -7276,16 +7317,21 @@ exports[`Storyshots Atoms/TextInput Type 1`] = `
         Array [
           Object {
             "backgroundColor": "#FFFFFF",
-            "borderColor": "#D9D9D9",
-            "borderRadius": 4,
-            "borderWidth": 1,
+            "borderRadius": 16,
             "flexGrow": 1,
             "justifyContent": "center",
-            "paddingBottom": 10,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 10,
+            "paddingBottom": 14,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 14,
             "position": "relative",
+            "shadowColor": "rgba(0, 0, 0, 0.1)",
+            "shadowOffset": Object {
+              "height": 8,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 24,
           },
         ]
       }
@@ -7296,7 +7342,7 @@ exports[`Storyshots Atoms/TextInput Type 1`] = `
         defaultValue="Default Text Input"
         editable={true}
         onChangeText={[Function]}
-        placeholderTextColor="#8C8C8C"
+        placeholderTextColor="#C6CACF"
         rejectResponderTermination={true}
         secureTextEntry={false}
         style={
@@ -7318,6 +7364,163 @@ exports[`Storyshots Atoms/TextInput Type 1`] = `
           ]
         }
         type="default"
+        underlineColorAndroid="transparent"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/TextInput Underline 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 16,
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 14,
+            "position": "relative",
+            "shadowColor": "rgba(0, 0, 0, 0.1)",
+            "shadowOffset": Object {
+              "height": 8,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 24,
+          },
+        ]
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        defaultValue="Success"
+        editable={true}
+        onChangeText={[Function]}
+        placeholderTextColor="#C6CACF"
+        rejectResponderTermination={true}
+        secureTextEntry={false}
+        style={
+          Array [
+            Object {
+              "borderBottomColor": "#48CF7C",
+              "borderBottomWidth": 1,
+              "color": "#1F1F1F",
+              "fontSize": 14,
+              "height": 22,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+            },
+            Object {},
+          ]
+        }
+        underline="success"
+        underlineColorAndroid="transparent"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 16,
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 14,
+            "position": "relative",
+            "shadowColor": "rgba(0, 0, 0, 0.1)",
+            "shadowOffset": Object {
+              "height": 8,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 24,
+          },
+        ]
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        defaultValue="Error"
+        editable={true}
+        onChangeText={[Function]}
+        placeholderTextColor="#C6CACF"
+        rejectResponderTermination={true}
+        secureTextEntry={false}
+        style={
+          Array [
+            Object {
+              "borderBottomColor": "#FA4339",
+              "borderBottomWidth": 1,
+              "color": "#1F1F1F",
+              "fontSize": 14,
+              "height": 22,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+            },
+            Object {},
+          ]
+        }
+        underline="error"
         underlineColorAndroid="transparent"
       />
     </View>
@@ -8262,16 +8465,21 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
           Array [
             Object {
               "backgroundColor": "#FFFFFF",
-              "borderColor": "#D9D9D9",
-              "borderRadius": 4,
-              "borderWidth": 1,
+              "borderRadius": 16,
               "flexGrow": 1,
               "justifyContent": "center",
-              "paddingBottom": 10,
-              "paddingLeft": 12,
-              "paddingRight": 12,
-              "paddingTop": 10,
+              "paddingBottom": 14,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 14,
               "position": "relative",
+              "shadowColor": "rgba(0, 0, 0, 0.1)",
+              "shadowOffset": Object {
+                "height": 8,
+                "width": 0,
+              },
+              "shadowOpacity": 1,
+              "shadowRadius": 24,
             },
           ]
         }
@@ -8280,7 +8488,7 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
           allowFontScaling={true}
           editable={true}
           onChangeText={[Function]}
-          placeholderTextColor="#8C8C8C"
+          placeholderTextColor="#C6CACF"
           rejectResponderTermination={true}
           secureTextEntry={false}
           style={
@@ -14461,16 +14669,21 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             Array [
               Object {
                 "backgroundColor": "#FFFFFF",
-                "borderColor": "#D9D9D9",
-                "borderRadius": 4,
-                "borderWidth": 1,
+                "borderRadius": 16,
                 "flexGrow": 1,
                 "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 12,
-                "paddingRight": 12,
-                "paddingTop": 10,
+                "paddingBottom": 14,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 14,
                 "position": "relative",
+                "shadowColor": "rgba(0, 0, 0, 0.1)",
+                "shadowOffset": Object {
+                  "height": 8,
+                  "width": 0,
+                },
+                "shadowOpacity": 1,
+                "shadowRadius": 24,
               },
             ]
           }
@@ -14481,7 +14694,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             editable={true}
             onChangeText={[Function]}
             placeholder="example@drcha.com"
-            placeholderTextColor="#8C8C8C"
+            placeholderTextColor="#C6CACF"
             rejectResponderTermination={true}
             secureTextEntry={false}
             style={
@@ -14590,16 +14803,21 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             Array [
               Object {
                 "backgroundColor": "#FFFFFF",
-                "borderColor": "#D9D9D9",
-                "borderRadius": 4,
-                "borderWidth": 1,
+                "borderRadius": 16,
                 "flexGrow": 1,
                 "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 12,
-                "paddingRight": 12,
-                "paddingTop": 10,
+                "paddingBottom": 14,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 14,
                 "position": "relative",
+                "shadowColor": "rgba(0, 0, 0, 0.1)",
+                "shadowOffset": Object {
+                  "height": 8,
+                  "width": 0,
+                },
+                "shadowOpacity": 1,
+                "shadowRadius": 24,
               },
             ]
           }
@@ -14610,7 +14828,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             editable={true}
             onChangeText={[Function]}
             placeholder="****"
-            placeholderTextColor="#8C8C8C"
+            placeholderTextColor="#C6CACF"
             rejectResponderTermination={true}
             secureTextEntry={true}
             style={
