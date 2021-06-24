@@ -8,6 +8,7 @@ import styled from 'styled-components/native';
 import Button from '@atoms/Button';
 import Icon from '@atoms/Icon';
 import MapView from 'react-native-maps';
+import colors from '@styles/colors';
 
 const ShopMessage: React.FC<ShopMessageProps> = ({
   name,
@@ -40,7 +41,7 @@ const ShopMessage: React.FC<ShopMessageProps> = ({
       </SMap>
       <SShopInfo>
         <Typography.Heading size={5}>{name}</Typography.Heading>
-        <Typography.Paragraph size="sm" color="muted">
+        <Typography.Paragraph size={2} color={colors.MUTED}>
           {address}
         </Typography.Paragraph>
         <SShopButtons>
@@ -50,11 +51,11 @@ const ShopMessage: React.FC<ShopMessageProps> = ({
             style={{ marginRight: Spacing.SPACE_4 }}
           >
             <SShopButtonIcon source={require('@assets/icons/shop/shop.png')} />
-            <Typography.Paragraph size="sm">상세 정보</Typography.Paragraph>
+            <Typography.Paragraph size={2}>상세 정보</Typography.Paragraph>
           </SShopButton>
           <SShopButton size="sm" onPress={onPressNavigate}>
             <SShopButtonIcon source={require('@assets/icons/map/map.png')} />
-            <Typography.Paragraph size="sm">길찾기</Typography.Paragraph>
+            <Typography.Paragraph size={2}>길찾기</Typography.Paragraph>
           </SShopButton>
         </SShopButtons>
       </SShopInfo>

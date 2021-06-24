@@ -3026,10 +3026,9 @@ exports[`Storyshots Atoms/Message/CardMessage Playground 1`] = `
           Array [
             Object {
               "color": "#000000",
-              "fontFamily": "NotoSansKR-Medium",
+              "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
               "lineHeight": 26,
-              "textDecorationColor": "#000000",
             },
           ]
         }
@@ -3037,8 +3036,8 @@ exports[`Storyshots Atoms/Message/CardMessage Playground 1`] = `
         Title
       </Text>
       <Text
-        color="muted"
-        size="sm"
+        color="#8C8C8C"
+        size={2}
         style={
           Array [
             Object {
@@ -3046,9 +3045,8 @@ exports[`Storyshots Atoms/Message/CardMessage Playground 1`] = `
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#8C8C8C",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {
               "marginVertical": 10,
@@ -3205,8 +3203,8 @@ exports[`Storyshots Atoms/Message/CounselCaseMessage Playground 1`] = `
         }
       >
         <Text
-          color="muted"
-          size="xs"
+          color="#8C8C8C"
+          size={2}
           style={
             Array [
               Object {
@@ -3214,9 +3212,8 @@ exports[`Storyshots Atoms/Message/CounselCaseMessage Playground 1`] = `
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
-                "fontSize": 12,
-                "lineHeight": 19,
-                "textDecorationColor": "#8C8C8C",
+                "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -3229,10 +3226,9 @@ exports[`Storyshots Atoms/Message/CounselCaseMessage Playground 1`] = `
             Array [
               Object {
                 "color": "#000000",
-                "fontFamily": "NotoSansKR-Medium",
+                "fontFamily": "NotoSansKR-Bold",
                 "fontSize": 16,
                 "lineHeight": 26,
-                "textDecorationColor": "#000000",
               },
             ]
           }
@@ -3298,7 +3294,8 @@ exports[`Storyshots Atoms/Message/EndConfirmedMessage Default 1`] = `
       }
     >
       <Text
-        color="muted"
+        color="#8C8C8C"
+        size={2}
         style={
           Array [
             Object {
@@ -3308,7 +3305,6 @@ exports[`Storyshots Atoms/Message/EndConfirmedMessage Default 1`] = `
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
-              "textDecorationColor": "#8C8C8C",
             },
           ]
         }
@@ -3375,10 +3371,9 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
           Array [
             Object {
               "color": "#000000",
-              "fontFamily": "NotoSansKR-Medium",
+              "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
               "lineHeight": 26,
-              "textDecorationColor": "#000000",
             },
           ]
         }
@@ -3386,8 +3381,8 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
         상담이 종료되었습니다
       </Text>
       <Text
-        color="muted"
-        size="sm"
+        color="#8C8C8C"
+        size={2}
         style={
           Array [
             Object {
@@ -3395,9 +3390,8 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#8C8C8C",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {
               "marginVertical": 10,
@@ -3592,8 +3586,8 @@ exports[`Storyshots Atoms/Message/EventMessage Playground 1`] = `
       }
     >
       <Text
-        color="muted"
-        size="xs"
+        color="#8C8C8C"
+        size={2}
         style={
           Array [
             Object {
@@ -3601,9 +3595,8 @@ exports[`Storyshots Atoms/Message/EventMessage Playground 1`] = `
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#8C8C8C",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -3616,10 +3609,9 @@ exports[`Storyshots Atoms/Message/EventMessage Playground 1`] = `
           Array [
             Object {
               "color": "#000000",
-              "fontFamily": "NotoSansKR-Medium",
+              "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
               "lineHeight": 26,
-              "textDecorationColor": "#000000",
             },
           ]
         }
@@ -3686,10 +3678,9 @@ exports[`Storyshots Atoms/Message/FeedbackMessage Playground 1`] = `
           Array [
             Object {
               "color": "#000000",
-              "fontFamily": "NotoSansKR-Medium",
+              "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
               "lineHeight": 26,
-              "textDecorationColor": "#000000",
             },
           ]
         }
@@ -3697,8 +3688,8 @@ exports[`Storyshots Atoms/Message/FeedbackMessage Playground 1`] = `
         피드백을 남겨주세요!
       </Text>
       <Text
-        color="muted"
-        size="sm"
+        color="#8C8C8C"
+        size={2}
         style={
           Array [
             Object {
@@ -3706,9 +3697,8 @@ exports[`Storyshots Atoms/Message/FeedbackMessage Playground 1`] = `
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#8C8C8C",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {
               "marginVertical": 10,
@@ -3960,10 +3950,9 @@ exports[`Storyshots Atoms/Message/OutdatedMessage Playground 1`] = `
           Array [
             Object {
               "color": "#000000",
-              "fontFamily": "NotoSansKR-Medium",
+              "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
               "lineHeight": 26,
-              "textDecorationColor": "#000000",
             },
           ]
         }
@@ -3972,8 +3961,8 @@ exports[`Storyshots Atoms/Message/OutdatedMessage Playground 1`] = `
 예정입니다
       </Text>
       <Text
-        color="muted"
-        size="sm"
+        color="#8C8C8C"
+        size={2}
         style={
           Array [
             Object {
@@ -3981,9 +3970,8 @@ exports[`Storyshots Atoms/Message/OutdatedMessage Playground 1`] = `
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#8C8C8C",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {
               "marginVertical": 10,
@@ -4185,8 +4173,8 @@ exports[`Storyshots Atoms/Message/PostMessage Playground 1`] = `
         }
       >
         <Text
-          color="muted"
-          size="xs"
+          color="#8C8C8C"
+          size={2}
           style={
             Array [
               Object {
@@ -4194,9 +4182,8 @@ exports[`Storyshots Atoms/Message/PostMessage Playground 1`] = `
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
-                "fontSize": 12,
-                "lineHeight": 19,
-                "textDecorationColor": "#8C8C8C",
+                "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -4209,10 +4196,9 @@ exports[`Storyshots Atoms/Message/PostMessage Playground 1`] = `
             Array [
               Object {
                 "color": "#000000",
-                "fontFamily": "NotoSansKR-Medium",
+                "fontFamily": "NotoSansKR-Bold",
                 "fontSize": 16,
                 "lineHeight": 26,
-                "textDecorationColor": "#000000",
               },
             ]
           }
@@ -4280,10 +4266,9 @@ exports[`Storyshots Atoms/Message/ReviewMessage Playground 1`] = `
           Array [
             Object {
               "color": "#000000",
-              "fontFamily": "NotoSansKR-Medium",
+              "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
               "lineHeight": 26,
-              "textDecorationColor": "#000000",
             },
           ]
         }
@@ -4291,8 +4276,8 @@ exports[`Storyshots Atoms/Message/ReviewMessage Playground 1`] = `
         리뷰를 남겨주세요!
       </Text>
       <Text
-        color="muted"
-        size="sm"
+        color="#8C8C8C"
+        size={2}
         style={
           Array [
             Object {
@@ -4300,9 +4285,8 @@ exports[`Storyshots Atoms/Message/ReviewMessage Playground 1`] = `
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#8C8C8C",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {
               "marginVertical": 10,
@@ -4478,10 +4462,9 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
             Array [
               Object {
                 "color": "#000000",
-                "fontFamily": "NotoSansKR-Medium",
+                "fontFamily": "NotoSansKR-Bold",
                 "fontSize": 16,
                 "lineHeight": 26,
-                "textDecorationColor": "#000000",
               },
             ]
           }
@@ -4489,8 +4472,8 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
           Name
         </Text>
         <Text
-          color="muted"
-          size="sm"
+          color="#8C8C8C"
+          size={2}
           style={
             Array [
               Object {
@@ -4498,9 +4481,8 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
-                "fontSize": 12,
-                "lineHeight": 19,
-                "textDecorationColor": "#8C8C8C",
+                "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -4566,17 +4548,16 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               }
             />
             <Text
-              size="sm"
+              size={2}
               style={
                 Array [
                   Object {
-                    "color": "#1F1F1F",
+                    "color": "#000000",
                     "flexShrink": 1,
                     "flexWrap": "wrap",
                     "fontFamily": "NotoSansKR-Regular",
-                    "fontSize": 12,
-                    "lineHeight": 19,
-                    "textDecorationColor": "#1F1F1F",
+                    "fontSize": 14,
+                    "lineHeight": 22,
                   },
                 ]
               }
@@ -4632,17 +4613,16 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               }
             />
             <Text
-              size="sm"
+              size={2}
               style={
                 Array [
                   Object {
-                    "color": "#1F1F1F",
+                    "color": "#000000",
                     "flexShrink": 1,
                     "flexWrap": "wrap",
                     "fontFamily": "NotoSansKR-Regular",
-                    "fontSize": 12,
-                    "lineHeight": 19,
-                    "textDecorationColor": "#1F1F1F",
+                    "fontSize": 14,
+                    "lineHeight": 22,
                   },
                 ]
               }
@@ -4790,8 +4770,8 @@ exports[`Storyshots Atoms/Message/UnhandledMessage Playground 1`] = `
       }
     >
       <Text
-        color="primaryExtraLight"
-        size="sm"
+        color="primary_extralight"
+        size={2}
         style={
           Array [
             Object {
@@ -4799,9 +4779,8 @@ exports[`Storyshots Atoms/Message/UnhandledMessage Playground 1`] = `
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#BDDBFF",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -7105,17 +7084,17 @@ exports[`Storyshots Atoms/Typography Bold 1`] = `
   }
 >
   <Text
-    bold={true}
+    fontWeight="bold"
+    size={1}
     style={
       Array [
         Object {
-          "color": "#1F1F1F",
+          "color": "#000000",
           "flexShrink": 1,
           "flexWrap": "wrap",
-          "fontFamily": "NotoSansKR-Medium",
-          "fontSize": 14,
-          "lineHeight": 22,
-          "textDecorationColor": "#1F1F1F",
+          "fontFamily": "NotoSansKR-Bold",
+          "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7123,21 +7102,39 @@ exports[`Storyshots Atoms/Typography Bold 1`] = `
     Bold Paragraph
   </Text>
   <Text
+    size={1}
     style={
       Array [
         Object {
-          "color": "#1F1F1F",
+          "color": "#000000",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
-          "fontSize": 14,
-          "lineHeight": 22,
-          "textDecorationColor": "#1F1F1F",
+          "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
   >
     Normal Paragraph
+  </Text>
+  <Text
+    fontWeight="light"
+    size={1}
+    style={
+      Array [
+        Object {
+          "color": "#000000",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Light",
+          "fontSize": 16,
+          "lineHeight": 26,
+        },
+      ]
+    }
+  >
+    Light Paragraph
   </Text>
 </View>
 `;
@@ -7161,17 +7158,15 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
   }
 >
   <Text
-    color="default"
     size={3}
     style={
       Array [
         Object {
           "color": "#000000",
-          "fontFamily": "NotoSansKR-Medium",
+          "fontFamily": "NotoSansKR-Bold",
           "fontSize": 24,
           "lineHeight": 35,
           "marginBottom": 12,
-          "textDecorationColor": "#000000",
         },
       ]
     }
@@ -7185,16 +7180,32 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
       Array [
         Object {
           "color": "#007AFF",
-          "fontFamily": "NotoSansKR-Medium",
+          "fontFamily": "NotoSansKR-Bold",
           "fontSize": 24,
           "lineHeight": 35,
           "marginBottom": 12,
-          "textDecorationColor": "#007AFF",
         },
       ]
     }
   >
     Primary Heading
+  </Text>
+  <Text
+    color="success"
+    size={3}
+    style={
+      Array [
+        Object {
+          "color": "#48CF7C",
+          "fontFamily": "NotoSansKR-Bold",
+          "fontSize": 24,
+          "lineHeight": 35,
+          "marginBottom": 12,
+        },
+      ]
+    }
+  >
+    Success Heading
   </Text>
   <Text
     color="error"
@@ -7203,11 +7214,10 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
       Array [
         Object {
           "color": "#FA4339",
-          "fontFamily": "NotoSansKR-Medium",
+          "fontFamily": "NotoSansKR-Bold",
           "fontSize": 24,
           "lineHeight": 35,
           "marginBottom": 12,
-          "textDecorationColor": "#FA4339",
         },
       ]
     }
@@ -7215,35 +7225,17 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     Error Heading
   </Text>
   <Text
-    color="muted"
-    size={3}
+    color="black"
+    size={1}
     style={
       Array [
         Object {
-          "color": "#8C8C8C",
-          "fontFamily": "NotoSansKR-Medium",
-          "fontSize": 24,
-          "lineHeight": 35,
-          "marginBottom": 12,
-          "textDecorationColor": "#8C8C8C",
-        },
-      ]
-    }
-  >
-    Muted Heading
-  </Text>
-  <Text
-    color="default"
-    style={
-      Array [
-        Object {
-          "color": "#1F1F1F",
+          "color": "#000000",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
-          "fontSize": 14,
-          "lineHeight": 22,
-          "textDecorationColor": "#1F1F1F",
+          "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7252,6 +7244,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
   </Text>
   <Text
     color="primary"
+    size={1}
     style={
       Array [
         Object {
@@ -7259,9 +7252,8 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
-          "fontSize": 14,
-          "lineHeight": 22,
-          "textDecorationColor": "#007AFF",
+          "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7269,7 +7261,26 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     Primary Paragraph
   </Text>
   <Text
+    color="success"
+    size={1}
+    style={
+      Array [
+        Object {
+          "color": "#48CF7C",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 16,
+          "lineHeight": 26,
+        },
+      ]
+    }
+  >
+    Success Paragraph
+  </Text>
+  <Text
     color="error"
+    size={1}
     style={
       Array [
         Object {
@@ -7277,9 +7288,8 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
-          "fontSize": 14,
-          "lineHeight": 22,
-          "textDecorationColor": "#FA4339",
+          "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7287,22 +7297,64 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     Error Paragraph
   </Text>
   <Text
-    color="muted"
+    color="black"
     style={
       Array [
         Object {
-          "color": "#8C8C8C",
-          "flexShrink": 1,
-          "flexWrap": "wrap",
-          "fontFamily": "NotoSansKR-Regular",
-          "fontSize": 14,
-          "lineHeight": 22,
-          "textDecorationColor": "#8C8C8C",
+          "color": "#000000",
+          "fontFamily": "NotoSansKR-Medium",
+          "fontSize": 12,
+          "lineHeight": 19,
         },
       ]
     }
   >
-    Muted Paragraph
+    Default Caption
+  </Text>
+  <Text
+    color="primary"
+    style={
+      Array [
+        Object {
+          "color": "#007AFF",
+          "fontFamily": "NotoSansKR-Medium",
+          "fontSize": 12,
+          "lineHeight": 19,
+        },
+      ]
+    }
+  >
+    Primary Caption
+  </Text>
+  <Text
+    color="success"
+    style={
+      Array [
+        Object {
+          "color": "#48CF7C",
+          "fontFamily": "NotoSansKR-Medium",
+          "fontSize": 12,
+          "lineHeight": 19,
+        },
+      ]
+    }
+  >
+    Success Caption
+  </Text>
+  <Text
+    color="error"
+    style={
+      Array [
+        Object {
+          "color": "#FA4339",
+          "fontFamily": "NotoSansKR-Medium",
+          "fontSize": 12,
+          "lineHeight": 19,
+        },
+      ]
+    }
+  >
+    Error Caption
   </Text>
 </View>
 `;
@@ -7326,17 +7378,16 @@ exports[`Storyshots Atoms/Typography Link 1`] = `
   }
 >
   <Text
-    color="default"
+    size={1}
     style={
       Array [
         Object {
-          "color": "#1F1F1F",
+          "color": "#000000",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
-          "fontSize": 14,
-          "lineHeight": 22,
-          "textDecorationColor": "#1F1F1F",
+          "fontSize": 16,
+          "lineHeight": 26,
           "textDecorationLine": "underline",
         },
       ]
@@ -7347,6 +7398,7 @@ exports[`Storyshots Atoms/Typography Link 1`] = `
   </Text>
   <Text
     color="primary"
+    size={1}
     style={
       Array [
         Object {
@@ -7354,9 +7406,8 @@ exports[`Storyshots Atoms/Typography Link 1`] = `
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
-          "fontSize": 14,
-          "lineHeight": 22,
-          "textDecorationColor": "#007AFF",
+          "fontSize": 16,
+          "lineHeight": 26,
           "textDecorationLine": "underline",
         },
       ]
@@ -7366,24 +7417,44 @@ exports[`Storyshots Atoms/Typography Link 1`] = `
     Primary Link
   </Text>
   <Text
-    color="muted"
+    color="success"
+    size={1}
     style={
       Array [
         Object {
-          "color": "#8C8C8C",
+          "color": "#48CF7C",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
-          "fontSize": 14,
-          "lineHeight": 22,
-          "textDecorationColor": "#8C8C8C",
+          "fontSize": 16,
+          "lineHeight": 26,
           "textDecorationLine": "underline",
         },
       ]
     }
     underlined={true}
   >
-    Muted Link
+    Success Link
+  </Text>
+  <Text
+    color="error"
+    size={1}
+    style={
+      Array [
+        Object {
+          "color": "#FA4339",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 16,
+          "lineHeight": 26,
+          "textDecorationLine": "underline",
+        },
+      ]
+    }
+    underlined={true}
+  >
+    Error Link
   </Text>
 </View>
 `;
@@ -7407,7 +7478,7 @@ exports[`Storyshots Atoms/Typography Playground 1`] = `
   }
 >
   <Text
-    color="default"
+    color="black"
     size={1}
     style={
       Array [
@@ -7417,7 +7488,6 @@ exports[`Storyshots Atoms/Typography Playground 1`] = `
           "fontSize": 32,
           "lineHeight": 55,
           "marginBottom": 16,
-          "textDecorationColor": "#000000",
         },
       ]
     }
@@ -7447,16 +7517,16 @@ exports[`Storyshots Atoms/Typography Selectable 1`] = `
 >
   <Text
     selectable={true}
+    size={1}
     style={
       Array [
         Object {
-          "color": "#1F1F1F",
+          "color": "#000000",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
-          "fontSize": 14,
-          "lineHeight": 22,
-          "textDecorationColor": "#1F1F1F",
+          "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7464,16 +7534,16 @@ exports[`Storyshots Atoms/Typography Selectable 1`] = `
     Selectable Paragraph
   </Text>
   <Text
+    size={1}
     style={
       Array [
         Object {
-          "color": "#1F1F1F",
+          "color": "#000000",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
-          "fontSize": 14,
-          "lineHeight": 22,
-          "textDecorationColor": "#1F1F1F",
+          "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7511,7 +7581,6 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
           "fontSize": 32,
           "lineHeight": 55,
           "marginBottom": 16,
-          "textDecorationColor": "#000000",
         },
       ]
     }
@@ -7528,7 +7597,6 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
           "fontSize": 28,
           "lineHeight": 40,
           "marginBottom": 12,
-          "textDecorationColor": "#000000",
         },
       ]
     }
@@ -7541,11 +7609,10 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
       Array [
         Object {
           "color": "#000000",
-          "fontFamily": "NotoSansKR-Medium",
+          "fontFamily": "NotoSansKR-Bold",
           "fontSize": 24,
           "lineHeight": 35,
           "marginBottom": 12,
-          "textDecorationColor": "#000000",
         },
       ]
     }
@@ -7558,10 +7625,9 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
       Array [
         Object {
           "color": "#000000",
-          "fontFamily": "NotoSansKR-Medium",
+          "fontFamily": "NotoSansKR-Bold",
           "fontSize": 20,
           "lineHeight": 29,
-          "textDecorationColor": "#000000",
         },
       ]
     }
@@ -7574,10 +7640,9 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
       Array [
         Object {
           "color": "#000000",
-          "fontFamily": "NotoSansKR-Medium",
+          "fontFamily": "NotoSansKR-Bold",
           "fontSize": 16,
           "lineHeight": 26,
-          "textDecorationColor": "#000000",
         },
       ]
     }
@@ -7585,76 +7650,52 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
     Heading5
   </Text>
   <Text
-    size="lg"
+    size={1}
     style={
       Array [
         Object {
-          "color": "#1F1F1F",
+          "color": "#000000",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
           "fontSize": 16,
           "lineHeight": 26,
-          "textDecorationColor": "#1F1F1F",
         },
       ]
     }
   >
-    Paragraph-lg
+    Paragraph1
   </Text>
   <Text
-    size="md"
+    size={2}
     style={
       Array [
         Object {
-          "color": "#1F1F1F",
+          "color": "#000000",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
           "fontSize": 14,
           "lineHeight": 22,
-          "textDecorationColor": "#1F1F1F",
         },
       ]
     }
   >
-    Paragraph-md
+    Paragraph2
   </Text>
   <Text
-    size="sm"
     style={
       Array [
         Object {
-          "color": "#1F1F1F",
-          "flexShrink": 1,
-          "flexWrap": "wrap",
-          "fontFamily": "NotoSansKR-Regular",
+          "color": "#000000",
+          "fontFamily": "NotoSansKR-Medium",
           "fontSize": 12,
           "lineHeight": 19,
-          "textDecorationColor": "#1F1F1F",
         },
       ]
     }
   >
-    Paragraph-s
-  </Text>
-  <Text
-    size="xs"
-    style={
-      Array [
-        Object {
-          "color": "#1F1F1F",
-          "flexShrink": 1,
-          "flexWrap": "wrap",
-          "fontFamily": "NotoSansKR-Regular",
-          "fontSize": 12,
-          "lineHeight": 19,
-          "textDecorationColor": "#1F1F1F",
-        },
-      ]
-    }
-  >
-    Paragraph-xs
+    Caption
   </Text>
 </View>
 `;
@@ -7699,8 +7740,8 @@ exports[`Storyshots Molecules/Article Playground 1`] = `
       }
     >
       <Text
-        color="muted"
-        size="sm"
+        color="#8C8C8C"
+        size={2}
         style={
           Array [
             Object {
@@ -7708,9 +7749,8 @@ exports[`Storyshots Molecules/Article Playground 1`] = `
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#8C8C8C",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {
               "marginBottom": 10,
@@ -7726,10 +7766,9 @@ exports[`Storyshots Molecules/Article Playground 1`] = `
           Array [
             Object {
               "color": "#000000",
-              "fontFamily": "NotoSansKR-Medium",
+              "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
               "lineHeight": 26,
-              "textDecorationColor": "#000000",
             },
           ]
         }
@@ -7870,16 +7909,16 @@ exports[`Storyshots Molecules/Article Playground 1`] = `
         }
       >
         <Text
+          size={1}
           style={
             Array [
               Object {
-                "color": "#1F1F1F",
+                "color": "#000000",
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
-                "fontSize": 14,
-                "lineHeight": 22,
-                "textDecorationColor": "#1F1F1F",
+                "fontSize": 16,
+                "lineHeight": 26,
               },
             ]
           }
@@ -8416,7 +8455,7 @@ exports[`Storyshots Molecules/FormItem Error 1`] = `
     >
       <Text
         color="error"
-        size="sm"
+        size={2}
         style={
           Array [
             Object {
@@ -8424,9 +8463,8 @@ exports[`Storyshots Molecules/FormItem Error 1`] = `
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#FA4339",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {},
           ]
@@ -8784,8 +8822,8 @@ exports[`Storyshots Molecules/FormItem Footer 1`] = `
       }
     >
       <Text
-        color="muted"
-        size="sm"
+        color="#8C8C8C"
+        size={2}
         style={
           Array [
             Object {
@@ -8793,9 +8831,8 @@ exports[`Storyshots Molecules/FormItem Footer 1`] = `
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#8C8C8C",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {},
           ]
@@ -9139,8 +9176,8 @@ exports[`Storyshots Molecules/ListItem Playground 1`] = `
         }
       >
         <Text
-          color="muted"
-          size="sm"
+          color="#8C8C8C"
+          size={2}
           style={
             Array [
               Object {
@@ -9148,9 +9185,8 @@ exports[`Storyshots Molecules/ListItem Playground 1`] = `
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
-                "fontSize": 12,
-                "lineHeight": 19,
-                "textDecorationColor": "#8C8C8C",
+                "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9158,16 +9194,16 @@ exports[`Storyshots Molecules/ListItem Playground 1`] = `
           sublabel
         </Text>
         <Text
+          size={2}
           style={
             Array [
               Object {
-                "color": "#1F1F1F",
+                "color": "#000000",
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
                 "lineHeight": 22,
-                "textDecorationColor": "#1F1F1F",
               },
             ]
           }
@@ -9254,8 +9290,8 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
         }
       >
         <Text
-          color="muted"
-          size="sm"
+          color="#8C8C8C"
+          size={2}
           style={
             Array [
               Object {
@@ -9263,9 +9299,8 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
-                "fontSize": 12,
-                "lineHeight": 19,
-                "textDecorationColor": "#8C8C8C",
+                "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9273,16 +9308,16 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
           sublabel top
         </Text>
         <Text
+          size={2}
           style={
             Array [
               Object {
-                "color": "#1F1F1F",
+                "color": "#000000",
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
                 "lineHeight": 22,
-                "textDecorationColor": "#1F1F1F",
               },
             ]
           }
@@ -9338,16 +9373,16 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
         }
       >
         <Text
+          size={2}
           style={
             Array [
               Object {
-                "color": "#1F1F1F",
+                "color": "#000000",
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
                 "lineHeight": 22,
-                "textDecorationColor": "#1F1F1F",
               },
             ]
           }
@@ -9355,8 +9390,8 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
           label
         </Text>
         <Text
-          color="muted"
-          size="sm"
+          color="#8C8C8C"
+          size={2}
           style={
             Array [
               Object {
@@ -9364,9 +9399,8 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
-                "fontSize": 12,
-                "lineHeight": 19,
-                "textDecorationColor": "#8C8C8C",
+                "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9453,16 +9487,16 @@ exports[`Storyshots Molecules/ListItem Suffix 1`] = `
         }
       >
         <Text
+          size={2}
           style={
             Array [
               Object {
-                "color": "#1F1F1F",
+                "color": "#000000",
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
                 "lineHeight": 22,
-                "textDecorationColor": "#1F1F1F",
               },
             ]
           }
@@ -9470,8 +9504,8 @@ exports[`Storyshots Molecules/ListItem Suffix 1`] = `
           label
         </Text>
         <Text
-          color="muted"
-          size="sm"
+          color="#8C8C8C"
+          size={2}
           style={
             Array [
               Object {
@@ -9479,9 +9513,8 @@ exports[`Storyshots Molecules/ListItem Suffix 1`] = `
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
-                "fontSize": 12,
-                "lineHeight": 19,
-                "textDecorationColor": "#8C8C8C",
+                "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9537,16 +9570,16 @@ exports[`Storyshots Molecules/ListItem Suffix 1`] = `
         }
       >
         <Text
+          size={2}
           style={
             Array [
               Object {
-                "color": "#1F1F1F",
+                "color": "#000000",
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
                 "lineHeight": 22,
-                "textDecorationColor": "#1F1F1F",
               },
             ]
           }
@@ -9554,8 +9587,8 @@ exports[`Storyshots Molecules/ListItem Suffix 1`] = `
           label
         </Text>
         <Text
-          color="muted"
-          size="sm"
+          color="#8C8C8C"
+          size={2}
           style={
             Array [
               Object {
@@ -9563,9 +9596,8 @@ exports[`Storyshots Molecules/ListItem Suffix 1`] = `
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
-                "fontSize": 12,
-                "lineHeight": 19,
-                "textDecorationColor": "#8C8C8C",
+                "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9642,16 +9674,16 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
         }
       >
         <Text
+          size={2}
           style={
             Array [
               Object {
-                "color": "#1F1F1F",
+                "color": "#000000",
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
                 "lineHeight": 22,
-                "textDecorationColor": "#1F1F1F",
               },
             ]
           }
@@ -9659,8 +9691,8 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
           label
         </Text>
         <Text
-          color="muted"
-          size="sm"
+          color="#8C8C8C"
+          size={2}
           style={
             Array [
               Object {
@@ -9668,9 +9700,8 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
-                "fontSize": 12,
-                "lineHeight": 19,
-                "textDecorationColor": "#8C8C8C",
+                "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9726,16 +9757,16 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
         }
       >
         <Text
+          size={2}
           style={
             Array [
               Object {
-                "color": "#1F1F1F",
+                "color": "#000000",
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
                 "lineHeight": 22,
-                "textDecorationColor": "#1F1F1F",
               },
             ]
           }
@@ -9743,8 +9774,8 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
           label
         </Text>
         <Text
-          color="muted"
-          size="sm"
+          color="#8C8C8C"
+          size={2}
           style={
             Array [
               Object {
@@ -9752,9 +9783,8 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
-                "fontSize": 12,
-                "lineHeight": 19,
-                "textDecorationColor": "#8C8C8C",
+                "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9893,13 +9923,10 @@ exports[`Storyshots Molecules/Modal Default 1`] = `
         style={
           Array [
             Object {
-              "color": "white",
+              "color": "#FFFFFF",
               "flexShrink": 1,
               "flexWrap": "wrap",
-              "fontFamily": "NotoSansKR-Medium",
-              "fontSize": 14,
-              "lineHeight": 22,
-              "textDecorationColor": "white",
+              "fontFamily": "NotoSansKR-Regular",
               "textDecorationLine": "underline",
             },
             Object {
@@ -10108,18 +10135,17 @@ exports[`Storyshots Molecules/Rating Count 1`] = `
       }
     >
       <Text
-        bold={false}
-        size="sm"
+        fontWeight="regular"
+        size={2}
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#1F1F1F",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -10303,18 +10329,17 @@ exports[`Storyshots Molecules/Rating Count 1`] = `
       }
     >
       <Text
-        bold={false}
-        size="sm"
+        fontWeight="regular"
+        size={2}
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#1F1F1F",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -10322,8 +10347,8 @@ exports[`Storyshots Molecules/Rating Count 1`] = `
         1.0
       </Text>
       <Text
-        color="muted"
-        size="sm"
+        color="#8C8C8C"
+        size={2}
         style={
           Array [
             Object {
@@ -10331,9 +10356,8 @@ exports[`Storyshots Molecules/Rating Count 1`] = `
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#8C8C8C",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -10561,18 +10585,17 @@ exports[`Storyshots Molecules/Rating Editable 1`] = `
       }
     >
       <Text
-        bold={false}
-        size="sm"
+        fontWeight="regular"
+        size={2}
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#1F1F1F",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -10756,18 +10779,17 @@ exports[`Storyshots Molecules/Rating Editable 1`] = `
       }
     >
       <Text
-        bold={false}
-        size="sm"
+        fontWeight="regular"
+        size={2}
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#1F1F1F",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -11134,18 +11156,17 @@ exports[`Storyshots Molecules/Rating Label 1`] = `
       }
     >
       <Text
-        bold={false}
-        size="sm"
+        fontWeight="regular"
+        size={2}
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#1F1F1F",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -11370,18 +11391,17 @@ exports[`Storyshots Molecules/Rating Playground 1`] = `
       }
     >
       <Text
-        bold={false}
-        size="sm"
+        fontWeight="regular"
+        size={2}
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#1F1F1F",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -11389,8 +11409,8 @@ exports[`Storyshots Molecules/Rating Playground 1`] = `
         1.0
       </Text>
       <Text
-        color="muted"
-        size="sm"
+        color="#8C8C8C"
+        size={2}
         style={
           Array [
             Object {
@@ -11398,9 +11418,8 @@ exports[`Storyshots Molecules/Rating Playground 1`] = `
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 12,
-              "lineHeight": 19,
-              "textDecorationColor": "#8C8C8C",
+              "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -14107,7 +14126,6 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             "fontSize": 32,
             "lineHeight": 55,
             "marginBottom": 16,
-            "textDecorationColor": "#000000",
           },
         ]
       }
