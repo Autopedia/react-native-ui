@@ -2121,7 +2121,7 @@ exports[`Storyshots Atoms/FormLabel Required 1`] = `
       style={
         Array [
           Object {
-            "color": "#EB5757",
+            "color": "#FA4339",
             "fontFamily": "NotoSansKR-Regular",
             "fontSize": 15,
             "lineHeight": 22,
@@ -3422,7 +3422,7 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "borderColor": "#EB5757",
+            "borderColor": "#FA4339",
             "borderRadius": 4,
             "borderWidth": 1,
             "flexDirection": "row",
@@ -3444,7 +3444,7 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
           style={
             Array [
               Object {
-                "color": "#EB5757",
+                "color": "#FA4339",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 13,
                 "lineHeight": 19,
@@ -4007,7 +4007,7 @@ exports[`Storyshots Atoms/Message/OutdatedMessage Playground 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "borderColor": "#EB5757",
+            "borderColor": "#FA4339",
             "borderRadius": 4,
             "borderWidth": 1,
             "flexDirection": "row",
@@ -4029,7 +4029,7 @@ exports[`Storyshots Atoms/Message/OutdatedMessage Playground 1`] = `
           style={
             Array [
               Object {
-                "color": "#EB5757",
+                "color": "#FA4339",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 13,
                 "lineHeight": 19,
@@ -4687,7 +4687,7 @@ exports[`Storyshots Atoms/Message/TextMessage Playground 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "#006CE0",
+            "backgroundColor": "#0056B4",
             "borderRadius": 14,
             "borderTopRightRadius": 0,
             "flexDirection": "row",
@@ -4768,7 +4768,7 @@ exports[`Storyshots Atoms/Message/UnhandledMessage Playground 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "#006CE0",
+            "backgroundColor": "#0056B4",
             "borderRadius": 14,
             "borderTopRightRadius": 0,
             "flexDirection": "row",
@@ -4795,13 +4795,13 @@ exports[`Storyshots Atoms/Message/UnhandledMessage Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#E6F6FF",
+              "color": "#BDDBFF",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 13,
               "lineHeight": 19,
-              "textDecorationColor": "#E6F6FF",
+              "textDecorationColor": "#BDDBFF",
             },
           ]
         }
@@ -6080,7 +6080,7 @@ exports[`Storyshots Atoms/Sign Playground 1`] = `
       Array [
         Object {
           "alignSelf": "center",
-          "backgroundColor": "#E6F6FF",
+          "backgroundColor": "#BDDBFF",
           "borderRadius": 20,
           "paddingBottom": 4,
           "paddingLeft": 12,
@@ -6094,7 +6094,7 @@ exports[`Storyshots Atoms/Sign Playground 1`] = `
       style={
         Array [
           Object {
-            "color": "#006CE0",
+            "color": "#0056B4",
             "fontFamily": "NotoSansKR-Regular",
             "fontSize": 11,
             "lineHeight": 16,
@@ -7202,12 +7202,12 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     style={
       Array [
         Object {
-          "color": "#EB5757",
+          "color": "#FA4339",
           "fontFamily": "NotoSansKR-Medium",
           "fontSize": 22,
           "lineHeight": 35,
           "marginBottom": 12,
-          "textDecorationColor": "#EB5757",
+          "textDecorationColor": "#FA4339",
         },
       ]
     }
@@ -7273,13 +7273,13 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     style={
       Array [
         Object {
-          "color": "#EB5757",
+          "color": "#FA4339",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
           "fontSize": 15,
           "lineHeight": 22,
-          "textDecorationColor": "#EB5757",
+          "textDecorationColor": "#FA4339",
         },
       ]
     }
@@ -8420,13 +8420,13 @@ exports[`Storyshots Molecules/FormItem Error 1`] = `
         style={
           Array [
             Object {
-              "color": "#EB5757",
+              "color": "#FA4339",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 13,
               "lineHeight": 19,
-              "textDecorationColor": "#EB5757",
+              "textDecorationColor": "#FA4339",
             },
             Object {},
           ]
@@ -8960,7 +8960,7 @@ exports[`Storyshots Molecules/FormItem Rules 1`] = `
         style={
           Array [
             Object {
-              "color": "#EB5757",
+              "color": "#FA4339",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 15,
               "lineHeight": 22,
@@ -14157,7 +14157,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           style={
             Array [
               Object {
-                "color": "#EB5757",
+                "color": "#FA4339",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 15,
                 "lineHeight": 22,
@@ -14285,7 +14285,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           style={
             Array [
               Object {
-                "color": "#EB5757",
+                "color": "#FA4339",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 15,
                 "lineHeight": 22,
@@ -14456,7 +14456,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           style={
             Array [
               Object {
-                "color": "#EB5757",
+                "color": "#FA4339",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 15,
                 "lineHeight": 22,
@@ -14692,7 +14692,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           style={
             Array [
               Object {
-                "color": "#EB5757",
+                "color": "#FA4339",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 15,
                 "lineHeight": 22,

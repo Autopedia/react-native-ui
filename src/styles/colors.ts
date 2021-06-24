@@ -1,9 +1,9 @@
+import { systemColors } from './sytem-colors';
+import { grayscaleColors } from './grayscale-colors';
+import { subColors } from './sub-colors';
+
 const colors = {
   // Baseline colors
-  PRIMARY: '#007AFF',
-  PRIMARY_LIGHT: '#2997FF',
-  PRIMARY_EXTRALIGHT: '#E6F6FF',
-  PRIMARY_DARK: '#006CE0',
   SECONDARY_EXTRALIGHT: '#FFE9E7',
   DEFAULT: '#FFFFFF',
 
@@ -18,7 +18,6 @@ const colors = {
   RATING: '#FED600',
 
   // Action colors
-  ERROR: '#EB5757',
   DISABLED: '#F5F5F5',
 
   // Brand colors
@@ -27,13 +26,11 @@ const colors = {
   KAKAO: '#FEE500',
 
   // Grayscale colors
-  WHITE: '#FFFFFF',
   EXTRALIGHT: '#F5F5F5',
   LIGHT: '#D9D9D9',
   GREY: '#8C8C8C',
   DARK: '#434343',
   EXTRADARK: '#1F1F1F',
-  BLACK: '#000000',
 
   // On colors
   ON_PRIMARY: '#FFFFFF',
@@ -60,6 +57,10 @@ const colors = {
   BORDER_GOOGLE: '#D9D9D9',
   BORDER_DEFAULT: '#D9D9D9',
   BORDER_DISABLED: '#D9D9D9',
+
+  ...systemColors,
+  ...grayscaleColors,
+  ...subColors,
 };
 
 export default colors;
