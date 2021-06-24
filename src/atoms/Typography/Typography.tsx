@@ -127,7 +127,7 @@ const SParagraph = styled.Text<ParagraphProps>`
     switch (props.size) {
       case 'xs':
         return `
-          font-size: ${props.theme.fonts.size.XXXS};
+          font-size: ${props.theme.fonts.size.XXS};
         `;
       case 'sm':
         return `

@@ -27,7 +27,7 @@ const SContainer = styled.View`
 const SSign = styled.Text`
   ${props => `
     font-family: ${props.theme.fonts.family.REGULAR};
-    font-size: ${props.theme.fonts.size.XXXS};
+    font-size: ${props.theme.fonts.size.XXS};
     color: ${props.theme.colors.PRIMARY_DARK};
   `}
 `;

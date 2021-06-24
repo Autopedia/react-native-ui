@@ -3,14 +3,13 @@ import lodash from 'lodash';
 import { scale } from './scale';
 
 const size = {
-  XXXS: scale(11),
-  XXS: scale(13),
-  XS: scale(15),
-  S: scale(18),
+  XXS: scale(12),
+  XS: scale(14),
+  S: scale(16),
   M: scale(20),
-  L: scale(22),
+  L: scale(24),
   XL: scale(28),
-  XXL: scale(34),
+  XXL: scale(32),
 };
 
 const lineHeight = {
