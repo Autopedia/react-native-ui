@@ -1,29 +1,38 @@
 import {
   HeadingSize,
   ParagraphSize,
-  TypographyColor,
+  TypographyFontWeight,
 } from './Typography.types';
 import React from 'react';
-import {
-  GestureResponderEvent,
-  TextStyle,
-  TouchableOpacity,
-} from 'react-native';
+import { GestureResponderEvent, TextStyle } from 'react-native';
 import styled from 'styled-components/native';
+import {
+  SystemColor,
+  SystemColorKey,
+  systemColorMap,
+  systemColors,
+} from '../../styles/sytem-colors';
 
 interface HeadingProps {
   size: HeadingSize;
-  color?: TypographyColor | string;
+  color?: SystemColor | string;
+  fontWeight?: TypographyFontWeight;
   style?: TextStyle;
 }
 
 interface ParagraphProps {
-  size?: ParagraphSize;
-  color?: TypographyColor | string;
-  bold?: boolean;
+  size: ParagraphSize;
+  color?: SystemColor | string;
+  fontWeight?: TypographyFontWeight;
   selectable?: boolean;
   underlined?: boolean;
   onPress?: (event: GestureResponderEvent) => void;
+  style?: TextStyle;
+}
+
+interface CaptionProps {
+  color?: SystemColor | string;
+  fontWeight?: TypographyFontWeight;
   style?: TextStyle;
 }
 
@@ -33,6 +42,10 @@ const Heading: React.FC<HeadingProps> = ({ children, ...props }) => {
 
 const Paragraph: React.FC<ParagraphProps> = ({ children, ...props }) => {
   return <SParagraph {...props}>{children}</SParagraph>;
+};
+
+const Caption: React.FC<CaptionProps> = ({ children, ...props }) => {
+  return <SCaption {...props}>{children}</SCaption>;
 };
 
 const SHeading = styled.Text<HeadingProps>`
@@ -54,171 +67,110 @@ const SHeading = styled.Text<HeadingProps>`
       case 3:
         return `
           font-size: ${props.theme.fonts.size.L};
-          font-family: ${props.theme.fonts.family.MEDIUM};
+          font-family: ${props.theme.fonts.family.BOLD};
           margin-bottom: ${props.theme.spacing.SPACE_12};
         `;
       case 4:
         return `
           font-size: ${props.theme.fonts.size.M};
-          font-family: ${props.theme.fonts.family.MEDIUM};
+          font-family: ${props.theme.fonts.family.BOLD};
         `;
       case 5:
         return `
           font-size: ${props.theme.fonts.size.S};
-          font-family: ${props.theme.fonts.family.MEDIUM};
+          font-family: ${props.theme.fonts.family.BOLD};
         `;
     }
   }}
 
-  /* color (default: default) */
+  /* color (default: black) */
    ${props => {
-    switch (props.color) {
-      case 'primary':
-        return `
-          color: ${props.theme.colors.PRIMARY};
-          text-decoration-color: ${props.theme.colors.PRIMARY};
-        `;
-      case 'primaryLight':
-        return `
-          color: ${props.theme.colors.PRIMARY_LIGHT};
-          text-decoration-color: ${props.theme.colors.PRIMARY_LIGHT};
-        `;
-      case 'onPrimary':
-        return `
-          color: ${props.theme.colors.ON_PRIMARY};
-          text-decoration-color: ${props.theme.colors.ON_PRIMARY};
-        `;
-      case 'error':
-        return `
-          color: ${props.theme.colors.ERROR};
-          text-decoration-color: ${props.theme.colors.ERROR};
-        `;
-      case 'muted':
-        return `
-          color: ${props.theme.colors.MUTED};
-          text-decoration-color: ${props.theme.colors.MUTED};
-        `;
-      default:
-        return `
-          color: ${
-            !props.color || props.color === 'default'
-              ? props.theme.colors.BLACK
-              : props.color
-          };
-          text-decoration-color: ${
-            !props.color || props.color === 'default'
-              ? props.theme.colors.BLACK
-              : props.color
-          };
-        `;
+    if (props.color) {
+      if (Object.keys(systemColorMap).includes(props.color)) {
+        const colorKey = systemColorMap[props.color as SystemColor];
+        const color = systemColors[colorKey as SystemColorKey];
+
+        return `color: ${color}`;
+      } else {
+        return `color: ${props.color}`;
+      }
     }
+    return `
+      color: ${props.theme.colors.BLACK}
+     `;
+  }}
+
+  /* fontWeight (default: bold)*/
+  ${props => {
+    if (props.fontWeight) {
+      const family = props.theme.fonts.family;
+      type FontFamilyKey = keyof typeof family;
+      return `
+        font-family: ${
+          props.theme.fonts.family[
+            props.fontWeight.toUpperCase() as FontFamilyKey
+          ]
+        }
+      `;
+    }
+    return `
+      font-family: ${props.theme.fonts.family.BOLD}
+    `;
   }}
 `;
 
 const SParagraph = styled.Text<ParagraphProps>`
-  ${props => `
-    flex-shrink: 1;
-    flex-wrap: wrap;
-    font-family: ${props.theme.fonts.family.REGULAR};
-  `}
+  flex-shrink: 1;
+  flex-wrap: wrap;
 
-  /* size (default: md) */
+  /* size */
   ${props => {
     switch (props.size) {
-      case 'xs':
-        return `
-          font-size: ${props.theme.fonts.size.XXS};
-        `;
-      case 'sm':
-        return `
-          font-size: ${props.theme.fonts.size.XXS};
-        `;
-      case 'lg':
+      case 1:
         return `
           font-size: ${props.theme.fonts.size.S};
         `;
-      default:
+      case 2:
         return `
           font-size: ${props.theme.fonts.size.XS};
         `;
     }
   }}
 
-  /* color (default: default) */
+  /* color (default: black) */
   ${props => {
-    switch (props.color) {
-      case 'dark':
-        return `
-          color: ${props.theme.colors.DARK};
-          text-decoration-color: ${props.theme.colors.DARK};
-        `;
-      case 'primary':
-        return `
-          color: ${props.theme.colors.PRIMARY};
-          text-decoration-color: ${props.theme.colors.PRIMARY};
-        `;
-      case 'primaryLight':
-        return `
-          color: ${props.theme.colors.PRIMARY_LIGHT};
-          text-decoration-color: ${props.theme.colors.PRIMARY_LIGHT};
-        `;
-      case 'primaryExtraLight':
-        return `
-          color: ${props.theme.colors.PRIMARY_EXTRALIGHT};
-          text-decoration-color: ${props.theme.colors.PRIMARY_EXTRALIGHT};
-        `;
-      case 'onPrimary':
-        return `
-          color: ${props.theme.colors.ON_PRIMARY};
-          text-decoration-color: ${props.theme.colors.ON_PRIMARY};
-        `;
-      case 'onPrimaryDark':
-        return `
-          color: ${props.theme.colors.ON_PRIMARY_DARK};
-          text-decoration-color: ${props.theme.colors.ON_PRIMARY_DARK};
-        `;
-      case 'onCard':
-        return `
-          color: ${props.theme.colors.ON_CARD};
-          text-decoration-color: ${props.theme.colors.ON_CARD};
-        `;
-      case 'error':
-        return `
-          color: ${props.theme.colors.ERROR};
-          text-decoration-color: ${props.theme.colors.ERROR};
-        `;
-      case 'muted':
-        return `
-          color: ${props.theme.colors.MUTED};
-          text-decoration-color: ${props.theme.colors.MUTED};
-        `;
-      case 'onBackgroundDark':
-        return `
-          color: ${props.theme.colors.ON_BACKGROUND_DARK};
-          text-decoration-color: ${props.theme.colors.ON_BACKGROUND_DARK};
-        `;
-      default:
-        return `
-          color: ${
-            !props.color || props.color === 'default'
-              ? props.theme.colors.EXTRADARK
-              : props.color
-          };
-          text-decoration-color: ${
-            !props.color || props.color === 'default'
-              ? props.theme.colors.EXTRADARK
-              : props.color
-          };
-        `;
+    if (props.color) {
+      if (Object.keys(systemColorMap).includes(props.color)) {
+        const colorKey = systemColorMap[props.color as SystemColor];
+        const color = systemColors[colorKey as SystemColorKey];
+
+        return `color: ${color}`;
+      } else {
+        return `color: ${props.color}`;
+      }
     }
+    return `
+      color: ${props.theme.colors.BLACK}
+     `;
   }}
 
-  /* bold (default: false) */
-  ${props =>
-    props.bold &&
-    `
-      font-family: ${props.theme.fonts.family.MEDIUM};
-  `}
+  /* fontWeight (default: regular)*/
+  ${props => {
+    if (props.fontWeight) {
+      const family = props.theme.fonts.family;
+      type FontFamilyKey = keyof typeof family;
+      return `
+        font-family: ${
+          props.theme.fonts.family[
+            props.fontWeight.toUpperCase() as FontFamilyKey
+          ]
+        }
+      `;
+    }
+    return `
+      font-family: ${props.theme.fonts.family.REGULAR}
+    `;
+  }}
 
   /* touchable */
   ${props =>
@@ -232,4 +184,42 @@ const SParagraph = styled.Text<ParagraphProps>`
   ${props => props.underlined === false && 'text-decoration-line: none;'}
 `;
 
-export default { Heading, Paragraph };
+const SCaption = styled.Text<CaptionProps>`
+  ${props => `font-size: ${props.theme.fonts.size.XXS}`}
+  /* color (default: black) */
+  ${props => {
+    if (props.color) {
+      if (Object.keys(systemColorMap).includes(props.color)) {
+        const colorKey = systemColorMap[props.color as SystemColor];
+        const color = systemColors[colorKey as SystemColorKey];
+
+        return `color: ${color}`;
+      } else {
+        return `color: ${props.color}`;
+      }
+    }
+    return `
+      color: ${props.theme.colors.BLACK}
+     `;
+  }}
+
+  /* fontWeight (default: bold)*/
+  ${props => {
+    if (props.fontWeight) {
+      const family = props.theme.fonts.family;
+      type FontFamilyKey = keyof typeof family;
+      return `
+        font-family: ${
+          props.theme.fonts.family[
+            props.fontWeight.toUpperCase() as FontFamilyKey
+          ]
+        }
+      `;
+    }
+    return `
+      font-family: ${props.theme.fonts.family.MEDIUM}
+    `;
+  }}
+`;
+
+export default { Heading, Paragraph, Caption };
