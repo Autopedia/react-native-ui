@@ -33,7 +33,12 @@ const Modal = React.forwardRef<ModalHandle, ModalProps>(({ children }, ref) => {
     >
       <SModalBackground>
         <SModalContainer>{children}</SModalContainer>
-        <SExit color="white" bold onPress={() => setVisible(false)}>
+        <SExit
+          size={1}
+          color="white"
+          fontWeight="bold"
+          onPress={() => setVisible(false)}
+        >
           닫기
         </SExit>
       </SModalBackground>

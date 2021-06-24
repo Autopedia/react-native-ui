@@ -28,13 +28,7 @@ const OutdatedMessage: React.FC<OutdatedMessageProps> = ({
     dayMention +
     '대화기록이 없어 24시간 뒤에 상담이 자동종료될 예정입니다.\n상담 진행을 원하시면, 채팅을 해주세요!';
   const footer = (
-    <Button
-      layout="block"
-      size="sm"
-      color="error"
-      disabled={disabled}
-      onPress={finishChat}
-    >
+    <Button type="block" color="error" disabled={disabled} onPress={finishChat}>
       지금 상담 종료하기
     </Button>
   );

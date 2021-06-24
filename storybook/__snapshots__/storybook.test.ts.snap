@@ -3685,6 +3685,7 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
               "paddingLeft": 14,
               "paddingRight": 14,
               "paddingTop": 14,
+              "width": "100%",
             },
           ]
         }
@@ -3989,6 +3990,7 @@ exports[`Storyshots Atoms/Message/FeedbackMessage Playground 1`] = `
               "paddingLeft": 14,
               "paddingRight": 14,
               "paddingTop": 14,
+              "width": "100%",
             },
           ]
         }
@@ -4260,6 +4262,7 @@ exports[`Storyshots Atoms/Message/OutdatedMessage Playground 1`] = `
               "paddingLeft": 14,
               "paddingRight": 14,
               "paddingTop": 14,
+              "width": "100%",
             },
           ]
         }
@@ -10819,16 +10822,19 @@ exports[`Storyshots Molecules/Modal Default 1`] = `
         </Text>
       </View>
       <Text
-        bold={true}
         color="white"
+        fontWeight="bold"
         onPress={[Function]}
+        size={1}
         style={
           Array [
             Object {
               "color": "#FFFFFF",
               "flexShrink": 1,
               "flexWrap": "wrap",
-              "fontFamily": "NotoSansKR-Regular",
+              "fontFamily": "NotoSansKR-Bold",
+              "fontSize": 16,
+              "lineHeight": 26,
               "textDecorationLine": "underline",
             },
             Object {
