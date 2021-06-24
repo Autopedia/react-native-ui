@@ -11,6 +11,18 @@ export const systemColors = {
   WHITE: '#FFFFFF',
 };
 
-export type SystemColorKeys = keyof typeof systemColors;
+export const systemColorMap = {
+  primary: systemColors.PRIMARY,
+  primary_dark: systemColors.PRIMARY_DARK,
+  primary_light: systemColors.PRIMARY_LIGHT,
+  primary_extralight: systemColors.PRIMARY_EXTRALIGHT,
+  success: systemColors.SUCCESS,
+  success_dark: systemColors.SUCCESS_DARK,
+  error: systemColors.ERROR,
+  error_dark: systemColors.ERROR_DARK,
+  black: systemColors.BLACK,
+  white: systemColors.WHITE,
+};
 
-export type SystemColor = typeof systemColors[SystemColorKeys];
+export type SystemColorKey = keyof typeof systemColors;
+export type SystemColor = keyof typeof systemColorMap;
