@@ -133,7 +133,7 @@ const SContainer = styled.TouchableOpacity<SContainerProps>`
 
   /* selected */
   ${props => {
-    const color = props.color || props.solid ? 'primary' : 'black';
+    const color = props.color || (props.solid ? 'primary' : 'black');
 
     const defaultColor =
       systemColors[systemColorMap[color as SystemColor] as SystemColorKey];

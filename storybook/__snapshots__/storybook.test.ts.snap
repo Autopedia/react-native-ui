@@ -60,7 +60,7 @@ exports[`Storyshots Atoms/Button AbsoluteIcon 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#FFFFFF",
+            "tintColor": "#007AFF",
           },
           Object {
             "left": 16,
@@ -140,7 +140,7 @@ exports[`Storyshots Atoms/Button AbsoluteIcon 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#FFFFFF",
+            "tintColor": "#007AFF",
           },
           Object {
             "position": "absolute",
@@ -1225,7 +1225,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#FFFFFF",
+            "tintColor": "#007AFF",
           },
           Object {
             "marginRight": 6,
@@ -1303,7 +1303,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#FFFFFF",
+            "tintColor": "#007AFF",
           },
           Object {
             "marginLeft": 6,
@@ -1354,7 +1354,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#FFFFFF",
+            "tintColor": "#007AFF",
           },
           Object {
             "marginRight": 6,
@@ -1433,7 +1433,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#FFFFFF",
+            "tintColor": "#007AFF",
           },
           Object {
             "marginLeft": 6,
@@ -1960,7 +1960,7 @@ exports[`Storyshots Atoms/Checkbox Default 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#FFFFFF",
+            "tintColor": "#007AFF",
           },
           Object {
             "marginRight": 4,
@@ -1999,7 +1999,7 @@ exports[`Storyshots Atoms/Checkbox Default 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#FFFFFF",
+            "tintColor": "#007AFF",
           },
           Object {
             "marginRight": 4,
@@ -2059,7 +2059,7 @@ exports[`Storyshots Atoms/Checkbox Playground 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#FFFFFF",
+            "tintColor": "#007AFF",
           },
           Object {
             "marginRight": 4,
@@ -4797,7 +4797,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               style={
                 Array [
                   Object {
-                    "tintColor": "#FFFFFF",
+                    "tintColor": "#007AFF",
                   },
                   Object {
                     "marginRight": 6,
@@ -4866,7 +4866,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               style={
                 Array [
                   Object {
-                    "tintColor": "#FFFFFF",
+                    "tintColor": "#007AFF",
                   },
                   Object {
                     "marginRight": 6,
@@ -5377,7 +5377,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#007AFF",
+        "borderColor": "#000000",
         "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
@@ -5423,7 +5423,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#BDDBFF",
+        "borderColor": "#C6CACF",
         "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
@@ -5656,7 +5656,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#007AFF",
+        "borderColor": "#000000",
         "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
@@ -5703,7 +5703,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#BDDBFF",
+        "borderColor": "#C6CACF",
         "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
@@ -5961,7 +5961,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#007AFF",
+        "borderColor": "#000000",
         "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
@@ -6025,7 +6025,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#BDDBFF",
+        "borderColor": "#C6CACF",
         "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
@@ -6372,7 +6372,7 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#007AFF",
+        "borderColor": "#000000",
         "borderRadius": 20,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -6420,7 +6420,7 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#BDDBFF",
+        "borderColor": "#C6CACF",
         "borderRadius": 20,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -6685,7 +6685,7 @@ exports[`Storyshots Atoms/SelectOption Playground 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#BDDBFF",
+        "borderColor": "#C6CACF",
         "borderRadius": 20,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -7475,7 +7475,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
           style={
             Array [
               Object {
-                "tintColor": "#FFFFFF",
+                "tintColor": "#007AFF",
               },
               Object {},
             ]
@@ -7586,7 +7586,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
             Array [
               Object {
                 "opacity": 0.5,
-                "tintColor": "#FFFFFF",
+                "tintColor": "#007AFF",
               },
               Object {},
             ]
@@ -9240,7 +9240,7 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
         style={
           Array [
             Object {
-              "tintColor": "#FFFFFF",
+              "tintColor": "#007AFF",
             },
             Object {
               "marginRight": 4,
@@ -10122,7 +10122,7 @@ exports[`Storyshots Molecules/ListItem Playground 1`] = `
         style={
           Array [
             Object {
-              "tintColor": "#FFFFFF",
+              "tintColor": "#007AFF",
             },
             Object {},
           ]
@@ -10236,7 +10236,7 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
         style={
           Array [
             Object {
-              "tintColor": "#FFFFFF",
+              "tintColor": "#007AFF",
             },
             Object {},
           ]
@@ -10319,7 +10319,7 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
         style={
           Array [
             Object {
-              "tintColor": "#FFFFFF",
+              "tintColor": "#007AFF",
             },
             Object {},
           ]
@@ -10433,7 +10433,7 @@ exports[`Storyshots Molecules/ListItem Suffix 1`] = `
         style={
           Array [
             Object {
-              "tintColor": "#FFFFFF",
+              "tintColor": "#007AFF",
             },
             Object {},
           ]
@@ -10620,7 +10620,7 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
         style={
           Array [
             Object {
-              "tintColor": "#FFFFFF",
+              "tintColor": "#007AFF",
             },
             Object {},
           ]
@@ -10703,7 +10703,7 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
         style={
           Array [
             Object {
-              "tintColor": "#FFFFFF",
+              "tintColor": "#007AFF",
             },
             Object {},
           ]
@@ -15323,7 +15323,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
               style={
                 Array [
                   Object {
-                    "tintColor": "#FFFFFF",
+                    "tintColor": "#007AFF",
                   },
                   Object {},
                 ]
@@ -15662,7 +15662,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           style={
             Array [
               Object {
-                "tintColor": "#FFFFFF",
+                "tintColor": "#007AFF",
               },
               Object {
                 "marginRight": 4,

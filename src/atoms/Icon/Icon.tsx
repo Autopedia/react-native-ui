@@ -60,7 +60,7 @@ const SIcon = styled.Image<SIconProps>`
       }
     }
     return `
-      tint-color: ${props.theme.colors.WHITE}
+      tint-color: ${props.theme.colors.PRIMARY}
      `;
   }}
 
