@@ -3,12 +3,22 @@ import { SelectLayout, SelectSize } from './SelectOption.types';
 import lodash from 'lodash';
 import React from 'react';
 import styled from 'styled-components/native';
+import {
+  SystemColor,
+  SystemColorKey,
+  SystemColorMain,
+  systemColorMap,
+  systemColors,
+} from '@styles/sytem-colors';
 
 interface SelectOptionProps<V> extends IterableProps {
   value: V;
   selected: boolean;
   label: string;
   sublabel?: string;
+  solid?: boolean;
+  color?: SystemColorMain;
+  textColor?: SystemColor | string;
   disabled?: boolean;
   size?: SelectSize;
   layout?: SelectLayout;
@@ -19,7 +29,9 @@ interface SContainerProps extends IterableProps {
   selected: boolean;
   disabled?: boolean;
   sublabelExists?: boolean;
+  solid?: boolean;
   size?: SelectSize;
+  color?: SystemColorMain | 'black';
   layout?: SelectLayout;
   onPress: (value: any) => void;
 }
@@ -27,6 +39,8 @@ interface SLabelProps {
   selected: boolean;
   disabled?: boolean;
   size?: SelectSize;
+  solid?: boolean;
+  textColor?: SystemColor | string;
   layout?: SelectLayout;
 }
 
@@ -62,11 +76,24 @@ const SelectOption = <V extends unknown>(
 };
 
 const SContainer = styled.TouchableOpacity<SContainerProps>`
-  ${props => `
-    border-width: ${props.theme.border.BORDER_WIDTH};
-    border-radius: ${props.theme.border.BORDER_RADIUS};
-    padding: ${props.theme.spacing.SPACE_8} ${props.theme.spacing.SPACE_12};
-  `}
+  /* solid (default: false) */
+  ${props => {
+    if (props.solid) {
+      const color = props.color || 'primary';
+      return `
+        background-color: ${
+          systemColors[systemColorMap[color] as SystemColorKey]
+        };
+        border-radius: ${props.theme.spacing.SPACE_20};
+        padding: ${props.theme.spacing.SPACE_8} ${props.theme.spacing.SPACE_12};
+      `;
+    }
+    return `
+      border-width: ${props.theme.border.BORDER_WIDTH};
+      border-radius: ${props.theme.spacing.SPACE_20};
+      padding: ${props.theme.spacing.SPACE_8} ${props.theme.spacing.SPACE_12};
+    `;
+  }}
 
   /* layout (default: inline) */
   ${props => {
@@ -106,18 +133,38 @@ const SContainer = styled.TouchableOpacity<SContainerProps>`
 
   /* selected */
   ${props => {
-    switch (props.selected) {
-      case true:
-        return `
-          background-color: ${props.theme.colors.SELECT};
-          border-color: ${props.theme.colors.BORDER_SELECT};
-        `;
-      case false:
-        return `
-          background-color: ${props.theme.colors.UNSELECT};
-          border-color: ${props.theme.colors.BORDER_UNSELECT};
-        `;
+    const color = props.color || props.solid ? 'primary' : 'black';
+
+    const defaultColor =
+      systemColors[systemColorMap[color as SystemColor] as SystemColorKey];
+    const lightColor =
+      color === 'black'
+        ? props.theme.colors.GRAY_400
+        : systemColors[
+            systemColorMap[(color + '_light') as SystemColor] as SystemColorKey
+          ];
+    const darkColor =
+      color === 'black'
+        ? 'black'
+        : systemColors[
+            systemColorMap[(color + '_dark') as SystemColor] as SystemColorKey
+          ];
+    if (props.selected) {
+      switch (props.solid) {
+        case true:
+          return `
+            background-color: ${darkColor};
+          `;
+        default:
+          return `
+            border-color: ${defaultColor};
+          `;
+      }
     }
+
+    return `
+      border-color: ${lightColor};
+    `;
   }}
 
   /* disabled (default: false) */
@@ -166,17 +213,28 @@ const SLabel = styled.Text<SLabelProps>`
     }
   }}
 
+  ${props => {
+    const deafaultTextColor = props.solid ? 'white' : 'black';
+
+    const textColor = props.textColor || deafaultTextColor;
+    return `
+        color: ${
+          systemColors[
+            systemColorMap[textColor as SystemColor] as SystemColorKey
+          ]
+        }
+      `;
+  }}
+
   /* selected */
   ${props => {
     switch (props.selected) {
       case true:
         return `
-          color: ${props.theme.colors.ON_SELECT};
+          font-family: ${props.theme.fonts.family.MEDIUM}
         `;
       case false:
-        return `
-          color: ${props.theme.colors.ON_UNSELECT};
-        `;
+        return props.solid ? '' : `opacity: 0.5`;
     }
   }}
 
@@ -193,20 +251,33 @@ const SLabel = styled.Text<SLabelProps>`
 
 const SSubLabel = styled.Text<SLabelProps>`
   ${props => `
-    font-family: ${props.theme.fonts.family.REGULAR};
     font-size: ${props.theme.fonts.size.XXS};
   `}
+
+  ${props => {
+    const deafaultTextColor = props.solid ? 'white' : 'black';
+
+    const textColor = props.textColor || deafaultTextColor;
+    return `
+        color: ${
+          systemColors[
+            systemColorMap[textColor as SystemColor] as SystemColorKey
+          ]
+        }
+      `;
+  }}
 
   /* selected */
   ${props => {
     switch (props.selected) {
       case true:
         return `
-          color: ${props.theme.colors.ON_SELECT};
+          font-family: ${props.theme.fonts.family.REGULAR};
         `;
       case false:
         return `
-          color: ${props.theme.colors.ON_UNSELECT};
+          font-family: ${props.theme.fonts.family.LIGHT};
+          ${props.solid ? '' : `opacity: 0.5`};
         `;
     }
   }}

@@ -1,5 +1,4 @@
 import Option from '@atoms/SelectOption';
-import { BaseInputProps } from '@global/types';
 import {
   SelectLayout,
   SelectOption,

@@ -5377,9 +5377,8 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "backgroundColor": "#E6F6FF",
-        "borderColor": "#2997FF",
-        "borderRadius": 4,
+        "borderColor": "#007AFF",
+        "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
         "marginLeft": 0,
@@ -5394,12 +5393,13 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     }
   >
     <Text
+      color="black"
       layout="block"
       selected={true}
       style={
         Array [
           Object {
-            "color": "#007AFF",
+            "color": "#000000",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
             "lineHeight": 26,
@@ -5423,9 +5423,8 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
+        "borderColor": "#BDDBFF",
+        "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
         "marginLeft": 0,
@@ -5440,15 +5439,17 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     }
   >
     <Text
+      color="black"
       layout="block"
       selected={false}
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
+            "color": "#000000",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
             "lineHeight": 26,
+            "opacity": 0.5,
           },
         ]
       }
@@ -5471,7 +5472,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
       Object {
         "backgroundColor": "#F5F5F5",
         "borderColor": "#D9D9D9",
-        "borderRadius": 4,
+        "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
         "marginLeft": 0,
@@ -5486,6 +5487,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     }
   >
     <Text
+      color="black"
       disabled={true}
       layout="block"
       selected={true}
@@ -5516,10 +5518,8 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "backgroundColor": "#E6F6FF",
-        "borderColor": "#2997FF",
-        "borderRadius": 4,
-        "borderWidth": 1,
+        "backgroundColor": "#0056B4",
+        "borderRadius": 20,
         "marginBottom": 2,
         "marginLeft": 0,
         "marginRight": 0,
@@ -5535,11 +5535,151 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     <Text
       layout="block"
       selected={true}
+      solid={true}
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
+          },
+        ]
+      }
+      value="value"
+    >
+      Block solid label selected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#007AFF",
+        "borderColor": "#BDDBFF",
+        "borderRadius": 20,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      layout="block"
+      selected={false}
+      solid={true}
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
+          },
+        ]
+      }
+      value="value"
+    >
+      Block solid label unselected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#F5F5F5",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 20,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      disabled={true}
+      layout="block"
+      selected={true}
+      solid={true}
+      style={
+        Array [
+          Object {
+            "color": "#8C8C8C",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
+          },
+        ]
+      }
+      value="value"
+    >
+      Block solid label disabled
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "borderColor": "#007AFF",
+        "borderRadius": 20,
+        "borderWidth": 1,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      color="black"
+      layout="block"
+      selected={true}
       size="sm"
       style={
         Array [
           Object {
-            "color": "#007AFF",
+            "color": "#000000",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 14,
             "lineHeight": 22,
@@ -5563,9 +5703,8 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
+        "borderColor": "#BDDBFF",
+        "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
         "marginLeft": 0,
@@ -5580,16 +5719,18 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     }
   >
     <Text
+      color="black"
       layout="block"
       selected={false}
       size="sm"
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
+            "color": "#000000",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 14,
             "lineHeight": 22,
+            "opacity": 0.5,
           },
         ]
       }
@@ -5612,7 +5753,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
       Object {
         "backgroundColor": "#F5F5F5",
         "borderColor": "#D9D9D9",
-        "borderRadius": 4,
+        "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
         "marginLeft": 0,
@@ -5644,6 +5785,147 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
       value="value"
     >
       Block small label disabled
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#0056B4",
+        "borderRadius": 20,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      layout="block"
+      selected={true}
+      size="sm"
+      solid={true}
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 14,
+            "lineHeight": 22,
+          },
+        ]
+      }
+      value="value"
+    >
+      Block solid small label selected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#007AFF",
+        "borderColor": "#BDDBFF",
+        "borderRadius": 20,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      layout="block"
+      selected={false}
+      size="sm"
+      solid={true}
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 14,
+            "lineHeight": 22,
+          },
+        ]
+      }
+      value="value"
+    >
+      Block solid small label unselected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#F5F5F5",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 20,
+        "marginBottom": 2,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      disabled={true}
+      layout="block"
+      selected={true}
+      size="sm"
+      solid={true}
+      style={
+        Array [
+          Object {
+            "color": "#8C8C8C",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 14,
+            "lineHeight": 22,
+          },
+        ]
+      }
+      value="value"
+    >
+      Block solid small label disabled
     </Text>
   </View>
 </View>
@@ -5679,9 +5961,8 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "backgroundColor": "#E6F6FF",
-        "borderColor": "#2997FF",
-        "borderRadius": 4,
+        "borderColor": "#007AFF",
+        "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
         "marginLeft": 0,
@@ -5696,12 +5977,13 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
     }
   >
     <Text
+      color="black"
       layout="block"
       selected={true}
       style={
         Array [
           Object {
-            "color": "#007AFF",
+            "color": "#000000",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
             "lineHeight": 26,
@@ -5713,12 +5995,13 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
       Block label selected
     </Text>
     <Text
+      color="black"
       layout="block"
       selected={true}
       style={
         Array [
           Object {
-            "color": "#007AFF",
+            "color": "#000000",
             "fontFamily": "NotoSansKR-Regular",
             "fontSize": 12,
             "lineHeight": 19,
@@ -5742,9 +6025,8 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
+        "borderColor": "#BDDBFF",
+        "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
         "marginLeft": 0,
@@ -5759,15 +6041,17 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
     }
   >
     <Text
+      color="black"
       layout="block"
       selected={false}
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
+            "color": "#000000",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
             "lineHeight": 26,
+            "opacity": 0.5,
           },
         ]
       }
@@ -5776,15 +6060,17 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
       Block label unselected
     </Text>
     <Text
+      color="black"
       layout="block"
       selected={false}
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
+            "color": "#000000",
+            "fontFamily": "NotoSansKR-Light",
             "fontSize": 12,
             "lineHeight": 19,
+            "opacity": 0.5,
           },
         ]
       }
@@ -5807,7 +6093,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
       Object {
         "backgroundColor": "#F5F5F5",
         "borderColor": "#D9D9D9",
-        "borderRadius": 4,
+        "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
         "marginLeft": 0,
@@ -5822,6 +6108,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
     }
   >
     <Text
+      color="black"
       disabled={true}
       layout="block"
       selected={true}
@@ -5840,6 +6127,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
       Block label disabled
     </Text>
     <Text
+      color="black"
       disabled={true}
       layout="block"
       selected={true}
@@ -5870,48 +6158,46 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "backgroundColor": "#E6F6FF",
-        "borderColor": "#2997FF",
-        "borderRadius": 4,
-        "borderWidth": 1,
+        "backgroundColor": "#0056B4",
+        "borderRadius": 20,
         "marginBottom": 2,
         "marginLeft": 0,
         "marginRight": 0,
         "marginTop": 2,
         "opacity": 1,
-        "paddingBottom": 8,
+        "paddingBottom": 12,
         "paddingLeft": 12,
         "paddingRight": 12,
-        "paddingTop": 8,
+        "paddingTop": 12,
       }
     }
   >
     <Text
       layout="block"
       selected={true}
-      size="sm"
+      solid={true}
       style={
         Array [
           Object {
-            "color": "#007AFF",
+            "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "fontSize": 16,
+            "lineHeight": 26,
           },
         ]
       }
       value="value"
     >
-      Block small label selected
+      Block solid label selected
     </Text>
     <Text
       layout="block"
       selected={true}
-      size="sm"
+      solid={true}
       style={
         Array [
           Object {
-            "color": "#007AFF",
+            "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Regular",
             "fontSize": 12,
             "lineHeight": 19,
@@ -5920,7 +6206,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
       }
       value="value"
     >
-      Block small sublabel selected
+      Block solid sublabel selected
     </Text>
   </View>
   <View
@@ -5935,49 +6221,48 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
+        "backgroundColor": "#007AFF",
+        "borderColor": "#BDDBFF",
+        "borderRadius": 20,
         "marginBottom": 2,
         "marginLeft": 0,
         "marginRight": 0,
         "marginTop": 2,
         "opacity": 1,
-        "paddingBottom": 8,
+        "paddingBottom": 12,
         "paddingLeft": 12,
         "paddingRight": 12,
-        "paddingTop": 8,
+        "paddingTop": 12,
       }
     }
   >
     <Text
       layout="block"
       selected={false}
-      size="sm"
+      solid={true}
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
+            "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "fontSize": 16,
+            "lineHeight": 26,
           },
         ]
       }
       value="value"
     >
-      Block small label unselected
+      Block solid label unselected
     </Text>
     <Text
       layout="block"
       selected={false}
-      size="sm"
+      solid={true}
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
-            "fontFamily": "NotoSansKR-Regular",
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Light",
             "fontSize": 12,
             "lineHeight": 19,
           },
@@ -5985,7 +6270,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
       }
       value="value"
     >
-      Block small sublabel unselected
+      Block solid sublabel unselected
     </Text>
   </View>
   <View
@@ -6002,17 +6287,16 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
       Object {
         "backgroundColor": "#F5F5F5",
         "borderColor": "#D9D9D9",
-        "borderRadius": 4,
-        "borderWidth": 1,
+        "borderRadius": 20,
         "marginBottom": 2,
         "marginLeft": 0,
         "marginRight": 0,
         "marginTop": 2,
         "opacity": 1,
-        "paddingBottom": 8,
+        "paddingBottom": 12,
         "paddingLeft": 12,
         "paddingRight": 12,
-        "paddingTop": 8,
+        "paddingTop": 12,
       }
     }
   >
@@ -6020,26 +6304,26 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
       disabled={true}
       layout="block"
       selected={true}
-      size="sm"
+      solid={true}
       style={
         Array [
           Object {
             "color": "#8C8C8C",
             "fontFamily": "NotoSansKR-Medium",
-            "fontSize": 14,
-            "lineHeight": 22,
+            "fontSize": 16,
+            "lineHeight": 26,
           },
         ]
       }
       value="value"
     >
-      Block small label disabled
+      Block solid label disabled
     </Text>
     <Text
       disabled={true}
       layout="block"
       selected={true}
-      size="sm"
+      solid={true}
       style={
         Array [
           Object {
@@ -6052,13 +6336,13 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
       }
       value="value"
     >
-      Block small sublabel disabled
+      Block solid sublabel disabled
     </Text>
   </View>
 </View>
 `;
 
-exports[`Storyshots Atoms/SelectOption Inline 1`] = `
+exports[`Storyshots Atoms/SelectOption InLine 1`] = `
 <View
   style={
     Array [
@@ -6088,9 +6372,8 @@ exports[`Storyshots Atoms/SelectOption Inline 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "backgroundColor": "#E6F6FF",
-        "borderColor": "#2997FF",
-        "borderRadius": 4,
+        "borderColor": "#007AFF",
+        "borderRadius": 20,
         "borderWidth": 1,
         "flexDirection": "row",
         "justifyContent": "center",
@@ -6107,13 +6390,14 @@ exports[`Storyshots Atoms/SelectOption Inline 1`] = `
     }
   >
     <Text
+      color="black"
       layout="inline"
       selected={true}
       style={
         Array [
           Object {
-            "color": "#007AFF",
-            "fontFamily": "NotoSansKR-Regular",
+            "color": "#000000",
+            "fontFamily": "NotoSansKR-Medium",
             "fontSize": 14,
             "lineHeight": 22,
           },
@@ -6136,9 +6420,8 @@ exports[`Storyshots Atoms/SelectOption Inline 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
+        "borderColor": "#BDDBFF",
+        "borderRadius": 20,
         "borderWidth": 1,
         "flexDirection": "row",
         "justifyContent": "center",
@@ -6155,15 +6438,17 @@ exports[`Storyshots Atoms/SelectOption Inline 1`] = `
     }
   >
     <Text
+      color="black"
       layout="inline"
       selected={false}
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
+            "color": "#000000",
             "fontFamily": "NotoSansKR-Regular",
             "fontSize": 14,
             "lineHeight": 22,
+            "opacity": 0.5,
           },
         ]
       }
@@ -6186,8 +6471,153 @@ exports[`Storyshots Atoms/SelectOption Inline 1`] = `
       Object {
         "backgroundColor": "#F5F5F5",
         "borderColor": "#D9D9D9",
-        "borderRadius": 4,
+        "borderRadius": 20,
         "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 2,
+        "marginLeft": 2,
+        "marginRight": 2,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      color="black"
+      disabled={true}
+      layout="inline"
+      selected={false}
+      style={
+        Array [
+          Object {
+            "color": "#8C8C8C",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 14,
+            "lineHeight": 22,
+            "opacity": 0.5,
+          },
+        ]
+      }
+      value="value"
+    >
+      Inline label disabled
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#0056B4",
+        "borderRadius": 20,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 2,
+        "marginLeft": 2,
+        "marginRight": 2,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      layout="inline"
+      selected={true}
+      solid={true}
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 14,
+            "lineHeight": 22,
+          },
+        ]
+      }
+      value="value"
+    >
+      Inline solid label selected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#007AFF",
+        "borderColor": "#BDDBFF",
+        "borderRadius": 20,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 2,
+        "marginLeft": 2,
+        "marginRight": 2,
+        "marginTop": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <Text
+      layout="inline"
+      selected={false}
+      solid={true}
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 14,
+            "lineHeight": 22,
+          },
+        ]
+      }
+      value="value"
+    >
+      Inline solid label unselected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#F5F5F5",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 20,
         "flexDirection": "row",
         "justifyContent": "center",
         "marginBottom": 2,
@@ -6205,7 +6635,8 @@ exports[`Storyshots Atoms/SelectOption Inline 1`] = `
     <Text
       disabled={true}
       layout="inline"
-      selected={true}
+      selected={false}
+      solid={true}
       style={
         Array [
           Object {
@@ -6218,7 +6649,7 @@ exports[`Storyshots Atoms/SelectOption Inline 1`] = `
       }
       value="value"
     >
-      Inline label selected
+      Inline solid label disabled
     </Text>
   </View>
 </View>
@@ -6254,9 +6685,8 @@ exports[`Storyshots Atoms/SelectOption Playground 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 4,
+        "borderColor": "#BDDBFF",
+        "borderRadius": 20,
         "borderWidth": 1,
         "flexDirection": "row",
         "justifyContent": "center",
@@ -6273,20 +6703,24 @@ exports[`Storyshots Atoms/SelectOption Playground 1`] = `
     }
   >
     <Text
+      color="black"
       disabled={false}
       layout="inline"
       selected={false}
       size="md"
+      solid={false}
       style={
         Array [
           Object {
-            "color": "#1F1F1F",
+            "color": "#000000",
             "fontFamily": "NotoSansKR-Regular",
             "fontSize": 14,
             "lineHeight": 22,
+            "opacity": 0.5,
           },
         ]
       }
+      textColor="black"
       value="value"
     >
       Label
@@ -8588,9 +9022,8 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "backgroundColor": "#FFFFFF",
-            "borderColor": "#D9D9D9",
-            "borderRadius": 4,
+            "borderColor": "#C6CACF",
+            "borderRadius": 20,
             "borderWidth": 1,
             "flexDirection": "row",
             "justifyContent": "center",
@@ -8614,10 +9047,11 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
           style={
             Array [
               Object {
-                "color": "#1F1F1F",
+                "color": "#000000",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
                 "lineHeight": 22,
+                "opacity": 0.5,
               },
             ]
           }
@@ -8638,9 +9072,8 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "backgroundColor": "#FFFFFF",
-            "borderColor": "#D9D9D9",
-            "borderRadius": 4,
+            "borderColor": "#C6CACF",
+            "borderRadius": 20,
             "borderWidth": 1,
             "flexDirection": "row",
             "justifyContent": "center",
@@ -8664,10 +9097,11 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
           style={
             Array [
               Object {
-                "color": "#1F1F1F",
+                "color": "#000000",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
                 "lineHeight": 22,
+                "opacity": 0.5,
               },
             ]
           }
@@ -8688,9 +9122,8 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "backgroundColor": "#FFFFFF",
-            "borderColor": "#D9D9D9",
-            "borderRadius": 4,
+            "borderColor": "#C6CACF",
+            "borderRadius": 20,
             "borderWidth": 1,
             "flexDirection": "row",
             "justifyContent": "center",
@@ -8714,10 +9147,11 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
           style={
             Array [
               Object {
-                "color": "#1F1F1F",
+                "color": "#000000",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
                 "lineHeight": 22,
+                "opacity": 0.5,
               },
             ]
           }
@@ -13284,9 +13718,8 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
@@ -13310,10 +13743,11 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
+              "opacity": 0.5,
             },
           ]
         }
@@ -13334,9 +13768,8 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
@@ -13360,10 +13793,11 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
+              "opacity": 0.5,
             },
           ]
         }
@@ -13384,9 +13818,8 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
@@ -13410,10 +13843,11 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
+              "opacity": 0.5,
             },
           ]
         }
@@ -13448,9 +13882,8 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
           "marginLeft": 0,
@@ -13472,10 +13905,11 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
+              "opacity": 0.5,
             },
           ]
         }
@@ -13496,9 +13930,8 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
           "marginLeft": 0,
@@ -13520,10 +13953,11 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
+              "opacity": 0.5,
             },
           ]
         }
@@ -13539,10 +13973,11 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
-              "fontFamily": "NotoSansKR-Regular",
+              "color": "#000000",
+              "fontFamily": "NotoSansKR-Light",
               "fontSize": 12,
               "lineHeight": 19,
+              "opacity": 0.5,
             },
           ]
         }
@@ -13563,9 +13998,8 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
           "marginLeft": 0,
@@ -13587,10 +14021,11 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
+              "opacity": 0.5,
             },
           ]
         }
@@ -13655,9 +14090,8 @@ exports[`Storyshots Molecules/Select Options 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
@@ -13681,10 +14115,11 @@ exports[`Storyshots Molecules/Select Options 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
+              "opacity": 0.5,
             },
           ]
         }
@@ -13705,9 +14140,8 @@ exports[`Storyshots Molecules/Select Options 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
@@ -13731,10 +14165,11 @@ exports[`Storyshots Molecules/Select Options 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
+              "opacity": 0.5,
             },
           ]
         }
@@ -13755,9 +14190,8 @@ exports[`Storyshots Molecules/Select Options 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
@@ -13781,10 +14215,11 @@ exports[`Storyshots Molecules/Select Options 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
+              "opacity": 0.5,
             },
           ]
         }
@@ -13838,9 +14273,8 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#E6F6FF",
-          "borderColor": "#2997FF",
-          "borderRadius": 4,
+          "borderColor": "#000000",
+          "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
@@ -13868,8 +14302,8 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#007AFF",
-              "fontFamily": "NotoSansKR-Regular",
+              "color": "#000000",
+              "fontFamily": "NotoSansKR-Medium",
               "fontSize": 14,
               "lineHeight": 22,
             },
@@ -13892,9 +14326,8 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
@@ -13922,10 +14355,11 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
+              "opacity": 0.5,
             },
           ]
         }
@@ -13946,9 +14380,8 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
@@ -13976,10 +14409,11 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
+              "opacity": 0.5,
             },
           ]
         }
@@ -14035,9 +14469,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
           "marginLeft": 0,
@@ -14060,10 +14493,11 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 14,
               "lineHeight": 22,
+              "opacity": 0.5,
             },
           ]
         }
@@ -14084,9 +14518,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
           "marginLeft": 0,
@@ -14109,10 +14542,11 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 14,
               "lineHeight": 22,
+              "opacity": 0.5,
             },
           ]
         }
@@ -14129,10 +14563,11 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
-              "fontFamily": "NotoSansKR-Regular",
+              "color": "#000000",
+              "fontFamily": "NotoSansKR-Light",
               "fontSize": 12,
               "lineHeight": 19,
+              "opacity": 0.5,
             },
           ]
         }
@@ -14153,9 +14588,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
           "marginLeft": 0,
@@ -14178,10 +14612,11 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 14,
               "lineHeight": 22,
+              "opacity": 0.5,
             },
           ]
         }
@@ -14216,9 +14651,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
           "marginLeft": 0,
@@ -14241,10 +14675,11 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
+              "opacity": 0.5,
             },
           ]
         }
@@ -14265,9 +14700,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
           "marginLeft": 0,
@@ -14290,10 +14724,11 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
+              "opacity": 0.5,
             },
           ]
         }
@@ -14310,10 +14745,11 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
-              "fontFamily": "NotoSansKR-Regular",
+              "color": "#000000",
+              "fontFamily": "NotoSansKR-Light",
               "fontSize": 12,
               "lineHeight": 19,
+              "opacity": 0.5,
             },
           ]
         }
@@ -14334,9 +14770,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
           "marginLeft": 0,
@@ -14359,10 +14794,11 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
+              "opacity": 0.5,
             },
           ]
         }
@@ -14397,9 +14833,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
           "marginLeft": 0,
@@ -14422,10 +14857,11 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
+              "opacity": 0.5,
             },
           ]
         }
@@ -14446,9 +14882,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
           "marginLeft": 0,
@@ -14471,10 +14906,11 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
+              "opacity": 0.5,
             },
           ]
         }
@@ -14491,10 +14927,11 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
-              "fontFamily": "NotoSansKR-Regular",
+              "color": "#000000",
+              "fontFamily": "NotoSansKR-Light",
               "fontSize": 12,
               "lineHeight": 19,
+              "opacity": 0.5,
             },
           ]
         }
@@ -14515,9 +14952,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#D9D9D9",
-          "borderRadius": 4,
+          "borderColor": "#C6CACF",
+          "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
           "marginLeft": 0,
@@ -14540,10 +14976,11 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
+              "color": "#000000",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
+              "opacity": 0.5,
             },
           ]
         }
@@ -14986,9 +15423,8 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "backgroundColor": "#E6F6FF",
-              "borderColor": "#2997FF",
-              "borderRadius": 4,
+              "borderColor": "#000000",
+              "borderRadius": 20,
               "borderWidth": 1,
               "flexDirection": "row",
               "justifyContent": "center",
@@ -15014,8 +15450,8 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#007AFF",
-                  "fontFamily": "NotoSansKR-Regular",
+                  "color": "#000000",
+                  "fontFamily": "NotoSansKR-Medium",
                   "fontSize": 14,
                   "lineHeight": 22,
                 },
@@ -15038,9 +15474,8 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "backgroundColor": "#FFFFFF",
-              "borderColor": "#D9D9D9",
-              "borderRadius": 4,
+              "borderColor": "#C6CACF",
+              "borderRadius": 20,
               "borderWidth": 1,
               "flexDirection": "row",
               "justifyContent": "center",
@@ -15066,10 +15501,11 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#1F1F1F",
+                  "color": "#000000",
                   "fontFamily": "NotoSansKR-Regular",
                   "fontSize": 14,
                   "lineHeight": 22,
+                  "opacity": 0.5,
                 },
               ]
             }
@@ -15090,9 +15526,8 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "backgroundColor": "#FFFFFF",
-              "borderColor": "#D9D9D9",
-              "borderRadius": 4,
+              "borderColor": "#C6CACF",
+              "borderRadius": 20,
               "borderWidth": 1,
               "flexDirection": "row",
               "justifyContent": "center",
@@ -15118,10 +15553,11 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#1F1F1F",
+                  "color": "#000000",
                   "fontFamily": "NotoSansKR-Regular",
                   "fontSize": 14,
                   "lineHeight": 22,
+                  "opacity": 0.5,
                 },
               ]
             }
