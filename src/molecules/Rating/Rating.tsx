@@ -7,6 +7,7 @@ import React, { useEffect, useState } from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
 import styled from 'styled-components/native';
 import { BaseInputProps } from '@global/types';
+import colors from '@styles/colors';
 
 const TOTAL = 5;
 const OFFSET = 0.0865625;
@@ -36,14 +37,14 @@ const Rating: React.FC<IProps> = props => {
   }, [props.defaultValue]);
 
   let size = 0;
-  let countSize: ParagraphSize = 'sm';
+  let countSize: ParagraphSize = 2;
   switch (props.size) {
     case 'sm':
       size = Spacing.SPACE_16;
       break;
     case 'lg':
       size = Spacing.SPACE_32;
-      countSize = 'md';
+      countSize = 1;
       break;
   }
 
@@ -77,11 +78,14 @@ const Rating: React.FC<IProps> = props => {
       {props.editable ? renderEditableRating() : renderUneditableRating()}
       {props.label && (
         <SLabel size={props.size}>
-          <Typography.Paragraph bold={props.size === 'lg'} size={props.size}>
+          <Typography.Paragraph
+            fontWeight={props.size === 'lg' ? 'bold' : 'regular'}
+            size={props.size === 'lg' ? 1 : 2}
+          >
             {ratingValue.toFixed(1)}
           </Typography.Paragraph>
           {props.count ? (
-            <Typography.Paragraph size={countSize} color="muted">
+            <Typography.Paragraph size={countSize} color={colors.MUTED}>
               {' '}
               ({props.count}
               {props.size === 'lg' && '개의 리뷰'})

@@ -4,7 +4,9 @@ import styled from 'styled-components/native';
 
 import Icon from '@atoms/Icon';
 
-interface CheckboxProps extends BaseInputProps<boolean> {}
+interface CheckboxProps extends BaseInputProps<boolean> {
+  color?: string;
+}
 
 const Checkbox: React.FC<CheckboxProps> = props => {
   const [checked, setChecked] = React.useState<boolean>(
@@ -14,17 +16,15 @@ const Checkbox: React.FC<CheckboxProps> = props => {
   const checkboxValue = props.value || checked;
 
   const onPress = () => {
-    setChecked(checked => {
-      if (props.onChange) {
-        props.onChange(!checked);
-      }
-      return !checked;
-    });
+    const toggled = !checked;
+    props.onChange?.(toggled);
+    setChecked(toggled);
   };
 
   return (
     <SContainer onPress={onPress}>
       <SIcon
+        color={props.color}
         source={
           checkboxValue
             ? require('@assets/icons/checkbox/checkbox-checked.png')

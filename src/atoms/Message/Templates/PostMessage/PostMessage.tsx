@@ -7,13 +7,14 @@ import {
   SContentInfo,
 } from '../../Message.styles';
 import { PostMessageProps } from '../../Message.types';
+import colors from '@styles/colors';
 
 const PostMessage: React.FC<PostMessageProps> = ({ thumbnailUrl, title }) => {
   return (
     <SContent>
       <SContentThumbnail source={{ uri: thumbnailUrl }} />
       <SContentInfo>
-        <Typography.Paragraph size="xs" color="muted">
+        <Typography.Paragraph size={2} color={colors.MUTED}>
           닥터차 포스트
         </Typography.Paragraph>
         <Typography.Heading size={5}>

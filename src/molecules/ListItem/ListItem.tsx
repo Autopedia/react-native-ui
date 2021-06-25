@@ -5,6 +5,7 @@ import lodash from 'lodash';
 import React from 'react';
 import { GestureResponderEvent } from 'react-native';
 import styled from 'styled-components/native';
+import colors from '@styles/colors';
 
 interface ListItemProps {
   label: string;
@@ -22,13 +23,13 @@ const ListItem: React.FC<ListItemProps> = props => {
     <STouchable {...touchableProps} activeOpacity={props.onPress ? 0.7 : 1}>
       <SContainer>
         {props.sublabel && props.sublabelPosition === 'top' && (
-          <Typography.Paragraph size="sm" color="muted">
+          <Typography.Paragraph size={2} color={colors.MUTED}>
             {props.sublabel}
           </Typography.Paragraph>
         )}
-        <Typography.Paragraph>{props.label}</Typography.Paragraph>
+        <Typography.Paragraph size={2}>{props.label}</Typography.Paragraph>
         {props.sublabel && props.sublabelPosition !== 'top' && (
-          <Typography.Paragraph size="sm" color="muted">
+          <Typography.Paragraph size={2} color={colors.MUTED}>
             {props.sublabel}
           </Typography.Paragraph>
         )}

@@ -8,6 +8,7 @@ import styled from 'styled-components/native';
 import Button from '@atoms/Button';
 import Icon from '@atoms/Icon';
 import MapView from 'react-native-maps';
+import colors from '@styles/colors';
 
 const ShopMessage: React.FC<ShopMessageProps> = ({
   name,
@@ -40,21 +41,22 @@ const ShopMessage: React.FC<ShopMessageProps> = ({
       </SMap>
       <SShopInfo>
         <Typography.Heading size={5}>{name}</Typography.Heading>
-        <Typography.Paragraph size="sm" color="muted">
+        <Typography.Paragraph size={2} color={colors.MUTED}>
           {address}
         </Typography.Paragraph>
         <SShopButtons>
           <SShopButton
-            size="sm"
             onPress={onPressDetail}
-            style={{ marginRight: Spacing.SPACE_4 }}
+            style={{ marginRight: Spacing.SPACE_10 }}
+            icon={require('@assets/icons/shop/shop.png')}
           >
-            <SShopButtonIcon source={require('@assets/icons/shop/shop.png')} />
-            <Typography.Paragraph size="sm">상세 정보</Typography.Paragraph>
+            상세 정보
           </SShopButton>
-          <SShopButton size="sm" onPress={onPressNavigate}>
-            <SShopButtonIcon source={require('@assets/icons/map/map.png')} />
-            <Typography.Paragraph size="sm">길찾기</Typography.Paragraph>
+          <SShopButton
+            onPress={onPressNavigate}
+            icon={require('@assets/icons/map/map.png')}
+          >
+            길찾기
           </SShopButton>
         </SShopButtons>
       </SShopInfo>
@@ -79,7 +81,7 @@ const SShopInfo = styled.View`
 const SShopButtons = styled.View`
   flex-direction: row;
   ${props => `
-    margin-top: ${props.theme.spacing.SPACE_6};
+    margin-top: ${props.theme.spacing.SPACE_12};
   `}
 `;
 
@@ -88,12 +90,6 @@ const SShopButton = styled(Button)`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-`;
-
-const SShopButtonIcon = styled(Icon)`
-  ${props => `
-    margin-right: ${props.theme.spacing.SPACE_2};
-  `}
 `;
 
 const SMap = styled(MapView)`

@@ -11,6 +11,7 @@ import {
 import styled from 'styled-components/native';
 
 import Icon from '@atoms/Icon';
+import { grayscaleColors } from '@styles/grayscale-colors';
 
 export interface TextInputProps
   /**
@@ -30,6 +31,7 @@ export interface TextInputProps
     > {
   type?: 'default';
   disabled?: boolean;
+  underline?: 'success' | 'error';
   suffix?: React.ReactNode;
   style?: StyleProp<TextStyle>;
 }
@@ -42,7 +44,7 @@ interface SContainerProps
 
 interface STextInputProps
   extends Omit<RNTextInputProps, 'onChange'>,
-    Pick<TextInputProps, 'type' | 'disabled'> {}
+    Pick<TextInputProps, 'type' | 'disabled' | 'underline'> {}
 interface SFixProps extends Pick<TextInputProps, 'type' | 'disabled'> {}
 interface SFixTextProps extends Pick<TextInputProps, 'type' | 'disabled'> {}
 
@@ -88,7 +90,10 @@ const TextInput = (props: TextInputProps) => {
   return (
     <SFixWrapper {...fixWrapperProps}>
       <SContainer {...containerProps}>
-        <STextInput {...textInputProps} />
+        <STextInput
+          {...textInputProps}
+          placeholderTextColor={grayscaleColors.GRAY_400}
+        />
         {props.secureTextEntry && (
           <SIcon
             touchable
@@ -126,9 +131,9 @@ const SContainer = styled.View<SContainerProps>`
     position: relative;
     flex-grow: 1;
     justify-content: center;
-    border-width: ${props.theme.border.BORDER_WIDTH};
-    border-radius: ${props.theme.border.BORDER_RADIUS};
-    padding: ${props.theme.spacing.SPACE_10} ${props.theme.spacing.SPACE_12};
+    border-radius: ${props.theme.spacing.SPACE_16};
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    padding: ${props.theme.spacing.SPACE_14} ${props.theme.spacing.SPACE_16};
   `}
 
   /* type (default: default) */
@@ -137,7 +142,6 @@ const SContainer = styled.View<SContainerProps>`
       default:
         return `
           background-color: ${props.theme.colors.DEFAULT};
-          border-color: ${props.theme.colors.BORDER_DEFAULT};
         `;
     }
   }}
@@ -179,6 +183,7 @@ const STextInput = styled.TextInput<STextInputProps>`
       }px;
     `}
 
+
   /* type (default: default) */
    ${props => {
     switch (props.type) {
@@ -195,6 +200,24 @@ const STextInput = styled.TextInput<STextInputProps>`
     `
       color: ${props.theme.colors.ON_DISABLED};
   `}
+    
+  /* underline */
+  ${props => {
+    switch (props.underline) {
+      case 'success':
+        return `
+          border-bottom-width: ${props.theme.border.BORDER_WIDTH};
+          border-bottom-color: ${props.theme.colors.SUCCESS};
+        `;
+      case 'error':
+        return `
+          border-bottom-width: ${props.theme.border.BORDER_WIDTH};
+          border-bottom-color: ${props.theme.colors.ERROR};
+        `;
+      default:
+        break;
+    }
+  }}
 `;
 
 const SIcon = styled(Icon)`

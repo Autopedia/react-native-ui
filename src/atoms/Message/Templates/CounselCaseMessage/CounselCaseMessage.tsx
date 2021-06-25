@@ -7,6 +7,7 @@ import {
   SContentInfo,
 } from '../../Message.styles';
 import { CounselCaseMessageProps } from '../../Message.types';
+import colors from '@styles/colors';
 
 const CounselCaseMessage: React.FC<CounselCaseMessageProps> = ({
   thumbnailUrl,
@@ -16,7 +17,7 @@ const CounselCaseMessage: React.FC<CounselCaseMessageProps> = ({
     <SContent>
       <SContentThumbnail source={{ uri: thumbnailUrl }} />
       <SContentInfo>
-        <Typography.Paragraph size="xs" color="muted">
+        <Typography.Paragraph size={2} color={colors.MUTED}>
           닥터차 상담사례
         </Typography.Paragraph>
         <Typography.Heading size={5}>

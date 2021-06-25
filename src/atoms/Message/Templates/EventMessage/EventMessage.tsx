@@ -7,13 +7,14 @@ import {
   SContentThumbnail,
   SContentInfo,
 } from '../../Message.styles';
+import colors from '@styles/colors';
 
 const EventMessage: React.FC<EventMessageProps> = ({ title, thumbnailUrl }) => {
   return (
     <SContent>
       <SContentThumbnail source={{ uri: thumbnailUrl }} />
       <SContentInfo>
-        <Typography.Paragraph size="xs" color="muted">
+        <Typography.Paragraph size={2} color={colors.MUTED}>
           닥터차 이벤트
         </Typography.Paragraph>
         <Typography.Heading size={5}>

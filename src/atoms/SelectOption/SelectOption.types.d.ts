@@ -4,4 +4,6 @@ export interface SelectOption<V> {
   value: V;
   label: string;
   sublabel?: string;
+  color?: string;
+  textColor?: string;
 }

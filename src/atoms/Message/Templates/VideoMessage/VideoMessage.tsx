@@ -83,7 +83,7 @@ const VideoMessage: React.FC<VideoMessageProps> = ({
           ) : (
             <>
               <Icon source={require('@assets/icons/play/play.png')} />
-              <Typography.Paragraph size="xs" color="white">
+              <Typography.Paragraph size={2} color="white">
                 {durationFormatter(duration)}
               </Typography.Paragraph>
             </>

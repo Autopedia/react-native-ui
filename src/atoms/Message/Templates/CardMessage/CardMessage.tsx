@@ -3,6 +3,7 @@ import { Spacing } from '@styles';
 import Typography from '@atoms/Typography';
 import { MAX_WIDTH } from '../../Message.styles';
 import styled from 'styled-components/native';
+import colors from '@styles/colors';
 
 interface CardMessageProps {
   title: string;
@@ -19,8 +20,8 @@ const CardMessage: React.FC<CardMessageProps> = ({
     <SCard>
       <Typography.Heading size={5}>{title}</Typography.Heading>
       <Typography.Paragraph
-        size="sm"
-        color="muted"
+        size={2}
+        color={colors.MUTED}
         style={{ marginVertical: Spacing.SPACE_10 }}
       >
         {description}

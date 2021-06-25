@@ -3,12 +3,16 @@ import { SelectLayout, SelectSize } from './SelectOption.types';
 import lodash from 'lodash';
 import React from 'react';
 import styled from 'styled-components/native';
+import { getValidatedColor } from '@utils/validator';
+import Color from 'color';
 
 interface SelectOptionProps<V> extends IterableProps {
   value: V;
   selected: boolean;
   label: string;
   sublabel?: string;
+  color?: string;
+  textColor?: string;
   disabled?: boolean;
   size?: SelectSize;
   layout?: SelectLayout;
@@ -20,6 +24,7 @@ interface SContainerProps extends IterableProps {
   disabled?: boolean;
   sublabelExists?: boolean;
   size?: SelectSize;
+  color?: string;
   layout?: SelectLayout;
   onPress: (value: any) => void;
 }
@@ -27,6 +32,7 @@ interface SLabelProps {
   selected: boolean;
   disabled?: boolean;
   size?: SelectSize;
+  textColor?: string;
   layout?: SelectLayout;
 }
 
@@ -62,11 +68,13 @@ const SelectOption = <V extends unknown>(
 };
 
 const SContainer = styled.TouchableOpacity<SContainerProps>`
-  ${props => `
-    border-width: ${props.theme.border.BORDER_WIDTH};
-    border-radius: ${props.theme.border.BORDER_RADIUS};
-    padding: ${props.theme.spacing.SPACE_8} ${props.theme.spacing.SPACE_12};
-  `}
+  ${props => {
+    return `
+      border-width: ${props.theme.border.BORDER_WIDTH};
+      border-radius: ${props.theme.spacing.SPACE_20};
+      padding: ${props.theme.spacing.SPACE_8} ${props.theme.spacing.SPACE_12};
+    `;
+  }}
 
   /* layout (default: inline) */
   ${props => {
@@ -106,18 +114,12 @@ const SContainer = styled.TouchableOpacity<SContainerProps>`
 
   /* selected */
   ${props => {
-    switch (props.selected) {
-      case true:
-        return `
-          background-color: ${props.theme.colors.SELECT};
-          border-color: ${props.theme.colors.BORDER_SELECT};
-        `;
-      case false:
-        return `
-          background-color: ${props.theme.colors.UNSELECT};
-          border-color: ${props.theme.colors.BORDER_UNSELECT};
-        `;
-    }
+    const color = getValidatedColor(props.color || 'black');
+    const unselectedColor = Color(color).alpha(0.5).string();
+
+    return `
+      border-color: ${props.selected ? color : unselectedColor};
+    `;
   }}
 
   /* disabled (default: false) */
@@ -166,17 +168,22 @@ const SLabel = styled.Text<SLabelProps>`
     }
   }}
 
+  ${props => {
+    const textColor = getValidatedColor(props.textColor || 'black');
+    return `
+        color: ${textColor}
+      `;
+  }}
+
   /* selected */
   ${props => {
     switch (props.selected) {
       case true:
         return `
-          color: ${props.theme.colors.ON_SELECT};
+          font-family: ${props.theme.fonts.family.MEDIUM}
         `;
       case false:
-        return `
-          color: ${props.theme.colors.ON_UNSELECT};
-        `;
+        return `opacity: 0.5`;
     }
   }}
 
@@ -193,20 +200,27 @@ const SLabel = styled.Text<SLabelProps>`
 
 const SSubLabel = styled.Text<SLabelProps>`
   ${props => `
-    font-family: ${props.theme.fonts.family.REGULAR};
     font-size: ${props.theme.fonts.size.XXS};
   `}
+
+  ${props => {
+    const textColor = getValidatedColor(props.textColor || 'black');
+    return `
+        color: ${textColor}
+      `;
+  }}
 
   /* selected */
   ${props => {
     switch (props.selected) {
       case true:
         return `
-          color: ${props.theme.colors.ON_SELECT};
+          font-family: ${props.theme.fonts.family.REGULAR};
         `;
       case false:
         return `
-          color: ${props.theme.colors.ON_UNSELECT};
+          font-family: ${props.theme.fonts.family.LIGHT};
+          opacity: 0.5;
         `;
     }
   }}
