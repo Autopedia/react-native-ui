@@ -7,6 +7,8 @@ import {
 import lodash from 'lodash';
 import React from 'react';
 import styled from 'styled-components/native';
+import { systemColors } from '@styles/system-colors';
+import { getValidatedColor } from '@utils/validator';
 import { IconProps, STouchableProps, SIconProps } from './Icon.types';
 
 const Icon: React.FC<IconProps> = props => {
@@ -42,12 +44,15 @@ const STouchable = styled.TouchableOpacity<STouchableProps>`
 `;
 const SIcon = styled.Image<SIconProps>`
   /* color (default: undefined) */
+
   ${props => {
-    return `tint-color: ${props.color}`;
+    return `tint-color: ${getValidatedColor(
+      props.color || systemColors.PRIMARY,
+    )}`;
   }}
 
   /* disabled (default: false) */
-  ${props => props.disabled && `opacity: 0.7`}
+  ${props => props.disabled && `opacity: 0.5`}
 `;
 
 export default Icon;

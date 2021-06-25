@@ -1,12 +1,12 @@
 import React from 'react';
-import { boolean, select, text } from '@storybook/addon-knobs';
+import { boolean, color, select, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import SThemeDecorator from '@decorators/styled-components.decorator';
 import { HeadingSize, ParagraphSize } from './Typography.types';
 
 import Typography from './Typography';
 import CenterContainerDecorator from '@decorators/center-container.decorator';
-import { SystemColor } from '@styles/system-colors';
+import { systemColors } from '@styles/system-colors';
 
 const { Heading, Paragraph, Caption } = Typography;
 
@@ -18,12 +18,6 @@ storiesOf('Atoms/Typography', module)
     const typographyType = select('type', typographyTypeOptions, 'heading');
 
     const headingSizeOptions: HeadingSize[] = [1, 2, 3, 4, 5];
-    const typographyColorOptions: SystemColor[] = [
-      'primary',
-      'success',
-      'error',
-      'black',
-    ];
     const paragraphSizeOptions: ParagraphSize[] = [1, 2];
 
     switch (typographyType) {
@@ -31,7 +25,7 @@ storiesOf('Atoms/Typography', module)
         return (
           <Heading
             size={select('size', headingSizeOptions, 1)}
-            color={select('color', typographyColorOptions, 'black')}
+            color={color('color', systemColors.BLACK)}
           >
             {text('text', 'Heading')}
           </Heading>
@@ -40,7 +34,7 @@ storiesOf('Atoms/Typography', module)
         return (
           <Paragraph
             size={select('size ', paragraphSizeOptions, 1)}
-            color={select('color ', typographyColorOptions, 'black')}
+            color={color('color ', systemColors.BLACK)}
             selectable={boolean('selectable', false)}
             underlined={boolean('underlined', false)}
           >
@@ -49,7 +43,7 @@ storiesOf('Atoms/Typography', module)
         );
       case 'caption':
         return (
-          <Caption color={select('color ', typographyColorOptions, 'black')}>
+          <Caption color={color('color  ', systemColors.BLACK)}>
             {text('text ', 'Caption')}
           </Caption>
         );
@@ -75,13 +69,13 @@ storiesOf('Atoms/Typography', module)
         <Paragraph size={1} underlined>
           Default Link
         </Paragraph>
-        <Paragraph size={1} color="primary" underlined>
+        <Paragraph size={1} color={systemColors.PRIMARY} underlined>
           Primary Link
         </Paragraph>
-        <Paragraph size={1} color="success" underlined>
+        <Paragraph size={1} color={systemColors.SUCCESS} underlined>
           Success Link
         </Paragraph>
-        <Paragraph size={1} color="error" underlined>
+        <Paragraph size={1} color={systemColors.ERROR} underlined>
           Error Link
         </Paragraph>
       </>
@@ -91,31 +85,31 @@ storiesOf('Atoms/Typography', module)
     return (
       <>
         <Heading size={3}>Default Heading</Heading>
-        <Heading size={3} color="primary">
+        <Heading size={3} color={systemColors.PRIMARY}>
           Primary Heading
         </Heading>
-        <Heading size={3} color="success">
+        <Heading size={3} color={systemColors.SUCCESS}>
           Success Heading
         </Heading>
-        <Heading size={3} color="error">
+        <Heading size={3} color={systemColors.ERROR}>
           Error Heading
         </Heading>
         <Paragraph size={1} color="black">
           Default Paragraph
         </Paragraph>
-        <Paragraph size={1} color="primary">
+        <Paragraph size={1} color={systemColors.PRIMARY}>
           Primary Paragraph
         </Paragraph>
-        <Paragraph size={1} color="success">
+        <Paragraph size={1} color={systemColors.SUCCESS}>
           Success Paragraph
         </Paragraph>
-        <Paragraph size={1} color="error">
+        <Paragraph size={1} color={systemColors.ERROR}>
           Error Paragraph
         </Paragraph>
         <Caption color="black">Default Caption</Caption>
-        <Caption color="primary">Primary Caption</Caption>
-        <Caption color="success">Success Caption</Caption>
-        <Caption color="error">Error Caption</Caption>
+        <Caption color={systemColors.PRIMARY}>Primary Caption</Caption>
+        <Caption color={systemColors.SUCCESS}>Success Caption</Caption>
+        <Caption color={systemColors.ERROR}>Error Caption</Caption>
       </>
     );
   })

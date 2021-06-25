@@ -52,6 +52,7 @@ exports[`Storyshots Atoms/Button AbsoluteIcon 1`] = `
     }
   >
     <Image
+      color="#FFFFFF"
       source={
         Object {
           "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -60,7 +61,7 @@ exports[`Storyshots Atoms/Button AbsoluteIcon 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#007AFF",
+            "tintColor": "#FFFFFF",
           },
           Object {
             "left": 16,
@@ -80,6 +81,7 @@ exports[`Storyshots Atoms/Button AbsoluteIcon 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Absolute Icon Left
     </Text>
@@ -128,10 +130,12 @@ exports[`Storyshots Atoms/Button AbsoluteIcon 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Absolute Icon Right
     </Text>
     <Image
+      color="#FFFFFF"
       source={
         Object {
           "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -140,7 +144,7 @@ exports[`Storyshots Atoms/Button AbsoluteIcon 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#007AFF",
+            "tintColor": "#FFFFFF",
           },
           Object {
             "position": "absolute",
@@ -215,6 +219,7 @@ exports[`Storyshots Atoms/Button Color/Block 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Primary
     </Text>
@@ -263,6 +268,7 @@ exports[`Storyshots Atoms/Button Color/Block 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Success
     </Text>
@@ -311,6 +317,7 @@ exports[`Storyshots Atoms/Button Color/Block 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Error
     </Text>
@@ -329,7 +336,7 @@ exports[`Storyshots Atoms/Button Color/Block 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "white",
           "borderColor": "black",
           "borderRadius": 26,
           "borderStyle": "solid",
@@ -350,7 +357,7 @@ exports[`Storyshots Atoms/Button Color/Block 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
@@ -375,7 +382,7 @@ exports[`Storyshots Atoms/Button Color/Block 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "#000000",
+          "backgroundColor": "black",
           "borderColor": "black",
           "borderRadius": 26,
           "borderStyle": "solid",
@@ -402,6 +409,7 @@ exports[`Storyshots Atoms/Button Color/Block 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Black
     </Text>
@@ -470,6 +478,7 @@ exports[`Storyshots Atoms/Button Color/Inline 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Primary
     </Text>
@@ -517,6 +526,7 @@ exports[`Storyshots Atoms/Button Color/Inline 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Success
     </Text>
@@ -564,6 +574,7 @@ exports[`Storyshots Atoms/Button Color/Inline 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Error
     </Text>
@@ -582,7 +593,7 @@ exports[`Storyshots Atoms/Button Color/Inline 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "white",
           "borderColor": "black",
           "borderRadius": 26,
           "borderStyle": "solid",
@@ -602,7 +613,7 @@ exports[`Storyshots Atoms/Button Color/Inline 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
@@ -627,7 +638,7 @@ exports[`Storyshots Atoms/Button Color/Inline 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "#000000",
+          "backgroundColor": "black",
           "borderColor": "black",
           "borderRadius": 26,
           "borderStyle": "solid",
@@ -653,6 +664,7 @@ exports[`Storyshots Atoms/Button Color/Inline 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Black
     </Text>
@@ -693,6 +705,7 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
         Object {
           "alignItems": "center",
           "borderColor": "black",
+          "borderRadius": 4,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -719,7 +732,7 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
           },
         ]
       }
-      textColor="primary"
+      textColor="#007AFF"
     >
       Primary
     </Text>
@@ -739,6 +752,7 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
         Object {
           "alignItems": "center",
           "borderColor": "black",
+          "borderRadius": 4,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -765,7 +779,7 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
           },
         ]
       }
-      textColor="success"
+      textColor="#48CF7C"
     >
       Success
     </Text>
@@ -785,6 +799,7 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
         Object {
           "alignItems": "center",
           "borderColor": "black",
+          "borderRadius": 4,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -811,7 +826,7 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
           },
         ]
       }
-      textColor="error"
+      textColor="#FA4339"
     >
       Error
     </Text>
@@ -831,6 +846,7 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
         Object {
           "alignItems": "center",
           "borderColor": "black",
+          "borderRadius": 4,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -848,7 +864,7 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
@@ -923,6 +939,7 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Default
     </Text>
@@ -965,13 +982,13 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
       style={
         Array [
           Object {
-            "color": "#FFFFFF",
+            "color": "rgba(255, 255, 255, 0.5)",
             "fontFamily": "NotoSansKR-Medium",
-            "opacity": 0.5,
             "textAlign": "center",
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Default Disabled
     </Text>
@@ -1020,6 +1037,7 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Block
     </Text>
@@ -1060,13 +1078,13 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
       style={
         Array [
           Object {
-            "color": "#FFFFFF",
+            "color": "rgba(255, 255, 255, 0.5)",
             "fontFamily": "NotoSansKR-Medium",
-            "opacity": 0.5,
             "textAlign": "center",
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Block Disabled
     </Text>
@@ -1086,6 +1104,7 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
         Object {
           "alignItems": "center",
           "borderColor": "black",
+          "borderRadius": 4,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -1106,7 +1125,7 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
@@ -1132,11 +1151,11 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
         Object {
           "alignItems": "center",
           "borderColor": "black",
+          "borderRadius": 4,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
           "justifyContent": "center",
-          "opacity": 0.5,
           "paddingBottom": 2,
           "paddingLeft": 2,
           "paddingRight": 2,
@@ -1151,9 +1170,8 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "rgba(0, 0, 0, 0.5)",
             "fontFamily": "NotoSansKR-Medium",
-            "opacity": 0.5,
             "textAlign": "center",
           },
         ]
@@ -1217,6 +1235,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     }
   >
     <Image
+      color="#FFFFFF"
       source={
         Object {
           "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -1225,7 +1244,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#007AFF",
+            "tintColor": "#FFFFFF",
           },
           Object {
             "marginRight": 6,
@@ -1244,6 +1263,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Icon Left
     </Text>
@@ -1291,10 +1311,12 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Icon Right
     </Text>
     <Image
+      color="#FFFFFF"
       source={
         Object {
           "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -1303,7 +1325,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#007AFF",
+            "tintColor": "#FFFFFF",
           },
           Object {
             "marginLeft": 6,
@@ -1346,6 +1368,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     }
   >
     <Image
+      color="#FFFFFF"
       source={
         Object {
           "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -1354,7 +1377,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#007AFF",
+            "tintColor": "#FFFFFF",
           },
           Object {
             "marginRight": 6,
@@ -1373,6 +1396,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Block Icon Left
     </Text>
@@ -1421,10 +1445,12 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Block Icon Right
     </Text>
     <Image
+      color="#FFFFFF"
       source={
         Object {
           "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -1433,7 +1459,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#007AFF",
+            "tintColor": "#FFFFFF",
           },
           Object {
             "marginLeft": 6,
@@ -1457,6 +1483,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         Object {
           "alignItems": "center",
           "borderColor": "black",
+          "borderRadius": 4,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -1482,7 +1509,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#000000",
+            "tintColor": "black",
           },
           Object {
             "marginRight": 6,
@@ -1495,7 +1522,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
@@ -1521,6 +1548,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         Object {
           "alignItems": "center",
           "borderColor": "black",
+          "borderRadius": 4,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -1541,7 +1569,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
@@ -1561,7 +1589,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#000000",
+            "tintColor": "black",
           },
           Object {
             "marginLeft": 6,
@@ -1626,7 +1654,7 @@ exports[`Storyshots Atoms/Button Playground 1`] = `
       style={
         Array [
           Object {
-            "color": "#FFFFFF",
+            "color": "white",
             "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
@@ -1702,6 +1730,7 @@ exports[`Storyshots Atoms/Button Tile 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Default
     </Text>
@@ -1749,6 +1778,7 @@ exports[`Storyshots Atoms/Button Tile 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Tile
     </Text>
@@ -1817,6 +1847,7 @@ exports[`Storyshots Atoms/Button Type 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Inline
     </Text>
@@ -1865,6 +1896,7 @@ exports[`Storyshots Atoms/Button Type 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Block
     </Text>
@@ -1884,6 +1916,7 @@ exports[`Storyshots Atoms/Button Type 1`] = `
         Object {
           "alignItems": "center",
           "borderColor": "black",
+          "borderRadius": 4,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -1901,7 +1934,7 @@ exports[`Storyshots Atoms/Button Type 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "textAlign": "center",
           },
@@ -2406,7 +2439,7 @@ exports[`Storyshots Atoms/Icon Color 1`] = `
   }
 >
   <Image
-    color="primary"
+    color="#007AFF"
     source={
       Object {
         "testUri": "../../../src/assets/icons/camera/camera.png",
@@ -2424,7 +2457,7 @@ exports[`Storyshots Atoms/Icon Color 1`] = `
     }
   />
   <Image
-    color="success"
+    color="#48CF7C"
     source={
       Object {
         "testUri": "../../../src/assets/icons/camera/camera.png",
@@ -2442,7 +2475,7 @@ exports[`Storyshots Atoms/Icon Color 1`] = `
     }
   />
   <Image
-    color="error"
+    color="#FA4339"
     source={
       Object {
         "testUri": "../../../src/assets/icons/camera/camera.png",
@@ -2469,7 +2502,7 @@ exports[`Storyshots Atoms/Icon Color 1`] = `
     style={
       Array [
         Object {
-          "tintColor": "#000000",
+          "tintColor": "black",
         },
         Object {
           "backgroundColor": "#E3E3E3",
@@ -2487,7 +2520,7 @@ exports[`Storyshots Atoms/Icon Color 1`] = `
     style={
       Array [
         Object {
-          "tintColor": "#FFFFFF",
+          "tintColor": "white",
         },
         Object {
           "backgroundColor": "#E3E3E3",
@@ -2517,7 +2550,7 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
   }
 >
   <Image
-    color="primary"
+    color="#007AFF"
     disabled={true}
     source={
       Object {
@@ -2537,7 +2570,7 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
     }
   />
   <Image
-    color="success"
+    color="#48CF7C"
     disabled={true}
     source={
       Object {
@@ -2557,7 +2590,7 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
     }
   />
   <Image
-    color="error"
+    color="#FA4339"
     disabled={true}
     source={
       Object {
@@ -2588,7 +2621,7 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
       Array [
         Object {
           "opacity": 0.5,
-          "tintColor": "#000000",
+          "tintColor": "black",
         },
         Object {
           "backgroundColor": "#E3E3E3",
@@ -2608,7 +2641,7 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
       Array [
         Object {
           "opacity": 0.5,
-          "tintColor": "#FFFFFF",
+          "tintColor": "white",
         },
         Object {
           "backgroundColor": "#E3E3E3",
@@ -2661,7 +2694,7 @@ exports[`Storyshots Atoms/Icon Playground 1`] = `
     }
   >
     <Image
-      color="#000000"
+      color="#007AFF"
       disabled={false}
       source={
         Object {
@@ -2671,7 +2704,7 @@ exports[`Storyshots Atoms/Icon Playground 1`] = `
       style={
         Array [
           Object {
-            "tintColor": "#000000",
+            "tintColor": "#007AFF",
           },
           Object {
             "backgroundColor": "#E3E3E3",
@@ -2728,7 +2761,7 @@ exports[`Storyshots Atoms/Icon Touchable 1`] = `
     }
   >
     <Image
-      color="primary"
+      color="#007AFF"
       source={
         Object {
           "testUri": "../../../src/assets/icons/camera/camera.png",
@@ -3282,7 +3315,7 @@ exports[`Storyshots Atoms/Message/CardMessage Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
               "lineHeight": 26,
@@ -3482,7 +3515,7 @@ exports[`Storyshots Atoms/Message/CounselCaseMessage Playground 1`] = `
           style={
             Array [
               Object {
-                "color": "#000000",
+                "color": "black",
                 "fontFamily": "NotoSansKR-Bold",
                 "fontSize": 16,
                 "lineHeight": 26,
@@ -3627,7 +3660,7 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
               "lineHeight": 26,
@@ -3674,7 +3707,7 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#FA4339",
+              "backgroundColor": "transparent",
               "borderColor": "black",
               "borderRadius": 26,
               "borderStyle": "solid",
@@ -3702,6 +3735,7 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
               },
             ]
           }
+          textColor="#FFFFFF"
         >
           지금 상담 종료하기
         </Text>
@@ -3864,7 +3898,7 @@ exports[`Storyshots Atoms/Message/EventMessage Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
               "lineHeight": 26,
@@ -3933,7 +3967,7 @@ exports[`Storyshots Atoms/Message/FeedbackMessage Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
               "lineHeight": 26,
@@ -4006,6 +4040,7 @@ exports[`Storyshots Atoms/Message/FeedbackMessage Playground 1`] = `
               },
             ]
           }
+          textColor="#FFFFFF"
         >
           피드백 남기기
         </Text>
@@ -4204,7 +4239,7 @@ exports[`Storyshots Atoms/Message/OutdatedMessage Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
               "lineHeight": 26,
@@ -4251,7 +4286,7 @@ exports[`Storyshots Atoms/Message/OutdatedMessage Playground 1`] = `
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#FA4339",
+              "backgroundColor": "transparent",
               "borderColor": "black",
               "borderRadius": 26,
               "borderStyle": "solid",
@@ -4279,6 +4314,7 @@ exports[`Storyshots Atoms/Message/OutdatedMessage Playground 1`] = `
               },
             ]
           }
+          textColor="#FFFFFF"
         >
           지금 상담 종료하기
         </Text>
@@ -4449,7 +4485,7 @@ exports[`Storyshots Atoms/Message/PostMessage Playground 1`] = `
           style={
             Array [
               Object {
-                "color": "#000000",
+                "color": "black",
                 "fontFamily": "NotoSansKR-Bold",
                 "fontSize": 16,
                 "lineHeight": 26,
@@ -4519,7 +4555,7 @@ exports[`Storyshots Atoms/Message/ReviewMessage Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
               "lineHeight": 26,
@@ -4592,6 +4628,7 @@ exports[`Storyshots Atoms/Message/ReviewMessage Playground 1`] = `
               },
             ]
           }
+          textColor="#FFFFFF"
         >
           앱스토어 리뷰 남기기
         </Text>
@@ -4714,7 +4751,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
           style={
             Array [
               Object {
-                "color": "#000000",
+                "color": "black",
                 "fontFamily": "NotoSansKR-Bold",
                 "fontSize": 16,
                 "lineHeight": 26,
@@ -4793,6 +4830,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
             }
           >
             <Image
+              color="#FFFFFF"
               source={
                 Object {
                   "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -4801,7 +4839,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               style={
                 Array [
                   Object {
-                    "tintColor": "#007AFF",
+                    "tintColor": "#FFFFFF",
                   },
                   Object {
                     "marginRight": 6,
@@ -4820,6 +4858,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                   },
                 ]
               }
+              textColor="#FFFFFF"
             >
               상세 정보
             </Text>
@@ -4862,6 +4901,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
             }
           >
             <Image
+              color="#FFFFFF"
               source={
                 Object {
                   "testUri": "../../../src/assets/icons/map/map.png",
@@ -4870,7 +4910,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               style={
                 Array [
                   Object {
-                    "tintColor": "#007AFF",
+                    "tintColor": "#FFFFFF",
                   },
                   Object {
                     "marginRight": 6,
@@ -4889,6 +4929,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                   },
                 ]
               }
+              textColor="#FFFFFF"
             >
               길찾기
             </Text>
@@ -5038,7 +5079,7 @@ exports[`Storyshots Atoms/Message/UnhandledMessage Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#E0ECFA",
+              "color": "transparent",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
@@ -5381,7 +5422,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#000000",
+        "borderColor": "black",
         "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
@@ -5403,7 +5444,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
             "lineHeight": 26,
@@ -5427,7 +5468,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#C6CACF",
+        "borderColor": "rgba(0, 0, 0, 0.5)",
         "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
@@ -5449,7 +5490,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
             "lineHeight": 26,
@@ -5522,145 +5563,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "backgroundColor": "#0056B4",
-        "borderRadius": 20,
-        "marginBottom": 2,
-        "marginLeft": 0,
-        "marginRight": 0,
-        "marginTop": 2,
-        "opacity": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 8,
-      }
-    }
-  >
-    <Text
-      layout="block"
-      selected={true}
-      solid={true}
-      style={
-        Array [
-          Object {
-            "color": "#FFFFFF",
-            "fontFamily": "NotoSansKR-Medium",
-            "fontSize": 16,
-            "lineHeight": 26,
-          },
-        ]
-      }
-      value="value"
-    >
-      Block solid label selected
-    </Text>
-  </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "backgroundColor": "#007AFF",
-        "borderColor": "#BDDBFF",
-        "borderRadius": 20,
-        "marginBottom": 2,
-        "marginLeft": 0,
-        "marginRight": 0,
-        "marginTop": 2,
-        "opacity": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 8,
-      }
-    }
-  >
-    <Text
-      layout="block"
-      selected={false}
-      solid={true}
-      style={
-        Array [
-          Object {
-            "color": "#FFFFFF",
-            "fontFamily": "NotoSansKR-Medium",
-            "fontSize": 16,
-            "lineHeight": 26,
-          },
-        ]
-      }
-      value="value"
-    >
-      Block solid label unselected
-    </Text>
-  </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "backgroundColor": "#F5F5F5",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 20,
-        "marginBottom": 2,
-        "marginLeft": 0,
-        "marginRight": 0,
-        "marginTop": 2,
-        "opacity": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 8,
-      }
-    }
-  >
-    <Text
-      disabled={true}
-      layout="block"
-      selected={true}
-      solid={true}
-      style={
-        Array [
-          Object {
-            "color": "#8C8C8C",
-            "fontFamily": "NotoSansKR-Medium",
-            "fontSize": 16,
-            "lineHeight": 26,
-          },
-        ]
-      }
-      value="value"
-    >
-      Block solid label disabled
-    </Text>
-  </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "borderColor": "#000000",
+        "borderColor": "black",
         "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
@@ -5683,7 +5586,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 14,
             "lineHeight": 22,
@@ -5707,7 +5610,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#C6CACF",
+        "borderColor": "rgba(0, 0, 0, 0.5)",
         "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
@@ -5730,7 +5633,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 14,
             "lineHeight": 22,
@@ -5791,147 +5694,6 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
       Block small label disabled
     </Text>
   </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "backgroundColor": "#0056B4",
-        "borderRadius": 20,
-        "marginBottom": 2,
-        "marginLeft": 0,
-        "marginRight": 0,
-        "marginTop": 2,
-        "opacity": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 8,
-      }
-    }
-  >
-    <Text
-      layout="block"
-      selected={true}
-      size="sm"
-      solid={true}
-      style={
-        Array [
-          Object {
-            "color": "#FFFFFF",
-            "fontFamily": "NotoSansKR-Medium",
-            "fontSize": 14,
-            "lineHeight": 22,
-          },
-        ]
-      }
-      value="value"
-    >
-      Block solid small label selected
-    </Text>
-  </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "backgroundColor": "#007AFF",
-        "borderColor": "#BDDBFF",
-        "borderRadius": 20,
-        "marginBottom": 2,
-        "marginLeft": 0,
-        "marginRight": 0,
-        "marginTop": 2,
-        "opacity": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 8,
-      }
-    }
-  >
-    <Text
-      layout="block"
-      selected={false}
-      size="sm"
-      solid={true}
-      style={
-        Array [
-          Object {
-            "color": "#FFFFFF",
-            "fontFamily": "NotoSansKR-Medium",
-            "fontSize": 14,
-            "lineHeight": 22,
-          },
-        ]
-      }
-      value="value"
-    >
-      Block solid small label unselected
-    </Text>
-  </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "backgroundColor": "#F5F5F5",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 20,
-        "marginBottom": 2,
-        "marginLeft": 0,
-        "marginRight": 0,
-        "marginTop": 2,
-        "opacity": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 8,
-      }
-    }
-  >
-    <Text
-      disabled={true}
-      layout="block"
-      selected={true}
-      size="sm"
-      solid={true}
-      style={
-        Array [
-          Object {
-            "color": "#8C8C8C",
-            "fontFamily": "NotoSansKR-Medium",
-            "fontSize": 14,
-            "lineHeight": 22,
-          },
-        ]
-      }
-      value="value"
-    >
-      Block solid small label disabled
-    </Text>
-  </View>
 </View>
 `;
 
@@ -5965,7 +5727,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#000000",
+        "borderColor": "black",
         "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
@@ -5987,7 +5749,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
             "lineHeight": 26,
@@ -6005,7 +5767,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Regular",
             "fontSize": 12,
             "lineHeight": 19,
@@ -6029,7 +5791,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#C6CACF",
+        "borderColor": "rgba(0, 0, 0, 0.5)",
         "borderRadius": 20,
         "borderWidth": 1,
         "marginBottom": 2,
@@ -6051,7 +5813,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
             "lineHeight": 26,
@@ -6070,7 +5832,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Light",
             "fontSize": 12,
             "lineHeight": 19,
@@ -6150,199 +5912,6 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
       Block sublabel disabled
     </Text>
   </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "backgroundColor": "#0056B4",
-        "borderRadius": 20,
-        "marginBottom": 2,
-        "marginLeft": 0,
-        "marginRight": 0,
-        "marginTop": 2,
-        "opacity": 1,
-        "paddingBottom": 12,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 12,
-      }
-    }
-  >
-    <Text
-      layout="block"
-      selected={true}
-      solid={true}
-      style={
-        Array [
-          Object {
-            "color": "#FFFFFF",
-            "fontFamily": "NotoSansKR-Medium",
-            "fontSize": 16,
-            "lineHeight": 26,
-          },
-        ]
-      }
-      value="value"
-    >
-      Block solid label selected
-    </Text>
-    <Text
-      layout="block"
-      selected={true}
-      solid={true}
-      style={
-        Array [
-          Object {
-            "color": "#FFFFFF",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 12,
-            "lineHeight": 19,
-          },
-        ]
-      }
-      value="value"
-    >
-      Block solid sublabel selected
-    </Text>
-  </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "backgroundColor": "#007AFF",
-        "borderColor": "#BDDBFF",
-        "borderRadius": 20,
-        "marginBottom": 2,
-        "marginLeft": 0,
-        "marginRight": 0,
-        "marginTop": 2,
-        "opacity": 1,
-        "paddingBottom": 12,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 12,
-      }
-    }
-  >
-    <Text
-      layout="block"
-      selected={false}
-      solid={true}
-      style={
-        Array [
-          Object {
-            "color": "#FFFFFF",
-            "fontFamily": "NotoSansKR-Medium",
-            "fontSize": 16,
-            "lineHeight": 26,
-          },
-        ]
-      }
-      value="value"
-    >
-      Block solid label unselected
-    </Text>
-    <Text
-      layout="block"
-      selected={false}
-      solid={true}
-      style={
-        Array [
-          Object {
-            "color": "#FFFFFF",
-            "fontFamily": "NotoSansKR-Light",
-            "fontSize": 12,
-            "lineHeight": 19,
-          },
-        ]
-      }
-      value="value"
-    >
-      Block solid sublabel unselected
-    </Text>
-  </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "backgroundColor": "#F5F5F5",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 20,
-        "marginBottom": 2,
-        "marginLeft": 0,
-        "marginRight": 0,
-        "marginTop": 2,
-        "opacity": 1,
-        "paddingBottom": 12,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 12,
-      }
-    }
-  >
-    <Text
-      disabled={true}
-      layout="block"
-      selected={true}
-      solid={true}
-      style={
-        Array [
-          Object {
-            "color": "#8C8C8C",
-            "fontFamily": "NotoSansKR-Medium",
-            "fontSize": 16,
-            "lineHeight": 26,
-          },
-        ]
-      }
-      value="value"
-    >
-      Block solid label disabled
-    </Text>
-    <Text
-      disabled={true}
-      layout="block"
-      selected={true}
-      solid={true}
-      style={
-        Array [
-          Object {
-            "color": "#8C8C8C",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 12,
-            "lineHeight": 19,
-          },
-        ]
-      }
-      value="value"
-    >
-      Block solid sublabel disabled
-    </Text>
-  </View>
 </View>
 `;
 
@@ -6376,7 +5945,7 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#000000",
+        "borderColor": "black",
         "borderRadius": 20,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -6400,7 +5969,7 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 14,
             "lineHeight": 22,
@@ -6424,7 +5993,7 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#C6CACF",
+        "borderColor": "rgba(0, 0, 0, 0.5)",
         "borderRadius": 20,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -6448,7 +6017,7 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Regular",
             "fontSize": 14,
             "lineHeight": 22,
@@ -6512,150 +6081,6 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
       Inline label disabled
     </Text>
   </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "backgroundColor": "#0056B4",
-        "borderRadius": 20,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 2,
-        "marginLeft": 2,
-        "marginRight": 2,
-        "marginTop": 2,
-        "opacity": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 8,
-      }
-    }
-  >
-    <Text
-      layout="inline"
-      selected={true}
-      solid={true}
-      style={
-        Array [
-          Object {
-            "color": "#FFFFFF",
-            "fontFamily": "NotoSansKR-Medium",
-            "fontSize": 14,
-            "lineHeight": 22,
-          },
-        ]
-      }
-      value="value"
-    >
-      Inline solid label selected
-    </Text>
-  </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "backgroundColor": "#007AFF",
-        "borderColor": "#BDDBFF",
-        "borderRadius": 20,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 2,
-        "marginLeft": 2,
-        "marginRight": 2,
-        "marginTop": 2,
-        "opacity": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 8,
-      }
-    }
-  >
-    <Text
-      layout="inline"
-      selected={false}
-      solid={true}
-      style={
-        Array [
-          Object {
-            "color": "#FFFFFF",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
-          },
-        ]
-      }
-      value="value"
-    >
-      Inline solid label unselected
-    </Text>
-  </View>
-  <View
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "backgroundColor": "#F5F5F5",
-        "borderColor": "#D9D9D9",
-        "borderRadius": 20,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 2,
-        "marginLeft": 2,
-        "marginRight": 2,
-        "marginTop": 2,
-        "opacity": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 8,
-      }
-    }
-  >
-    <Text
-      disabled={true}
-      layout="inline"
-      selected={false}
-      solid={true}
-      style={
-        Array [
-          Object {
-            "color": "#8C8C8C",
-            "fontFamily": "NotoSansKR-Regular",
-            "fontSize": 14,
-            "lineHeight": 22,
-          },
-        ]
-      }
-      value="value"
-    >
-      Inline solid label disabled
-    </Text>
-  </View>
 </View>
 `;
 
@@ -6689,7 +6114,7 @@ exports[`Storyshots Atoms/SelectOption Playground 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "borderColor": "#C6CACF",
+        "borderColor": "rgba(0, 0, 0, 0.5)",
         "borderRadius": 20,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -6712,11 +6137,10 @@ exports[`Storyshots Atoms/SelectOption Playground 1`] = `
       layout="inline"
       selected={false}
       size="md"
-      solid={false}
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Regular",
             "fontSize": 14,
             "lineHeight": 22,
@@ -7990,7 +7414,7 @@ exports[`Storyshots Atoms/Typography Bold 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Bold",
@@ -8007,7 +7431,7 @@ exports[`Storyshots Atoms/Typography Bold 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
@@ -8025,7 +7449,7 @@ exports[`Storyshots Atoms/Typography Bold 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Light",
@@ -8063,7 +7487,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 24,
           "lineHeight": 35,
@@ -8075,7 +7499,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     Default Heading
   </Text>
   <Text
-    color="primary"
+    color="#007AFF"
     size={3}
     style={
       Array [
@@ -8092,7 +7516,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     Primary Heading
   </Text>
   <Text
-    color="success"
+    color="#48CF7C"
     size={3}
     style={
       Array [
@@ -8109,7 +7533,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     Success Heading
   </Text>
   <Text
-    color="error"
+    color="#FA4339"
     size={3}
     style={
       Array [
@@ -8131,7 +7555,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
@@ -8144,7 +7568,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     Default Paragraph
   </Text>
   <Text
-    color="primary"
+    color="#007AFF"
     size={1}
     style={
       Array [
@@ -8162,7 +7586,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     Primary Paragraph
   </Text>
   <Text
-    color="success"
+    color="#48CF7C"
     size={1}
     style={
       Array [
@@ -8180,7 +7604,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     Success Paragraph
   </Text>
   <Text
-    color="error"
+    color="#FA4339"
     size={1}
     style={
       Array [
@@ -8202,7 +7626,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "fontFamily": "NotoSansKR-Medium",
           "fontSize": 12,
           "lineHeight": 19,
@@ -8213,7 +7637,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     Default Caption
   </Text>
   <Text
-    color="primary"
+    color="#007AFF"
     style={
       Array [
         Object {
@@ -8228,7 +7652,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     Primary Caption
   </Text>
   <Text
-    color="success"
+    color="#48CF7C"
     style={
       Array [
         Object {
@@ -8243,7 +7667,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
     Success Caption
   </Text>
   <Text
-    color="error"
+    color="#FA4339"
     style={
       Array [
         Object {
@@ -8283,7 +7707,7 @@ exports[`Storyshots Atoms/Typography Link 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
@@ -8298,7 +7722,7 @@ exports[`Storyshots Atoms/Typography Link 1`] = `
     Default Link
   </Text>
   <Text
-    color="primary"
+    color="#007AFF"
     size={1}
     style={
       Array [
@@ -8318,7 +7742,7 @@ exports[`Storyshots Atoms/Typography Link 1`] = `
     Primary Link
   </Text>
   <Text
-    color="success"
+    color="#48CF7C"
     size={1}
     style={
       Array [
@@ -8338,7 +7762,7 @@ exports[`Storyshots Atoms/Typography Link 1`] = `
     Success Link
   </Text>
   <Text
-    color="error"
+    color="#FA4339"
     size={1}
     style={
       Array [
@@ -8379,7 +7803,7 @@ exports[`Storyshots Atoms/Typography Playground 1`] = `
   }
 >
   <Text
-    color="black"
+    color="#000000"
     size={1}
     style={
       Array [
@@ -8422,7 +7846,7 @@ exports[`Storyshots Atoms/Typography Selectable 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
@@ -8439,7 +7863,7 @@ exports[`Storyshots Atoms/Typography Selectable 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
@@ -8477,7 +7901,7 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 32,
           "lineHeight": 55,
@@ -8493,7 +7917,7 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 28,
           "lineHeight": 40,
@@ -8509,7 +7933,7 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 24,
           "lineHeight": 35,
@@ -8525,7 +7949,7 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 20,
           "lineHeight": 29,
@@ -8540,7 +7964,7 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 16,
           "lineHeight": 26,
@@ -8555,7 +7979,7 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
@@ -8572,7 +7996,7 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "flexShrink": 1,
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
@@ -8588,7 +8012,7 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
     style={
       Array [
         Object {
-          "color": "#000000",
+          "color": "black",
           "fontFamily": "NotoSansKR-Medium",
           "fontSize": 12,
           "lineHeight": 19,
@@ -8666,7 +8090,7 @@ exports[`Storyshots Molecules/Article Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
               "lineHeight": 26,
@@ -8814,7 +8238,7 @@ exports[`Storyshots Molecules/Article Playground 1`] = `
           style={
             Array [
               Object {
-                "color": "#000000",
+                "color": "black",
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
@@ -9026,7 +8450,7 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "borderColor": "#C6CACF",
+            "borderColor": "rgba(0, 0, 0, 0.5)",
             "borderRadius": 20,
             "borderWidth": 1,
             "flexDirection": "row",
@@ -9051,7 +8475,7 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
           style={
             Array [
               Object {
-                "color": "#000000",
+                "color": "black",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
                 "lineHeight": 22,
@@ -9076,7 +8500,7 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "borderColor": "#C6CACF",
+            "borderColor": "rgba(0, 0, 0, 0.5)",
             "borderRadius": 20,
             "borderWidth": 1,
             "flexDirection": "row",
@@ -9101,7 +8525,7 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
           style={
             Array [
               Object {
-                "color": "#000000",
+                "color": "black",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
                 "lineHeight": 22,
@@ -9126,7 +8550,7 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "borderColor": "#C6CACF",
+            "borderColor": "rgba(0, 0, 0, 0.5)",
             "borderRadius": 20,
             "borderWidth": 1,
             "flexDirection": "row",
@@ -9151,7 +8575,7 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
           style={
             Array [
               Object {
-                "color": "#000000",
+                "color": "black",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
                 "lineHeight": 22,
@@ -9365,7 +8789,7 @@ exports[`Storyshots Molecules/FormItem Error 1`] = `
         style={
           Array [
             Object {
-              "color": "#FA4339",
+              "color": "transparent",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
@@ -10104,7 +9528,7 @@ exports[`Storyshots Molecules/ListItem Playground 1`] = `
           style={
             Array [
               Object {
-                "color": "#000000",
+                "color": "black",
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
@@ -10218,7 +9642,7 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
           style={
             Array [
               Object {
-                "color": "#000000",
+                "color": "black",
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
@@ -10283,7 +9707,7 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
           style={
             Array [
               Object {
-                "color": "#000000",
+                "color": "black",
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
@@ -10397,7 +9821,7 @@ exports[`Storyshots Molecules/ListItem Suffix 1`] = `
           style={
             Array [
               Object {
-                "color": "#000000",
+                "color": "black",
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
@@ -10480,7 +9904,7 @@ exports[`Storyshots Molecules/ListItem Suffix 1`] = `
           style={
             Array [
               Object {
-                "color": "#000000",
+                "color": "black",
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
@@ -10584,7 +10008,7 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
           style={
             Array [
               Object {
-                "color": "#000000",
+                "color": "black",
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
@@ -10667,7 +10091,7 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
           style={
             Array [
               Object {
-                "color": "#000000",
+                "color": "black",
                 "flexShrink": 1,
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
@@ -10776,6 +10200,7 @@ exports[`Storyshots Molecules/Modal Default 1`] = `
           },
         ]
       }
+      textColor="#FFFFFF"
     >
       Open Modal
     </Text>
@@ -10830,7 +10255,7 @@ exports[`Storyshots Molecules/Modal Default 1`] = `
         style={
           Array [
             Object {
-              "color": "#FFFFFF",
+              "color": "white",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Bold",
@@ -11049,7 +10474,7 @@ exports[`Storyshots Molecules/Rating Count 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
@@ -11243,7 +10668,7 @@ exports[`Storyshots Molecules/Rating Count 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
@@ -11499,7 +10924,7 @@ exports[`Storyshots Molecules/Rating Editable 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
@@ -11693,7 +11118,7 @@ exports[`Storyshots Molecules/Rating Editable 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
@@ -12070,7 +11495,7 @@ exports[`Storyshots Molecules/Rating Label 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
@@ -12305,7 +11730,7 @@ exports[`Storyshots Molecules/Rating Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "flexShrink": 1,
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
@@ -13725,7 +13150,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
@@ -13750,7 +13175,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
@@ -13775,7 +13200,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
@@ -13800,7 +13225,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
@@ -13825,7 +13250,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
@@ -13850,7 +13275,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
@@ -13889,7 +13314,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -13912,7 +13337,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
@@ -13937,7 +13362,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -13960,7 +13385,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
@@ -13980,7 +13405,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Light",
               "fontSize": 12,
               "lineHeight": 19,
@@ -14005,7 +13430,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -14028,7 +13453,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
@@ -14097,7 +13522,7 @@ exports[`Storyshots Molecules/Select Options 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
@@ -14122,7 +13547,7 @@ exports[`Storyshots Molecules/Select Options 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
@@ -14147,7 +13572,7 @@ exports[`Storyshots Molecules/Select Options 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
@@ -14172,7 +13597,7 @@ exports[`Storyshots Molecules/Select Options 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
@@ -14197,7 +13622,7 @@ exports[`Storyshots Molecules/Select Options 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
@@ -14222,7 +13647,7 @@ exports[`Storyshots Molecules/Select Options 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
@@ -14280,7 +13705,7 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#000000",
+          "borderColor": "black",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
@@ -14309,7 +13734,7 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 14,
               "lineHeight": 22,
@@ -14333,7 +13758,7 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
@@ -14362,7 +13787,7 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
@@ -14387,7 +13812,7 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
@@ -14416,7 +13841,7 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
               "lineHeight": 22,
@@ -14476,7 +13901,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -14500,7 +13925,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 14,
               "lineHeight": 22,
@@ -14525,7 +13950,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -14549,7 +13974,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 14,
               "lineHeight": 22,
@@ -14570,7 +13995,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Light",
               "fontSize": 12,
               "lineHeight": 19,
@@ -14595,7 +14020,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -14619,7 +14044,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 14,
               "lineHeight": 22,
@@ -14658,7 +14083,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -14682,7 +14107,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
@@ -14707,7 +14132,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -14731,7 +14156,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
@@ -14752,7 +14177,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Light",
               "fontSize": 12,
               "lineHeight": 19,
@@ -14777,7 +14202,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -14801,7 +14226,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
@@ -14840,7 +14265,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -14864,7 +14289,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
@@ -14889,7 +14314,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -14913,7 +14338,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
@@ -14934,7 +14359,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Light",
               "fontSize": 12,
               "lineHeight": 19,
@@ -14959,7 +14384,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "#C6CACF",
+          "borderColor": "rgba(0, 0, 0, 0.5)",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -14983,7 +14408,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
         style={
           Array [
             Object {
-              "color": "#000000",
+              "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
               "lineHeight": 26,
@@ -15033,7 +14458,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "black",
             "fontFamily": "NotoSansKR-Bold",
             "fontSize": 32,
             "lineHeight": 55,
@@ -15430,7 +14855,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "borderColor": "#000000",
+              "borderColor": "black",
               "borderRadius": 20,
               "borderWidth": 1,
               "flexDirection": "row",
@@ -15457,7 +14882,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#000000",
+                  "color": "black",
                   "fontFamily": "NotoSansKR-Medium",
                   "fontSize": 14,
                   "lineHeight": 22,
@@ -15481,7 +14906,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "borderColor": "#C6CACF",
+              "borderColor": "rgba(0, 0, 0, 0.5)",
               "borderRadius": 20,
               "borderWidth": 1,
               "flexDirection": "row",
@@ -15508,7 +14933,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#000000",
+                  "color": "black",
                   "fontFamily": "NotoSansKR-Regular",
                   "fontSize": 14,
                   "lineHeight": 22,
@@ -15533,7 +14958,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "borderColor": "#C6CACF",
+              "borderColor": "rgba(0, 0, 0, 0.5)",
               "borderRadius": 20,
               "borderWidth": 1,
               "flexDirection": "row",
@@ -15560,7 +14985,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#000000",
+                  "color": "black",
                   "fontFamily": "NotoSansKR-Regular",
                   "fontSize": 14,
                   "lineHeight": 22,

@@ -165,7 +165,7 @@ const SContainer = styled.TouchableHighlight<ButtonProps>`
   /* disabled (default: false) */
   ${props => {
     if (props.disabled) {
-      if (props.type === 'text') return `opacity: 0.5`;
+      if (props.type === 'text') return;
 
       return `
         background-color: ${props.disabledColor};
@@ -190,7 +190,7 @@ const SButtonText = styled.Text<SButtonTextProps>`
   ${props => {
     if (props.disabled) {
       return `
-        opacity: 0.7;
+        color: ${Color(props.textColor).alpha(0.5).string()};
       `;
     }
   }}

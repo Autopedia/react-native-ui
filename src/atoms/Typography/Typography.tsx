@@ -6,23 +6,18 @@ import {
 import React from 'react';
 import { GestureResponderEvent, TextStyle } from 'react-native';
 import styled from 'styled-components/native';
-import {
-  SystemColor,
-  SystemColorKey,
-  systemColorMap,
-  systemColors,
-} from '@styles/system-colors';
+import { getValidatedColor } from '@utils/validator';
 
 interface HeadingProps {
   size: HeadingSize;
-  color?: SystemColor | string;
+  color?: string;
   fontWeight?: TypographyFontWeight;
   style?: TextStyle;
 }
 
 interface ParagraphProps {
   size: ParagraphSize;
-  color?: SystemColor | string;
+  color?: string;
   fontWeight?: TypographyFontWeight;
   selectable?: boolean;
   underlined?: boolean;
@@ -31,7 +26,7 @@ interface ParagraphProps {
 }
 
 interface CaptionProps {
-  color?: SystemColor | string;
+  color?: string;
   fontWeight?: TypographyFontWeight;
   style?: TextStyle;
 }
@@ -85,19 +80,9 @@ const SHeading = styled.Text<HeadingProps>`
 
   /* color (default: black) */
    ${props => {
-    if (props.color) {
-      if (Object.keys(systemColorMap).includes(props.color)) {
-        const colorKey = systemColorMap[props.color as SystemColor];
-        const color = systemColors[colorKey as SystemColorKey];
-
-        return `color: ${color}`;
-      } else {
-        return `color: ${props.color}`;
-      }
-    }
     return `
-      color: ${props.theme.colors.BLACK}
-     `;
+      color: ${getValidatedColor(props.color || 'black')}
+    `;
   }}
 
   /* fontWeight (default: bold)*/
@@ -139,19 +124,9 @@ const SParagraph = styled.Text<ParagraphProps>`
 
   /* color (default: black) */
   ${props => {
-    if (props.color) {
-      if (Object.keys(systemColorMap).includes(props.color)) {
-        const colorKey = systemColorMap[props.color as SystemColor];
-        const color = systemColors[colorKey as SystemColorKey];
-
-        return `color: ${color}`;
-      } else {
-        return `color: ${props.color}`;
-      }
-    }
     return `
-      color: ${props.theme.colors.BLACK}
-     `;
+      color: ${getValidatedColor(props.color || 'black')}
+    `;
   }}
 
   /* fontWeight (default: regular)*/
@@ -188,19 +163,9 @@ const SCaption = styled.Text<CaptionProps>`
   ${props => `font-size: ${props.theme.fonts.size.XXS}`}
   /* color (default: black) */
   ${props => {
-    if (props.color) {
-      if (Object.keys(systemColorMap).includes(props.color)) {
-        const colorKey = systemColorMap[props.color as SystemColor];
-        const color = systemColors[colorKey as SystemColorKey];
-
-        return `color: ${color}`;
-      } else {
-        return `color: ${props.color}`;
-      }
-    }
     return `
-      color: ${props.theme.colors.BLACK}
-     `;
+      color: ${getValidatedColor(props.color || 'black')}
+    `;
   }}
 
   /* fontWeight (default: bold)*/

@@ -11,7 +11,9 @@ import Typography from '@atoms/Typography';
 describe('[Typography] Unit Test', () => {
   it('should fire onPress event of paragraph', () => {
     const onPressMock = jest.fn();
-    const wrapper = shallow(<Typography.Paragraph onPress={onPressMock} />);
+    const wrapper = shallow(
+      <Typography.Paragraph size={1} onPress={onPressMock} />,
+    );
 
     wrapper.simulate('press');
     expect(onPressMock).toHaveBeenCalledTimes(1);
