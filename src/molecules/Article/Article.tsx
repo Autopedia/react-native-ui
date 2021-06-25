@@ -3,6 +3,7 @@ import React from 'react';
 import Hyperlink from 'react-native-hyperlink';
 import styled from 'styled-components/native';
 import { Colors } from '@styles';
+import colors from '@styles/colors';
 interface ArticleProps {
   title: string;
   body: string;
@@ -12,7 +13,7 @@ const Article: React.FC<ArticleProps> = ({ title, body, date }) => {
   return (
     <SContainer>
       {date && (
-        <SDate size="sm" color="muted">
+        <SDate size={2} color={colors.MUTED}>
           {date}
         </SDate>
       )}
@@ -25,7 +26,7 @@ const Article: React.FC<ArticleProps> = ({ title, body, date }) => {
           color: Colors.PRIMARY_DARK,
         }}
       >
-        <Typography.Paragraph>{body}</Typography.Paragraph>
+        <Typography.Paragraph size={1}>{body}</Typography.Paragraph>
       </Hyperlink>
     </SContainer>
   );

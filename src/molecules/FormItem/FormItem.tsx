@@ -8,6 +8,7 @@ import React from 'react';
 import { FieldError, RegisterOptions } from 'react-hook-form';
 import { Animated } from 'react-native';
 import styled from 'styled-components/native';
+import colors from '@styles/colors';
 
 interface FormItemProps<V> extends IterableProps {
   children: BaseInputElement<V | null>;
@@ -50,7 +51,7 @@ const FormItem = <V extends unknown>(props: FormItemProps<V>) => {
         }}
       >
         {props.error?.message ? (
-          <SError size="sm" color="error">
+          <SError size={2} color="error">
             {props.error.message || '입력값을 확인해주세요'}
           </SError>
         ) : null}
@@ -58,7 +59,7 @@ const FormItem = <V extends unknown>(props: FormItemProps<V>) => {
       {props.footer && (
         <SFooterContainer>
           {typeof props.footer === 'string' ? (
-            <SFooter color="muted" size="sm">
+            <SFooter color={colors.MUTED} size={2}>
               {props.footer}
             </SFooter>
           ) : (

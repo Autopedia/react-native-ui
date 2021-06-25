@@ -22,7 +22,7 @@ const FeedbackMessage: React.FC<FeedbackMessageProps> = ({ link }) => {
   const description =
     '상담은 만족스러우셨나요?\n상담 내용에 대한 피드백을 바탕으로 더욱 발전하는 닥터차가 되겠습니다!';
   const footer = (
-    <Button layout="block" size="sm" onPress={openFeedback}>
+    <Button type="block" onPress={openFeedback}>
       피드백 남기기
     </Button>
   );

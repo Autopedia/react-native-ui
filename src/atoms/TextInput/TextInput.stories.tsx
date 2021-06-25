@@ -17,6 +17,7 @@ storiesOf('Atoms/TextInput', module)
         placeholder={text('placeholder', 'placeholder')}
         secureTextEntry={boolean('secureTextEntry', false)}
         disabled={boolean('disabled', false)}
+        underline={boolean('underline', false) ? 'success' : undefined}
         multiline={boolean('multiline', false)}
         numberOfLines={number('numberOfLines', 3, {
           min: 1,
@@ -74,6 +75,23 @@ storiesOf('Atoms/TextInput', module)
           multiline
           numberOfLines={3}
           defaultValue={longText}
+          onChangeText={v => action('onChangeText')(v)}
+        />
+      </>
+    );
+  })
+  .add('Underline', () => {
+    return (
+      <>
+        <TextInput
+          defaultValue="Success"
+          underline="success"
+          style={{ marginBottom: 5 }}
+          onChangeText={v => action('onChangeText')(v)}
+        />
+        <TextInput
+          defaultValue="Error"
+          underline="error"
           onChangeText={v => action('onChangeText')(v)}
         />
       </>
