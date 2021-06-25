@@ -6,7 +6,7 @@ import CenterContainerDecorator from '@decorators/center-container.decorator';
 import SThemeDecorator from '@decorators/styled-components.decorator';
 import SelectOption from './SelectOption';
 import { SelectLayout, SelectSize } from './SelectOption.types';
-import { SystemColorMain } from '../../styles/sytem-colors';
+import { SystemColorMain } from '@styles/system-colors';
 
 storiesOf('Atoms/SelectOption', module)
   .addDecorator(SThemeDecorator)

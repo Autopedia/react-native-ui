@@ -9,7 +9,7 @@ import {
   SystemColorMain,
   systemColorMap,
   systemColors,
-} from '@styles/sytem-colors';
+} from '@styles/system-colors';
 
 interface SelectOptionProps<V> extends IterableProps {
   value: V;

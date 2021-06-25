@@ -1,5 +1,4 @@
 import { ViewStyle, GestureResponderEvent, TextStyle } from 'react-native';
-import { SystemColor, SystemColorMain } from '@styles/sytem-colors';
 export type ButtonType = 'inline' | 'block' | 'text';
 export type ButtonIconPosition = 'left' | 'right';
 
@@ -13,8 +12,10 @@ export interface ButtonProps {
 
   type?: ButtonType;
   tile?: boolean;
-  color?: SystemColorMain;
-  textColor?: SystemColor | string;
+  color?: string;
+  touchedColor?: string;
+  disabledColor?: string;
+  textColor?: string;
   loading?: boolean;
   disabled?: boolean;
 

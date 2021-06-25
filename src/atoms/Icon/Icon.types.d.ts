@@ -4,7 +4,7 @@ import {
   ImageStyle,
   FlexStyle,
 } from 'react-native';
-import { SystemColor } from '../../styles/sytem-colors';
+import { SystemColor } from '@styles/system-colors';
 export interface IconProps {
   source: any;
   color?: SystemColor | string;

@@ -6,7 +6,7 @@ import CenterContainerDecorator from '@decorators/center-container.decorator';
 import SThemeDecorator from '@decorators/styled-components.decorator';
 import Icon from './Icon';
 import { Text } from 'react-native';
-import { SystemColorMain } from '../../styles/sytem-colors';
+import { SystemColorMain } from '@styles/system-colors';
 
 storiesOf('Atoms/Icon', module)
   .addDecorator(SThemeDecorator)

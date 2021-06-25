@@ -1,4 +1,4 @@
-import { SystemColor, SystemColorMain } from '@styles/sytem-colors';
+import { SystemColor, SystemColorMain } from '@styles/system-colors';
 
 export type SelectSize = 'sm' | 'md' | 'lg';
 export type SelectLayout = 'inline' | 'block' | 'column';

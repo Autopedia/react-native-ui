@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components/native';
 
 import Icon from '@atoms/Icon';
-import { SystemColor } from '../../styles/sytem-colors';
+import { SystemColor } from '@styles/system-colors';
 
 interface CheckboxProps extends BaseInputProps<boolean> {
   color?: SystemColor | string;

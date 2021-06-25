@@ -8,7 +8,7 @@ import CenterContainerDecorator from '@decorators/center-container.decorator';
 import Button from '@atoms/Button';
 import { action } from '@storybook/addon-actions';
 import { ButtonType } from './Button.types';
-import { SystemColorMain } from '../../styles/sytem-colors';
+import { SystemColorMain } from '@styles/system-colors';
 
 storiesOf('Atoms/Button', module)
   .addDecorator(SThemeDecorator)

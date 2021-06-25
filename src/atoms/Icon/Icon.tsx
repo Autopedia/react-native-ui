@@ -12,7 +12,7 @@ import {
   SystemColorKey,
   systemColorMap,
   systemColors,
-} from '../../styles/sytem-colors';
+} from '@styles/system-colors';
 import { IconProps, STouchableProps, SIconProps } from './Icon.types';
 
 const Icon: React.FC<IconProps> = props => {

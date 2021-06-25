@@ -9,18 +9,3 @@ export const grayscaleColors = {
   GRAY_800: '#2E3032',
   GRAY_900: '#212121',
 };
-
-export const grayscaleColorMap = {
-  gray_100: 'GRAY_100',
-  gray_200: 'GRAY_200',
-  gray_300: 'GRAY_300',
-  gray_400: 'GRAY_400',
-  gray_500: 'GRAY_500',
-  gray_600: 'GRAY_600',
-  gray_700: 'GRAY_700',
-  gray_800: 'GRAY_800',
-  gray_900: 'GRAY_900',
-};
-
-export type GrayscaleColorKeys = keyof typeof grayscaleColors;
-export type GrayscaleColor = keyof typeof grayscaleColorMap;

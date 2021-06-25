@@ -11,7 +11,7 @@ import {
   SystemColorKey,
   systemColorMap,
   systemColors,
-} from '../../styles/sytem-colors';
+} from '@styles/system-colors';
 
 interface HeadingProps {
   size: HeadingSize;

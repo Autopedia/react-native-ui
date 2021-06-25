@@ -1,4 +1,4 @@
-import { systemColors } from './sytem-colors';
+import { systemColors } from './system-colors';
 import { grayscaleColors } from './grayscale-colors';
 import { subColors } from './sub-colors';
 

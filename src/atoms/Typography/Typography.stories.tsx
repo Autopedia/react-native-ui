@@ -6,7 +6,7 @@ import { HeadingSize, ParagraphSize } from './Typography.types';
 
 import Typography from './Typography';
 import CenterContainerDecorator from '@decorators/center-container.decorator';
-import { SystemColor } from '@styles/sytem-colors';
+import { SystemColor } from '@styles/system-colors';
 
 const { Heading, Paragraph, Caption } = Typography;
 
