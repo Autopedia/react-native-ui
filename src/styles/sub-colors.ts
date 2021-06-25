@@ -34,3 +34,5 @@ export const subColors = {
 };
 
 export const subColorMap = lodash.invert(subColors);
+
+export type SubColorKey = keyof typeof subColors;

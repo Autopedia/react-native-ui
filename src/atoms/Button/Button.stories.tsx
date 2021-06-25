@@ -1,14 +1,13 @@
 import React from 'react';
-import { boolean, select, text } from '@storybook/addon-knobs';
+import { boolean, color, select, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
-import { View } from 'react-native';
 import SThemeDecorator from '@decorators/styled-components.decorator';
 import CenterContainerDecorator from '@decorators/center-container.decorator';
 
 import Button from '@atoms/Button';
 import { action } from '@storybook/addon-actions';
 import { ButtonType } from './Button.types';
-import { SystemColorMain } from '@styles/system-colors';
+import { systemColors } from '../../styles/system-colors';
 
 storiesOf('Atoms/Button', module)
   .addDecorator(SThemeDecorator)
@@ -16,19 +15,12 @@ storiesOf('Atoms/Button', module)
 
   .add('Playground', () => {
     const typeOptions: ButtonType[] = ['block', 'inline', 'text'];
-    const colorOptions: SystemColorMain[] = [
-      'primary',
-      'success',
-      'error',
-      'black',
-      'white',
-    ];
 
     return (
       <Button
         type={select('type', typeOptions, 'inline')}
-        color={select('color', colorOptions, 'primary')}
-        textColor={select('textColor', colorOptions, 'white')}
+        color={color('color', systemColors.PRIMARY)}
+        textColor={color('textColor', 'white')}
         tile={boolean('tile', false)}
         disabled={boolean('disabled', false)}
         icon={boolean('icon', false) && require('@assets/icons/shop/shop.png')}
@@ -141,21 +133,21 @@ storiesOf('Atoms/Button', module)
     return (
       <>
         <Button
-          color="primary"
+          color={systemColors.PRIMARY}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Primary
         </Button>
         <Button
-          color="success"
+          color={systemColors.SUCCESS}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Success
         </Button>
         <Button
-          color="error"
+          color={systemColors.ERROR}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
@@ -179,7 +171,7 @@ storiesOf('Atoms/Button', module)
       <>
         <Button
           type="block"
-          color="primary"
+          color={systemColors.PRIMARY}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
@@ -187,7 +179,7 @@ storiesOf('Atoms/Button', module)
         </Button>
         <Button
           type="block"
-          color="success"
+          color={systemColors.SUCCESS}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
@@ -195,7 +187,7 @@ storiesOf('Atoms/Button', module)
         </Button>
         <Button
           type="block"
-          color="error"
+          color={systemColors.ERROR}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
@@ -224,7 +216,7 @@ storiesOf('Atoms/Button', module)
       <>
         <Button
           type="text"
-          textColor="primary"
+          textColor={systemColors.PRIMARY}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
@@ -232,7 +224,7 @@ storiesOf('Atoms/Button', module)
         </Button>
         <Button
           type="text"
-          textColor="success"
+          textColor={systemColors.SUCCESS}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
@@ -240,7 +232,7 @@ storiesOf('Atoms/Button', module)
         </Button>
         <Button
           type="text"
-          textColor="error"
+          textColor={systemColors.ERROR}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >

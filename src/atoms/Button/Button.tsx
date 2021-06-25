@@ -7,45 +7,90 @@ import {
 } from '@atoms/Button/Button.types';
 
 import Icon from '@atoms/Icon';
-
 import lodash from 'lodash';
 import {
-  SystemColor,
   SystemColorKey,
   systemColorMap,
   systemColors,
-} from '@styles/sytem-colors';
+} from '@styles/system-colors';
+import { SubColorKey, subColorMap, subColors } from '@styles/sub-colors';
 import { grayscaleColors } from '@styles/grayscale-colors';
+import Color from 'color';
+import { getValidatedColor } from '@utils/validator';
 
 const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
-  const buttonTextProps = lodash.pick(props, ['textColor', 'disabled']);
-  const iconProps = lodash.pick(props, [
+  const getUnderlayColor = () => {
+    if (props.type === 'text') return grayscaleColors.GRAY_300;
+
+    const color = getValidatedColor(props.color || systemColors.PRIMARY);
+
+    if (Object.keys(systemColorMap).includes(color)) {
+      const touchedColorName = systemColorMap[color] + '_TOUCHED';
+
+      if (Object.keys(systemColors).includes(touchedColorName))
+        return systemColors[touchedColorName as SystemColorKey];
+    }
+
+    if (Object.keys(subColorMap).includes(color)) {
+      const touchedColorName = subColorMap[color] + '_TOUCHED';
+
+      if (Object.keys(subColors).includes(touchedColorName))
+        return subColors[touchedColorName as SubColorKey];
+    }
+
+    return Color(color).alpha(0.5).string();
+  };
+
+  const getDisabledColor = () => {
+    const color = getValidatedColor(props.color || systemColors.PRIMARY);
+
+    if (Object.keys(systemColorMap).includes(color)) {
+      const touchedColorName = systemColorMap[color] + '_DISABLED';
+
+      if (Object.keys(systemColors).includes(touchedColorName))
+        return systemColors[touchedColorName as SystemColorKey];
+    }
+
+    if (Object.keys(subColorMap).includes(color)) {
+      const touchedColorName = subColorMap[color] + '_DISABLED';
+
+      if (Object.keys(subColors).includes(touchedColorName))
+        return subColors[touchedColorName as SubColorKey];
+    }
+
+    return Color(color).alpha(0.5).string();
+  };
+
+  const containerProps = {
+    ...props,
+    color: getValidatedColor(props.color || systemColors.PRIMARY),
+    textColor: getValidatedColor(props.textColor || systemColors.WHITE),
+    disabledColor: props.disabledColor || getDisabledColor(),
+  };
+
+  const buttonTextProps = lodash.pick(containerProps, [
+    'textColor',
+    'disabled',
+  ]);
+  const iconProps = lodash.pick(containerProps, [
     'type',
     'disabled',
     'iconPosition',
     'absoluteIcon',
   ]);
 
-  const getUnderlayColor = () => {
-    if (props.type === 'text') return grayscaleColors.GRAY_300;
-
-    const color = props.color || 'primary';
-    switch (color) {
-      case 'white':
-        return grayscaleColors.GRAY_300;
-      case 'black':
-        return grayscaleColors.GRAY_700;
-      default:
-        const darkColor = (color + '_dark') as SystemColor;
-        return systemColors[systemColorMap[darkColor] as SystemColorKey];
-    }
-  };
-
   return (
-    <SContainer {...props} underlayColor={getUnderlayColor()}>
+    <SContainer
+      {...containerProps}
+      underlayColor={containerProps.touchedColor || getUnderlayColor()}
+    >
       <>
         {props.icon && props.iconPosition !== 'right' && (
-          <SIcon source={props.icon} color={props.textColor} {...iconProps} />
+          <SIcon
+            source={containerProps.icon}
+            color={containerProps.textColor}
+            {...iconProps}
+          />
         )}
         {typeof children === 'string' ? (
           <SButtonText includeFontPadding={false} {...buttonTextProps}>
@@ -54,8 +99,12 @@ const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
         ) : (
           children
         )}
-        {props.icon && props.iconPosition === 'right' && (
-          <SIcon source={props.icon} color={props.textColor} {...iconProps} />
+        {containerProps.icon && containerProps.iconPosition === 'right' && (
+          <SIcon
+            source={containerProps.icon}
+            color={containerProps.textColor}
+            {...iconProps}
+          />
         )}
       </>
     </SContainer>
@@ -83,6 +132,7 @@ const SContainer = styled.TouchableHighlight<ButtonProps>`
       case 'text':
         return `
           border: none;
+          border-radius: ${props.theme.border.BORDER_RADIUS};
           padding: ${props.theme.spacing.SPACE_2}
         `;
     }
@@ -102,18 +152,13 @@ const SContainer = styled.TouchableHighlight<ButtonProps>`
   /* color (default: default) */
   ${props => {
     const type = props.type || 'inline';
-    const color = props.color || 'primary';
-
     if (type === 'text') {
       return;
     }
 
-    const backgroundColor =
-      systemColors[systemColorMap[color as SystemColor] as SystemColorKey];
-
     return `
       border: none;
-      background-color: ${backgroundColor};  
+      background-color: ${props.color};  
     `;
   }}
 
@@ -122,23 +167,9 @@ const SContainer = styled.TouchableHighlight<ButtonProps>`
     if (props.disabled) {
       if (props.type === 'text') return `opacity: 0.5`;
 
-      const color = props.color || 'primary';
-
-      switch (color) {
-        case 'white':
-          break;
-        case 'black':
-          return `
-            background-color: ${grayscaleColors.GRAY_300}
-          `;
-        default:
-          const disabledColor = (color + '_light') as SystemColor;
-          return `
-          background-color: ${
-            systemColors[systemColorMap[disabledColor] as SystemColorKey]
-          }
-        `;
-      }
+      return `
+        background-color: ${props.disabledColor};
+      `;
     }
   }}
 `;
@@ -152,24 +183,14 @@ const SButtonText = styled.Text<SButtonTextProps>`
   }}
   /* textColor */
   ${props => {
-    if (props.textColor) {
-      if (Object.keys(systemColorMap).includes(props.textColor)) {
-        const colorKey = systemColorMap[props.textColor as SystemColor];
-        const color = systemColors[colorKey as SystemColorKey];
-
-        return `color: ${color}`;
-      } else {
-        return `color: ${props.textColor}`;
-      }
-    }
-    return `
-      color: ${props.theme.colors.WHITE}
-     `;
-  }} /* disabled */
+    return `color: ${props.textColor}`;
+  }} 
+  
+  /* disabled */
   ${props => {
     if (props.disabled) {
       return `
-        opacity: 0.5;
+        opacity: 0.7;
       `;
     }
   }}

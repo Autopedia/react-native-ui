@@ -24,3 +24,5 @@ export const systemColors = {
 };
 
 export const systemColorMap = lodash.invert(systemColors);
+
+export type SystemColorKey = keyof typeof systemColors;

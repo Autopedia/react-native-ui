@@ -7,12 +7,6 @@ import {
 import lodash from 'lodash';
 import React from 'react';
 import styled from 'styled-components/native';
-import {
-  SystemColor,
-  SystemColorKey,
-  systemColorMap,
-  systemColors,
-} from '@styles/system-colors';
 import { IconProps, STouchableProps, SIconProps } from './Icon.types';
 
 const Icon: React.FC<IconProps> = props => {
@@ -49,23 +43,11 @@ const STouchable = styled.TouchableOpacity<STouchableProps>`
 const SIcon = styled.Image<SIconProps>`
   /* color (default: undefined) */
   ${props => {
-    if (props.color) {
-      if (Object.keys(systemColorMap).includes(props.color)) {
-        const colorKey = systemColorMap[props.color as SystemColor];
-        const color = systemColors[colorKey as SystemColorKey];
-
-        return `tint-color: ${color}`;
-      } else {
-        return `tint-color: ${props.color}`;
-      }
-    }
-    return `
-      tint-color: ${props.theme.colors.PRIMARY}
-     `;
+    return `tint-color: ${props.color}`;
   }}
 
   /* disabled (default: false) */
-  ${props => props.disabled && `opacity: 0.5`}
+  ${props => props.disabled && `opacity: 0.7`}
 `;
 
 export default Icon;
