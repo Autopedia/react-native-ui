@@ -3,22 +3,16 @@ import { SelectLayout, SelectSize } from './SelectOption.types';
 import lodash from 'lodash';
 import React from 'react';
 import styled from 'styled-components/native';
-import {
-  SystemColor,
-  SystemColorKey,
-  SystemColorMain,
-  systemColorMap,
-  systemColors,
-} from '@styles/system-colors';
+import { getValidatedColor } from '@utils/validator';
+import Color from 'color';
 
 interface SelectOptionProps<V> extends IterableProps {
   value: V;
   selected: boolean;
   label: string;
   sublabel?: string;
-  solid?: boolean;
-  color?: SystemColorMain;
-  textColor?: SystemColor | string;
+  color?: string;
+  textColor?: string;
   disabled?: boolean;
   size?: SelectSize;
   layout?: SelectLayout;
@@ -29,9 +23,8 @@ interface SContainerProps extends IterableProps {
   selected: boolean;
   disabled?: boolean;
   sublabelExists?: boolean;
-  solid?: boolean;
   size?: SelectSize;
-  color?: SystemColorMain | 'black';
+  color?: string;
   layout?: SelectLayout;
   onPress: (value: any) => void;
 }
@@ -39,8 +32,7 @@ interface SLabelProps {
   selected: boolean;
   disabled?: boolean;
   size?: SelectSize;
-  solid?: boolean;
-  textColor?: SystemColor | string;
+  textColor?: string;
   layout?: SelectLayout;
 }
 
@@ -76,18 +68,7 @@ const SelectOption = <V extends unknown>(
 };
 
 const SContainer = styled.TouchableOpacity<SContainerProps>`
-  /* solid (default: false) */
   ${props => {
-    if (props.solid) {
-      const color = props.color || 'primary';
-      return `
-        background-color: ${
-          systemColors[systemColorMap[color] as SystemColorKey]
-        };
-        border-radius: ${props.theme.spacing.SPACE_20};
-        padding: ${props.theme.spacing.SPACE_8} ${props.theme.spacing.SPACE_12};
-      `;
-    }
     return `
       border-width: ${props.theme.border.BORDER_WIDTH};
       border-radius: ${props.theme.spacing.SPACE_20};
@@ -133,37 +114,11 @@ const SContainer = styled.TouchableOpacity<SContainerProps>`
 
   /* selected */
   ${props => {
-    const color = props.color || (props.solid ? 'primary' : 'black');
-
-    const defaultColor =
-      systemColors[systemColorMap[color as SystemColor] as SystemColorKey];
-    const lightColor =
-      color === 'black'
-        ? props.theme.colors.GRAY_400
-        : systemColors[
-            systemColorMap[(color + '_light') as SystemColor] as SystemColorKey
-          ];
-    const darkColor =
-      color === 'black'
-        ? 'black'
-        : systemColors[
-            systemColorMap[(color + '_dark') as SystemColor] as SystemColorKey
-          ];
-    if (props.selected) {
-      switch (props.solid) {
-        case true:
-          return `
-            background-color: ${darkColor};
-          `;
-        default:
-          return `
-            border-color: ${defaultColor};
-          `;
-      }
-    }
+    const color = getValidatedColor(props.color || 'black');
+    const unselectedColor = Color(color).alpha(0.5).string();
 
     return `
-      border-color: ${lightColor};
+      border-color: ${props.selected ? color : unselectedColor};
     `;
   }}
 
@@ -214,15 +169,9 @@ const SLabel = styled.Text<SLabelProps>`
   }}
 
   ${props => {
-    const deafaultTextColor = props.solid ? 'white' : 'black';
-
-    const textColor = props.textColor || deafaultTextColor;
+    const textColor = getValidatedColor(props.textColor || 'black');
     return `
-        color: ${
-          systemColors[
-            systemColorMap[textColor as SystemColor] as SystemColorKey
-          ]
-        }
+        color: ${textColor}
       `;
   }}
 
@@ -234,7 +183,7 @@ const SLabel = styled.Text<SLabelProps>`
           font-family: ${props.theme.fonts.family.MEDIUM}
         `;
       case false:
-        return props.solid ? '' : `opacity: 0.5`;
+        return `opacity: 0.5`;
     }
   }}
 
@@ -255,15 +204,9 @@ const SSubLabel = styled.Text<SLabelProps>`
   `}
 
   ${props => {
-    const deafaultTextColor = props.solid ? 'white' : 'black';
-
-    const textColor = props.textColor || deafaultTextColor;
+    const textColor = getValidatedColor(props.textColor || 'black');
     return `
-        color: ${
-          systemColors[
-            systemColorMap[textColor as SystemColor] as SystemColorKey
-          ]
-        }
+        color: ${textColor}
       `;
   }}
 
@@ -277,7 +220,7 @@ const SSubLabel = styled.Text<SLabelProps>`
       case false:
         return `
           font-family: ${props.theme.fonts.family.LIGHT};
-          ${props.solid ? '' : `opacity: 0.5`};
+          opacity: 0.5;
         `;
     }
   }}
