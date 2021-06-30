@@ -47,13 +47,13 @@ const ShopMessage: React.FC<ShopMessageProps> = ({
           <SShopButton
             onPress={onPressDetail}
             style={{ marginRight: Spacing.SPACE_10 }}
-            icon={require('../../assets/icons/shop/shop.png')}
+            icon={require('../../../../assets/icons/shop/shop.png')}
           >
             상세 정보
           </SShopButton>
           <SShopButton
             onPress={onPressNavigate}
-            icon={require('../../assets/icons/map/map.png')}
+            icon={require('../../../../assets/icons/map/map.png')}
           >
             길찾기
           </SShopButton>
