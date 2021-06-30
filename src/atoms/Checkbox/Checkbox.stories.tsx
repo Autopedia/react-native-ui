@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 import { storiesOf } from '@storybook/react-native';
-import CenterContainerDecorator from '@decorators/center-container.decorator';
-import SThemeDecorator from '@decorators/styled-components.decorator';
+import CenterContainerDecorator from '../../decorators/center-container.decorator';
+import SThemeDecorator from '../../decorators/styled-components.decorator';
 import Checkbox from './Checkbox';
 import { Text } from 'react-native';
 import { action } from '@storybook/addon-actions';

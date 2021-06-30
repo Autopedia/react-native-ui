@@ -4,19 +4,19 @@ import {
   ButtonProps,
   SButtonTextProps,
   SIconProps,
-} from '@atoms/Button/Button.types';
+} from '../../atoms/Button/Button.types';
 
-import Icon from '@atoms/Icon';
+import Icon from '../../atoms/Icon';
 import lodash from 'lodash';
 import {
   SystemColorKey,
   systemColorMap,
   systemColors,
-} from '@styles/system-colors';
-import { SubColorKey, subColorMap, subColors } from '@styles/sub-colors';
-import { grayscaleColors } from '@styles/grayscale-colors';
+} from '../../styles/system-colors';
+import { SubColorKey, subColorMap, subColors } from '../../styles/sub-colors';
+import { grayscaleColors } from '../../styles/grayscale-colors';
 import Color from 'color';
-import { getValidatedColor } from '@utils/validator';
+import { getValidatedColor } from '../../utils/validator';
 
 const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
   const getUnderlayColor = () => {

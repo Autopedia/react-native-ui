@@ -2,7 +2,7 @@ import React from 'react';
 import { Linking, Alert } from 'react-native';
 import { FeedbackMessageProps } from '../../Message.types';
 import { CardMessage } from '../';
-import Button from '@atoms/Button';
+import Button from '../../../../atoms/Button';
 
 const FeedbackMessage: React.FC<FeedbackMessageProps> = ({ link }) => {
   const openFeedback = async () => {

@@ -1,9 +1,9 @@
-import { IterableProps } from '@global/types';
+import { IterableProps } from '../../global/types';
 import { SelectLayout, SelectSize } from './SelectOption.types';
 import lodash from 'lodash';
 import React from 'react';
 import styled from 'styled-components/native';
-import { getValidatedColor } from '@utils/validator';
+import { getValidatedColor } from '../../utils/validator';
 import Color from 'color';
 
 interface SelectOptionProps<V> extends IterableProps {

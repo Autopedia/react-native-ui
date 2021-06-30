@@ -14,7 +14,7 @@ describe('[Icon] Unit Test', () => {
 
     const icon = shallow(
       <Icon
-        source={require('@assets/icons/camera/camera.png')}
+        source={require('../../assets/icons/camera/camera.png')}
         touchable
         onPress={onPressMock}
       ></Icon>,
@@ -29,7 +29,7 @@ describe('[Icon] Unit Test', () => {
 
     const icon = shallow(
       <Icon
-        source={require('@assets/icons/camera/camera.png')}
+        source={require('../../assets/icons/camera/camera.png')}
         onPress={onPressMock}
       ></Icon>,
     );
@@ -43,7 +43,7 @@ describe('[Icon] Unit Test', () => {
 
     const icon = shallow(
       <Icon
-        source={require('@assets/icons/camera/camera.png')}
+        source={require('../../assets/icons/camera/camera.png')}
         disabled
         onPress={onPressMock}
       ></Icon>,
@@ -58,7 +58,7 @@ describe('[Icon] Unit Test', () => {
 
     const icon = shallow(
       <Icon
-        source={require('@assets/icons/camera/camera.png')}
+        source={require('../../assets/icons/camera/camera.png')}
         touchable
         disabled
         onPress={onPressMock}

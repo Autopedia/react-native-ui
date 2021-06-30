@@ -1,9 +1,9 @@
-import Typography from '@atoms/Typography';
+import Typography from '../../atoms/Typography';
 import React from 'react';
 import Hyperlink from 'react-native-hyperlink';
 import styled from 'styled-components/native';
-import { Colors } from '@styles';
-import colors from '@styles/colors';
+import { Colors } from '../../styles';
+import colors from '../../styles/colors';
 interface ArticleProps {
   title: string;
   body: string;
