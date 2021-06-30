@@ -1,9 +1,9 @@
-import Option from '@atoms/SelectOption';
+import Option from '../../atoms/SelectOption';
 import {
   SelectLayout,
   SelectOption,
   SelectSize,
-} from '@atoms/SelectOption/SelectOption.types';
+} from '../../atoms/SelectOption/SelectOption.types';
 import lodash from 'lodash';
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components/native';

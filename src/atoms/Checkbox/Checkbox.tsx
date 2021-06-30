@@ -1,8 +1,8 @@
-import { BaseInputProps } from '@global/types';
+import { BaseInputProps } from '../../global/types';
 import React from 'react';
 import styled from 'styled-components/native';
 
-import Icon from '@atoms/Icon';
+import Icon from '../../atoms/Icon';
 
 interface CheckboxProps extends BaseInputProps<boolean> {
   color?: string;
@@ -27,8 +27,8 @@ const Checkbox: React.FC<CheckboxProps> = props => {
         color={props.color}
         source={
           checkboxValue
-            ? require('@assets/icons/checkbox/checkbox-checked.png')
-            : require('@assets/icons/checkbox/checkbox-unchecked.png')
+            ? require('../../assets/icons/checkbox/checkbox-checked.png')
+            : require('../../assets/icons/checkbox/checkbox-unchecked.png')
         }
       />
       {props.children}

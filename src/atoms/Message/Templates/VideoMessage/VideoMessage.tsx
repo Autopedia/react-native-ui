@@ -1,8 +1,8 @@
 import React from 'react';
 import { ActivityIndicator } from 'react-native';
-import { durationFormatter } from '@utils/formatters';
-import Icon from '@atoms/Icon';
-import Typography from '@atoms/Typography';
+import { durationFormatter } from '../../../../utils/formatters';
+import Icon from '../../../../atoms/Icon';
+import Typography from '../../../../atoms/Typography';
 import { VideoMessageProps } from '../../Message.types';
 import { MAX_WIDTH, SImage } from '../../Message.styles';
 import styled from 'styled-components/native';
@@ -70,7 +70,7 @@ const VideoMessage: React.FC<VideoMessageProps> = ({
       />
       {state === 'ERROR' ? (
         <SImage
-          source={require('@assets/images/video-fallback.png')}
+          source={require('../../assets/images/video-fallback.png')}
           style={{ width: MAX_WIDTH, height: MAX_WIDTH * ERROR_ASPECT_RATIO }}
         />
       ) : (
@@ -82,7 +82,7 @@ const VideoMessage: React.FC<VideoMessageProps> = ({
             <ActivityIndicator color="white" />
           ) : (
             <>
-              <Icon source={require('@assets/icons/play/play.png')} />
+              <Icon source={require('../../assets/icons/play/play.png')} />
               <Typography.Paragraph size={2} color="white">
                 {durationFormatter(duration)}
               </Typography.Paragraph>

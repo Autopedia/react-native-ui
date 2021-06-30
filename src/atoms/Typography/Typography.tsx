@@ -6,7 +6,7 @@ import {
 import React from 'react';
 import { GestureResponderEvent, TextStyle } from 'react-native';
 import styled from 'styled-components/native';
-import { getValidatedColor } from '@utils/validator';
+import { getValidatedColor } from '../../utils/validator';
 
 interface HeadingProps {
   size: HeadingSize;

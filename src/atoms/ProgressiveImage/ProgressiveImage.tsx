@@ -1,4 +1,4 @@
-import { Colors } from '@styles';
+import { Colors } from '../../styles';
 import React from 'react';
 import FastImage, {
   FastImageProps,
@@ -22,7 +22,7 @@ const ProgressiveImage: React.FC<FastImageProps> = props => {
     if (props.onError) {
       props.onError();
     }
-    setSource(require('@assets/images/image-fallback.png'));
+    setSource(require('../../assets/images/image-fallback.png'));
   };
 
   return (

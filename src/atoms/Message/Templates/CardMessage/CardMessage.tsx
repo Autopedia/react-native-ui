@@ -1,9 +1,9 @@
 import React from 'react';
-import { Spacing } from '@styles';
-import Typography from '@atoms/Typography';
+import { Spacing } from '../../../../styles';
+import Typography from '../../../../atoms/Typography';
 import { MAX_WIDTH } from '../../Message.styles';
 import styled from 'styled-components/native';
-import colors from '@styles/colors';
+import colors from '../../../../styles/colors';
 
 interface CardMessageProps {
   title: string;

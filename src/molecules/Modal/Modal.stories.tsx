@@ -1,11 +1,11 @@
 import { storiesOf } from '@storybook/react-native';
 import React, { useEffect, useRef } from 'react';
-import CenterContainerDecorator from '@decorators/center-container.decorator';
-import SThemeDecorator from '@decorators/styled-components.decorator';
+import CenterContainerDecorator from '../../decorators/center-container.decorator';
+import SThemeDecorator from '../../decorators/styled-components.decorator';
 import Modal from '.';
 import { Text } from 'react-native';
 import { ModalHandle } from './Modal.types';
-import Button from '@atoms/Button';
+import Button from '../../atoms/Button';
 
 const ModalWrapper: React.FC = () => {
   const modal = useRef<ModalHandle>(null);

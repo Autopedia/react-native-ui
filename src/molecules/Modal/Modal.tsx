@@ -1,6 +1,6 @@
-import Typography from '@atoms/Typography';
+import Typography from '../../atoms/Typography';
 import { ModalHandle } from './Modal.types';
-import { Spacing } from '@styles';
+import { Spacing } from '../../styles';
 import React, { useImperativeHandle } from 'react';
 import { Dimensions, Modal as RNModal } from 'react-native';
 import styled from 'styled-components/native';

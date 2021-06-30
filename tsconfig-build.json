@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.json",
-  "exclude": ["src/**/*.stories.tsx", "src/**/*.test.tsx"],
+  "exclude": ["**/*.stories.tsx", "**/*.test.tsx", "decorators/*"],
   "compilerOptions": {
     "skipLibCheck": true
   }

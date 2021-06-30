@@ -1,4 +1,4 @@
-import { Colors } from '@styles';
+import { Colors } from '../../styles';
 import React, { useEffect, useState } from 'react';
 import { Platform, Switch as RNSwtich, ViewStyle } from 'react-native';
 

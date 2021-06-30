@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
 import { Alert, Linking, StyleSheet } from 'react-native';
 import ParsedText from 'react-native-parsed-text';
-import fonts from '@styles/fonts';
-import colors from '@styles/colors';
+import fonts from '../../styles/fonts';
+import colors from '../../styles/colors';
 
 const BOLD_PATTERN = /\*\*(\S(.*?\S)?)\*\*/gm;
 const PHONENUMBER_PATTERN = /^\d{2,3}-\d{3,4}-\d{4}$/gm;

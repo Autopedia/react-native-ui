@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react-native';
-import CenterContainerDecorator from '@decorators/center-container.decorator';
-import SThemeDecorator from '@decorators/styled-components.decorator';
+import CenterContainerDecorator from '../../decorators/center-container.decorator';
+import SThemeDecorator from '../../decorators/styled-components.decorator';
 import ProgressiveImage from './ProgressiveImage';
 import { action } from '@storybook/addon-actions';
 
-const sampleImage = require('@assets/images/shop-thumbnail.png');
+const sampleImage = require('../../assets/images/shop-thumbnail.png');
 
 storiesOf('Atoms/ProgressiveImage', module)
   .addDecorator(SThemeDecorator)
