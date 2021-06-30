@@ -1,13 +1,13 @@
 import React from 'react';
-import { linebreakRemover } from '@utils/formatters';
-import Typography from '@atoms/Typography';
+import { linebreakRemover } from '../../../../utils/formatters';
+import Typography from '../../../../atoms/Typography';
 import {
   SContent,
   SContentThumbnail,
   SContentInfo,
 } from '../../Message.styles';
 import { CounselCaseMessageProps } from '../../Message.types';
-import colors from '@styles/colors';
+import colors from '../../../../styles/colors';
 
 const CounselCaseMessage: React.FC<CounselCaseMessageProps> = ({
   thumbnailUrl,

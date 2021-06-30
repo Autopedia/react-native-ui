@@ -1,6 +1,8 @@
-import Divider, { FormDividerElement } from '@atoms/FormDivider/FormDivider';
-import FormItem from '@molecules/FormItem';
-import Item, { FormItemElement } from '@molecules/FormItem/FormItem';
+import Divider, {
+  FormDividerElement,
+} from '../../atoms/FormDivider/FormDivider';
+import FormItem from '../../molecules/FormItem';
+import Item, { FormItemElement } from '../../molecules/FormItem/FormItem';
 import lodash from 'lodash';
 import React, { useEffect } from 'react';
 import { useForm, FieldError, Path, UseFormReturn } from 'react-hook-form';

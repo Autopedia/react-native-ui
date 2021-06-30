@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react-native';
 import React, { useEffect } from 'react';
-import { Checkbox, TextInput, Typography } from '@atoms/index';
-import { Select } from '@molecules/index';
+import { Checkbox, TextInput, Typography } from '../../atoms/index';
+import { Select } from '../../molecules/index';
 import CenterContainerDecorator from '../../decorators/center-container.decorator';
 import SThemeDecorator from '../../decorators/styled-components.decorator';
 import Form, { Item, useForm } from './Form';

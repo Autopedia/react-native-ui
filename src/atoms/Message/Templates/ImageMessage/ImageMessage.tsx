@@ -28,7 +28,7 @@ const ImageMessage: React.FC<ImageMessageProps> = ({
         {...image}
         onError={() => {
           setImage({
-            source: require('@assets/images/image-fallback.png'),
+            source: require('../../../../assets/images/image-fallback.png'),
             style: {
               width: MAX_WIDTH,
               height: MAX_WIDTH * ERROR_ASPECT_RATIO,

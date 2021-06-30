@@ -1,11 +1,11 @@
 import { storiesOf } from '@storybook/react-native';
 import React from 'react';
-import CenterContainerDecorator from '@decorators/center-container.decorator';
-import SThemeDecorator from '@decorators/styled-components.decorator';
+import CenterContainerDecorator from '../../../../decorators/center-container.decorator';
+import SThemeDecorator from '../../../../decorators/styled-components.decorator';
 import ShopMessage from './ShopMessage';
 import { action } from '@storybook/addon-actions';
 import { number, text } from '@storybook/addon-knobs';
-import GreyBackgroundDecorator from '@decorators/grey-background.decorator';
+import GreyBackgroundDecorator from '../../../../decorators/grey-background.decorator';
 
 storiesOf('Atoms/Message/ShopMessage', module)
   .addDecorator(SThemeDecorator)

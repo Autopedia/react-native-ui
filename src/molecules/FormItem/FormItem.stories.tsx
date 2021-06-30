@@ -1,12 +1,12 @@
 import { storiesOf } from '@storybook/react-native';
 import React from 'react';
-import CenterContainerDecorator from '@decorators/center-container.decorator';
-import SThemeDecorator from '@decorators/styled-components.decorator';
+import CenterContainerDecorator from '../../decorators/center-container.decorator';
+import SThemeDecorator from '../../decorators/styled-components.decorator';
 import FormItem from './FormItem';
 import { Text } from 'react-native';
-import TextInput from '@atoms/TextInput';
-import Select from '@molecules/Select';
-import Checkbox from '@atoms/Checkbox';
+import TextInput from '../../atoms/TextInput';
+import Select from '../../molecules/Select';
+import Checkbox from '../../atoms/Checkbox';
 import styled from 'styled-components/native';
 
 const dummyOptions = [

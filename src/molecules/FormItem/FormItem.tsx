@@ -1,14 +1,14 @@
-import Typography from '@atoms/Typography';
-import FormLabel from '@atoms/FormLabel';
-import { IterableProps } from '@global/types';
-import { BaseInputElement } from '@global/types';
-import { Fonts, Spacing } from '@styles';
+import Typography from '../../atoms/Typography';
+import FormLabel from '../../atoms/FormLabel';
+import { IterableProps } from '../../global/types';
+import { BaseInputElement } from '../../global/types';
+import { Fonts, Spacing } from '../../styles';
 import lodash from 'lodash';
 import React from 'react';
 import { FieldError, RegisterOptions } from 'react-hook-form';
 import { Animated } from 'react-native';
 import styled from 'styled-components/native';
-import colors from '@styles/colors';
+import colors from '../../styles/colors';
 
 interface FormItemProps<V> extends IterableProps {
   children: BaseInputElement<V | null>;

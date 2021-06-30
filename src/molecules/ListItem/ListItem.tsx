@@ -1,11 +1,11 @@
-import Icon from '@atoms/Icon';
-import Typography from '@atoms/Typography';
+import Icon from '../../atoms/Icon';
+import Typography from '../../atoms/Typography';
 import { ListItemSubLabelPosition } from './ListItem.types';
 import lodash from 'lodash';
 import React from 'react';
 import { GestureResponderEvent } from 'react-native';
 import styled from 'styled-components/native';
-import colors from '@styles/colors';
+import colors from '../../styles/colors';
 
 interface ListItemProps {
   label: string;
@@ -35,7 +35,9 @@ const ListItem: React.FC<ListItemProps> = props => {
         )}
       </SContainer>
       {props.suffix || (
-        <Icon source={require('@assets/icons/chevron/chevron-right.png')} />
+        <Icon
+          source={require('../../assets/icons/chevron/chevron-right.png')}
+        />
       )}
     </STouchable>
   );

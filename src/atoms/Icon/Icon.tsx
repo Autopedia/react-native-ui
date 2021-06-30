@@ -3,12 +3,12 @@ import {
   ImageOnlyStyleKeys,
   ImageStyleKeys,
   pickStyle,
-} from '@styles/utils';
+} from '../../styles/utils';
 import lodash from 'lodash';
 import React from 'react';
 import styled from 'styled-components/native';
-import { systemColors } from '@styles/system-colors';
-import { getValidatedColor } from '@utils/validator';
+import { systemColors } from '../../styles/system-colors';
+import { getValidatedColor } from '../../utils/validator';
 import { IconProps, STouchableProps, SIconProps } from './Icon.types';
 
 const Icon: React.FC<IconProps> = props => {

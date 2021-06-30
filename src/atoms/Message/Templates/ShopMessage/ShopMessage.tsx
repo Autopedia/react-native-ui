@@ -1,14 +1,13 @@
 import React from 'react';
 import { LatLng, Marker, Region } from 'react-native-maps';
-import Typography from '@atoms/Typography';
-import { Spacing } from '@styles';
+import Typography from '../../../../atoms/Typography';
+import { Spacing } from '../../../../styles';
 import { ShopMessageProps } from '../../Message.types';
 import { MAX_WIDTH } from '../../Message.styles';
 import styled from 'styled-components/native';
-import Button from '@atoms/Button';
-import Icon from '@atoms/Icon';
+import Button from '../../../../atoms/Button';
 import MapView from 'react-native-maps';
-import colors from '@styles/colors';
+import colors from '../../../../styles/colors';
 
 const ShopMessage: React.FC<ShopMessageProps> = ({
   name,
@@ -48,13 +47,13 @@ const ShopMessage: React.FC<ShopMessageProps> = ({
           <SShopButton
             onPress={onPressDetail}
             style={{ marginRight: Spacing.SPACE_10 }}
-            icon={require('@assets/icons/shop/shop.png')}
+            icon={require('../../../../assets/icons/shop/shop.png')}
           >
             상세 정보
           </SShopButton>
           <SShopButton
             onPress={onPressNavigate}
-            icon={require('@assets/icons/map/map.png')}
+            icon={require('../../../../assets/icons/map/map.png')}
           >
             길찾기
           </SShopButton>

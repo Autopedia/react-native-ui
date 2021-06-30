@@ -1,6 +1,10 @@
-import { BaseInputProps } from '@global/types';
-import { Colors, Fonts } from '@styles';
-import { TextOnlyStyleKeys, ViewStyleKeys, pickStyle } from '@styles/utils';
+import { BaseInputProps } from '../../global/types';
+import { Colors, Fonts } from '../../styles';
+import {
+  TextOnlyStyleKeys,
+  ViewStyleKeys,
+  pickStyle,
+} from '../../styles/utils';
 import lodash from 'lodash';
 import React, { useState } from 'react';
 import {
@@ -10,8 +14,8 @@ import {
 } from 'react-native';
 import styled from 'styled-components/native';
 
-import Icon from '@atoms/Icon';
-import { grayscaleColors } from '@styles/grayscale-colors';
+import Icon from '../../atoms/Icon';
+import { grayscaleColors } from '../../styles/grayscale-colors';
 
 export interface TextInputProps
   /**
@@ -103,8 +107,8 @@ const TextInput = (props: TextInputProps) => {
             }}
             source={
               showText
-                ? require('@assets/icons/eye/eye-closed.png')
-                : require('@assets/icons/eye/eye-opened.png')
+                ? require('../../assets/icons/eye/eye-closed.png')
+                : require('../../assets/icons/eye/eye-opened.png')
             }
           />
         )}

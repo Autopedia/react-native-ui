@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import ProgressiveImage from '@atoms/ProgressiveImage';
+import ProgressiveImage from '../../atoms/ProgressiveImage';
 import { Dimensions } from 'react-native';
 
 export const MAX_WIDTH = Dimensions.get('window').width * 0.65;

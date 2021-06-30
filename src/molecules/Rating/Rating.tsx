@@ -1,13 +1,13 @@
-import Typography from '@atoms/Typography';
-import { ParagraphSize } from '@atoms/Typography/Typography.types';
+import Typography from '../../atoms/Typography';
+import { ParagraphSize } from '../../atoms/Typography/Typography.types';
 import { RatingSize } from './Rating.types';
-import { Colors, Spacing } from '@styles';
+import { Colors, Spacing } from '../../styles';
 import lodash from 'lodash';
 import React, { useEffect, useState } from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
 import styled from 'styled-components/native';
-import { BaseInputProps } from '@global/types';
-import colors from '@styles/colors';
+import { BaseInputProps } from '../../global/types';
+import colors from '../../styles/colors';
 
 const TOTAL = 5;
 const OFFSET = 0.0865625;
@@ -120,7 +120,7 @@ const Star: React.FC<StarProps> = props => {
         />
       )}
       <SStar
-        source={require('@assets/icons/star/star-reversed.png')}
+        source={require('../../assets/icons/star/star-reversed.png')}
         onLoad={() => setLoaded(true)}
         style={{
           width: props.size,
@@ -140,7 +140,7 @@ const TouchableStar: React.FC<TouchableStarProps> = props => {
   return (
     <SStarTouchable onPressIn={props.onPress}>
       <SStar
-        source={require('@assets/icons/star/star.png')}
+        source={require('../../assets/icons/star/star.png')}
         style={{
           width: props.size,
           height: props.size,

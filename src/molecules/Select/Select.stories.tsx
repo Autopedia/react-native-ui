@@ -4,9 +4,9 @@ import {
   SelectLayout,
   SelectOption,
   SelectSize,
-} from '@atoms/SelectOption/SelectOption.types';
-import CenterContainerDecorator from '@decorators/center-container.decorator';
-import SThemeDecorator from '@decorators/styled-components.decorator';
+} from '../../atoms/SelectOption/SelectOption.types';
+import CenterContainerDecorator from '../../decorators/center-container.decorator';
+import SThemeDecorator from '../../decorators/styled-components.decorator';
 import Select from './Select';
 import { boolean, select } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Alert } from 'react-native';
 import { EndMessageProps } from '../../Message.types';
-import Button from '@atoms/Button';
+import Button from '../../../../atoms/Button';
 import { CardMessage } from '../';
 
 const EndMessage: React.FC<EndMessageProps> = ({ onPressFinish, disabled }) => {

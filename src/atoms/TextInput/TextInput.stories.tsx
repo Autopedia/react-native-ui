@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react-native';
-import SThemeDecorator from '@decorators/styled-components.decorator';
-import CenterContainerDecorator from '@decorators/center-container.decorator';
+import SThemeDecorator from '../../decorators/styled-components.decorator';
+import CenterContainerDecorator from '../../decorators/center-container.decorator';
 import TextInput from './TextInput';
 import { boolean, number, text } from '@storybook/addon-knobs';
 import { Text } from 'react-native';
