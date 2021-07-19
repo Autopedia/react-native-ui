@@ -175,8 +175,8 @@ const STextInput = styled.TextInput<STextInputProps>`
   ${props => `
     padding: 0px;
     margin: 0px;
-    font-size: ${fonts.size.XS};
-    height: ${fonts.lineHeight.XS};
+    font-size: ${fonts.size.XS}px;
+    height: ${fonts.lineHeight.XS}px;
   `}
 
   /* multiline */
