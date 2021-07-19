@@ -2,9 +2,8 @@
   "name": "@drcha/react-native-ui",
   "description": "A React Native UI components for React Native apps of doctor-cha services.",
   "version": "1.1.1",
-  "main": "lib/module/index.js",
-  "module": "lib/module/index.js",
-  "types": "lib/typescript/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib/"
   ],
@@ -21,12 +20,13 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "prebuild": "rm -rf lib",
+    "build": "tsc",
+    "postbuild": "cp -R src/assets lib/assets",
     "storybook": "start-storybook -p 7007",
-    "build-storybook": "build-storybook",
-    "prepare": "bob build"
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@react-navigation/native": "^5.9.4",
     "color": "^3.1.3",
     "lodash": "^4.17.21",
     "react": "17.0.1",
@@ -85,10 +85,8 @@
     "jest-styled-components": "^7.0.4",
     "metro-react-native-babel-preset": "^0.64.0",
     "react-dom": "^17.0.2",
-    "react-native-builder-bob": "^0.18.1",
     "react-test-renderer": "17.0.1",
     "ts-jest": "^26.5.6",
-    "ttypescript": "^1.5.12",
     "typescript": "^4.1.4",
     "typescript-transform-paths": "^3.0.1"
   },
@@ -115,18 +113,5 @@
     "testEnvironmentOptions": {
       "resources": "usable"
     }
-  },
-  "react-native-builder-bob": {
-    "source": "src",
-    "output": "lib",
-    "targets": [
-      "module",
-      [
-        "typescript",
-        {
-          "project": "tsconfig-build.json"
-        }
-      ]
-    ]
   }
 }

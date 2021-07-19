@@ -1,7 +1,7 @@
 import { Alert } from 'react-native';
 import Button from '../../../../atoms/Button';
 import React from 'react';
-import { CardMessage } from '../';
+import CardMessage from '../CardMessage';
 import { OutdatedMessageProps } from '../../Message.types';
 
 const OutdatedMessage: React.FC<OutdatedMessageProps> = ({

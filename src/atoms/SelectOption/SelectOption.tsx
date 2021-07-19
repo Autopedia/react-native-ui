@@ -1,10 +1,15 @@
-import { IterableProps } from '../../global/types';
-import { SelectLayout, SelectSize } from './SelectOption.types';
+import Color from 'color';
 import lodash from 'lodash';
 import React from 'react';
 import styled from 'styled-components/native';
+
+import { IterableProps } from '../../global/types';
+import border from '../../styles/border';
+import colors from '../../styles/colors';
+import fonts from '../../styles/fonts';
+import spacing from '../../styles/spacing';
 import { getValidatedColor } from '../../utils/validator';
-import Color from 'color';
+import { SelectLayout, SelectSize } from './SelectOption.types';
 
 interface SelectOptionProps<V> extends IterableProps {
   value: V;
@@ -70,9 +75,9 @@ const SelectOption = <V extends unknown>(
 const SContainer = styled.TouchableOpacity<SContainerProps>`
   ${props => {
     return `
-      border-width: ${props.theme.border.BORDER_WIDTH};
-      border-radius: ${props.theme.spacing.SPACE_20};
-      padding: ${props.theme.spacing.SPACE_8} ${props.theme.spacing.SPACE_12};
+      border-width: 1px;
+      border-radius: 20px;
+      padding: 8px 12px;
     `;
   }}
 
@@ -81,26 +86,22 @@ const SContainer = styled.TouchableOpacity<SContainerProps>`
     switch (props.layout) {
       case 'block':
         return `
-          margin: ${props.theme.spacing.SPACE_2} 0px;
+          margin: 2px 0px;
           ${props.first ? 'margin-top: 0px;' : ''}
           ${props.last ? 'margin-bottom: 0px;' : ''}
-          ${
-            props.sublabelExists
-              ? `padding: ${props.theme.spacing.SPACE_12};`
-              : ''
-          }
+          ${props.sublabelExists ? `padding: 12px;` : ''}
         `;
       case 'column':
         return `
           flex: 1;
           justify-content: center;
-          margin: ${props.theme.spacing.SPACE_5} ${props.theme.spacing.SPACE_3};
+          margin: 5px 3px;
         `;
       default:
         return `
           flex-direction: row;
           justify-content: center;
-          margin: ${props.theme.spacing.SPACE_2};
+          margin: 2px;
         `;
     }
   }}
@@ -108,7 +109,7 @@ const SContainer = styled.TouchableOpacity<SContainerProps>`
   /* size (default: md) */
   ${props => {
     if (props.layout === 'block' && props.size === 'sm') {
-      return `padding: ${props.theme.spacing.SPACE_8} ${props.theme.spacing.SPACE_12};`;
+      return `padding: 8px 12px;`;
     }
   }}
 
@@ -127,8 +128,8 @@ const SContainer = styled.TouchableOpacity<SContainerProps>`
     switch (props.disabled) {
       case true:
         return `
-          background-color: ${props.theme.colors.DISABLED};
-          border-color: ${props.theme.colors.BORDER_DISABLED};
+          background-color: ${colors.DISABLED};
+          border-color: ${colors.BORDER_DISABLED};
         `;
     }
   }}
@@ -140,18 +141,18 @@ const SLabel = styled.Text<SLabelProps>`
     switch (props.layout) {
       case 'block':
         return `
-          font-family: ${props.theme.fonts.family.MEDIUM};
+          font-family: ${fonts.family.MEDIUM};
         `;
       case 'column':
         return `
-          font-family: ${props.theme.fonts.family.REGULAR};
-          font-size: ${props.theme.fonts.size.XS};
+          font-family: ${fonts.family.REGULAR};
+          font-size: ${fonts.size.XS}px;
           text-align: center;
         `;
       default:
         return `
-          font-family: ${props.theme.fonts.family.REGULAR};
-          font-size: ${props.theme.fonts.size.XS};
+          font-family: ${fonts.family.REGULAR};
+          font-size: ${fonts.size.XS}px;
         `;
     }
   }}
@@ -161,9 +162,9 @@ const SLabel = styled.Text<SLabelProps>`
     if (props.layout === 'block') {
       switch (props.size) {
         case 'sm':
-          return `font-size: ${props.theme.fonts.size.XS};`;
+          return `font-size: ${fonts.size.XS}px;`;
         default:
-          return `font-size: ${props.theme.fonts.size.S};`;
+          return `font-size: ${fonts.size.S}px;`;
       }
     }
   }}
@@ -180,7 +181,7 @@ const SLabel = styled.Text<SLabelProps>`
     switch (props.selected) {
       case true:
         return `
-          font-family: ${props.theme.fonts.family.MEDIUM}
+          font-family: ${fonts.family.MEDIUM}
         `;
       case false:
         return `opacity: 0.5`;
@@ -192,7 +193,7 @@ const SLabel = styled.Text<SLabelProps>`
     switch (props.disabled) {
       case true:
         return `
-          color: ${props.theme.colors.ON_DISABLED};
+          color: ${colors.ON_DISABLED};
         `;
     }
   }}
@@ -200,7 +201,7 @@ const SLabel = styled.Text<SLabelProps>`
 
 const SSubLabel = styled.Text<SLabelProps>`
   ${props => `
-    font-size: ${props.theme.fonts.size.XXS};
+    font-size: ${fonts.size.XXS}px;
   `}
 
   ${props => {
@@ -215,11 +216,11 @@ const SSubLabel = styled.Text<SLabelProps>`
     switch (props.selected) {
       case true:
         return `
-          font-family: ${props.theme.fonts.family.REGULAR};
+          font-family: ${fonts.family.REGULAR};
         `;
       case false:
         return `
-          font-family: ${props.theme.fonts.family.LIGHT};
+          font-family: ${fonts.family.LIGHT};
           opacity: 0.5;
         `;
     }
@@ -230,7 +231,7 @@ const SSubLabel = styled.Text<SLabelProps>`
     switch (props.disabled) {
       case true:
         return `
-          color: ${props.theme.colors.ON_DISABLED};
+          color: ${colors.ON_DISABLED};
         `;
     }
   }}

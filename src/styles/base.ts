@@ -8,11 +8,11 @@ const base = {
     background-color: ${colors.BACKGROUND};
     border-bottom-width: 1px;
     border-bottom-color: ${colors.BORDER_BACKGROUND_DARK};
-    padding: ${spacing.SPACE_20}px;
+    padding: 20px;
   `,
   message: `
     overflow: hidden;
-    border-radius: ${spacing.SPACE_14}px;
+    border-radius: 14px;
     ${
       Platform.OS === 'android'
         ? 'elevation: 1;'
