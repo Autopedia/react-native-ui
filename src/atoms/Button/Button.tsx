@@ -1,21 +1,24 @@
+import Color from 'color';
+import lodash from 'lodash';
 import React from 'react';
 import styled from 'styled-components/native';
+
 import {
   ButtonProps,
   SButtonTextProps,
   SIconProps,
 } from '../../atoms/Button/Button.types';
-
 import Icon from '../../atoms/Icon';
-import lodash from 'lodash';
+import border from '../../styles/border';
+import fonts from '../../styles/fonts';
+import { grayscaleColors } from '../../styles/grayscale-colors';
+import spacing from '../../styles/spacing';
+import { SubColorKey, subColorMap, subColors } from '../../styles/sub-colors';
 import {
   SystemColorKey,
   systemColorMap,
   systemColors,
 } from '../../styles/system-colors';
-import { SubColorKey, subColorMap, subColors } from '../../styles/sub-colors';
-import { grayscaleColors } from '../../styles/grayscale-colors';
-import Color from 'color';
 import { getValidatedColor } from '../../utils/validator';
 
 const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
@@ -121,19 +124,19 @@ const SContainer = styled.TouchableHighlight<ButtonProps>`
     switch (type) {
       case 'inline':
         return `
-          padding: ${props.theme.spacing.SPACE_14}
+          padding: 14px;
         `;
 
       case 'block':
         return `
-          padding: ${props.theme.spacing.SPACE_14}
+          padding: 14px;
           width: 100%;
         `;
       case 'text':
         return `
           border: none;
-          border-radius: ${props.theme.border.BORDER_RADIUS};
-          padding: ${props.theme.spacing.SPACE_2}
+          border-radius: 4px;
+          padding: 2px;
         `;
     }
   }}
@@ -144,8 +147,8 @@ const SContainer = styled.TouchableHighlight<ButtonProps>`
       return;
     }
     return `
-      border-radius: ${props.theme.spacing.SPACE_26};
-      border-width: ${props.theme.border.BORDER_WIDTH};
+      border-radius: 26px;
+      border-width: 1px;
     `;
   }}
 
@@ -178,7 +181,7 @@ const SButtonText = styled.Text<SButtonTextProps>`
   text-align: center;
   ${props => {
     return `
-      font-family: ${props.theme.fonts.family.MEDIUM}  
+      font-family: ${fonts.family.MEDIUM};
     `;
   }}
   /* textColor */
@@ -206,12 +209,12 @@ const SIcon = styled(Icon)<SIconProps>`
     if (props.type === 'block' && props.absoluteIcon) {
       return `
         position:absolute;
-        ${SIconPosition} : ${props.theme.spacing.SPACE_16}
+        ${SIconPosition} : 16px;
       `;
     }
 
     return `
-    ${SMargin}: ${props.theme.spacing.SPACE_6}
+    ${SMargin}: 6px;
     `;
   }}
 `;

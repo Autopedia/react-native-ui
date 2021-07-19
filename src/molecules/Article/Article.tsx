@@ -1,9 +1,12 @@
-import Typography from '../../atoms/Typography';
 import React from 'react';
 import Hyperlink from 'react-native-hyperlink';
 import styled from 'styled-components/native';
+
+import Typography from '../../atoms/Typography';
 import { Colors } from '../../styles';
 import colors from '../../styles/colors';
+import spacing from '../../styles/spacing';
+
 interface ArticleProps {
   title: string;
   body: string;
@@ -34,21 +37,21 @@ const Article: React.FC<ArticleProps> = ({ title, body, date }) => {
 
 const SContainer = styled.View`
   ${props => `
-   background-color: ${props.theme.colors.BACKGROUND};
-    padding: ${props.theme.spacing.SPACE_24} ${props.theme.spacing.SPACE_16};
+   background-color: ${colors.BACKGROUND};
+    padding: 24px 16px;
   `}
 `;
 const SDate = styled(Typography.Paragraph)`
   ${props => `
-    margin-bottom: ${props.theme.spacing.SPACE_10};
+    margin-bottom: 10px;
   `}
 `;
 const SDivider = styled.View`
   ${props => `
-    width: ${props.theme.spacing.SPACE_40};
-    margin: ${props.theme.spacing.SPACE_10} 0px;
-    border-bottom-width: ${props.theme.spacing.SPACE_2};
-    border-bottom-color: ${props.theme.colors.PRIMARY};
+    width: 40px;
+    margin: 10px 0px;
+    border-bottom-width: 2px;
+    border-bottom-color: ${colors.PRIMARY};
   `}
 `;
 

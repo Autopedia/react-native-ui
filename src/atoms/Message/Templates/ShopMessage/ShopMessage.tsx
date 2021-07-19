@@ -1,13 +1,15 @@
 import React from 'react';
-import { LatLng, Marker, Region } from 'react-native-maps';
+import MapView, { LatLng, Marker, Region } from 'react-native-maps';
+import styled from 'styled-components/native';
+
+import Button from '../../../../atoms/Button';
 import Typography from '../../../../atoms/Typography';
 import { Spacing } from '../../../../styles';
-import { ShopMessageProps } from '../../Message.types';
-import { MAX_WIDTH } from '../../Message.styles';
-import styled from 'styled-components/native';
-import Button from '../../../../atoms/Button';
-import MapView from 'react-native-maps';
+import base from '../../../../styles/base';
 import colors from '../../../../styles/colors';
+import spacing from '../../../../styles/spacing';
+import { MAX_WIDTH } from '../../Message.styles';
+import { ShopMessageProps } from '../../Message.types';
 
 const ShopMessage: React.FC<ShopMessageProps> = ({
   name,
@@ -46,7 +48,7 @@ const ShopMessage: React.FC<ShopMessageProps> = ({
         <SShopButtons>
           <SShopButton
             onPress={onPressDetail}
-            style={{ marginRight: Spacing.SPACE_10 }}
+            style={{ marginRight: 10 }}
             icon={require('../../../../assets/icons/shop/shop.png')}
           >
             상세 정보
@@ -64,23 +66,23 @@ const ShopMessage: React.FC<ShopMessageProps> = ({
 };
 
 const SShop = styled.View`
-  ${props => props.theme.base.message}
+  ${props => base.message}
   ${props => `
     width: ${MAX_WIDTH}px;
-    background-color: ${props.theme.colors.WHITE};
+    background-color: ${colors.WHITE};
   `}
 `;
 
 const SShopInfo = styled.View`
   ${props => `
-    background-color: ${props.theme.colors.WHITE};
-    padding: ${props.theme.spacing.SPACE_10};
+    background-color: ${colors.WHITE};
+    padding: 10px;
   `}
 `;
 const SShopButtons = styled.View`
   flex-direction: row;
   ${props => `
-    margin-top: ${props.theme.spacing.SPACE_12};
+    margin-top: 12px;
   `}
 `;
 
@@ -94,7 +96,7 @@ const SShopButton = styled(Button)`
 const SMap = styled(MapView)`
   ${props => `
     width: 100%;
-    height: ${props.theme.spacing.SPACE_130};
+    height: 130px;
   `}
 `;
 
