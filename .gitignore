@@ -64,3 +64,6 @@ buck-out/
 storybook/__snapshots__
 
 deploy/
+
+# Jest Coverage 
+coverage/
