@@ -1,6 +1,6 @@
-![닥터차 로고](https://doctor-cha.com/assets/img/%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9%E1%84%8B%E1%85%A1%E1%87%81%E1%84%80%E1%85%B3%E1%86%AF%E1%84%8C%E1%85%A1%E1%84%83%E1%85%B1.png)
+<img src="https://image.doctor-cha.com/assets/SquareLogo-filled.png" width=120 />
 
-# React Native UI
+# React Native UI ![CI](https://github.com/Autopedia/react-native-ui/actions/workflows/main.yml/badge.svg) [![codecov](https://codecov.io/gh/Autopedia/react-native-ui/branch/master/graph/badge.svg?token=982D9YJDJI)](https://codecov.io/gh/Autopedia/react-native-ui)
 
 닥터차 앱을 위한 React Native UI 컴포넌트 라이브러리 입니다.
 
@@ -8,6 +8,25 @@
 
 - `v1.0.0` : 2021.06.21
 - `v1.1.0` : 2021.06.25 닥터차 2.0용 UI 업데이트 (1차)
+- `v1.2.0` : 2021.07.19 닥터차 2.0용 UI 패키징
+
+---
+
+## 사용 가이드라인
+
+React Native UI를 사용할 프로젝트에서 설정하세요.
+
+1. [구글 Fonts](https://fonts.google.com/specimen/Noto+Sans+KR)에서 NotoSansKR 폰트를 다운로드합니다. (우측 상단 Download family)
+2. `src/assets/fonts`폴더에 다운로드한 폰트파일을 넣습니다.
+3. `react-native.config.js`을 다음과 같이 설정합니다.
+
+```javascript
+module.exports = {
+  assets: ['./src/assets/fonts/'],
+};
+```
+
+4. `react-native link` 명령어를 실행합니다.
 
 ---
 
