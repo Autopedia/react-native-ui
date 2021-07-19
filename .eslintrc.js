@@ -9,20 +9,5 @@ module.exports = {
     'no-spaced-func': 'off',
   },
   plugins: ['@typescript-eslint', 'import'],
-  settings: {
-    'import/resolver': {
-      node: {
-        paths: ['src'],
-        alias: {
-          '@assets': './src/assets',
-          '@styles': './src/styles',
-          '@utils': './src/utils',
-          '@atoms': './src/atoms',
-          '@molecules': './src/molecules',
-          '@organisms': './src/organisms',
-          '@global': './src/global',
-        },
-      },
-    },
-  },
+  settings: {},
 };

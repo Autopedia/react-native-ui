@@ -1,15 +1,17 @@
+import lodash from 'lodash';
+import React from 'react';
+import styled from 'styled-components/native';
+
+import spacing from '../../styles/spacing';
+import { systemColors } from '../../styles/system-colors';
 import {
   FlexStyleKeys,
   ImageOnlyStyleKeys,
   ImageStyleKeys,
   pickStyle,
-} from '@styles/utils';
-import lodash from 'lodash';
-import React from 'react';
-import styled from 'styled-components/native';
-import { systemColors } from '@styles/system-colors';
-import { getValidatedColor } from '@utils/validator';
-import { IconProps, STouchableProps, SIconProps } from './Icon.types';
+} from '../../styles/utils';
+import { getValidatedColor } from '../../utils/validator';
+import { IconProps, SIconProps, STouchableProps } from './Icon.types';
 
 const Icon: React.FC<IconProps> = props => {
   const touchableProps = {
@@ -39,7 +41,7 @@ const STouchable = styled.TouchableOpacity<STouchableProps>`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: ${props.theme.spacing.SPACE_4};
+    padding: 4px;
   `}
 `;
 const SIcon = styled.Image<SIconProps>`

@@ -59,7 +59,11 @@ buck-out/
 /ios/Pods/
 
 /lib
-*.tgz
 
 # Storybook Snapshot
 storybook/__snapshots__
+
+deploy/
+
+# Jest Coverage 
+coverage/

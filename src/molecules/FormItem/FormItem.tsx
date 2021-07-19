@@ -1,14 +1,15 @@
-import Typography from '@atoms/Typography';
-import FormLabel from '@atoms/FormLabel';
-import { IterableProps } from '@global/types';
-import { BaseInputElement } from '@global/types';
-import { Fonts, Spacing } from '@styles';
 import lodash from 'lodash';
 import React from 'react';
 import { FieldError, RegisterOptions } from 'react-hook-form';
 import { Animated } from 'react-native';
 import styled from 'styled-components/native';
-import colors from '@styles/colors';
+
+import FormLabel from '../../atoms/FormLabel';
+import Typography from '../../atoms/Typography';
+import { BaseInputElement, IterableProps } from '../../global/types';
+import { Fonts, Spacing } from '../../styles';
+import colors from '../../styles/colors';
+import spacing from '../../styles/spacing';
 
 interface FormItemProps<V> extends IterableProps {
   children: BaseInputElement<V | null>;
@@ -22,15 +23,13 @@ interface FormItemProps<V> extends IterableProps {
 type SContainerProps = Pick<FormItemProps<any>, 'first' | 'last'>;
 
 const FormItem = <V extends unknown>(props: FormItemProps<V>) => {
-  const [errorY] = React.useState(
-    new Animated.Value(-(Fonts.size.XXS + Spacing.SPACE_1)),
-  );
+  const [errorY] = React.useState(new Animated.Value(-(Fonts.size.XXS + 1)));
   React.useEffect(() => {
     if (props.error) {
       Animated.spring(errorY, { toValue: 0, useNativeDriver: true }).start();
     } else {
       Animated.spring(errorY, {
-        toValue: -(Fonts.size.XXS + Spacing.SPACE_1),
+        toValue: -(Fonts.size.XXS + 1),
         useNativeDriver: true,
       }).start();
     }
@@ -45,7 +44,7 @@ const FormItem = <V extends unknown>(props: FormItemProps<V>) => {
       {props.children}
       <Animated.View
         style={{
-          marginTop: Spacing.SPACE_1,
+          marginTop: 1,
           zIndex: -1,
           transform: [{ translateY: errorY }],
         }}
@@ -73,7 +72,7 @@ const FormItem = <V extends unknown>(props: FormItemProps<V>) => {
 
 const SContainer = styled.View<SContainerProps>`
   ${props => `
-    margin: ${props.theme.spacing.SPACE_8} 0px;
+    margin: 8px 0px;
   `}
 `;
 
@@ -81,7 +80,7 @@ const SError = styled(Typography.Paragraph)``;
 
 const SFooterContainer = styled.View`
   ${props => `
-    margin-top: ${props.theme.spacing.SPACE_4};
+    margin-top: 4px;
   `}
 `;
 

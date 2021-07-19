@@ -1,8 +1,8 @@
 import React from 'react';
 import { Platform } from 'react-native';
 import { ReviewMessageProps } from '../../Message.types';
-import Button from '@atoms/Button';
-import { CardMessage } from '../';
+import Button from '../../../../atoms/Button';
+import CardMessage from '../CardMessage';
 
 const ReviewMessage: React.FC<ReviewMessageProps> = ({ onPressReview }) => {
   const store = Platform.OS === 'android' ? '플레이스토어' : '앱스토어';

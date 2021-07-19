@@ -1,13 +1,15 @@
-import Typography from '@atoms/Typography';
-import { ParagraphSize } from '@atoms/Typography/Typography.types';
-import { RatingSize } from './Rating.types';
-import { Colors, Spacing } from '@styles';
 import lodash from 'lodash';
 import React, { useEffect, useState } from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
 import styled from 'styled-components/native';
-import { BaseInputProps } from '@global/types';
-import colors from '@styles/colors';
+
+import Typography from '../../atoms/Typography';
+import { ParagraphSize } from '../../atoms/Typography/Typography.types';
+import { BaseInputProps } from '../../global/types';
+import { Colors, Spacing } from '../../styles';
+import colors from '../../styles/colors';
+import spacing from '../../styles/spacing';
+import { RatingSize } from './Rating.types';
 
 const TOTAL = 5;
 const OFFSET = 0.0865625;
@@ -40,10 +42,10 @@ const Rating: React.FC<IProps> = props => {
   let countSize: ParagraphSize = 2;
   switch (props.size) {
     case 'sm':
-      size = Spacing.SPACE_16;
+      size = 16;
       break;
     case 'lg':
-      size = Spacing.SPACE_32;
+      size = 32;
       countSize = 1;
       break;
   }
@@ -120,7 +122,7 @@ const Star: React.FC<StarProps> = props => {
         />
       )}
       <SStar
-        source={require('@assets/icons/star/star-reversed.png')}
+        source={require('../../assets/icons/star/star-reversed.png')}
         onLoad={() => setLoaded(true)}
         style={{
           width: props.size,
@@ -140,7 +142,7 @@ const TouchableStar: React.FC<TouchableStarProps> = props => {
   return (
     <SStarTouchable onPressIn={props.onPress}>
       <SStar
-        source={require('@assets/icons/star/star.png')}
+        source={require('../../assets/icons/star/star.png')}
         style={{
           width: props.size,
           height: props.size,
@@ -161,12 +163,8 @@ const SLabel = styled.View<{ size: 'sm' | 'lg' }>`
 
   ${props => `
     align-items: ${props.size === 'sm' ? 'center' : 'baseline'};
-    margin-left: ${
-      props.size === 'sm'
-        ? props.theme.spacing.SPACE_4
-        : props.theme.spacing.SPACE_6
-    }; 
-    ${props.size === 'sm' && `margin-top: -${props.theme.spacing.SPACE_2};`}
+    margin-left: ${props.size === 'sm' ? '4px' : '6px'}; 
+    ${props.size === 'sm' && `margin-top: -2px;`}
   `}
 `;
 const SStarTouchable = styled.TouchableOpacity``;
@@ -175,9 +173,7 @@ const SStarBackground = styled.View<{ loaded: boolean }>`
   height: 100%;
 
   ${props => `
-    background-color: ${
-      props.loaded ? props.theme.colors.LIGHT : props.theme.colors.BACKGROUND
-    };
+    background-color: ${props.loaded ? colors.LIGHT : colors.BACKGROUND};
   `}
 `;
 const SStarFill = styled.View`
@@ -186,7 +182,7 @@ const SStarFill = styled.View`
   bottom: 0px;
 
   ${props => `
-    background-color: ${props.theme.colors.RATING};
+    background-color: ${colors.RATING};
   `}
 `;
 const SStar = styled.Image``;

@@ -1,13 +1,16 @@
-import { storiesOf } from '@storybook/react-native';
 import React from 'react';
-import CenterContainerDecorator from '@decorators/center-container.decorator';
-import SThemeDecorator from '@decorators/styled-components.decorator';
-import FormItem from './FormItem';
 import { Text } from 'react-native';
-import TextInput from '@atoms/TextInput';
-import Select from '@molecules/Select';
-import Checkbox from '@atoms/Checkbox';
 import styled from 'styled-components/native';
+
+import { storiesOf } from '@storybook/react-native';
+
+import Checkbox from '../../atoms/Checkbox';
+import TextInput from '../../atoms/TextInput';
+import CenterContainerDecorator from '../../decorators/center-container.decorator';
+import SThemeDecorator from '../../decorators/styled-components.decorator';
+import Select from '../../molecules/Select';
+import spacing from '../../styles/spacing';
+import FormItem from './FormItem';
 
 const dummyOptions = [
   { value: 'Option 1', label: 'Option 1' },
@@ -124,8 +127,8 @@ storiesOf('Molecules/FormItem', module)
   });
 
 const FormItemContainer = styled.View`
-  width: ${props => props.theme.spacing.SCREEN_WIDTH};
-  height: ${props => props.theme.spacing.SPACE_40};
+  width: ${props => spacing.SCREEN_WIDTH}px;
+  height: 40px;
   border: 1px solid darkgrey;
   background: #e9e9e9;
   justify-content: center;

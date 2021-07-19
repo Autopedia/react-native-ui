@@ -1,10 +1,10 @@
 import React from 'react';
 import { boolean, color, select, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
-import SThemeDecorator from '@decorators/styled-components.decorator';
-import CenterContainerDecorator from '@decorators/center-container.decorator';
+import SThemeDecorator from '../../decorators/styled-components.decorator';
+import CenterContainerDecorator from '../../decorators/center-container.decorator';
 
-import Button from '@atoms/Button';
+import Button from '../../atoms/Button';
 import { action } from '@storybook/addon-actions';
 import { ButtonType } from './Button.types';
 import { systemColors } from '../../styles/system-colors';
@@ -23,7 +23,9 @@ storiesOf('Atoms/Button', module)
         textColor={color('textColor', 'white')}
         tile={boolean('tile', false)}
         disabled={boolean('disabled', false)}
-        icon={boolean('icon', false) && require('@assets/icons/shop/shop.png')}
+        icon={
+          boolean('icon', false) && require('../../assets/icons/shop/shop.png')
+        }
         iconPosition={select('iconPosition', ['left', 'right'], 'left')}
         absoluteIcon={boolean('absoluteIcon', false)}
         onPress={e => action('onPress')(e.nativeEvent)}
@@ -252,14 +254,14 @@ storiesOf('Atoms/Button', module)
     return (
       <>
         <Button
-          icon={require('@assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/shop/shop.png')}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Icon Left
         </Button>
         <Button
-          icon={require('@assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/shop/shop.png')}
           iconPosition="right"
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
@@ -268,7 +270,7 @@ storiesOf('Atoms/Button', module)
         </Button>
         <Button
           type="block"
-          icon={require('@assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/shop/shop.png')}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
@@ -276,7 +278,7 @@ storiesOf('Atoms/Button', module)
         </Button>
         <Button
           type="block"
-          icon={require('@assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/shop/shop.png')}
           iconPosition="right"
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
@@ -286,7 +288,7 @@ storiesOf('Atoms/Button', module)
         <Button
           type="text"
           textColor="black"
-          icon={require('@assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/shop/shop.png')}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
@@ -295,7 +297,7 @@ storiesOf('Atoms/Button', module)
         <Button
           type="text"
           textColor="black"
-          icon={require('@assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/shop/shop.png')}
           iconPosition="right"
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
@@ -310,7 +312,7 @@ storiesOf('Atoms/Button', module)
       <>
         <Button
           type="block"
-          icon={require('@assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/shop/shop.png')}
           absoluteIcon
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
@@ -319,7 +321,7 @@ storiesOf('Atoms/Button', module)
         </Button>
         <Button
           type="block"
-          icon={require('@assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/shop/shop.png')}
           iconPosition="right"
           absoluteIcon
           onPress={e => action('onPress')(e.nativeEvent)}

@@ -2,8 +2,8 @@ import { action } from '@storybook/addon-actions';
 import { boolean, color, select, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import React from 'react';
-import CenterContainerDecorator from '@decorators/center-container.decorator';
-import SThemeDecorator from '@decorators/styled-components.decorator';
+import CenterContainerDecorator from '../../decorators/center-container.decorator';
+import SThemeDecorator from '../../decorators/styled-components.decorator';
 import SelectOption from './SelectOption';
 import { SelectLayout, SelectSize } from './SelectOption.types';
 

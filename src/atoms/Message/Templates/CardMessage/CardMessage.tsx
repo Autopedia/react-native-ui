@@ -1,9 +1,12 @@
 import React from 'react';
-import { Spacing } from '@styles';
-import Typography from '@atoms/Typography';
-import { MAX_WIDTH } from '../../Message.styles';
 import styled from 'styled-components/native';
-import colors from '@styles/colors';
+
+import Typography from '../../../../atoms/Typography';
+import { Spacing } from '../../../../styles';
+import base from '../../../../styles/base';
+import colors from '../../../../styles/colors';
+import spacing from '../../../../styles/spacing';
+import { MAX_WIDTH } from '../../Message.styles';
 
 interface CardMessageProps {
   title: string;
@@ -22,7 +25,7 @@ const CardMessage: React.FC<CardMessageProps> = ({
       <Typography.Paragraph
         size={2}
         color={colors.MUTED}
-        style={{ marginVertical: Spacing.SPACE_10 }}
+        style={{ marginVertical: 10 }}
       >
         {description}
       </Typography.Paragraph>
@@ -32,11 +35,11 @@ const CardMessage: React.FC<CardMessageProps> = ({
 };
 
 const SCard = styled.View`
-  ${props => props.theme.base.message}
+  ${props => base.message}
   ${props => `
     width: ${MAX_WIDTH}px;
-    background-color: ${props.theme.colors.WHITE};
-    padding: ${props.theme.spacing.SPACE_14};
+    background-color: ${colors.WHITE};
+    padding: 14px;
   `}
 `;
 

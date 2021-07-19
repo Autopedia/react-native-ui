@@ -1,12 +1,15 @@
+import React from 'react';
+import { GestureResponderEvent, TextStyle } from 'react-native';
+import styled from 'styled-components/native';
+
+import fonts from '../../styles/fonts';
+import spacing from '../../styles/spacing';
+import { getValidatedColor } from '../../utils/validator';
 import {
   HeadingSize,
   ParagraphSize,
   TypographyFontWeight,
 } from './Typography.types';
-import React from 'react';
-import { GestureResponderEvent, TextStyle } from 'react-native';
-import styled from 'styled-components/native';
-import { getValidatedColor } from '@utils/validator';
 
 interface HeadingProps {
   size: HeadingSize;
@@ -49,31 +52,31 @@ const SHeading = styled.Text<HeadingProps>`
     switch (props.size) {
       case 1:
         return `
-          font-size: ${props.theme.fonts.size.XXL};
-          font-family: ${props.theme.fonts.family.BOLD};
-          margin-bottom: ${props.theme.spacing.SPACE_16};
+          font-size: ${fonts.size.XXL}px;
+          font-family: ${fonts.family.BOLD};
+          margin-bottom: 16px;
         `;
       case 2:
         return `
-          font-size: ${props.theme.fonts.size.XL};
-          font-family: ${props.theme.fonts.family.BOLD};
-          margin-bottom: ${props.theme.spacing.SPACE_12};
+          font-size: ${fonts.size.XL}px;
+          font-family: ${fonts.family.BOLD};
+          margin-bottom: 12px;
         `;
       case 3:
         return `
-          font-size: ${props.theme.fonts.size.L};
-          font-family: ${props.theme.fonts.family.BOLD};
-          margin-bottom: ${props.theme.spacing.SPACE_12};
+          font-size: ${fonts.size.L}px;
+          font-family: ${fonts.family.BOLD};
+          margin-bottom: 12px;
         `;
       case 4:
         return `
-          font-size: ${props.theme.fonts.size.M};
-          font-family: ${props.theme.fonts.family.BOLD};
+          font-size: ${fonts.size.M}px;
+          font-family: ${fonts.family.BOLD};
         `;
       case 5:
         return `
-          font-size: ${props.theme.fonts.size.S};
-          font-family: ${props.theme.fonts.family.BOLD};
+          font-size: ${fonts.size.S}px;
+          font-family: ${fonts.family.BOLD};
         `;
     }
   }}
@@ -88,18 +91,16 @@ const SHeading = styled.Text<HeadingProps>`
   /* fontWeight (default: bold)*/
   ${props => {
     if (props.fontWeight) {
-      const family = props.theme.fonts.family;
+      const family = fonts.family;
       type FontFamilyKey = keyof typeof family;
       return `
         font-family: ${
-          props.theme.fonts.family[
-            props.fontWeight.toUpperCase() as FontFamilyKey
-          ]
+          fonts.family[props.fontWeight.toUpperCase() as FontFamilyKey]
         }
       `;
     }
     return `
-      font-family: ${props.theme.fonts.family.BOLD}
+      font-family: ${fonts.family.BOLD}
     `;
   }}
 `;
@@ -113,11 +114,11 @@ const SParagraph = styled.Text<ParagraphProps>`
     switch (props.size) {
       case 1:
         return `
-          font-size: ${props.theme.fonts.size.S};
+          font-size: ${fonts.size.S}px;
         `;
       case 2:
         return `
-          font-size: ${props.theme.fonts.size.XS};
+          font-size: ${fonts.size.XS}px;
         `;
     }
   }}
@@ -132,18 +133,16 @@ const SParagraph = styled.Text<ParagraphProps>`
   /* fontWeight (default: regular)*/
   ${props => {
     if (props.fontWeight) {
-      const family = props.theme.fonts.family;
+      const family = fonts.family;
       type FontFamilyKey = keyof typeof family;
       return `
         font-family: ${
-          props.theme.fonts.family[
-            props.fontWeight.toUpperCase() as FontFamilyKey
-          ]
+          fonts.family[props.fontWeight.toUpperCase() as FontFamilyKey]
         }
       `;
     }
     return `
-      font-family: ${props.theme.fonts.family.REGULAR}
+      font-family: ${fonts.family.REGULAR}
     `;
   }}
 
@@ -160,7 +159,7 @@ const SParagraph = styled.Text<ParagraphProps>`
 `;
 
 const SCaption = styled.Text<CaptionProps>`
-  ${props => `font-size: ${props.theme.fonts.size.XXS}`}
+  ${props => `font-size: ${fonts.size.XXS}px`}
   /* color (default: black) */
   ${props => {
     return `
@@ -171,18 +170,16 @@ const SCaption = styled.Text<CaptionProps>`
   /* fontWeight (default: bold)*/
   ${props => {
     if (props.fontWeight) {
-      const family = props.theme.fonts.family;
+      const family = fonts.family;
       type FontFamilyKey = keyof typeof family;
       return `
         font-family: ${
-          props.theme.fonts.family[
-            props.fontWeight.toUpperCase() as FontFamilyKey
-          ]
+          fonts.family[props.fontWeight.toUpperCase() as FontFamilyKey]
         }
       `;
     }
     return `
-      font-family: ${props.theme.fonts.family.MEDIUM}
+      font-family: ${fonts.family.MEDIUM}
     `;
   }}
 `;

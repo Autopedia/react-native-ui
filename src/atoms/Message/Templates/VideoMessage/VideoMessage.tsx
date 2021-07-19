@@ -1,12 +1,14 @@
 import React from 'react';
 import { ActivityIndicator } from 'react-native';
-import { durationFormatter } from '@utils/formatters';
-import Icon from '@atoms/Icon';
-import Typography from '@atoms/Typography';
-import { VideoMessageProps } from '../../Message.types';
-import { MAX_WIDTH, SImage } from '../../Message.styles';
-import styled from 'styled-components/native';
 import Video, { LoadError } from 'react-native-video';
+import styled from 'styled-components/native';
+
+import Icon from '../../../../atoms/Icon';
+import Typography from '../../../../atoms/Typography';
+import spacing from '../../../../styles/spacing';
+import { durationFormatter } from '../../../../utils/formatters';
+import { MAX_WIDTH, SImage } from '../../Message.styles';
+import { VideoMessageProps } from '../../Message.types';
 
 const VideoMessage: React.FC<VideoMessageProps> = ({
   url,
@@ -17,8 +19,9 @@ const VideoMessage: React.FC<VideoMessageProps> = ({
   const ERROR_ASPECT_RATIO = 0.75;
 
   const player = React.useRef<Video | null>(null);
-  const [state, setState] =
-    React.useState<'LOADING' | 'ERROR' | 'SUCCESS'>('LOADING');
+  const [state, setState] = React.useState<'LOADING' | 'ERROR' | 'SUCCESS'>(
+    'LOADING',
+  );
   const [size, setSize] = React.useState<{ width: number; height: number }>({
     width: MAX_WIDTH,
     height: (MAX_WIDTH * height) / width,
@@ -70,7 +73,7 @@ const VideoMessage: React.FC<VideoMessageProps> = ({
       />
       {state === 'ERROR' ? (
         <SImage
-          source={require('@assets/images/video-fallback.png')}
+          source={require('../../../../assets/images/video-fallback.png')}
           style={{ width: MAX_WIDTH, height: MAX_WIDTH * ERROR_ASPECT_RATIO }}
         />
       ) : (
@@ -82,7 +85,9 @@ const VideoMessage: React.FC<VideoMessageProps> = ({
             <ActivityIndicator color="white" />
           ) : (
             <>
-              <Icon source={require('@assets/icons/play/play.png')} />
+              <Icon
+                source={require('../../../../assets/icons/play/play.png')}
+              />
               <Typography.Paragraph size={2} color="white">
                 {durationFormatter(duration)}
               </Typography.Paragraph>
@@ -98,7 +103,7 @@ const SVideoMessage = styled.View`
   position: relative;
   overflow: hidden;
   ${props => `
-    border-radius: ${props.theme.spacing.SPACE_14};
+    border-radius: 14px;
   `}
 `;
 

@@ -1,11 +1,13 @@
-import Icon from '@atoms/Icon';
-import Typography from '@atoms/Typography';
-import { ListItemSubLabelPosition } from './ListItem.types';
 import lodash from 'lodash';
 import React from 'react';
 import { GestureResponderEvent } from 'react-native';
 import styled from 'styled-components/native';
-import colors from '@styles/colors';
+
+import Icon from '../../atoms/Icon';
+import Typography from '../../atoms/Typography';
+import colors from '../../styles/colors';
+import spacing from '../../styles/spacing';
+import { ListItemSubLabelPosition } from './ListItem.types';
 
 interface ListItemProps {
   label: string;
@@ -13,7 +15,7 @@ interface ListItemProps {
   sublabelPosition?: ListItemSubLabelPosition;
   underlined?: boolean;
   onPress?: (event: GestureResponderEvent) => void;
-  suffix?: React.ReactElement;
+  suffix?: React.ReactNode;
 }
 
 const ListItem: React.FC<ListItemProps> = props => {
@@ -34,9 +36,7 @@ const ListItem: React.FC<ListItemProps> = props => {
           </Typography.Paragraph>
         )}
       </SContainer>
-      {props.suffix || (
-        <Icon source={require('@assets/icons/chevron/chevron-right.png')} />
-      )}
+      {props.suffix}
     </STouchable>
   );
 };
@@ -47,8 +47,8 @@ const STouchable = styled.TouchableOpacity<STouchableProps>`
   justify-content: space-between;
   align-items: center;
   ${props => `
-    padding: ${props.theme.spacing.SPACE_12} 0px;
-    background-color: ${props.theme.colors.BACKGROUND};
+    padding: 12px 0px;
+    background-color: ${colors.BACKGROUND};
   `}
 
   /* underlined  */
@@ -56,7 +56,7 @@ const STouchable = styled.TouchableOpacity<STouchableProps>`
     props.underlined &&
     `
       border-bottom-width: 1px;
-      border-bottom-color: ${props.theme.colors.EXTRALIGHT};
+      border-bottom-color: ${colors.EXTRALIGHT};
   `}
 `;
 

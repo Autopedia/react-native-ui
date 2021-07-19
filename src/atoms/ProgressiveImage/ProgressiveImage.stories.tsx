@@ -1,11 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react-native';
-import CenterContainerDecorator from '@decorators/center-container.decorator';
-import SThemeDecorator from '@decorators/styled-components.decorator';
-import ProgressiveImage from './ProgressiveImage';
-import { action } from '@storybook/addon-actions';
 
-const sampleImage = require('@assets/images/shop-thumbnail.png');
+import { action } from '@storybook/addon-actions';
+import { storiesOf } from '@storybook/react-native';
+
+import CenterContainerDecorator from '../../decorators/center-container.decorator';
+import SThemeDecorator from '../../decorators/styled-components.decorator';
+import ProgressiveImage from './ProgressiveImage';
 
 storiesOf('Atoms/ProgressiveImage', module)
   .addDecorator(SThemeDecorator)
@@ -13,7 +13,7 @@ storiesOf('Atoms/ProgressiveImage', module)
   .add('Image', () => {
     return (
       <ProgressiveImage
-        source={sampleImage}
+        source={require('../../assets/images/shop-thumbnail.png')}
         onLoad={e => action('onLoad')(e.nativeEvent)}
         style={{ width: 200, height: 200 }}
       />

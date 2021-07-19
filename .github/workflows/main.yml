@@ -8,14 +8,19 @@ on:
       - master
       - develop
 
-
 jobs:
   test:
-    name: test
-    runs-on: ubuntu-latest
+    name: Test
+    runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
-      - name: run test
-        run: |
-          yarn install
-          yarn test
+      - name: Checkout source code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Run unit tests
+        run: npm run test:cov
+      - name: Codecov
+        uses: codecov/codecov-action@v1.5.2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage/clover.xml
