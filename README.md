@@ -1,6 +1,6 @@
 <img src="https://image.doctor-cha.com/assets/SquareLogo-filled.png" width=120 />
 
-# React Native UI ![CI](https://github.com/Autopedia/dr-cha-app/actions/workflows/main.yml/badge.svg?branch=master) [![codecov](https://codecov.io/gh/Autopedia/react-native-ui/branch/master/graph/badge.svg?token=982D9YJDJI)](https://codecov.io/gh/Autopedia/react-native-ui)
+# React Native UI ![CI](https://github.com/Autopedia/react-native-ui/actions/workflows/main.yml/badge.svg) [![codecov](https://codecov.io/gh/Autopedia/react-native-ui/branch/master/graph/badge.svg?token=982D9YJDJI)](https://codecov.io/gh/Autopedia/react-native-ui)
 
 닥터차 앱을 위한 React Native UI 컴포넌트 라이브러리 입니다.
 
