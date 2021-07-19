@@ -19,6 +19,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
+    "test:cov": "jest --coverage",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prebuild": "rm -rf lib",
     "build": "tsc",
@@ -103,6 +104,12 @@
       "json",
       "node"
     ],
+    "collectCoverageFrom": [
+      "**/*.tsx",
+      "!**/*.decorators.tsx",
+      "!**/*.stories.tsx"
+    ],
+    "coverageDirectory": "./coverage",
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
     "transformIgnorePatterns": [
       "nodemodules/(?!(react-native-swipe-gestures)/)"
