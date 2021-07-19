@@ -1,6 +1,6 @@
-![닥터차 로고](https://doctor-cha.com/assets/img/%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9%E1%84%8B%E1%85%A1%E1%87%81%E1%84%80%E1%85%B3%E1%86%AF%E1%84%8C%E1%85%A1%E1%84%83%E1%85%B1.png)
+<img src="https://image.doctor-cha.com/assets/SquareLogo-filled.png" width=120 />
 
-# React Native UI
+# React Native UI ![CI](https://github.com/Autopedia/dr-cha-app/actions/workflows/main.yml/badge.svg?branch=master) [![codecov](https://codecov.io/gh/Autopedia/react-native-ui/branch/master/graph/badge.svg?token=982D9YJDJI)](https://codecov.io/gh/Autopedia/react-native-ui)
 
 닥터차 앱을 위한 React Native UI 컴포넌트 라이브러리 입니다.
 
@@ -8,6 +8,7 @@
 
 - `v1.0.0` : 2021.06.21
 - `v1.1.0` : 2021.06.25 닥터차 2.0용 UI 업데이트 (1차)
+- `v1.2.0` : 2021.07.19 닥터차 2.0용 UI 패키징
 
 ---
 
