@@ -1,21 +1,25 @@
-import { BaseInputProps } from '../../global/types';
-import { Colors, Fonts } from '../../styles';
-import {
-  TextOnlyStyleKeys,
-  ViewStyleKeys,
-  pickStyle,
-} from '../../styles/utils';
 import lodash from 'lodash';
 import React, { useState } from 'react';
 import {
-  TextInputProps as RNTextInputProps,
   StyleProp,
+  TextInputProps as RNTextInputProps,
   TextStyle,
 } from 'react-native';
 import styled from 'styled-components/native';
 
 import Icon from '../../atoms/Icon';
+import { BaseInputProps } from '../../global/types';
+import { Colors, Fonts } from '../../styles';
+import border from '../../styles/border';
+import colors from '../../styles/colors';
+import fonts from '../../styles/fonts';
 import { grayscaleColors } from '../../styles/grayscale-colors';
+import spacing from '../../styles/spacing';
+import {
+  pickStyle,
+  TextOnlyStyleKeys,
+  ViewStyleKeys,
+} from '../../styles/utils';
 
 export interface TextInputProps
   /**
@@ -135,9 +139,9 @@ const SContainer = styled.View<SContainerProps>`
     position: relative;
     flex-grow: 1;
     justify-content: center;
-    border-radius: ${props.theme.spacing.SPACE_16};
+    border-radius: 16px;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
-    padding: ${props.theme.spacing.SPACE_14} ${props.theme.spacing.SPACE_16};
+    padding: 14px 16px;
   `}
 
   /* type (default: default) */
@@ -145,7 +149,7 @@ const SContainer = styled.View<SContainerProps>`
     switch (props.type) {
       default:
         return `
-          background-color: ${props.theme.colors.DEFAULT};
+          background-color: ${colors.DEFAULT};
         `;
     }
   }}
@@ -162,8 +166,8 @@ const SContainer = styled.View<SContainerProps>`
   ${props =>
     props.disabled &&
     `
-      background-color: ${props.theme.colors.DISABLED};
-      border-color: ${props.theme.colors.BORDER_DISABLED};
+      background-color: ${colors.DISABLED};
+      border-color: ${colors.BORDER_DISABLED};
   `}
 `;
 
@@ -171,8 +175,8 @@ const STextInput = styled.TextInput<STextInputProps>`
   ${props => `
     padding: 0px;
     margin: 0px;
-    font-size: ${props.theme.fonts.fontSize.XS};
-    height: ${props.theme.fonts.lineHeight.XS};
+    font-size: ${fonts.size.XS};
+    height: ${fonts.lineHeight.XS};
   `}
 
   /* multiline */
@@ -183,7 +187,7 @@ const STextInput = styled.TextInput<STextInputProps>`
       height: ${
         props.numberOfLines
           ? props.numberOfLines * Fonts.lineHeight.XS
-          : props.theme.fonts.lineHeight.XS
+          : fonts.lineHeight.XS
       }px;
     `}
 
@@ -193,7 +197,7 @@ const STextInput = styled.TextInput<STextInputProps>`
     switch (props.type) {
       default:
         return `
-          color: ${props.theme.colors.ON_DEFAULT};
+          color: ${colors.ON_DEFAULT};
         `;
     }
   }}
@@ -202,7 +206,7 @@ const STextInput = styled.TextInput<STextInputProps>`
    ${props =>
     props.disabled &&
     `
-      color: ${props.theme.colors.ON_DISABLED};
+      color: ${colors.ON_DISABLED};
   `}
     
   /* underline */
@@ -210,13 +214,13 @@ const STextInput = styled.TextInput<STextInputProps>`
     switch (props.underline) {
       case 'success':
         return `
-          border-bottom-width: ${props.theme.border.BORDER_WIDTH};
-          border-bottom-color: ${props.theme.colors.SUCCESS};
+          border-bottom-width: 1px;
+          border-bottom-color: ${colors.SUCCESS};
         `;
       case 'error':
         return `
-          border-bottom-width: ${props.theme.border.BORDER_WIDTH};
-          border-bottom-color: ${props.theme.colors.ERROR};
+          border-bottom-width: 1px;
+          border-bottom-color: ${colors.ERROR};
         `;
       default:
         break;
@@ -227,18 +231,18 @@ const STextInput = styled.TextInput<STextInputProps>`
 const SIcon = styled(Icon)`
   ${props => `
     position: absolute;
-    right: ${props.theme.spacing.SPACE_8};
+    right: 8px;
   `}
 `;
 
 const SSuffix = styled.View<SFixProps>`
   ${props => `
     justify-content: center;
-    padding: ${props.theme.spacing.SPACE_8} ${props.theme.spacing.SPACE_24};
-    border-width: ${props.theme.border.BORDER_WIDTH};
+    padding: 8px 24px;
+    border-width: 1px;
     border-left-width: 0px;
-    border-top-right-radius: ${props.theme.border.BORDER_RADIUS};
-    border-bottom-right-radius: ${props.theme.border.BORDER_RADIUS};
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
   `}
 
   /* type (default: default) */
@@ -246,8 +250,8 @@ const SSuffix = styled.View<SFixProps>`
     switch (props.type) {
       default:
         return `
-          background-color: ${props.theme.colors.DEFAULT};
-          border-color: ${props.theme.colors.BORDER_DEFAULT};
+          background-color: ${colors.DEFAULT};
+          border-color: ${colors.BORDER_DEFAULT};
         `;
     }
   }}
@@ -256,15 +260,15 @@ const SSuffix = styled.View<SFixProps>`
   ${props =>
     props.disabled &&
     `
-      background-color: ${props.theme.colors.DISABLED};
-      border-color: ${props.theme.colors.BORDER_DISABLED};
+      background-color: ${colors.DISABLED};
+      border-color: ${colors.BORDER_DISABLED};
   `}
 `;
 
 const SFixText = styled.Text<SFixTextProps>`
   ${props => `
-    font-size: ${props.theme.fonts.size.XS};
-    font-family: ${props.theme.fonts.family.REGULAR};
+    font-size: ${fonts.size.XS}px;
+    font-family: ${fonts.family.REGULAR};
   `}
 
   /* type (default: default) */
@@ -272,7 +276,7 @@ const SFixText = styled.Text<SFixTextProps>`
     switch (props.type) {
       default:
         return `
-          color: ${props.theme.colors.ON_DEFAULT};
+          color: ${colors.ON_DEFAULT};
         `;
     }
   }}
@@ -281,7 +285,7 @@ const SFixText = styled.Text<SFixTextProps>`
   ${props =>
     props.disabled &&
     `
-      color: ${props.theme.colors.ON_DISABLED};
+      color: ${colors.ON_DISABLED};
   `}
 `;
 

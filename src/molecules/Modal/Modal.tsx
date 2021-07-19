@@ -1,9 +1,12 @@
-import Typography from '../../atoms/Typography';
-import { ModalHandle } from './Modal.types';
-import { Spacing } from '../../styles';
 import React, { useImperativeHandle } from 'react';
 import { Dimensions, Modal as RNModal } from 'react-native';
 import styled from 'styled-components/native';
+
+import Typography from '../../atoms/Typography';
+import { Spacing } from '../../styles';
+import colors from '../../styles/colors';
+import spacing from '../../styles/spacing';
+import { ModalHandle } from './Modal.types';
 
 interface ModalProps {
   children?: React.ReactNode;
@@ -57,18 +60,18 @@ const SModalBackground = styled.View`
   background-color: rgba(0, 0, 0, 0.7);
 `;
 const SModalContainer = styled.View`
-  width: ${Dimensions.get('window').width - Spacing.SPACE_60}px;
+  width: ${Dimensions.get('window').width - 60}px;
   align-items: center;
 
   ${props => `
-    padding: ${props.theme.spacing.SPACE_20};
-    border-radius: ${props.theme.spacing.SPACE_8};
-    background-color: ${props.theme.colors.CARD};
+    padding: 20px;
+    border-radius: 8px;
+    background-color: ${colors.CARD};
   `};
 `;
 const SExit = styled(Typography.Paragraph)`
   ${props => `
-    margin-top: ${props.theme.spacing.SPACE_20};
+    margin-top: 20px;
   `}
 `;
 
