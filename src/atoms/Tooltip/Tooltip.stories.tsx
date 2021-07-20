@@ -13,8 +13,8 @@ storiesOf('Atoms/Tooltip', module)
   .addDecorator(SThemeDecorator)
   .addDecorator(CenterContainerDecorator)
   .add('Playground', () => {
-    const position = select(
-      'position',
+    const location = select(
+      'location',
       ['top', 'bottom', 'left', 'right'],
       'bottom',
     );
@@ -27,7 +27,7 @@ storiesOf('Atoms/Tooltip', module)
     return (
       <Tooltip
         message={text('children', 'Tooltip')}
-        position={position}
+        location={location}
         tailPosition={tailPosition}
         offset={number('offset', 10, {
           min: 0,
@@ -40,16 +40,16 @@ storiesOf('Atoms/Tooltip', module)
   .add('Position', () => {
     return (
       <>
-        <Tooltip message="Top Tooltip" position="top">
+        <Tooltip message="Top Tooltip" location="top">
           <Button>Sample Button</Button>
         </Tooltip>
-        <Tooltip message="Right Tooltip" position="right">
+        <Tooltip message="Right Tooltip" location="right">
           <Button>Sample Button</Button>
         </Tooltip>
-        <Tooltip message="Left Tooltip" position="left">
+        <Tooltip message="Left Tooltip" location="left">
           <Button>Sample Button</Button>
         </Tooltip>
-        <Tooltip message="Bottom Tooltip" position="bottom">
+        <Tooltip message="Bottom Tooltip" location="bottom">
           <Button>Sample Button</Button>
         </Tooltip>
       </>
@@ -65,19 +65,19 @@ storiesOf('Atoms/Tooltip', module)
             justifyContent: 'space-around',
           }}
         >
-          <Tooltip message="TopLeft Tooltip" position="top" tailPosition="left">
+          <Tooltip message="TopLeft Tooltip" location="top" tailPosition="left">
             <Button>Button</Button>
           </Tooltip>
           <Tooltip
             message="TopCenter Tooltip"
-            position="top"
+            location="top"
             tailPosition="center"
           >
             <Button>Button</Button>
           </Tooltip>
           <Tooltip
             message="TopRight Tooltip"
-            position="top"
+            location="top"
             tailPosition="right"
           >
             <Button>Button</Button>
@@ -92,21 +92,21 @@ storiesOf('Atoms/Tooltip', module)
         >
           <Tooltip
             message="BottomLeft Tooltip"
-            position="bottom"
+            location="bottom"
             tailPosition="left"
           >
             <Button>Button</Button>
           </Tooltip>
           <Tooltip
             message="BottomCenter Tooltip"
-            position="bottom"
+            location="bottom"
             tailPosition="center"
           >
             <Button>Button</Button>
           </Tooltip>
           <Tooltip
             message="BottomRight Tooltip"
-            position="bottom"
+            location="bottom"
             tailPosition="right"
           >
             <Button>Button</Button>
@@ -118,12 +118,12 @@ storiesOf('Atoms/Tooltip', module)
   .add('Offset', () => {
     return (
       <>
-        <Tooltip message="Tooltip" position="top">
+        <Tooltip message="Tooltip" location="top">
           <Button>Sample Button</Button>
         </Tooltip>
         <Tooltip
           message="Tooltip with larger offset"
-          position="bottom"
+          location="bottom"
           offset={20}
         >
           <Button>Sample Button</Button>

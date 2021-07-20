@@ -7,7 +7,7 @@ import { systemColors } from '../../styles/system-colors';
 
 type TooltipProps = {
   message: string;
-  position?: 'top' | 'right' | 'bottom' | 'left';
+  location?: 'top' | 'right' | 'bottom' | 'left';
   tailPosition?: 'left' | 'center' | 'right';
   offset?: number;
   style?: StyleProp<ViewStyle>;
@@ -15,37 +15,38 @@ type TooltipProps = {
 
 export const Tooltip: React.FC<TooltipProps> = ({
   message,
-  position = 'bottom',
+  location = 'bottom',
   tailPosition = 'center',
   offset = 10,
   style,
   children,
 }) => {
-  const [layoutWidth, setLayoutWidth] = React.useState<number>(0);
-  const [layoutHeight, setLayoutHeight] = React.useState<number>(0);
+  const [layout, setLayout] = React.useState<{ width: number; height: number }>(
+    {
+      width: 0,
+      height: 0,
+    },
+  );
 
   const tooltipProps: STooltipProps = {
-    position,
+    location,
     tailPosition,
     offset,
     style,
-    layoutHeight,
-    layoutWidth,
+    layoutHeight: layout.height,
+    layoutWidth: layout.width,
   };
 
   const tailProps: TailProps = {
-    position,
+    location,
     tailPosition,
   };
 
   const onLayout = (e: LayoutChangeEvent) => {
     const {
-      nativeEvent: {
-        layout: { width, height },
-      },
+      nativeEvent: { layout },
     } = e;
-    setLayoutWidth(width);
-    setLayoutHeight(height);
+    setLayout(layout);
   };
 
   return (
@@ -55,10 +56,10 @@ export const Tooltip: React.FC<TooltipProps> = ({
         <SContent>
           <SMessage>{message}</SMessage>
         </SContent>
-        {(position === 'top' || position === 'bottom') && (
+        {(location === 'top' || location === 'bottom') && (
           <SVerticalTail {...tailProps} />
         )}
-        {(position === 'left' || position === 'right') && (
+        {(location === 'left' || location === 'right') && (
           <SHorizontalTailContainer {...tailProps}>
             <SHorizontalTail {...tailProps} />
           </SHorizontalTailContainer>
@@ -73,7 +74,7 @@ type STooltipProps = Omit<TooltipProps, 'message' | 'children'> & {
   layoutHeight: number;
 };
 
-type TailProps = Pick<TooltipProps, 'position' | 'tailPosition'>;
+type TailProps = Pick<TooltipProps, 'location' | 'tailPosition'>;
 
 const SContainer = styled.View`
   position: relative;
@@ -83,7 +84,7 @@ const STooltip = styled.View<STooltipProps>`
   position: absolute;
 
   ${props => {
-    switch (props.position) {
+    switch (props.location) {
       case 'top':
         return `
           align-self: center;
@@ -128,7 +129,7 @@ const SVerticalTail = styled.View<TailProps>`
   border-left-width: 6px;
   border-color: transparent;
   ${props =>
-    props.position === 'bottom'
+    props.location === 'bottom'
       ? `
       border-bottom-width: 12px;
       border-top-width: 0px;
@@ -164,7 +165,7 @@ const SHorizontalTailContainer = styled.View<TailProps>`
   position: absolute;
   height: 100%;
   justify-content: center;
-  ${props => (props.position === 'left' ? 'right: -10px' : 'left: -10px')};
+  ${props => (props.location === 'left' ? 'right: -10px' : 'left: -10px')};
 `;
 
 const SHorizontalTail = styled.View<TailProps>`
@@ -174,7 +175,7 @@ const SHorizontalTail = styled.View<TailProps>`
   border-bottom-width: 6px;
   border-color: transparent;
   ${props =>
-    props.position === 'left'
+    props.location === 'left'
       ? `border-right-width: 0px;
          border-left-width: 12px;
          border-left-color: ${grayscaleColors.GRAY_800}

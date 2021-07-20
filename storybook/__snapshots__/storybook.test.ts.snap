@@ -7485,8 +7485,8 @@ exports[`Storyshots Atoms/Tooltip Offset 1`] = `
     <View
       layoutHeight={0}
       layoutWidth={0}
+      location="top"
       offset={10}
-      position="top"
       style={
         Array [
           Object {
@@ -7525,7 +7525,7 @@ exports[`Storyshots Atoms/Tooltip Offset 1`] = `
         </Text>
       </View>
       <View
-        position="top"
+        location="top"
         style={
           Array [
             Object {
@@ -7607,8 +7607,8 @@ exports[`Storyshots Atoms/Tooltip Offset 1`] = `
     <View
       layoutHeight={0}
       layoutWidth={0}
+      location="bottom"
       offset={20}
-      position="bottom"
       style={
         Array [
           Object {
@@ -7647,7 +7647,7 @@ exports[`Storyshots Atoms/Tooltip Offset 1`] = `
         </Text>
       </View>
       <View
-        position="bottom"
+        location="bottom"
         style={
           Array [
             Object {
@@ -7750,8 +7750,8 @@ exports[`Storyshots Atoms/Tooltip Playground 1`] = `
     <View
       layoutHeight={0}
       layoutWidth={0}
+      location="bottom"
       offset={10}
-      position="bottom"
       style={
         Array [
           Object {
@@ -7790,7 +7790,7 @@ exports[`Storyshots Atoms/Tooltip Playground 1`] = `
         </Text>
       </View>
       <View
-        position="bottom"
+        location="bottom"
         style={
           Array [
             Object {
@@ -7893,8 +7893,8 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
     <View
       layoutHeight={0}
       layoutWidth={0}
+      location="top"
       offset={10}
-      position="top"
       style={
         Array [
           Object {
@@ -7933,7 +7933,7 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
         </Text>
       </View>
       <View
-        position="top"
+        location="top"
         style={
           Array [
             Object {
@@ -8015,8 +8015,8 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
     <View
       layoutHeight={0}
       layoutWidth={0}
+      location="right"
       offset={10}
-      position="right"
       style={
         Array [
           Object {
@@ -8056,7 +8056,7 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
         </Text>
       </View>
       <View
-        position="right"
+        location="right"
         style={
           Array [
             Object {
@@ -8070,7 +8070,7 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
         tailPosition="center"
       >
         <View
-          position="right"
+          location="right"
           style={
             Array [
               Object {
@@ -8150,8 +8150,8 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
     <View
       layoutHeight={0}
       layoutWidth={0}
+      location="left"
       offset={10}
-      position="left"
       style={
         Array [
           Object {
@@ -8191,7 +8191,7 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
         </Text>
       </View>
       <View
-        position="left"
+        location="left"
         style={
           Array [
             Object {
@@ -8205,7 +8205,7 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
         tailPosition="center"
       >
         <View
-          position="left"
+          location="left"
           style={
             Array [
               Object {
@@ -8285,8 +8285,8 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
     <View
       layoutHeight={0}
       layoutWidth={0}
+      location="bottom"
       offset={10}
-      position="bottom"
       style={
         Array [
           Object {
@@ -8325,7 +8325,7 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
         </Text>
       </View>
       <View
-        position="bottom"
+        location="bottom"
         style={
           Array [
             Object {
@@ -8437,8 +8437,8 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
       <View
         layoutHeight={0}
         layoutWidth={0}
+        location="top"
         offset={10}
-        position="top"
         style={
           Array [
             Object {
@@ -8477,7 +8477,7 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           </Text>
         </View>
         <View
-          position="top"
+          location="top"
           style={
             Array [
               Object {
@@ -8559,8 +8559,8 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
       <View
         layoutHeight={0}
         layoutWidth={0}
+        location="top"
         offset={10}
-        position="top"
         style={
           Array [
             Object {
@@ -8599,7 +8599,7 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           </Text>
         </View>
         <View
-          position="top"
+          location="top"
           style={
             Array [
               Object {
@@ -8681,8 +8681,8 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
       <View
         layoutHeight={0}
         layoutWidth={0}
+        location="top"
         offset={10}
-        position="top"
         style={
           Array [
             Object {
@@ -8721,7 +8721,7 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           </Text>
         </View>
         <View
-          position="top"
+          location="top"
           style={
             Array [
               Object {
@@ -8813,8 +8813,8 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
       <View
         layoutHeight={0}
         layoutWidth={0}
+        location="bottom"
         offset={10}
-        position="bottom"
         style={
           Array [
             Object {
@@ -8853,7 +8853,7 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           </Text>
         </View>
         <View
-          position="bottom"
+          location="bottom"
           style={
             Array [
               Object {
@@ -8935,8 +8935,8 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
       <View
         layoutHeight={0}
         layoutWidth={0}
+        location="bottom"
         offset={10}
-        position="bottom"
         style={
           Array [
             Object {
@@ -8975,7 +8975,7 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           </Text>
         </View>
         <View
-          position="bottom"
+          location="bottom"
           style={
             Array [
               Object {
@@ -9057,8 +9057,8 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
       <View
         layoutHeight={0}
         layoutWidth={0}
+        location="bottom"
         offset={10}
-        position="bottom"
         style={
           Array [
             Object {
@@ -9097,7 +9097,7 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           </Text>
         </View>
         <View
-          position="bottom"
+          location="bottom"
           style={
             Array [
               Object {
