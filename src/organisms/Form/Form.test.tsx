@@ -75,7 +75,7 @@ describe('[Form] Unit Test', () => {
       </Form>,
     );
 
-    const textInput = formWrapper.find('TextInput');
+    const textInput = formWrapper.find('ForwardRef');
 
     textInput.simulate('change', TEST_VALUE);
 

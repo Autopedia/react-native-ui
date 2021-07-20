@@ -1,4 +1,5 @@
-import { ViewStyle, GestureResponderEvent, TextStyle } from 'react-native';
+import { GestureResponderEvent, TextStyle, ViewStyle } from 'react-native';
+
 export type ButtonType = 'inline' | 'block' | 'text';
 export type ButtonIconPosition = 'left' | 'right';
 
@@ -30,7 +31,7 @@ export interface ButtonProps {
   absoluteIcon?: boolean;
 
   style?: ViewStyle;
-  onPress: (event: GestureResponderEvent) => void;
+  onPress?: (event: GestureResponderEvent) => void;
 }
 
 export type SButtonTextProps = TextStyle &

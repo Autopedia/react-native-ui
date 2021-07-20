@@ -1,14 +1,13 @@
-import Divider, {
-  FormDividerElement,
-} from '../../atoms/FormDivider/FormDivider';
-import FormItem from '../../molecules/FormItem';
-import Item, { FormItemElement } from '../../molecules/FormItem/FormItem';
 import lodash from 'lodash';
 import React, { useEffect } from 'react';
-import { useForm, FieldError, Path, UseFormReturn } from 'react-hook-form';
+import { FieldError, Path, useForm, UseFormReturn } from 'react-hook-form';
 import { StyleProp, ViewStyle } from 'react-native';
 import styled from 'styled-components/native';
+
+import Divider, { FormDividerElement } from '../../atoms/FormDivider/FormDivider';
 import { BaseInputElement } from '../../global/types';
+import FormItem from '../../molecules/FormItem';
+import Item, { FormItemElement } from '../../molecules/FormItem/FormItem';
 
 type FormChild<V> = FormItemElement<V> | FormDividerElement;
 interface FormProps<I> {
