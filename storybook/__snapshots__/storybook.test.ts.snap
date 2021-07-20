@@ -2822,6 +2822,298 @@ exports[`Storyshots Atoms/Icon Touchable 1`] = `
 </View>
 `;
 
+exports[`Storyshots Atoms/LoadingDots Color 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#ddd",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 24,
+          },
+        ]
+      }
+    >
+      <View
+        color="white"
+        style={
+          Object {
+            "backgroundColor": "white",
+            "borderRadius": 3,
+            "height": 6,
+            "marginBottom": 0,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 0,
+            "opacity": 1,
+            "transform": Array [
+              Object {
+                "translateY": 0,
+              },
+            ],
+            "width": 6,
+          }
+        }
+      />
+      <View
+        color="white"
+        style={
+          Object {
+            "backgroundColor": "white",
+            "borderRadius": 3,
+            "height": 6,
+            "marginBottom": 0,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 0,
+            "opacity": 1,
+            "transform": Array [
+              Object {
+                "translateY": 0,
+              },
+            ],
+            "width": 6,
+          }
+        }
+      />
+      <View
+        color="white"
+        style={
+          Object {
+            "backgroundColor": "white",
+            "borderRadius": 3,
+            "height": 6,
+            "marginBottom": 0,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 0,
+            "opacity": 1,
+            "transform": Array [
+              Object {
+                "translateY": 0,
+              },
+            ],
+            "width": 6,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 24,
+          },
+        ]
+      }
+    >
+      <View
+        color="#007AFF"
+        style={
+          Object {
+            "backgroundColor": "#007AFF",
+            "borderRadius": 3,
+            "height": 6,
+            "marginBottom": 0,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 0,
+            "opacity": 1,
+            "transform": Array [
+              Object {
+                "translateY": 0,
+              },
+            ],
+            "width": 6,
+          }
+        }
+      />
+      <View
+        color="#007AFF"
+        style={
+          Object {
+            "backgroundColor": "#007AFF",
+            "borderRadius": 3,
+            "height": 6,
+            "marginBottom": 0,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 0,
+            "opacity": 1,
+            "transform": Array [
+              Object {
+                "translateY": 0,
+              },
+            ],
+            "width": 6,
+          }
+        }
+      />
+      <View
+        color="#007AFF"
+        style={
+          Object {
+            "backgroundColor": "#007AFF",
+            "borderRadius": 3,
+            "height": 6,
+            "marginBottom": 0,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 0,
+            "opacity": 1,
+            "transform": Array [
+              Object {
+                "translateY": 0,
+              },
+            ],
+            "width": 6,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/LoadingDots Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#ddd",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 24,
+          },
+        ]
+      }
+    >
+      <View
+        color="#FFFFFF"
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 3,
+            "height": 6,
+            "marginBottom": 0,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 0,
+            "opacity": 1,
+            "transform": Array [
+              Object {
+                "translateY": 0,
+              },
+            ],
+            "width": 6,
+          }
+        }
+      />
+      <View
+        color="#FFFFFF"
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 3,
+            "height": 6,
+            "marginBottom": 0,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 0,
+            "opacity": 1,
+            "transform": Array [
+              Object {
+                "translateY": 0,
+              },
+            ],
+            "width": 6,
+          }
+        }
+      />
+      <View
+        color="#FFFFFF"
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 3,
+            "height": 6,
+            "marginBottom": 0,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 0,
+            "opacity": 1,
+            "transform": Array [
+              Object {
+                "translateY": 0,
+              },
+            ],
+            "width": 6,
+          }
+        }
+      />
+    </View>
+    <Text>
+      backgroundColor is set to grey for convienience.
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`Storyshots Atoms/LoadingOverlay Default 1`] = `
 <View
   style={
