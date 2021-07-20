@@ -52,7 +52,6 @@ exports[`Storyshots Atoms/Button AbsoluteIcon 1`] = `
     }
   >
     <Image
-      color="#FFFFFF"
       source={
         Object {
           "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -60,9 +59,7 @@ exports[`Storyshots Atoms/Button AbsoluteIcon 1`] = `
       }
       style={
         Array [
-          Object {
-            "tintColor": "#FFFFFF",
-          },
+          Object {},
           Object {
             "left": 16,
             "position": "absolute",
@@ -77,6 +74,8 @@ exports[`Storyshots Atoms/Button AbsoluteIcon 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -126,6 +125,8 @@ exports[`Storyshots Atoms/Button AbsoluteIcon 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -135,7 +136,6 @@ exports[`Storyshots Atoms/Button AbsoluteIcon 1`] = `
       Absolute Icon Right
     </Text>
     <Image
-      color="#FFFFFF"
       source={
         Object {
           "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -143,9 +143,7 @@ exports[`Storyshots Atoms/Button AbsoluteIcon 1`] = `
       }
       style={
         Array [
-          Object {
-            "tintColor": "#FFFFFF",
-          },
+          Object {},
           Object {
             "position": "absolute",
             "right": 16,
@@ -215,6 +213,8 @@ exports[`Storyshots Atoms/Button Color/Block 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -264,6 +264,8 @@ exports[`Storyshots Atoms/Button Color/Block 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -313,6 +315,8 @@ exports[`Storyshots Atoms/Button Color/Block 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -359,6 +363,8 @@ exports[`Storyshots Atoms/Button Color/Block 1`] = `
           Object {
             "color": "black",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -405,6 +411,8 @@ exports[`Storyshots Atoms/Button Color/Block 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -474,6 +482,8 @@ exports[`Storyshots Atoms/Button Color/Inline 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -522,6 +532,8 @@ exports[`Storyshots Atoms/Button Color/Inline 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -570,6 +582,8 @@ exports[`Storyshots Atoms/Button Color/Inline 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -615,6 +629,8 @@ exports[`Storyshots Atoms/Button Color/Inline 1`] = `
           Object {
             "color": "black",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -660,6 +676,8 @@ exports[`Storyshots Atoms/Button Color/Inline 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -728,6 +746,8 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
           Object {
             "color": "#007AFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -775,6 +795,8 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
           Object {
             "color": "#48CF7C",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -822,6 +844,8 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
           Object {
             "color": "#FA4339",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -866,6 +890,8 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
           Object {
             "color": "black",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -935,6 +961,8 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -984,6 +1012,8 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
           Object {
             "color": "rgba(255, 255, 255, 0.5)",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1033,6 +1063,8 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1080,6 +1112,8 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
           Object {
             "color": "rgba(255, 255, 255, 0.5)",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1127,6 +1161,8 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
           Object {
             "color": "black",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1172,6 +1208,8 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
           Object {
             "color": "rgba(0, 0, 0, 0.5)",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1235,7 +1273,6 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     }
   >
     <Image
-      color="#FFFFFF"
       source={
         Object {
           "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -1243,11 +1280,9 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       }
       style={
         Array [
+          Object {},
           Object {
-            "tintColor": "#FFFFFF",
-          },
-          Object {
-            "marginRight": 6,
+            "marginRight": 8,
           },
         ]
       }
@@ -1259,6 +1294,8 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1307,6 +1344,8 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1316,7 +1355,6 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       Icon Right
     </Text>
     <Image
-      color="#FFFFFF"
       source={
         Object {
           "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -1324,11 +1362,9 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       }
       style={
         Array [
+          Object {},
           Object {
-            "tintColor": "#FFFFFF",
-          },
-          Object {
-            "marginLeft": 6,
+            "marginLeft": 8,
           },
         ]
       }
@@ -1368,7 +1404,6 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     }
   >
     <Image
-      color="#FFFFFF"
       source={
         Object {
           "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -1376,11 +1411,9 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       }
       style={
         Array [
+          Object {},
           Object {
-            "tintColor": "#FFFFFF",
-          },
-          Object {
-            "marginRight": 6,
+            "marginRight": 8,
           },
         ]
       }
@@ -1392,6 +1425,8 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1441,6 +1476,8 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1450,7 +1487,6 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       Block Icon Right
     </Text>
     <Image
-      color="#FFFFFF"
       source={
         Object {
           "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -1458,11 +1494,9 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       }
       style={
         Array [
+          Object {},
           Object {
-            "tintColor": "#FFFFFF",
-          },
-          Object {
-            "marginLeft": 6,
+            "marginLeft": 8,
           },
         ]
       }
@@ -1512,7 +1546,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
             "tintColor": "black",
           },
           Object {
-            "marginRight": 6,
+            "marginRight": 8,
           },
         ]
       }
@@ -1524,6 +1558,8 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Object {
             "color": "black",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1571,6 +1607,8 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Object {
             "color": "black",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1592,7 +1630,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
             "tintColor": "black",
           },
           Object {
-            "marginLeft": 6,
+            "marginLeft": 8,
           },
         ]
       }
@@ -1656,6 +1694,8 @@ exports[`Storyshots Atoms/Button Playground 1`] = `
           Object {
             "color": "white",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1726,6 +1766,8 @@ exports[`Storyshots Atoms/Button Tile 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1774,6 +1816,8 @@ exports[`Storyshots Atoms/Button Tile 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1843,6 +1887,8 @@ exports[`Storyshots Atoms/Button Type 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1892,6 +1938,8 @@ exports[`Storyshots Atoms/Button Type 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1936,6 +1984,8 @@ exports[`Storyshots Atoms/Button Type 1`] = `
           Object {
             "color": "black",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -1992,9 +2042,7 @@ exports[`Storyshots Atoms/Checkbox Default 1`] = `
       }
       style={
         Array [
-          Object {
-            "tintColor": "#007AFF",
-          },
+          Object {},
           Object {
             "marginRight": 4,
           },
@@ -2031,9 +2079,7 @@ exports[`Storyshots Atoms/Checkbox Default 1`] = `
       }
       style={
         Array [
-          Object {
-            "tintColor": "#007AFF",
-          },
+          Object {},
           Object {
             "marginRight": 4,
           },
@@ -2091,9 +2137,7 @@ exports[`Storyshots Atoms/Checkbox Playground 1`] = `
       }
       style={
         Array [
-          Object {
-            "tintColor": "#007AFF",
-          },
+          Object {},
           Object {
             "marginRight": 4,
           },
@@ -3314,6 +3358,7 @@ exports[`Storyshots Atoms/Message/CardMessage Playground 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
+              "lineHeight": 26,
             },
           ]
         }
@@ -3331,6 +3376,7 @@ exports[`Storyshots Atoms/Message/CardMessage Playground 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {
               "marginVertical": 10,
@@ -3497,6 +3543,7 @@ exports[`Storyshots Atoms/Message/CounselCaseMessage Playground 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -3511,6 +3558,7 @@ exports[`Storyshots Atoms/Message/CounselCaseMessage Playground 1`] = `
                 "color": "black",
                 "fontFamily": "NotoSansKR-Bold",
                 "fontSize": 16,
+                "lineHeight": 26,
               },
             ]
           }
@@ -3586,6 +3634,7 @@ exports[`Storyshots Atoms/Message/EndConfirmedMessage Default 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -3654,6 +3703,7 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
+              "lineHeight": 26,
             },
           ]
         }
@@ -3671,6 +3721,7 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {
               "marginVertical": 10,
@@ -3720,6 +3771,8 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
               Object {
                 "color": "#FFFFFF",
                 "fontFamily": "NotoSansKR-Medium",
+                "fontSize": 16,
+                "lineHeight": 26,
                 "textAlign": "center",
               },
             ]
@@ -3875,6 +3928,7 @@ exports[`Storyshots Atoms/Message/EventMessage Playground 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -3889,6 +3943,7 @@ exports[`Storyshots Atoms/Message/EventMessage Playground 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
+              "lineHeight": 26,
             },
           ]
         }
@@ -3957,6 +4012,7 @@ exports[`Storyshots Atoms/Message/FeedbackMessage Playground 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
+              "lineHeight": 26,
             },
           ]
         }
@@ -3974,6 +4030,7 @@ exports[`Storyshots Atoms/Message/FeedbackMessage Playground 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {
               "marginVertical": 10,
@@ -4021,6 +4078,8 @@ exports[`Storyshots Atoms/Message/FeedbackMessage Playground 1`] = `
               Object {
                 "color": "#FFFFFF",
                 "fontFamily": "NotoSansKR-Medium",
+                "fontSize": 16,
+                "lineHeight": 26,
                 "textAlign": "center",
               },
             ]
@@ -4227,6 +4286,7 @@ exports[`Storyshots Atoms/Message/OutdatedMessage Playground 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
+              "lineHeight": 26,
             },
           ]
         }
@@ -4245,6 +4305,7 @@ exports[`Storyshots Atoms/Message/OutdatedMessage Playground 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {
               "marginVertical": 10,
@@ -4293,6 +4354,8 @@ exports[`Storyshots Atoms/Message/OutdatedMessage Playground 1`] = `
               Object {
                 "color": "#FFFFFF",
                 "fontFamily": "NotoSansKR-Medium",
+                "fontSize": 16,
+                "lineHeight": 26,
                 "textAlign": "center",
               },
             ]
@@ -4456,6 +4519,7 @@ exports[`Storyshots Atoms/Message/PostMessage Playground 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -4470,6 +4534,7 @@ exports[`Storyshots Atoms/Message/PostMessage Playground 1`] = `
                 "color": "black",
                 "fontFamily": "NotoSansKR-Bold",
                 "fontSize": 16,
+                "lineHeight": 26,
               },
             ]
           }
@@ -4539,6 +4604,7 @@ exports[`Storyshots Atoms/Message/ReviewMessage Playground 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
+              "lineHeight": 26,
             },
           ]
         }
@@ -4556,6 +4622,7 @@ exports[`Storyshots Atoms/Message/ReviewMessage Playground 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {
               "marginVertical": 10,
@@ -4603,6 +4670,8 @@ exports[`Storyshots Atoms/Message/ReviewMessage Playground 1`] = `
               Object {
                 "color": "#FFFFFF",
                 "fontFamily": "NotoSansKR-Medium",
+                "fontSize": 16,
+                "lineHeight": 26,
                 "textAlign": "center",
               },
             ]
@@ -4733,6 +4802,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                 "color": "black",
                 "fontFamily": "NotoSansKR-Bold",
                 "fontSize": 16,
+                "lineHeight": 26,
               },
             ]
           }
@@ -4750,6 +4820,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -4807,7 +4878,6 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
             }
           >
             <Image
-              color="#FFFFFF"
               source={
                 Object {
                   "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -4815,11 +4885,9 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               }
               style={
                 Array [
+                  Object {},
                   Object {
-                    "tintColor": "#FFFFFF",
-                  },
-                  Object {
-                    "marginRight": 6,
+                    "marginRight": 8,
                   },
                 ]
               }
@@ -4831,6 +4899,8 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                   Object {
                     "color": "#FFFFFF",
                     "fontFamily": "NotoSansKR-Medium",
+                    "fontSize": 16,
+                    "lineHeight": 26,
                     "textAlign": "center",
                   },
                 ]
@@ -4878,7 +4948,6 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
             }
           >
             <Image
-              color="#FFFFFF"
               source={
                 Object {
                   "testUri": "../../../src/assets/icons/map/map.png",
@@ -4886,11 +4955,9 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               }
               style={
                 Array [
+                  Object {},
                   Object {
-                    "tintColor": "#FFFFFF",
-                  },
-                  Object {
-                    "marginRight": 6,
+                    "marginRight": 8,
                   },
                 ]
               }
@@ -4902,6 +4969,8 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                   Object {
                     "color": "#FFFFFF",
                     "fontFamily": "NotoSansKR-Medium",
+                    "fontSize": 16,
+                    "lineHeight": 26,
                     "textAlign": "center",
                   },
                 ]
@@ -5061,6 +5130,7 @@ exports[`Storyshots Atoms/Message/UnhandledMessage Playground 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -5406,10 +5476,10 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
         "marginRight": 0,
         "marginTop": 2,
         "opacity": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 8,
+        "paddingBottom": 10,
+        "paddingLeft": 18,
+        "paddingRight": 18,
+        "paddingTop": 10,
       }
     }
   >
@@ -5423,6 +5493,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
             "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
+            "lineHeight": 26,
           },
         ]
       }
@@ -5451,10 +5522,10 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
         "marginRight": 0,
         "marginTop": 2,
         "opacity": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 8,
+        "paddingBottom": 10,
+        "paddingLeft": 18,
+        "paddingRight": 18,
+        "paddingTop": 10,
       }
     }
   >
@@ -5468,7 +5539,8 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
             "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
-            "opacity": 0.5,
+            "lineHeight": 26,
+            "opacity": 0.7,
           },
         ]
       }
@@ -5498,10 +5570,10 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
         "marginRight": 0,
         "marginTop": 2,
         "opacity": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 8,
+        "paddingBottom": 10,
+        "paddingLeft": 18,
+        "paddingRight": 18,
+        "paddingTop": 10,
       }
     }
   >
@@ -5516,6 +5588,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
             "color": "#8C8C8C",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
+            "lineHeight": 26,
           },
         ]
       }
@@ -5562,6 +5635,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
             "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 14,
+            "lineHeight": 22,
           },
         ]
       }
@@ -5608,7 +5682,8 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
             "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 14,
-            "opacity": 0.5,
+            "lineHeight": 22,
+            "opacity": 0.7,
           },
         ]
       }
@@ -5656,6 +5731,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
             "color": "#8C8C8C",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 14,
+            "lineHeight": 22,
           },
         ]
       }
@@ -5722,6 +5798,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
             "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
+            "lineHeight": 26,
           },
         ]
       }
@@ -5739,6 +5816,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
             "color": "black",
             "fontFamily": "NotoSansKR-Regular",
             "fontSize": 12,
+            "lineHeight": 19,
           },
         ]
       }
@@ -5784,7 +5862,8 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
             "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
-            "opacity": 0.5,
+            "lineHeight": 26,
+            "opacity": 0.7,
           },
         ]
       }
@@ -5802,6 +5881,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
             "color": "black",
             "fontFamily": "NotoSansKR-Light",
             "fontSize": 12,
+            "lineHeight": 19,
             "opacity": 0.5,
           },
         ]
@@ -5850,6 +5930,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
             "color": "#8C8C8C",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
+            "lineHeight": 26,
           },
         ]
       }
@@ -5868,6 +5949,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
             "color": "#8C8C8C",
             "fontFamily": "NotoSansKR-Regular",
             "fontSize": 12,
+            "lineHeight": 19,
           },
         ]
       }
@@ -5914,15 +5996,12 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
         "borderWidth": 1,
         "flexDirection": "row",
         "justifyContent": "center",
-        "marginBottom": 2,
-        "marginLeft": 2,
-        "marginRight": 2,
-        "marginTop": 2,
+        "marginRight": 4,
         "opacity": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 8,
+        "paddingBottom": 10,
+        "paddingLeft": 18,
+        "paddingRight": 18,
+        "paddingTop": 10,
       }
     }
   >
@@ -5936,6 +6015,7 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
             "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 14,
+            "lineHeight": 22,
           },
         ]
       }
@@ -5961,15 +6041,12 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
         "borderWidth": 1,
         "flexDirection": "row",
         "justifyContent": "center",
-        "marginBottom": 2,
-        "marginLeft": 2,
-        "marginRight": 2,
-        "marginTop": 2,
+        "marginRight": 4,
         "opacity": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 8,
+        "paddingBottom": 10,
+        "paddingLeft": 18,
+        "paddingRight": 18,
+        "paddingTop": 10,
       }
     }
   >
@@ -5983,7 +6060,8 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
             "color": "black",
             "fontFamily": "NotoSansKR-Regular",
             "fontSize": 14,
-            "opacity": 0.5,
+            "lineHeight": 22,
+            "opacity": 0.7,
           },
         ]
       }
@@ -6010,15 +6088,12 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
         "borderWidth": 1,
         "flexDirection": "row",
         "justifyContent": "center",
-        "marginBottom": 2,
-        "marginLeft": 2,
-        "marginRight": 2,
-        "marginTop": 2,
+        "marginRight": 4,
         "opacity": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 8,
+        "paddingBottom": 10,
+        "paddingLeft": 18,
+        "paddingRight": 18,
+        "paddingTop": 10,
       }
     }
   >
@@ -6033,7 +6108,8 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
             "color": "#8C8C8C",
             "fontFamily": "NotoSansKR-Regular",
             "fontSize": 14,
-            "opacity": 0.5,
+            "lineHeight": 22,
+            "opacity": 0.7,
           },
         ]
       }
@@ -6080,15 +6156,12 @@ exports[`Storyshots Atoms/SelectOption Playground 1`] = `
         "borderWidth": 1,
         "flexDirection": "row",
         "justifyContent": "center",
-        "marginBottom": 2,
-        "marginLeft": 2,
-        "marginRight": 2,
-        "marginTop": 2,
+        "marginRight": 4,
         "opacity": 1,
-        "paddingBottom": 8,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 8,
+        "paddingBottom": 10,
+        "paddingLeft": 18,
+        "paddingRight": 18,
+        "paddingTop": 10,
       }
     }
   >
@@ -6104,7 +6177,8 @@ exports[`Storyshots Atoms/SelectOption Playground 1`] = `
             "color": "black",
             "fontFamily": "NotoSansKR-Regular",
             "fontSize": 14,
-            "opacity": 0.5,
+            "lineHeight": 22,
+            "opacity": 0.7,
           },
         ]
       }
@@ -6411,9 +6485,8 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
               "fontSize": 14,
-              "height": 22,
+              "lineHeight": 22,
               "marginBottom": 0,
               "marginLeft": 0,
               "marginRight": 0,
@@ -6477,9 +6550,9 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
               "fontSize": 14,
               "height": 66,
+              "lineHeight": 22,
               "marginBottom": 0,
               "marginLeft": 0,
               "marginRight": 0,
@@ -6563,9 +6636,8 @@ exports[`Storyshots Atoms/TextInput Placeholder 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
               "fontSize": 14,
-              "height": 22,
+              "lineHeight": 22,
               "marginBottom": 0,
               "marginLeft": 0,
               "marginRight": 0,
@@ -6655,9 +6727,8 @@ exports[`Storyshots Atoms/TextInput Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
               "fontSize": 14,
-              "height": 22,
+              "lineHeight": 22,
               "marginBottom": 0,
               "marginLeft": 0,
               "marginRight": 0,
@@ -6743,9 +6814,8 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
               "fontSize": 14,
-              "height": 22,
+              "lineHeight": 22,
               "marginBottom": 0,
               "marginLeft": 0,
               "marginRight": 0,
@@ -6810,9 +6880,8 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
               "fontSize": 14,
-              "height": 22,
+              "lineHeight": 22,
               "marginBottom": 0,
               "marginLeft": 0,
               "marginRight": 0,
@@ -6861,9 +6930,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
           }
           style={
             Array [
-              Object {
-                "tintColor": "#007AFF",
-              },
+              Object {},
               Object {},
             ]
           }
@@ -6922,7 +6989,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
             Object {
               "color": "#8C8C8C",
               "fontSize": 14,
-              "height": 22,
+              "lineHeight": 22,
               "marginBottom": 0,
               "marginLeft": 0,
               "marginRight": 0,
@@ -6973,7 +7040,6 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
             Array [
               Object {
                 "opacity": 0.5,
-                "tintColor": "#007AFF",
               },
               Object {},
             ]
@@ -7055,9 +7121,8 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
               "fontSize": 14,
-              "height": 22,
+              "lineHeight": 22,
               "marginBottom": 0,
               "marginLeft": 0,
               "marginRight": 0,
@@ -7169,9 +7234,8 @@ exports[`Storyshots Atoms/TextInput Type 1`] = `
         style={
           Array [
             Object {
-              "color": "#1F1F1F",
               "fontSize": 14,
-              "height": 22,
+              "lineHeight": 22,
               "marginBottom": 0,
               "marginLeft": 0,
               "marginRight": 0,
@@ -7257,11 +7321,8 @@ exports[`Storyshots Atoms/TextInput Underline 1`] = `
         style={
           Array [
             Object {
-              "borderBottomColor": "#48CF7C",
-              "borderBottomWidth": 1,
-              "color": "#1F1F1F",
               "fontSize": 14,
-              "height": 22,
+              "lineHeight": 22,
               "marginBottom": 0,
               "marginLeft": 0,
               "marginRight": 0,
@@ -7324,11 +7385,8 @@ exports[`Storyshots Atoms/TextInput Underline 1`] = `
         style={
           Array [
             Object {
-              "borderBottomColor": "#FA4339",
-              "borderBottomWidth": 1,
-              "color": "#1F1F1F",
               "fontSize": 14,
-              "height": 22,
+              "lineHeight": 22,
               "marginBottom": 0,
               "marginLeft": 0,
               "marginRight": 0,
@@ -7378,6 +7436,7 @@ exports[`Storyshots Atoms/Typography Bold 1`] = `
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7394,6 +7453,7 @@ exports[`Storyshots Atoms/Typography Bold 1`] = `
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
           "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7411,6 +7471,7 @@ exports[`Storyshots Atoms/Typography Bold 1`] = `
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Light",
           "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7446,6 +7507,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "color": "black",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 24,
+          "lineHeight": 35,
           "marginBottom": 12,
         },
       ]
@@ -7462,6 +7524,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "color": "#007AFF",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 24,
+          "lineHeight": 35,
           "marginBottom": 12,
         },
       ]
@@ -7478,6 +7541,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "color": "#48CF7C",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 24,
+          "lineHeight": 35,
           "marginBottom": 12,
         },
       ]
@@ -7494,6 +7558,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "color": "#FA4339",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 24,
+          "lineHeight": 35,
           "marginBottom": 12,
         },
       ]
@@ -7512,6 +7577,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
           "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7529,6 +7595,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
           "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7546,6 +7613,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
           "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7563,6 +7631,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
           "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7577,6 +7646,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "color": "black",
           "fontFamily": "NotoSansKR-Medium",
           "fontSize": 12,
+          "lineHeight": 19,
         },
       ]
     }
@@ -7591,6 +7661,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "color": "#007AFF",
           "fontFamily": "NotoSansKR-Medium",
           "fontSize": 12,
+          "lineHeight": 19,
         },
       ]
     }
@@ -7605,6 +7676,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "color": "#48CF7C",
           "fontFamily": "NotoSansKR-Medium",
           "fontSize": 12,
+          "lineHeight": 19,
         },
       ]
     }
@@ -7619,6 +7691,7 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "color": "#FA4339",
           "fontFamily": "NotoSansKR-Medium",
           "fontSize": 12,
+          "lineHeight": 19,
         },
       ]
     }
@@ -7656,6 +7729,7 @@ exports[`Storyshots Atoms/Typography Link 1`] = `
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
           "fontSize": 16,
+          "lineHeight": 26,
           "textDecorationLine": "underline",
         },
       ]
@@ -7675,6 +7749,7 @@ exports[`Storyshots Atoms/Typography Link 1`] = `
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
           "fontSize": 16,
+          "lineHeight": 26,
           "textDecorationLine": "underline",
         },
       ]
@@ -7694,6 +7769,7 @@ exports[`Storyshots Atoms/Typography Link 1`] = `
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
           "fontSize": 16,
+          "lineHeight": 26,
           "textDecorationLine": "underline",
         },
       ]
@@ -7713,6 +7789,7 @@ exports[`Storyshots Atoms/Typography Link 1`] = `
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
           "fontSize": 16,
+          "lineHeight": 26,
           "textDecorationLine": "underline",
         },
       ]
@@ -7751,6 +7828,7 @@ exports[`Storyshots Atoms/Typography Playground 1`] = `
           "color": "#000000",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 32,
+          "lineHeight": 55,
           "marginBottom": 16,
         },
       ]
@@ -7790,6 +7868,7 @@ exports[`Storyshots Atoms/Typography Selectable 1`] = `
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
           "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7806,6 +7885,7 @@ exports[`Storyshots Atoms/Typography Selectable 1`] = `
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
           "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7841,6 +7921,7 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
           "color": "black",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 32,
+          "lineHeight": 55,
           "marginBottom": 16,
         },
       ]
@@ -7856,6 +7937,7 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
           "color": "black",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 28,
+          "lineHeight": 40,
           "marginBottom": 12,
         },
       ]
@@ -7871,6 +7953,7 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
           "color": "black",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 24,
+          "lineHeight": 35,
           "marginBottom": 12,
         },
       ]
@@ -7886,6 +7969,8 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
           "color": "black",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 20,
+          "lineHeight": 29,
+          "marginBottom": 4,
         },
       ]
     }
@@ -7900,6 +7985,7 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
           "color": "black",
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7916,6 +8002,7 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
           "fontSize": 16,
+          "lineHeight": 26,
         },
       ]
     }
@@ -7932,6 +8019,7 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
           "flexWrap": "wrap",
           "fontFamily": "NotoSansKR-Regular",
           "fontSize": 14,
+          "lineHeight": 22,
         },
       ]
     }
@@ -7945,6 +8033,7 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
           "color": "black",
           "fontFamily": "NotoSansKR-Medium",
           "fontSize": 12,
+          "lineHeight": 19,
         },
       ]
     }
@@ -8004,6 +8093,7 @@ exports[`Storyshots Molecules/Article Playground 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {
               "marginBottom": 10,
@@ -8021,6 +8111,7 @@ exports[`Storyshots Molecules/Article Playground 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
+              "lineHeight": 26,
             },
           ]
         }
@@ -8170,6 +8261,7 @@ exports[`Storyshots Molecules/Article Playground 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 16,
+                "lineHeight": 26,
               },
             ]
           }
@@ -8281,9 +8373,8 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
           style={
             Array [
               Object {
-                "color": "#1F1F1F",
                 "fontSize": 14,
-                "height": 22,
+                "lineHeight": 22,
                 "marginBottom": 0,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -8379,15 +8470,12 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
             "borderWidth": 1,
             "flexDirection": "row",
             "justifyContent": "center",
-            "marginBottom": 2,
-            "marginLeft": 2,
-            "marginRight": 2,
-            "marginTop": 2,
+            "marginRight": 4,
             "opacity": 1,
-            "paddingBottom": 8,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 8,
+            "paddingBottom": 10,
+            "paddingLeft": 18,
+            "paddingRight": 18,
+            "paddingTop": 10,
           }
         }
       >
@@ -8402,7 +8490,8 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
                 "color": "black",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
-                "opacity": 0.5,
+                "lineHeight": 22,
+                "opacity": 0.7,
               },
             ]
           }
@@ -8428,15 +8517,12 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
             "borderWidth": 1,
             "flexDirection": "row",
             "justifyContent": "center",
-            "marginBottom": 2,
-            "marginLeft": 2,
-            "marginRight": 2,
-            "marginTop": 2,
+            "marginRight": 4,
             "opacity": 1,
-            "paddingBottom": 8,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 8,
+            "paddingBottom": 10,
+            "paddingLeft": 18,
+            "paddingRight": 18,
+            "paddingTop": 10,
           }
         }
       >
@@ -8451,7 +8537,8 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
                 "color": "black",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
-                "opacity": 0.5,
+                "lineHeight": 22,
+                "opacity": 0.7,
               },
             ]
           }
@@ -8477,15 +8564,12 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
             "borderWidth": 1,
             "flexDirection": "row",
             "justifyContent": "center",
-            "marginBottom": 2,
-            "marginLeft": 2,
-            "marginRight": 2,
-            "marginTop": 2,
+            "marginRight": 4,
             "opacity": 1,
-            "paddingBottom": 8,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 8,
+            "paddingBottom": 10,
+            "paddingLeft": 18,
+            "paddingRight": 18,
+            "paddingTop": 10,
           }
         }
       >
@@ -8500,7 +8584,8 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
                 "color": "black",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
-                "opacity": 0.5,
+                "lineHeight": 22,
+                "opacity": 0.7,
               },
             ]
           }
@@ -8587,9 +8672,7 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
         }
         style={
           Array [
-            Object {
-              "tintColor": "#007AFF",
-            },
+            Object {},
             Object {
               "marginRight": 4,
             },
@@ -8713,6 +8796,7 @@ exports[`Storyshots Molecules/FormItem Error 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {},
           ]
@@ -9076,6 +9160,7 @@ exports[`Storyshots Molecules/FormItem Footer 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {},
           ]
@@ -9394,17 +9479,17 @@ exports[`Storyshots Molecules/ListItem Playground 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "opacity": 1,
-          "paddingBottom": 12,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 12,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F8FAFB",
+            "flexDirection": "row",
+            "paddingBottom": 14,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 14,
+          },
+        ]
       }
     >
       <View
@@ -9425,6 +9510,7 @@ exports[`Storyshots Molecules/ListItem Playground 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9441,6 +9527,7 @@ exports[`Storyshots Molecules/ListItem Playground 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9491,17 +9578,17 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "opacity": 1,
-          "paddingBottom": 12,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 12,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F8FAFB",
+            "flexDirection": "row",
+            "paddingBottom": 14,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 14,
+          },
+        ]
       }
     >
       <View
@@ -9522,6 +9609,7 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9538,6 +9626,7 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9557,17 +9646,17 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "opacity": 1,
-          "paddingBottom": 12,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 12,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F8FAFB",
+            "flexDirection": "row",
+            "paddingBottom": 14,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 14,
+          },
+        ]
       }
     >
       <View
@@ -9587,6 +9676,7 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9604,6 +9694,7 @@ exports[`Storyshots Molecules/ListItem SublabelPosition 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9654,17 +9745,17 @@ exports[`Storyshots Molecules/ListItem Suffix 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "opacity": 1,
-          "paddingBottom": 12,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 12,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F8FAFB",
+            "flexDirection": "row",
+            "paddingBottom": 14,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 14,
+          },
+        ]
       }
     >
       <View
@@ -9684,6 +9775,7 @@ exports[`Storyshots Molecules/ListItem Suffix 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9701,6 +9793,7 @@ exports[`Storyshots Molecules/ListItem Suffix 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9720,17 +9813,17 @@ exports[`Storyshots Molecules/ListItem Suffix 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "opacity": 1,
-          "paddingBottom": 12,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 12,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F8FAFB",
+            "flexDirection": "row",
+            "paddingBottom": 14,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 14,
+          },
+        ]
       }
     >
       <View
@@ -9750,6 +9843,7 @@ exports[`Storyshots Molecules/ListItem Suffix 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9767,6 +9861,7 @@ exports[`Storyshots Molecules/ListItem Suffix 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9820,19 +9915,19 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
-          "borderBottomColor": "#F5F5F5",
-          "borderBottomWidth": 1,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "opacity": 1,
-          "paddingBottom": 12,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 12,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F8FAFB",
+            "borderBottomColor": "#EEF2F6",
+            "borderBottomWidth": 1,
+            "flexDirection": "row",
+            "paddingBottom": 14,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 14,
+          },
+        ]
       }
     >
       <View
@@ -9852,6 +9947,7 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9869,6 +9965,7 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9888,17 +9985,17 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "opacity": 1,
-          "paddingBottom": 12,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 12,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F8FAFB",
+            "flexDirection": "row",
+            "paddingBottom": 14,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 14,
+          },
+        ]
       }
     >
       <View
@@ -9918,6 +10015,7 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -9935,6 +10033,7 @@ exports[`Storyshots Molecules/ListItem Underline 1`] = `
                 "flexWrap": "wrap",
                 "fontFamily": "NotoSansKR-Regular",
                 "fontSize": 14,
+                "lineHeight": 22,
               },
             ]
           }
@@ -10001,6 +10100,8 @@ exports[`Storyshots Molecules/Modal Default 1`] = `
           Object {
             "color": "#FFFFFF",
             "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 16,
+            "lineHeight": 26,
             "textAlign": "center",
           },
         ]
@@ -10065,6 +10166,7 @@ exports[`Storyshots Molecules/Modal Default 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Bold",
               "fontSize": 16,
+              "lineHeight": 26,
               "textDecorationLine": "underline",
             },
             Object {
@@ -10283,6 +10385,7 @@ exports[`Storyshots Molecules/Rating Count 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -10476,6 +10579,7 @@ exports[`Storyshots Molecules/Rating Count 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -10493,6 +10597,7 @@ exports[`Storyshots Molecules/Rating Count 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -10730,6 +10835,7 @@ exports[`Storyshots Molecules/Rating Editable 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -10923,6 +11029,7 @@ exports[`Storyshots Molecules/Rating Editable 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -11299,6 +11406,7 @@ exports[`Storyshots Molecules/Rating Label 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -11533,6 +11641,7 @@ exports[`Storyshots Molecules/Rating Playground 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -11550,6 +11659,7 @@ exports[`Storyshots Molecules/Rating Playground 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -12951,15 +13061,12 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
-          "marginBottom": 2,
-          "marginLeft": 2,
-          "marginRight": 2,
-          "marginTop": 2,
+          "marginRight": 4,
           "opacity": 1,
-          "paddingBottom": 8,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingBottom": 10,
+          "paddingLeft": 18,
+          "paddingRight": 18,
+          "paddingTop": 10,
         }
       }
     >
@@ -12974,7 +13081,8 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
-              "opacity": 0.5,
+              "lineHeight": 22,
+              "opacity": 0.7,
             },
           ]
         }
@@ -13000,15 +13108,12 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
-          "marginBottom": 2,
-          "marginLeft": 2,
-          "marginRight": 2,
-          "marginTop": 2,
+          "marginRight": 4,
           "opacity": 1,
-          "paddingBottom": 8,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingBottom": 10,
+          "paddingLeft": 18,
+          "paddingRight": 18,
+          "paddingTop": 10,
         }
       }
     >
@@ -13023,7 +13128,8 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
-              "opacity": 0.5,
+              "lineHeight": 22,
+              "opacity": 0.7,
             },
           ]
         }
@@ -13049,15 +13155,12 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
-          "marginBottom": 2,
-          "marginLeft": 2,
-          "marginRight": 2,
-          "marginTop": 2,
+          "marginRight": 4,
           "opacity": 1,
-          "paddingBottom": 8,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingBottom": 10,
+          "paddingLeft": 18,
+          "paddingRight": 18,
+          "paddingTop": 10,
         }
       }
     >
@@ -13072,7 +13175,8 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
-              "opacity": 0.5,
+              "lineHeight": 22,
+              "opacity": 0.7,
             },
           ]
         }
@@ -13115,10 +13219,10 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
           "marginRight": 0,
           "marginTop": 0,
           "opacity": 1,
-          "paddingBottom": 8,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingBottom": 10,
+          "paddingLeft": 18,
+          "paddingRight": 18,
+          "paddingTop": 10,
         }
       }
     >
@@ -13133,7 +13237,8 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
-              "opacity": 0.5,
+              "lineHeight": 26,
+              "opacity": 0.7,
             },
           ]
         }
@@ -13180,7 +13285,8 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
-              "opacity": 0.5,
+              "lineHeight": 26,
+              "opacity": 0.7,
             },
           ]
         }
@@ -13199,6 +13305,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Light",
               "fontSize": 12,
+              "lineHeight": 19,
               "opacity": 0.5,
             },
           ]
@@ -13228,10 +13335,10 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
           "marginRight": 0,
           "marginTop": 2,
           "opacity": 1,
-          "paddingBottom": 8,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingBottom": 10,
+          "paddingLeft": 18,
+          "paddingRight": 18,
+          "paddingTop": 10,
         }
       }
     >
@@ -13246,7 +13353,8 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
-              "opacity": 0.5,
+              "lineHeight": 26,
+              "opacity": 0.7,
             },
           ]
         }
@@ -13316,15 +13424,12 @@ exports[`Storyshots Molecules/Select Options 1`] = `
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
-          "marginBottom": 2,
-          "marginLeft": 2,
-          "marginRight": 2,
-          "marginTop": 2,
+          "marginRight": 4,
           "opacity": 1,
-          "paddingBottom": 8,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingBottom": 10,
+          "paddingLeft": 18,
+          "paddingRight": 18,
+          "paddingTop": 10,
         }
       }
     >
@@ -13339,7 +13444,8 @@ exports[`Storyshots Molecules/Select Options 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
-              "opacity": 0.5,
+              "lineHeight": 22,
+              "opacity": 0.7,
             },
           ]
         }
@@ -13365,15 +13471,12 @@ exports[`Storyshots Molecules/Select Options 1`] = `
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
-          "marginBottom": 2,
-          "marginLeft": 2,
-          "marginRight": 2,
-          "marginTop": 2,
+          "marginRight": 4,
           "opacity": 1,
-          "paddingBottom": 8,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingBottom": 10,
+          "paddingLeft": 18,
+          "paddingRight": 18,
+          "paddingTop": 10,
         }
       }
     >
@@ -13388,7 +13491,8 @@ exports[`Storyshots Molecules/Select Options 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
-              "opacity": 0.5,
+              "lineHeight": 22,
+              "opacity": 0.7,
             },
           ]
         }
@@ -13414,15 +13518,12 @@ exports[`Storyshots Molecules/Select Options 1`] = `
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
-          "marginBottom": 2,
-          "marginLeft": 2,
-          "marginRight": 2,
-          "marginTop": 2,
+          "marginRight": 4,
           "opacity": 1,
-          "paddingBottom": 8,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingBottom": 10,
+          "paddingLeft": 18,
+          "paddingRight": 18,
+          "paddingTop": 10,
         }
       }
     >
@@ -13437,7 +13538,8 @@ exports[`Storyshots Molecules/Select Options 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
-              "opacity": 0.5,
+              "lineHeight": 22,
+              "opacity": 0.7,
             },
           ]
         }
@@ -13496,15 +13598,12 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
-          "marginBottom": 2,
-          "marginLeft": 2,
-          "marginRight": 2,
-          "marginTop": 2,
+          "marginRight": 4,
           "opacity": 1,
-          "paddingBottom": 8,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingBottom": 10,
+          "paddingLeft": 18,
+          "paddingRight": 18,
+          "paddingTop": 10,
         }
       }
     >
@@ -13523,6 +13622,7 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -13548,15 +13648,12 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
-          "marginBottom": 2,
-          "marginLeft": 2,
-          "marginRight": 2,
-          "marginTop": 2,
+          "marginRight": 4,
           "opacity": 1,
-          "paddingBottom": 8,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingBottom": 10,
+          "paddingLeft": 18,
+          "paddingRight": 18,
+          "paddingTop": 10,
         }
       }
     >
@@ -13575,7 +13672,8 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
-              "opacity": 0.5,
+              "lineHeight": 22,
+              "opacity": 0.7,
             },
           ]
         }
@@ -13601,15 +13699,12 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
-          "marginBottom": 2,
-          "marginLeft": 2,
-          "marginRight": 2,
-          "marginTop": 2,
+          "marginRight": 4,
           "opacity": 1,
-          "paddingBottom": 8,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingBottom": 10,
+          "paddingLeft": 18,
+          "paddingRight": 18,
+          "paddingTop": 10,
         }
       }
     >
@@ -13628,7 +13723,8 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
-              "opacity": 0.5,
+              "lineHeight": 22,
+              "opacity": 0.7,
             },
           ]
         }
@@ -13711,7 +13807,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 14,
-              "opacity": 0.5,
+              "lineHeight": 22,
+              "opacity": 0.7,
             },
           ]
         }
@@ -13759,7 +13856,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 14,
-              "opacity": 0.5,
+              "lineHeight": 22,
+              "opacity": 0.7,
             },
           ]
         }
@@ -13779,6 +13877,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Light",
               "fontSize": 12,
+              "lineHeight": 19,
               "opacity": 0.5,
             },
           ]
@@ -13827,7 +13926,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 14,
-              "opacity": 0.5,
+              "lineHeight": 22,
+              "opacity": 0.7,
             },
           ]
         }
@@ -13870,10 +13970,10 @@ exports[`Storyshots Molecules/Select Size 1`] = `
           "marginRight": 0,
           "marginTop": 0,
           "opacity": 1,
-          "paddingBottom": 8,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingBottom": 10,
+          "paddingLeft": 18,
+          "paddingRight": 18,
+          "paddingTop": 10,
         }
       }
     >
@@ -13889,7 +13989,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
-              "opacity": 0.5,
+              "lineHeight": 26,
+              "opacity": 0.7,
             },
           ]
         }
@@ -13937,7 +14038,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
-              "opacity": 0.5,
+              "lineHeight": 26,
+              "opacity": 0.7,
             },
           ]
         }
@@ -13957,6 +14059,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Light",
               "fontSize": 12,
+              "lineHeight": 19,
               "opacity": 0.5,
             },
           ]
@@ -13986,10 +14089,10 @@ exports[`Storyshots Molecules/Select Size 1`] = `
           "marginRight": 0,
           "marginTop": 2,
           "opacity": 1,
-          "paddingBottom": 8,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingBottom": 10,
+          "paddingLeft": 18,
+          "paddingRight": 18,
+          "paddingTop": 10,
         }
       }
     >
@@ -14005,7 +14108,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
-              "opacity": 0.5,
+              "lineHeight": 26,
+              "opacity": 0.7,
             },
           ]
         }
@@ -14048,10 +14152,10 @@ exports[`Storyshots Molecules/Select Size 1`] = `
           "marginRight": 0,
           "marginTop": 0,
           "opacity": 1,
-          "paddingBottom": 8,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingBottom": 10,
+          "paddingLeft": 18,
+          "paddingRight": 18,
+          "paddingTop": 10,
         }
       }
     >
@@ -14067,7 +14171,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
-              "opacity": 0.5,
+              "lineHeight": 26,
+              "opacity": 0.7,
             },
           ]
         }
@@ -14115,7 +14220,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
-              "opacity": 0.5,
+              "lineHeight": 26,
+              "opacity": 0.7,
             },
           ]
         }
@@ -14135,6 +14241,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Light",
               "fontSize": 12,
+              "lineHeight": 19,
               "opacity": 0.5,
             },
           ]
@@ -14164,10 +14271,10 @@ exports[`Storyshots Molecules/Select Size 1`] = `
           "marginRight": 0,
           "marginTop": 2,
           "opacity": 1,
-          "paddingBottom": 8,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingBottom": 10,
+          "paddingLeft": 18,
+          "paddingRight": 18,
+          "paddingTop": 10,
         }
       }
     >
@@ -14183,7 +14290,8 @@ exports[`Storyshots Molecules/Select Size 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 16,
-              "opacity": 0.5,
+              "lineHeight": 26,
+              "opacity": 0.7,
             },
           ]
         }
@@ -14232,6 +14340,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             "color": "black",
             "fontFamily": "NotoSansKR-Bold",
             "fontSize": 32,
+            "lineHeight": 55,
             "marginBottom": 16,
           },
         ]
@@ -14337,9 +14446,8 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#1F1F1F",
                   "fontSize": 14,
-                  "height": 22,
+                  "lineHeight": 22,
                   "marginBottom": 0,
                   "marginLeft": 0,
                   "marginRight": 0,
@@ -14469,9 +14577,8 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#1F1F1F",
                   "fontSize": 14,
-                  "height": 22,
+                  "lineHeight": 22,
                   "marginBottom": 0,
                   "marginLeft": 0,
                   "marginRight": 0,
@@ -14520,9 +14627,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
               }
               style={
                 Array [
-                  Object {
-                    "tintColor": "#007AFF",
-                  },
+                  Object {},
                   Object {},
                 ]
               }
@@ -14624,15 +14729,12 @@ exports[`Storyshots Organisms/Form Default 1`] = `
               "borderWidth": 1,
               "flexDirection": "row",
               "justifyContent": "center",
-              "marginBottom": 2,
-              "marginLeft": 2,
-              "marginRight": 2,
-              "marginTop": 2,
+              "marginRight": 4,
               "opacity": 1,
-              "paddingBottom": 8,
-              "paddingLeft": 12,
-              "paddingRight": 12,
-              "paddingTop": 8,
+              "paddingBottom": 10,
+              "paddingLeft": 18,
+              "paddingRight": 18,
+              "paddingTop": 10,
             }
           }
         >
@@ -14649,6 +14751,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
                   "color": "black",
                   "fontFamily": "NotoSansKR-Medium",
                   "fontSize": 14,
+                  "lineHeight": 22,
                 },
               ]
             }
@@ -14674,15 +14777,12 @@ exports[`Storyshots Organisms/Form Default 1`] = `
               "borderWidth": 1,
               "flexDirection": "row",
               "justifyContent": "center",
-              "marginBottom": 2,
-              "marginLeft": 2,
-              "marginRight": 2,
-              "marginTop": 2,
+              "marginRight": 4,
               "opacity": 1,
-              "paddingBottom": 8,
-              "paddingLeft": 12,
-              "paddingRight": 12,
-              "paddingTop": 8,
+              "paddingBottom": 10,
+              "paddingLeft": 18,
+              "paddingRight": 18,
+              "paddingTop": 10,
             }
           }
         >
@@ -14699,7 +14799,8 @@ exports[`Storyshots Organisms/Form Default 1`] = `
                   "color": "black",
                   "fontFamily": "NotoSansKR-Regular",
                   "fontSize": 14,
-                  "opacity": 0.5,
+                  "lineHeight": 22,
+                  "opacity": 0.7,
                 },
               ]
             }
@@ -14725,15 +14826,12 @@ exports[`Storyshots Organisms/Form Default 1`] = `
               "borderWidth": 1,
               "flexDirection": "row",
               "justifyContent": "center",
-              "marginBottom": 2,
-              "marginLeft": 2,
-              "marginRight": 2,
-              "marginTop": 2,
+              "marginRight": 4,
               "opacity": 1,
-              "paddingBottom": 8,
-              "paddingLeft": 12,
-              "paddingRight": 12,
-              "paddingTop": 8,
+              "paddingBottom": 10,
+              "paddingLeft": 18,
+              "paddingRight": 18,
+              "paddingTop": 10,
             }
           }
         >
@@ -14750,7 +14848,8 @@ exports[`Storyshots Organisms/Form Default 1`] = `
                   "color": "black",
                   "fontFamily": "NotoSansKR-Regular",
                   "fontSize": 14,
-                  "opacity": 0.5,
+                  "lineHeight": 22,
+                  "opacity": 0.7,
                 },
               ]
             }
@@ -14852,9 +14951,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           }
           style={
             Array [
-              Object {
-                "tintColor": "#007AFF",
-              },
+              Object {},
               Object {
                 "marginRight": 4,
               },

@@ -3,7 +3,6 @@ import { GestureResponderEvent, TextStyle } from 'react-native';
 import styled from 'styled-components/native';
 
 import fonts from '../../styles/fonts';
-import spacing from '../../styles/spacing';
 import { getValidatedColor } from '../../utils/validator';
 import {
   HeadingSize,
@@ -53,29 +52,35 @@ const SHeading = styled.Text<HeadingProps>`
       case 1:
         return `
           font-size: ${fonts.size.XXL}px;
+          line-height: ${fonts.lineHeight.XXL}px;
           font-family: ${fonts.family.BOLD};
           margin-bottom: 16px;
         `;
       case 2:
         return `
           font-size: ${fonts.size.XL}px;
+          line-height: ${fonts.lineHeight.XL}px;
           font-family: ${fonts.family.BOLD};
           margin-bottom: 12px;
         `;
       case 3:
         return `
           font-size: ${fonts.size.L}px;
+          line-height: ${fonts.lineHeight.L}px;
           font-family: ${fonts.family.BOLD};
           margin-bottom: 12px;
         `;
       case 4:
         return `
           font-size: ${fonts.size.M}px;
+          line-height: ${fonts.lineHeight.M}px;
           font-family: ${fonts.family.BOLD};
+          margin-bottom: 4px;
         `;
       case 5:
         return `
           font-size: ${fonts.size.S}px;
+          line-height: ${fonts.lineHeight.S}px;
           font-family: ${fonts.family.BOLD};
         `;
     }
@@ -115,10 +120,12 @@ const SParagraph = styled.Text<ParagraphProps>`
       case 1:
         return `
           font-size: ${fonts.size.S}px;
+          line-height: ${fonts.lineHeight.S}px;
         `;
       case 2:
         return `
           font-size: ${fonts.size.XS}px;
+          line-height: ${fonts.lineHeight.XS}px;
         `;
     }
   }}
@@ -159,16 +166,17 @@ const SParagraph = styled.Text<ParagraphProps>`
 `;
 
 const SCaption = styled.Text<CaptionProps>`
-  ${props => `font-size: ${fonts.size.XXS}px`}
+  font-size: ${fonts.size.XXS}px;
+  line-height: ${fonts.lineHeight.XXS}px;
+
   /* color (default: black) */
   ${props => {
     return `
       color: ${getValidatedColor(props.color || 'black')}
     `;
   }}
-
   /* fontWeight (default: bold)*/
-  ${props => {
+    ${props => {
     if (props.fontWeight) {
       const family = fonts.family;
       type FontFamilyKey = keyof typeof family;
@@ -181,7 +189,7 @@ const SCaption = styled.Text<CaptionProps>`
     return `
       font-family: ${fonts.family.MEDIUM}
     `;
-  }}
+  }};
 `;
 
 export default { Heading, Paragraph, Caption };

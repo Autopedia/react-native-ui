@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/native';
 
-import border from '../../styles/border';
 import colors from '../../styles/colors';
-import spacing from '../../styles/spacing';
 
 interface DividerProps {
   margin?: number;

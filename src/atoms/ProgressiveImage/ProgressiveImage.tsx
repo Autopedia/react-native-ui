@@ -1,4 +1,3 @@
-import { Colors } from '../../styles';
 import React from 'react';
 import FastImage, {
   FastImageProps,
@@ -6,6 +5,8 @@ import FastImage, {
 } from 'react-native-fast-image';
 import LinearGradient from 'react-native-linear-gradient';
 import styled from 'styled-components/native';
+
+import { Colors } from '../../styles';
 
 const ProgressiveImage: React.FC<FastImageProps> = props => {
   const [loading, setLoading] = React.useState(true);

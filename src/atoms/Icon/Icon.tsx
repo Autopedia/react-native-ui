@@ -37,24 +37,20 @@ const Icon: React.FC<IconProps> = props => {
 };
 
 const STouchable = styled.TouchableOpacity<STouchableProps>`
-  ${props => `
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 4px;
-  `}
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: ${spacing.SPACE_4}px;
 `;
 const SIcon = styled.Image<SIconProps>`
   /* color (default: undefined) */
 
   ${props => {
-    return `tint-color: ${getValidatedColor(
-      props.color || systemColors.PRIMARY,
-    )}`;
+    return props.color ? `tint-color: ${getValidatedColor(props.color)}` : '';
   }}
 
   /* disabled (default: false) */
-  ${props => props.disabled && `opacity: 0.5`}
+  ${props => props.disabled && 'opacity: 0.5'}
 `;
 
 export default Icon;

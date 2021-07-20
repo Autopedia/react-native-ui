@@ -4,10 +4,8 @@ import React from 'react';
 import styled from 'styled-components/native';
 
 import { IterableProps } from '../../global/types';
-import border from '../../styles/border';
 import colors from '../../styles/colors';
 import fonts from '../../styles/fonts';
-import spacing from '../../styles/spacing';
 import { getValidatedColor } from '../../utils/validator';
 import { SelectLayout, SelectSize } from './SelectOption.types';
 
@@ -73,13 +71,9 @@ const SelectOption = <V extends unknown>(
 };
 
 const SContainer = styled.TouchableOpacity<SContainerProps>`
-  ${props => {
-    return `
-      border-width: 1px;
-      border-radius: 20px;
-      padding: 8px 12px;
-    `;
-  }}
+  border-width: 1px;
+  border-radius: 20px;
+  padding: 10px 18px;
 
   /* layout (default: inline) */
   ${props => {
@@ -101,7 +95,7 @@ const SContainer = styled.TouchableOpacity<SContainerProps>`
         return `
           flex-direction: row;
           justify-content: center;
-          margin: 2px;
+          margin-right: 4px;
         `;
     }
   }}
@@ -147,12 +141,14 @@ const SLabel = styled.Text<SLabelProps>`
         return `
           font-family: ${fonts.family.REGULAR};
           font-size: ${fonts.size.XS}px;
+          line-height: ${fonts.lineHeight.XS}px;
           text-align: center;
         `;
       default:
         return `
           font-family: ${fonts.family.REGULAR};
           font-size: ${fonts.size.XS}px;
+          line-height: ${fonts.lineHeight.XS}px;
         `;
     }
   }}
@@ -162,9 +158,15 @@ const SLabel = styled.Text<SLabelProps>`
     if (props.layout === 'block') {
       switch (props.size) {
         case 'sm':
-          return `font-size: ${fonts.size.XS}px;`;
+          return `
+            font-size: ${fonts.size.XS}px;
+            line-height: ${fonts.lineHeight.XS}px;
+          `;
         default:
-          return `font-size: ${fonts.size.S}px;`;
+          return `
+            font-size: ${fonts.size.S}px;
+            line-height: ${fonts.lineHeight.S}px;
+          `;
       }
     }
   }}
@@ -181,10 +183,10 @@ const SLabel = styled.Text<SLabelProps>`
     switch (props.selected) {
       case true:
         return `
-          font-family: ${fonts.family.MEDIUM}
+          font-family: ${fonts.family.MEDIUM};
         `;
       case false:
-        return `opacity: 0.5`;
+        return 'opacity:0.7;';
     }
   }}
 
@@ -200,9 +202,8 @@ const SLabel = styled.Text<SLabelProps>`
 `;
 
 const SSubLabel = styled.Text<SLabelProps>`
-  ${props => `
-    font-size: ${fonts.size.XXS}px;
-  `}
+  font-size: ${fonts.size.XXS}px;
+  line-height: ${fonts.lineHeight.XXS}px;
 
   ${props => {
     const textColor = getValidatedColor(props.textColor || 'black');

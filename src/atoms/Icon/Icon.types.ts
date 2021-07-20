@@ -1,9 +1,10 @@
 import {
-  GestureResponderEvent,
-  StyleProp,
-  ImageStyle,
   FlexStyle,
+  GestureResponderEvent,
+  ImageStyle,
+  StyleProp,
 } from 'react-native';
+
 export interface IconProps {
   source: any;
   color?: string;

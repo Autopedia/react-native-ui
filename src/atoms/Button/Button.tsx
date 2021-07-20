@@ -3,16 +3,8 @@ import lodash from 'lodash';
 import React from 'react';
 import styled from 'styled-components/native';
 
-import {
-  ButtonProps,
-  SButtonTextProps,
-  SIconProps,
-} from '../../atoms/Button/Button.types';
-import Icon from '../../atoms/Icon';
-import border from '../../styles/border';
 import fonts from '../../styles/fonts';
 import { grayscaleColors } from '../../styles/grayscale-colors';
-import spacing from '../../styles/spacing';
 import { SubColorKey, subColorMap, subColors } from '../../styles/sub-colors';
 import {
   SystemColorKey,
@@ -20,25 +12,31 @@ import {
   systemColors,
 } from '../../styles/system-colors';
 import { getValidatedColor } from '../../utils/validator';
+import Icon from '../Icon';
+import { ButtonProps, SButtonTextProps, SIconProps } from './Button.types';
 
 const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
   const getUnderlayColor = () => {
-    if (props.type === 'text') return grayscaleColors.GRAY_300;
+    if (props.type === 'text') {
+      return grayscaleColors.GRAY_300;
+    }
 
     const color = getValidatedColor(props.color || systemColors.PRIMARY);
 
     if (Object.keys(systemColorMap).includes(color)) {
       const touchedColorName = systemColorMap[color] + '_TOUCHED';
 
-      if (Object.keys(systemColors).includes(touchedColorName))
+      if (Object.keys(systemColors).includes(touchedColorName)) {
         return systemColors[touchedColorName as SystemColorKey];
+      }
     }
 
     if (Object.keys(subColorMap).includes(color)) {
       const touchedColorName = subColorMap[color] + '_TOUCHED';
 
-      if (Object.keys(subColors).includes(touchedColorName))
+      if (Object.keys(subColors).includes(touchedColorName)) {
         return subColors[touchedColorName as SubColorKey];
+      }
     }
 
     return Color(color).alpha(0.5).string();
@@ -50,15 +48,17 @@ const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
     if (Object.keys(systemColorMap).includes(color)) {
       const touchedColorName = systemColorMap[color] + '_DISABLED';
 
-      if (Object.keys(systemColors).includes(touchedColorName))
+      if (Object.keys(systemColors).includes(touchedColorName)) {
         return systemColors[touchedColorName as SystemColorKey];
+      }
     }
 
     if (Object.keys(subColorMap).includes(color)) {
       const touchedColorName = subColorMap[color] + '_DISABLED';
 
-      if (Object.keys(subColors).includes(touchedColorName))
+      if (Object.keys(subColors).includes(touchedColorName)) {
         return subColors[touchedColorName as SubColorKey];
+      }
     }
 
     return Color(color).alpha(0.5).string();
@@ -80,6 +80,7 @@ const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
     'disabled',
     'iconPosition',
     'absoluteIcon',
+    'textColor',
   ]);
 
   return (
@@ -91,8 +92,10 @@ const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
         {props.icon && props.iconPosition !== 'right' && (
           <SIcon
             source={containerProps.icon}
-            color={containerProps.textColor}
             {...iconProps}
+            {...(iconProps.type === 'text'
+              ? { color: iconProps.textColor }
+              : {})}
           />
         )}
         {typeof children === 'string' ? (
@@ -105,8 +108,10 @@ const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
         {containerProps.icon && containerProps.iconPosition === 'right' && (
           <SIcon
             source={containerProps.icon}
-            color={containerProps.textColor}
             {...iconProps}
+            {...(iconProps.type === 'text'
+              ? { color: iconProps.textColor }
+              : {})}
           />
         )}
       </>
@@ -124,7 +129,7 @@ const SContainer = styled.TouchableHighlight<ButtonProps>`
     switch (type) {
       case 'inline':
         return `
-          padding: 14px;
+          padding: 14px
         `;
 
       case 'block':
@@ -136,7 +141,7 @@ const SContainer = styled.TouchableHighlight<ButtonProps>`
         return `
           border: none;
           border-radius: 4px;
-          padding: 2px;
+          padding: 2px
         `;
     }
   }}
@@ -168,7 +173,9 @@ const SContainer = styled.TouchableHighlight<ButtonProps>`
   /* disabled (default: false) */
   ${props => {
     if (props.disabled) {
-      if (props.type === 'text') return;
+      if (props.type === 'text') {
+        return;
+      }
 
       return `
         background-color: ${props.disabledColor};
@@ -179,17 +186,13 @@ const SContainer = styled.TouchableHighlight<ButtonProps>`
 
 const SButtonText = styled.Text<SButtonTextProps>`
   text-align: center;
-  ${props => {
-    return `
-      font-family: ${fonts.family.MEDIUM};
-    `;
-  }}
+  font-family: ${fonts.family.MEDIUM};
+  font-size: ${fonts.size.S}px;
+  line-height: ${fonts.lineHeight.S}px;
   /* textColor */
   ${props => {
     return `color: ${props.textColor}`;
-  }} 
-  
-  /* disabled */
+  }} /* disabled */
   ${props => {
     if (props.disabled) {
       return `
@@ -209,12 +212,12 @@ const SIcon = styled(Icon)<SIconProps>`
     if (props.type === 'block' && props.absoluteIcon) {
       return `
         position:absolute;
-        ${SIconPosition} : 16px;
+        ${SIconPosition} : 16px
       `;
     }
 
     return `
-    ${SMargin}: 6px;
+    ${SMargin}: 8px
     `;
   }}
 `;
