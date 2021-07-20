@@ -4,6 +4,7 @@ import './atoms/Divider/Divider.stories';
 import './atoms/FormDivider/FormDivider.stories';
 import './atoms/FormLabel/FormLabel.stories';
 import './atoms/Icon/Icon.stories';
+import './atoms/LoadingDots/LoadingDots.stories';
 import './atoms/LoadingOverlay/LoadingOverlay.stories';
 import './atoms/Markdown/Markdown.stories';
 import './atoms/Message/Message.stories';
