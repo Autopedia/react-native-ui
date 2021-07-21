@@ -1,1 +1,1 @@
-export * from './LoadingDots';
+export { LoadingDots } from './LoadingDots';
