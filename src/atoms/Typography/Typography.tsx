@@ -54,28 +54,24 @@ const SHeading = styled.Text<HeadingProps>`
           font-size: ${fonts.size.XXL}px;
           line-height: ${fonts.lineHeight.XXL}px;
           font-family: ${fonts.family.BOLD};
-          margin-bottom: 16px;
         `;
       case 2:
         return `
           font-size: ${fonts.size.XL}px;
           line-height: ${fonts.lineHeight.XL}px;
           font-family: ${fonts.family.BOLD};
-          margin-bottom: 12px;
         `;
       case 3:
         return `
           font-size: ${fonts.size.L}px;
           line-height: ${fonts.lineHeight.L}px;
           font-family: ${fonts.family.BOLD};
-          margin-bottom: 12px;
         `;
       case 4:
         return `
           font-size: ${fonts.size.M}px;
           line-height: ${fonts.lineHeight.M}px;
           font-family: ${fonts.family.BOLD};
-          margin-bottom: 4px;
         `;
       case 5:
         return `
