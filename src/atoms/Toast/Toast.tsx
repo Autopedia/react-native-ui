@@ -23,7 +23,7 @@ type BasicToastProps = {
 export const BasicToast: React.FC<BasicToastProps> = ({ message, onPress }) => {
   return (
     <SContainer>
-      <SView>
+      <SToastWrapper>
         <Paragraph size={2} color={colors.WHITE}>
           {message}
         </Paragraph>
@@ -32,7 +32,7 @@ export const BasicToast: React.FC<BasicToastProps> = ({ message, onPress }) => {
           touchable
           onPress={onPress}
         />
-      </SView>
+      </SToastWrapper>
     </SContainer>
   );
 };
@@ -41,7 +41,7 @@ const SContainer = styled(SafeAreaView)`
   width: 100%;
 `;
 
-const SView = styled.View`
+const SToastWrapper = styled.View`
   padding: 12px 10px 12px 16px;
   border-radius: 8px;
   margin-horizontal: 20px;
