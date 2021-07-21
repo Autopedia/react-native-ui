@@ -7,11 +7,24 @@ import { BasicToast, Toast, toastConfig } from './Toast';
 import styled from 'styled-components/native';
 import { Button } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { text } from '@storybook/addon-knobs';
 
 storiesOf('Atoms/Toast', module)
   .addDecorator(SThemeDecorator)
   .addDecorator(CenterContainerDecorator)
   .add('Playground', () => {
+    return (
+      <SSafeAreaProvider>
+        <SView>
+          <BasicToast
+            message={text('text', 'Toast Message')}
+            onPress={() => console.log('hello')}
+          />
+        </SView>
+      </SSafeAreaProvider>
+    );
+  })
+  .add('Message', () => {
     return (
       <SSafeAreaProvider>
         <SView>
