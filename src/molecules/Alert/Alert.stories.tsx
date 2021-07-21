@@ -30,7 +30,7 @@ const AlertWrapper: React.FC<AlertProps> = props => {
       </Button>
       <Alert
         ref={alert}
-        contents={props.contents}
+        content={props.content}
         title={props.title}
         okText={props.okText}
         onPressOk={props.onPressOk}
@@ -51,21 +51,17 @@ storiesOf('Molecules/Alert', module)
   .add('Playground', () => {
     return (
       <AlertWrapper
-        contents={text(
+        content={text(
           'contents',
           `땡땡땡이 완료되지 않았습니다.\n그래도 나가시겠습니까?`,
         )}
         title={text('title', undefined)}
         okText={text('okText', '확인')}
-        onPressOk={() => {
-          RNAlert.alert('확인 버튼');
-        }}
+        onPressOk={() => action('onPress')()}
         okTextStrong={boolean('okTextStrong', undefined)}
         okTextColor={text('okTextColor', undefined)}
         cancelText={text('cancelText', undefined)}
-        onPressCancel={() => {
-          RNAlert.alert('취소 버튼');
-        }}
+        onPressCancel={() => action('onPress')()}
         cancelTextStrong={boolean('cancelTextStrong', undefined)}
         cancelTextColor={text('cancelTextColor', undefined)}
       />
@@ -75,7 +71,7 @@ storiesOf('Molecules/Alert', module)
     return (
       <AlertWrapper
         title="타이틀"
-        contents={`땡땡땡이 완료되지 않았습니다.\n그래도 나가시겠습니까?`}
+        content={`땡땡땡이 완료되지 않았습니다.\n그래도 나가시겠습니까?`}
       />
     );
   })
@@ -88,14 +84,14 @@ storiesOf('Molecules/Alert', module)
             <Text>아이콘 타이틀</Text>
           </View>
         }
-        contents={`땡땡땡이 완료되지 않았습니다.\n그래도 나가시겠습니까?`}
+        content={`땡땡땡이 완료되지 않았습니다.\n그래도 나가시겠습니까?`}
       />
     );
   })
   .add('ReactNode Contents Alert', () => {
     return (
       <AlertWrapper
-        contents={
+        content={
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
             <Icon source={require('../../assets/icons/camera/camera.png')} />
             <Text>아이콘 내용</Text>
@@ -107,7 +103,7 @@ storiesOf('Molecules/Alert', module)
   .add('Two Button Alert', () => {
     return (
       <AlertWrapper
-        contents={`땡땡땡이 완료되지 않았습니다.\n그래도 나가시겠습니까?`}
+        content={`땡땡땡이 완료되지 않았습니다.\n그래도 나가시겠습니까?`}
         okText="네"
         cancelText="아니오"
         okTextColor="#007AFF"
@@ -118,9 +114,9 @@ storiesOf('Molecules/Alert', module)
   .add('Vertical Button Alert', () => {
     return (
       <AlertWrapper
-        contents={`땡땡땡이 완료되지 않았습니다.\n그래도 나가시겠습니까?`}
+        content={`땡땡땡이 완료되지 않았습니다.\n그래도 나가시겠습니까?`}
         okText="자세히 알아보기"
-        cancelText=""
+        cancelText="닫기"
         cancelTextStrong
         cancelTextColor="#007AFF"
       />
