@@ -13,6 +13,8 @@ import Markdown from './Markdown';
 import Message from './Message';
 import Switch from './Switch';
 import Sign from './Sign';
+import { LoadingDots } from './LoadingDots';
+import { Toast } from './Toast';
 
 export {
   Button,
@@ -30,4 +32,6 @@ export {
   Message,
   Switch,
   Sign,
+  LoadingDots,
+  Toast,
 };
