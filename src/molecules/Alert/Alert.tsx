@@ -50,7 +50,7 @@ const Alert = React.forwardRef<AlertHandle, AlertProps>((props, ref) => {
     <RNModal transparent visible={visible} onRequestClose={handleClose}>
       <SAlertBackground>
         <SAlertContainer>
-          <SAlertContents>
+          <SAlertContent>
             {props.title && (
               <SAlertTitleView>
                 {typeof props.title === 'string' ? (
@@ -61,11 +61,11 @@ const Alert = React.forwardRef<AlertHandle, AlertProps>((props, ref) => {
               </SAlertTitleView>
             )}
             {typeof props.content === 'string' ? (
-              <SAlertContentsText size={1}>{props.content}</SAlertContentsText>
+              <SAlertContentText size={1}>{props.content}</SAlertContentText>
             ) : (
               props.content
             )}
-          </SAlertContents>
+          </SAlertContent>
           <Divider margin={0} />
           <SAlertFooter vertical={vertical}>
             {!!props.cancelText && (
@@ -124,21 +124,23 @@ const SAlertContainer = styled.View`
   background-color: ${colors.CARD};
 `;
 
-const SAlertContents = styled.View`
+const SAlertContent = styled.View`
   padding: 32px 16px;
   justify-content: center;
   align-items: center;
 `;
 
-const SAlertContentsText = styled(Typography.Paragraph)`
+const SAlertContentText = styled(Typography.Paragraph)`
   text-align: center;
 `;
+SAlertContentText.displayName = 'ContentText';
 
 const SAlertTitleView = styled.View`
   align-items: center;
 `;
 
 const SAlertTitleText = styled(Typography.Heading)``;
+SAlertTitleText.displayName = 'TitleText';
 
 const SAlertFooter = styled.View<VerticalProps>`
   width: 100%;
