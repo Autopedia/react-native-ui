@@ -8,7 +8,7 @@ import 'jest-styled-components';
 import { shallow } from 'enzyme';
 import React from 'react';
 
-import { Tooltip } from './Tooltip';
+import { STooltipProps, Tooltip } from './Tooltip';
 
 import { Text } from 'react-native';
 
@@ -32,10 +32,9 @@ describe('[Tooltip] Unit Test', () => {
     wrapper.simulate('layout', mockLayoutEvent);
 
     const container = wrapper.find('Styled(View)').at(1);
+    const props = container.props() as STooltipProps;
 
-    //@ts-ignore
-    expect(container.props().layoutHeight).toEqual(TEST_SIZE);
-    //@ts-ignore
-    expect(container.props().layoutWidth).toEqual(TEST_SIZE);
+    expect(props.layoutHeight).toEqual(TEST_SIZE);
+    expect(props.layoutWidth).toEqual(TEST_SIZE);
   });
 });

@@ -28,15 +28,6 @@ export const Tooltip: React.FC<TooltipProps> = ({
     },
   );
 
-  const tooltipProps: STooltipProps = {
-    location,
-    tailPosition,
-    offset,
-    style,
-    layoutHeight: layout.height,
-    layoutWidth: layout.width,
-  };
-
   const tailProps: TailProps = {
     location,
     tailPosition,
@@ -52,14 +43,20 @@ export const Tooltip: React.FC<TooltipProps> = ({
   return (
     <SContainer onLayout={onLayout}>
       {children}
-      <STooltip {...tooltipProps}>
+      <STooltip
+        location={location}
+        tailPosition={tailPosition}
+        offset={offset}
+        layoutHeight={layout.height}
+        layoutWidth={layout.width}
+        style={style}
+      >
         <SContent>
           <SMessage>{message}</SMessage>
         </SContent>
-        {(location === 'top' || location === 'bottom') && (
+        {location === 'top' || location === 'bottom' ? (
           <SVerticalTail {...tailProps} />
-        )}
-        {(location === 'left' || location === 'right') && (
+        ) : (
           <SHorizontalTailContainer {...tailProps}>
             <SHorizontalTail {...tailProps} />
           </SHorizontalTailContainer>
@@ -69,7 +66,7 @@ export const Tooltip: React.FC<TooltipProps> = ({
   );
 };
 
-type STooltipProps = Omit<TooltipProps, 'message' | 'children'> & {
+export type STooltipProps = Omit<TooltipProps, 'message' | 'children'> & {
   layoutWidth: number;
   layoutHeight: number;
 };
