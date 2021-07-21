@@ -7,7 +7,7 @@ import colors from '../../styles/colors';
 import { AlertHandle } from './Alert.types';
 
 export interface AlertProps {
-  contents: string | React.ReactNode;
+  content: string | React.ReactNode;
   title?: string | React.ReactNode;
   okText?: string;
   onPressOk?: () => void;
@@ -60,15 +60,15 @@ const Alert = React.forwardRef<AlertHandle, AlertProps>((props, ref) => {
                 )}
               </SAlertTitleView>
             )}
-            {typeof props.contents === 'string' ? (
-              <SAlertContentsText size={1}>{props.contents}</SAlertContentsText>
+            {typeof props.content === 'string' ? (
+              <SAlertContentsText size={1}>{props.content}</SAlertContentsText>
             ) : (
-              props.contents
+              props.content
             )}
           </SAlertContents>
           <Divider margin={0} />
           <SAlertFooter vertical={vertical}>
-            {props.cancelText !== undefined && (
+            {!!props.cancelText && (
               <>
                 <SConfirmButton onPress={handleCancel} vertical={vertical}>
                   <SConfirmButtonText
@@ -76,7 +76,7 @@ const Alert = React.forwardRef<AlertHandle, AlertProps>((props, ref) => {
                     color={props.cancelTextColor}
                     strong={props.cancelTextStrong}
                   >
-                    {props.cancelText || '닫기'}
+                    {props.cancelText}
                   </SConfirmButtonText>
                 </SConfirmButton>
                 {vertical ? <Divider margin={0} /> : <VerticalDivider />}
@@ -154,12 +154,9 @@ const SConfirmButton = styled.TouchableOpacity<VerticalProps>`
   padding: 15px 0px;
   justify-content: center;
   align-items: center;
-  ${({ vertical }) =>
-    !vertical &&
-    css`
-      flex: 1;
-    `}
+  ${({ vertical }) => !vertical && `flex: 1;`}
 `;
+SConfirmButton.displayName = 'AlertButton';
 
 const SConfirmButtonText = styled(Typography.Paragraph)<ConfirmButtonTextProps>`
   color: ${({ color }) => (color ? color : '#000')};
