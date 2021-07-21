@@ -9,6 +9,7 @@ import Alert from '.';
 import { shallow, ShallowWrapper } from 'enzyme';
 import { AlertHandle } from './Alert.types';
 import { AlertProps } from './Alert';
+import { View, Text } from 'react-native';
 
 const AlertWrapper: React.FC<AlertProps> = props => {
   const alertRef = useRef<AlertHandle>(null);
@@ -42,7 +43,7 @@ const findButton = (
 describe('[Alert] Unit Test', () => {
   it('should action without onPressOK, onPressCancel props', () => {
     const wrapper = shallow(
-      <AlertWrapper title="title" content="Test Alert" cancelText="닫기" />,
+      <AlertWrapper content="Test Alert" cancelText="닫기" />,
     );
     const Alert = wrapper.find('ForwardRef').dive();
     const useStateSpy = jest.spyOn(React, 'useState');
@@ -64,7 +65,6 @@ describe('[Alert] Unit Test', () => {
     const onPressOkMock = jest.fn();
     const wrapper = shallow(
       <AlertWrapper
-        title="title"
         content="Test Alert"
         onPressOk={onPressOkMock}
         okText="OK"
@@ -82,7 +82,6 @@ describe('[Alert] Unit Test', () => {
     const onPressCancelMock = jest.fn();
     const wrapper = shallow(
       <AlertWrapper
-        title="title"
         content="Test Alert"
         onPressCancel={onPressCancelMock}
         okText="OK"
@@ -95,5 +94,60 @@ describe('[Alert] Unit Test', () => {
       .simulate('press');
 
     expect(onPressCancelMock).toHaveBeenCalledTimes(1);
+  });
+
+  it('should render button text', () => {
+    const wrapper = shallow(
+      <AlertWrapper content="Test Alert" okText="OK" cancelText="Cancel" />,
+    );
+    const Alert = wrapper.find('ForwardRef').dive();
+    const cancelButton = Alert.find('AlertButton').findWhere(w =>
+      findButton(w, 'handleCancel'),
+    );
+    const okButton = Alert.find('AlertButton').findWhere(w =>
+      findButton(w, 'handleOk'),
+    );
+
+    expect(okButton.text()).toEqual('OK');
+    expect(cancelButton.text()).toEqual('Cancel');
+  });
+
+  it('should render title, content', () => {
+    const textWrapper = shallow(
+      <AlertWrapper title="Test Title" content="Test Alert" />,
+    );
+    const textAlert = textWrapper.find('ForwardRef').dive();
+    const titleText = textAlert.find('TitleText').text();
+    const contentText = textAlert.find('ContentText').text();
+
+    expect(titleText).toEqual('Test Title');
+    expect(contentText).toEqual('Test Alert');
+
+    const reactNodeWrapper = shallow(
+      <AlertWrapper
+        title={
+          <View>
+            <Text testID="titleText">ReactNode Title</Text>
+          </View>
+        }
+        content={
+          <View>
+            <Text testID="contentText">ReactNode Content</Text>
+          </View>
+        }
+      />,
+    );
+    const reactNodeAlert = reactNodeWrapper.find('ForwardRef').dive();
+    const reactNodeTitle = reactNodeAlert.findWhere(
+      w => w.prop('testID') === 'titleText',
+    );
+    const reactNodeContent = reactNodeAlert.findWhere(
+      w => w.prop('testID') === 'contentText',
+    );
+
+    expect(reactNodeTitle.exists()).toBeTruthy();
+    expect(reactNodeTitle.children().text()).toEqual('ReactNode Title');
+    expect(reactNodeContent.exists()).toBeTruthy();
+    expect(reactNodeContent.children().text()).toEqual('ReactNode Content');
   });
 });
