@@ -41,26 +41,6 @@ const findButton = (
 };
 
 describe('[Alert] Unit Test', () => {
-  it('should action without onPressOK, onPressCancel props', () => {
-    const wrapper = shallow(
-      <AlertWrapper content="Test Alert" cancelText="닫기" />,
-    );
-    const Alert = wrapper.find('ForwardRef').dive();
-    const useStateSpy = jest.spyOn(React, 'useState');
-
-    const cancelButton = Alert.find('AlertButton').findWhere(w =>
-      findButton(w, 'handleCancel'),
-    );
-    const okButton = Alert.find('AlertButton').findWhere(w =>
-      findButton(w, 'handleOk'),
-    );
-    cancelButton.simulate('press');
-    okButton.simulate('press');
-
-    expect(useStateSpy).toBeCalled();
-    expect(useStateSpy).toHaveBeenCalledTimes(2);
-  });
-
   it('should action onPressOk', () => {
     const onPressOkMock = jest.fn();
     const wrapper = shallow(
@@ -113,26 +93,29 @@ describe('[Alert] Unit Test', () => {
   });
 
   it('should render title, content', () => {
+    const titleMock = 'Test Title';
+    const contentMock = 'Test Alert';
+
     const textWrapper = shallow(
-      <AlertWrapper title="Test Title" content="Test Alert" />,
+      <AlertWrapper title={titleMock} content={contentMock} />,
     );
     const textAlert = textWrapper.find('ForwardRef').dive();
     const titleText = textAlert.find('TitleText').text();
     const contentText = textAlert.find('ContentText').text();
 
-    expect(titleText).toEqual('Test Title');
-    expect(contentText).toEqual('Test Alert');
+    expect(titleText).toEqual(titleMock);
+    expect(contentText).toEqual(contentMock);
 
     const reactNodeWrapper = shallow(
       <AlertWrapper
         title={
           <View>
-            <Text testID="titleText">ReactNode Title</Text>
+            <Text testID="titleText">{titleMock}</Text>
           </View>
         }
         content={
           <View>
-            <Text testID="contentText">ReactNode Content</Text>
+            <Text testID="contentText">{contentMock}</Text>
           </View>
         }
       />,
@@ -146,8 +129,8 @@ describe('[Alert] Unit Test', () => {
     );
 
     expect(reactNodeTitle.exists()).toBeTruthy();
-    expect(reactNodeTitle.children().text()).toEqual('ReactNode Title');
+    expect(reactNodeTitle.children().text()).toEqual(titleMock);
     expect(reactNodeContent.exists()).toBeTruthy();
-    expect(reactNodeContent.children().text()).toEqual('ReactNode Content');
+    expect(reactNodeContent.children().text()).toEqual(contentMock);
   });
 });
