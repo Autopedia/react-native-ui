@@ -20,5 +20,6 @@ import './molecules/Rating/Rating.stories';
 import './molecules/Modal/Modal.stories';
 import './molecules/Select/Select.stories';
 import './molecules/FormItem/FormItem.stories';
+import './molecules/Alert/Alert.stories';
 
 import './organisms/Form/Form.stories';
