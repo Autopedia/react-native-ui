@@ -7407,6 +7407,1722 @@ exports[`Storyshots Atoms/TextInput Underline 1`] = `
 </View>
 `;
 
+exports[`Storyshots Atoms/Tooltip Offset 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#007AFF",
+            "borderColor": "black",
+            "borderRadius": 26,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 14,
+            "paddingRight": 14,
+            "paddingTop": 14,
+          },
+        ]
+      }
+    >
+      <Text
+        includeFontPadding={false}
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "NotoSansKR-Medium",
+              "fontSize": 16,
+              "lineHeight": 26,
+              "textAlign": "center",
+            },
+          ]
+        }
+        textColor="#FFFFFF"
+      >
+        Sample Button
+      </Text>
+    </View>
+    <View
+      layoutHeight={0}
+      layoutWidth={0}
+      location="top"
+      offset={10}
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "bottom": 10,
+            "position": "absolute",
+          },
+        ]
+      }
+      tailPosition="center"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#2E3032",
+              "borderRadius": 20,
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Tooltip
+        </Text>
+      </View>
+      <View
+        location="top"
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "borderBottomWidth": 0,
+              "borderColor": "transparent",
+              "borderLeftWidth": 6,
+              "borderRightWidth": 6,
+              "borderTopColor": "#2E3032",
+              "borderTopWidth": 12,
+              "bottom": -10,
+              "height": 0,
+              "position": "absolute",
+              "width": 0,
+            },
+          ]
+        }
+        tailPosition="center"
+      />
+    </View>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#007AFF",
+            "borderColor": "black",
+            "borderRadius": 26,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 14,
+            "paddingRight": 14,
+            "paddingTop": 14,
+          },
+        ]
+      }
+    >
+      <Text
+        includeFontPadding={false}
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "NotoSansKR-Medium",
+              "fontSize": 16,
+              "lineHeight": 26,
+              "textAlign": "center",
+            },
+          ]
+        }
+        textColor="#FFFFFF"
+      >
+        Sample Button
+      </Text>
+    </View>
+    <View
+      layoutHeight={0}
+      layoutWidth={0}
+      location="bottom"
+      offset={20}
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "position": "absolute",
+            "top": 20,
+          },
+        ]
+      }
+      tailPosition="center"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#2E3032",
+              "borderRadius": 20,
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Tooltip with larger offset
+        </Text>
+      </View>
+      <View
+        location="bottom"
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "borderBottomColor": "#2E3032",
+              "borderBottomWidth": 12,
+              "borderColor": "transparent",
+              "borderLeftWidth": 6,
+              "borderRightWidth": 6,
+              "borderTopWidth": 0,
+              "height": 0,
+              "position": "absolute",
+              "top": -10,
+              "width": 0,
+            },
+          ]
+        }
+        tailPosition="center"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Tooltip Playground 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#007AFF",
+            "borderColor": "black",
+            "borderRadius": 26,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 14,
+            "paddingRight": 14,
+            "paddingTop": 14,
+          },
+        ]
+      }
+    >
+      <Text
+        includeFontPadding={false}
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "NotoSansKR-Medium",
+              "fontSize": 16,
+              "lineHeight": 26,
+              "textAlign": "center",
+            },
+          ]
+        }
+        textColor="#FFFFFF"
+      >
+        Sample Button
+      </Text>
+    </View>
+    <View
+      layoutHeight={0}
+      layoutWidth={0}
+      location="bottom"
+      offset={10}
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "position": "absolute",
+            "top": 10,
+          },
+        ]
+      }
+      tailPosition="center"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#2E3032",
+              "borderRadius": 20,
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Tooltip
+        </Text>
+      </View>
+      <View
+        location="bottom"
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "borderBottomColor": "#2E3032",
+              "borderBottomWidth": 12,
+              "borderColor": "transparent",
+              "borderLeftWidth": 6,
+              "borderRightWidth": 6,
+              "borderTopWidth": 0,
+              "height": 0,
+              "position": "absolute",
+              "top": -10,
+              "width": 0,
+            },
+          ]
+        }
+        tailPosition="center"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Tooltip Position 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#007AFF",
+            "borderColor": "black",
+            "borderRadius": 26,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 14,
+            "paddingRight": 14,
+            "paddingTop": 14,
+          },
+        ]
+      }
+    >
+      <Text
+        includeFontPadding={false}
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "NotoSansKR-Medium",
+              "fontSize": 16,
+              "lineHeight": 26,
+              "textAlign": "center",
+            },
+          ]
+        }
+        textColor="#FFFFFF"
+      >
+        Sample Button
+      </Text>
+    </View>
+    <View
+      layoutHeight={0}
+      layoutWidth={0}
+      location="top"
+      offset={10}
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "bottom": 10,
+            "position": "absolute",
+          },
+        ]
+      }
+      tailPosition="center"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#2E3032",
+              "borderRadius": 20,
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Top Tooltip
+        </Text>
+      </View>
+      <View
+        location="top"
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "borderBottomWidth": 0,
+              "borderColor": "transparent",
+              "borderLeftWidth": 6,
+              "borderRightWidth": 6,
+              "borderTopColor": "#2E3032",
+              "borderTopWidth": 12,
+              "bottom": -10,
+              "height": 0,
+              "position": "absolute",
+              "width": 0,
+            },
+          ]
+        }
+        tailPosition="center"
+      />
+    </View>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#007AFF",
+            "borderColor": "black",
+            "borderRadius": 26,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 14,
+            "paddingRight": 14,
+            "paddingTop": 14,
+          },
+        ]
+      }
+    >
+      <Text
+        includeFontPadding={false}
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "NotoSansKR-Medium",
+              "fontSize": 16,
+              "lineHeight": 26,
+              "textAlign": "center",
+            },
+          ]
+        }
+        textColor="#FFFFFF"
+      >
+        Sample Button
+      </Text>
+    </View>
+    <View
+      layoutHeight={0}
+      layoutWidth={0}
+      location="right"
+      offset={10}
+      style={
+        Array [
+          Object {
+            "height": 0,
+            "justifyContent": "center",
+            "left": 10,
+            "position": "absolute",
+          },
+        ]
+      }
+      tailPosition="center"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#2E3032",
+              "borderRadius": 20,
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Right Tooltip
+        </Text>
+      </View>
+      <View
+        location="right"
+        style={
+          Array [
+            Object {
+              "height": "100%",
+              "justifyContent": "center",
+              "left": -10,
+              "position": "absolute",
+            },
+          ]
+        }
+        tailPosition="center"
+      >
+        <View
+          location="right"
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 6,
+                "borderColor": "transparent",
+                "borderLeftWidth": 0,
+                "borderRightColor": "#2E3032",
+                "borderRightWidth": 12,
+                "borderTopWidth": 6,
+                "height": 0,
+                "width": 0,
+              },
+            ]
+          }
+          tailPosition="center"
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#007AFF",
+            "borderColor": "black",
+            "borderRadius": 26,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 14,
+            "paddingRight": 14,
+            "paddingTop": 14,
+          },
+        ]
+      }
+    >
+      <Text
+        includeFontPadding={false}
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "NotoSansKR-Medium",
+              "fontSize": 16,
+              "lineHeight": 26,
+              "textAlign": "center",
+            },
+          ]
+        }
+        textColor="#FFFFFF"
+      >
+        Sample Button
+      </Text>
+    </View>
+    <View
+      layoutHeight={0}
+      layoutWidth={0}
+      location="left"
+      offset={10}
+      style={
+        Array [
+          Object {
+            "height": 0,
+            "justifyContent": "center",
+            "position": "absolute",
+            "right": 10,
+          },
+        ]
+      }
+      tailPosition="center"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#2E3032",
+              "borderRadius": 20,
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Left Tooltip
+        </Text>
+      </View>
+      <View
+        location="left"
+        style={
+          Array [
+            Object {
+              "height": "100%",
+              "justifyContent": "center",
+              "position": "absolute",
+              "right": -10,
+            },
+          ]
+        }
+        tailPosition="center"
+      >
+        <View
+          location="left"
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 6,
+                "borderColor": "transparent",
+                "borderLeftColor": "#2E3032",
+                "borderLeftWidth": 12,
+                "borderRightWidth": 0,
+                "borderTopWidth": 6,
+                "height": 0,
+                "width": 0,
+              },
+            ]
+          }
+          tailPosition="center"
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#007AFF",
+            "borderColor": "black",
+            "borderRadius": 26,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 14,
+            "paddingRight": 14,
+            "paddingTop": 14,
+          },
+        ]
+      }
+    >
+      <Text
+        includeFontPadding={false}
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "NotoSansKR-Medium",
+              "fontSize": 16,
+              "lineHeight": 26,
+              "textAlign": "center",
+            },
+          ]
+        }
+        textColor="#FFFFFF"
+      >
+        Sample Button
+      </Text>
+    </View>
+    <View
+      layoutHeight={0}
+      layoutWidth={0}
+      location="bottom"
+      offset={10}
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "position": "absolute",
+            "top": 10,
+          },
+        ]
+      }
+      tailPosition="center"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#2E3032",
+              "borderRadius": 20,
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Bottom Tooltip
+        </Text>
+      </View>
+      <View
+        location="bottom"
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "borderBottomColor": "#2E3032",
+              "borderBottomWidth": 12,
+              "borderColor": "transparent",
+              "borderLeftWidth": 6,
+              "borderRightWidth": 6,
+              "borderTopWidth": 0,
+              "height": 0,
+              "position": "absolute",
+              "top": -10,
+              "width": 0,
+            },
+          ]
+        }
+        tailPosition="center"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#007AFF",
+              "borderColor": "black",
+              "borderRadius": 26,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 14,
+              "paddingRight": 14,
+              "paddingTop": 14,
+            },
+          ]
+        }
+      >
+        <Text
+          includeFontPadding={false}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "NotoSansKR-Medium",
+                "fontSize": 16,
+                "lineHeight": 26,
+                "textAlign": "center",
+              },
+            ]
+          }
+          textColor="#FFFFFF"
+        >
+          Button
+        </Text>
+      </View>
+      <View
+        layoutHeight={0}
+        layoutWidth={0}
+        location="top"
+        offset={10}
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "bottom": 10,
+              "position": "absolute",
+            },
+          ]
+        }
+        tailPosition="left"
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#2E3032",
+                "borderRadius": 20,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#FFFFFF",
+                },
+              ]
+            }
+          >
+            TopLeft Tooltip
+          </Text>
+        </View>
+        <View
+          location="top"
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 0,
+                "borderColor": "transparent",
+                "borderLeftWidth": 6,
+                "borderRightWidth": 6,
+                "borderTopColor": "#2E3032",
+                "borderTopWidth": 12,
+                "bottom": -10,
+                "height": 0,
+                "left": 18,
+                "position": "absolute",
+                "width": 0,
+              },
+            ]
+          }
+          tailPosition="left"
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#007AFF",
+              "borderColor": "black",
+              "borderRadius": 26,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 14,
+              "paddingRight": 14,
+              "paddingTop": 14,
+            },
+          ]
+        }
+      >
+        <Text
+          includeFontPadding={false}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "NotoSansKR-Medium",
+                "fontSize": 16,
+                "lineHeight": 26,
+                "textAlign": "center",
+              },
+            ]
+          }
+          textColor="#FFFFFF"
+        >
+          Button
+        </Text>
+      </View>
+      <View
+        layoutHeight={0}
+        layoutWidth={0}
+        location="top"
+        offset={10}
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "bottom": 10,
+              "position": "absolute",
+            },
+          ]
+        }
+        tailPosition="center"
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#2E3032",
+                "borderRadius": 20,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#FFFFFF",
+                },
+              ]
+            }
+          >
+            TopCenter Tooltip
+          </Text>
+        </View>
+        <View
+          location="top"
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "borderBottomWidth": 0,
+                "borderColor": "transparent",
+                "borderLeftWidth": 6,
+                "borderRightWidth": 6,
+                "borderTopColor": "#2E3032",
+                "borderTopWidth": 12,
+                "bottom": -10,
+                "height": 0,
+                "position": "absolute",
+                "width": 0,
+              },
+            ]
+          }
+          tailPosition="center"
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#007AFF",
+              "borderColor": "black",
+              "borderRadius": 26,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 14,
+              "paddingRight": 14,
+              "paddingTop": 14,
+            },
+          ]
+        }
+      >
+        <Text
+          includeFontPadding={false}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "NotoSansKR-Medium",
+                "fontSize": 16,
+                "lineHeight": 26,
+                "textAlign": "center",
+              },
+            ]
+          }
+          textColor="#FFFFFF"
+        >
+          Button
+        </Text>
+      </View>
+      <View
+        layoutHeight={0}
+        layoutWidth={0}
+        location="top"
+        offset={10}
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "bottom": 10,
+              "position": "absolute",
+            },
+          ]
+        }
+        tailPosition="right"
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#2E3032",
+                "borderRadius": 20,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#FFFFFF",
+                },
+              ]
+            }
+          >
+            TopRight Tooltip
+          </Text>
+        </View>
+        <View
+          location="top"
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 0,
+                "borderColor": "transparent",
+                "borderLeftWidth": 6,
+                "borderRightWidth": 6,
+                "borderTopColor": "#2E3032",
+                "borderTopWidth": 12,
+                "bottom": -10,
+                "height": 0,
+                "position": "absolute",
+                "right": 18,
+                "width": 0,
+              },
+            ]
+          }
+          tailPosition="right"
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#007AFF",
+              "borderColor": "black",
+              "borderRadius": 26,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 14,
+              "paddingRight": 14,
+              "paddingTop": 14,
+            },
+          ]
+        }
+      >
+        <Text
+          includeFontPadding={false}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "NotoSansKR-Medium",
+                "fontSize": 16,
+                "lineHeight": 26,
+                "textAlign": "center",
+              },
+            ]
+          }
+          textColor="#FFFFFF"
+        >
+          Button
+        </Text>
+      </View>
+      <View
+        layoutHeight={0}
+        layoutWidth={0}
+        location="bottom"
+        offset={10}
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "position": "absolute",
+              "top": 10,
+            },
+          ]
+        }
+        tailPosition="left"
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#2E3032",
+                "borderRadius": 20,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#FFFFFF",
+                },
+              ]
+            }
+          >
+            BottomLeft Tooltip
+          </Text>
+        </View>
+        <View
+          location="bottom"
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#2E3032",
+                "borderBottomWidth": 12,
+                "borderColor": "transparent",
+                "borderLeftWidth": 6,
+                "borderRightWidth": 6,
+                "borderTopWidth": 0,
+                "height": 0,
+                "left": 18,
+                "position": "absolute",
+                "top": -10,
+                "width": 0,
+              },
+            ]
+          }
+          tailPosition="left"
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#007AFF",
+              "borderColor": "black",
+              "borderRadius": 26,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 14,
+              "paddingRight": 14,
+              "paddingTop": 14,
+            },
+          ]
+        }
+      >
+        <Text
+          includeFontPadding={false}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "NotoSansKR-Medium",
+                "fontSize": 16,
+                "lineHeight": 26,
+                "textAlign": "center",
+              },
+            ]
+          }
+          textColor="#FFFFFF"
+        >
+          Button
+        </Text>
+      </View>
+      <View
+        layoutHeight={0}
+        layoutWidth={0}
+        location="bottom"
+        offset={10}
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "position": "absolute",
+              "top": 10,
+            },
+          ]
+        }
+        tailPosition="center"
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#2E3032",
+                "borderRadius": 20,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#FFFFFF",
+                },
+              ]
+            }
+          >
+            BottomCenter Tooltip
+          </Text>
+        </View>
+        <View
+          location="bottom"
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "borderBottomColor": "#2E3032",
+                "borderBottomWidth": 12,
+                "borderColor": "transparent",
+                "borderLeftWidth": 6,
+                "borderRightWidth": 6,
+                "borderTopWidth": 0,
+                "height": 0,
+                "position": "absolute",
+                "top": -10,
+                "width": 0,
+              },
+            ]
+          }
+          tailPosition="center"
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#007AFF",
+              "borderColor": "black",
+              "borderRadius": 26,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 14,
+              "paddingRight": 14,
+              "paddingTop": 14,
+            },
+          ]
+        }
+      >
+        <Text
+          includeFontPadding={false}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "NotoSansKR-Medium",
+                "fontSize": 16,
+                "lineHeight": 26,
+                "textAlign": "center",
+              },
+            ]
+          }
+          textColor="#FFFFFF"
+        >
+          Button
+        </Text>
+      </View>
+      <View
+        layoutHeight={0}
+        layoutWidth={0}
+        location="bottom"
+        offset={10}
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "position": "absolute",
+              "top": 10,
+            },
+          ]
+        }
+        tailPosition="right"
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#2E3032",
+                "borderRadius": 20,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#FFFFFF",
+                },
+              ]
+            }
+          >
+            BottomRight Tooltip
+          </Text>
+        </View>
+        <View
+          location="bottom"
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#2E3032",
+                "borderBottomWidth": 12,
+                "borderColor": "transparent",
+                "borderLeftWidth": 6,
+                "borderRightWidth": 6,
+                "borderTopWidth": 0,
+                "height": 0,
+                "position": "absolute",
+                "right": 18,
+                "top": -10,
+                "width": 0,
+              },
+            ]
+          }
+          tailPosition="right"
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`Storyshots Atoms/Typography Bold 1`] = `
 <View
   style={

@@ -13,6 +13,7 @@ import './atoms/Switch/Switch.stories';
 import './atoms/TextInput/TextInput.stories';
 import './atoms/Typography/Typography.stories';
 import './atoms/SelectOption/SelectOption.stories';
+import './atoms/Tooltip/Tooltip.stories';
 
 import './molecules/Article/Article.stories';
 import './molecules/ListItem/ListItem.stories';
@@ -23,3 +24,4 @@ import './molecules/FormItem/FormItem.stories';
 import './molecules/Alert/Alert.stories';
 
 import './organisms/Form/Form.stories';
+
