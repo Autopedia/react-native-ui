@@ -14,11 +14,8 @@ interface MarkdownProps {
   children?: ReactNode;
 }
 
-const Markdown: React.FC<MarkdownProps> = ({
-  children,
-  textColor = colors.ON_BACKGROUND,
-  selectable,
-}) => {
+export const Markdown: React.FC<MarkdownProps> = React.memo(
+  ({ children, textColor = colors.ON_BACKGROUND, selectable }) => {
   const mdTextStyle = markdownTextStyle(textColor);
   return (
     <ParsedText
@@ -45,7 +42,8 @@ const Markdown: React.FC<MarkdownProps> = ({
       {children}
     </ParsedText>
   );
-};
+  },
+);
 
 const markdownTextStyle = (textColor: string) => {
   return StyleSheet.create({
@@ -97,5 +95,3 @@ const renderBoldText = (matchingString: string) => {
     return matchingString;
   }
 };
-
-export default React.memo(Markdown);
