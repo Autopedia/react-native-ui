@@ -11,8 +11,8 @@ import { Alert, Linking, Text, View } from 'react-native';
 
 describe('[Markdown] Unit Test', () => {
   const mockCanOpenURL = jest.fn();
-  const mockUrl = 'https://doctor-cha.com';
-  const mockPhoneNumber = '010-1234-1234';
+  const urlMock = 'https://doctor-cha.com';
+  const phoneNumberMock = '010-1234-1234';
 
   beforeEach(() => {
     jest.clearAllMocks();
@@ -26,16 +26,16 @@ describe('[Markdown] Unit Test', () => {
   });
 
   it('should render children', () => {
-    const mockText = 'Test';
-    const wrapper = shallow(<Markdown selectable>{mockText}</Markdown>);
-    const renderText = wrapper.find('ParsedText').children().text();
+    const textMock = 'Test';
+    const wrapper = shallow(<Markdown selectable>{textMock}</Markdown>);
+    const childrenText = wrapper.find('ParsedText').children().text();
 
-    expect(renderText).toEqual(mockText);
+    expect(childrenText).toEqual(textMock);
 
     const reactNodeWrapper = shallow(
       <Markdown selectable>
         <View>
-          <Text testID="testText">{mockText}</Text>
+          <Text testID="testText">{textMock}</Text>
         </View>
       </Markdown>,
     );
@@ -44,23 +44,24 @@ describe('[Markdown] Unit Test', () => {
       .children()
       .text();
 
-    expect(reactNodeText).toBe(mockText);
+    expect(reactNodeText).toBe(textMock);
   });
 
   it('should open link when url text pressed', async () => {
     mockCanOpenURL.mockResolvedValue(true);
-    const wrapper = shallow(<Markdown selectable>{mockUrl}</Markdown>);
+    const wrapper = shallow(<Markdown selectable>{urlMock}</Markdown>);
     const buttonText = wrapper.dive().findWhere(w => w.prop('onPress'));
     buttonText.simulate('press');
 
     await mockCanOpenURL();
 
     expect(Linking.openURL).toHaveBeenCalledTimes(1);
+    expect(Linking.openURL).toHaveBeenCalledWith(urlMock);
   });
 
   it('should alert when invalid url is given', async () => {
     mockCanOpenURL.mockResolvedValue(false);
-    const wrapper = shallow(<Markdown selectable>{mockUrl}</Markdown>);
+    const wrapper = shallow(<Markdown selectable>{urlMock}</Markdown>);
     const buttonText = wrapper.dive().findWhere(w => w.prop('onPress'));
     buttonText.simulate('press');
 
@@ -71,10 +72,11 @@ describe('[Markdown] Unit Test', () => {
   });
 
   it('should call when phone number text pressed', () => {
-    const wrapper = shallow(<Markdown selectable>{mockPhoneNumber}</Markdown>);
+    const wrapper = shallow(<Markdown selectable>{phoneNumberMock}</Markdown>);
     const buttonText = wrapper.dive().findWhere(w => w.prop('onPress'));
     buttonText.simulate('press');
 
     expect(Linking.openURL).toBeCalledTimes(1);
+    expect(Linking.openURL).toHaveBeenCalledWith(`tel:${phoneNumberMock}`);
   });
 });
