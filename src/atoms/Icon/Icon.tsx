@@ -19,7 +19,7 @@ const Icon: React.FC<IconProps> = props => {
     style: pickStyle(props.style, FlexStyleKeys),
   };
   const iconProps = {
-    ...lodash.pick(props, ['color', 'disabled', 'source']),
+    ...lodash.pick(props, ['color', 'disabled', 'source', 'size']),
     style: pickStyle(
       props.style,
       props.onPress ? ImageOnlyStyleKeys : ImageStyleKeys,
@@ -44,13 +44,24 @@ const STouchable = styled.TouchableOpacity<STouchableProps>`
 `;
 const SIcon = styled.Image<SIconProps>`
   /* color (default: undefined) */
-
   ${props => {
     return props.color ? `tint-color: ${getValidatedColor(props.color)}` : '';
   }}
 
   /* disabled (default: false) */
   ${props => props.disabled && 'opacity: 0.5'}
+
+  /* size (default: md) */
+  ${props => {
+    switch (props.size) {
+      case 'sm':
+        return `width: 20px; height: 20px;`;
+      case 'lg':
+        return `width: 32px; height: 32px`;
+      default:
+        return `width: 24px; height: 24px;`;
+    }
+  }}
 `;
 
 export default Icon;

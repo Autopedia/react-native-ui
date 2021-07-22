@@ -7,6 +7,7 @@ import {
 
 export interface IconProps {
   source: any;
+  size?: 'sm' | 'md' | 'lg';
   color?: string;
   disabled?: boolean;
   onPress?: (event: GestureResponderEvent) => void;
@@ -16,5 +17,5 @@ export interface IconProps {
 export type STouchableProps = Pick<IconProps, 'disabled' | 'onPress' | 'style'>;
 export type SIconProps = Pick<
   IconProps,
-  'color' | 'disabled' | 'source' | 'style'
+  'color' | 'disabled' | 'source' | 'style' | 'size'
 >;
