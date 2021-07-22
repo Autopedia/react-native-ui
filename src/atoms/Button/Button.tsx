@@ -112,7 +112,7 @@ const Button: React.FC<ButtonProps> = ({
         <SContainer {...containerProps} pressed={pressed}>
           <>
             {props.icon && props.iconPosition !== 'right' && (
-              <SIcon pressed={pressed} {...iconProps} />
+              <SIcon size="sm" pressed={pressed} {...iconProps} />
             )}
             {props?.loading ? (
               <Icon

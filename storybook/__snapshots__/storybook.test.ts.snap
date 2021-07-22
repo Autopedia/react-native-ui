@@ -1014,6 +1014,7 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
       }
     >
       <Image
+        size="sm"
         source={
           Object {
             "testUri": "../../../src/assets/icons/google/google-active.png",
@@ -1022,8 +1023,8 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
         style={
           Array [
             Object {
-              "height": 24,
-              "width": 24,
+              "height": 20,
+              "width": 20,
             },
             Object {
               "marginRight": 6,
@@ -1113,6 +1114,7 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
       }
     >
       <Image
+        size="sm"
         source={
           Object {
             "testUri": "../../../src/assets/icons/kakao/kakao-active.png",
@@ -1121,8 +1123,8 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
         style={
           Array [
             Object {
-              "height": 24,
-              "width": 24,
+              "height": 20,
+              "width": 20,
             },
             Object {
               "marginRight": 6,
@@ -1670,6 +1672,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       }
     >
       <Image
+        size="sm"
         source={
           Object {
             "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -1678,8 +1681,8 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         style={
           Array [
             Object {
-              "height": 24,
-              "width": 24,
+              "height": 20,
+              "width": 20,
             },
             Object {
               "marginRight": 6,
@@ -1781,6 +1784,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         Icon Right with White solid color
       </Text>
       <Image
+        size="sm"
         source={
           Object {
             "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -1789,8 +1793,8 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         style={
           Array [
             Object {
-              "height": 24,
-              "width": 24,
+              "height": 20,
+              "width": 20,
             },
             Object {
               "marginLeft": 6,
@@ -1855,6 +1859,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       }
     >
       <Image
+        size="sm"
         source={
           Object {
             "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -1863,8 +1868,8 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         style={
           Array [
             Object {
-              "height": 24,
-              "width": 24,
+              "height": 20,
+              "width": 20,
             },
             Object {
               "marginRight": 6,
@@ -1968,6 +1973,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         Icon Right
       </Text>
       <Image
+        size="sm"
         source={
           Object {
             "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -1976,8 +1982,8 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         style={
           Array [
             Object {
-              "height": 24,
-              "width": 24,
+              "height": 20,
+              "width": 20,
             },
             Object {
               "marginLeft": 6,
@@ -2042,6 +2048,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       }
     >
       <Image
+        size="sm"
         source={
           Object {
             "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -2050,8 +2057,8 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         style={
           Array [
             Object {
-              "height": 24,
-              "width": 24,
+              "height": 20,
+              "width": 20,
             },
             Object {
               "marginRight": 6,
@@ -2155,6 +2162,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         Inline Icon Right
       </Text>
       <Image
+        size="sm"
         source={
           Object {
             "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -2163,8 +2171,8 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         style={
           Array [
             Object {
-              "height": 24,
-              "width": 24,
+              "height": 20,
+              "width": 20,
             },
             Object {
               "marginLeft": 6,
@@ -2228,6 +2236,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       type="text"
     >
       <Image
+        size="sm"
         source={
           Object {
             "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -2236,8 +2245,8 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         style={
           Array [
             Object {
-              "height": 24,
-              "width": 24,
+              "height": 20,
+              "width": 20,
             },
             Object {
               "marginRight": 6,
@@ -2340,6 +2349,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         Text Icon Right
       </Text>
       <Image
+        size="sm"
         source={
           Object {
             "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -2348,8 +2358,8 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         style={
           Array [
             Object {
-              "height": 24,
-              "width": 24,
+              "height": 20,
+              "width": 20,
             },
             Object {
               "marginLeft": 6,
@@ -4562,6 +4572,73 @@ exports[`Storyshots Atoms/Icon Color 1`] = `
         },
         Object {
           "backgroundColor": "#E3E3E3",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Storyshots Atoms/Icon CustomStyle 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Image
+    color="#007AFF"
+    source={
+      Object {
+        "testUri": "../../../src/assets/icons/camera/camera.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "height": 24,
+          "tintColor": "#007AFF",
+          "width": 24,
+        },
+        Object {
+          "backgroundColor": "#E3E3E3",
+          "height": 40,
+          "marginBottom": 10,
+          "width": 40,
+        },
+      ]
+    }
+  />
+  <Image
+    color="#007AFF"
+    source={
+      Object {
+        "testUri": "../../../src/assets/icons/shop/shop.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "height": 24,
+          "tintColor": "#007AFF",
+          "width": 24,
+        },
+        Object {
+          "backgroundColor": "#E3E3E3",
+          "height": 40,
+          "marginRight": -20,
+          "width": 80,
         },
       ]
     }
@@ -7251,6 +7328,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               }
             >
               <Image
+                size="sm"
                 source={
                   Object {
                     "testUri": "../../../src/assets/icons/shop/shop.png",
@@ -7259,8 +7337,8 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 24,
-                      "width": 24,
+                      "height": 20,
+                      "width": 20,
                     },
                     Object {
                       "marginRight": 6,
@@ -7349,6 +7427,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               }
             >
               <Image
+                size="sm"
                 source={
                   Object {
                     "testUri": "../../../src/assets/icons/map/map.png",
@@ -7357,8 +7436,8 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 24,
-                      "width": 24,
+                      "height": 20,
+                      "width": 20,
                     },
                     Object {
                       "marginRight": 6,
