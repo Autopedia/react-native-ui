@@ -48,24 +48,20 @@ describe('[Markdown] Unit Test', () => {
   });
 
   it('should open link when url text pressed', async () => {
-    mockCanOpenURL.mockResolvedValue(true);
+    mockCanOpenURL.mockReturnValue(true);
     const wrapper = shallow(<Markdown selectable>{urlMock}</Markdown>);
     const buttonText = wrapper.dive().findWhere(w => w.prop('onPress'));
-    buttonText.simulate('press');
-
-    await mockCanOpenURL();
+    await buttonText.simulate('press');
 
     expect(Linking.openURL).toHaveBeenCalledTimes(1);
     expect(Linking.openURL).toHaveBeenCalledWith(urlMock);
   });
 
   it('should alert when invalid url is given', async () => {
-    mockCanOpenURL.mockResolvedValue(false);
+    mockCanOpenURL.mockReturnValue(false);
     const wrapper = shallow(<Markdown selectable>{urlMock}</Markdown>);
     const buttonText = wrapper.dive().findWhere(w => w.prop('onPress'));
-    buttonText.simulate('press');
-
-    await mockCanOpenURL();
+    await buttonText.simulate('press');
 
     expect(Linking.openURL).not.toBeCalled();
     expect(Alert.alert).toBeCalledTimes(1);
