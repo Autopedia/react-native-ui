@@ -56,6 +56,30 @@ storiesOf('Atoms/Icon', module)
       </>
     );
   })
+  .add('Size', () => {
+    return (
+      <>
+        <Icon
+          source={require('../../assets/icons/camera/camera.png')}
+          color={systemColors.PRIMARY}
+          size="lg"
+          style={{ backgroundColor: '#E3E3E3' }}
+        />
+        <Icon
+          source={require('../../assets/icons/camera/camera.png')}
+          color={systemColors.SUCCESS}
+          size="md"
+          style={{ backgroundColor: '#E3E3E3' }}
+        />
+        <Icon
+          source={require('../../assets/icons/camera/camera.png')}
+          color={systemColors.ERROR}
+          size="sm"
+          style={{ backgroundColor: '#E3E3E3' }}
+        />
+      </>
+    );
+  })
   .add('Touchable', () => {
     return (
       <>
