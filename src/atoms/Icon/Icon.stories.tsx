@@ -142,4 +142,30 @@ storiesOf('Atoms/Icon', module)
         />
       </>
     );
+  })
+  .add('CustomStyle', () => {
+    return (
+      <>
+        <Icon
+          source={require('../../assets/icons/camera/camera.png')}
+          color={systemColors.PRIMARY}
+          style={{
+            backgroundColor: '#E3E3E3',
+            width: 40,
+            height: 40,
+            marginBottom: 10,
+          }}
+        />
+        <Icon
+          source={require('../../assets/icons/shop/shop.png')}
+          color={systemColors.PRIMARY}
+          style={{
+            backgroundColor: '#E3E3E3',
+            width: 80,
+            height: 40,
+            marginRight: -20,
+          }}
+        />
+      </>
+    );
   });
