@@ -15,7 +15,6 @@ import { Colors, Fonts } from '../../styles';
 import colors from '../../styles/colors';
 import fonts from '../../styles/fonts';
 import { grayscaleColors } from '../../styles/grayscale-colors';
-import spacing from '../../styles/spacing';
 import { systemColors } from '../../styles/system-colors';
 import {
   pickStyle,
@@ -39,23 +38,22 @@ export interface TextInputProps
       | 'onChange'
       | 'defaultValue'
     > {
-  type?: 'default' | 'large';
+  label: string;
+  success?: string;
   disabled?: boolean;
   suffix?: React.ReactNode;
   style?: StyleProp<TextStyle>;
 }
 
 interface SContainerProps
-  extends Pick<
-    TextInputProps,
-    'type' | 'disabled' | 'secureTextEntry' | 'suffix'
-  > {}
-
+  extends Pick<TextInputProps, 'disabled' | 'secureTextEntry' | 'suffix'> {}
+interface SHeaderProps
+  extends Pick<TextInputProps, 'label' | 'error' | 'success'> {}
 interface STextInputProps
   extends Omit<RNTextInputProps, 'onChange'>,
-    Pick<TextInputProps, 'type' | 'disabled' | 'error' | 'isDirty'> {}
-interface SFixProps extends Pick<TextInputProps, 'type' | 'disabled'> {}
-interface SFixTextProps extends Pick<TextInputProps, 'type' | 'disabled'> {}
+    Pick<TextInputProps, 'disabled' | 'error' | 'isDirty'> {}
+interface SFixProps extends Pick<TextInputProps, 'disabled'> {}
+interface SFixTextProps extends Pick<TextInputProps, 'disabled'> {}
 
 const TextInput = forwardRef(
   (props: TextInputProps, ref?: React.Ref<RNTextInput>) => {
@@ -69,6 +67,11 @@ const TextInput = forwardRef(
       'disabled',
       'secureTextEntry',
       'suffix',
+    ]);
+    const headerProps: SHeaderProps = lodash.pick(props, [
+      'label',
+      'error',
+      'success',
     ]);
     const textInputProps: STextInputProps = {
       ...lodash.omit(props, [
@@ -109,6 +112,9 @@ const TextInput = forwardRef(
             },
           })}
         >
+          <SHeader {...headerProps}>
+            {props.success || props.error?.message || props.label}
+          </SHeader>
           <STextInput
             ref={ref}
             {...textInputProps}
@@ -130,11 +136,11 @@ const TextInput = forwardRef(
           )}
         </SContainer>
         {props.suffix && (
-          <SSuffix>
+          <SSuffix disabled={props.disabled}>
             {React.isValidElement(props.suffix) ? (
               props.suffix
             ) : (
-              <SFixText>{props.suffix}</SFixText>
+              <SFixText disabled={props.disabled}>{props.suffix}</SFixText>
             )}
           </SSuffix>
         )}
@@ -145,17 +151,17 @@ const TextInput = forwardRef(
 
 const SFixWrapper = styled.View`
   flex-direction: row;
+
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
 `;
 
 const SContainer = styled.View<SContainerProps>`
   position: relative;
   flex-grow: 1;
   justify-content: center;
-  border-radius: ${spacing.SPACE_16}px;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
   background-color: ${systemColors.WHITE};
+  border-radius: 16px;
   padding: 14px 16px;
-
   /* suffix (default: undefined) */
   ${props =>
     props.suffix &&
@@ -171,12 +177,20 @@ const SContainer = styled.View<SContainerProps>`
       background-color: ${colors.DISABLED};
       border-color: ${colors.BORDER_DISABLED};
   `}
+`;
 
-  ${props =>
-    props.type === 'large' &&
-    `
-      padding: 24px 16px;
-  `}
+const SHeader = styled.Text<SHeaderProps>`
+  margin-bottom: 10px;
+  font-family: ${fonts.family.MEDIUM};
+  ${props => {
+    if (props.success) {
+      return `color: ${systemColors.SUCCESS}`;
+    } else if (props.error) {
+      return `color: ${systemColors.ERROR}`;
+    } else {
+      return `color: ${grayscaleColors.GRAY_400}`;
+    }
+  }}
 `;
 
 const STextInput = styled.TextInput<STextInputProps>`
@@ -197,85 +211,37 @@ const STextInput = styled.TextInput<STextInputProps>`
       }px;
     `}
 
-  /* type (default: default) */
-   ${props =>
-    props.type === 'large' &&
-    ` 
-      font-size: ${fonts.size.XL}px;
-      line-height: ${fonts.lineHeight.XL}px;
-    `}
-
-   /* disabled (default: false) */
+  /* disabled (default: false) */
    ${props =>
     props.disabled &&
     `
       color: ${colors.ON_DISABLED};
   `}
-    
-  /* underline */
-  ${props => {
-    if (props.isDirty) {
-      if (props.error) {
-        return `
-          border-bottom-width: 1px;
-          border-bottom-color: ${colors.ERROR};
-        `;
-      } else {
-        return `
-          border-bottom-width: 1px;
-          border-bottom-color: ${colors.SUCCESS};
-        `;
-      }
-    }
-  }}
 `;
 
 const SIcon = styled(Icon)`
   position: absolute;
-  right: ${spacing.SPACE_8}px;
+  right: 8px;
 `;
 
 const SSuffix = styled.View<SFixProps>`
   justify-content: center;
-  padding: ${spacing.SPACE_8}px ${spacing.SPACE_24}px;
-  border-width: 1px;
-  border-left-width: 0px;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-
-  /* type (default: default) */
-  ${props => {
-    switch (props.type) {
-      default:
-        return `
-          background-color: ${colors.DEFAULT};
-          border-color: ${colors.BORDER_DEFAULT};
-        `;
-    }
-  }}
-
+  background-color: ${systemColors.WHITE};
+  padding: 8px 24px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
   /* disabled (default: false) */
   ${props =>
     props.disabled &&
     `
       background-color: ${colors.DISABLED};
-      border-color: ${colors.BORDER_DISABLED};
   `}
 `;
 
 const SFixText = styled.Text<SFixTextProps>`
   font-size: ${fonts.size.XS}px;
-  font-family: ${fonts.family.REGULAR}px;
-
-  /* type (default: default) */
-  ${props => {
-    switch (props.type) {
-      default:
-        return `
-          color: ${colors.ON_DEFAULT};
-        `;
-    }
-  }}
+  font-family: ${fonts.family.REGULAR};
+  color: ${colors.ON_DEFAULT};
 
   /* disabled (default: false) */
   ${props =>
@@ -291,6 +257,7 @@ export type TextInputElement = React.ReactElement<
 >;
 export default TextInput;
 
+/* istanbul ignore next */
 export const textInputPropsGenerator = (name: string): RNTextInputProps => {
   const defaultProps: RNTextInputProps = {
     autoCapitalize: 'none',
