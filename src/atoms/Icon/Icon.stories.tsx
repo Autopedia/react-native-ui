@@ -1,10 +1,11 @@
 import { action } from '@storybook/addon-actions';
-import { boolean, color } from '@storybook/addon-knobs';
+import { boolean, color, select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import React from 'react';
 import CenterContainerDecorator from '../../decorators/center-container.decorator';
 import SThemeDecorator from '../../decorators/styled-components.decorator';
 import Icon from './Icon';
+import { IconSize } from './Icon.types';
 import { Text } from 'react-native';
 import { systemColors } from '../../styles/system-colors';
 
@@ -12,11 +13,13 @@ storiesOf('Atoms/Icon', module)
   .addDecorator(SThemeDecorator)
   .addDecorator(CenterContainerDecorator)
   .add('Playground', () => {
+    const typeOptions: IconSize[] = ['sm', 'md', 'lg'];
     return (
       <>
         <Icon
           source={require('../../assets/icons/camera/camera.png')}
           color={color('color', systemColors.PRIMARY)}
+          size={select('size', typeOptions, 'md')}
           disabled={boolean('disabled', false)}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ backgroundColor: '#E3E3E3' }}

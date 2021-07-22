@@ -5,9 +5,11 @@ import {
   StyleProp,
 } from 'react-native';
 
+export type IconSize = 'sm' | 'md' | 'lg';
+
 export interface IconProps {
   source: any;
-  size?: 'sm' | 'md' | 'lg';
+  size?: IconSize;
   color?: string;
   disabled?: boolean;
   onPress?: (event: GestureResponderEvent) => void;
