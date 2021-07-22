@@ -19,10 +19,6 @@ describe('[TextInput] Unit Test', () => {
   let mockValue: string;
   let onChangeTextMock: jest.Mock;
 
-  const setState = jest.fn();
-  const useStateSpy = jest.spyOn(React, 'useState');
-  useStateSpy.mockImplementation(init => [init, setState]);
-
   beforeEach(() => {
     mockValue = MOCK_VALUE_DEFAULT;
     onChangeTextMock = jest.fn();
