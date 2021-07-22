@@ -3,7 +3,6 @@ import React from 'react';
 import styled from 'styled-components/native';
 
 import spacing from '../../styles/spacing';
-import { systemColors } from '../../styles/system-colors';
 import {
   FlexStyleKeys,
   ImageOnlyStyleKeys,
@@ -23,11 +22,11 @@ const Icon: React.FC<IconProps> = props => {
     ...lodash.pick(props, ['color', 'disabled', 'source']),
     style: pickStyle(
       props.style,
-      props.touchable ? ImageOnlyStyleKeys : ImageStyleKeys,
+      props.onPress ? ImageOnlyStyleKeys : ImageStyleKeys,
     ),
   };
 
-  return props.touchable ? (
+  return props.onPress ? (
     <STouchable {...touchableProps}>
       <SIcon {...iconProps} />
     </STouchable>
@@ -40,7 +39,8 @@ const STouchable = styled.TouchableOpacity<STouchableProps>`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: ${spacing.SPACE_4}px;
+  padding: 4px;
+  margin: -4px;
 `;
 const SIcon = styled.Image<SIconProps>`
   /* color (default: undefined) */

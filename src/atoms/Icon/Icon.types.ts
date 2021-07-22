@@ -8,7 +8,6 @@ import {
 export interface IconProps {
   source: any;
   color?: string;
-  touchable?: boolean;
   disabled?: boolean;
   onPress?: (event: GestureResponderEvent) => void;
   style?: StyleProp<Omit<ImageStyle, 'color'> | FlexStyle>;

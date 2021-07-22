@@ -17,7 +17,6 @@ storiesOf('Atoms/Icon', module)
         <Icon
           source={require('../../assets/icons/camera/camera.png')}
           color={color('color', systemColors.PRIMARY)}
-          touchable={boolean('touchable', true)}
           disabled={boolean('disabled', false)}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ backgroundColor: '#E3E3E3' }}
@@ -33,44 +32,47 @@ storiesOf('Atoms/Icon', module)
           source={require('../../assets/icons/camera/camera.png')}
           color={systemColors.PRIMARY}
           style={{ backgroundColor: '#E3E3E3' }}
-          onPress={e => action('onPress')(e.nativeEvent)}
         />
         <Icon
           source={require('../../assets/icons/camera/camera.png')}
           color={systemColors.SUCCESS}
           style={{ backgroundColor: '#E3E3E3' }}
-          onPress={e => action('onPress')(e.nativeEvent)}
         />
         <Icon
           source={require('../../assets/icons/camera/camera.png')}
           color={systemColors.ERROR}
           style={{ backgroundColor: '#E3E3E3' }}
-          onPress={e => action('onPress')(e.nativeEvent)}
         />
         <Icon
           source={require('../../assets/icons/camera/camera.png')}
           color="black"
           style={{ backgroundColor: '#E3E3E3' }}
-          onPress={e => action('onPress')(e.nativeEvent)}
         />
         <Icon
           source={require('../../assets/icons/camera/camera.png')}
           color="white"
           style={{ backgroundColor: '#E3E3E3' }}
-          onPress={e => action('onPress')(e.nativeEvent)}
         />
       </>
     );
   })
   .add('Touchable', () => {
     return (
-      <Icon
-        source={require('../../assets/icons/camera/camera.png')}
-        touchable
-        color={systemColors.PRIMARY}
-        style={{ backgroundColor: '#E3E3E3' }}
-        onPress={e => action('onPress')(e.nativeEvent)}
-      />
+      <>
+        <Text>With onPress Icon</Text>
+        <Icon
+          source={require('../../assets/icons/camera/camera.png')}
+          color={systemColors.PRIMARY}
+          style={{ backgroundColor: '#E3E3E3' }}
+          onPress={e => action('onPress')(e.nativeEvent)}
+        />
+        <Text>Without onPress</Text>
+        <Icon
+          source={require('../../assets/icons/camera/camera.png')}
+          color={systemColors.PRIMARY}
+          style={{ backgroundColor: '#E3E3E3' }}
+        />
+      </>
     );
   })
   .add('Disabled', () => {
