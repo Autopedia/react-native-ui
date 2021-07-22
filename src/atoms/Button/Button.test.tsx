@@ -6,7 +6,6 @@ import 'react-native';
 import 'jest-styled-components';
 import React from 'react';
 import Button from './Button';
-import { Button as RNButton } from 'react-native';
 import { shallow } from 'enzyme';
 
 describe('[Button] Unit Test', () => {
