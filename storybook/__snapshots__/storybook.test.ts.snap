@@ -9123,80 +9123,6 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
 </View>
 `;
 
-exports[`Storyshots Atoms/Typography Bold 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexBasis": 0,
-        "flexGrow": 1,
-        "flexShrink": 1,
-        "justifyContent": "center",
-        "paddingBottom": 10,
-        "paddingLeft": 10,
-        "paddingRight": 10,
-        "paddingTop": 10,
-      },
-    ]
-  }
->
-  <Text
-    fontWeight="bold"
-    size={1}
-    style={
-      Array [
-        Object {
-          "color": "black",
-          "flexShrink": 1,
-          "flexWrap": "wrap",
-          "fontFamily": "NotoSansKR-Bold",
-          "fontSize": 16,
-          "lineHeight": 26,
-        },
-      ]
-    }
-  >
-    Bold Paragraph
-  </Text>
-  <Text
-    size={1}
-    style={
-      Array [
-        Object {
-          "color": "black",
-          "flexShrink": 1,
-          "flexWrap": "wrap",
-          "fontFamily": "NotoSansKR-Regular",
-          "fontSize": 16,
-          "lineHeight": 26,
-        },
-      ]
-    }
-  >
-    Normal Paragraph
-  </Text>
-  <Text
-    fontWeight="light"
-    size={1}
-    style={
-      Array [
-        Object {
-          "color": "black",
-          "flexShrink": 1,
-          "flexWrap": "wrap",
-          "fontFamily": "NotoSansKR-Light",
-          "fontSize": 16,
-          "lineHeight": 26,
-        },
-      ]
-    }
-  >
-    Light Paragraph
-  </Text>
-</View>
-`;
-
 exports[`Storyshots Atoms/Typography Color 1`] = `
 <View
   style={
@@ -9224,7 +9150,6 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 24,
           "lineHeight": 35,
-          "marginBottom": 12,
         },
       ]
     }
@@ -9241,7 +9166,6 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 24,
           "lineHeight": 35,
-          "marginBottom": 12,
         },
       ]
     }
@@ -9258,7 +9182,6 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 24,
           "lineHeight": 35,
-          "marginBottom": 12,
         },
       ]
     }
@@ -9275,7 +9198,6 @@ exports[`Storyshots Atoms/Typography Color 1`] = `
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 24,
           "lineHeight": 35,
-          "marginBottom": 12,
         },
       ]
     }
@@ -9545,7 +9467,6 @@ exports[`Storyshots Atoms/Typography Playground 1`] = `
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 32,
           "lineHeight": 55,
-          "marginBottom": 16,
         },
       ]
     }
@@ -9638,7 +9559,6 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 32,
           "lineHeight": 55,
-          "marginBottom": 16,
         },
       ]
     }
@@ -9654,7 +9574,6 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 28,
           "lineHeight": 40,
-          "marginBottom": 12,
         },
       ]
     }
@@ -9670,7 +9589,6 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 24,
           "lineHeight": 35,
-          "marginBottom": 12,
         },
       ]
     }
@@ -9686,7 +9604,6 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
           "fontFamily": "NotoSansKR-Bold",
           "fontSize": 20,
           "lineHeight": 29,
-          "marginBottom": 4,
         },
       ]
     }
@@ -9755,6 +9672,80 @@ exports[`Storyshots Atoms/Typography Type 1`] = `
     }
   >
     Caption
+  </Text>
+</View>
+`;
+
+exports[`Storyshots Atoms/Typography fontWeight 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Text
+    fontWeight="bold"
+    size={1}
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Bold",
+          "fontSize": 16,
+          "lineHeight": 26,
+        },
+      ]
+    }
+  >
+    Bold Paragraph
+  </Text>
+  <Text
+    size={1}
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Regular",
+          "fontSize": 16,
+          "lineHeight": 26,
+        },
+      ]
+    }
+  >
+    Normal Paragraph
+  </Text>
+  <Text
+    fontWeight="light"
+    size={1}
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+          "fontFamily": "NotoSansKR-Light",
+          "fontSize": 16,
+          "lineHeight": 26,
+        },
+      ]
+    }
+  >
+    Light Paragraph
   </Text>
 </View>
 `;
@@ -17543,7 +17534,6 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             "fontFamily": "NotoSansKR-Bold",
             "fontSize": 32,
             "lineHeight": 55,
-            "marginBottom": 16,
           },
         ]
       }
