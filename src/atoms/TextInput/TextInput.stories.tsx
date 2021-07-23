@@ -60,6 +60,7 @@ storiesOf('Atoms/TextInput', module)
       </>
     );
   })
+
   .add('Multiline', () => {
     const longText = 'Multi Line Long Text '.repeat(5);
     return (
@@ -80,17 +81,39 @@ storiesOf('Atoms/TextInput', module)
       </>
     );
   })
+  .add('Label', () => {
+    return (
+      <>
+        <TextInput
+          label="Label"
+          defaultValue="With label"
+          style={{ marginBottom: 5 }}
+          onChangeText={v => action('onChangeText')(v)}
+        />
+        <TextInput
+          defaultValue="No label"
+          error={{ type: 'max', message: 'Error' }}
+          onChangeText={v => action('onChangeText')(v)}
+        />
+      </>
+    );
+  })
   .add('Error', () => {
     return (
       <>
         <TextInput
-          label="No Error"
+          defaultValue="No Error"
+          style={{ marginBottom: 5 }}
+          onChangeText={v => action('onChangeText')(v)}
+        />
+        <TextInput
+          error={{ type: 'max', message: 'Only error' }}
           style={{ marginBottom: 5 }}
           onChangeText={v => action('onChangeText')(v)}
         />
         <TextInput
           label="label"
-          error={{ type: 'max', message: 'Error' }}
+          error={{ type: 'max', message: 'Error with label' }}
           onChangeText={v => action('onChangeText')(v)}
         />
       </>
@@ -100,20 +123,31 @@ storiesOf('Atoms/TextInput', module)
     return (
       <>
         <TextInput
-          label="No Success"
+          defaultValue="No success"
+          style={{ marginBottom: 5 }}
+          onChangeText={v => action('onChangeText')(v)}
+        />
+        <TextInput
+          success="Only success"
           style={{ marginBottom: 5 }}
           onChangeText={v => action('onChangeText')(v)}
         />
         <TextInput
           label="label"
-          success="Success with Label"
+          success="Success with label"
+          style={{ marginBottom: 5 }}
+          onChangeText={v => action('onChangeText')(v)}
+        />
+        <TextInput
+          error={{ type: 'max', message: 'error' }}
+          success="Success with error"
           style={{ marginBottom: 5 }}
           onChangeText={v => action('onChangeText')(v)}
         />
         <TextInput
           label="label"
           error={{ type: 'max', message: 'error' }}
-          success="Success with Label, Error"
+          success="Success with label, error"
           style={{ marginBottom: 5 }}
           onChangeText={v => action('onChangeText')(v)}
         />
@@ -141,7 +175,7 @@ storiesOf('Atoms/TextInput', module)
           label="String Suffix Disabled"
           disabled
           defaultValue="Text Input with Suffix"
-          suffix={<Text>Suffix</Text>}
+          suffix="Suffix"
           onChangeText={v => action('onChangeText')(v)}
         />
         <TextInput
