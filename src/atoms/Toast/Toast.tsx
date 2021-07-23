@@ -62,7 +62,9 @@ export const ToastProvider: React.FC = ({ children }) => {
             duration: 300,
             useNativeDriver: true,
           }),
-        ]).start();
+        ]).start(() => {
+          setMsg('');
+        });
       } else {
         Animated.timing(toastAnimValue, {
           toValue: 0,
@@ -77,10 +79,12 @@ export const ToastProvider: React.FC = ({ children }) => {
 
   const hideMessage = React.useCallback(() => {
     Animated.timing(toastAnimValue, {
-      toValue: 500,
+      toValue: toastPosition === 'top' ? -500 : 500,
       duration: 300,
       useNativeDriver: true,
-    }).start();
+    }).start(() => {
+      setMsg('');
+    });
   }, [toastAnimValue]);
 
   const actions: ToastActions = {
@@ -102,23 +106,25 @@ export const ToastProvider: React.FC = ({ children }) => {
   return (
     <ToastContext.Provider value={actions}>
       {children}
-      <SAnimatedView
-        style={{
-          transform: [
-            {
-              translateY: toastAnimValue,
-            },
-          ],
-          ...(toastPosition === 'top' ? { top: 20 } : { bottom: 20 }),
-        }}
-      >
-        <BasicToast
-          message={msg}
-          insets={insets}
-          toastPosition={toastPosition}
-          onExitPress={() => actions.hide()}
-        />
-      </SAnimatedView>
+      {msg && (
+        <SAnimatedView
+          style={{
+            transform: [
+              {
+                translateY: toastAnimValue,
+              },
+            ],
+            ...(toastPosition === 'top' ? { top: 20 } : { bottom: 20 }),
+          }}
+        >
+          <BasicToast
+            message={msg}
+            insets={insets}
+            toastPosition={toastPosition}
+            onExitPress={() => actions.hide()}
+          />
+        </SAnimatedView>
+      )}
     </ToastContext.Provider>
   );
 };
