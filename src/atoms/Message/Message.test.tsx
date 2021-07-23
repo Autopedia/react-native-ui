@@ -182,7 +182,8 @@ describe('[Message] Unit Test', () => {
   });
 
   it('should render UnhandledMessage template', () => {
-    const myUnhandleWrapper = shallow(<Message type="unhandle" mine />);
+    //@ts-ignore
+    const myUnhandleWrapper = shallow(<Message mine />);
     const myUnhandledMessage = myUnhandleWrapper
       .find('UnhandledMessage')
       .dive()
@@ -190,7 +191,8 @@ describe('[Message] Unit Test', () => {
 
     expect(myUnhandledMessage.exists).toBeTruthy();
 
-    const otherUnhandleWrapper = shallow(<Message type="unhandle" />);
+    //@ts-ignore
+    const otherUnhandleWrapper = shallow(<Message />);
     const otherUnhandleMessage = otherUnhandleWrapper
       .find('UnhandledMessage')
       .dive()

@@ -54,7 +54,8 @@ const getMessage = (props: MessageProps): React.ReactNode => {
       return <CounselCaseMessage {...props} />;
 
     default:
-      return <UnhandledMessage {...props} />;
+      //@ts-ignore
+      return <UnhandledMessage mine={props.mine} />;
   }
 };
 

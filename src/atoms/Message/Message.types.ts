@@ -82,10 +82,6 @@ export type OutdatedMessageProps = BaseMessageProps & {
   onPressFinish: () => void;
 };
 
-export type UnhandledMessageProps = BaseMessageProps & {
-  type: 'unhandle';
-};
-
 export type MessageProps =
   | TextMessageProps
   | ImageMessageProps
@@ -98,5 +94,4 @@ export type MessageProps =
   | ReviewMessageProps
   | EndMessageProps
   | EndConfirmedMessageProps
-  | OutdatedMessageProps
-  | UnhandledMessageProps;
+  | OutdatedMessageProps;
