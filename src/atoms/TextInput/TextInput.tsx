@@ -38,7 +38,7 @@ export interface TextInputProps
       | 'onChange'
       | 'defaultValue'
     > {
-  label: string;
+  label?: string;
   success?: string;
   disabled?: boolean;
   suffix?: React.ReactNode;
@@ -112,12 +112,15 @@ const TextInput = forwardRef(
             },
           })}
         >
-          <SHeader {...headerProps}>
-            {props.success || props.error?.message || props.label}
-          </SHeader>
+          {!!(props.success || props.error?.message || props.label) && (
+            <SHeader {...headerProps}>
+              {props.success || props.error?.message || props.label}
+            </SHeader>
+          )}
           <STextInput
             ref={ref}
             {...textInputProps}
+            textAlignVertical="center"
             placeholderTextColor={grayscaleColors.GRAY_400}
           />
           {props.secureTextEntry && (
@@ -151,7 +154,6 @@ const TextInput = forwardRef(
 
 const SFixWrapper = styled.View`
   flex-direction: row;
-
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
 `;
 
@@ -197,7 +199,7 @@ const STextInput = styled.TextInput<STextInputProps>`
   padding: 0px;
   margin: 0px;
   font-size: ${fonts.size.XS}px;
-  line-height: ${fonts.lineHeight.XS}px;
+  height: ${fonts.lineHeight.XS}px;
 
   /* multiline */
   ${props =>

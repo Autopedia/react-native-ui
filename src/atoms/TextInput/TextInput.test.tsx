@@ -75,4 +75,18 @@ describe('[TextInput] Unit Test', () => {
     textInput.simulate('changeText', MOCK_VALUE_DEFAULT + TEST_TEXT_MIXED);
     expect(mockValue).toEqual(MOCK_VALUE_DEFAULT + TEST_TEXT_NUMERIC);
   });
+
+  it('should toggle secureTextEntry when icon is pressed', () => {
+    let wrapper = shallow(<TextInput label="label" secureTextEntry />);
+
+    const icon = wrapper.find('Styled(Icon)');
+    icon.simulate('press');
+
+    wrapper = wrapper.update();
+
+    const textInput = wrapper.find('Styled(TextInput)');
+    const textInputProps = textInput.props() as { secureTextEntry?: boolean };
+
+    expect(textInputProps.secureTextEntry).toBe(false);
+  });
 });
