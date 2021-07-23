@@ -7699,46 +7699,6 @@ exports[`Storyshots Atoms/TextInput Underline 1`] = `
 </View>
 `;
 
-exports[`Storyshots Atoms/Toast Message 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexBasis": 0,
-        "flexGrow": 1,
-        "flexShrink": 1,
-        "justifyContent": "center",
-        "paddingBottom": 10,
-        "paddingLeft": 10,
-        "paddingRight": 10,
-        "paddingTop": 10,
-      },
-    ]
-  }
->
-  <RNCSafeAreaProvider
-    onInsetsChange={[Function]}
-    style={
-      Array [
-        Object {
-          "flex": 1,
-        },
-        Array [
-          Object {
-            "flexBasis": 0,
-            "flexGrow": 1,
-            "flexShrink": 1,
-            "justifyContent": "center",
-            "width": "100%",
-          },
-        ],
-      ]
-    }
-  />
-</View>
-`;
-
 exports[`Storyshots Atoms/Toast Playground 1`] = `
 <View
   style={
@@ -7779,7 +7739,7 @@ exports[`Storyshots Atoms/Toast Playground 1`] = `
 </View>
 `;
 
-exports[`Storyshots Atoms/Toast ToastTest 1`] = `
+exports[`Storyshots Atoms/Toast ToastPosition 1`] = `
 <View
   style={
     Array [

@@ -5,8 +5,10 @@
 import 'react-native';
 import 'jest-styled-components';
 import React from 'react';
-import { BasicToast } from './Toast';
+import { BasicToast, ToastProvider, useToast } from './Toast';
 import { shallow } from 'enzyme';
+import { EdgeInsets, SafeAreaProvider } from 'react-native-safe-area-context';
+import { Button } from 'react-native';
 
 /**
  * Toast에 대한 Testing은 react-native-toast-message라는 외부 라이브러리를 그대로 활용하고,
@@ -16,8 +18,16 @@ import { shallow } from 'enzyme';
 
 describe('[Toast] Unit Test', () => {
   it('BasicToast: should fire onPress event', () => {
+    const insets: EdgeInsets = { top: 20, bottom: 20, left: 10, right: 10 };
     const onPressMock = jest.fn();
-    const toast = shallow(<BasicToast message="test" onPress={onPressMock} />);
+    const toast = shallow(
+      <BasicToast
+        message="test"
+        toastPosition="top"
+        insets={insets}
+        onExitPress={onPressMock}
+      />,
+    );
     const icon = toast.find('Icon');
     icon.simulate('press');
     expect(onPressMock).toHaveBeenCalledTimes(1);

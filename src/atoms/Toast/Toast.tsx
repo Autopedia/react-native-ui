@@ -1,43 +1,33 @@
 import React from 'react';
-import { Animated, GestureResponderEvent } from 'react-native';
+import { Animated, Easing } from 'react-native';
 import colors from '../../styles/colors';
 import styled from 'styled-components/native';
 import Typography from '../Typography';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { useSafeAreaInsets, EdgeInsets } from 'react-native-safe-area-context';
 import Icon from '../Icon';
+import { GestureResponderEvent } from 'react-native';
 
 const { Paragraph } = Typography;
-
+type ToastShowProps = {
+  message: string;
+  duration?: number;
+  autoHide?: boolean;
+  toastPosition?: ToastPosition;
+};
+type ToastPosition = 'top' | 'bottom';
 type ToastActions = {
-  show: (msg: string, duration?: number) => void;
+  show: ({
+    message,
+    duration,
+    autoHide,
+    toastPosition,
+  }: ToastShowProps) => void;
   hide: () => void;
 };
 
-type BasicToastProps = {
-  message: string;
-  onPress: (e: GestureResponderEvent) => void;
-};
-
-export const BasicToast: React.FC<BasicToastProps> = ({ message, onPress }) => {
-  return (
-    <SContainer>
-      <SToastWrapper>
-        <Paragraph size={2} color={colors.WHITE}>
-          {message}
-        </Paragraph>
-        <Icon
-          source={require('src/assets/icons/exit/exit.png')}
-          touchable
-          onPress={onPress}
-        />
-      </SToastWrapper>
-    </SContainer>
-  );
-};
-
 const initialActions: ToastActions = {
-  show: (msg: string) =>
-    console.error('TOAST: actions not provieded yet: ', msg),
+  show: ({ message }) =>
+    console.error('TOAST: actions not provided yet: ', message),
   hide: () => console.error('TOAST: actions not provieded yet: force hide'),
 };
 
@@ -49,40 +39,145 @@ export const useToast = () => {
 };
 
 export const ToastProvider: React.FC = ({ children }) => {
-  const [visible, setVisible] = React.useState(false);
-  const [message, setMessage] = React.useState('');
+  const [toastPosition, setToastPosition] =
+    React.useState<ToastPosition>('bottom');
+  const toastAnimValue = React.useRef(new Animated.Value(500)).current;
+  const [msg, setMsg] = React.useState('');
+  const insets = useSafeAreaInsets();
+
+  const showMessage = React.useCallback(
+    (duration: number, autoHide: boolean, toastPosition: ToastPosition) => {
+      toastAnimValue.setValue(toastPosition === 'top' ? -500 : 500);
+      if (autoHide) {
+        Animated.sequence([
+          Animated.timing(toastAnimValue, {
+            toValue: 0,
+            duration: 300,
+            useNativeDriver: true,
+            easing: Easing.inOut(Easing.quad),
+          }),
+          Animated.delay(duration),
+          Animated.timing(toastAnimValue, {
+            toValue: toastPosition === 'top' ? -500 : 500,
+            duration: 300,
+            useNativeDriver: true,
+          }),
+        ]).start();
+      } else {
+        Animated.timing(toastAnimValue, {
+          toValue: 0,
+          duration: 300,
+          useNativeDriver: true,
+          easing: Easing.inOut(Easing.quad),
+        }).start();
+      }
+    },
+    [toastAnimValue],
+  );
+
+  const hideMessage = React.useCallback(() => {
+    Animated.timing(toastAnimValue, {
+      toValue: 500,
+      duration: 300,
+      useNativeDriver: true,
+    }).start();
+  }, [toastAnimValue]);
+
   const actions: ToastActions = {
-    show: (msg, duration) => {
-      setMessage(msg);
-      setVisible(true);
+    show: ({
+      message,
+      duration = 3000,
+      autoHide = true,
+      toastPosition = 'bottom',
+    }) => {
+      setMsg(message);
+      setToastPosition(toastPosition);
+      showMessage(duration, autoHide, toastPosition);
     },
     hide: () => {
-      setVisible(false);
+      console.log('pressed hide');
+      hideMessage();
     },
   };
   return (
     <ToastContext.Provider value={actions}>
       {children}
-      {visible && (
-        <BasicToast message={message} onPress={() => actions.hide()} />
-      )}
+      <SAnimatedView
+        style={{
+          transform: [
+            {
+              translateY: toastAnimValue,
+            },
+          ],
+          ...(toastPosition === 'top' ? { top: 20 } : { bottom: 20 }),
+        }}
+      >
+        <BasicToast
+          message={msg}
+          insets={insets}
+          toastPosition={toastPosition}
+          onExitPress={() => actions.hide()}
+        />
+      </SAnimatedView>
     </ToastContext.Provider>
   );
 };
 
-const SContainer = styled(SafeAreaView)`
+type BasicToastProps = {
+  insets: EdgeInsets;
+  toastPosition: ToastPosition;
+  message: string;
+  onExitPress: (e: GestureResponderEvent) => void;
+};
+export const BasicToast: React.FC<BasicToastProps> = ({
+  insets,
+  toastPosition,
+  message,
+  onExitPress,
+}) => {
+  return (
+    <SToastWrapper insets={insets} toastPosition={toastPosition}>
+      <Paragraph size={2} color={colors.WHITE}>
+        {message}
+      </Paragraph>
+      <Icon
+        source={require('../../assets/icons/exit/exit.png')}
+        touchable
+        onPress={onExitPress}
+      />
+    </SToastWrapper>
+  );
+};
+
+const SAnimatedView = styled(Animated.View)`
   position: absolute;
   width: 100%;
+  padding: 0px 20px;
   align-items: center;
   justify-content: center;
+  z-index: 100;
 `;
 
-const SToastWrapper = styled.View`
+type SToastWrapperProps = {
+  insets: EdgeInsets;
+  toastPosition: ToastPosition;
+};
+
+const SToastWrapper = styled.View<SToastWrapperProps>`
   padding: 12px 10px 12px 16px;
   border-radius: 8px;
-  margin-horizontal: 20px;
+  margin: 0px 20px;
+  width: 100%;
   background-color: ${colors.GRAY_800};
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  ${props => {
+    switch (props.toastPosition) {
+      case 'bottom':
+        return `margin-bottom: ${40 + props.insets.bottom}px`;
+      default:
+        return `margin-top: ${5 + props.insets.top}px`;
+    }
+  }}
 `;

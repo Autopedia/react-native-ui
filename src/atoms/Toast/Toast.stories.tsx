@@ -3,56 +3,58 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { text } from '@storybook/addon-knobs';
 import { Button } from 'react-native';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import {
+  SafeAreaProvider,
+  SafeAreaView,
+  EdgeInsets,
+} from 'react-native-safe-area-context';
 import { storiesOf } from '@storybook/react-native';
 
 import CenterContainerDecorator from '../../decorators/center-container.decorator';
 import SThemeDecorator from '../../decorators/styled-components.decorator';
-import { BasicToast, ToastProvider, useToast } from './Toast';
+import { BasicToast } from './Toast';
 import styled from 'styled-components/native';
 
 storiesOf('Atoms/Toast', module)
   .addDecorator(SThemeDecorator)
   .addDecorator(CenterContainerDecorator)
   .add('Playground', () => {
+    const insets: EdgeInsets = { top: 20, bottom: 20, left: 10, right: 10 };
     return (
       <SSafeAreaProvider>
         <SView>
           <BasicToast
-            message={text('text', 'Toast Message')}
-            onPress={e => action('onPress')(e.nativeEvent)}
+            message={text('message', 'Test Toast Message')}
+            toastPosition="bottom"
+            onExitPress={e => action('onPress')(e.nativeEvent)}
+            insets={insets}
           />
         </SView>
       </SSafeAreaProvider>
     );
   })
-  .add('Message', () => {
+  .add('ToastPosition', () => {
+    const insets: EdgeInsets = { top: 20, bottom: 20, left: 10, right: 10 };
     return (
       <SSafeAreaProvider>
         <SView>
-          <BasicToast
-            message="Test Toast Message"
-            onPress={e => action('onPress')(e.nativeEvent)}
-          />
-          <SSpace />
-          <BasicToast
-            message="Test toast message which makes sentence very long to reach two line"
-            onPress={e => action('onPress')(e.nativeEvent)}
-          />
+          <Background>
+            <BasicToast
+              message="Test Toast Message has margin-top if toastPosition is top"
+              toastPosition="top"
+              onExitPress={e => action('onPress')(e.nativeEvent)}
+              insets={insets}
+            />
+          </Background>
+          <Background>
+            <BasicToast
+              message="Test Toast Message has margin-bottom if toastPosition is bottom"
+              toastPosition="bottom"
+              onExitPress={e => action('onPress')(e.nativeEvent)}
+              insets={insets}
+            />
+          </Background>
         </SView>
-      </SSafeAreaProvider>
-    );
-  })
-  .add('ToastTest', () => {
-    const toast = useToast();
-    return (
-      <SSafeAreaProvider>
-        <ToastProvider>
-          <Button
-            title="Test Toast"
-            onPress={() => toast.show('toast message test')}
-          />
-        </ToastProvider>
       </SSafeAreaProvider>
     );
   });
@@ -64,10 +66,15 @@ const SSafeAreaProvider = styled(SafeAreaProvider)`
 `;
 
 const SView = styled(SafeAreaView)`
+  width: 100%;
   align-items: center;
   justify-content: center;
 `;
 
-const SSpace = styled.View`
-  height: 10px;
+const Background = styled.View`
+  width: 100%;
+  background-color: grey;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 `;
