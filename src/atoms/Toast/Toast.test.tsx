@@ -78,7 +78,6 @@ describe('[Toast] Unit Test', () => {
     wrapper = wrapper.update();
 
     const basicToast = wrapper.find('BasicToast');
-    console.log(basicToast.debug());
     const basicToastProps = basicToast.props() as {
       onExitPress: () => void;
     };
