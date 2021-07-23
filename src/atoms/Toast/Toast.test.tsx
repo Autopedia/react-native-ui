@@ -54,34 +54,13 @@ describe('[Toast] Unit Test', () => {
 
     let wrapper = shallow(<ToastProvider />);
 
-    const animatedViewProps = wrapper.find('Styled(Component)').props().style;
-    console.log(animatedViewProps);
-
     wrapper.props().value.show({ message: TEST_TEXT, autohide: false });
 
     wrapper = wrapper.update();
-
-    const animatedViewProps2 = wrapper.find('Styled(Component)').props().style;
-    console.log(animatedViewProps2);
 
     const basicToast = wrapper.find('BasicToast');
     const basicToastProps = basicToast.props() as { message?: string };
 
     expect(basicToastProps.message).toBe(TEST_TEXT);
-  });
-  it('Toast: should hide on toast.hide()', () => {
-    const TEST_TEXT = 'TEST';
-
-    let wrapper = shallow(<ToastProvider />);
-
-    wrapper.props().value.show({ message: TEST_TEXT, autohide: false });
-
-    wrapper = wrapper.update();
-    const animatedViewProps = wrapper.find('Styled(Component)').props().style;
-    console.log(animatedViewProps);
-    const basicToast = wrapper.find('BasicToast');
-    console.log(basicToast.debug());
-    const basicToastProps = basicToast.props() as { style };
-    console.log(basicToastProps);
   });
 });
