@@ -99,7 +99,6 @@ export const ToastProvider: React.FC = ({ children }) => {
       showMessage(duration, autoHide, toastPosition);
     },
     hide: () => {
-      console.log('pressed hide');
       hideMessage();
     },
   };
@@ -129,7 +128,7 @@ export const ToastProvider: React.FC = ({ children }) => {
   );
 };
 
-type BasicToastProps = {
+export type BasicToastProps = {
   insets: EdgeInsets;
   toastPosition: ToastPosition;
   message: string;

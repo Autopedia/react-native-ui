@@ -5,9 +5,10 @@
 import 'react-native';
 import 'jest-styled-components';
 import React from 'react';
-import { BasicToast, ToastProvider } from './Toast';
+import { BasicToast, ToastProvider, useToast } from './Toast';
 import { shallow } from 'enzyme';
 import { EdgeInsets } from 'react-native-safe-area-context';
+import { GestureResponderEvent, Text } from 'react-native';
 
 jest.mock(
   'react-native-safe-area-context/lib/commonjs/SafeAreaContext',
@@ -20,6 +21,11 @@ jest.useFakeTimers();
 jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
 
 const insets: EdgeInsets = { top: 20, bottom: 20, left: 10, right: 10 };
+
+const HookTest = () => {
+  const toast = useToast();
+  return <Text onPress={() => toast.show()}>useToast test</Text>;
+};
 
 describe('[Toast] Unit Test', () => {
   it('BasicToast: should render same text', () => {
@@ -71,7 +77,12 @@ describe('[Toast] Unit Test', () => {
     wrapper.props().value.show({ message: TEST_TEXT, autohide: false });
     wrapper = wrapper.update();
 
-    wrapper.props().value.hide();
+    const basicToast = wrapper.find('BasicToast');
+    console.log(basicToast.debug());
+    const basicToastProps = basicToast.props() as {
+      onExitPress: () => void;
+    };
+    basicToastProps.onExitPress();
     wrapper = wrapper.update();
 
     expect(wrapper.find('BasicToast').length).toBe(0);
