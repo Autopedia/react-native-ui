@@ -5,20 +5,37 @@
 import 'react-native';
 import 'jest-styled-components';
 import React from 'react';
-import { BasicToast, ToastProvider, useToast } from './Toast';
+import { BasicToast, ToastProvider } from './Toast';
 import { shallow } from 'enzyme';
-import { EdgeInsets, SafeAreaProvider } from 'react-native-safe-area-context';
-import { Button } from 'react-native';
+import { EdgeInsets } from 'react-native-safe-area-context';
 
-/**
- * Toast에 대한 Testing은 react-native-toast-message라는 외부 라이브러리를 그대로 활용하고,
- * 이 라이브러리는 Testing을 통한 관리가 되고있는 상황이기에
- * react-native-ui에서 BasicToast라는 커스텀으로 정의한 Toast UI컴포넌트에 대해서만 테스트를 진행함
- */
+jest.mock(
+  'react-native-safe-area-context/lib/commonjs/SafeAreaContext',
+  () => ({
+    useSafeAreaInsets: jest.fn().mockImplementation(() => {}),
+  }),
+);
+
+jest.useFakeTimers();
+jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
+
+const insets: EdgeInsets = { top: 20, bottom: 20, left: 10, right: 10 };
 
 describe('[Toast] Unit Test', () => {
+  it('BasicToast: should render same text', () => {
+    const testText = 'TEST';
+    const toast = shallow(
+      <BasicToast
+        message={testText}
+        toastPosition="top"
+        insets={insets}
+        onExitPress={() => {}}
+      />,
+    );
+    const paragraph = toast.find('Paragraph').dive().text();
+    expect(testText).toEqual(paragraph);
+  });
   it('BasicToast: should fire onPress event', () => {
-    const insets: EdgeInsets = { top: 20, bottom: 20, left: 10, right: 10 };
     const onPressMock = jest.fn();
     const toast = shallow(
       <BasicToast
@@ -31,5 +48,19 @@ describe('[Toast] Unit Test', () => {
     const icon = toast.find('Icon');
     icon.simulate('press');
     expect(onPressMock).toHaveBeenCalledTimes(1);
+  });
+  it('Toast: should show on toast.show()', () => {
+    const TEST_TEXT = 'TEST';
+
+    let wrapper = shallow(<ToastProvider />);
+
+    wrapper.props().value.show({ message: TEST_TEXT, autohide: false });
+
+    wrapper = wrapper.update();
+
+    const basicToast = wrapper.find('BasicToast');
+    const basicToastProps = basicToast.props() as { message?: string };
+
+    expect(basicToastProps.message).toBe(TEST_TEXT);
   });
 });

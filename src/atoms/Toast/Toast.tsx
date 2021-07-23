@@ -28,7 +28,7 @@ type ToastActions = {
 const initialActions: ToastActions = {
   show: ({ message }) =>
     console.error('TOAST: actions not provided yet: ', message),
-  hide: () => console.error('TOAST: actions not provieded yet: force hide'),
+  hide: () => console.error('TOAST: actions not provided yet: force hide'),
 };
 
 const ToastContext = React.createContext<ToastActions>(initialActions);
