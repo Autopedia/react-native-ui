@@ -273,6 +273,8 @@ const SButtonText = styled.Text<SButtonTextProps>`
   }}
 `;
 
+SButtonText.displayName = 'ButtonText';
+
 const SIcon = styled(Icon)<SIconProps>`
   /* iconMargin */
   ${props => {
@@ -285,5 +287,7 @@ const SIcon = styled(Icon)<SIconProps>`
     `;
   }}
 `;
+
+SIcon.displayName = 'ButtonIcon';
 
 export default Button;
