@@ -24,7 +24,7 @@ describe('[ProgressiveImage] Unit Test', () => {
     expect(onLoadMock).toHaveBeenCalledTimes(1);
   });
 
-  it('should fire onLoad event without onLoad evnet', () => {
+  it('should fire onLoad event without onLoad function', () => {
     const wrapper = shallow(
       <ProgressiveImage
         source={{ uri: 'https://picsum.photos/200/300' }}
