@@ -1,6 +1,5 @@
 import React from 'react';
-import { GestureResponderEvent } from 'react-native';
-import Toast from 'react-native-toast-message';
+import { Animated, GestureResponderEvent } from 'react-native';
 import colors from '../../styles/colors';
 import styled from 'styled-components/native';
 import Typography from '../Typography';
@@ -9,10 +8,9 @@ import Icon from '../Icon';
 
 const { Paragraph } = Typography;
 
-const toastConfig = {
-  basic: ({ props, hide }) => {
-    return <BasicToast message={props.message} onPress={hide} />;
-  },
+type ToastActions = {
+  show: (msg: string, duration?: number) => void;
+  hide: () => void;
 };
 
 type BasicToastProps = {
@@ -28,7 +26,7 @@ export const BasicToast: React.FC<BasicToastProps> = ({ message, onPress }) => {
           {message}
         </Paragraph>
         <Icon
-          source={require('../../assets/icons/exit/exit.png')}
+          source={require('src/assets/icons/exit/exit.png')}
           touchable
           onPress={onPress}
         />
@@ -37,17 +35,46 @@ export const BasicToast: React.FC<BasicToastProps> = ({ message, onPress }) => {
   );
 };
 
-export const ToastInitializer = () => (
-  <Toast
-    autoHide
-    visibilityTime={3000}
-    ref={ref => Toast.setRef(ref)}
-    config={toastConfig}
-  />
-);
+const initialActions: ToastActions = {
+  show: (msg: string) =>
+    console.error('TOAST: actions not provieded yet: ', msg),
+  hide: () => console.error('TOAST: actions not provieded yet: force hide'),
+};
+
+const ToastContext = React.createContext<ToastActions>(initialActions);
+
+export const useToast = () => {
+  const toast = React.useContext(ToastContext);
+  return toast;
+};
+
+export const ToastProvider: React.FC = ({ children }) => {
+  const [visible, setVisible] = React.useState(false);
+  const [message, setMessage] = React.useState('');
+  const actions: ToastActions = {
+    show: (msg, duration) => {
+      setMessage(msg);
+      setVisible(true);
+    },
+    hide: () => {
+      setVisible(false);
+    },
+  };
+  return (
+    <ToastContext.Provider value={actions}>
+      {children}
+      {visible && (
+        <BasicToast message={message} onPress={() => actions.hide()} />
+      )}
+    </ToastContext.Provider>
+  );
+};
 
 const SContainer = styled(SafeAreaView)`
+  position: absolute;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 `;
 
 const SToastWrapper = styled.View`
@@ -59,5 +86,3 @@ const SToastWrapper = styled.View`
   justify-content: space-between;
   align-items: center;
 `;
-
-export { Toast };

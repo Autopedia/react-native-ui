@@ -1,13 +1,15 @@
 import React from 'react';
 
-import { storiesOf } from '@storybook/react-native';
-import CenterContainerDecorator from '../../decorators/center-container.decorator';
-import SThemeDecorator from '../../decorators/styled-components.decorator';
-import { BasicToast, Toast, ToastInitializer } from './Toast';
-import styled from 'styled-components/native';
+import { action } from '@storybook/addon-actions';
+import { text } from '@storybook/addon-knobs';
 import { Button } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
-import { text } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react-native';
+
+import CenterContainerDecorator from '../../decorators/center-container.decorator';
+import SThemeDecorator from '../../decorators/styled-components.decorator';
+import { BasicToast, ToastProvider, useToast } from './Toast';
+import styled from 'styled-components/native';
 
 storiesOf('Atoms/Toast', module)
   .addDecorator(SThemeDecorator)
@@ -18,7 +20,7 @@ storiesOf('Atoms/Toast', module)
         <SView>
           <BasicToast
             message={text('text', 'Toast Message')}
-            onPress={() => console.log('hello')}
+            onPress={e => action('onPress')(e.nativeEvent)}
           />
         </SView>
       </SSafeAreaProvider>
@@ -30,27 +32,27 @@ storiesOf('Atoms/Toast', module)
         <SView>
           <BasicToast
             message="Test Toast Message"
-            onPress={() => console.log('hello')}
+            onPress={e => action('onPress')(e.nativeEvent)}
           />
           <SSpace />
           <BasicToast
             message="Test toast message which makes sentence very long to reach two line"
-            onPress={() => console.log('hello')}
+            onPress={e => action('onPress')(e.nativeEvent)}
           />
         </SView>
       </SSafeAreaProvider>
     );
   })
   .add('ToastTest', () => {
+    const toast = useToast();
     return (
       <SSafeAreaProvider>
-        <Button
-          title="Test Toast Message"
-          onPress={() =>
-            Toast.show({ type: 'basic', props: { message: 'hello' } })
-          }
-        />
-        <ToastInitializer />
+        <ToastProvider>
+          <Button
+            title="Test Toast"
+            onPress={() => toast.show('toast message test')}
+          />
+        </ToastProvider>
       </SSafeAreaProvider>
     );
   });
