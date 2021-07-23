@@ -166,7 +166,7 @@ const SContainer = styled.View<SContainerProps>`
   justify-content: center;
   align-items: center;
 
-  /* size (default: md) */
+  /* size (default: lg) */
   ${props => {
     switch (props.size) {
       case 'sm':
@@ -176,6 +176,10 @@ const SContainer = styled.View<SContainerProps>`
       case 'md':
         return `
           padding: 10px 16px;
+        `;
+      case 'lg':
+        return `
+          padding: 14px 24px;
         `;
       default:
         return `
@@ -202,7 +206,7 @@ const SContainer = styled.View<SContainerProps>`
     `;
   }}
 
-  /* color (default: default) */
+  /* color */
   ${props => {
     if (props.pressed && props.containerTouchedColor) {
       return `
@@ -234,6 +238,12 @@ const SButtonText = styled.Text<SButtonTextProps>`
       case 'md':
         return `
           font-family: ${fonts.family.REGULAR};
+          font-size: ${fonts.size.S}px;
+          line-height: ${fonts.lineHeight.S}px;
+        `;
+      case 'lg':
+        return `
+          font-family: ${fonts.family.MEDIUM};
           font-size: ${fonts.size.S}px;
           line-height: ${fonts.lineHeight.S}px;
         `;

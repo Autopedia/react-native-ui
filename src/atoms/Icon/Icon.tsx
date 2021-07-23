@@ -56,6 +56,8 @@ const SIcon = styled.Image<SIconProps>`
     switch (props.size) {
       case 'sm':
         return `width: 20px; height: 20px;`;
+      case 'md':
+        return `width: 24px; height: 24px;`;
       case 'lg':
         return `width: 32px; height: 32px`;
       default:
