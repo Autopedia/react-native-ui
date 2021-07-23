@@ -220,11 +220,13 @@ const STextInput = styled.TextInput<STextInputProps>`
       color: ${colors.ON_DISABLED};
   `}
 `;
+STextInput.displayName = 'RNTextInput';
 
 const SIcon = styled(Icon)`
   position: absolute;
   right: 8px;
 `;
+SIcon.displayName = 'SecureTextEntryToggle';
 
 const SSuffix = styled.View<SFixProps>`
   justify-content: center;

@@ -31,7 +31,7 @@ describe('[TextInput] Unit Test', () => {
     const wrapper = shallow(
       <TextInput label="label" onChangeText={onChangeTextMock} />,
     );
-    const textInput = wrapper.find('Styled(TextInput)');
+    const textInput = wrapper.find('RNTextInput');
     textInput.simulate('changeText', TEST_TEXT);
 
     expect(onChangeTextMock).toHaveBeenCalledTimes(1);
@@ -47,7 +47,7 @@ describe('[TextInput] Unit Test', () => {
         onChangeText={onChangeTextMock}
       />,
     );
-    const textInput = wrapper.find('Styled(TextInput)');
+    const textInput = wrapper.find('RNTextInput');
     textInput.simulate('changeText', TEST_TEXT);
 
     expect(mockValue).toEqual(MOCK_VALUE_DEFAULT);
@@ -64,7 +64,7 @@ describe('[TextInput] Unit Test', () => {
       />,
     );
 
-    const textInput = wrapper.find('Styled(TextInput)');
+    const textInput = wrapper.find('RNTextInput');
 
     textInput.simulate('changeText', MOCK_VALUE_DEFAULT + TEST_TEXT);
     expect(mockValue).toEqual(MOCK_VALUE_DEFAULT);
@@ -79,12 +79,12 @@ describe('[TextInput] Unit Test', () => {
   it('should toggle secureTextEntry when icon is pressed', () => {
     let wrapper = shallow(<TextInput label="label" secureTextEntry />);
 
-    const icon = wrapper.find('Styled(Icon)');
+    const icon = wrapper.find('SecureTextEntryToggle');
     icon.simulate('press');
 
     wrapper = wrapper.update();
 
-    const textInput = wrapper.find('Styled(TextInput)');
+    const textInput = wrapper.find('RNTextInput');
     const textInputProps = textInput.props() as { secureTextEntry?: boolean };
 
     expect(textInputProps.secureTextEntry).toBe(false);
