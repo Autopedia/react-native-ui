@@ -3,6 +3,7 @@ import { Alert } from 'react-native';
 import { EndMessageProps } from '../../Message.types';
 import Button from '../../../../atoms/Button';
 import { CardMessage } from '../CardMessage';
+import { systemColors } from '../../../../styles/system-colors';
 
 export const EndMessage: React.FC<EndMessageProps> = ({
   onPressFinish,
@@ -25,7 +26,12 @@ export const EndMessage: React.FC<EndMessageProps> = ({
   const description =
     '상담은 만족스러우셨나요?\n24시간 후에 상담이 자동 종료됩니다!\n계속 상담을 진행하시면 자동 종료는 취소됩니다.';
   const footer = (
-    <Button type="block" color="error" disabled={disabled} onPress={finishChat}>
+    <Button
+      type="block"
+      color={systemColors.ERROR}
+      disabled={disabled}
+      onPress={finishChat}
+    >
       지금 상담 종료하기
     </Button>
   );
