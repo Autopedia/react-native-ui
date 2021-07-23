@@ -63,4 +63,17 @@ describe('[Toast] Unit Test', () => {
 
     expect(basicToastProps.message).toBe(TEST_TEXT);
   });
+  it('Toast: should show on toast.hide()', () => {
+    const TEST_TEXT = 'TEST';
+
+    let wrapper = shallow(<ToastProvider />);
+
+    wrapper.props().value.show({ message: TEST_TEXT, autohide: false });
+    wrapper = wrapper.update();
+
+    wrapper.props().value.hide();
+    wrapper = wrapper.update();
+
+    expect(wrapper.find('BasicToast').length).toBe(0);
+  });
 });
