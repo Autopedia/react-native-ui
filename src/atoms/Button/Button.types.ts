@@ -29,20 +29,19 @@ export type SContainerProps = ButtonProps & {
   containerDisabledColor?: string;
 };
 
-export type SButtonTextProps = TextStyle &
-  Pick<ButtonProps, 'size' | 'disabled'> & {
-    pressed: boolean;
-    textColor: string;
-    textTouchedColor: string;
-    textDisabledColor: string;
-  };
-
-export type SIconProps = Pick<
-  ButtonProps,
-  'type' | 'disabled' | 'iconPosition'
-> & {
-  pressed: boolean;
+export type CustomColors = {
   textColor: string;
   textTouchedColor: string;
   textDisabledColor: string;
+  containerColor: string;
+  containerTouchedColor: string;
+  containerDisabledColor: string;
 };
+
+export type SButtonTextProps = TextStyle &
+  Pick<ButtonProps, 'size' | 'disabled'> &
+  Pick<CustomColors, 'textColor' | 'textTouchedColor' | 'textDisabledColor'> & {
+    pressed: boolean;
+  };
+
+export type SIconProps = Pick<ButtonProps, 'iconPosition'>;

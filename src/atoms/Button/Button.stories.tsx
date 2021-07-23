@@ -445,6 +445,27 @@ storiesOf('Atoms/Button', module)
         >
           Text Icon Right
         </Button>
+        <Button
+          type="text"
+          size="sm"
+          color={subColors.CARROT}
+          icon={require('../../assets/icons/shop/shop.png')}
+          onPress={e => action('onPress')(e.nativeEvent)}
+          style={{ marginBottom: 5 }}
+        >
+          Text Icon Left
+        </Button>
+        <Button
+          type="text"
+          size="sm"
+          color={subColors.CARROT}
+          icon={require('../../assets/icons/shop/shop.png')}
+          iconPosition="right"
+          onPress={e => action('onPress')(e.nativeEvent)}
+          style={{ marginBottom: 5 }}
+        >
+          Text Icon Right
+        </Button>
       </>
     );
   })

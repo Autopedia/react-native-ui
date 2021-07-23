@@ -9753,53 +9753,6 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
         textAlignVertical="center"
         underlineColorAndroid="transparent"
       />
-      <View
-        accessible={true}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "marginBottom": -4,
-            "marginLeft": -4,
-            "marginRight": -4,
-            "marginTop": -4,
-            "opacity": 1,
-            "paddingBottom": 4,
-            "paddingLeft": 4,
-            "paddingRight": 4,
-            "paddingTop": 4,
-            "position": "absolute",
-            "right": 8,
-          }
-        }
-      >
-        <Image
-          disabled={false}
-          source={
-            Object {
-              "testUri": "../../../src/assets/icons/eye/eye-opened.png",
-            }
-          }
-          style={
-            Array [
-              Object {
-                "height": 24,
-                "width": 24,
-              },
-              Object {},
-            ]
-          }
-        />
-      </View>
     </View>
   </View>
   <View
@@ -9882,57 +9835,6 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
         textAlignVertical="center"
         underlineColorAndroid="transparent"
       />
-<<<<<<< HEAD
-      <View
-        accessible={true}
-        focusable={false}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "marginBottom": -4,
-            "marginLeft": -4,
-            "marginRight": -4,
-            "marginTop": -4,
-            "opacity": 1,
-            "paddingBottom": 4,
-            "paddingLeft": 4,
-            "paddingRight": 4,
-            "paddingTop": 4,
-            "position": "absolute",
-            "right": 8,
-          }
-        }
-      >
-        <Image
-          disabled={true}
-          source={
-            Object {
-              "testUri": "../../../src/assets/icons/eye/eye-opened.png",
-            }
-          }
-          style={
-            Array [
-              Object {
-                "height": 24,
-                "opacity": 0.5,
-                "width": 24,
-              },
-              Object {},
-            ]
-          }
-        />
-      </View>
-=======
->>>>>>> origin/develop
     </View>
   </View>
 </View>
@@ -10340,6 +10242,10 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "center",
+            "marginBottom": -4,
+            "marginLeft": -4,
+            "marginRight": -4,
+            "marginTop": -4,
             "opacity": 1,
             "paddingBottom": 4,
             "paddingLeft": 4,
@@ -10359,7 +10265,10 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
           }
           style={
             Array [
-              Object {},
+              Object {
+                "height": 24,
+                "width": 24,
+              },
               Object {},
             ]
           }
@@ -10464,6 +10373,10 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "center",
+            "marginBottom": -4,
+            "marginLeft": -4,
+            "marginRight": -4,
+            "marginTop": -4,
             "opacity": 1,
             "paddingBottom": 4,
             "paddingLeft": 4,
@@ -10484,7 +10397,9 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
           style={
             Array [
               Object {
+                "height": 24,
                 "opacity": 0.5,
+                "width": 24,
               },
               Object {},
             ]
@@ -11190,7 +11105,10 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
           }
           style={
             Array [
-              Object {},
+              Object {
+                "height": 24,
+                "width": 24,
+              },
               Object {
                 "marginRight": 4,
               },
@@ -11450,7 +11368,10 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
           }
           style={
             Array [
-              Object {},
+              Object {
+                "height": 24,
+                "width": 24,
+              },
               Object {
                 "marginRight": 4,
               },

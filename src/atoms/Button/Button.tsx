@@ -19,7 +19,9 @@ import {
   SContainerProps,
   SButtonTextProps,
   SIconProps,
+  CustomColors,
 } from './Button.types';
+import { LoadingDots } from '../LoadingDots';
 
 const Button: React.FC<ButtonProps> = ({
   children,
@@ -28,12 +30,12 @@ const Button: React.FC<ButtonProps> = ({
   disabledColor,
   ...props
 }) => {
-  let containerColor: string | undefined,
-    containerTouchedColor: string | undefined,
-    containerDisabledColor: string | undefined,
-    textColor: string,
-    textTouchedColor: string,
-    textDisabledColor: string;
+  let textColor: CustomColors['textColor'];
+  let textTouchedColor: CustomColors['textTouchedColor'];
+  let textDisabledColor: CustomColors['textDisabledColor'];
+  let containerColor: CustomColors['containerColor'];
+  let containerTouchedColor: CustomColors['containerTouchedColor'];
+  let containerDisabledColor: CustomColors['containerDisabledColor'];
 
   if (props.type === 'text') {
     if (color) {
@@ -73,14 +75,6 @@ const Button: React.FC<ButtonProps> = ({
       textDisabledColor = grayscaleColors.GRAY_400;
     }
   }
-  // console.log(
-  //   containerColor,
-  //   containerTouchedColor,
-  //   containerDisabledColor,
-  //   textColor,
-  //   textTouchedColor,
-  //   textDisabledColor,
-  // );
 
   const containerProps = {
     ...props,
@@ -96,11 +90,8 @@ const Button: React.FC<ButtonProps> = ({
     textDisabledColor,
   };
   const iconProps = {
-    ..._.pick(containerProps, ['type', 'disabled', 'iconPosition']),
+    ..._.pick(containerProps, ['iconPosition']),
     source: props.icon,
-    textColor,
-    textTouchedColor,
-    textDisabledColor,
   };
 
   return (
@@ -112,10 +103,8 @@ const Button: React.FC<ButtonProps> = ({
         <SContainer {...containerProps} pressed={pressed}>
           <>
             {props.icon && props.iconPosition !== 'right' && (
-              <SIcon size="sm" pressed={pressed} {...iconProps} />
-            )}
-            {props?.loading ? (
-              <Icon
+              <SIcon
+                size="sm"
                 color={
                   pressed && textTouchedColor
                     ? textTouchedColor
@@ -123,7 +112,18 @@ const Button: React.FC<ButtonProps> = ({
                     ? textDisabledColor
                     : textColor
                 }
-                source={require('../../assets/icons/shop/shop.png')}
+                {...iconProps}
+              />
+            )}
+            {props?.loading ? (
+              <LoadingDots
+                color={
+                  pressed && textTouchedColor
+                    ? textTouchedColor
+                    : props.disabled && textDisabledColor
+                    ? textDisabledColor
+                    : textColor
+                }
               />
             ) : typeof children === 'string' ? (
               <SButtonText
@@ -137,7 +137,17 @@ const Button: React.FC<ButtonProps> = ({
               children
             )}
             {props.icon && props.iconPosition === 'right' && (
-              <SIcon size="sm" pressed={pressed} {...iconProps} />
+              <SIcon
+                size="sm"
+                color={
+                  pressed && textTouchedColor
+                    ? textTouchedColor
+                    : props.disabled && textDisabledColor
+                    ? textDisabledColor
+                    : textColor
+                }
+                {...iconProps}
+              />
             )}
           </>
         </SContainer>
@@ -263,25 +273,6 @@ const SIcon = styled(Icon)<SIconProps>`
     return `
     ${SMargin}: 6px
     `;
-  }}
-
-  /* iconColor */
-  ${props => {
-    if (props.type === 'text') {
-      if (props.pressed && props.textTouchedColor) {
-        return `
-        color: ${props.textTouchedColor};
-      `;
-      }
-      if (props.disabled && props.textDisabledColor) {
-        return `
-        color: ${props.textDisabledColor};
-      `;
-      }
-      return `
-      color: ${props.textColor};
-    `;
-    }
   }}
 `;
 
