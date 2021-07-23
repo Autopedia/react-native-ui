@@ -4,9 +4,11 @@
 
 import 'react-native';
 import 'jest-styled-components';
-import React from 'react';
-import TextInput from '.';
+
 import { shallow } from 'enzyme';
+import React from 'react';
+
+import TextInput from './';
 
 describe('[TextInput] Unit Test', () => {
   const TEST_TEXT = 'test';
@@ -26,7 +28,9 @@ describe('[TextInput] Unit Test', () => {
   });
 
   it('should fire onChangeText event', () => {
-    const wrapper = shallow(<TextInput onChangeText={onChangeTextMock} />);
+    const wrapper = shallow(
+      <TextInput label="label" onChangeText={onChangeTextMock} />,
+    );
     const textInput = wrapper.find('Styled(TextInput)');
     textInput.simulate('changeText', TEST_TEXT);
 
@@ -36,7 +40,12 @@ describe('[TextInput] Unit Test', () => {
 
   it('should not call onChangeText when disabled', () => {
     const wrapper = shallow(
-      <TextInput disabled value={mockValue} onChangeText={onChangeTextMock} />,
+      <TextInput
+        label="label"
+        disabled
+        value={mockValue}
+        onChangeText={onChangeTextMock}
+      />,
     );
     const textInput = wrapper.find('Styled(TextInput)');
     textInput.simulate('changeText', TEST_TEXT);
@@ -48,6 +57,7 @@ describe('[TextInput] Unit Test', () => {
   it('should reject non-numeric input when keyboard type is numeric', () => {
     const wrapper = shallow(
       <TextInput
+        label="label"
         value={mockValue}
         keyboardType="numeric"
         onChangeText={onChangeTextMock}
