@@ -130,7 +130,7 @@ describe('[Button] Unit Test', () => {
       containerTouchedColor?: string;
     };
 
-    expect(containerProps.containerTouchedColor).toBe(grayscaleColors.GRAY_300);
+    expect(containerProps.containerTouchedColor).toBe(grayscaleColors.GRAY_100);
   });
 
   it('should show icon color with prop color if type is text', () => {
@@ -155,7 +155,7 @@ describe('[Button] Unit Test', () => {
 
     const buttonIconProps = buttonIcon.props() as { color?: string };
 
-    expect(containerProps.containerTouchedColor).toBe(grayscaleColors.GRAY_300);
+    expect(containerProps.containerTouchedColor).toBe(grayscaleColors.GRAY_100);
     expect(buttonIconProps.color).toBe(systemColors.PRIMARY);
   });
 });
