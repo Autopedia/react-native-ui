@@ -1014,6 +1014,7 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
       }
     >
       <Image
+        color="#000000"
         size="sm"
         source={
           Object {
@@ -1024,6 +1025,7 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
           Array [
             Object {
               "height": 20,
+              "tintColor": "#000000",
               "width": 20,
             },
             Object {
@@ -1114,6 +1116,7 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
       }
     >
       <Image
+        color="#FFFFFF"
         size="sm"
         source={
           Object {
@@ -1124,6 +1127,7 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
           Array [
             Object {
               "height": 20,
+              "tintColor": "#FFFFFF",
               "width": 20,
             },
             Object {
@@ -1672,6 +1676,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       }
     >
       <Image
+        color="#FFFFFF"
         size="sm"
         source={
           Object {
@@ -1682,6 +1687,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "tintColor": "#FFFFFF",
               "width": 20,
             },
             Object {
@@ -1784,6 +1790,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         Icon Right with White solid color
       </Text>
       <Image
+        color="#000000"
         size="sm"
         source={
           Object {
@@ -1794,6 +1801,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "tintColor": "#000000",
               "width": 20,
             },
             Object {
@@ -1859,6 +1867,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       }
     >
       <Image
+        color="#5F656A"
         size="sm"
         source={
           Object {
@@ -1869,6 +1878,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "tintColor": "#5F656A",
               "width": 20,
             },
             Object {
@@ -1973,6 +1983,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         Icon Right
       </Text>
       <Image
+        color="#5F656A"
         size="sm"
         source={
           Object {
@@ -1983,6 +1994,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "tintColor": "#5F656A",
               "width": 20,
             },
             Object {
@@ -2048,6 +2060,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       }
     >
       <Image
+        color="#5F656A"
         size="sm"
         source={
           Object {
@@ -2058,6 +2071,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "tintColor": "#5F656A",
               "width": 20,
             },
             Object {
@@ -2162,6 +2176,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         Inline Icon Right
       </Text>
       <Image
+        color="#5F656A"
         size="sm"
         source={
           Object {
@@ -2172,6 +2187,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "tintColor": "#5F656A",
               "width": 20,
             },
             Object {
@@ -2236,6 +2252,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       type="text"
     >
       <Image
+        color="#5F656A"
         size="sm"
         source={
           Object {
@@ -2246,6 +2263,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "tintColor": "#5F656A",
               "width": 20,
             },
             Object {
@@ -2349,6 +2367,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
         Text Icon Right
       </Text>
       <Image
+        color="#5F656A"
         size="sm"
         source={
           Object {
@@ -2359,6 +2378,202 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "tintColor": "#5F656A",
+              "width": 20,
+            },
+            Object {
+              "marginLeft": 6,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <View
+      containerTouchedColor="#F8FAFB"
+      icon={
+        Object {
+          "testUri": "../../../src/assets/icons/shop/shop.png",
+        }
+      }
+      onPress={[Function]}
+      pressed={false}
+      size="sm"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": undefined,
+            "borderRadius": 100,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingBottom": 6,
+            "paddingLeft": 12,
+            "paddingRight": 12,
+            "paddingTop": 6,
+            "width": "100%",
+          },
+          Object {
+            "marginBottom": 5,
+          },
+        ]
+      }
+      type="text"
+    >
+      <Image
+        color="#EB694C"
+        size="sm"
+        source={
+          Object {
+            "testUri": "../../../src/assets/icons/shop/shop.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 20,
+              "tintColor": "#EB694C",
+              "width": 20,
+            },
+            Object {
+              "marginRight": 6,
+            },
+          ]
+        }
+      />
+      <Text
+        includeFontPadding={false}
+        pressed={false}
+        size="sm"
+        style={
+          Array [
+            Object {
+              "color": "#EB694C",
+              "fontFamily": "NotoSansKR-Regular",
+              "fontSize": 14,
+              "lineHeight": 22,
+              "textAlign": "center",
+            },
+          ]
+        }
+        textColor="#EB694C"
+        textDisabledColor="#CA4E33"
+      >
+        Text Icon Left
+      </Text>
+    </View>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <View
+      containerTouchedColor="#F8FAFB"
+      icon={
+        Object {
+          "testUri": "../../../src/assets/icons/shop/shop.png",
+        }
+      }
+      iconPosition="right"
+      onPress={[Function]}
+      pressed={false}
+      size="sm"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": undefined,
+            "borderRadius": 100,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingBottom": 6,
+            "paddingLeft": 12,
+            "paddingRight": 12,
+            "paddingTop": 6,
+            "width": "100%",
+          },
+          Object {
+            "marginBottom": 5,
+          },
+        ]
+      }
+      type="text"
+    >
+      <Text
+        includeFontPadding={false}
+        pressed={false}
+        size="sm"
+        style={
+          Array [
+            Object {
+              "color": "#EB694C",
+              "fontFamily": "NotoSansKR-Regular",
+              "fontSize": 14,
+              "lineHeight": 22,
+              "textAlign": "center",
+            },
+          ]
+        }
+        textColor="#EB694C"
+        textDisabledColor="#CA4E33"
+      >
+        Text Icon Right
+      </Text>
+      <Image
+        color="#EB694C"
+        size="sm"
+        source={
+          Object {
+            "testUri": "../../../src/assets/icons/shop/shop.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 20,
+              "tintColor": "#EB694C",
               "width": 20,
             },
             Object {
@@ -2670,24 +2885,81 @@ exports[`Storyshots Atoms/Button Loading 1`] = `
         ]
       }
     >
-      <Image
-        color="#FFFFFF"
-        source={
-          Object {
-            "testUri": "../../../src/assets/icons/shop/shop.png",
-          }
-        }
+      <View
         style={
           Array [
             Object {
+              "alignItems": "center",
+              "flexDirection": "row",
               "height": 24,
-              "tintColor": "#FFFFFF",
-              "width": 24,
             },
-            Object {},
           ]
         }
-      />
+      >
+        <View
+          color="#FFFFFF"
+          style={
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 3,
+              "height": 6,
+              "marginBottom": 0,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 0,
+              "opacity": 1,
+              "transform": Array [
+                Object {
+                  "translateY": 0,
+                },
+              ],
+              "width": 6,
+            }
+          }
+        />
+        <View
+          color="#FFFFFF"
+          style={
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 3,
+              "height": 6,
+              "marginBottom": 0,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 0,
+              "opacity": 1,
+              "transform": Array [
+                Object {
+                  "translateY": 0,
+                },
+              ],
+              "width": 6,
+            }
+          }
+        />
+        <View
+          color="#FFFFFF"
+          style={
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 3,
+              "height": 6,
+              "marginBottom": 0,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 0,
+              "opacity": 1,
+              "transform": Array [
+                Object {
+                  "translateY": 0,
+                },
+              ],
+              "width": 6,
+            }
+          }
+        />
+      </View>
     </View>
   </View>
   <View
@@ -2810,24 +3082,81 @@ exports[`Storyshots Atoms/Button Loading 1`] = `
         ]
       }
     >
-      <Image
-        color="#5F656A"
-        source={
-          Object {
-            "testUri": "../../../src/assets/icons/shop/shop.png",
-          }
-        }
+      <View
         style={
           Array [
             Object {
+              "alignItems": "center",
+              "flexDirection": "row",
               "height": 24,
-              "tintColor": "#5F656A",
-              "width": 24,
             },
-            Object {},
           ]
         }
-      />
+      >
+        <View
+          color="#5F656A"
+          style={
+            Object {
+              "backgroundColor": "#5F656A",
+              "borderRadius": 3,
+              "height": 6,
+              "marginBottom": 0,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 0,
+              "opacity": 1,
+              "transform": Array [
+                Object {
+                  "translateY": 0,
+                },
+              ],
+              "width": 6,
+            }
+          }
+        />
+        <View
+          color="#5F656A"
+          style={
+            Object {
+              "backgroundColor": "#5F656A",
+              "borderRadius": 3,
+              "height": 6,
+              "marginBottom": 0,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 0,
+              "opacity": 1,
+              "transform": Array [
+                Object {
+                  "translateY": 0,
+                },
+              ],
+              "width": 6,
+            }
+          }
+        />
+        <View
+          color="#5F656A"
+          style={
+            Object {
+              "backgroundColor": "#5F656A",
+              "borderRadius": 3,
+              "height": 6,
+              "marginBottom": 0,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 0,
+              "opacity": 1,
+              "transform": Array [
+                Object {
+                  "translateY": 0,
+                },
+              ],
+              "width": 6,
+            }
+          }
+        />
+      </View>
     </View>
   </View>
   <View
@@ -2950,24 +3279,81 @@ exports[`Storyshots Atoms/Button Loading 1`] = `
         ]
       }
     >
-      <Image
-        color="#5F656A"
-        source={
-          Object {
-            "testUri": "../../../src/assets/icons/shop/shop.png",
-          }
-        }
+      <View
         style={
           Array [
             Object {
+              "alignItems": "center",
+              "flexDirection": "row",
               "height": 24,
-              "tintColor": "#5F656A",
-              "width": 24,
             },
-            Object {},
           ]
         }
-      />
+      >
+        <View
+          color="#5F656A"
+          style={
+            Object {
+              "backgroundColor": "#5F656A",
+              "borderRadius": 3,
+              "height": 6,
+              "marginBottom": 0,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 0,
+              "opacity": 1,
+              "transform": Array [
+                Object {
+                  "translateY": 0,
+                },
+              ],
+              "width": 6,
+            }
+          }
+        />
+        <View
+          color="#5F656A"
+          style={
+            Object {
+              "backgroundColor": "#5F656A",
+              "borderRadius": 3,
+              "height": 6,
+              "marginBottom": 0,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 0,
+              "opacity": 1,
+              "transform": Array [
+                Object {
+                  "translateY": 0,
+                },
+              ],
+              "width": 6,
+            }
+          }
+        />
+        <View
+          color="#5F656A"
+          style={
+            Object {
+              "backgroundColor": "#5F656A",
+              "borderRadius": 3,
+              "height": 6,
+              "marginBottom": 0,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 0,
+              "opacity": 1,
+              "transform": Array [
+                Object {
+                  "translateY": 0,
+                },
+              ],
+              "width": 6,
+            }
+          }
+        />
+      </View>
     </View>
   </View>
   <View
@@ -3093,24 +3479,81 @@ exports[`Storyshots Atoms/Button Loading 1`] = `
         ]
       }
     >
-      <Image
-        color="#5F656A"
-        source={
-          Object {
-            "testUri": "../../../src/assets/icons/shop/shop.png",
-          }
-        }
+      <View
         style={
           Array [
             Object {
+              "alignItems": "center",
+              "flexDirection": "row",
               "height": 24,
-              "tintColor": "#5F656A",
-              "width": 24,
             },
-            Object {},
           ]
         }
-      />
+      >
+        <View
+          color="#5F656A"
+          style={
+            Object {
+              "backgroundColor": "#5F656A",
+              "borderRadius": 3,
+              "height": 6,
+              "marginBottom": 0,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 0,
+              "opacity": 1,
+              "transform": Array [
+                Object {
+                  "translateY": 0,
+                },
+              ],
+              "width": 6,
+            }
+          }
+        />
+        <View
+          color="#5F656A"
+          style={
+            Object {
+              "backgroundColor": "#5F656A",
+              "borderRadius": 3,
+              "height": 6,
+              "marginBottom": 0,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 0,
+              "opacity": 1,
+              "transform": Array [
+                Object {
+                  "translateY": 0,
+                },
+              ],
+              "width": 6,
+            }
+          }
+        />
+        <View
+          color="#5F656A"
+          style={
+            Object {
+              "backgroundColor": "#5F656A",
+              "borderRadius": 3,
+              "height": 6,
+              "marginBottom": 0,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 0,
+              "opacity": 1,
+              "transform": Array [
+                Object {
+                  "translateY": 0,
+                },
+              ],
+              "width": 6,
+            }
+          }
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -7620,6 +8063,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               }
             >
               <Image
+                color="#5F656A"
                 size="sm"
                 source={
                   Object {
@@ -7630,6 +8074,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                   Array [
                     Object {
                       "height": 20,
+                      "tintColor": "#5F656A",
                       "width": 20,
                     },
                     Object {
@@ -7719,6 +8164,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               }
             >
               <Image
+                color="#5F656A"
                 size="sm"
                 source={
                   Object {
@@ -7729,6 +8175,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                   Array [
                     Object {
                       "height": 20,
+                      "tintColor": "#5F656A",
                       "width": 20,
                     },
                     Object {
