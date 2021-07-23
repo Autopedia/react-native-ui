@@ -1,46 +1,6 @@
 import _ from 'lodash';
 import colors from '../../styles/colors';
 
-// type ColorList = SystemColorKey|SubColorKey|keyof typeof grayscaleColors;
-// type ButtonColorProps = {
-//     color: string;
-//     touchedColor: string;
-//     textColor: string;
-//     textDisabledColor: string;
-//     disabledColor: string;
-// }
-
-// export const buttonColorTemplate: Partial<Record<ColorList, ButtonColorProps>> = {
-//     PRIMARY : {
-//         color: colors.PRIMARY,
-//         touchedColor: colors.PRIMARY_DARK,
-//         textColor: colors.WHITE,
-//         textDisabledColor: colors.WHITE,
-//         disabledColor: colors.PRIMARY_LIGHT,
-//     },
-//     SUCCESS: {
-//         color: colors.SUCCESS,
-//         touchedColor: colors.SUCCESS_DARK,
-//         textColor: colors.WHITE,
-//         textDisabledColor: colors.WHITE,
-//         disabledColor: colors.SUCCESS_LIGHT,
-//     },
-//     ERROR: {
-//         color: colors.ERROR,
-//         touchedColor: colors.ERROR_DARK,
-//         textColor: colors.WHITE,
-//         textDisabledColor: colors.WHITE,
-//         disabledColor: colors.ERROR_LIGHT,
-//     },
-//     GRAY_200: {
-//         color: colors.GRAY_200,
-//         touchedColor: colors.GRAY_300,
-//         textColor: colors.GRAY_900,
-//         textDisabledColor: colors.GRAY_400,
-//         disabledColor: colors.GRAY_100,
-//     },
-// }
-
 // default color : opacity value change
 export const buttonTouchedColors = {
   [colors.PRIMARY]: colors.PRIMARY_DARK,

@@ -96,7 +96,7 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <SPressable
-      onPress={!(props.disabled || props.loading) && props.onPress} // 알수없는 이유로 onPress를 disabled일 경우 없애지 않으면 테스트 코드가 안돌아감
+      onPress={!(props.disabled || props.loading) && props.onPress}
       disabled={props.disabled || props.loading}
     >
       {({ pressed }) => (
