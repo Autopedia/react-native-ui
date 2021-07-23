@@ -10,6 +10,7 @@ storiesOf('Atoms/Message/UnhandledMessage', module)
   .addDecorator(SThemeDecorator)
   .addDecorator(GreyBackgroundDecorator)
   .addDecorator(CenterContainerDecorator)
-  .add('Playground', () => {
-    return <UnhandledMessage mine={boolean('mine', true)} />;
-  });
+  .add('Playground', () => (
+    <UnhandledMessage type="unhandle" mine={boolean('mine', true)} />
+  ))
+  .add('Other Unhandle Message', () => <UnhandledMessage type="unhandle" />);
