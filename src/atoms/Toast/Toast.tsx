@@ -37,8 +37,13 @@ export const BasicToast: React.FC<BasicToastProps> = ({ message, onPress }) => {
   );
 };
 
-export const ToastProvider = () => (
-  <Toast ref={ref => Toast.setRef(ref)} config={toastConfig} />
+export const ToastInitializer = () => (
+  <Toast
+    autoHide
+    visibilityTime={3000}
+    ref={ref => Toast.setRef(ref)}
+    config={toastConfig}
+  />
 );
 
 const SContainer = styled(SafeAreaView)`
