@@ -25,7 +25,7 @@ describe('[Message/ShopMessage] Unit Test', () => {
       />,
     );
 
-    const buttons = shopMessage.find('Styled(Button)');
+    const buttons = shopMessage.find('ShopButton');
 
     buttons.forEach(btn => btn.simulate('press'));
 

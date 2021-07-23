@@ -1,5 +1,7 @@
 import { GestureResponderEvent } from 'react-native';
 
+export type TestSource = { testUri: string };
+
 export type BaseMessageProps = {
   mine?: boolean;
 };
