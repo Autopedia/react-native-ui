@@ -2,12 +2,9 @@ import React from 'react';
 import Typography from '../../../../atoms/Typography';
 import { SMyTextMessage, SOtherTextMessage } from '../../Message.styles';
 import colors from '../../../../styles/colors';
+import { UnhandledMessageProps } from '../../Message.types';
 
-interface UnhandledMessageProps {
-  mine?: boolean;
-}
-
-const UnhandledMessage: React.FC<UnhandledMessageProps> = ({ mine }) => {
+export const UnhandledMessage: React.FC<UnhandledMessageProps> = ({ mine }) => {
   return mine ? <MyUnhandledMessage /> : <OtherUnhandledMessage />;
 };
 
@@ -32,5 +29,3 @@ const OtherUnhandledMessage: React.FC = () => {
     </SOtherTextMessage>
   );
 };
-
-export default UnhandledMessage;

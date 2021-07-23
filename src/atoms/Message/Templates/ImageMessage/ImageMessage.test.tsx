@@ -5,7 +5,7 @@
 import 'react-native';
 import 'jest-styled-components';
 import React from 'react';
-import ImageMessage from './ImageMessage';
+import { ImageMessage } from './ImageMessage';
 import { shallow } from 'enzyme';
 
 describe('[Message/ImageMessage] Unit Test', () => {

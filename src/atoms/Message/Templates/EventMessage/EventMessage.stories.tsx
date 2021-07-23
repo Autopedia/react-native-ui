@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react-native';
 import React from 'react';
 import CenterContainerDecorator from '../../../../decorators/center-container.decorator';
 import SThemeDecorator from '../../../../decorators/styled-components.decorator';
-import EventMessage from './EventMessage';
+import { EventMessage } from './EventMessage';
 
 storiesOf('Atoms/Message/EventMessage', module)
   .addDecorator(SThemeDecorator)

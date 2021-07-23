@@ -3,7 +3,7 @@ import React from 'react';
 import CenterContainerDecorator from '../../../../decorators/center-container.decorator';
 import SThemeDecorator from '../../../../decorators/styled-components.decorator';
 import GreyBackgroundDecorator from '../../../../decorators/grey-background.decorator';
-import VideoMessage from './VideoMessage';
+import { VideoMessage } from './VideoMessage';
 import { number } from '@storybook/addon-knobs';
 
 storiesOf('Atoms/Message/VideoMessage', module)

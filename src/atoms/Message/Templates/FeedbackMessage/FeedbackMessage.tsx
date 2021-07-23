@@ -1,10 +1,10 @@
 import React from 'react';
 import { Linking, Alert } from 'react-native';
 import { FeedbackMessageProps } from '../../Message.types';
-import CardMessage from '../CardMessage';
+import { CardMessage } from '../CardMessage';
 import Button from '../../../../atoms/Button';
 
-const FeedbackMessage: React.FC<FeedbackMessageProps> = ({ link }) => {
+export const FeedbackMessage: React.FC<FeedbackMessageProps> = ({ link }) => {
   const openFeedback = async () => {
     const valid = await Linking.canOpenURL(link);
 
@@ -31,5 +31,3 @@ const FeedbackMessage: React.FC<FeedbackMessageProps> = ({ link }) => {
     <CardMessage title={title} description={description} footer={footer} />
   );
 };
-
-export default FeedbackMessage;

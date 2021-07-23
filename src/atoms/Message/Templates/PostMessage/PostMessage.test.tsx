@@ -5,7 +5,7 @@
 import 'react-native';
 import 'jest-styled-components';
 import React from 'react';
-import PostMessage from './PostMessage';
+import { PostMessage } from './PostMessage';
 import { shallow } from 'enzyme';
 
 describe('[Message/PostMessage] Unit Test', () => {

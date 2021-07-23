@@ -1,17 +1,14 @@
 import React from 'react';
 import MapView, { LatLng, Marker, Region } from 'react-native-maps';
 import styled from 'styled-components/native';
-
 import Button from '../../../../atoms/Button';
 import Typography from '../../../../atoms/Typography';
-import { Spacing } from '../../../../styles';
 import base from '../../../../styles/base';
 import colors from '../../../../styles/colors';
-import spacing from '../../../../styles/spacing';
 import { MAX_WIDTH } from '../../Message.styles';
 import { ShopMessageProps } from '../../Message.types';
 
-const ShopMessage: React.FC<ShopMessageProps> = ({
+export const ShopMessage: React.FC<ShopMessageProps> = ({
   name,
   address,
   lat,
@@ -99,5 +96,3 @@ const SMap = styled(MapView)`
     height: 130px;
   `}
 `;
-
-export default ShopMessage;

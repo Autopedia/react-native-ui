@@ -1,11 +1,8 @@
 import React from 'react';
 import styled from 'styled-components/native';
-
 import Typography from '../../../../atoms/Typography';
-import { Spacing } from '../../../../styles';
 import base from '../../../../styles/base';
 import colors from '../../../../styles/colors';
-import spacing from '../../../../styles/spacing';
 import { MAX_WIDTH } from '../../Message.styles';
 
 interface CardMessageProps {
@@ -14,7 +11,7 @@ interface CardMessageProps {
   footer: React.ReactElement;
 }
 
-const CardMessage: React.FC<CardMessageProps> = ({
+export const CardMessage: React.FC<CardMessageProps> = ({
   title,
   description,
   footer,
@@ -42,5 +39,3 @@ const SCard = styled.View`
     padding: 14px;
   `}
 `;
-
-export default CardMessage;

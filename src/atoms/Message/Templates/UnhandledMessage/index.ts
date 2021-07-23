@@ -1,1 +1,1 @@
-export { default } from './UnhandledMessage';
+export { UnhandledMessage } from './UnhandledMessage';

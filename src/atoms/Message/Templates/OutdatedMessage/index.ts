@@ -1,1 +1,1 @@
-export { default } from './OutdatedMessage';
+export { OutdatedMessage } from './OutdatedMessage';

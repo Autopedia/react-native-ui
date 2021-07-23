@@ -5,7 +5,7 @@
 import 'react-native';
 import 'jest-styled-components';
 import React from 'react';
-import ShopMessage from './ShopMessage';
+import { ShopMessage } from './ShopMessage';
 import { shallow } from 'enzyme';
 
 describe('[Message/ShopMessage] Unit Test', () => {

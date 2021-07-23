@@ -9,7 +9,7 @@ import {
 import { CounselCaseMessageProps } from '../../Message.types';
 import colors from '../../../../styles/colors';
 
-const CounselCaseMessage: React.FC<CounselCaseMessageProps> = ({
+export const CounselCaseMessage: React.FC<CounselCaseMessageProps> = ({
   thumbnailUrl,
   title,
 }) => {
@@ -27,5 +27,3 @@ const CounselCaseMessage: React.FC<CounselCaseMessageProps> = ({
     </SContent>
   );
 };
-
-export default CounselCaseMessage;
