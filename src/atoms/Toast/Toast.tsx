@@ -9,7 +9,7 @@ import Icon from '../Icon';
 
 const { Paragraph } = Typography;
 
-export const toastConfig = {
+const toastConfig = {
   basic: ({ props, hide }) => {
     return <BasicToast message={props.message} onPress={hide} />;
   },
@@ -36,6 +36,10 @@ export const BasicToast: React.FC<BasicToastProps> = ({ message, onPress }) => {
     </SContainer>
   );
 };
+
+export const ToastProvider = () => (
+  <Toast ref={ref => Toast.setRef(ref)} config={toastConfig} />
+);
 
 const SContainer = styled(SafeAreaView)`
   width: 100%;

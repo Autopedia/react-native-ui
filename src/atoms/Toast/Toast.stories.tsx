@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react-native';
 import CenterContainerDecorator from '../../decorators/center-container.decorator';
 import SThemeDecorator from '../../decorators/styled-components.decorator';
-import { BasicToast, Toast, toastConfig } from './Toast';
+import { BasicToast, Toast, ToastProvider } from './Toast';
 import styled from 'styled-components/native';
 import { Button } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
@@ -38,6 +38,19 @@ storiesOf('Atoms/Toast', module)
             onPress={() => console.log('hello')}
           />
         </SView>
+      </SSafeAreaProvider>
+    );
+  })
+  .add('ToastTest', () => {
+    return (
+      <SSafeAreaProvider>
+        <Button
+          title="Test Toast Message"
+          onPress={() =>
+            Toast.show({ type: 'basic', props: { message: 'hello' } })
+          }
+        />
+        <ToastProvider />
       </SSafeAreaProvider>
     );
   });
