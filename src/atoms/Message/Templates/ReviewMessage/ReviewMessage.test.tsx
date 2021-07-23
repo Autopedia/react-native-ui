@@ -9,10 +9,6 @@ import { ReviewMessage } from './ReviewMessage';
 import { shallow } from 'enzyme';
 
 describe('[Message/ReviewMessage] Unit Test', () => {
-  let Platform;
-  beforeAll(() => {
-    Platform = require('react-native').Platform;
-  });
   it('should fire onPressReview event', () => {
     const onPressReviewMock = jest.fn();
 
@@ -26,10 +22,13 @@ describe('[Message/ReviewMessage] Unit Test', () => {
 
   describe('platform test', () => {
     beforeEach(() => {
-      Platform.OS = Platform.OS === 'android' ? 'ios' : 'android';
+      jest.resetModules();
     });
 
     it('should render android', () => {
+      jest.doMock('react-native/Libraries/Utilities/Platform', () => ({
+        OS: 'android',
+      }));
       const reviewMessage = shallow(
         <ReviewMessage type="review" onPressReview={() => {}} />,
       );
@@ -39,6 +38,9 @@ describe('[Message/ReviewMessage] Unit Test', () => {
     });
 
     it('should render ios', () => {
+      jest.doMock('react-native/Libraries/Utilities/Platform', () => ({
+        OS: 'ios',
+      }));
       const reviewMessage = shallow(
         <ReviewMessage type="review" onPressReview={() => {}} />,
       );
