@@ -125,7 +125,6 @@ const TextInput = forwardRef(
           />
           {props.secureTextEntry && (
             <SIcon
-              touchable
               disabled={props.disabled || false}
               onPress={() => {
                 setShowText(prev => (props.disabled ? false : !prev));
