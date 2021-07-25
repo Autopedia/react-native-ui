@@ -80,6 +80,12 @@ storiesOf('Atoms/Icon', module)
           size="sm"
           style={{ backgroundColor: '#E3E3E3' }}
         />
+        <Icon
+          source={require('../../assets/icons/camera/camera.png')}
+          color={systemColors.BLACK}
+          size="xs"
+          style={{ backgroundColor: '#E3E3E3' }}
+        />
       </>
     );
   })

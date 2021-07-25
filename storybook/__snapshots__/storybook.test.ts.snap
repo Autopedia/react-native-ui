@@ -5515,6 +5515,27 @@ exports[`Storyshots Atoms/Icon Size 1`] = `
       ]
     }
   />
+  <Image
+    color="#000000"
+    size="xs"
+    source={
+      Object {
+        "testUri": "../../../src/assets/icons/camera/camera.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "height": 16,
+          "tintColor": "#000000",
+          "width": 16,
+        },
+        Object {
+          "backgroundColor": "#E3E3E3",
+        },
+      ]
+    }
+  />
 </View>
 `;
 
