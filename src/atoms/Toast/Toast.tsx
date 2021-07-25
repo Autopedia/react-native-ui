@@ -147,7 +147,6 @@ export const BasicToast: React.FC<BasicToastProps> = ({
       </Paragraph>
       <Icon
         source={require('../../assets/icons/exit/exit.png')}
-        touchable
         onPress={onExitPress}
       />
     </SToastWrapper>
