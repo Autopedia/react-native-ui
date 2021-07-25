@@ -6,6 +6,7 @@ import Typography from '../Typography';
 import { useSafeAreaInsets, EdgeInsets } from 'react-native-safe-area-context';
 import Icon from '../Icon';
 import { GestureResponderEvent } from 'react-native';
+import { grayscaleColors } from '../../styles/grayscale-colors';
 
 const { Paragraph } = Typography;
 type ToastShowProps = {
@@ -146,8 +147,10 @@ export const BasicToast: React.FC<BasicToastProps> = ({
         {message}
       </Paragraph>
       <Icon
+        size="xs"
         source={require('../../assets/icons/exit/exit.png')}
         onPress={onExitPress}
+        color={grayscaleColors.GRAY_500}
       />
     </SToastWrapper>
   );
@@ -168,7 +171,7 @@ type SToastWrapperProps = {
 };
 
 const SToastWrapper = styled.View<SToastWrapperProps>`
-  padding: 12px 10px 12px 16px;
+  padding: 12px 14px 12px 16px;
   border-radius: 8px;
   margin: 0px 20px;
   width: 100%;

@@ -49,7 +49,7 @@ const ShopMessage: React.FC<ShopMessageProps> = ({
           <SShopButton
             onPress={onPressDetail}
             style={{ marginRight: 10 }}
-            icon={require('../../../../assets/icons/shop/shop.png')}
+            icon={require('../../../../assets/icons/tire/tire.png')}
           >
             상세 정보
           </SShopButton>

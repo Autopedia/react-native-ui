@@ -157,7 +157,7 @@ storiesOf('Atoms/Icon', module)
           }}
         />
         <Icon
-          source={require('../../assets/icons/shop/shop.png')}
+          source={require('../../assets/icons/tire/tire.png')}
           color={systemColors.PRIMARY}
           style={{
             backgroundColor: '#E3E3E3',

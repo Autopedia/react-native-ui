@@ -61,7 +61,7 @@ describe('[Button] Unit Test', () => {
       <Button
         color={systemColors.PRIMARY}
         onPress={onPressMock}
-        icon={require('../../assets/icons/shop/shop.png')}
+        icon={require('../../assets/icons/tire/tire.png')}
       >
         {textMock}
       </Button>,
@@ -91,7 +91,7 @@ describe('[Button] Unit Test', () => {
         color={systemColors.PRIMARY}
         onPress={onPressMock}
         touchedColor={systemColors.SUCCESS}
-        icon={require('../../assets/icons/shop/shop.png')}
+        icon={require('../../assets/icons/tire/tire.png')}
       >
         {textMock}
       </Button>,
@@ -119,7 +119,7 @@ describe('[Button] Unit Test', () => {
         type="text"
         color={systemColors.PRIMARY}
         onPress={onPressMock}
-        icon={require('../../assets/icons/shop/shop.png')}
+        icon={require('../../assets/icons/tire/tire.png')}
       >
         {textMock}
       </Button>,
@@ -141,7 +141,7 @@ describe('[Button] Unit Test', () => {
         type="text"
         color={systemColors.PRIMARY}
         onPress={onPressMock}
-        icon={require('../../assets/icons/shop/shop.png')}
+        icon={require('../../assets/icons/tire/tire.png')}
       >
         {textMock}
       </Button>,
