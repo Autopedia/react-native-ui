@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components/native';
 
 import spacing from '../../styles/spacing';
+import { systemColors } from '../../styles/system-colors';
 import {
   FlexStyleKeys,
   ImageOnlyStyleKeys,
@@ -19,14 +20,14 @@ const Icon: React.FC<IconProps> = props => {
     style: pickStyle(props.style, FlexStyleKeys),
   };
   const iconProps = {
-    ...lodash.pick(props, ['color', 'disabled', 'source', 'size']),
+    ...lodash.pick(props, ['color', 'disabled', 'source']),
     style: pickStyle(
       props.style,
-      props.onPress ? ImageOnlyStyleKeys : ImageStyleKeys,
+      props.touchable ? ImageOnlyStyleKeys : ImageStyleKeys,
     ),
   };
 
-  return props.onPress ? (
+  return props.touchable ? (
     <STouchable {...touchableProps}>
       <SIcon {...iconProps} />
     </STouchable>
@@ -39,31 +40,17 @@ const STouchable = styled.TouchableOpacity<STouchableProps>`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 4px;
-  margin: -4px;
+  padding: ${spacing.SPACE_4}px;
 `;
 const SIcon = styled.Image<SIconProps>`
   /* color (default: undefined) */
+
   ${props => {
     return props.color ? `tint-color: ${getValidatedColor(props.color)}` : '';
   }}
 
   /* disabled (default: false) */
   ${props => props.disabled && 'opacity: 0.5'}
-
-  /* size (default: md) */
-  ${props => {
-    switch (props.size) {
-      case 'sm':
-        return `width: 20px; height: 20px;`;
-      case 'md':
-        return `width: 24px; height: 24px;`;
-      case 'lg':
-        return `width: 32px; height: 32px`;
-      default:
-        return `width: 24px; height: 24px;`;
-    }
-  }}
 `;
 
 export default Icon;

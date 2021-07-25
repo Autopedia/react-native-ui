@@ -123,7 +123,7 @@ storiesOf('Atoms/Typography', module)
       </>
     );
   })
-  .add('fontWeight', () => {
+  .add('Bold', () => {
     return (
       <>
         <Paragraph size={1} fontWeight="bold">
