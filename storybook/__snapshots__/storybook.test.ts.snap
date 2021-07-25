@@ -1014,7 +1014,7 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
       }
     >
       <Image
-        color="#000000"
+        color={false}
         size="sm"
         source={
           Object {
@@ -1025,7 +1025,6 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
           Array [
             Object {
               "height": 20,
-              "tintColor": "#000000",
               "width": 20,
             },
             Object {
@@ -1116,7 +1115,7 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
       }
     >
       <Image
-        color="#FFFFFF"
+        color={false}
         size="sm"
         source={
           Object {
@@ -1127,7 +1126,6 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
           Array [
             Object {
               "height": 20,
-              "tintColor": "#FFFFFF",
               "width": 20,
             },
             Object {

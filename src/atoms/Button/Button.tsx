@@ -28,6 +28,7 @@ const Button: React.FC<ButtonProps> = ({
   color,
   touchedColor,
   disabledColor,
+  colorIcon = true,
   ...props
 }) => {
   let textColor: CustomColors['textColor'];
@@ -91,6 +92,7 @@ const Button: React.FC<ButtonProps> = ({
   };
   const iconProps = {
     ..._.pick(containerProps, ['iconPosition']),
+    colorIcon,
     source: props.icon,
   };
 
@@ -106,11 +108,12 @@ const Button: React.FC<ButtonProps> = ({
               <SIcon
                 size="sm"
                 color={
-                  pressed && textTouchedColor
+                  iconProps.colorIcon &&
+                  (pressed && textTouchedColor
                     ? textTouchedColor
                     : props.disabled && textDisabledColor
                     ? textDisabledColor
-                    : textColor
+                    : textColor)
                 }
                 {...iconProps}
               />
@@ -140,11 +143,12 @@ const Button: React.FC<ButtonProps> = ({
               <SIcon
                 size="sm"
                 color={
-                  pressed && textTouchedColor
+                  iconProps.colorIcon &&
+                  (pressed && textTouchedColor
                     ? textTouchedColor
                     : props.disabled && textDisabledColor
                     ? textDisabledColor
-                    : textColor
+                    : textColor)
                 }
                 {...iconProps}
               />

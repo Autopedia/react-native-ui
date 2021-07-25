@@ -16,6 +16,7 @@ export interface ButtonProps {
   disabled?: boolean;
 
   icon?: any;
+  colorIcon?: boolean;
   iconPosition?: ButtonIconPosition;
 
   style?: ViewStyle;
@@ -44,4 +45,4 @@ export type SButtonTextProps = TextStyle &
     pressed: boolean;
   };
 
-export type SIconProps = Pick<ButtonProps, 'iconPosition'>;
+export type SIconProps = Pick<ButtonProps, 'iconPosition' | 'colorIcon'>;
