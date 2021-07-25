@@ -29,6 +29,7 @@ const Button: React.FC<ButtonProps> = ({
   touchedColor,
   disabledColor,
   colorIcon = true,
+  style,
   ...props
 }) => {
   let textColor: CustomColors['textColor'];
@@ -78,94 +79,96 @@ const Button: React.FC<ButtonProps> = ({
   }
 
   const containerProps = {
-    ...props,
-    containerColor,
-    containerTouchedColor,
-    containerDisabledColor,
+    ..._.pick(props, ['size', 'inline', 'tile']),
   };
 
   const buttonTextProps = {
-    ..._.pick(containerProps, ['size', 'disabled']),
+    ..._.pick(props, ['size', 'disabled']),
     textColor,
     textTouchedColor,
     textDisabledColor,
   };
   const iconProps = {
-    ..._.pick(containerProps, ['iconPosition']),
+    ..._.pick(props, ['iconPosition']),
     colorIcon,
     source: props.icon,
   };
 
   return (
-    <SPressable
+    <SContainer
       onPress={!(props.disabled || props.loading) && props.onPress}
       disabled={props.disabled || props.loading}
+      style={({ pressed }) => [
+        {
+          backgroundColor:
+            pressed && containerTouchedColor
+              ? containerTouchedColor
+              : props.disabled && containerDisabledColor
+              ? containerDisabledColor
+              : containerColor,
+        },
+        style,
+      ]}
+      {...containerProps}
     >
       {({ pressed }) => (
-        <SContainer {...containerProps} pressed={pressed}>
-          <>
-            {props.icon && props.iconPosition !== 'right' && (
-              <SIcon
-                size="sm"
-                color={
-                  iconProps.colorIcon &&
-                  (pressed && textTouchedColor
-                    ? textTouchedColor
-                    : props.disabled && textDisabledColor
-                    ? textDisabledColor
-                    : textColor)
-                }
-                {...iconProps}
-              />
-            )}
-            {props?.loading ? (
-              <LoadingDots
-                color={
-                  pressed && textTouchedColor
-                    ? textTouchedColor
-                    : props.disabled && textDisabledColor
-                    ? textDisabledColor
-                    : textColor
-                }
-              />
-            ) : typeof children === 'string' ? (
-              <SButtonText
-                pressed={pressed}
-                includeFontPadding={false}
-                {...buttonTextProps}
-              >
-                {children}
-              </SButtonText>
-            ) : (
-              children
-            )}
-            {props.icon && props.iconPosition === 'right' && (
-              <SIcon
-                size="sm"
-                color={
-                  iconProps.colorIcon &&
-                  (pressed && textTouchedColor
-                    ? textTouchedColor
-                    : props.disabled && textDisabledColor
-                    ? textDisabledColor
-                    : textColor)
-                }
-                {...iconProps}
-              />
-            )}
-          </>
-        </SContainer>
+        <SContentContainer>
+          {props.icon && props.iconPosition !== 'right' && (
+            <SIcon
+              size="sm"
+              color={
+                iconProps.colorIcon &&
+                (pressed && textTouchedColor
+                  ? textTouchedColor
+                  : props.disabled && textDisabledColor
+                  ? textDisabledColor
+                  : textColor)
+              }
+              {...iconProps}
+            />
+          )}
+          {props?.loading ? (
+            <LoadingDots
+              color={
+                pressed && textTouchedColor
+                  ? textTouchedColor
+                  : props.disabled && textDisabledColor
+                  ? textDisabledColor
+                  : textColor
+              }
+            />
+          ) : typeof children === 'string' ? (
+            <SButtonText
+              pressed={pressed}
+              includeFontPadding={false}
+              {...buttonTextProps}
+            >
+              {children}
+            </SButtonText>
+          ) : (
+            children
+          )}
+          {props.icon && props.iconPosition === 'right' && (
+            <SIcon
+              size="sm"
+              color={
+                iconProps.colorIcon &&
+                (pressed && textTouchedColor
+                  ? textTouchedColor
+                  : props.disabled && textDisabledColor
+                  ? textDisabledColor
+                  : textColor)
+              }
+              {...iconProps}
+            />
+          )}
+        </SContentContainer>
       )}
-    </SPressable>
+    </SContainer>
   );
 };
-const SPressable = styled.Pressable`
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-`;
 
-const SContainer = styled.View<SContainerProps>`
+const SContainer = styled.Pressable<SContainerProps>`
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -206,27 +209,17 @@ const SContainer = styled.View<SContainerProps>`
       return;
     }
     return `
-      border-radius: 100px;
-    `;
-  }}
-
-  /* color */
-  ${props => {
-    if (props.pressed && props.containerTouchedColor) {
-      return `
-        background-color: ${props.containerTouchedColor};
-      `;
-    }
-    if (props.disabled && props.containerDisabledColor) {
-      return `
-        background-color: ${props.containerDisabledColor};
-      `;
-    }
-    return `
-      background-color: ${props.containerColor};
+      border-radius: 1000px;
     `;
   }}
 `;
+
+const SContentContainer = styled.View`
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+SContentContainer.displayName = 'ContentContainer';
 
 const SButtonText = styled.Text<SButtonTextProps>`
   text-align: center;
@@ -287,7 +280,7 @@ const SIcon = styled(Icon)<SIconProps>`
     }`;
 
     return `
-    ${SMargin}: 6px
+    ${SMargin}: 4px
     `;
   }}
 `;

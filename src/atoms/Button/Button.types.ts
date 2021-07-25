@@ -1,10 +1,11 @@
+import { PressableProps } from 'react-native';
 import { GestureResponderEvent, TextStyle, ViewStyle } from 'react-native';
 
 export type ButtonType = 'solid' | 'text';
 export type ButtonSize = 'sm' | 'md' | 'lg';
 export type ButtonIconPosition = 'left' | 'right';
 
-export interface ButtonProps {
+export interface ButtonProps extends PressableProps {
   type?: ButtonType;
   size?: ButtonSize;
   inline?: boolean;
@@ -23,13 +24,6 @@ export interface ButtonProps {
   onPress?: (event: GestureResponderEvent) => void;
 }
 
-export type SContainerProps = ButtonProps & {
-  pressed: boolean;
-  containerColor?: string;
-  containerTouchedColor?: string;
-  containerDisabledColor?: string;
-};
-
 export type CustomColors = {
   textColor: string;
   textTouchedColor: string;
@@ -38,6 +32,9 @@ export type CustomColors = {
   containerTouchedColor: string;
   containerDisabledColor: string;
 };
+
+export type SContainerProps = PressableProps &
+  Pick<ButtonProps, 'size' | 'inline' | 'tile'>;
 
 export type SButtonTextProps = TextStyle &
   Pick<ButtonProps, 'size' | 'disabled'> &
