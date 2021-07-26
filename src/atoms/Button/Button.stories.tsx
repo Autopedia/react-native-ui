@@ -9,7 +9,6 @@ import { action } from '@storybook/addon-actions';
 import { ButtonSize, ButtonType } from './Button.types';
 import { buttonTouchedColors, buttonDisabledColors } from './buttonColors';
 import { systemColors } from '../../styles/system-colors';
-import { grayscaleColors } from '../../styles/grayscale-colors';
 import { subColors } from '../../styles/sub-colors';
 import Typography from '../Typography';
 

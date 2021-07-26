@@ -964,19 +964,6 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
     }
   >
     <View
-<<<<<<< HEAD
-      containerColor="#FFFFFF"
-      containerDisabledColor="rgba(255, 255, 255, 0.5)"
-      containerTouchedColor="rgba(255, 255, 255, 0.5)"
-      icon={
-        Object {
-          "testUri": "../../../src/assets/icons/google/google.png",
-        }
-      }
-      onPress={[Function]}
-      pressed={false}
-=======
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
@@ -1070,19 +1057,6 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
     }
   >
     <View
-<<<<<<< HEAD
-      containerColor="khaki"
-      containerDisabledColor="rgba(240, 230, 140, 0.5)"
-      containerTouchedColor="rgba(240, 230, 140, 0.5)"
-      icon={
-        Object {
-          "testUri": "../../../src/assets/icons/kakao/kakao.png",
-        }
-      }
-      onPress={[Function]}
-      pressed={false}
-=======
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
@@ -1615,19 +1589,6 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     }
   >
     <View
-<<<<<<< HEAD
-      containerColor="#007AFF"
-      containerDisabledColor="#BDDBFF"
-      containerTouchedColor="#0056B4"
-      icon={
-        Object {
-          "testUri": "../../../src/assets/icons/tire/tire.png",
-        }
-      }
-      onPress={[Function]}
-      pressed={false}
-=======
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
@@ -1715,20 +1676,6 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     }
   >
     <View
-<<<<<<< HEAD
-      containerColor="#FFFFFF"
-      containerDisabledColor="rgba(255, 255, 255, 0.5)"
-      containerTouchedColor="rgba(255, 255, 255, 0.5)"
-      icon={
-        Object {
-          "testUri": "../../../src/assets/icons/tire/tire.png",
-        }
-      }
-      iconPosition="right"
-      onPress={[Function]}
-      pressed={false}
-=======
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
@@ -1816,19 +1763,6 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     }
   >
     <View
-<<<<<<< HEAD
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      icon={
-        Object {
-          "testUri": "../../../src/assets/icons/tire/tire.png",
-        }
-      }
-      onPress={[Function]}
-      pressed={false}
-=======
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
@@ -1917,20 +1851,6 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     }
   >
     <View
-<<<<<<< HEAD
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      icon={
-        Object {
-          "testUri": "../../../src/assets/icons/tire/tire.png",
-        }
-      }
-      iconPosition="right"
-      onPress={[Function]}
-      pressed={false}
-=======
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
@@ -2019,20 +1939,6 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     }
   >
     <View
-<<<<<<< HEAD
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      icon={
-        Object {
-          "testUri": "../../../src/assets/icons/tire/tire.png",
-        }
-      }
-      inline={true}
-      onPress={[Function]}
-      pressed={false}
-=======
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
@@ -2121,21 +2027,6 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     }
   >
     <View
-<<<<<<< HEAD
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      icon={
-        Object {
-          "testUri": "../../../src/assets/icons/tire/tire.png",
-        }
-      }
-      iconPosition="right"
-      inline={true}
-      onPress={[Function]}
-      pressed={false}
-=======
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
@@ -2224,17 +2115,6 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     }
   >
     <View
-<<<<<<< HEAD
-      containerTouchedColor="#F8FAFB"
-      icon={
-        Object {
-          "testUri": "../../../src/assets/icons/tire/tire.png",
-        }
-      }
-      onPress={[Function]}
-      pressed={false}
-=======
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
@@ -2323,18 +2203,6 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     }
   >
     <View
-<<<<<<< HEAD
-      containerTouchedColor="#F8FAFB"
-      icon={
-        Object {
-          "testUri": "../../../src/assets/icons/tire/tire.png",
-        }
-      }
-      iconPosition="right"
-      onPress={[Function]}
-      pressed={false}
-=======
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
@@ -2424,18 +2292,6 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     }
   >
     <View
-<<<<<<< HEAD
-      containerTouchedColor="#F8FAFB"
-      icon={
-        Object {
-          "testUri": "../../../src/assets/icons/tire/tire.png",
-        }
-      }
-      onPress={[Function]}
-      pressed={false}
-      size="sm"
-=======
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
@@ -2517,15 +2373,6 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           "width": "100%",
         },
         Object {
-<<<<<<< HEAD
-          "testUri": "../../../src/assets/icons/tire/tire.png",
-        }
-      }
-      iconPosition="right"
-      onPress={[Function]}
-      pressed={false}
-      size="sm"
-=======
           "backgroundColor": undefined,
         },
         Object {
@@ -2535,7 +2382,6 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     }
   >
     <View
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
@@ -6799,31 +6645,17 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
               "width": "100%",
             },
             Object {
-              "backgroundColor": "#FA4339",
+              "backgroundColor": "#EEF2F6",
             },
             undefined,
           ]
         }
       >
         <View
-<<<<<<< HEAD
-          containerColor="#EEF2F6"
-          containerDisabledColor="#F8FAFB"
-          containerTouchedColor="#DFE3E9"
-          disabled={false}
-          onPress={[Function]}
-          pressed={false}
-=======
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
           style={
             Array [
               Object {
                 "alignItems": "center",
-<<<<<<< HEAD
-                "backgroundColor": "#EEF2F6",
-                "borderRadius": 100,
-=======
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
                 "flexDirection": "row",
                 "justifyContent": "center",
               },
@@ -7430,31 +7262,17 @@ exports[`Storyshots Atoms/Message/OutdatedMessage Playground 1`] = `
               "width": "100%",
             },
             Object {
-              "backgroundColor": "transparent",
+              "backgroundColor": "#EEF2F6",
             },
             undefined,
           ]
         }
       >
         <View
-<<<<<<< HEAD
-          containerColor="#EEF2F6"
-          containerDisabledColor="#F8FAFB"
-          containerTouchedColor="#DFE3E9"
-          disabled={false}
-          onPress={[Function]}
-          pressed={false}
-=======
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
           style={
             Array [
               Object {
                 "alignItems": "center",
-<<<<<<< HEAD
-                "backgroundColor": "#EEF2F6",
-                "borderRadius": 100,
-=======
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
                 "flexDirection": "row",
                 "justifyContent": "center",
               },
@@ -7999,17 +7817,8 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                   "width": "100%",
                 },
                 Object {
-<<<<<<< HEAD
-                  "testUri": "../../../src/assets/icons/tire/tire.png",
-                }
-              }
-              onPress={[Function]}
-              pressed={false}
-              style={
-=======
                   "backgroundColor": "#EEF2F6",
                 },
->>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
                 Array [
                   Object {
                     "alignItems": "center",

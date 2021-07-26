@@ -45,7 +45,7 @@ export const ShopMessage: React.FC<ShopMessageProps> = ({
         <SShopButtons>
           <SShopButton
             onPress={onPressDetail}
-            icon={require('../../../../assets/icons/shop/shop.png')}
+            icon={require('../../../../assets/icons/tire/tire.png')}
             spacing
           >
             상세 정보
