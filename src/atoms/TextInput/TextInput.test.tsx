@@ -89,19 +89,4 @@ describe('[TextInput] Unit Test', () => {
 
     expect(textInputProps.secureTextEntry).toBeFalsy();
   });
-
-  it('should not toggle secureTextEntry when diabled', () => {
-    let wrapper = shallow(<TextInput label="label" secureTextEntry disabled />);
-
-    const icon = wrapper.find('SecureTextEntryToggle');
-    expect(icon.prop('disabled')).toBeTruthy();
-
-    icon.simulate('press');
-
-    wrapper = wrapper.update();
-
-    const textInput = wrapper.find('RNTextInput');
-
-    expect(textInput.prop('secureTextEntry')).toBeTruthy();
-  });
 });
