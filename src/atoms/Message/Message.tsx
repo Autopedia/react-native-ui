@@ -18,7 +18,7 @@ import {
   UnhandledMessage,
 } from './Templates';
 
-const Message: React.FC<MessageProps> = props => {
+export const Message: React.FC<MessageProps> = props => {
   return <SMessage>{getMessage(props)}</SMessage>;
 };
 
@@ -63,5 +63,3 @@ const SMessage = styled.View`
   flex-direction: row;
   align-items: flex-end;
 `;
-
-export default Message;

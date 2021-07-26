@@ -5,7 +5,7 @@
 import 'react-native';
 import 'jest-styled-components';
 import React from 'react';
-import EndMessage from './EndMessage';
+import { EndMessage } from './EndMessage';
 import { shallow } from 'enzyme';
 import { Alert } from 'react-native';
 

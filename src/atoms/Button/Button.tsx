@@ -1,222 +1,290 @@
 import Color from 'color';
-import lodash from 'lodash';
 import React from 'react';
 import styled from 'styled-components/native';
+import _ from 'lodash';
 
-import {
-  ButtonProps,
-  SButtonTextProps,
-  SIconProps,
-} from '../../atoms/Button/Button.types';
-import Icon from '../../atoms/Icon';
-import border from '../../styles/border';
 import fonts from '../../styles/fonts';
 import { grayscaleColors } from '../../styles/grayscale-colors';
-import spacing from '../../styles/spacing';
-import { SubColorKey, subColorMap, subColors } from '../../styles/sub-colors';
-import {
-  SystemColorKey,
-  systemColorMap,
-  systemColors,
-} from '../../styles/system-colors';
+import { systemColors } from '../../styles/system-colors';
 import { getValidatedColor } from '../../utils/validator';
+import Icon from '../Icon';
+import {
+  ButtonDisabledColorkey,
+  buttonDisabledColors,
+  ButtonTouchedColorKey,
+  buttonTouchedColors,
+} from './buttonColors';
+import {
+  ButtonProps,
+  SContainerProps,
+  SButtonTextProps,
+  SIconProps,
+  CustomColors,
+} from './Button.types';
+import { LoadingDots } from '../LoadingDots';
 
-const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
-  const getUnderlayColor = () => {
-    if (props.type === 'text') return grayscaleColors.GRAY_300;
+const Button: React.FC<ButtonProps> = ({
+  children,
+  color,
+  touchedColor,
+  disabledColor,
+  colorIcon = true,
+  style,
+  ...props
+}) => {
+  let textColor: CustomColors['textColor'];
+  let textTouchedColor: CustomColors['textTouchedColor'];
+  let textDisabledColor: CustomColors['textDisabledColor'];
+  let containerColor: CustomColors['containerColor'];
+  let containerTouchedColor: CustomColors['containerTouchedColor'];
+  let containerDisabledColor: CustomColors['containerDisabledColor'];
 
-    const color = getValidatedColor(props.color || systemColors.PRIMARY);
-
-    if (Object.keys(systemColorMap).includes(color)) {
-      const touchedColorName = systemColorMap[color] + '_TOUCHED';
-
-      if (Object.keys(systemColors).includes(touchedColorName))
-        return systemColors[touchedColorName as SystemColorKey];
+  if (props.type === 'text') {
+    if (color) {
+      textColor = getValidatedColor(color || systemColors.PRIMARY);
+      textDisabledColor =
+        touchedColor ||
+        (Object.keys(buttonDisabledColors).includes(textColor)
+          ? buttonTouchedColors[textColor as ButtonDisabledColorkey]
+          : Color(textColor).alpha(0.3).string());
+    } else {
+      textColor = grayscaleColors.GRAY_600;
+      textDisabledColor = grayscaleColors.GRAY_400;
     }
-
-    if (Object.keys(subColorMap).includes(color)) {
-      const touchedColorName = subColorMap[color] + '_TOUCHED';
-
-      if (Object.keys(subColors).includes(touchedColorName))
-        return subColors[touchedColorName as SubColorKey];
+    containerTouchedColor = grayscaleColors.GRAY_100;
+  } else {
+    if (color) {
+      containerColor = getValidatedColor(color || systemColors.PRIMARY);
+      containerTouchedColor =
+        touchedColor ||
+        (Object.keys(buttonTouchedColors).includes(containerColor)
+          ? buttonTouchedColors[containerColor as ButtonTouchedColorKey]
+          : Color(containerColor).alpha(0.5).string());
+      containerDisabledColor =
+        disabledColor ||
+        (Object.keys(buttonDisabledColors).includes(containerColor)
+          ? buttonDisabledColors[containerColor as ButtonDisabledColorkey]
+          : Color(containerColor).alpha(0.5).string());
+      textColor =
+        containerColor === systemColors.WHITE
+          ? systemColors.BLACK
+          : systemColors.WHITE;
+    } else {
+      containerColor = grayscaleColors.GRAY_200;
+      containerTouchedColor = grayscaleColors.GRAY_300;
+      containerDisabledColor = grayscaleColors.GRAY_100;
+      textColor = grayscaleColors.GRAY_600;
+      textDisabledColor = grayscaleColors.GRAY_400;
     }
-
-    return Color(color).alpha(0.5).string();
-  };
-
-  const getDisabledColor = () => {
-    const color = getValidatedColor(props.color || systemColors.PRIMARY);
-
-    if (Object.keys(systemColorMap).includes(color)) {
-      const touchedColorName = systemColorMap[color] + '_DISABLED';
-
-      if (Object.keys(systemColors).includes(touchedColorName))
-        return systemColors[touchedColorName as SystemColorKey];
-    }
-
-    if (Object.keys(subColorMap).includes(color)) {
-      const touchedColorName = subColorMap[color] + '_DISABLED';
-
-      if (Object.keys(subColors).includes(touchedColorName))
-        return subColors[touchedColorName as SubColorKey];
-    }
-
-    return Color(color).alpha(0.5).string();
-  };
+  }
 
   const containerProps = {
-    ...props,
-    color: getValidatedColor(props.color || systemColors.PRIMARY),
-    textColor: getValidatedColor(props.textColor || systemColors.WHITE),
-    disabledColor: props.disabledColor || getDisabledColor(),
+    ..._.pick(props, ['size', 'inline', 'tile']),
   };
 
-  const buttonTextProps = lodash.pick(containerProps, [
-    'textColor',
-    'disabled',
-  ]);
-  const iconProps = lodash.pick(containerProps, [
-    'type',
-    'disabled',
-    'iconPosition',
-    'absoluteIcon',
-  ]);
+  const buttonTextProps = {
+    ..._.pick(props, ['size', 'disabled']),
+    textColor,
+    textTouchedColor,
+    textDisabledColor,
+  };
+  const iconProps = {
+    ..._.pick(props, ['iconPosition']),
+    colorIcon,
+    source: props.icon,
+  };
 
   return (
     <SContainer
+      onPress={!(props.disabled || props.loading) && props.onPress}
+      disabled={props.disabled || props.loading}
+      style={({ pressed }) => [
+        {
+          backgroundColor:
+            pressed && containerTouchedColor
+              ? containerTouchedColor
+              : props.disabled && containerDisabledColor
+              ? containerDisabledColor
+              : containerColor,
+        },
+        style,
+      ]}
       {...containerProps}
-      underlayColor={containerProps.touchedColor || getUnderlayColor()}
     >
-      <>
-        {props.icon && props.iconPosition !== 'right' && (
-          <SIcon
-            source={containerProps.icon}
-            color={containerProps.textColor}
-            {...iconProps}
-          />
-        )}
-        {typeof children === 'string' ? (
-          <SButtonText includeFontPadding={false} {...buttonTextProps}>
-            {children}
-          </SButtonText>
-        ) : (
-          children
-        )}
-        {containerProps.icon && containerProps.iconPosition === 'right' && (
-          <SIcon
-            source={containerProps.icon}
-            color={containerProps.textColor}
-            {...iconProps}
-          />
-        )}
-      </>
+      {({ pressed }) => (
+        <SContentContainer>
+          {props.icon && props.iconPosition !== 'right' && (
+            <SIcon
+              size="sm"
+              color={
+                iconProps.colorIcon &&
+                (pressed && textTouchedColor
+                  ? textTouchedColor
+                  : props.disabled && textDisabledColor
+                  ? textDisabledColor
+                  : textColor)
+              }
+              {...iconProps}
+            />
+          )}
+          {props?.loading ? (
+            <LoadingDots
+              color={
+                pressed && textTouchedColor
+                  ? textTouchedColor
+                  : props.disabled && textDisabledColor
+                  ? textDisabledColor
+                  : textColor
+              }
+            />
+          ) : typeof children === 'string' ? (
+            <SButtonText
+              pressed={pressed}
+              includeFontPadding={false}
+              {...buttonTextProps}
+            >
+              {children}
+            </SButtonText>
+          ) : (
+            children
+          )}
+          {props.icon && props.iconPosition === 'right' && (
+            <SIcon
+              size="sm"
+              color={
+                iconProps.colorIcon &&
+                (pressed && textTouchedColor
+                  ? textTouchedColor
+                  : props.disabled && textDisabledColor
+                  ? textDisabledColor
+                  : textColor)
+              }
+              {...iconProps}
+            />
+          )}
+        </SContentContainer>
+      )}
     </SContainer>
   );
 };
 
-const SContainer = styled.TouchableHighlight<ButtonProps>`
+const SContainer = styled.Pressable<SContainerProps>`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* type (default: inline) */
-  ${props => {
-    const type = props.type || 'inline';
-    switch (type) {
-      case 'inline':
-        return `
-          padding: 14px;
-        `;
 
-      case 'block':
+  /* size (default: lg) */
+  ${props => {
+    switch (props.size) {
+      case 'sm':
         return `
-          padding: 14px;
-          width: 100%;
+          padding: 6px 12px;
         `;
-      case 'text':
+      case 'md':
         return `
-          border: none;
-          border-radius: 4px;
-          padding: 2px;
+          padding: 10px 16px;
+        `;
+      case 'lg':
+        return `
+          padding: 14px 24px;
+        `;
+      default:
+        return `
+          padding: 14px 24px;
         `;
     }
+  }}
+
+  /* inline (default: false) */
+  ${props => {
+    if (props.inline) {
+      return;
+    }
+    return `width: 100%`;
   }}
 
   /* tile (default: false) */
   ${props => {
-    if (props.tile || props.type === 'text') {
+    if (props.tile) {
       return;
     }
     return `
-      border-radius: 26px;
-      border-width: 1px;
+      border-radius: 1000px;
     `;
-  }}
-
-  /* color (default: default) */
-  ${props => {
-    const type = props.type || 'inline';
-    if (type === 'text') {
-      return;
-    }
-
-    return `
-      border: none;
-      background-color: ${props.color};  
-    `;
-  }}
-
-  /* disabled (default: false) */
-  ${props => {
-    if (props.disabled) {
-      if (props.type === 'text') return;
-
-      return `
-        background-color: ${props.disabledColor};
-      `;
-    }
   }}
 `;
+
+const SContentContainer = styled.View`
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+SContentContainer.displayName = 'ContentContainer';
 
 const SButtonText = styled.Text<SButtonTextProps>`
   text-align: center;
+  /* size (default: lg) */
   ${props => {
-    return `
-      font-family: ${fonts.family.MEDIUM};
-    `;
+    switch (props?.size) {
+      case 'sm':
+        return `
+          font-family: ${fonts.family.REGULAR};
+          font-size: ${fonts.size.XS}px;
+          line-height: ${fonts.lineHeight.XS}px;
+        `;
+      case 'md':
+        return `
+          font-family: ${fonts.family.REGULAR};
+          font-size: ${fonts.size.S}px;
+          line-height: ${fonts.lineHeight.S}px;
+        `;
+      case 'lg':
+        return `
+          font-family: ${fonts.family.MEDIUM};
+          font-size: ${fonts.size.S}px;
+          line-height: ${fonts.lineHeight.S}px;
+        `;
+      default:
+        return `
+          font-family: ${fonts.family.MEDIUM};
+          font-size: ${fonts.size.S}px;
+          line-height: ${fonts.lineHeight.S}px;
+        `;
+    }
   }}
   /* textColor */
   ${props => {
-    return `color: ${props.textColor}`;
-  }} 
-  
-  /* disabled */
-  ${props => {
-    if (props.disabled) {
+    if (props.pressed && props.textTouchedColor) {
       return `
-        color: ${Color(props.textColor).alpha(0.5).string()};
+        color: ${props.textTouchedColor};
       `;
     }
+    if (props.disabled && props.textDisabledColor) {
+      return `
+        color: ${props.textDisabledColor};
+      `;
+    }
+    return `
+      color: ${props.textColor};
+    `;
   }}
 `;
 
+SButtonText.displayName = 'ButtonText';
+
 const SIcon = styled(Icon)<SIconProps>`
+  /* iconMargin */
   ${props => {
-    const SIconPosition = props.iconPosition || 'left';
     const SMargin = `margin-${
       props.iconPosition === 'right' ? 'left' : 'right'
     }`;
 
-    if (props.type === 'block' && props.absoluteIcon) {
-      return `
-        position:absolute;
-        ${SIconPosition} : 16px;
-      `;
-    }
-
     return `
-    ${SMargin}: 6px;
+    ${SMargin}: 4px
     `;
   }}
 `;
+
+SIcon.displayName = 'ButtonIcon';
 
 export default Button;

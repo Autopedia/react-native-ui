@@ -1,7 +1,9 @@
 import lodash from 'lodash';
-import React, { useState } from 'react';
+import React, { forwardRef, useState } from 'react';
 import {
+  Platform,
   StyleProp,
+  TextInput as RNTextInput,
   TextInputProps as RNTextInputProps,
   TextStyle,
 } from 'react-native';
@@ -10,11 +12,10 @@ import styled from 'styled-components/native';
 import Icon from '../../atoms/Icon';
 import { BaseInputProps } from '../../global/types';
 import { Colors, Fonts } from '../../styles';
-import border from '../../styles/border';
 import colors from '../../styles/colors';
 import fonts from '../../styles/fonts';
 import { grayscaleColors } from '../../styles/grayscale-colors';
-import spacing from '../../styles/spacing';
+import { systemColors } from '../../styles/system-colors';
 import {
   pickStyle,
   TextOnlyStyleKeys,
@@ -37,123 +38,131 @@ export interface TextInputProps
       | 'onChange'
       | 'defaultValue'
     > {
-  type?: 'default';
+  label?: string;
+  success?: string;
   disabled?: boolean;
-  underline?: 'success' | 'error';
   suffix?: React.ReactNode;
   style?: StyleProp<TextStyle>;
 }
 
 interface SContainerProps
-  extends Pick<
-    TextInputProps,
-    'type' | 'disabled' | 'secureTextEntry' | 'suffix'
-  > {}
-
+  extends Pick<TextInputProps, 'disabled' | 'secureTextEntry' | 'suffix'> {}
+interface SHeaderProps
+  extends Pick<TextInputProps, 'label' | 'error' | 'success'> {}
 interface STextInputProps
   extends Omit<RNTextInputProps, 'onChange'>,
-    Pick<TextInputProps, 'type' | 'disabled' | 'underline'> {}
-interface SFixProps extends Pick<TextInputProps, 'type' | 'disabled'> {}
-interface SFixTextProps extends Pick<TextInputProps, 'type' | 'disabled'> {}
+    Pick<TextInputProps, 'disabled' | 'error' | 'isDirty'> {}
+interface SFixProps extends Pick<TextInputProps, 'disabled'> {}
+interface SFixTextProps extends Pick<TextInputProps, 'disabled'> {}
 
-const TextInput = (props: TextInputProps) => {
-  const [showText, setShowText] = useState(false);
+const TextInput = forwardRef(
+  (props: TextInputProps, ref?: React.Ref<RNTextInput>) => {
+    const [showText, setShowText] = useState(false);
 
-  const fixWrapperProps = {
-    style: pickStyle(props.style, ViewStyleKeys),
-  };
-  const containerProps: SContainerProps = lodash.pick(props, [
-    'type',
-    'disabled',
-    'secureTextEntry',
-    'suffix',
-  ]);
-  const textInputProps: STextInputProps = {
-    ...lodash.omit(props, [
-      'placeholderTextColor',
+    const fixWrapperProps = {
+      style: pickStyle(props.style, ViewStyleKeys),
+    };
+    const containerProps: SContainerProps = lodash.pick(props, [
+      'type',
+      'disabled',
       'secureTextEntry',
-      'onChange',
-    ]),
-    editable: !props.disabled,
-    placeholderTextColor: Colors.MUTED,
-    secureTextEntry: props.secureTextEntry
-      ? props.secureTextEntry && !showText
-      : false,
-    style: pickStyle(props.style, TextOnlyStyleKeys),
-    onChangeText: value => {
-      let propValue = value;
+      'suffix',
+    ]);
+    const headerProps: SHeaderProps = lodash.pick(props, [
+      'label',
+      'error',
+      'success',
+    ]);
+    const textInputProps: STextInputProps = {
+      ...lodash.omit(props, [
+        'placeholderTextColor',
+        'secureTextEntry',
+        'onChange',
+      ]),
+      editable: !props.disabled,
+      placeholderTextColor: Colors.MUTED,
+      secureTextEntry: props.secureTextEntry
+        ? props.secureTextEntry && !showText
+        : false,
+      style: pickStyle(props.style, TextOnlyStyleKeys),
+      onChangeText: value => {
+        let propValue = value;
 
-      if (props.disabled) {
-        return;
-      }
-      if (props.keyboardType && props.keyboardType === 'numeric') {
-        propValue = propValue.replace(/\D/g, '');
-      }
+        if (props.disabled) {
+          return;
+        }
+        if (props.keyboardType && props.keyboardType === 'numeric') {
+          propValue = propValue.replace(/\D/g, '');
+        }
 
-      props.onChange?.(propValue);
-      props.onChangeText?.(propValue);
-    },
-  };
+        props.onChange?.(propValue);
+        props.onChangeText?.(propValue);
+      },
+    };
 
-  return (
-    <SFixWrapper {...fixWrapperProps}>
-      <SContainer {...containerProps}>
-        <STextInput
-          {...textInputProps}
-          placeholderTextColor={grayscaleColors.GRAY_400}
-        />
-        {props.secureTextEntry && (
-          <SIcon
-            touchable
-            disabled={props.disabled || false}
-            onPress={() => {
-              setShowText(showText => (props.disabled ? false : !showText));
-            }}
-            source={
-              showText
-                ? require('../../assets/icons/eye/eye-closed.png')
-                : require('../../assets/icons/eye/eye-opened.png')
-            }
-          />
-        )}
-      </SContainer>
-      {props.suffix && (
-        <SSuffix>
-          {React.isValidElement(props.suffix) ? (
-            props.suffix
-          ) : (
-            <SFixText>{props.suffix}</SFixText>
+    return (
+      <SFixWrapper {...fixWrapperProps}>
+        <SContainer
+          {...containerProps}
+          style={Platform.select({
+            android: {
+              shadowColor: 'rgba(0,0,0,0.5)',
+              shadowOpacity: 1,
+              elevation: 15,
+            },
+          })}
+        >
+          {!!(props.success || props.error?.message || props.label) && (
+            <SHeader {...headerProps}>
+              {props.success || props.error?.message || props.label}
+            </SHeader>
           )}
-        </SSuffix>
-      )}
-    </SFixWrapper>
-  );
-};
+          <STextInput
+            ref={ref}
+            {...textInputProps}
+            textAlignVertical="center"
+            placeholderTextColor={grayscaleColors.GRAY_400}
+          />
+          {props.secureTextEntry && (
+            <SIcon
+              disabled={props.disabled || false}
+              onPress={() => {
+                setShowText(prev => (props.disabled ? false : !prev));
+              }}
+              source={
+                showText
+                  ? require('../../assets/icons/eye/eye-closed.png')
+                  : require('../../assets/icons/eye/eye-opened.png')
+              }
+            />
+          )}
+        </SContainer>
+        {props.suffix && (
+          <SSuffix disabled={props.disabled}>
+            {React.isValidElement(props.suffix) ? (
+              props.suffix
+            ) : (
+              <SFixText disabled={props.disabled}>{props.suffix}</SFixText>
+            )}
+          </SSuffix>
+        )}
+      </SFixWrapper>
+    );
+  },
+);
 
 const SFixWrapper = styled.View`
   flex-direction: row;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
 `;
 
 const SContainer = styled.View<SContainerProps>`
-  ${props => `
-    position: relative;
-    flex-grow: 1;
-    justify-content: center;
-    border-radius: 16px;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
-    padding: 14px 16px;
-  `}
-
-  /* type (default: default) */
-  ${props => {
-    switch (props.type) {
-      default:
-        return `
-          background-color: ${colors.DEFAULT};
-        `;
-    }
-  }}
-
+  position: relative;
+  flex-grow: 1;
+  justify-content: center;
+  background-color: ${systemColors.WHITE};
+  border-radius: 16px;
+  padding: 14px 16px;
   /* suffix (default: undefined) */
   ${props =>
     props.suffix &&
@@ -171,13 +180,25 @@ const SContainer = styled.View<SContainerProps>`
   `}
 `;
 
+const SHeader = styled.Text<SHeaderProps>`
+  margin-bottom: 10px;
+  font-family: ${fonts.family.MEDIUM};
+  ${props => {
+    if (props.success) {
+      return `color: ${systemColors.SUCCESS}`;
+    } else if (props.error) {
+      return `color: ${systemColors.ERROR}`;
+    } else {
+      return `color: ${grayscaleColors.GRAY_400}`;
+    }
+  }}
+`;
+
 const STextInput = styled.TextInput<STextInputProps>`
-  ${props => `
-    padding: 0px;
-    margin: 0px;
-    font-size: ${fonts.size.XS}px;
-    height: ${fonts.lineHeight.XS}px;
-  `}
+  padding: 0px;
+  margin: 0px;
+  font-size: ${fonts.size.XS}px;
+  height: ${fonts.lineHeight.XS}px;
 
   /* multiline */
   ${props =>
@@ -191,95 +212,39 @@ const STextInput = styled.TextInput<STextInputProps>`
       }px;
     `}
 
-
-  /* type (default: default) */
-   ${props => {
-    switch (props.type) {
-      default:
-        return `
-          color: ${colors.ON_DEFAULT};
-        `;
-    }
-  }}
-
-   /* disabled (default: false) */
+  /* disabled (default: false) */
    ${props =>
     props.disabled &&
     `
       color: ${colors.ON_DISABLED};
   `}
-    
-  /* underline */
-  ${props => {
-    switch (props.underline) {
-      case 'success':
-        return `
-          border-bottom-width: 1px;
-          border-bottom-color: ${colors.SUCCESS};
-        `;
-      case 'error':
-        return `
-          border-bottom-width: 1px;
-          border-bottom-color: ${colors.ERROR};
-        `;
-      default:
-        break;
-    }
-  }}
 `;
+STextInput.displayName = 'RNTextInput';
 
 const SIcon = styled(Icon)`
-  ${props => `
-    position: absolute;
-    right: 8px;
-  `}
+  position: absolute;
+  right: 8px;
 `;
+SIcon.displayName = 'SecureTextEntryToggle';
 
 const SSuffix = styled.View<SFixProps>`
-  ${props => `
-    justify-content: center;
-    padding: 8px 24px;
-    border-width: 1px;
-    border-left-width: 0px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-  `}
-
-  /* type (default: default) */
-   ${props => {
-    switch (props.type) {
-      default:
-        return `
-          background-color: ${colors.DEFAULT};
-          border-color: ${colors.BORDER_DEFAULT};
-        `;
-    }
-  }}
-
+  justify-content: center;
+  background-color: ${systemColors.WHITE};
+  padding: 8px 24px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
   /* disabled (default: false) */
   ${props =>
     props.disabled &&
     `
       background-color: ${colors.DISABLED};
-      border-color: ${colors.BORDER_DISABLED};
   `}
 `;
 
 const SFixText = styled.Text<SFixTextProps>`
-  ${props => `
-    font-size: ${fonts.size.XS}px;
-    font-family: ${fonts.family.REGULAR};
-  `}
-
-  /* type (default: default) */
-  ${props => {
-    switch (props.type) {
-      default:
-        return `
-          color: ${colors.ON_DEFAULT};
-        `;
-    }
-  }}
+  font-size: ${fonts.size.XS}px;
+  font-family: ${fonts.family.REGULAR};
+  color: ${colors.ON_DEFAULT};
 
   /* disabled (default: false) */
   ${props =>
@@ -295,6 +260,7 @@ export type TextInputElement = React.ReactElement<
 >;
 export default TextInput;
 
+/* istanbul ignore next */
 export const textInputPropsGenerator = (name: string): RNTextInputProps => {
   const defaultProps: RNTextInputProps = {
     autoCapitalize: 'none',

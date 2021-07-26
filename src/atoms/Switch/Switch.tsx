@@ -18,16 +18,12 @@ const Switch: React.FC<ISwitchProps> = props => {
 
   const onValueChange = (newValue: boolean) => {
     if (props.disabled) return;
-    if (props.onValueChange) {
-      props.onValueChange(newValue);
-    }
+    if (props.onValueChange) props.onValueChange(newValue);
     setInnerValue(newValue);
   };
 
   useEffect(() => {
-    if (props.defaultValue !== undefined) {
-      setInnerValue(props.defaultValue);
-    }
+    if (props.defaultValue !== undefined) setInnerValue(props.defaultValue);
   }, [props.defaultValue]);
 
   const style: ViewStyle | undefined =

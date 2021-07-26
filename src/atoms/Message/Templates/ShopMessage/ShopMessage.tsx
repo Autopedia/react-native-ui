@@ -1,17 +1,14 @@
 import React from 'react';
 import MapView, { LatLng, Marker, Region } from 'react-native-maps';
 import styled from 'styled-components/native';
-
 import Button from '../../../../atoms/Button';
 import Typography from '../../../../atoms/Typography';
-import { Spacing } from '../../../../styles';
 import base from '../../../../styles/base';
 import colors from '../../../../styles/colors';
-import spacing from '../../../../styles/spacing';
 import { MAX_WIDTH } from '../../Message.styles';
 import { ShopMessageProps } from '../../Message.types';
 
-const ShopMessage: React.FC<ShopMessageProps> = ({
+export const ShopMessage: React.FC<ShopMessageProps> = ({
   name,
   address,
   lat,
@@ -48,8 +45,8 @@ const ShopMessage: React.FC<ShopMessageProps> = ({
         <SShopButtons>
           <SShopButton
             onPress={onPressDetail}
-            style={{ marginRight: 10 }}
-            icon={require('../../../../assets/icons/shop/shop.png')}
+            icon={require('../../../../assets/icons/tire/tire.png')}
+            spacing
           >
             상세 정보
           </SShopButton>
@@ -66,38 +63,34 @@ const ShopMessage: React.FC<ShopMessageProps> = ({
 };
 
 const SShop = styled.View`
-  ${props => base.message}
-  ${props => `
-    width: ${MAX_WIDTH}px;
-    background-color: ${colors.WHITE};
-  `}
+  ${base.message}
+  width: ${MAX_WIDTH}px;
+  background-color: ${colors.WHITE};
 `;
 
 const SShopInfo = styled.View`
-  ${props => `
-    background-color: ${colors.WHITE};
-    padding: 10px;
-  `}
+  background-color: ${colors.WHITE};
+  padding: 10px;
 `;
 const SShopButtons = styled.View`
   flex-direction: row;
-  ${props => `
-    margin-top: 12px;
-  `}
+  margin-top: 12px;
 `;
 
-const SShopButton = styled(Button)`
+interface ShopButtonProps {
+  spacing?: boolean;
+}
+
+const SShopButton = styled(Button)<ShopButtonProps>`
   flex: 1;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  ${({ spacing }) => spacing && `margin-right: 10px;`}
 `;
+SShopButton.displayName = 'ShopButton';
 
 const SMap = styled(MapView)`
-  ${props => `
-    width: 100%;
-    height: 130px;
-  `}
+  width: 100%;
+  height: 130px;
 `;
-
-export default ShopMessage;

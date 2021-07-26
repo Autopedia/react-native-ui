@@ -1,17 +1,18 @@
+import lodash from 'lodash';
+import React, { useEffect, useState } from 'react';
+import styled from 'styled-components/native';
+
 import Option from '../../atoms/SelectOption';
 import {
   SelectLayout,
   SelectOption,
   SelectSize,
 } from '../../atoms/SelectOption/SelectOption.types';
-import lodash from 'lodash';
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components/native';
 
 interface SelectProps<V> {
-  defaultValue?: V | null;
-  value?: V | null;
-  onChange?: (value: V | null) => void;
+  defaultValue?: V | V[] | null;
+  value?: V | V[] | null;
+  onChange?: (value: V) => void;
   options: Array<SelectOption<V>>;
   layout?: SelectLayout;
   size?: SelectSize;
@@ -23,23 +24,32 @@ interface SContainerProps {
 }
 
 const Select = <V extends React.Key>(props: SelectProps<V>) => {
-  const [innerValue, setInnerValue] = useState<V | null | undefined>(
+  const [innerValue, setInnerValue] = useState<V | V[] | null | undefined>(
     props.defaultValue,
   );
 
   const selectValue = props.value || innerValue;
 
-  const onPress = (newValue: V | null) => {
-    if (props.disabled) return;
-
-    let targetValue = newValue;
-
-    if (targetValue === selectValue) {
-      targetValue = null;
+  const onPress = (newValue: V) => {
+    if (props.disabled) {
+      return;
     }
 
-    props.onChange?.(targetValue);
-    setInnerValue(targetValue);
+    props.onChange?.(newValue);
+
+    if (Array.isArray(innerValue)) {
+      if (innerValue.includes(newValue)) {
+        setInnerValue(innerValue.filter(v => v !== newValue));
+      } else {
+        setInnerValue([...innerValue, newValue]);
+      }
+    } else {
+      if (innerValue === newValue) {
+        setInnerValue(null);
+      } else {
+        setInnerValue(newValue);
+      }
+    }
   };
 
   const containerProps: SContainerProps = lodash.pick(props, 'layout');
@@ -54,7 +64,9 @@ const Select = <V extends React.Key>(props: SelectProps<V>) => {
         key: option.value,
         first: index === 0,
         last: index === props.options.length,
-        selected: option.value === selectValue,
+        selected: Array.isArray(selectValue)
+          ? selectValue.includes(option.value)
+          : option.value === selectValue,
         onPress,
       };
 

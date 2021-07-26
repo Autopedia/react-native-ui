@@ -5,8 +5,9 @@
 import 'react-native';
 import 'jest-styled-components';
 import React from 'react';
-import ImageMessage from './ImageMessage';
+import { ImageMessage } from './ImageMessage';
 import { shallow } from 'enzyme';
+import { LocalSource } from '../../../../global/types';
 
 describe('[Message/ImageMessage] Unit Test', () => {
   it('should fire onPressImage event', () => {
@@ -24,5 +25,26 @@ describe('[Message/ImageMessage] Unit Test', () => {
 
     imageMessage.simulate('press');
     expect(onPressImageMock).toHaveBeenCalledTimes(1);
+  });
+
+  it('should fire onError event', async () => {
+    let imageMessage = shallow(
+      <ImageMessage
+        type="image"
+        url="wrong"
+        width={200}
+        height={200}
+        onPressImage={() => {}}
+      />,
+    );
+    const messageImage = imageMessage.find('MessageImage');
+    messageImage.simulate('error');
+
+    imageMessage = imageMessage.update();
+    const imageSource: LocalSource = imageMessage
+      .find('MessageImage')
+      .prop('source');
+
+    expect(imageSource.testUri).toMatch('image-fallback.png');
   });
 });

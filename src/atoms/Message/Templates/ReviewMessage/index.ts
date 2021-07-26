@@ -1,1 +1,1 @@
-export { default } from './ReviewMessage';
+export { ReviewMessage } from './ReviewMessage';

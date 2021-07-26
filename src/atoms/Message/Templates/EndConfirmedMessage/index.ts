@@ -1,1 +1,1 @@
-export { default } from './EndConfirmedMessage';
+export { EndConfirmedMessage } from './EndConfirmedMessage';

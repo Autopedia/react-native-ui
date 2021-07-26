@@ -1,10 +1,10 @@
 import React from 'react';
 import { TextMessageProps } from '../../Message.types';
 import colors from '../../../../styles/colors';
-import Markdown from '../../../../atoms/Markdown';
+import { Markdown } from '../../../../atoms/Markdown';
 import { SMyTextMessage, SOtherTextMessage } from '../../Message.styles';
 
-const TextMessage: React.FC<TextMessageProps> = ({ mine, text }) => {
+export const TextMessage: React.FC<TextMessageProps> = ({ mine, text }) => {
   return mine ? (
     <SMyTextMessage>
       <Markdown selectable textColor={colors.ON_PRIMARY_DARK}>
@@ -17,5 +17,3 @@ const TextMessage: React.FC<TextMessageProps> = ({ mine, text }) => {
     </SOtherTextMessage>
   );
 };
-
-export default TextMessage;

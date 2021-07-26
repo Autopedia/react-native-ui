@@ -1,10 +1,10 @@
 import { Alert } from 'react-native';
 import Button from '../../../../atoms/Button';
 import React from 'react';
-import CardMessage from '../CardMessage';
+import { CardMessage } from '../CardMessage';
 import { OutdatedMessageProps } from '../../Message.types';
 
-const OutdatedMessage: React.FC<OutdatedMessageProps> = ({
+export const OutdatedMessage: React.FC<OutdatedMessageProps> = ({
   onPressFinish,
   disabled,
   days,
@@ -28,7 +28,7 @@ const OutdatedMessage: React.FC<OutdatedMessageProps> = ({
     dayMention +
     '대화기록이 없어 24시간 뒤에 상담이 자동종료될 예정입니다.\n상담 진행을 원하시면, 채팅을 해주세요!';
   const footer = (
-    <Button type="block" color="error" disabled={disabled} onPress={finishChat}>
+    <Button disabled={disabled} onPress={finishChat}>
       지금 상담 종료하기
     </Button>
   );
@@ -37,5 +37,3 @@ const OutdatedMessage: React.FC<OutdatedMessageProps> = ({
     <CardMessage title={title} description={description} footer={footer} />
   );
 };
-
-export default OutdatedMessage;

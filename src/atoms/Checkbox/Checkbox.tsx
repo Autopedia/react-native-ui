@@ -3,7 +3,6 @@ import styled from 'styled-components/native';
 
 import Icon from '../../atoms/Icon';
 import { BaseInputProps } from '../../global/types';
-import spacing from '../../styles/spacing';
 
 interface CheckboxProps extends BaseInputProps<boolean> {
   color?: string;
@@ -42,9 +41,7 @@ const SContainer = styled.TouchableOpacity`
   align-items: center;
 `;
 const SIcon = styled(Icon)`
-  ${props => `
-    margin-right: 4px;
-  `}
+  margin-right: 4px;
 `;
 
 export type CheckboxElement = React.ReactElement<

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react-native';
 import React from 'react';
 import CenterContainerDecorator from '../../../../decorators/center-container.decorator';
 import SThemeDecorator from '../../../../decorators/styled-components.decorator';
-import CounselCaseMessage from './CounselCaseMessage';
+import { CounselCaseMessage } from './CounselCaseMessage';
 import GreyBackgroundDecorator from '../../../../decorators/grey-background.decorator';
 
 storiesOf('Atoms/Message/CounselCaseMessage', module)

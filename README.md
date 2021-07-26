@@ -1,14 +1,24 @@
 <img src="https://image.doctor-cha.com/assets/SquareLogo-filled.png" width=120 />
 
-# React Native UI ![CI](https://github.com/Autopedia/react-native-ui/actions/workflows/main.yml/badge.svg) [![codecov](https://codecov.io/gh/Autopedia/react-native-ui/branch/master/graph/badge.svg?token=982D9YJDJI)](https://codecov.io/gh/Autopedia/react-native-ui)
+# React Native UI ![CI](https://github.com/Autopedia/react-native-ui/actions/workflows/main.yml/badge.svg) [![codecov](https://codecov.io/gh/Autopedia/react-native-ui/branch/master/graph/badge.svg?token=982D9YJDJI)](https://codecov.io/gh/Autopedia/react-native-ui) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 닥터차 앱을 위한 React Native UI 컴포넌트 라이브러리 입니다.
 
 ## 업데이트
 
 - `v1.0.0` : 2021.06.21
-- `v1.1.0` : 2021.06.25 닥터차 2.0용 UI 업데이트 (1차)
-- `v1.2.0` : 2021.07.19 닥터차 2.0용 UI 패키징
+- `v1.1.0` : 2021.06.25
+  - [닥터차 2.0용 UI 업데이트 (1차)](https://docs.google.com/document/d/1Kx-2GRcfI4oOF1b7yCWmUb4L9-bbQubQdiB9P4mMHt4/edit)
+- `v1.2.0` : 2021.07.22
+  - 신규 컴포넌트 구현
+    - [Toast](https://docs.google.com/document/d/1BHkyeh_1XXIXRqIs2dA5PEJTSHL9IWDaY9ptZpxUiEM/edit)
+    - [LoadingDots](https://docs.google.com/document/d/1BHkyeh_1XXIXRqIs2dA5PEJTSHL9IWDaY9ptZpxUiEM/edit)
+    - [Alert](https://docs.google.com/document/d/1VceAbGqxjaTrtVe-A6lcW3WqtcThgzPoJaV26hhxZZg/edit)
+    - [Tooltip](https://docs.google.com/document/d/1mRcigecFJY5QoK3cPxb2KITGSNVIrSXPeeCwWLQjylQ/edit)
+  - 기존 컴포넌트 수정
+    - [Button, Icon, Typography](https://docs.google.com/document/d/10oiqZ-lLql5v4gNO-X3vF-aue9uDXUeeR9nrgUnOLfw/edit#heading=h.bqfs6i8j7ud5)
+    - [TextInput](https://docs.google.com/document/d/1YNn6NmqP2v-MbngT72wdEpkwSpAhukDiRIa2G6kQtx4/edit#)
+  - 사용하지 않는 컴포넌트 제거
 
 ---
 
@@ -42,6 +52,10 @@ module.exports = {
 git clone https://github.com/Autopedia/react-native-ui.git
 cd react-native-ui
 yarn install
+npx react-native link
+cd ios
+npx pod-install
+cd ..
 yarn storybook
 ```
 
@@ -86,10 +100,17 @@ yarn test path/to/test/file
 yarn test -u
 ```
 
+코드 커버리지를 보려면,
+
+```bash
+yarn test --coverage
+```
+
 ---
 
 ## 규칙
 
 - master/develop 브랜치에 직접 커밋 금지. 반드시 다른 브랜치에 작업하시고 PR을 만들어주세요.
 - 반드시 개발 후에 테스트 해주세요. 테스트 코드를 업데이트하지 않는 한, 모든 테스트를 통과해야합니다.
+- 코드 커버리지는 반드시 이전 이상이어야 합니다. 불가피한 경우가 생겼을 경우, PR에 기술해주세요.
 - 만일 테스트 코드를 업데이트 했다면 어떤 테스트를 수정했는지, 왜 수정했는지를 PR에 기술해주세요.

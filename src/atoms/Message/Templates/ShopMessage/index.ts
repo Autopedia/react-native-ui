@@ -1,1 +1,1 @@
-export { default } from './ShopMessage';
+export { ShopMessage } from './ShopMessage';

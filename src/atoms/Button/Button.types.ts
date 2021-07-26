@@ -1,42 +1,49 @@
-import { ViewStyle, GestureResponderEvent, TextStyle } from 'react-native';
-export type ButtonType = 'inline' | 'block' | 'text';
+import {
+  GestureResponderEvent,
+  PressableProps,
+  TextStyle,
+  ViewStyle,
+} from 'react-native';
+
+export type ButtonType = 'solid' | 'text';
+export type ButtonSize = 'sm' | 'md' | 'lg';
 export type ButtonIconPosition = 'left' | 'right';
 
-export interface ButtonProps {
-  /**
-   * layout (default : inline)
-   * @inline    button width determined by the inner text
-   * @block     button expands to maximum length possible
-   * @sticky    button expands to maximum length and fixed at the bottom
-   */
-
+export interface ButtonProps extends PressableProps {
   type?: ButtonType;
+  size?: ButtonSize;
+  inline?: boolean;
   tile?: boolean;
   color?: string;
   touchedColor?: string;
   disabledColor?: string;
-  textColor?: string;
   loading?: boolean;
   disabled?: boolean;
 
   icon?: any;
+  colorIcon?: boolean;
   iconPosition?: ButtonIconPosition;
 
-  /**
-   * absoluteIcon (default: false)
-   * !!NOT compatible with DEFAULT layout button!!
-   * @true    position of the icon fixed to one side of the button (corresponding to iconPosition)
-   */
-  absoluteIcon?: boolean;
-
   style?: ViewStyle;
-  onPress: (event: GestureResponderEvent) => void;
+  onPress?: (event: GestureResponderEvent) => void;
 }
 
-export type SButtonTextProps = TextStyle &
-  Pick<ButtonProps, 'textColor' | 'disabled'>;
+export type CustomColors = {
+  textColor: string;
+  textTouchedColor: string;
+  textDisabledColor: string;
+  containerColor: string;
+  containerTouchedColor: string;
+  containerDisabledColor: string;
+};
 
-export type SIconProps = Pick<
-  ButtonProps,
-  'type' | 'disabled' | 'iconPosition' | 'absoluteIcon'
->;
+export type SContainerProps = PressableProps &
+  Pick<ButtonProps, 'size' | 'inline' | 'tile'>;
+
+export type SButtonTextProps = TextStyle &
+  Pick<ButtonProps, 'size' | 'disabled'> &
+  Pick<CustomColors, 'textColor' | 'textTouchedColor' | 'textDisabledColor'> & {
+    pressed: boolean;
+  };
+
+export type SIconProps = Pick<ButtonProps, 'iconPosition' | 'colorIcon'>;

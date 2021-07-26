@@ -1,7 +1,7 @@
 {
   "name": "@drcha/react-native-ui",
   "description": "A React Native UI components for React Native apps of doctor-cha services.",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -41,6 +41,7 @@
     "react-native-maps": "^0.28.0",
     "react-native-parsed-text": "^0.0.22",
     "react-native-rate": "^1.2.6",
+    "react-native-safe-area-context": "^3.2.0",
     "react-native-video": "^5.1.1",
     "styled-components": "^5.3.0",
     "validate-color": "^2.1.1"
@@ -51,7 +52,7 @@
     "@react-native-community/async-storage": "^1.12.1",
     "@react-native-community/eslint-config": "^2.0.0",
     "@storybook/addon-actions": "^5.3",
-    "@storybook/addon-knobs": "^6.2.9",
+    "@storybook/addon-knobs": "^6.3.0",
     "@storybook/addon-links": "^5.3",
     "@storybook/addon-ondevice-actions": "^5.3.23",
     "@storybook/addon-ondevice-knobs": "^5.3.25",

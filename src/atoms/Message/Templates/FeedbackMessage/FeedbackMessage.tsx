@@ -1,10 +1,10 @@
 import React from 'react';
 import { Linking, Alert } from 'react-native';
 import { FeedbackMessageProps } from '../../Message.types';
-import CardMessage from '../CardMessage';
+import { CardMessage } from '../CardMessage';
 import Button from '../../../../atoms/Button';
 
-const FeedbackMessage: React.FC<FeedbackMessageProps> = ({ link }) => {
+export const FeedbackMessage: React.FC<FeedbackMessageProps> = ({ link }) => {
   const openFeedback = async () => {
     const valid = await Linking.canOpenURL(link);
 
@@ -21,15 +21,9 @@ const FeedbackMessage: React.FC<FeedbackMessageProps> = ({ link }) => {
   const title = '피드백을 남겨주세요!';
   const description =
     '상담은 만족스러우셨나요?\n상담 내용에 대한 피드백을 바탕으로 더욱 발전하는 닥터차가 되겠습니다!';
-  const footer = (
-    <Button type="block" onPress={openFeedback}>
-      피드백 남기기
-    </Button>
-  );
+  const footer = <Button onPress={openFeedback}>피드백 남기기</Button>;
 
   return (
     <CardMessage title={title} description={description} footer={footer} />
   );
 };
-
-export default FeedbackMessage;
