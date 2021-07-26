@@ -6261,6 +6261,7 @@ exports[`Storyshots Atoms/Message/CardMessage Playground 1`] = `
               "flexWrap": "wrap",
               "fontFamily": "NotoSansKR-Regular",
               "fontSize": 14,
+              "lineHeight": 22,
             },
             Object {
               "marginVertical": 10,
@@ -8666,6 +8667,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
             "color": "#8C8C8C",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
+            "lineHeight": 26,
           },
         ]
       }
@@ -8712,6 +8714,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
             "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 14,
+            "lineHeight": 22,
           },
         ]
       }
@@ -8808,6 +8811,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
             "color": "#8C8C8C",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 14,
+            "lineHeight": 22,
           },
         ]
       }
@@ -8874,6 +8878,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
             "color": "black",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
+            "lineHeight": 26,
           },
         ]
       }
@@ -8891,6 +8896,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
             "color": "black",
             "fontFamily": "NotoSansKR-Regular",
             "fontSize": 12,
+            "lineHeight": 19,
           },
         ]
       }
@@ -8955,6 +8961,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
             "color": "black",
             "fontFamily": "NotoSansKR-Light",
             "fontSize": 12,
+            "lineHeight": 19,
             "opacity": 0.5,
           },
         ]
@@ -9003,6 +9010,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
             "color": "#8C8C8C",
             "fontFamily": "NotoSansKR-Medium",
             "fontSize": 16,
+            "lineHeight": 26,
           },
         ]
       }
@@ -9021,6 +9029,7 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
             "color": "#8C8C8C",
             "fontFamily": "NotoSansKR-Regular",
             "fontSize": 12,
+            "lineHeight": 19,
           },
         ]
       }
@@ -18334,6 +18343,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Light",
               "fontSize": 12,
+              "lineHeight": 19,
               "opacity": 0.5,
             },
           ]
@@ -18650,6 +18660,7 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Medium",
               "fontSize": 14,
+              "lineHeight": 22,
             },
           ]
         }
@@ -18904,6 +18915,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Light",
               "fontSize": 12,
+              "lineHeight": 19,
               "opacity": 0.5,
             },
           ]
@@ -19085,6 +19097,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Light",
               "fontSize": 12,
+              "lineHeight": 19,
               "opacity": 0.5,
             },
           ]
@@ -19266,6 +19279,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
               "color": "black",
               "fontFamily": "NotoSansKR-Light",
               "fontSize": 12,
+              "lineHeight": 19,
               "opacity": 0.5,
             },
           ]
@@ -19783,6 +19797,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
                   "color": "black",
                   "fontFamily": "NotoSansKR-Medium",
                   "fontSize": 14,
+                  "lineHeight": 22,
                 },
               ]
             }
