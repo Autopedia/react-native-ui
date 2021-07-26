@@ -6833,11 +6833,6 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#FA4339",
-              "borderColor": "black",
-              "borderRadius": 26,
-              "borderStyle": "solid",
-              "borderWidth": 0,
               "flexDirection": "row",
               "justifyContent": "center",
             },
@@ -6845,9 +6840,9 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
         }
       >
         <View
-          containerColor="transparent"
-          containerDisabledColor="rgba(0, 0, 0, 0.5)"
-          containerTouchedColor="rgba(0, 0, 0, 0.5)"
+          containerColor="#FA4339"
+          containerDisabledColor="#FFB7B2"
+          containerTouchedColor="#C5372F"
           disabled={false}
           onPress={[Function]}
           pressed={false}
@@ -6855,7 +6850,7 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
             Array [
               Object {
                 "alignItems": "center",
-                "backgroundColor": "transparent",
+                "backgroundColor": "#FA4339",
                 "borderRadius": 100,
                 "flexDirection": "row",
                 "justifyContent": "center",
@@ -8024,7 +8019,6 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                   "alignItems": "center",
                   "flexDirection": "row",
                   "justifyContent": "center",
-                  "marginRight": 10,
                 },
               ]
             }
@@ -8040,6 +8034,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               }
               onPress={[Function]}
               pressed={false}
+              spacing={true}
               style={
                 Array [
                   Object {
@@ -8061,8 +8056,6 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                     "flexGrow": 1,
                     "flexShrink": 1,
                     "justifyContent": "center",
-                  },
-                  Object {
                     "marginRight": 10,
                   },
                 ]
