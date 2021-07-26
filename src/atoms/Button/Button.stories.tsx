@@ -476,6 +476,7 @@ storiesOf('Atoms/Button', module)
           color={systemColors.WHITE}
           icon={require('../../assets/icons/google/google.png')}
           onPress={e => action('onPress')(e.nativeEvent)}
+          colorIcon={false}
           style={{
             marginBottom: 20,
             shadowColor: systemColors.BLACK,
@@ -490,6 +491,7 @@ storiesOf('Atoms/Button', module)
           color="khaki"
           icon={require('../../assets/icons/kakao/kakao.png')}
           onPress={e => action('onPress')(e.nativeEvent)}
+          colorIcon={false}
           style={{
             marginBottom: 20,
             shadowColor: systemColors.BLACK,

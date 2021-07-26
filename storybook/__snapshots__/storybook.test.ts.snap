@@ -35,34 +35,31 @@ exports[`Storyshots Atoms/Button Color/Solid 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -105,34 +102,31 @@ exports[`Storyshots Atoms/Button Color/Solid 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#007AFF",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#007AFF"
-      containerDisabledColor="#BDDBFF"
-      containerTouchedColor="#0056B4"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#007AFF",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -174,34 +168,31 @@ exports[`Storyshots Atoms/Button Color/Solid 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#48CF7C",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#48CF7C"
-      containerDisabledColor="#B4F4C6"
-      containerTouchedColor="#0FA364"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#48CF7C",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -243,34 +234,31 @@ exports[`Storyshots Atoms/Button Color/Solid 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#FA4339",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#FA4339"
-      containerDisabledColor="#FFB7B2"
-      containerTouchedColor="#C5372F"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#FA4339",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -312,34 +300,31 @@ exports[`Storyshots Atoms/Button Color/Solid 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#FFFFFF",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#FFFFFF"
-      containerDisabledColor="rgba(255, 255, 255, 0.5)"
-      containerTouchedColor="rgba(255, 255, 255, 0.5)"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#FFFFFF",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -381,34 +366,31 @@ exports[`Storyshots Atoms/Button Color/Solid 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#000000",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#000000"
-      containerDisabledColor="rgba(0, 0, 0, 0.5)"
-      containerTouchedColor="rgba(0, 0, 0, 0.5)"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#000000",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -450,31 +432,29 @@ exports[`Storyshots Atoms/Button Color/Solid 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
         },
+        Object {
+          "backgroundColor": "#123456",
+        },
+        undefined,
       ]
     }
   >
     <View
-      containerColor="#123456"
-      containerDisabledColor="rgba(18, 52, 86, 0.5)"
-      containerTouchedColor="rgba(18, 52, 86, 0.5)"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#123456",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
           },
         ]
       }
@@ -537,36 +517,34 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": undefined,
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerTouchedColor="#F8FAFB"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="text"
     >
       <Text
         includeFontPadding={false}
@@ -606,36 +584,34 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": undefined,
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerTouchedColor="#F8FAFB"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="text"
     >
       <Text
         includeFontPadding={false}
@@ -675,36 +651,34 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": undefined,
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerTouchedColor="#F8FAFB"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="text"
     >
       <Text
         includeFontPadding={false}
@@ -744,36 +718,34 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": undefined,
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerTouchedColor="#F8FAFB"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="text"
     >
       <Text
         includeFontPadding={false}
@@ -813,36 +785,34 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": undefined,
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerTouchedColor="#F8FAFB"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="text"
     >
       <Text
         includeFontPadding={false}
@@ -882,33 +852,32 @@ exports[`Storyshots Atoms/Button Color/Text 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
         },
+        Object {
+          "backgroundColor": undefined,
+        },
+        undefined,
       ]
     }
   >
     <View
-      containerTouchedColor="#F8FAFB"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
           },
         ]
       }
-      type="text"
     >
       <Text
         includeFontPadding={false}
@@ -969,13 +938,33 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#FFFFFF",
+        },
+        Object {
+          "marginBottom": 20,
+          "shadowColor": "#000000",
+          "shadowOffset": Object {
+            "height": 5,
+            "width": 0,
+          },
+          "shadowOpacity": 0.1,
+          "shadowRadius": 10,
         },
       ]
     }
   >
     <View
+<<<<<<< HEAD
       containerColor="#FFFFFF"
       containerDisabledColor="rgba(255, 255, 255, 0.5)"
       containerTouchedColor="rgba(255, 255, 255, 0.5)"
@@ -986,35 +975,20 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
       }
       onPress={[Function]}
       pressed={false}
+=======
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#FFFFFF",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 20,
-            "shadowColor": "#000000",
-            "shadowOffset": Object {
-              "height": 5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.1,
-            "shadowRadius": 10,
           },
         ]
       }
     >
       <Image
-        color="#000000"
+        color={false}
         size="sm"
         source={
           Object {
@@ -1025,11 +999,10 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
           Array [
             Object {
               "height": 20,
-              "tintColor": "#000000",
               "width": 20,
             },
             Object {
-              "marginRight": 6,
+              "marginRight": 4,
             },
           ]
         }
@@ -1071,13 +1044,33 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "khaki",
+        },
+        Object {
+          "marginBottom": 20,
+          "shadowColor": "#000000",
+          "shadowOffset": Object {
+            "height": 5,
+            "width": 0,
+          },
+          "shadowOpacity": 0.1,
+          "shadowRadius": 10,
         },
       ]
     }
   >
     <View
+<<<<<<< HEAD
       containerColor="khaki"
       containerDisabledColor="rgba(240, 230, 140, 0.5)"
       containerTouchedColor="rgba(240, 230, 140, 0.5)"
@@ -1088,35 +1081,20 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
       }
       onPress={[Function]}
       pressed={false}
+=======
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "khaki",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 20,
-            "shadowColor": "#000000",
-            "shadowOffset": Object {
-              "height": 5,
-              "width": 0,
-            },
-            "shadowOpacity": 0.1,
-            "shadowRadius": 10,
           },
         ]
       }
     >
       <Image
-        color="#FFFFFF"
+        color={false}
         size="sm"
         source={
           Object {
@@ -1127,11 +1105,10 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
           Array [
             Object {
               "height": 20,
-              "tintColor": "#FFFFFF",
               "width": 20,
             },
             Object {
-              "marginRight": 6,
+              "marginRight": 4,
             },
           ]
         }
@@ -1195,34 +1172,31 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#007AFF",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#007AFF"
-      containerDisabledColor="#BDDBFF"
-      containerTouchedColor="#0056B4"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#007AFF",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -1264,35 +1238,31 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#BDDBFF",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#007AFF"
-      containerDisabledColor="#BDDBFF"
-      containerTouchedColor="#0056B4"
-      disabled={true}
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#BDDBFF",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -1322,6 +1292,7 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
     accessible={true}
     collapsable={false}
     focusable={true}
+    inline={true}
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1335,34 +1306,30 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      inline={true}
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -1392,6 +1359,7 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
     accessible={true}
     collapsable={false}
     focusable={true}
+    inline={true}
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1405,35 +1373,30 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+        },
+        Object {
+          "backgroundColor": "#F8FAFB",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      disabled={true}
-      inline={true}
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#F8FAFB",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -1477,36 +1440,34 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": undefined,
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerTouchedColor="#F8FAFB"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="text"
     >
       <Text
         includeFontPadding={false}
@@ -1546,37 +1507,34 @@ exports[`Storyshots Atoms/Button Disabled 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": undefined,
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerTouchedColor="#F8FAFB"
-      disabled={true}
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="text"
     >
       <Text
         disabled={true}
@@ -1638,13 +1596,26 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#007AFF",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
+<<<<<<< HEAD
       containerColor="#007AFF"
       containerDisabledColor="#BDDBFF"
       containerTouchedColor="#0056B4"
@@ -1655,22 +1626,14 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       }
       onPress={[Function]}
       pressed={false}
+=======
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#007AFF",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -1691,7 +1654,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
               "width": 20,
             },
             Object {
-              "marginRight": 6,
+              "marginRight": 4,
             },
           ]
         }
@@ -1733,13 +1696,26 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#FFFFFF",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
+<<<<<<< HEAD
       containerColor="#FFFFFF"
       containerDisabledColor="rgba(255, 255, 255, 0.5)"
       containerTouchedColor="rgba(255, 255, 255, 0.5)"
@@ -1751,22 +1727,14 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       iconPosition="right"
       onPress={[Function]}
       pressed={false}
+=======
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#FFFFFF",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -1805,7 +1773,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
               "width": 20,
             },
             Object {
-              "marginLeft": 6,
+              "marginLeft": 4,
             },
           ]
         }
@@ -1829,13 +1797,26 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
+<<<<<<< HEAD
       containerColor="#EEF2F6"
       containerDisabledColor="#F8FAFB"
       containerTouchedColor="#DFE3E9"
@@ -1846,22 +1827,14 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       }
       onPress={[Function]}
       pressed={false}
+=======
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -1882,7 +1855,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
               "width": 20,
             },
             Object {
-              "marginRight": 6,
+              "marginRight": 4,
             },
           ]
         }
@@ -1925,13 +1898,26 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
+<<<<<<< HEAD
       containerColor="#EEF2F6"
       containerDisabledColor="#F8FAFB"
       containerTouchedColor="#DFE3E9"
@@ -1943,22 +1929,14 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       iconPosition="right"
       onPress={[Function]}
       pressed={false}
+=======
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -1998,7 +1976,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
               "width": 20,
             },
             Object {
-              "marginLeft": 6,
+              "marginLeft": 4,
             },
           ]
         }
@@ -2009,6 +1987,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     accessible={true}
     collapsable={false}
     focusable={true}
+    inline={true}
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -2022,13 +2001,25 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
+<<<<<<< HEAD
       containerColor="#EEF2F6"
       containerDisabledColor="#F8FAFB"
       containerTouchedColor="#DFE3E9"
@@ -2040,21 +2031,14 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       inline={true}
       onPress={[Function]}
       pressed={false}
+=======
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -2075,7 +2059,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
               "width": 20,
             },
             Object {
-              "marginRight": 6,
+              "marginRight": 4,
             },
           ]
         }
@@ -2105,6 +2089,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     accessible={true}
     collapsable={false}
     focusable={true}
+    inline={true}
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -2118,13 +2103,25 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
+<<<<<<< HEAD
       containerColor="#EEF2F6"
       containerDisabledColor="#F8FAFB"
       containerTouchedColor="#DFE3E9"
@@ -2137,21 +2134,14 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       inline={true}
       onPress={[Function]}
       pressed={false}
+=======
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -2191,7 +2181,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
               "width": 20,
             },
             Object {
-              "marginLeft": 6,
+              "marginLeft": 4,
             },
           ]
         }
@@ -2215,13 +2205,26 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": undefined,
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
+<<<<<<< HEAD
       containerTouchedColor="#F8FAFB"
       icon={
         Object {
@@ -2230,26 +2233,17 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       }
       onPress={[Function]}
       pressed={false}
+=======
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="text"
     >
       <Image
         color="#5F656A"
@@ -2267,7 +2261,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
               "width": 20,
             },
             Object {
-              "marginRight": 6,
+              "marginRight": 4,
             },
           ]
         }
@@ -2310,13 +2304,26 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": undefined,
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
+<<<<<<< HEAD
       containerTouchedColor="#F8FAFB"
       icon={
         Object {
@@ -2326,26 +2333,17 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       iconPosition="right"
       onPress={[Function]}
       pressed={false}
+=======
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="text"
     >
       <Text
         includeFontPadding={false}
@@ -2382,7 +2380,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
               "width": 20,
             },
             Object {
-              "marginLeft": 6,
+              "marginLeft": 4,
             },
           ]
         }
@@ -2402,17 +2400,31 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
+    size="sm"
     style={
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 6,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 6,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": undefined,
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
+<<<<<<< HEAD
       containerTouchedColor="#F8FAFB"
       icon={
         Object {
@@ -2422,26 +2434,17 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       onPress={[Function]}
       pressed={false}
       size="sm"
+=======
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 6,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 6,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="text"
     >
       <Image
         color="#EB694C"
@@ -2459,7 +2462,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
               "width": 20,
             },
             Object {
-              "marginRight": 6,
+              "marginRight": 4,
             },
           ]
         }
@@ -2499,20 +2502,22 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
+    size="sm"
     style={
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 6,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 6,
+          "width": "100%",
         },
-      ]
-    }
-  >
-    <View
-      containerTouchedColor="#F8FAFB"
-      icon={
         Object {
+<<<<<<< HEAD
           "testUri": "../../../src/assets/icons/tire/tire.png",
         }
       }
@@ -2520,26 +2525,26 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
       onPress={[Function]}
       pressed={false}
       size="sm"
+=======
+          "backgroundColor": undefined,
+        },
+        Object {
+          "marginBottom": 5,
+        },
+      ]
+    }
+  >
+    <View
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 6,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 6,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="text"
     >
       <Text
         includeFontPadding={false}
@@ -2577,7 +2582,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
               "width": 20,
             },
             Object {
-              "marginLeft": 6,
+              "marginLeft": 4,
             },
           ]
         }
@@ -2622,34 +2627,31 @@ exports[`Storyshots Atoms/Button Inline 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -2679,6 +2681,7 @@ exports[`Storyshots Atoms/Button Inline 1`] = `
     accessible={true}
     collapsable={false}
     focusable={true}
+    inline={true}
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -2692,34 +2695,30 @@ exports[`Storyshots Atoms/Button Inline 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      inline={true}
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -2783,34 +2782,31 @@ exports[`Storyshots Atoms/Button Loading 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#007AFF",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#007AFF"
-      containerDisabledColor="#BDDBFF"
-      containerTouchedColor="#0056B4"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#007AFF",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -2852,35 +2848,31 @@ exports[`Storyshots Atoms/Button Loading 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#007AFF",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#007AFF"
-      containerDisabledColor="#BDDBFF"
-      containerTouchedColor="#0056B4"
-      loading={true}
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#007AFF",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -2979,34 +2971,31 @@ exports[`Storyshots Atoms/Button Loading 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -3049,35 +3038,31 @@ exports[`Storyshots Atoms/Button Loading 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      loading={true}
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -3163,6 +3148,7 @@ exports[`Storyshots Atoms/Button Loading 1`] = `
     accessible={true}
     collapsable={false}
     focusable={true}
+    inline={true}
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -3176,34 +3162,30 @@ exports[`Storyshots Atoms/Button Loading 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      inline={true}
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -3233,6 +3215,7 @@ exports[`Storyshots Atoms/Button Loading 1`] = `
     accessible={true}
     collapsable={false}
     focusable={true}
+    inline={true}
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -3246,35 +3229,30 @@ exports[`Storyshots Atoms/Button Loading 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      inline={true}
-      loading={true}
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -3360,6 +3338,7 @@ exports[`Storyshots Atoms/Button Loading 1`] = `
     accessible={true}
     collapsable={false}
     focusable={true}
+    inline={true}
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -3369,39 +3348,35 @@ exports[`Storyshots Atoms/Button Loading 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
+    size="sm"
     style={
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 6,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 6,
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      inline={true}
-      onPress={[Function]}
-      pressed={false}
-      size="sm"
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 6,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 6,
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -3432,6 +3407,7 @@ exports[`Storyshots Atoms/Button Loading 1`] = `
     accessible={true}
     collapsable={false}
     focusable={true}
+    inline={true}
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -3441,40 +3417,35 @@ exports[`Storyshots Atoms/Button Loading 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
+    size="sm"
     style={
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 6,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 6,
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      inline={true}
-      loading={true}
-      onPress={[Function]}
-      pressed={false}
-      size="sm"
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 6,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 6,
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -3581,6 +3552,7 @@ exports[`Storyshots Atoms/Button Playground 1`] = `
     accessible={true}
     collapsable={false}
     focusable={true}
+    inline={false}
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -3590,45 +3562,38 @@ exports[`Storyshots Atoms/Button Playground 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
+    size="lg"
     style={
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
         },
+        Object {
+          "backgroundColor": "#007AFF",
+        },
+        undefined,
       ]
     }
+    tile={false}
   >
     <View
-      containerColor="#007AFF"
-      containerDisabledColor="#BDDBFF"
-      containerTouchedColor="#0056B4"
-      disabled={false}
-      icon={false}
-      iconPosition="left"
-      inline={false}
-      onPress={[Function]}
-      pressed={false}
-      size="lg"
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#007AFF",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
           },
         ]
       }
-      tile={false}
-      type="solid"
     >
       <Text
         disabled={false}
@@ -3686,43 +3651,39 @@ exports[`Storyshots Atoms/Button Size 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
+    size="lg"
     style={
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      onPress={[Function]}
-      pressed={false}
-      size="lg"
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="solid"
     >
       <Text
         includeFontPadding={false}
@@ -3759,43 +3720,39 @@ exports[`Storyshots Atoms/Button Size 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
+    size="md"
     style={
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 10,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 10,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      onPress={[Function]}
-      pressed={false}
-      size="md"
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 10,
-            "paddingLeft": 16,
-            "paddingRight": 16,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="solid"
     >
       <Text
         includeFontPadding={false}
@@ -3832,43 +3789,39 @@ exports[`Storyshots Atoms/Button Size 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
+    size="sm"
     style={
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 6,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 6,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      onPress={[Function]}
-      pressed={false}
-      size="sm"
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 6,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 6,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="solid"
     >
       <Text
         includeFontPadding={false}
@@ -3905,41 +3858,39 @@ exports[`Storyshots Atoms/Button Size 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
+    size="lg"
     style={
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": undefined,
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerTouchedColor="#F8FAFB"
-      onPress={[Function]}
-      pressed={false}
-      size="lg"
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="text"
     >
       <Text
         includeFontPadding={false}
@@ -3976,41 +3927,39 @@ exports[`Storyshots Atoms/Button Size 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
+    size="md"
     style={
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 10,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 10,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": undefined,
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerTouchedColor="#F8FAFB"
-      onPress={[Function]}
-      pressed={false}
-      size="md"
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 10,
-            "paddingLeft": 16,
-            "paddingRight": 16,
-            "paddingTop": 10,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="text"
     >
       <Text
         includeFontPadding={false}
@@ -4047,41 +3996,39 @@ exports[`Storyshots Atoms/Button Size 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
+    size="sm"
     style={
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 6,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 6,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": undefined,
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerTouchedColor="#F8FAFB"
-      onPress={[Function]}
-      pressed={false}
-      size="sm"
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 6,
-            "paddingLeft": 12,
-            "paddingRight": 12,
-            "paddingTop": 6,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="text"
     >
       <Text
         includeFontPadding={false}
@@ -4143,34 +4090,31 @@ exports[`Storyshots Atoms/Button Tile 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
@@ -4215,35 +4159,32 @@ exports[`Storyshots Atoms/Button Tile 1`] = `
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
+    tile={true}
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      tile={true}
     >
       <Text
         includeFontPadding={false}
@@ -4304,38 +4245,34 @@ exports[`Storyshots Atoms/Button Type 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="solid"
     >
       <Text
         includeFontPadding={false}
@@ -4375,36 +4312,34 @@ exports[`Storyshots Atoms/Button Type 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": undefined,
+        },
+        Object {
+          "marginBottom": 5,
         },
       ]
     }
   >
     <View
-      containerTouchedColor="#F8FAFB"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
-          },
-          Object {
-            "marginBottom": 5,
           },
         ]
       }
-      type="text"
     >
       <Text
         includeFontPadding={false}
@@ -6854,32 +6789,43 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
           Array [
             Object {
               "alignItems": "center",
+              "borderRadius": 1000,
               "flexDirection": "row",
               "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 14,
+              "width": "100%",
             },
+            Object {
+              "backgroundColor": "#FA4339",
+            },
+            undefined,
           ]
         }
       >
         <View
+<<<<<<< HEAD
           containerColor="#EEF2F6"
           containerDisabledColor="#F8FAFB"
           containerTouchedColor="#DFE3E9"
           disabled={false}
           onPress={[Function]}
           pressed={false}
+=======
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
           style={
             Array [
               Object {
                 "alignItems": "center",
+<<<<<<< HEAD
                 "backgroundColor": "#EEF2F6",
                 "borderRadius": 100,
+=======
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
                 "flexDirection": "row",
                 "justifyContent": "center",
-                "paddingBottom": 14,
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "paddingTop": 14,
-                "width": "100%",
               },
             ]
           }
@@ -7182,31 +7128,29 @@ exports[`Storyshots Atoms/Message/FeedbackMessage Playground 1`] = `
           Array [
             Object {
               "alignItems": "center",
+              "borderRadius": 1000,
               "flexDirection": "row",
               "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 14,
+              "width": "100%",
             },
+            Object {
+              "backgroundColor": "#EEF2F6",
+            },
+            undefined,
           ]
         }
       >
         <View
-          containerColor="#EEF2F6"
-          containerDisabledColor="#F8FAFB"
-          containerTouchedColor="#DFE3E9"
-          onPress={[Function]}
-          pressed={false}
           style={
             Array [
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#EEF2F6",
-                "borderRadius": 100,
                 "flexDirection": "row",
                 "justifyContent": "center",
-                "paddingBottom": 14,
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "paddingTop": 14,
-                "width": "100%",
               },
             ]
           }
@@ -7476,32 +7420,43 @@ exports[`Storyshots Atoms/Message/OutdatedMessage Playground 1`] = `
           Array [
             Object {
               "alignItems": "center",
+              "borderRadius": 1000,
               "flexDirection": "row",
               "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 14,
+              "width": "100%",
             },
+            Object {
+              "backgroundColor": "transparent",
+            },
+            undefined,
           ]
         }
       >
         <View
+<<<<<<< HEAD
           containerColor="#EEF2F6"
           containerDisabledColor="#F8FAFB"
           containerTouchedColor="#DFE3E9"
           disabled={false}
           onPress={[Function]}
           pressed={false}
+=======
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
           style={
             Array [
               Object {
                 "alignItems": "center",
+<<<<<<< HEAD
                 "backgroundColor": "#EEF2F6",
                 "borderRadius": 100,
+=======
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
                 "flexDirection": "row",
                 "justifyContent": "center",
-                "paddingBottom": 14,
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "paddingTop": 14,
-                "width": "100%",
               },
             ]
           }
@@ -7813,31 +7768,29 @@ exports[`Storyshots Atoms/Message/ReviewMessage Playground 1`] = `
           Array [
             Object {
               "alignItems": "center",
+              "borderRadius": 1000,
               "flexDirection": "row",
               "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 14,
+              "width": "100%",
             },
+            Object {
+              "backgroundColor": "#EEF2F6",
+            },
+            undefined,
           ]
         }
       >
         <View
-          containerColor="#EEF2F6"
-          containerDisabledColor="#F8FAFB"
-          containerTouchedColor="#DFE3E9"
-          onPress={[Function]}
-          pressed={false}
           style={
             Array [
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#EEF2F6",
-                "borderRadius": 100,
                 "flexDirection": "row",
                 "justifyContent": "center",
-                "paddingBottom": 14,
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "paddingTop": 14,
-                "width": "100%",
               },
             ]
           }
@@ -8036,37 +7989,28 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               Array [
                 Object {
                   "alignItems": "center",
+                  "borderRadius": 1000,
                   "flexDirection": "row",
                   "justifyContent": "center",
+                  "paddingBottom": 14,
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                  "paddingTop": 14,
+                  "width": "100%",
                 },
-              ]
-            }
-          >
-            <View
-              containerColor="#EEF2F6"
-              containerDisabledColor="#F8FAFB"
-              containerTouchedColor="#DFE3E9"
-              icon={
                 Object {
+<<<<<<< HEAD
                   "testUri": "../../../src/assets/icons/tire/tire.png",
                 }
               }
               onPress={[Function]}
               pressed={false}
               style={
+=======
+                  "backgroundColor": "#EEF2F6",
+                },
+>>>>>>> bda682e60e3f31ec2db89ec611ff68e7156db9ef
                 Array [
-                  Object {
-                    "alignItems": "center",
-                    "backgroundColor": "#EEF2F6",
-                    "borderRadius": 100,
-                    "flexDirection": "row",
-                    "justifyContent": "center",
-                    "paddingBottom": 14,
-                    "paddingLeft": 24,
-                    "paddingRight": 24,
-                    "paddingTop": 14,
-                    "width": "100%",
-                  },
                   Object {
                     "alignItems": "center",
                     "flexBasis": 0,
@@ -8074,9 +8018,19 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                     "flexGrow": 1,
                     "flexShrink": 1,
                     "justifyContent": "center",
-                  },
-                  Object {
                     "marginRight": 10,
+                  },
+                ],
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "justifyContent": "center",
                   },
                 ]
               }
@@ -8097,7 +8051,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                       "width": 20,
                     },
                     Object {
-                      "marginRight": 6,
+                      "marginRight": 4,
                     },
                   ]
                 }
@@ -8140,43 +8094,37 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
               Array [
                 Object {
                   "alignItems": "center",
+                  "borderRadius": 1000,
                   "flexDirection": "row",
                   "justifyContent": "center",
+                  "paddingBottom": 14,
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                  "paddingTop": 14,
+                  "width": "100%",
                 },
-              ]
-            }
-          >
-            <View
-              containerColor="#EEF2F6"
-              containerDisabledColor="#F8FAFB"
-              containerTouchedColor="#DFE3E9"
-              icon={
                 Object {
-                  "testUri": "../../../src/assets/icons/map/map.png",
-                }
-              }
-              onPress={[Function]}
-              pressed={false}
-              style={
+                  "backgroundColor": "#EEF2F6",
+                },
                 Array [
-                  Object {
-                    "alignItems": "center",
-                    "backgroundColor": "#EEF2F6",
-                    "borderRadius": 100,
-                    "flexDirection": "row",
-                    "justifyContent": "center",
-                    "paddingBottom": 14,
-                    "paddingLeft": 24,
-                    "paddingRight": 24,
-                    "paddingTop": 14,
-                    "width": "100%",
-                  },
                   Object {
                     "alignItems": "center",
                     "flexBasis": 0,
                     "flexDirection": "row",
                     "flexGrow": 1,
                     "flexShrink": 1,
+                    "justifyContent": "center",
+                  },
+                ],
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
                     "justifyContent": "center",
                   },
                 ]
@@ -8198,7 +8146,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                       "width": 20,
                     },
                     Object {
-                      "marginRight": 6,
+                      "marginRight": 4,
                     },
                   ]
                 }
@@ -8306,6 +8254,84 @@ exports[`Storyshots Atoms/Message/TextMessage Playground 1`] = `
         >
           Text
         </Text>
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Message/UnhandledMessage Other Unhandle Message 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "flex-start",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 14,
+            "borderTopLeftRadius": 0,
+            "flexDirection": "row",
+            "maxWidth": 487.5,
+            "overflow": "hidden",
+            "paddingBottom": 6,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 6,
+            "shadowColor": "rgba(0,0,0,0.1)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+          },
+        ]
+      }
+    >
+      <Text
+        color="#8C8C8C"
+        size={2}
+        style={
+          Array [
+            Object {
+              "color": "#8C8C8C",
+              "flexShrink": 1,
+              "flexWrap": "wrap",
+              "fontFamily": "NotoSansKR-Regular",
+              "fontSize": 14,
+              "lineHeight": 22,
+            },
+          ]
+        }
+      >
+        지원하지 않는 형태의 메세지입니다.
+        
+
+        앱을 최신 버전으로 업데이트 해주세요!
       </Text>
     </View>
   </View>
@@ -11975,30 +12001,29 @@ exports[`Storyshots Atoms/Tooltip Offset 1`] = `
         Array [
           Object {
             "alignItems": "center",
+            "borderRadius": 1000,
             "flexDirection": "row",
             "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 14,
+            "width": "100%",
           },
+          Object {
+            "backgroundColor": "#EEF2F6",
+          },
+          undefined,
         ]
       }
     >
       <View
-        containerColor="#EEF2F6"
-        containerDisabledColor="#F8FAFB"
-        containerTouchedColor="#DFE3E9"
-        pressed={false}
         style={
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#EEF2F6",
-              "borderRadius": 100,
               "flexDirection": "row",
               "justifyContent": "center",
-              "paddingBottom": 14,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 14,
-              "width": "100%",
             },
           ]
         }
@@ -12116,30 +12141,29 @@ exports[`Storyshots Atoms/Tooltip Offset 1`] = `
         Array [
           Object {
             "alignItems": "center",
+            "borderRadius": 1000,
             "flexDirection": "row",
             "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 14,
+            "width": "100%",
           },
+          Object {
+            "backgroundColor": "#EEF2F6",
+          },
+          undefined,
         ]
       }
     >
       <View
-        containerColor="#EEF2F6"
-        containerDisabledColor="#F8FAFB"
-        containerTouchedColor="#DFE3E9"
-        pressed={false}
         style={
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#EEF2F6",
-              "borderRadius": 100,
               "flexDirection": "row",
               "justifyContent": "center",
-              "paddingBottom": 14,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 14,
-              "width": "100%",
             },
           ]
         }
@@ -12278,30 +12302,29 @@ exports[`Storyshots Atoms/Tooltip Playground 1`] = `
         Array [
           Object {
             "alignItems": "center",
+            "borderRadius": 1000,
             "flexDirection": "row",
             "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 14,
+            "width": "100%",
           },
+          Object {
+            "backgroundColor": "#EEF2F6",
+          },
+          undefined,
         ]
       }
     >
       <View
-        containerColor="#EEF2F6"
-        containerDisabledColor="#F8FAFB"
-        containerTouchedColor="#DFE3E9"
-        pressed={false}
         style={
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#EEF2F6",
-              "borderRadius": 100,
               "flexDirection": "row",
               "justifyContent": "center",
-              "paddingBottom": 14,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 14,
-              "width": "100%",
             },
           ]
         }
@@ -12440,30 +12463,29 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
         Array [
           Object {
             "alignItems": "center",
+            "borderRadius": 1000,
             "flexDirection": "row",
             "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 14,
+            "width": "100%",
           },
+          Object {
+            "backgroundColor": "#EEF2F6",
+          },
+          undefined,
         ]
       }
     >
       <View
-        containerColor="#EEF2F6"
-        containerDisabledColor="#F8FAFB"
-        containerTouchedColor="#DFE3E9"
-        pressed={false}
         style={
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#EEF2F6",
-              "borderRadius": 100,
               "flexDirection": "row",
               "justifyContent": "center",
-              "paddingBottom": 14,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 14,
-              "width": "100%",
             },
           ]
         }
@@ -12581,30 +12603,29 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
         Array [
           Object {
             "alignItems": "center",
+            "borderRadius": 1000,
             "flexDirection": "row",
             "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 14,
+            "width": "100%",
           },
+          Object {
+            "backgroundColor": "#EEF2F6",
+          },
+          undefined,
         ]
       }
     >
       <View
-        containerColor="#EEF2F6"
-        containerDisabledColor="#F8FAFB"
-        containerTouchedColor="#DFE3E9"
-        pressed={false}
         style={
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#EEF2F6",
-              "borderRadius": 100,
               "flexDirection": "row",
               "justifyContent": "center",
-              "paddingBottom": 14,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 14,
-              "width": "100%",
             },
           ]
         }
@@ -12735,30 +12756,29 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
         Array [
           Object {
             "alignItems": "center",
+            "borderRadius": 1000,
             "flexDirection": "row",
             "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 14,
+            "width": "100%",
           },
+          Object {
+            "backgroundColor": "#EEF2F6",
+          },
+          undefined,
         ]
       }
     >
       <View
-        containerColor="#EEF2F6"
-        containerDisabledColor="#F8FAFB"
-        containerTouchedColor="#DFE3E9"
-        pressed={false}
         style={
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#EEF2F6",
-              "borderRadius": 100,
               "flexDirection": "row",
               "justifyContent": "center",
-              "paddingBottom": 14,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 14,
-              "width": "100%",
             },
           ]
         }
@@ -12889,30 +12909,29 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
         Array [
           Object {
             "alignItems": "center",
+            "borderRadius": 1000,
             "flexDirection": "row",
             "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 14,
+            "width": "100%",
           },
+          Object {
+            "backgroundColor": "#EEF2F6",
+          },
+          undefined,
         ]
       }
     >
       <View
-        containerColor="#EEF2F6"
-        containerDisabledColor="#F8FAFB"
-        containerTouchedColor="#DFE3E9"
-        pressed={false}
         style={
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#EEF2F6",
-              "borderRadius": 100,
               "flexDirection": "row",
               "justifyContent": "center",
-              "paddingBottom": 14,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 14,
-              "width": "100%",
             },
           ]
         }
@@ -13060,30 +13079,29 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           Array [
             Object {
               "alignItems": "center",
+              "borderRadius": 1000,
               "flexDirection": "row",
               "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 14,
+              "width": "100%",
             },
+            Object {
+              "backgroundColor": "#EEF2F6",
+            },
+            undefined,
           ]
         }
       >
         <View
-          containerColor="#EEF2F6"
-          containerDisabledColor="#F8FAFB"
-          containerTouchedColor="#DFE3E9"
-          pressed={false}
           style={
             Array [
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#EEF2F6",
-                "borderRadius": 100,
                 "flexDirection": "row",
                 "justifyContent": "center",
-                "paddingBottom": 14,
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "paddingTop": 14,
-                "width": "100%",
               },
             ]
           }
@@ -13201,30 +13219,29 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           Array [
             Object {
               "alignItems": "center",
+              "borderRadius": 1000,
               "flexDirection": "row",
               "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 14,
+              "width": "100%",
             },
+            Object {
+              "backgroundColor": "#EEF2F6",
+            },
+            undefined,
           ]
         }
       >
         <View
-          containerColor="#EEF2F6"
-          containerDisabledColor="#F8FAFB"
-          containerTouchedColor="#DFE3E9"
-          pressed={false}
           style={
             Array [
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#EEF2F6",
-                "borderRadius": 100,
                 "flexDirection": "row",
                 "justifyContent": "center",
-                "paddingBottom": 14,
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "paddingTop": 14,
-                "width": "100%",
               },
             ]
           }
@@ -13342,30 +13359,29 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           Array [
             Object {
               "alignItems": "center",
+              "borderRadius": 1000,
               "flexDirection": "row",
               "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 14,
+              "width": "100%",
             },
+            Object {
+              "backgroundColor": "#EEF2F6",
+            },
+            undefined,
           ]
         }
       >
         <View
-          containerColor="#EEF2F6"
-          containerDisabledColor="#F8FAFB"
-          containerTouchedColor="#DFE3E9"
-          pressed={false}
           style={
             Array [
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#EEF2F6",
-                "borderRadius": 100,
                 "flexDirection": "row",
                 "justifyContent": "center",
-                "paddingBottom": 14,
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "paddingTop": 14,
-                "width": "100%",
               },
             ]
           }
@@ -13493,30 +13509,29 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           Array [
             Object {
               "alignItems": "center",
+              "borderRadius": 1000,
               "flexDirection": "row",
               "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 14,
+              "width": "100%",
             },
+            Object {
+              "backgroundColor": "#EEF2F6",
+            },
+            undefined,
           ]
         }
       >
         <View
-          containerColor="#EEF2F6"
-          containerDisabledColor="#F8FAFB"
-          containerTouchedColor="#DFE3E9"
-          pressed={false}
           style={
             Array [
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#EEF2F6",
-                "borderRadius": 100,
                 "flexDirection": "row",
                 "justifyContent": "center",
-                "paddingBottom": 14,
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "paddingTop": 14,
-                "width": "100%",
               },
             ]
           }
@@ -13634,30 +13649,29 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           Array [
             Object {
               "alignItems": "center",
+              "borderRadius": 1000,
               "flexDirection": "row",
               "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 14,
+              "width": "100%",
             },
+            Object {
+              "backgroundColor": "#EEF2F6",
+            },
+            undefined,
           ]
         }
       >
         <View
-          containerColor="#EEF2F6"
-          containerDisabledColor="#F8FAFB"
-          containerTouchedColor="#DFE3E9"
-          pressed={false}
           style={
             Array [
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#EEF2F6",
-                "borderRadius": 100,
                 "flexDirection": "row",
                 "justifyContent": "center",
-                "paddingBottom": 14,
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "paddingTop": 14,
-                "width": "100%",
               },
             ]
           }
@@ -13775,30 +13789,29 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           Array [
             Object {
               "alignItems": "center",
+              "borderRadius": 1000,
               "flexDirection": "row",
               "justifyContent": "center",
+              "paddingBottom": 14,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 14,
+              "width": "100%",
             },
+            Object {
+              "backgroundColor": "#EEF2F6",
+            },
+            undefined,
           ]
         }
       >
         <View
-          containerColor="#EEF2F6"
-          containerDisabledColor="#F8FAFB"
-          containerTouchedColor="#DFE3E9"
-          pressed={false}
           style={
             Array [
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#EEF2F6",
-                "borderRadius": 100,
                 "flexDirection": "row",
                 "justifyContent": "center",
-                "paddingBottom": 14,
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "paddingTop": 14,
-                "width": "100%",
               },
             ]
           }
@@ -14555,31 +14568,29 @@ exports[`Storyshots Molecules/Alert Playground 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
         },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        undefined,
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
           },
         ]
       }
@@ -14792,31 +14803,29 @@ exports[`Storyshots Molecules/Alert ReactNode Contents Alert 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
         },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        undefined,
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
           },
         ]
       }
@@ -15036,31 +15045,29 @@ exports[`Storyshots Molecules/Alert ReactNode Title Alert 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
         },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        undefined,
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
           },
         ]
       }
@@ -15311,31 +15318,29 @@ exports[`Storyshots Molecules/Alert Title Alert 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
         },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        undefined,
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
           },
         ]
       }
@@ -15574,31 +15579,29 @@ exports[`Storyshots Molecules/Alert Two Button Alert 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
         },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        undefined,
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
           },
         ]
       }
@@ -15870,31 +15873,29 @@ exports[`Storyshots Molecules/Alert Vertical Button Alert 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
         },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        undefined,
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
           },
         ]
       }
@@ -17943,31 +17944,29 @@ exports[`Storyshots Molecules/Modal Default 1`] = `
       Array [
         Object {
           "alignItems": "center",
+          "borderRadius": 1000,
           "flexDirection": "row",
           "justifyContent": "center",
+          "paddingBottom": 14,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 14,
+          "width": "100%",
         },
+        Object {
+          "backgroundColor": "#EEF2F6",
+        },
+        undefined,
       ]
     }
   >
     <View
-      containerColor="#EEF2F6"
-      containerDisabledColor="#F8FAFB"
-      containerTouchedColor="#DFE3E9"
-      onPress={[Function]}
-      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#EEF2F6",
-            "borderRadius": 100,
             "flexDirection": "row",
             "justifyContent": "center",
-            "paddingBottom": 14,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 14,
-            "width": "100%",
           },
         ]
       }

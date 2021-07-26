@@ -3,7 +3,7 @@ import { TouchableOpacity } from 'react-native';
 import { ImageMessageProps } from '../../Message.types';
 import { SImage, MAX_WIDTH } from '../../Message.styles';
 
-const ImageMessage: React.FC<ImageMessageProps> = ({
+export const ImageMessage: React.FC<ImageMessageProps> = ({
   url,
   height,
   width,
@@ -39,5 +39,3 @@ const ImageMessage: React.FC<ImageMessageProps> = ({
     </TouchableOpacity>
   );
 };
-
-export default ImageMessage;

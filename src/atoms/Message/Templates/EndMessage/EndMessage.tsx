@@ -2,10 +2,13 @@ import React from 'react';
 import { Alert } from 'react-native';
 import { EndMessageProps } from '../../Message.types';
 import Button from '../../../../atoms/Button';
-import CardMessage from '../CardMessage';
+import { CardMessage } from '../CardMessage';
 import { systemColors } from '../../../../styles/system-colors';
 
-const EndMessage: React.FC<EndMessageProps> = ({ onPressFinish, disabled }) => {
+export const EndMessage: React.FC<EndMessageProps> = ({
+  onPressFinish,
+  disabled,
+}) => {
   const finishChat = () => {
     Alert.alert('상담 종료', '지금 상담을 종료하시겠습니까?', [
       {
@@ -32,5 +35,3 @@ const EndMessage: React.FC<EndMessageProps> = ({ onPressFinish, disabled }) => {
     <CardMessage title={title} description={description} footer={footer} />
   );
 };
-
-export default EndMessage;

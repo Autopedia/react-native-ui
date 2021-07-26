@@ -24,6 +24,18 @@ describe('[ProgressiveImage] Unit Test', () => {
     expect(onLoadMock).toHaveBeenCalledTimes(1);
   });
 
+  it('should fire onLoad event without onLoad function', () => {
+    const wrapper = shallow(
+      <ProgressiveImage
+        source={{ uri: 'https://picsum.photos/200/300' }}
+        style={{ width: 200, height: 200 }}
+      />,
+    );
+    wrapper.find('FastImage').simulate('load');
+
+    expect(wrapper.prop('onLoad')).toBeUndefined();
+  });
+
   it('should fire onError event', () => {
     const onErrorMock = jest.fn();
 
