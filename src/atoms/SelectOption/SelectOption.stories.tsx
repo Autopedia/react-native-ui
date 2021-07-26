@@ -114,6 +114,7 @@ storiesOf('Atoms/SelectOption', module)
           label="Block small label disabled"
           layout="block"
           onPress={e => action('onPress')(e)}
+          last
         />
       </>
     );
@@ -147,6 +148,37 @@ storiesOf('Atoms/SelectOption', module)
           sublabel="Block sublabel disabled"
           color="black"
           layout="block"
+          onPress={e => action('onPress')(e)}
+        />
+      </>
+    );
+  })
+  .add('Column', () => {
+    return (
+      <>
+        <SelectOption
+          value={'value'}
+          selected
+          label="Column label selected"
+          color="black"
+          layout="column"
+          onPress={e => action('onPress')(e)}
+        />
+        <SelectOption
+          value={'value'}
+          selected={false}
+          label="Column label unselected"
+          color="black"
+          layout="column"
+          onPress={e => action('onPress')(e)}
+        />
+        <SelectOption
+          value={'value'}
+          selected
+          disabled
+          label="Column label disabled"
+          color="black"
+          layout="column"
           onPress={e => action('onPress')(e)}
         />
       </>

@@ -61,23 +61,26 @@ describe('[Button] Unit Test', () => {
       <Button
         color={systemColors.PRIMARY}
         onPress={onPressMock}
-        icon={require('../../assets/icons/shop/shop.png')}
+        icon={require('../../assets/icons/tire/tire.png')}
       >
         {textMock}
       </Button>,
     );
+    const containerPressedStyle = button
+      .props()
+      .style({ pressed: true })[0] as {
+      backgroundColor?: string;
+    };
+
     const container = shallow(button.props().children(true));
+
     const buttonText = container.find('ButtonText');
     const buttonIcon = container.find('ButtonIcon');
-
-    const containerProps = container.props() as {
-      containerTouchedColor?: string;
-    };
 
     const buttonTextProps = buttonText.props() as { textColor?: string };
     const buttonIconProps = buttonIcon.props() as { color?: string };
 
-    expect(containerProps.containerTouchedColor).toBe(
+    expect(containerPressedStyle.backgroundColor).toBe(
       buttonTouchedColors[systemColors.PRIMARY],
     );
     expect(buttonTextProps.textColor).toBe(systemColors.WHITE);
@@ -91,23 +94,25 @@ describe('[Button] Unit Test', () => {
         color={systemColors.PRIMARY}
         onPress={onPressMock}
         touchedColor={systemColors.SUCCESS}
-        icon={require('../../assets/icons/shop/shop.png')}
+        icon={require('../../assets/icons/tire/tire.png')}
       >
         {textMock}
       </Button>,
     );
+    const containerPressedStyle = button
+      .props()
+      .style({ pressed: true })[0] as {
+      backgroundColor?: string;
+    };
+
     const container = shallow(button.props().children(true));
     const buttonText = container.find('ButtonText');
     const buttonIcon = container.find('ButtonIcon');
 
-    const containerProps = container.props() as {
-      containerTouchedColor?: string;
-    };
-
     const buttonTextProps = buttonText.props() as { textColor?: string };
     const buttonIconProps = buttonIcon.props() as { color?: string };
 
-    expect(containerProps.containerTouchedColor).toBe(systemColors.SUCCESS);
+    expect(containerPressedStyle.backgroundColor).toBe(systemColors.SUCCESS);
     expect(buttonTextProps.textColor).toBe(systemColors.WHITE);
     expect(buttonIconProps.color).toBe(systemColors.WHITE);
   });
@@ -119,18 +124,20 @@ describe('[Button] Unit Test', () => {
         type="text"
         color={systemColors.PRIMARY}
         onPress={onPressMock}
-        icon={require('../../assets/icons/shop/shop.png')}
+        icon={require('../../assets/icons/tire/tire.png')}
       >
         {textMock}
       </Button>,
     );
-    const container = shallow(button.props().children(true));
-
-    const containerProps = container.props() as {
-      containerTouchedColor?: string;
+    const containerPressedStyle = button
+      .props()
+      .style({ pressed: true })[0] as {
+      backgroundColor?: string;
     };
 
-    expect(containerProps.containerTouchedColor).toBe(grayscaleColors.GRAY_100);
+    expect(containerPressedStyle.backgroundColor).toBe(
+      grayscaleColors.GRAY_100,
+    );
   });
 
   it('should show icon color with prop color if type is text', () => {
@@ -141,21 +148,24 @@ describe('[Button] Unit Test', () => {
         type="text"
         color={systemColors.PRIMARY}
         onPress={onPressMock}
-        icon={require('../../assets/icons/shop/shop.png')}
+        icon={require('../../assets/icons/tire/tire.png')}
       >
         {textMock}
       </Button>,
     );
+    const containerPressedStyle = button
+      .props()
+      .style({ pressed: true })[0] as {
+      backgroundColor?: string;
+    };
     const container = shallow(button.props().children(true));
     const buttonIcon = container.find('ButtonIcon');
 
-    const containerProps = container.props() as {
-      containerTouchedColor?: string;
-    };
-
     const buttonIconProps = buttonIcon.props() as { color?: string };
 
-    expect(containerProps.containerTouchedColor).toBe(grayscaleColors.GRAY_100);
+    expect(containerPressedStyle.backgroundColor).toBe(
+      grayscaleColors.GRAY_100,
+    );
     expect(buttonIconProps.color).toBe(systemColors.PRIMARY);
   });
 });

@@ -9,7 +9,6 @@ import { action } from '@storybook/addon-actions';
 import { ButtonSize, ButtonType } from './Button.types';
 import { buttonTouchedColors, buttonDisabledColors } from './buttonColors';
 import { systemColors } from '../../styles/system-colors';
-import { grayscaleColors } from '../../styles/grayscale-colors';
 import { subColors } from '../../styles/sub-colors';
 import Typography from '../Typography';
 
@@ -32,7 +31,7 @@ storiesOf('Atoms/Button', module)
         disabledColor={color('disabledColor', buttonDisabledColors.PRIMARY)}
         disabled={boolean('disabled', false)}
         icon={
-          boolean('icon', false) && require('../../assets/icons/shop/shop.png')
+          boolean('icon', false) && require('../../assets/icons/tire/tire.png')
         }
         iconPosition={select('iconPosition', ['left', 'right'], 'left')}
         onPress={e => action('onPress')(e.nativeEvent)}
@@ -381,7 +380,7 @@ storiesOf('Atoms/Button', module)
       <>
         <Button
           color={systemColors.PRIMARY}
-          icon={require('../../assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/tire/tire.png')}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
@@ -389,7 +388,7 @@ storiesOf('Atoms/Button', module)
         </Button>
         <Button
           color={systemColors.WHITE}
-          icon={require('../../assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/tire/tire.png')}
           iconPosition="right"
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
@@ -397,14 +396,14 @@ storiesOf('Atoms/Button', module)
           Icon Right with White solid color
         </Button>
         <Button
-          icon={require('../../assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/tire/tire.png')}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
           Icon Left
         </Button>
         <Button
-          icon={require('../../assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/tire/tire.png')}
           iconPosition="right"
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
@@ -413,7 +412,7 @@ storiesOf('Atoms/Button', module)
         </Button>
         <Button
           inline
-          icon={require('../../assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/tire/tire.png')}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
@@ -421,7 +420,7 @@ storiesOf('Atoms/Button', module)
         </Button>
         <Button
           inline
-          icon={require('../../assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/tire/tire.png')}
           iconPosition="right"
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
@@ -430,7 +429,7 @@ storiesOf('Atoms/Button', module)
         </Button>
         <Button
           type="text"
-          icon={require('../../assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/tire/tire.png')}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
@@ -438,7 +437,7 @@ storiesOf('Atoms/Button', module)
         </Button>
         <Button
           type="text"
-          icon={require('../../assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/tire/tire.png')}
           iconPosition="right"
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
@@ -449,7 +448,7 @@ storiesOf('Atoms/Button', module)
           type="text"
           size="sm"
           color={subColors.CARROT}
-          icon={require('../../assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/tire/tire.png')}
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
         >
@@ -459,7 +458,7 @@ storiesOf('Atoms/Button', module)
           type="text"
           size="sm"
           color={subColors.CARROT}
-          icon={require('../../assets/icons/shop/shop.png')}
+          icon={require('../../assets/icons/tire/tire.png')}
           iconPosition="right"
           onPress={e => action('onPress')(e.nativeEvent)}
           style={{ marginBottom: 5 }}
@@ -474,8 +473,9 @@ storiesOf('Atoms/Button', module)
       <>
         <Button
           color={systemColors.WHITE}
-          icon={require('../../assets/icons/google/google-active.png')}
+          icon={require('../../assets/icons/google/google.png')}
           onPress={e => action('onPress')(e.nativeEvent)}
+          colorIcon={false}
           style={{
             marginBottom: 20,
             shadowColor: systemColors.BLACK,
@@ -488,8 +488,9 @@ storiesOf('Atoms/Button', module)
         </Button>
         <Button
           color="khaki"
-          icon={require('../../assets/icons/kakao/kakao-active.png')}
+          icon={require('../../assets/icons/kakao/kakao.png')}
           onPress={e => action('onPress')(e.nativeEvent)}
+          colorIcon={false}
           style={{
             marginBottom: 20,
             shadowColor: systemColors.BLACK,

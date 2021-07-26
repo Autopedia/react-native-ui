@@ -5,7 +5,7 @@ import {
   StyleProp,
 } from 'react-native';
 
-export type IconSize = 'sm' | 'md' | 'lg';
+export type IconSize = 'xs' | 'sm' | 'md' | 'lg';
 
 export interface IconProps {
   source: any;
