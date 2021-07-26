@@ -9,7 +9,10 @@ import {
 import { PostMessageProps } from '../../Message.types';
 import colors from '../../../../styles/colors';
 
-const PostMessage: React.FC<PostMessageProps> = ({ thumbnailUrl, title }) => {
+export const PostMessage: React.FC<PostMessageProps> = ({
+  thumbnailUrl,
+  title,
+}) => {
   return (
     <SContent>
       <SContentThumbnail source={{ uri: thumbnailUrl }} />
@@ -24,5 +27,3 @@ const PostMessage: React.FC<PostMessageProps> = ({ thumbnailUrl, title }) => {
     </SContent>
   );
 };
-
-export default PostMessage;

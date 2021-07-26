@@ -1,1 +1,1 @@
-export { default } from './FeedbackMessage';
+export { FeedbackMessage } from './FeedbackMessage';

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react-native';
 import React from 'react';
 import CenterContainerDecorator from '../../../../decorators/center-container.decorator';
 import SThemeDecorator from '../../../../decorators/styled-components.decorator';
-import PostMessage from './PostMessage';
+import { PostMessage } from './PostMessage';
 import GreyBackgroundDecorator from '../../../../decorators/grey-background.decorator';
 
 storiesOf('Atoms/Message/PostMessage', module)

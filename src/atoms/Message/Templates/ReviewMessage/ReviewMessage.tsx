@@ -2,9 +2,11 @@ import React from 'react';
 import { Platform } from 'react-native';
 import { ReviewMessageProps } from '../../Message.types';
 import Button from '../../../../atoms/Button';
-import CardMessage from '../CardMessage';
+import { CardMessage } from '../CardMessage';
 
-const ReviewMessage: React.FC<ReviewMessageProps> = ({ onPressReview }) => {
+export const ReviewMessage: React.FC<ReviewMessageProps> = ({
+  onPressReview,
+}) => {
   const store = Platform.OS === 'android' ? '플레이스토어' : '앱스토어';
 
   const title = '리뷰를 남겨주세요!';
@@ -19,5 +21,3 @@ const ReviewMessage: React.FC<ReviewMessageProps> = ({ onPressReview }) => {
     <CardMessage title={title} description={description} footer={footer} />
   );
 };
-
-export default ReviewMessage;

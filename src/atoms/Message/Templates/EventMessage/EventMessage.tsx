@@ -9,7 +9,10 @@ import {
 } from '../../Message.styles';
 import colors from '../../../../styles/colors';
 
-const EventMessage: React.FC<EventMessageProps> = ({ title, thumbnailUrl }) => {
+export const EventMessage: React.FC<EventMessageProps> = ({
+  title,
+  thumbnailUrl,
+}) => {
   return (
     <SContent>
       <SContentThumbnail source={{ uri: thumbnailUrl }} />
@@ -24,5 +27,3 @@ const EventMessage: React.FC<EventMessageProps> = ({ title, thumbnailUrl }) => {
     </SContent>
   );
 };
-
-export default EventMessage;

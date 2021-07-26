@@ -4,7 +4,7 @@ import { EndConfirmedMessageProps } from '../../Message.types';
 import { SOtherTextMessage } from '../../Message.styles';
 import colors from '../../../../styles/colors';
 
-const EndConfirmedMessage: React.FC<EndConfirmedMessageProps> = () => {
+export const EndConfirmedMessage: React.FC<EndConfirmedMessageProps> = () => {
   return (
     <SOtherTextMessage>
       <Typography.Paragraph size={2} color={colors.MUTED}>
@@ -13,5 +13,3 @@ const EndConfirmedMessage: React.FC<EndConfirmedMessageProps> = () => {
     </SOtherTextMessage>
   );
 };
-
-export default EndConfirmedMessage;
