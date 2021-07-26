@@ -1,5 +1,9 @@
-import { PressableProps } from 'react-native';
-import { GestureResponderEvent, TextStyle, ViewStyle } from 'react-native';
+import {
+  GestureResponderEvent,
+  PressableProps,
+  TextStyle,
+  ViewStyle,
+} from 'react-native';
 
 export type ButtonType = 'solid' | 'text';
 export type ButtonSize = 'sm' | 'md' | 'lg';
