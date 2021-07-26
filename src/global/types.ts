@@ -15,3 +15,5 @@ export interface BaseInputProps<V> {
 }
 
 export type BaseInputElement<V> = React.ReactElement<BaseInputProps<V>, any>;
+
+export type LocalSource = { testUri: string };

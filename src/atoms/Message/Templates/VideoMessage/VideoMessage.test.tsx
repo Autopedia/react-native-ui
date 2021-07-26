@@ -7,7 +7,7 @@ import 'jest-styled-components';
 import React from 'react';
 import { VideoMessage } from './VideoMessage';
 import { shallow } from 'enzyme';
-import { TestSource } from '../../Message.types';
+import { LocalSource } from '../../../../global/types';
 
 describe('[Message/VideoMessage] Unit Test', () => {
   beforeEach(() => {
@@ -104,7 +104,7 @@ describe('[Message/VideoMessage] Unit Test', () => {
       />,
     );
     videoMessage.find('Video').simulate('error', { error: 'Test Error' });
-    const videoSource: TestSource = videoMessage
+    const videoSource: LocalSource = videoMessage
       .find('MessageImage')
       .prop('source');
 

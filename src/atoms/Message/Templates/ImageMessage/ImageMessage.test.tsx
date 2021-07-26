@@ -7,7 +7,7 @@ import 'jest-styled-components';
 import React from 'react';
 import { ImageMessage } from './ImageMessage';
 import { shallow } from 'enzyme';
-import { TestSource } from '../../Message.types';
+import { LocalSource } from '../../../../global/types';
 
 describe('[Message/ImageMessage] Unit Test', () => {
   it('should fire onPressImage event', () => {
@@ -41,7 +41,7 @@ describe('[Message/ImageMessage] Unit Test', () => {
     messageImage.simulate('error');
 
     imageMessage = imageMessage.update();
-    const imageSource: TestSource = imageMessage
+    const imageSource: LocalSource = imageMessage
       .find('MessageImage')
       .prop('source');
 
