@@ -9010,7 +9010,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
         "borderColor": "#D9D9D9",
         "borderRadius": 20,
         "borderWidth": 1,
-        "marginBottom": 2,
+        "marginBottom": 0,
         "marginLeft": 0,
         "marginRight": 0,
         "marginTop": 2,
@@ -9024,6 +9024,7 @@ exports[`Storyshots Atoms/SelectOption Block(Solo) 1`] = `
   >
     <Text
       disabled={true}
+      last={true}
       layout="block"
       selected={true}
       size="sm"
@@ -9258,6 +9259,183 @@ exports[`Storyshots Atoms/SelectOption Block(Sublabel) 1`] = `
       value="value"
     >
       Block sublabel disabled
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/SelectOption Column 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "borderColor": "black",
+        "borderRadius": 20,
+        "borderWidth": 1,
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "marginLeft": 3,
+        "marginRight": 3,
+        "marginTop": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 18,
+        "paddingRight": 18,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      color="black"
+      layout="column"
+      selected={true}
+      style={
+        Array [
+          Object {
+            "color": "black",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 14,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+      value="value"
+    >
+      Column label selected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "borderColor": "rgba(0, 0, 0, 0.5)",
+        "borderRadius": 20,
+        "borderWidth": 1,
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "marginLeft": 3,
+        "marginRight": 3,
+        "marginTop": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 18,
+        "paddingRight": 18,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      color="black"
+      layout="column"
+      selected={false}
+      style={
+        Array [
+          Object {
+            "color": "black",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 14,
+            "lineHeight": 22,
+            "opacity": 0.7,
+            "textAlign": "center",
+          },
+        ]
+      }
+      value="value"
+    >
+      Column label unselected
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#F5F5F5",
+        "borderColor": "#D9D9D9",
+        "borderRadius": 20,
+        "borderWidth": 1,
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "marginBottom": 5,
+        "marginLeft": 3,
+        "marginRight": 3,
+        "marginTop": 5,
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 18,
+        "paddingRight": 18,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      color="black"
+      disabled={true}
+      layout="column"
+      selected={true}
+      style={
+        Array [
+          Object {
+            "color": "#8C8C8C",
+            "fontFamily": "NotoSansKR-Medium",
+            "fontSize": 14,
+            "lineHeight": 22,
+            "textAlign": "center",
+          },
+        ]
+      }
+      value="value"
+    >
+      Column label disabled
     </Text>
   </View>
 </View>
