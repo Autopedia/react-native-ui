@@ -10316,6 +10316,87 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
       />
     </View>
   </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+          "shadowColor": "rgba(0, 0, 0, 0.1)",
+          "shadowOffset": Object {
+            "height": 8,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 24,
+        },
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 16,
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 14,
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <Text
+        label="Multi line without numberOfLines prop"
+        style={
+          Array [
+            Object {
+              "color": "#C6CACF",
+              "fontFamily": "NotoSansKR-Medium",
+              "marginBottom": 10,
+            },
+          ]
+        }
+      >
+        Multi line without numberOfLines prop
+      </Text>
+      <TextInput
+        allowFontScaling={true}
+        defaultValue="Multi Line Long Text Multi Line Long Text Multi Line Long Text Multi Line Long Text Multi Line Long Text "
+        editable={true}
+        label="Multi line without numberOfLines prop"
+        multiline={true}
+        onChangeText={[Function]}
+        placeholderTextColor="#C6CACF"
+        rejectResponderTermination={true}
+        secureTextEntry={false}
+        style={
+          Array [
+            Object {
+              "fontSize": 14,
+              "height": 22,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+              "textAlignVertical": "top",
+            },
+            Object {},
+          ]
+        }
+        textAlignVertical="center"
+        underlineColorAndroid="transparent"
+      />
+    </View>
+  </View>
 </View>
 `;
 
