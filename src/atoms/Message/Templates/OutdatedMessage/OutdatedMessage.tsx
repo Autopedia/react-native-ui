@@ -1,10 +1,10 @@
 import { Alert } from 'react-native';
 import Button from '../../../../atoms/Button';
 import React from 'react';
-import CardMessage from '../CardMessage';
+import { CardMessage } from '../CardMessage';
 import { OutdatedMessageProps } from '../../Message.types';
 
-const OutdatedMessage: React.FC<OutdatedMessageProps> = ({
+export const OutdatedMessage: React.FC<OutdatedMessageProps> = ({
   onPressFinish,
   disabled,
   days,
@@ -37,5 +37,3 @@ const OutdatedMessage: React.FC<OutdatedMessageProps> = ({
     <CardMessage title={title} description={description} footer={footer} />
   );
 };
-
-export default OutdatedMessage;

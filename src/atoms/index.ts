@@ -6,7 +6,7 @@ import FormLabel from './FormLabel';
 import Icon from './Icon';
 import LoadingOverlay from './LoadingOverlay';
 import { Markdown } from './Markdown';
-import Message from './Message';
+import { Message } from './Message';
 import ProgressiveImage from './ProgressiveImage';
 import SelectOption from './SelectOption';
 import Sign from './Sign';

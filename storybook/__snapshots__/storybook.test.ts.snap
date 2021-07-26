@@ -6624,7 +6624,7 @@ exports[`Storyshots Atoms/Message/EndMessage Playground 1`] = `
               "width": "100%",
             },
             Object {
-              "backgroundColor": "transparent",
+              "backgroundColor": "#FA4339",
             },
             undefined,
           ]
@@ -7804,8 +7804,6 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                     "flexGrow": 1,
                     "flexShrink": 1,
                     "justifyContent": "center",
-                  },
-                  Object {
                     "marginRight": 10,
                   },
                 ],
@@ -8042,6 +8040,84 @@ exports[`Storyshots Atoms/Message/TextMessage Playground 1`] = `
         >
           Text
         </Text>
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Message/UnhandledMessage Other Unhandle Message 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "flex-start",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 14,
+            "borderTopLeftRadius": 0,
+            "flexDirection": "row",
+            "maxWidth": 487.5,
+            "overflow": "hidden",
+            "paddingBottom": 6,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 6,
+            "shadowColor": "rgba(0,0,0,0.1)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 2,
+          },
+        ]
+      }
+    >
+      <Text
+        color="#8C8C8C"
+        size={2}
+        style={
+          Array [
+            Object {
+              "color": "#8C8C8C",
+              "flexShrink": 1,
+              "flexWrap": "wrap",
+              "fontFamily": "NotoSansKR-Regular",
+              "fontSize": 14,
+              "lineHeight": 22,
+            },
+          ]
+        }
+      >
+        지원하지 않는 형태의 메세지입니다.
+        
+
+        앱을 최신 버전으로 업데이트 해주세요!
       </Text>
     </View>
   </View>

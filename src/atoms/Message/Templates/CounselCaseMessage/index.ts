@@ -1,1 +1,1 @@
-export { default } from './CounselCaseMessage';
+export { CounselCaseMessage } from './CounselCaseMessage';
