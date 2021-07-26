@@ -54,12 +54,14 @@ const SIcon = styled.Image<SIconProps>`
   /* size (default: md) */
   ${props => {
     switch (props.size) {
+      case 'xs':
+        return `width: 16px; height: 16px;`;
       case 'sm':
         return `width: 20px; height: 20px;`;
       case 'md':
         return `width: 24px; height: 24px;`;
       case 'lg':
-        return `width: 32px; height: 32px`;
+        return `width: 32px; height: 32px;`;
       default:
         return `width: 24px; height: 24px;`;
     }
