@@ -41,6 +41,7 @@
     "react-native-maps": "^0.28.0",
     "react-native-parsed-text": "^0.0.22",
     "react-native-rate": "^1.2.6",
+    "react-native-safe-area-context": "^3.2.0",
     "react-native-video": "^5.1.1",
     "styled-components": "^5.3.0",
     "validate-color": "^2.1.1"

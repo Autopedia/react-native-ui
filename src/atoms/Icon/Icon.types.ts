@@ -5,10 +5,12 @@ import {
   StyleProp,
 } from 'react-native';
 
+export type IconSize = 'sm' | 'md' | 'lg';
+
 export interface IconProps {
   source: any;
+  size?: IconSize;
   color?: string;
-  touchable?: boolean;
   disabled?: boolean;
   onPress?: (event: GestureResponderEvent) => void;
   style?: StyleProp<Omit<ImageStyle, 'color'> | FlexStyle>;
@@ -17,5 +19,5 @@ export interface IconProps {
 export type STouchableProps = Pick<IconProps, 'disabled' | 'onPress' | 'style'>;
 export type SIconProps = Pick<
   IconProps,
-  'color' | 'disabled' | 'source' | 'style'
+  'color' | 'disabled' | 'source' | 'style' | 'size'
 >;

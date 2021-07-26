@@ -15,6 +15,8 @@ import TextInput from './TextInput';
 import Typography from './Typography';
 
 export * from './Tooltip';
+export * from './Toast';
+export * from './LoadingDots';
 
 export {
   Button,
