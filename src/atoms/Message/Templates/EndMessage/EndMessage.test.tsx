@@ -9,6 +9,7 @@ import { shallow } from 'enzyme';
 import React from 'react';
 
 import { EndMessage } from './EndMessage';
+import { Alert } from 'react-native';
 
 jest.mock('react-native/Libraries/Alert/Alert', () => ({
   alert: jest.fn(),

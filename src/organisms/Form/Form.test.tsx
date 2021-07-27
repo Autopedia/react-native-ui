@@ -4,14 +4,13 @@
 
 import { shallow } from 'enzyme';
 import React from 'react';
-import { useForm } from 'react-hook-form';
 
 import TextInput from '../../atoms/TextInput';
-import Form, { Item } from './Form';
+import { Form, Item, useForm } from './Form';
 
 jest.mock('react', () => ({
-  ...jest.requireActual('react'),
   //@ts-ignore
+  ...jest.requireActual('react'),
   useEffect: f => f(),
 }));
 

@@ -46,7 +46,6 @@ export const VideoMessage: React.FC<VideoMessageProps> = ({
   };
 
   const onError = (error: LoadError) => {
-    console.log(error.error);
     setState('ERROR');
     setSize({ width: 0, height: 0 });
   };
