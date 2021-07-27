@@ -26,11 +26,11 @@ const FormItem = <V extends unknown>(props: FormItemProps<V>) => {
   const [errorY] = React.useState(new Animated.Value(-(Fonts.size.XXS + 1)));
   React.useEffect(() => {
     if (props.error) {
-      Animated.spring(errorY, { toValue: 0, useNativeDriver: true }).start();
+      Animated.spring(errorY, { toValue: 0, useNativeDriver: false }).start();
     } else {
       Animated.spring(errorY, {
         toValue: -(Fonts.size.XXS + 1),
-        useNativeDriver: true,
+        useNativeDriver: false,
       }).start();
     }
   }, [props.error]); // eslint-disable-line react-hooks/exhaustive-deps

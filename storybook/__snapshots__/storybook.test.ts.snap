@@ -986,6 +986,7 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
           Array [
             Object {
               "height": 20,
+              "resizeMode": "contain",
               "width": 20,
             },
             Object {
@@ -1079,6 +1080,7 @@ exports[`Storyshots Atoms/Button CustomContainerStyle 1`] = `
           Array [
             Object {
               "height": 20,
+              "resizeMode": "contain",
               "width": 20,
             },
             Object {
@@ -1611,6 +1613,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "resizeMode": "contain",
               "tintColor": "#FFFFFF",
               "width": 20,
             },
@@ -1716,6 +1719,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "resizeMode": "contain",
               "tintColor": "#000000",
               "width": 20,
             },
@@ -1785,6 +1789,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "resizeMode": "contain",
               "tintColor": "#5F656A",
               "width": 20,
             },
@@ -1892,6 +1897,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "resizeMode": "contain",
               "tintColor": "#5F656A",
               "width": 20,
             },
@@ -1961,6 +1967,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "resizeMode": "contain",
               "tintColor": "#5F656A",
               "width": 20,
             },
@@ -2068,6 +2075,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "resizeMode": "contain",
               "tintColor": "#5F656A",
               "width": 20,
             },
@@ -2137,6 +2145,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "resizeMode": "contain",
               "tintColor": "#5F656A",
               "width": 20,
             },
@@ -2244,6 +2253,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "resizeMode": "contain",
               "tintColor": "#5F656A",
               "width": 20,
             },
@@ -2314,6 +2324,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "resizeMode": "contain",
               "tintColor": "#EB694C",
               "width": 20,
             },
@@ -2424,6 +2435,7 @@ exports[`Storyshots Atoms/Button Icon 1`] = `
           Array [
             Object {
               "height": 20,
+              "resizeMode": "contain",
               "tintColor": "#EB694C",
               "width": 20,
             },
@@ -4257,6 +4269,7 @@ exports[`Storyshots Atoms/Checkbox Default 1`] = `
         Array [
           Object {
             "height": 24,
+            "resizeMode": "contain",
             "width": 24,
           },
           Object {
@@ -4297,6 +4310,7 @@ exports[`Storyshots Atoms/Checkbox Default 1`] = `
         Array [
           Object {
             "height": 24,
+            "resizeMode": "contain",
             "width": 24,
           },
           Object {
@@ -4358,6 +4372,7 @@ exports[`Storyshots Atoms/Checkbox Playground 1`] = `
         Array [
           Object {
             "height": 24,
+            "resizeMode": "contain",
             "width": 24,
           },
           Object {
@@ -4711,6 +4726,7 @@ exports[`Storyshots Atoms/Icon Color 1`] = `
       Array [
         Object {
           "height": 24,
+          "resizeMode": "contain",
           "tintColor": "#007AFF",
           "width": 24,
         },
@@ -4731,6 +4747,7 @@ exports[`Storyshots Atoms/Icon Color 1`] = `
       Array [
         Object {
           "height": 24,
+          "resizeMode": "contain",
           "tintColor": "#48CF7C",
           "width": 24,
         },
@@ -4751,6 +4768,7 @@ exports[`Storyshots Atoms/Icon Color 1`] = `
       Array [
         Object {
           "height": 24,
+          "resizeMode": "contain",
           "tintColor": "#FA4339",
           "width": 24,
         },
@@ -4771,6 +4789,7 @@ exports[`Storyshots Atoms/Icon Color 1`] = `
       Array [
         Object {
           "height": 24,
+          "resizeMode": "contain",
           "tintColor": "black",
           "width": 24,
         },
@@ -4791,6 +4810,7 @@ exports[`Storyshots Atoms/Icon Color 1`] = `
       Array [
         Object {
           "height": 24,
+          "resizeMode": "contain",
           "tintColor": "white",
           "width": 24,
         },
@@ -4832,6 +4852,7 @@ exports[`Storyshots Atoms/Icon CustomStyle 1`] = `
       Array [
         Object {
           "height": 24,
+          "resizeMode": "contain",
           "tintColor": "#007AFF",
           "width": 24,
         },
@@ -4855,6 +4876,7 @@ exports[`Storyshots Atoms/Icon CustomStyle 1`] = `
       Array [
         Object {
           "height": 24,
+          "resizeMode": "contain",
           "tintColor": "#007AFF",
           "width": 24,
         },
@@ -4928,6 +4950,7 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
           Object {
             "height": 24,
             "opacity": 0.5,
+            "resizeMode": "contain",
             "tintColor": "#007AFF",
             "width": 24,
           },
@@ -4978,6 +5001,7 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
           Object {
             "height": 24,
             "opacity": 0.5,
+            "resizeMode": "contain",
             "tintColor": "#48CF7C",
             "width": 24,
           },
@@ -5028,6 +5052,7 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
           Object {
             "height": 24,
             "opacity": 0.5,
+            "resizeMode": "contain",
             "tintColor": "#FA4339",
             "width": 24,
           },
@@ -5078,6 +5103,7 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
           Object {
             "height": 24,
             "opacity": 0.5,
+            "resizeMode": "contain",
             "tintColor": "black",
             "width": 24,
           },
@@ -5128,6 +5154,7 @@ exports[`Storyshots Atoms/Icon Disabled 1`] = `
           Object {
             "height": 24,
             "opacity": 0.5,
+            "resizeMode": "contain",
             "tintColor": "white",
             "width": 24,
           },
@@ -5199,6 +5226,7 @@ exports[`Storyshots Atoms/Icon Playground 1`] = `
         Array [
           Object {
             "height": 24,
+            "resizeMode": "contain",
             "tintColor": "#007AFF",
             "width": 24,
           },
@@ -5245,6 +5273,7 @@ exports[`Storyshots Atoms/Icon Size 1`] = `
       Array [
         Object {
           "height": 32,
+          "resizeMode": "contain",
           "tintColor": "#007AFF",
           "width": 32,
         },
@@ -5266,6 +5295,7 @@ exports[`Storyshots Atoms/Icon Size 1`] = `
       Array [
         Object {
           "height": 24,
+          "resizeMode": "contain",
           "tintColor": "#48CF7C",
           "width": 24,
         },
@@ -5287,6 +5317,7 @@ exports[`Storyshots Atoms/Icon Size 1`] = `
       Array [
         Object {
           "height": 20,
+          "resizeMode": "contain",
           "tintColor": "#FA4339",
           "width": 20,
         },
@@ -5308,6 +5339,7 @@ exports[`Storyshots Atoms/Icon Size 1`] = `
       Array [
         Object {
           "height": 16,
+          "resizeMode": "contain",
           "tintColor": "#000000",
           "width": 16,
         },
@@ -5379,6 +5411,7 @@ exports[`Storyshots Atoms/Icon Touchable 1`] = `
         Array [
           Object {
             "height": 24,
+            "resizeMode": "contain",
             "tintColor": "#007AFF",
             "width": 24,
           },
@@ -5403,6 +5436,7 @@ exports[`Storyshots Atoms/Icon Touchable 1`] = `
       Array [
         Object {
           "height": 24,
+          "resizeMode": "contain",
           "tintColor": "#007AFF",
           "width": 24,
         },
@@ -7856,6 +7890,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                   Array [
                     Object {
                       "height": 20,
+                      "resizeMode": "contain",
                       "tintColor": "#5F656A",
                       "width": 20,
                     },
@@ -7951,6 +7986,7 @@ exports[`Storyshots Atoms/Message/ShopMessage Playground 1`] = `
                   Array [
                     Object {
                       "height": 20,
+                      "resizeMode": "contain",
                       "tintColor": "#5F656A",
                       "width": 20,
                     },
@@ -10746,6 +10782,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
             Array [
               Object {
                 "height": 24,
+                "resizeMode": "contain",
                 "width": 24,
               },
               Object {},
@@ -10878,6 +10915,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
               Object {
                 "height": 24,
                 "opacity": 0.5,
+                "resizeMode": "contain",
                 "width": 24,
               },
               Object {},
@@ -11586,6 +11624,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
             Array [
               Object {
                 "height": 24,
+                "resizeMode": "contain",
                 "width": 24,
               },
               Object {
@@ -11849,6 +11888,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
             Array [
               Object {
                 "height": 24,
+                "resizeMode": "contain",
                 "width": 24,
               },
               Object {
@@ -14904,6 +14944,7 @@ exports[`Storyshots Molecules/Alert ReactNode Contents Alert 1`] = `
                 Array [
                   Object {
                     "height": 24,
+                    "resizeMode": "contain",
                     "width": 24,
                   },
                   Object {},
@@ -15155,6 +15196,7 @@ exports[`Storyshots Molecules/Alert ReactNode Title Alert 1`] = `
                   Array [
                     Object {
                       "height": 24,
+                      "resizeMode": "contain",
                       "width": 24,
                     },
                     Object {},
@@ -16521,6 +16563,7 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
           Array [
             Object {
               "height": 24,
+              "resizeMode": "contain",
               "width": 24,
             },
             Object {
@@ -19672,6 +19715,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
                 Array [
                   Object {
                     "height": 24,
+                    "resizeMode": "contain",
                     "width": 24,
                   },
                   Object {},
@@ -19999,6 +20043,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             Array [
               Object {
                 "height": 24,
+                "resizeMode": "contain",
                 "width": 24,
               },
               Object {

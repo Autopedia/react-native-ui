@@ -1,12 +1,12 @@
 import React from 'react';
-import { Animated, Easing } from 'react-native';
-import colors from '../../styles/colors';
+import { Animated, Easing, GestureResponderEvent } from 'react-native';
+import { EdgeInsets, useSafeAreaInsets } from 'react-native-safe-area-context';
 import styled from 'styled-components/native';
-import Typography from '../Typography';
-import { useSafeAreaInsets, EdgeInsets } from 'react-native-safe-area-context';
-import Icon from '../Icon';
-import { GestureResponderEvent } from 'react-native';
+
+import colors from '../../styles/colors';
 import { grayscaleColors } from '../../styles/grayscale-colors';
+import Icon from '../Icon';
+import Typography from '../Typography';
 
 const { Paragraph } = Typography;
 type ToastShowProps = {
@@ -54,14 +54,14 @@ export const ToastProvider: React.FC = ({ children }) => {
           Animated.timing(toastAnimValue, {
             toValue: 0,
             duration: 300,
-            useNativeDriver: true,
+            useNativeDriver: false,
             easing: Easing.inOut(Easing.quad),
           }),
           Animated.delay(duration),
           Animated.timing(toastAnimValue, {
             toValue: toastPosition === 'top' ? -500 : 500,
             duration: 300,
-            useNativeDriver: true,
+            useNativeDriver: false,
           }),
         ]).start(() => {
           setMsg('');
@@ -70,7 +70,7 @@ export const ToastProvider: React.FC = ({ children }) => {
         Animated.timing(toastAnimValue, {
           toValue: 0,
           duration: 300,
-          useNativeDriver: true,
+          useNativeDriver: false,
           easing: Easing.inOut(Easing.quad),
         }).start();
       }
@@ -82,7 +82,7 @@ export const ToastProvider: React.FC = ({ children }) => {
     Animated.timing(toastAnimValue, {
       toValue: toastPosition === 'top' ? -500 : 500,
       duration: 300,
-      useNativeDriver: true,
+      useNativeDriver: false,
     }).start(() => {
       setMsg('');
     });
@@ -106,7 +106,7 @@ export const ToastProvider: React.FC = ({ children }) => {
   return (
     <ToastContext.Provider value={actions}>
       {children}
-      {msg && (
+      {!!msg && (
         <SAnimatedView
           style={{
             transform: [
