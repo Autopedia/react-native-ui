@@ -1,13 +1,14 @@
 import React from 'react';
+
 import Typography from '../../../../atoms/Typography';
+import colors from '../../../../styles/colors';
 import { linebreakRemover } from '../../../../utils/formatters';
 import {
   SContent,
-  SContentThumbnail,
   SContentInfo,
+  SContentThumbnail,
 } from '../../Message.styles';
 import { PostMessageProps } from '../../Message.types';
-import colors from '../../../../styles/colors';
 
 export const PostMessage: React.FC<PostMessageProps> = ({
   thumbnailUrl,

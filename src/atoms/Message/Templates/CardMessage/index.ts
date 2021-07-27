@@ -1,1 +1,1 @@
-export { CardMessage } from './CardMessage';
+export * from './CardMessage';

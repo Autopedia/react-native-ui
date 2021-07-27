@@ -2,6 +2,7 @@ import React from 'react';
 import { ActivityIndicator } from 'react-native';
 import Video, { LoadError } from 'react-native-video';
 import styled from 'styled-components/native';
+
 import Icon from '../../../../atoms/Icon';
 import Typography from '../../../../atoms/Typography';
 import { durationFormatter } from '../../../../utils/formatters';
@@ -45,7 +46,6 @@ export const VideoMessage: React.FC<VideoMessageProps> = ({
   };
 
   const onError = (error: LoadError) => {
-    console.log(error.error);
     setState('ERROR');
     setSize({ width: 0, height: 0 });
   };

@@ -1,7 +1,8 @@
 import React from 'react';
+
 import Typography from '../../../../atoms/Typography';
-import { SMyTextMessage, SOtherTextMessage } from '../../Message.styles';
 import colors from '../../../../styles/colors';
+import { SMyTextMessage, SOtherTextMessage } from '../../Message.styles';
 
 interface UnhandledMessageProps {
   mine?: boolean;

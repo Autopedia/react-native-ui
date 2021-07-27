@@ -4,9 +4,11 @@
 
 import 'react-native';
 import 'jest-styled-components';
-import React from 'react';
-import { ReviewMessage } from './ReviewMessage';
+
 import { shallow } from 'enzyme';
+import React from 'react';
+
+import { ReviewMessage } from './ReviewMessage';
 
 describe('[Message/ReviewMessage] Unit Test', () => {
   it('should fire onPressReview event', () => {

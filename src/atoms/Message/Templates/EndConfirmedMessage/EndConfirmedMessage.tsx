@@ -1,8 +1,9 @@
 import React from 'react';
+
 import Typography from '../../../../atoms/Typography';
-import { EndConfirmedMessageProps } from '../../Message.types';
-import { SOtherTextMessage } from '../../Message.styles';
 import colors from '../../../../styles/colors';
+import { SOtherTextMessage } from '../../Message.styles';
+import { EndConfirmedMessageProps } from '../../Message.types';
 
 export const EndConfirmedMessage: React.FC<EndConfirmedMessageProps> = () => {
   return (

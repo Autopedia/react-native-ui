@@ -24,24 +24,24 @@ export const AnimatedDot: React.FC<AnimatedDotProps> = ({ delay, color }) => {
             Animated.timing(translateYAnimValue, {
               toValue: -3,
               duration: 300,
-              useNativeDriver: true,
+              useNativeDriver: false,
             }),
             Animated.timing(translateYAnimValue, {
               toValue: 0,
               duration: 300,
-              useNativeDriver: true,
+              useNativeDriver: false,
             }),
           ]),
           Animated.sequence([
             Animated.timing(opacityAnimValue, {
               toValue: 0.5,
               delay: 300,
-              useNativeDriver: true,
+              useNativeDriver: false,
             }),
             Animated.timing(opacityAnimValue, {
               toValue: 1,
               delay: 300,
-              useNativeDriver: true,
+              useNativeDriver: false,
             }),
           ]),
         ]),

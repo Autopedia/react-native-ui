@@ -1,1 +1,1 @@
-export { VideoMessage } from './VideoMessage';
+export * from './VideoMessage';

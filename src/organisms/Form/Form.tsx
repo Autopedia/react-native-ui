@@ -94,5 +94,4 @@ const Form = <I extends Record<string, any>>({
 type SContainerProps = Pick<FormProps<any>, 'style'>;
 const SContainer = styled.View``;
 
-export { useForm, Item, Divider };
-export default Form;
+export { useForm, Item, Form };

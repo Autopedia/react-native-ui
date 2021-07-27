@@ -1,1 +1,1 @@
-export { Toast, toastConfig, BasicToast } from './Toast';
+export * from './Toast';

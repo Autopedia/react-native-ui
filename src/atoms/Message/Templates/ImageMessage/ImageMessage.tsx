@@ -1,7 +1,8 @@
 import React from 'react';
 import { TouchableOpacity } from 'react-native';
+
+import { MAX_WIDTH, SImage } from '../../Message.styles';
 import { ImageMessageProps } from '../../Message.types';
-import { SImage, MAX_WIDTH } from '../../Message.styles';
 
 export const ImageMessage: React.FC<ImageMessageProps> = ({
   url,

@@ -2,7 +2,6 @@ import lodash from 'lodash';
 import React from 'react';
 import styled from 'styled-components/native';
 
-import spacing from '../../styles/spacing';
 import {
   FlexStyleKeys,
   ImageOnlyStyleKeys,
@@ -43,6 +42,8 @@ const STouchable = styled.TouchableOpacity<STouchableProps>`
   margin: -4px;
 `;
 const SIcon = styled.Image<SIconProps>`
+  resize-mode: contain;
+
   /* color (default: undefined) */
   ${props => {
     return props.color ? `tint-color: ${getValidatedColor(props.color)}` : '';

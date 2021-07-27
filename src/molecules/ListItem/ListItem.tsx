@@ -35,13 +35,13 @@ const ListItem: React.FC<ListItemProps> = props => {
         Animated.timing(loadingAnimValue, {
           toValue: 0.7,
           duration: 300,
-          useNativeDriver: true,
+          useNativeDriver: false,
           easing: Easing.inOut(Easing.quad),
         }),
         Animated.timing(loadingAnimValue, {
           toValue: 1,
           duration: 300,
-          useNativeDriver: true,
+          useNativeDriver: false,
           easing: Easing.inOut(Easing.quad),
         }),
       ]),
