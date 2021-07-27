@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components/native';
 
-import fonts from '../styles/fonts';
-import { grayscaleColors } from '../styles/grayscale-colors';
-import { systemColors } from '../styles/system-colors';
+import fonts from '../../styles/fonts';
+import { grayscaleColors } from '../../styles/grayscale-colors';
+import { systemColors } from '../../styles/system-colors';
 
 export type ListTab<V> = {
   label: string;
