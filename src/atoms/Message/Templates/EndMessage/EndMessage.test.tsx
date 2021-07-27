@@ -4,10 +4,11 @@
 
 import 'react-native';
 import 'jest-styled-components';
-import React from 'react';
-import { EndMessage } from './EndMessage';
+
 import { shallow } from 'enzyme';
-import { Alert } from 'react-native';
+import React from 'react';
+
+import { EndMessage } from './EndMessage';
 
 jest.mock('react-native/Libraries/Alert/Alert', () => ({
   alert: jest.fn(),

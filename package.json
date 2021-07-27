@@ -1,5 +1,5 @@
 {
-  "name": "@drcha/react-native-ui",
+  "name": "@autopedia/react-native-ui",
   "description": "A React Native UI components for React Native apps of doctor-cha services.",
   "version": "1.2.0",
   "main": "lib/index.js",

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
+
 import Typography from '../../../../atoms/Typography';
 import base from '../../../../styles/base';
 import colors from '../../../../styles/colors';

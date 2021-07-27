@@ -4,9 +4,11 @@
 
 import 'react-native';
 import 'jest-styled-components';
-import React from 'react';
-import { ShopMessage } from './ShopMessage';
+
 import { shallow } from 'enzyme';
+import React from 'react';
+
+import { ShopMessage } from './ShopMessage';
 
 describe('[Message/ShopMessage] Unit Test', () => {
   it('should fire onPressDetail & onPressNavigate event', () => {

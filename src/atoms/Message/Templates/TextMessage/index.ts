@@ -1,1 +1,1 @@
-export { TextMessage } from './TextMessage';
+export * from './TextMessage';

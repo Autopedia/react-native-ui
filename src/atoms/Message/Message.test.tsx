@@ -4,9 +4,11 @@
 
 import 'react-native';
 import 'jest-styled-components';
-import React from 'react';
-import { Message } from './Message';
+
 import { shallow } from 'enzyme';
+import React from 'react';
+
+import { Message } from './Message';
 
 describe('[Message] Unit Test', () => {
   it('should render TextMessage template', () => {

@@ -1,1 +1,1 @@
-export { FeedbackMessage } from './FeedbackMessage';
+export * from './FeedbackMessage';

@@ -1,1 +1,1 @@
-export { ShopMessage } from './ShopMessage';
+export * from './ShopMessage';

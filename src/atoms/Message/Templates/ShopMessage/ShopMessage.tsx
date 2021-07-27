@@ -1,6 +1,7 @@
 import React from 'react';
 import MapView, { LatLng, Marker, Region } from 'react-native-maps';
 import styled from 'styled-components/native';
+
 import Button from '../../../../atoms/Button';
 import Typography from '../../../../atoms/Typography';
 import base from '../../../../styles/base';

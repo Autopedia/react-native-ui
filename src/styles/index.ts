@@ -5,6 +5,7 @@ import Border from './border';
 import Colors from './colors';
 import Fonts, { fontsTheme } from './fonts';
 import * as Scale from './scale';
+import Shadows from './shadows';
 import Spacing, { spacingTheme } from './spacing';
 
 const theme: DefaultTheme = {
@@ -15,4 +16,4 @@ const theme: DefaultTheme = {
   base: Base,
 };
 
-export { theme, Colors, Fonts, Scale, Spacing };
+export { theme, Colors, Fonts, Scale, Spacing, Shadows };

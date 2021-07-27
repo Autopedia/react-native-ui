@@ -1,1 +1,1 @@
-export { EventMessage } from './EventMessage';
+export * from './EventMessage';

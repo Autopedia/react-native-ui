@@ -1,11 +1,13 @@
+import React from 'react';
+
+import { action } from '@storybook/addon-actions';
 import { number, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
-import React from 'react';
+
 import CenterContainerDecorator from '../../../../decorators/center-container.decorator';
+import GreyBackgroundDecorator from '../../../../decorators/grey-background.decorator';
 import SThemeDecorator from '../../../../decorators/styled-components.decorator';
 import { ImageMessage } from './ImageMessage';
-import { action } from '@storybook/addon-actions';
-import GreyBackgroundDecorator from '../../../../decorators/grey-background.decorator';
 
 storiesOf('Atoms/Message/ImageMessage', module)
   .addDecorator(SThemeDecorator)

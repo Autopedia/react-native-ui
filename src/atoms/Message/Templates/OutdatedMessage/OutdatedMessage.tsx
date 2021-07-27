@@ -1,8 +1,9 @@
-import { Alert } from 'react-native';
-import Button from '../../../../atoms/Button';
 import React from 'react';
-import { CardMessage } from '../CardMessage';
+import { Alert } from 'react-native';
+
+import Button from '../../../../atoms/Button';
 import { OutdatedMessageProps } from '../../Message.types';
+import { CardMessage } from '../CardMessage';
 
 export const OutdatedMessage: React.FC<OutdatedMessageProps> = ({
   onPressFinish,

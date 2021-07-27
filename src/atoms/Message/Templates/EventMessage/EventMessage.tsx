@@ -1,13 +1,14 @@
 import React from 'react';
-import { EventMessageProps } from '../../Message.types';
-import { linebreakRemover } from '../../../../utils/formatters';
+
 import Typography from '../../../../atoms/Typography';
+import colors from '../../../../styles/colors';
+import { linebreakRemover } from '../../../../utils/formatters';
 import {
   SContent,
-  SContentThumbnail,
   SContentInfo,
+  SContentThumbnail,
 } from '../../Message.styles';
-import colors from '../../../../styles/colors';
+import { EventMessageProps } from '../../Message.types';
 
 export const EventMessage: React.FC<EventMessageProps> = ({
   title,

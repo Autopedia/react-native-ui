@@ -21,7 +21,7 @@ type STabProps = {
   selected: boolean;
 };
 
-const ListTabs = <V extends unknown>(props: ListTabsProps<V>) => {
+export const ListTabs = <V extends unknown>(props: ListTabsProps<V>) => {
   const [innerValue, setInnerValue] = React.useState<V>(
     props.defaultValue || props.tabs[0].value,
   );
@@ -67,4 +67,3 @@ const STabLabel = styled.Text<STabProps>`
   color: ${props =>
     props.selected ? systemColors.BLACK : grayscaleColors.GRAY_400};
 `;
-export default ListTabs;

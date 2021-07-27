@@ -4,9 +4,11 @@
 
 import 'react-native';
 import 'jest-styled-components';
-import React from 'react';
-import { PostMessage } from './PostMessage';
+
 import { shallow } from 'enzyme';
+import React from 'react';
+
+import { PostMessage } from './PostMessage';
 
 describe('[Message/PostMessage] Unit Test', () => {
   it('should fire onPressDetail & onPressNavigate event', () => {
