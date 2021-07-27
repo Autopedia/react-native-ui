@@ -23,6 +23,7 @@ interface ParagraphProps {
   fontWeight?: TypographyFontWeight;
   selectable?: boolean;
   underlined?: boolean;
+  numberOfLines?: number;
   onPress?: (event: GestureResponderEvent) => void;
   style?: TextStyle;
 }
