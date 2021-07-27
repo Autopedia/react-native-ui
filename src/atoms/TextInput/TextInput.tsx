@@ -127,7 +127,7 @@ const TextInput = forwardRef(
             <SIcon
               disabled={props.disabled || false}
               onPress={() => {
-                setShowText(!showText);
+                setShowText(showText => !showText);
               }}
               source={
                 showText
