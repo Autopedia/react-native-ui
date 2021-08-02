@@ -12064,6 +12064,558 @@ exports[`Storyshots Atoms/Toast ToastPosition 1`] = `
 </View>
 `;
 
+exports[`Storyshots Atoms/Tooltip AutoHide 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      inline={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 1000,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 14,
+          },
+          Object {
+            "backgroundColor": "#EEF2F6",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <Text
+          includeFontPadding={false}
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#5F656A",
+                "fontFamily": "NotoSansKR-Medium",
+                "fontSize": 16,
+                "lineHeight": 26,
+                "textAlign": "center",
+              },
+            ]
+          }
+          textColor="#5F656A"
+          textDisabledColor="#C6CACF"
+        >
+          Sample Button
+        </Text>
+      </View>
+    </View>
+    <View
+      layoutHeight={0}
+      layoutWidth={0}
+      location="top"
+      offset={10}
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "bottom": 10,
+          "justifyContent": "center",
+          "opacity": 0,
+          "position": "absolute",
+        }
+      }
+      tailPosition="center"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#2E3032",
+              "borderRadius": 20,
+              "flexDirection": "row",
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          AutoHide Tooltip
+        </Text>
+      </View>
+      <View
+        location="top"
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "borderBottomWidth": 0,
+              "borderColor": "transparent",
+              "borderLeftWidth": 6,
+              "borderRightWidth": 6,
+              "borderTopColor": "#2E3032",
+              "borderTopWidth": 12,
+              "bottom": -10,
+              "height": 0,
+              "position": "absolute",
+              "width": 0,
+            },
+          ]
+        }
+        tailPosition="center"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Tooltip Children 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+      ]
+    }
+  >
+    <Text
+      size={1}
+      style={
+        Array [
+          Object {
+            "color": "black",
+            "flexShrink": 1,
+            "flexWrap": "wrap",
+            "fontFamily": "NotoSansKR-Regular",
+            "fontSize": 16,
+            "lineHeight": 26,
+          },
+        ]
+      }
+    >
+      Typography
+    </Text>
+    <View
+      layoutHeight={0}
+      layoutWidth={0}
+      location="top"
+      offset={10}
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "bottom": 10,
+          "justifyContent": "center",
+          "opacity": 1,
+          "position": "absolute",
+        }
+      }
+      tailPosition="center"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#2E3032",
+              "borderRadius": 20,
+              "flexDirection": "row",
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Tooltip with Typography
+        </Text>
+      </View>
+      <View
+        location="top"
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "borderBottomWidth": 0,
+              "borderColor": "transparent",
+              "borderLeftWidth": 6,
+              "borderRightWidth": 6,
+              "borderTopColor": "#2E3032",
+              "borderTopWidth": 12,
+              "bottom": -10,
+              "height": 0,
+              "position": "absolute",
+              "width": 0,
+            },
+          ]
+        }
+        tailPosition="center"
+      />
+    </View>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/icons/camera/camera.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 24,
+            "resizeMode": "contain",
+            "width": 24,
+          },
+          Object {},
+        ]
+      }
+    />
+    <View
+      layoutHeight={0}
+      layoutWidth={0}
+      location="left"
+      offset={10}
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "justifyContent": "center",
+          "opacity": 1,
+          "position": "absolute",
+          "right": 10,
+          "top": -0,
+          "width": 400,
+        }
+      }
+      tailPosition="center"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#2E3032",
+              "borderRadius": 20,
+              "flexDirection": "row",
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Tooltip with Icon
+        </Text>
+      </View>
+      <View
+        location="left"
+        style={
+          Array [
+            Object {
+              "height": "100%",
+              "justifyContent": "center",
+              "position": "absolute",
+              "right": -10,
+            },
+          ]
+        }
+        tailPosition="center"
+      >
+        <View
+          location="left"
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 6,
+                "borderColor": "transparent",
+                "borderLeftColor": "#2E3032",
+                "borderLeftWidth": 12,
+                "borderRightWidth": 0,
+                "borderTopWidth": 6,
+                "height": 0,
+                "width": 0,
+              },
+            ]
+          }
+          tailPosition="center"
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots Atoms/Tooltip Message 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 1000,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 14,
+            "width": "100%",
+          },
+          Object {
+            "backgroundColor": "#EEF2F6",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <Text
+          includeFontPadding={false}
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#5F656A",
+                "fontFamily": "NotoSansKR-Medium",
+                "fontSize": 16,
+                "lineHeight": 26,
+                "textAlign": "center",
+              },
+            ]
+          }
+          textColor="#5F656A"
+          textDisabledColor="#C6CACF"
+        >
+          Sample Button
+        </Text>
+      </View>
+    </View>
+    <View
+      layoutHeight={0}
+      layoutWidth={0}
+      location="top"
+      offset={10}
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "bottom": 10,
+          "justifyContent": "center",
+          "opacity": 1,
+          "position": "absolute",
+        }
+      }
+      tailPosition="center"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#2E3032",
+              "borderRadius": 20,
+              "flexDirection": "row",
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Looooooooooooooooooooooooooooooooooooooooong Toooooooooooltip
+        </Text>
+      </View>
+      <View
+        location="top"
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "borderBottomWidth": 0,
+              "borderColor": "transparent",
+              "borderLeftWidth": 6,
+              "borderRightWidth": 6,
+              "borderTopColor": "#2E3032",
+              "borderTopWidth": 12,
+              "bottom": -10,
+              "height": 0,
+              "position": "absolute",
+              "width": 0,
+            },
+          ]
+        }
+        tailPosition="center"
+      />
+    </View>
+  </View>
+</View>
+`;
+
 exports[`Storyshots Atoms/Tooltip Offset 1`] = `
 <View
   style={
@@ -12163,13 +12715,14 @@ exports[`Storyshots Atoms/Tooltip Offset 1`] = `
       location="top"
       offset={10}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "bottom": 10,
-            "position": "absolute",
-          },
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "bottom": 10,
+          "justifyContent": "center",
+          "opacity": 1,
+          "position": "absolute",
+        }
       }
       tailPosition="center"
     >
@@ -12177,8 +12730,10 @@ exports[`Storyshots Atoms/Tooltip Offset 1`] = `
         style={
           Array [
             Object {
+              "alignItems": "center",
               "backgroundColor": "#2E3032",
               "borderRadius": 20,
+              "flexDirection": "row",
               "paddingBottom": 10,
               "paddingLeft": 10,
               "paddingRight": 10,
@@ -12303,13 +12858,14 @@ exports[`Storyshots Atoms/Tooltip Offset 1`] = `
       location="bottom"
       offset={20}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "position": "absolute",
-            "top": 20,
-          },
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "justifyContent": "center",
+          "opacity": 1,
+          "position": "absolute",
+          "top": 20,
+        }
       }
       tailPosition="center"
     >
@@ -12317,8 +12873,10 @@ exports[`Storyshots Atoms/Tooltip Offset 1`] = `
         style={
           Array [
             Object {
+              "alignItems": "center",
               "backgroundColor": "#2E3032",
               "borderRadius": 20,
+              "flexDirection": "row",
               "paddingBottom": 10,
               "paddingLeft": 10,
               "paddingRight": 10,
@@ -12397,6 +12955,7 @@ exports[`Storyshots Atoms/Tooltip Playground 1`] = `
       accessible={true}
       collapsable={false}
       focusable={true}
+      inline={true}
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -12417,7 +12976,6 @@ exports[`Storyshots Atoms/Tooltip Playground 1`] = `
             "paddingLeft": 24,
             "paddingRight": 24,
             "paddingTop": 14,
-            "width": "100%",
           },
           Object {
             "backgroundColor": "#EEF2F6",
@@ -12464,13 +13022,14 @@ exports[`Storyshots Atoms/Tooltip Playground 1`] = `
       location="bottom"
       offset={10}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "position": "absolute",
-            "top": 10,
-          },
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "justifyContent": "center",
+          "opacity": 1,
+          "position": "absolute",
+          "top": 10,
+        }
       }
       tailPosition="center"
     >
@@ -12478,8 +13037,10 @@ exports[`Storyshots Atoms/Tooltip Playground 1`] = `
         style={
           Array [
             Object {
+              "alignItems": "center",
               "backgroundColor": "#2E3032",
               "borderRadius": 20,
+              "flexDirection": "row",
               "paddingBottom": 10,
               "paddingLeft": 10,
               "paddingRight": 10,
@@ -12625,13 +13186,14 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
       location="top"
       offset={10}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "bottom": 10,
-            "position": "absolute",
-          },
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "bottom": 10,
+          "justifyContent": "center",
+          "opacity": 1,
+          "position": "absolute",
+        }
       }
       tailPosition="center"
     >
@@ -12639,8 +13201,10 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
         style={
           Array [
             Object {
+              "alignItems": "center",
               "backgroundColor": "#2E3032",
               "borderRadius": 20,
+              "flexDirection": "row",
               "paddingBottom": 10,
               "paddingLeft": 10,
               "paddingRight": 10,
@@ -12765,14 +13329,15 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
       location="right"
       offset={10}
       style={
-        Array [
-          Object {
-            "height": 0,
-            "justifyContent": "center",
-            "left": 10,
-            "position": "absolute",
-          },
-        ]
+        Object {
+          "alignItems": "flex-start",
+          "justifyContent": "center",
+          "left": 10,
+          "opacity": 1,
+          "position": "absolute",
+          "top": -0,
+          "width": 400,
+        }
       }
       tailPosition="center"
     >
@@ -12780,8 +13345,10 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
         style={
           Array [
             Object {
+              "alignItems": "center",
               "backgroundColor": "#2E3032",
               "borderRadius": 20,
+              "flexDirection": "row",
               "paddingBottom": 10,
               "paddingLeft": 10,
               "paddingRight": 10,
@@ -12918,14 +13485,15 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
       location="left"
       offset={10}
       style={
-        Array [
-          Object {
-            "height": 0,
-            "justifyContent": "center",
-            "position": "absolute",
-            "right": 10,
-          },
-        ]
+        Object {
+          "alignItems": "flex-end",
+          "justifyContent": "center",
+          "opacity": 1,
+          "position": "absolute",
+          "right": 10,
+          "top": -0,
+          "width": 400,
+        }
       }
       tailPosition="center"
     >
@@ -12933,8 +13501,10 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
         style={
           Array [
             Object {
+              "alignItems": "center",
               "backgroundColor": "#2E3032",
               "borderRadius": 20,
+              "flexDirection": "row",
               "paddingBottom": 10,
               "paddingLeft": 10,
               "paddingRight": 10,
@@ -13071,13 +13641,14 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
       location="bottom"
       offset={10}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "position": "absolute",
-            "top": 10,
-          },
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "justifyContent": "center",
+          "opacity": 1,
+          "position": "absolute",
+          "top": 10,
+        }
       }
       tailPosition="center"
     >
@@ -13085,8 +13656,10 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
         style={
           Array [
             Object {
+              "alignItems": "center",
               "backgroundColor": "#2E3032",
               "borderRadius": 20,
+              "flexDirection": "row",
               "paddingBottom": 10,
               "paddingLeft": 10,
               "paddingRight": 10,
@@ -13241,13 +13814,14 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
         location="top"
         offset={10}
         style={
-          Array [
-            Object {
-              "alignSelf": "center",
-              "bottom": 10,
-              "position": "absolute",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "bottom": 10,
+            "justifyContent": "center",
+            "opacity": 1,
+            "position": "absolute",
+          }
         }
         tailPosition="left"
       >
@@ -13255,8 +13829,10 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           style={
             Array [
               Object {
+                "alignItems": "center",
                 "backgroundColor": "#2E3032",
                 "borderRadius": 20,
+                "flexDirection": "row",
                 "paddingBottom": 10,
                 "paddingLeft": 10,
                 "paddingRight": 10,
@@ -13381,13 +13957,14 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
         location="top"
         offset={10}
         style={
-          Array [
-            Object {
-              "alignSelf": "center",
-              "bottom": 10,
-              "position": "absolute",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "bottom": 10,
+            "justifyContent": "center",
+            "opacity": 1,
+            "position": "absolute",
+          }
         }
         tailPosition="center"
       >
@@ -13395,8 +13972,10 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           style={
             Array [
               Object {
+                "alignItems": "center",
                 "backgroundColor": "#2E3032",
                 "borderRadius": 20,
+                "flexDirection": "row",
                 "paddingBottom": 10,
                 "paddingLeft": 10,
                 "paddingRight": 10,
@@ -13521,13 +14100,14 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
         location="top"
         offset={10}
         style={
-          Array [
-            Object {
-              "alignSelf": "center",
-              "bottom": 10,
-              "position": "absolute",
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "bottom": 10,
+            "justifyContent": "center",
+            "opacity": 1,
+            "position": "absolute",
+          }
         }
         tailPosition="right"
       >
@@ -13535,8 +14115,10 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           style={
             Array [
               Object {
+                "alignItems": "center",
                 "backgroundColor": "#2E3032",
                 "borderRadius": 20,
+                "flexDirection": "row",
                 "paddingBottom": 10,
                 "paddingLeft": 10,
                 "paddingRight": 10,
@@ -13671,13 +14253,14 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
         location="bottom"
         offset={10}
         style={
-          Array [
-            Object {
-              "alignSelf": "center",
-              "position": "absolute",
-              "top": 10,
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "justifyContent": "center",
+            "opacity": 1,
+            "position": "absolute",
+            "top": 10,
+          }
         }
         tailPosition="left"
       >
@@ -13685,8 +14268,10 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           style={
             Array [
               Object {
+                "alignItems": "center",
                 "backgroundColor": "#2E3032",
                 "borderRadius": 20,
+                "flexDirection": "row",
                 "paddingBottom": 10,
                 "paddingLeft": 10,
                 "paddingRight": 10,
@@ -13811,13 +14396,14 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
         location="bottom"
         offset={10}
         style={
-          Array [
-            Object {
-              "alignSelf": "center",
-              "position": "absolute",
-              "top": 10,
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "justifyContent": "center",
+            "opacity": 1,
+            "position": "absolute",
+            "top": 10,
+          }
         }
         tailPosition="center"
       >
@@ -13825,8 +14411,10 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           style={
             Array [
               Object {
+                "alignItems": "center",
                 "backgroundColor": "#2E3032",
                 "borderRadius": 20,
+                "flexDirection": "row",
                 "paddingBottom": 10,
                 "paddingLeft": 10,
                 "paddingRight": 10,
@@ -13951,13 +14539,14 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
         location="bottom"
         offset={10}
         style={
-          Array [
-            Object {
-              "alignSelf": "center",
-              "position": "absolute",
-              "top": 10,
-            },
-          ]
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "justifyContent": "center",
+            "opacity": 1,
+            "position": "absolute",
+            "top": 10,
+          }
         }
         tailPosition="right"
       >
@@ -13965,8 +14554,10 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
           style={
             Array [
               Object {
+                "alignItems": "center",
                 "backgroundColor": "#2E3032",
                 "borderRadius": 20,
+                "flexDirection": "row",
                 "paddingBottom": 10,
                 "paddingLeft": 10,
                 "paddingRight": 10,
