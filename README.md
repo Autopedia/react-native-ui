@@ -19,6 +19,9 @@
     - [Button, Icon, Typography](https://docs.google.com/document/d/10oiqZ-lLql5v4gNO-X3vF-aue9uDXUeeR9nrgUnOLfw/edit#heading=h.bqfs6i8j7ud5)
     - [TextInput](https://docs.google.com/document/d/1YNn6NmqP2v-MbngT72wdEpkwSpAhukDiRIa2G6kQtx4/edit#)
   - 사용하지 않는 컴포넌트 제거
+- `v1.2.1` : 2021.07.28
+  - import, export 구조 정리
+  - 코드 리팩터링
 
 ---
 
