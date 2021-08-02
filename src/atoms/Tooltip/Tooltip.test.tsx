@@ -31,7 +31,7 @@ describe('[Tooltip] Unit Test', () => {
     );
     wrapper.simulate('layout', mockLayoutEvent);
 
-    const container = wrapper.find('Styled(View)').at(1);
+    const container = wrapper.find('Tooltip');
     const props = container.props() as STooltipProps;
 
     expect(props.layoutHeight).toEqual(TEST_SIZE);

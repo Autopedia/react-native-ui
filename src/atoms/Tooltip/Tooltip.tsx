@@ -140,6 +140,8 @@ const STooltip = styled(Animated.View)<STooltipProps>`
   }}
 `;
 
+STooltip.displayName = 'Tooltip';
+
 const SContent = styled.View`
   flex-direction: row;
   align-items: center;
