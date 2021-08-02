@@ -1,5 +1,11 @@
 import React from 'react';
-import { LayoutChangeEvent, StyleProp, ViewStyle } from 'react-native';
+import {
+  Animated,
+  Easing,
+  LayoutChangeEvent,
+  StyleProp,
+  ViewStyle,
+} from 'react-native';
 import styled from 'styled-components/native';
 
 import { grayscaleColors } from '../../styles/grayscale-colors';
@@ -10,6 +16,8 @@ type TooltipProps = {
   location?: 'top' | 'right' | 'bottom' | 'left';
   tailPosition?: 'left' | 'center' | 'right';
   offset?: number;
+  autoHide?: boolean;
+  duration?: number;
   style?: StyleProp<ViewStyle>;
 };
 
@@ -18,6 +26,8 @@ export const Tooltip: React.FC<TooltipProps> = ({
   location = 'bottom',
   tailPosition = 'center',
   offset = 10,
+  autoHide,
+  duration = 4000,
   style,
   children,
 }) => {
@@ -28,9 +38,20 @@ export const Tooltip: React.FC<TooltipProps> = ({
     },
   );
 
+  const tooltipAnimValue = React.useRef(new Animated.Value(0)).current;
+
   const tailProps: TailProps = {
     location,
     tailPosition,
+  };
+
+  const hideTooltip = () => {
+    Animated.timing(tooltipAnimValue, {
+      toValue: 0,
+      duration,
+      easing: Easing.inOut(Easing.quad),
+      useNativeDriver: false,
+    }).start();
   };
 
   const onLayout = (e: LayoutChangeEvent) => {
@@ -39,6 +60,12 @@ export const Tooltip: React.FC<TooltipProps> = ({
     } = e;
     setLayout(layout);
   };
+
+  React.useEffect(() => {
+    if (autoHide) {
+      hideTooltip();
+    }
+  }, []);
 
   return (
     <SContainer onLayout={onLayout}>
@@ -49,7 +76,7 @@ export const Tooltip: React.FC<TooltipProps> = ({
         offset={offset}
         layoutHeight={layout.height}
         layoutWidth={layout.width}
-        style={style}
+        style={[style, { opacity: autoHide ? tooltipAnimValue : 1 }]}
       >
         <SContent>
           <SMessage>{message}</SMessage>
@@ -77,31 +104,36 @@ const SContainer = styled.View`
   position: relative;
 `;
 
-const STooltip = styled.View<STooltipProps>`
+const STooltip = styled(Animated.View)<STooltipProps>`
   position: absolute;
+  justify-content: center;
 
   ${props => {
     switch (props.location) {
       case 'top':
         return `
           align-self: center;
+          align-items: center;
           bottom: ${props.layoutHeight + props.offset}px;
         `;
       case 'right':
         return `
-          height: ${props.layoutHeight}px;
-          justify-content: center;
+          align-items: flex-start;
+          width: 400px;
+          top: -${props.layoutHeight / 2}px;
           left: ${props.layoutWidth + props.offset}px;
         `;
       case 'bottom':
         return `
           align-self: center;
+          align-items: center;
           top: ${props.layoutHeight + props.offset}px;
         `;
       case 'left':
         return `  
-          height: ${props.layoutHeight}px;
-          justify-content: center;
+          align-items: flex-end;
+          width: 400px;
+          top: -${props.layoutHeight / 2}px;
           right: ${props.layoutWidth + props.offset}px;
         `;
     }
@@ -109,6 +141,8 @@ const STooltip = styled.View<STooltipProps>`
 `;
 
 const SContent = styled.View`
+  flex-direction: row;
+  align-items: center;
   padding: 10px;
   background-color: ${grayscaleColors.GRAY_800};
   border-radius: 20px;
