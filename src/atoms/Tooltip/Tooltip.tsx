@@ -46,12 +46,15 @@ export const Tooltip: React.FC<TooltipProps> = ({
   };
 
   const hideTooltip = () => {
-    Animated.timing(tooltipAnimValue, {
-      toValue: 0,
-      duration,
-      easing: Easing.inOut(Easing.quad),
-      useNativeDriver: false,
-    }).start();
+    Animated.sequence([
+      Animated.delay(duration),
+      Animated.timing(tooltipAnimValue, {
+        toValue: 0,
+        duration: 1000,
+        easing: Easing.inOut(Easing.quad),
+        useNativeDriver: false,
+      }),
+    ]).start();
   };
 
   const onLayout = (e: LayoutChangeEvent) => {
