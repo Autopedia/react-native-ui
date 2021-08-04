@@ -12087,10 +12087,13 @@ exports[`Storyshots Atoms/Tooltip AutoHide 1`] = `
     style={
       Array [
         Object {
+          "alignItems": "center",
+          "flexDirection": "column",
           "position": "relative",
         },
       ]
     }
+    vertical={true}
   >
     <View
       accessible={true}
@@ -12165,10 +12168,9 @@ exports[`Storyshots Atoms/Tooltip AutoHide 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "alignSelf": "center",
           "bottom": 10,
           "justifyContent": "center",
-          "opacity": 0,
+          "opacity": 1,
           "position": "absolute",
         }
       }
@@ -12251,10 +12253,13 @@ exports[`Storyshots Atoms/Tooltip Children 1`] = `
     style={
       Array [
         Object {
+          "alignItems": "center",
+          "flexDirection": "column",
           "position": "relative",
         },
       ]
     }
+    vertical={true}
   >
     <Text
       size={1}
@@ -12281,7 +12286,6 @@ exports[`Storyshots Atoms/Tooltip Children 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "alignSelf": "center",
           "bottom": 10,
           "justifyContent": "center",
           "opacity": 1,
@@ -12346,10 +12350,13 @@ exports[`Storyshots Atoms/Tooltip Children 1`] = `
     style={
       Array [
         Object {
+          "alignItems": "center",
+          "flexDirection": "row",
           "position": "relative",
         },
       ]
     }
+    vertical={false}
   >
     <Image
       source={
@@ -12380,8 +12387,6 @@ exports[`Storyshots Atoms/Tooltip Children 1`] = `
           "opacity": 1,
           "position": "absolute",
           "right": 10,
-          "top": -0,
-          "width": 400,
         }
       }
       tailPosition="center"
@@ -12475,10 +12480,13 @@ exports[`Storyshots Atoms/Tooltip Message 1`] = `
     style={
       Array [
         Object {
+          "alignItems": "center",
+          "flexDirection": "column",
           "position": "relative",
         },
       ]
     }
+    vertical={true}
   >
     <View
       accessible={true}
@@ -12553,7 +12561,6 @@ exports[`Storyshots Atoms/Tooltip Message 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "alignSelf": "center",
           "bottom": 10,
           "justifyContent": "center",
           "opacity": 1,
@@ -12639,10 +12646,13 @@ exports[`Storyshots Atoms/Tooltip Offset 1`] = `
     style={
       Array [
         Object {
+          "alignItems": "center",
+          "flexDirection": "column",
           "position": "relative",
         },
       ]
     }
+    vertical={true}
   >
     <View
       accessible={true}
@@ -12717,7 +12727,6 @@ exports[`Storyshots Atoms/Tooltip Offset 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "alignSelf": "center",
           "bottom": 10,
           "justifyContent": "center",
           "opacity": 1,
@@ -12782,10 +12791,13 @@ exports[`Storyshots Atoms/Tooltip Offset 1`] = `
     style={
       Array [
         Object {
+          "alignItems": "center",
+          "flexDirection": "column",
           "position": "relative",
         },
       ]
     }
+    vertical={true}
   >
     <View
       accessible={true}
@@ -12860,7 +12872,6 @@ exports[`Storyshots Atoms/Tooltip Offset 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "alignSelf": "center",
           "justifyContent": "center",
           "opacity": 1,
           "position": "absolute",
@@ -12946,10 +12957,13 @@ exports[`Storyshots Atoms/Tooltip Playground 1`] = `
     style={
       Array [
         Object {
+          "alignItems": "center",
+          "flexDirection": "column",
           "position": "relative",
         },
       ]
     }
+    vertical={true}
   >
     <View
       accessible={true}
@@ -13024,7 +13038,6 @@ exports[`Storyshots Atoms/Tooltip Playground 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "alignSelf": "center",
           "justifyContent": "center",
           "opacity": 1,
           "position": "absolute",
@@ -13110,10 +13123,13 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
     style={
       Array [
         Object {
+          "alignItems": "center",
+          "flexDirection": "column",
           "position": "relative",
         },
       ]
     }
+    vertical={true}
   >
     <View
       accessible={true}
@@ -13188,7 +13204,6 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "alignSelf": "center",
           "bottom": 10,
           "justifyContent": "center",
           "opacity": 1,
@@ -13253,10 +13268,13 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
     style={
       Array [
         Object {
+          "alignItems": "center",
+          "flexDirection": "row",
           "position": "relative",
         },
       ]
     }
+    vertical={false}
   >
     <View
       accessible={true}
@@ -13335,8 +13353,6 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
           "left": 10,
           "opacity": 1,
           "position": "absolute",
-          "top": -0,
-          "width": 400,
         }
       }
       tailPosition="center"
@@ -13409,10 +13425,13 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
     style={
       Array [
         Object {
+          "alignItems": "center",
+          "flexDirection": "row",
           "position": "relative",
         },
       ]
     }
+    vertical={false}
   >
     <View
       accessible={true}
@@ -13491,8 +13510,6 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
           "opacity": 1,
           "position": "absolute",
           "right": 10,
-          "top": -0,
-          "width": 400,
         }
       }
       tailPosition="center"
@@ -13565,10 +13582,13 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
     style={
       Array [
         Object {
+          "alignItems": "center",
+          "flexDirection": "column",
           "position": "relative",
         },
       ]
     }
+    vertical={true}
   >
     <View
       accessible={true}
@@ -13643,7 +13663,6 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "alignSelf": "center",
           "justifyContent": "center",
           "opacity": 1,
           "position": "absolute",
@@ -13738,10 +13757,13 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
       style={
         Array [
           Object {
+            "alignItems": "center",
+            "flexDirection": "column",
             "position": "relative",
           },
         ]
       }
+      vertical={true}
     >
       <View
         accessible={true}
@@ -13816,7 +13838,6 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "alignSelf": "center",
             "bottom": 10,
             "justifyContent": "center",
             "opacity": 1,
@@ -13881,10 +13902,13 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
       style={
         Array [
           Object {
+            "alignItems": "center",
+            "flexDirection": "column",
             "position": "relative",
           },
         ]
       }
+      vertical={true}
     >
       <View
         accessible={true}
@@ -13959,7 +13983,6 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "alignSelf": "center",
             "bottom": 10,
             "justifyContent": "center",
             "opacity": 1,
@@ -14024,10 +14047,13 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
       style={
         Array [
           Object {
+            "alignItems": "center",
+            "flexDirection": "column",
             "position": "relative",
           },
         ]
       }
+      vertical={true}
     >
       <View
         accessible={true}
@@ -14102,7 +14128,6 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "alignSelf": "center",
             "bottom": 10,
             "justifyContent": "center",
             "opacity": 1,
@@ -14177,10 +14202,13 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
       style={
         Array [
           Object {
+            "alignItems": "center",
+            "flexDirection": "column",
             "position": "relative",
           },
         ]
       }
+      vertical={true}
     >
       <View
         accessible={true}
@@ -14255,7 +14283,6 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "alignSelf": "center",
             "justifyContent": "center",
             "opacity": 1,
             "position": "absolute",
@@ -14320,10 +14347,13 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
       style={
         Array [
           Object {
+            "alignItems": "center",
+            "flexDirection": "column",
             "position": "relative",
           },
         ]
       }
+      vertical={true}
     >
       <View
         accessible={true}
@@ -14398,7 +14428,6 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "alignSelf": "center",
             "justifyContent": "center",
             "opacity": 1,
             "position": "absolute",
@@ -14463,10 +14492,13 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
       style={
         Array [
           Object {
+            "alignItems": "center",
+            "flexDirection": "column",
             "position": "relative",
           },
         ]
       }
+      vertical={true}
     >
       <View
         accessible={true}
@@ -14541,7 +14573,6 @@ exports[`Storyshots Atoms/Tooltip TailPosition 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "alignSelf": "center",
             "justifyContent": "center",
             "opacity": 1,
             "position": "absolute",
