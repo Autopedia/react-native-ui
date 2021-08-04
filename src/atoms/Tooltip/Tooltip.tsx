@@ -38,7 +38,7 @@ export const Tooltip: React.FC<TooltipProps> = ({
     },
   );
 
-  const tooltipAnimValue = React.useRef(new Animated.Value(0)).current;
+  const tooltipAnimValue = React.useRef(new Animated.Value(1)).current;
 
   const tailProps: TailProps = {
     location,
@@ -46,12 +46,15 @@ export const Tooltip: React.FC<TooltipProps> = ({
   };
 
   const hideTooltip = () => {
-    Animated.timing(tooltipAnimValue, {
-      toValue: 0,
-      duration,
-      easing: Easing.inOut(Easing.quad),
-      useNativeDriver: false,
-    }).start();
+    Animated.sequence([
+      Animated.delay(duration),
+      Animated.timing(tooltipAnimValue, {
+        toValue: 0,
+        duration: 1000,
+        easing: Easing.inOut(Easing.quad),
+        useNativeDriver: false,
+      }),
+    ]).start();
   };
 
   const onLayout = (e: LayoutChangeEvent) => {
@@ -68,7 +71,10 @@ export const Tooltip: React.FC<TooltipProps> = ({
   }, []);
 
   return (
-    <SContainer onLayout={onLayout}>
+    <SContainer
+      onLayout={onLayout}
+      vertical={location === 'top' || location === 'bottom'}
+    >
       {children}
       <STooltip
         location={location}
@@ -100,8 +106,10 @@ export type STooltipProps = Omit<TooltipProps, 'message' | 'children'> & {
 
 type TailProps = Pick<TooltipProps, 'location' | 'tailPosition'>;
 
-const SContainer = styled.View`
+const SContainer = styled.View<{ vertical: boolean }>`
   position: relative;
+  flex-direction: ${props => (props.vertical ? 'column' : 'row')};
+  align-items: center;
 `;
 
 const STooltip = styled(Animated.View)<STooltipProps>`
@@ -112,28 +120,22 @@ const STooltip = styled(Animated.View)<STooltipProps>`
     switch (props.location) {
       case 'top':
         return `
-          align-self: center;
           align-items: center;
           bottom: ${props.layoutHeight + props.offset}px;
         `;
       case 'right':
         return `
           align-items: flex-start;
-          width: 400px;
-          top: -${props.layoutHeight / 2}px;
           left: ${props.layoutWidth + props.offset}px;
         `;
       case 'bottom':
         return `
-          align-self: center;
           align-items: center;
           top: ${props.layoutHeight + props.offset}px;
         `;
       case 'left':
         return `  
           align-items: flex-end;
-          width: 400px;
-          top: -${props.layoutHeight / 2}px;
           right: ${props.layoutWidth + props.offset}px;
         `;
     }
