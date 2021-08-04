@@ -22,6 +22,8 @@
 - `v1.2.1` : 2021.07.28
   - import, export 구조 정리
   - 코드 리팩터링
+- `v1.2.2` : 2021.08.04
+  - [Tooltip 업데이트](https://docs.google.com/document/d/1I83eZ3mjerENqyh6B91ohNUWS2H9F_Rl8e8ZRRVa5VQ/edit)
 
 ---
 
