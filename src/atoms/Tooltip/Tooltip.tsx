@@ -206,17 +206,21 @@ const SHorizontalTailContainer = styled.View<TailProps>`
 const SHorizontalTail = styled.View<TailProps>`
   width: 0;
   height: 0;
-  border-top-width: 6px;
-  border-bottom-width: 6px;
-  border-color: transparent;
+  border-right-width: 6px;
+  border-left-width: 6px;
+  border-color: tan;
   ${props =>
-    props.location === 'left'
-      ? `border-right-width: 0px;
-         border-left-width: 12px;
-         border-left-color: ${grayscaleColors.GRAY_800}
-      `
-      : `border-left-width: 0px;
-         border-right-width: 12px;
-         border-right-color: ${grayscaleColors.GRAY_800}
-      `};
+    props.location === 'right'
+      ? `
+      border-bottom-width: 12px;
+      border-top-width: 0px;
+      border-bottom-color: ${grayscaleColors.GRAY_800}
+  `
+      : `
+      border-top-width: 12px;
+      border-bottom-width: 0px;
+      border-top-color: ${grayscaleColors.GRAY_800}
+  `}
+
+  transform: rotate(-90deg);
 `;

@@ -9767,34 +9767,48 @@ exports[`Storyshots Atoms/TextInput Error 1`] = `
         ]
       }
     >
-      <TextInput
-        allowFontScaling={true}
-        defaultValue="No Error"
-        editable={true}
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          defaultValue="No Error"
+          editable={true}
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
   </View>
   <View
@@ -9845,6 +9859,7 @@ exports[`Storyshots Atoms/TextInput Error 1`] = `
             Object {
               "color": "#FA4339",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -9852,39 +9867,53 @@ exports[`Storyshots Atoms/TextInput Error 1`] = `
       >
         Only error
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        editable={true}
-        error={
-          Object {
-            "message": "Only error",
-            "type": "max",
-          }
-        }
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          editable={true}
+          error={
+            Object {
+              "message": "Only error",
+              "type": "max",
+            }
+          }
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
   </View>
   <View
@@ -9934,6 +9963,7 @@ exports[`Storyshots Atoms/TextInput Error 1`] = `
             Object {
               "color": "#FA4339",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -9941,40 +9971,54 @@ exports[`Storyshots Atoms/TextInput Error 1`] = `
       >
         Error with label
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        editable={true}
-        error={
-          Object {
-            "message": "Error with label",
-            "type": "max",
-          }
-        }
-        label="label"
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          editable={true}
+          error={
+            Object {
+              "message": "Error with label",
+              "type": "max",
+            }
+          }
+          label="label"
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -10041,6 +10085,7 @@ exports[`Storyshots Atoms/TextInput Label 1`] = `
             Object {
               "color": "#C6CACF",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -10048,35 +10093,49 @@ exports[`Storyshots Atoms/TextInput Label 1`] = `
       >
         Label
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        defaultValue="With label"
-        editable={true}
-        label="Label"
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          defaultValue="With label"
+          editable={true}
+          label="Label"
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
   </View>
   <View
@@ -10125,6 +10184,7 @@ exports[`Storyshots Atoms/TextInput Label 1`] = `
             Object {
               "color": "#FA4339",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -10132,40 +10192,54 @@ exports[`Storyshots Atoms/TextInput Label 1`] = `
       >
         Error
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        defaultValue="No label"
-        editable={true}
-        error={
-          Object {
-            "message": "Error",
-            "type": "max",
-          }
-        }
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          defaultValue="No label"
+          editable={true}
+          error={
+            Object {
+              "message": "Error",
+              "type": "max",
+            }
+          }
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -10232,6 +10306,7 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
             Object {
               "color": "#C6CACF",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -10239,35 +10314,49 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
       >
         Single line
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        defaultValue="Single Line"
-        editable={true}
-        label="Single line"
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          defaultValue="Single Line"
+          editable={true}
+          label="Single line"
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
   </View>
   <View
@@ -10311,6 +10400,7 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
             Object {
               "color": "#C6CACF",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -10318,38 +10408,52 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
       >
         Multi line
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        defaultValue="Multi Line Long Text Multi Line Long Text Multi Line Long Text Multi Line Long Text Multi Line Long Text "
-        editable={true}
-        label="Multi line"
-        multiline={true}
-        numberOfLines={3}
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 66,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-              "textAlignVertical": "top",
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          defaultValue="Multi Line Long Text Multi Line Long Text Multi Line Long Text Multi Line Long Text Multi Line Long Text "
+          editable={true}
+          label="Multi line"
+          multiline={true}
+          numberOfLines={3}
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 66,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "textAlignVertical": "top",
+              },
+              Object {},
+            ]
+          }
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
   </View>
   <View
@@ -10393,6 +10497,7 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
             Object {
               "color": "#C6CACF",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -10400,37 +10505,51 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
       >
         Multi line without numberOfLines prop
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        defaultValue="Multi Line Long Text Multi Line Long Text Multi Line Long Text Multi Line Long Text Multi Line Long Text "
-        editable={true}
-        label="Multi line without numberOfLines prop"
-        multiline={true}
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-              "textAlignVertical": "top",
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          defaultValue="Multi Line Long Text Multi Line Long Text Multi Line Long Text Multi Line Long Text Multi Line Long Text "
+          editable={true}
+          label="Multi line without numberOfLines prop"
+          multiline={true}
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "textAlignVertical": "top",
+              },
+              Object {},
+            ]
+          }
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -10495,6 +10614,7 @@ exports[`Storyshots Atoms/TextInput Placeholder 1`] = `
             Object {
               "color": "#C6CACF",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -10502,35 +10622,49 @@ exports[`Storyshots Atoms/TextInput Placeholder 1`] = `
       >
         Placeholder
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        editable={true}
-        label="Placeholder"
-        onChangeText={[Function]}
-        placeholder="Placeholder"
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          editable={true}
+          label="Placeholder"
+          onChangeText={[Function]}
+          placeholder="Placeholder"
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -10598,6 +10732,7 @@ exports[`Storyshots Atoms/TextInput Playground 1`] = `
             Object {
               "color": "#C6CACF",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -10605,40 +10740,54 @@ exports[`Storyshots Atoms/TextInput Playground 1`] = `
       >
         Label
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        defaultValue="Text Input"
-        disabled={false}
-        editable={true}
-        label="Label"
-        multiline={false}
-        numberOfLines={3}
-        onChangeText={[Function]}
-        placeholder="placeholder"
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        suffix={false}
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          defaultValue="Text Input"
+          disabled={false}
+          editable={true}
+          label="Label"
+          multiline={false}
+          numberOfLines={3}
+          onChangeText={[Function]}
+          placeholder="placeholder"
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          suffix={false}
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -10705,6 +10854,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
             Object {
               "color": "#C6CACF",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -10712,35 +10862,49 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
       >
         Default
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        defaultValue="Example Text"
-        editable={true}
-        label="Default"
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          defaultValue="Example Text"
+          editable={true}
+          label="Default"
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
   </View>
   <View
@@ -10787,6 +10951,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
             Object {
               "color": "#C6CACF",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -10794,82 +10959,94 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
       >
         SecureTextEntry
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        defaultValue="Example Text"
-        editable={true}
-        label="SecureTextEntry"
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={true}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
-      <View
-        accessible={true}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "marginBottom": -4,
-            "marginLeft": -4,
-            "marginRight": -4,
-            "marginTop": -4,
-            "opacity": 1,
-            "paddingBottom": 4,
-            "paddingLeft": 4,
-            "paddingRight": 4,
-            "paddingTop": 4,
-            "position": "absolute",
-            "right": 8,
-          }
-        }
       >
-        <Image
-          disabled={false}
-          source={
-            Object {
-              "testUri": "../../../src/assets/icons/eye/eye-opened.png",
-            }
-          }
+        <TextInput
+          allowFontScaling={true}
+          defaultValue="Example Text"
+          editable={true}
+          label="SecureTextEntry"
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={true}
           style={
             Array [
               Object {
-                "height": 24,
-                "resizeMode": "contain",
-                "width": 24,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
               },
               Object {},
             ]
           }
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
         />
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "marginBottom": -4,
+              "marginLeft": -4,
+              "marginRight": -4,
+              "marginTop": -4,
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
+            }
+          }
+        >
+          <Image
+            disabled={false}
+            source={
+              Object {
+                "testUri": "../../../src/assets/icons/eye/eye-opened.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 24,
+                  "resizeMode": "contain",
+                  "width": 24,
+                },
+                Object {},
+              ]
+            }
+          />
+        </View>
       </View>
     </View>
   </View>
@@ -10917,6 +11094,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
             Object {
               "color": "#C6CACF",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -10924,85 +11102,97 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
       >
         SecureTextEntry Disabled
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        defaultValue="Example Text"
-        disabled={true}
-        editable={false}
-        label="SecureTextEntry Disabled"
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={true}
+      <View
         style={
           Array [
             Object {
-              "color": "#8C8C8C",
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
-      <View
-        accessible={true}
-        focusable={false}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "marginBottom": -4,
-            "marginLeft": -4,
-            "marginRight": -4,
-            "marginTop": -4,
-            "opacity": 1,
-            "paddingBottom": 4,
-            "paddingLeft": 4,
-            "paddingRight": 4,
-            "paddingTop": 4,
-            "position": "absolute",
-            "right": 8,
-          }
-        }
       >
-        <Image
+        <TextInput
+          allowFontScaling={true}
+          defaultValue="Example Text"
           disabled={true}
-          source={
-            Object {
-              "testUri": "../../../src/assets/icons/eye/eye-opened.png",
-            }
-          }
+          editable={false}
+          label="SecureTextEntry Disabled"
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={true}
           style={
             Array [
               Object {
-                "height": 24,
-                "opacity": 0.5,
-                "resizeMode": "contain",
-                "width": 24,
+                "color": "#8C8C8C",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
               },
               Object {},
             ]
           }
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
         />
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "marginBottom": -4,
+              "marginLeft": -4,
+              "marginRight": -4,
+              "marginTop": -4,
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
+            }
+          }
+        >
+          <Image
+            disabled={true}
+            source={
+              Object {
+                "testUri": "../../../src/assets/icons/eye/eye-opened.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 24,
+                  "opacity": 0.5,
+                  "resizeMode": "contain",
+                  "width": 24,
+                },
+                Object {},
+              ]
+            }
+          />
+        </View>
       </View>
     </View>
   </View>
@@ -11063,34 +11253,48 @@ exports[`Storyshots Atoms/TextInput Success 1`] = `
         ]
       }
     >
-      <TextInput
-        allowFontScaling={true}
-        defaultValue="No success"
-        editable={true}
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          defaultValue="No success"
+          editable={true}
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
   </View>
   <View
@@ -11135,6 +11339,7 @@ exports[`Storyshots Atoms/TextInput Success 1`] = `
             Object {
               "color": "#48CF7C",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -11143,34 +11348,48 @@ exports[`Storyshots Atoms/TextInput Success 1`] = `
       >
         Only success
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        editable={true}
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        success="Only success"
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          editable={true}
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          success="Only success"
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
   </View>
   <View
@@ -11216,6 +11435,7 @@ exports[`Storyshots Atoms/TextInput Success 1`] = `
             Object {
               "color": "#48CF7C",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -11224,35 +11444,49 @@ exports[`Storyshots Atoms/TextInput Success 1`] = `
       >
         Success with label
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        editable={true}
-        label="label"
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        success="Success with label"
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          editable={true}
+          label="label"
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          success="Success with label"
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
   </View>
   <View
@@ -11303,6 +11537,7 @@ exports[`Storyshots Atoms/TextInput Success 1`] = `
             Object {
               "color": "#48CF7C",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -11311,40 +11546,54 @@ exports[`Storyshots Atoms/TextInput Success 1`] = `
       >
         Success with error
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        editable={true}
-        error={
-          Object {
-            "message": "error",
-            "type": "max",
-          }
-        }
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        success="Success with error"
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          editable={true}
+          error={
+            Object {
+              "message": "error",
+              "type": "max",
+            }
+          }
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          success="Success with error"
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
   </View>
   <View
@@ -11396,6 +11645,7 @@ exports[`Storyshots Atoms/TextInput Success 1`] = `
             Object {
               "color": "#48CF7C",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -11404,41 +11654,55 @@ exports[`Storyshots Atoms/TextInput Success 1`] = `
       >
         Success with label, error
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        editable={true}
-        error={
-          Object {
-            "message": "error",
-            "type": "max",
-          }
-        }
-        label="label"
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        success="Success with label, error"
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          editable={true}
+          error={
+            Object {
+              "message": "error",
+              "type": "max",
+            }
+          }
+          label="label"
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          success="Success with label, error"
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -11508,6 +11772,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
             Object {
               "color": "#C6CACF",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -11515,36 +11780,50 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
       >
         String Suffix
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        defaultValue="Text Input with Suffix"
-        editable={true}
-        label="String Suffix"
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        suffix="Suffix"
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          defaultValue="Text Input with Suffix"
+          editable={true}
+          label="String Suffix"
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          suffix="Suffix"
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
     <View
       style={
@@ -11623,6 +11902,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
             Object {
               "color": "#C6CACF",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -11630,36 +11910,50 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
       >
         ReactNode Suffix
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        defaultValue="Text Input with Suffix"
-        editable={true}
-        label="ReactNode Suffix"
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        suffix={<Checkbox />}
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          defaultValue="Text Input with Suffix"
+          editable={true}
+          label="ReactNode Suffix"
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          suffix={<Checkbox />}
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
     <View
       style={
@@ -11763,6 +12057,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
             Object {
               "color": "#C6CACF",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -11770,38 +12065,52 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
       >
         String Suffix Disabled
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        defaultValue="Text Input with Suffix"
-        disabled={true}
-        editable={false}
-        label="String Suffix Disabled"
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "color": "#8C8C8C",
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        suffix="Suffix"
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          defaultValue="Text Input with Suffix"
+          disabled={true}
+          editable={false}
+          label="String Suffix Disabled"
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "color": "#8C8C8C",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          suffix="Suffix"
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
     <View
       disabled={true}
@@ -11884,6 +12193,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
             Object {
               "color": "#C6CACF",
               "fontFamily": "NotoSansKR-Medium",
+              "lineHeight": 20,
               "marginBottom": 10,
             },
           ]
@@ -11891,38 +12201,52 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
       >
         ReactNode Suffix Disabled
       </Text>
-      <TextInput
-        allowFontScaling={true}
-        defaultValue="Text Input with Suffix"
-        disabled={true}
-        editable={false}
-        label="ReactNode Suffix Disabled"
-        onChangeText={[Function]}
-        placeholderTextColor="#C6CACF"
-        rejectResponderTermination={true}
-        secureTextEntry={false}
+      <View
         style={
           Array [
             Object {
-              "color": "#8C8C8C",
-              "fontSize": 14,
-              "height": 22,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "flexDirection": "row",
+              "width": "100%",
             },
-            Object {},
           ]
         }
-        suffix={<Checkbox />}
-        textAlignVertical="center"
-        underlineColorAndroid="transparent"
-      />
+      >
+        <TextInput
+          allowFontScaling={true}
+          defaultValue="Text Input with Suffix"
+          disabled={true}
+          editable={false}
+          label="ReactNode Suffix Disabled"
+          onChangeText={[Function]}
+          placeholderTextColor="#C6CACF"
+          rejectResponderTermination={true}
+          secureTextEntry={false}
+          style={
+            Array [
+              Object {
+                "color": "#8C8C8C",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 14,
+                "height": 22,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+              Object {},
+            ]
+          }
+          suffix={<Checkbox />}
+          textAlignVertical="center"
+          underlineColorAndroid="transparent"
+        />
+      </View>
     </View>
     <View
       disabled={true}
@@ -12438,13 +12762,18 @@ exports[`Storyshots Atoms/Tooltip Children 1`] = `
           style={
             Array [
               Object {
-                "borderBottomWidth": 6,
-                "borderColor": "transparent",
-                "borderLeftColor": "#2E3032",
-                "borderLeftWidth": 12,
-                "borderRightWidth": 0,
-                "borderTopWidth": 6,
+                "borderBottomWidth": 0,
+                "borderColor": "tan",
+                "borderLeftWidth": 6,
+                "borderRightWidth": 6,
+                "borderTopColor": "#2E3032",
+                "borderTopWidth": 12,
                 "height": 0,
+                "transform": Array [
+                  Object {
+                    "rotate": "-90deg",
+                  },
+                ],
                 "width": 0,
               },
             ]
@@ -13135,6 +13464,7 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
       accessible={true}
       collapsable={false}
       focusable={true}
+      inline={true}
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -13155,7 +13485,6 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
             "paddingLeft": 24,
             "paddingRight": 24,
             "paddingTop": 14,
-            "width": "100%",
           },
           Object {
             "backgroundColor": "#EEF2F6",
@@ -13280,6 +13609,7 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
       accessible={true}
       collapsable={false}
       focusable={true}
+      inline={true}
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -13300,7 +13630,6 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
             "paddingLeft": 24,
             "paddingRight": 24,
             "paddingTop": 14,
-            "width": "100%",
           },
           Object {
             "backgroundColor": "#EEF2F6",
@@ -13404,13 +13733,18 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
           style={
             Array [
               Object {
-                "borderBottomWidth": 6,
-                "borderColor": "transparent",
-                "borderLeftWidth": 0,
-                "borderRightColor": "#2E3032",
-                "borderRightWidth": 12,
-                "borderTopWidth": 6,
+                "borderBottomColor": "#2E3032",
+                "borderBottomWidth": 12,
+                "borderColor": "tan",
+                "borderLeftWidth": 6,
+                "borderRightWidth": 6,
+                "borderTopWidth": 0,
                 "height": 0,
+                "transform": Array [
+                  Object {
+                    "rotate": "-90deg",
+                  },
+                ],
                 "width": 0,
               },
             ]
@@ -13437,6 +13771,7 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
       accessible={true}
       collapsable={false}
       focusable={true}
+      inline={true}
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -13457,7 +13792,6 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
             "paddingLeft": 24,
             "paddingRight": 24,
             "paddingTop": 14,
-            "width": "100%",
           },
           Object {
             "backgroundColor": "#EEF2F6",
@@ -13561,13 +13895,18 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
           style={
             Array [
               Object {
-                "borderBottomWidth": 6,
-                "borderColor": "transparent",
-                "borderLeftColor": "#2E3032",
-                "borderLeftWidth": 12,
-                "borderRightWidth": 0,
-                "borderTopWidth": 6,
+                "borderBottomWidth": 0,
+                "borderColor": "tan",
+                "borderLeftWidth": 6,
+                "borderRightWidth": 6,
+                "borderTopColor": "#2E3032",
+                "borderTopWidth": 12,
                 "height": 0,
+                "transform": Array [
+                  Object {
+                    "rotate": "-90deg",
+                  },
+                ],
                 "width": 0,
               },
             ]
@@ -13594,6 +13933,7 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
       accessible={true}
       collapsable={false}
       focusable={true}
+      inline={true}
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -13614,7 +13954,6 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
             "paddingLeft": 24,
             "paddingRight": 24,
             "paddingTop": 14,
-            "width": "100%",
           },
           Object {
             "backgroundColor": "#EEF2F6",
@@ -16954,48 +17293,49 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
           ]
         }
       >
-        <TextInput
-          allowFontScaling={true}
-          editable={true}
-          onChangeText={[Function]}
-          placeholderTextColor="#C6CACF"
-          rejectResponderTermination={true}
-          secureTextEntry={false}
+        <View
           style={
             Array [
               Object {
-                "fontSize": 14,
-                "height": 22,
-                "marginBottom": 0,
-                "marginLeft": 0,
-                "marginRight": 0,
-                "marginTop": 0,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
+                "flexDirection": "row",
+                "width": "100%",
               },
-              Object {},
             ]
           }
-          textAlignVertical="center"
-          underlineColorAndroid="transparent"
-        />
+        >
+          <TextInput
+            allowFontScaling={true}
+            editable={true}
+            onChangeText={[Function]}
+            placeholderTextColor="#C6CACF"
+            rejectResponderTermination={true}
+            secureTextEntry={false}
+            style={
+              Array [
+                Object {
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "fontSize": 14,
+                  "height": 22,
+                  "marginBottom": 0,
+                  "marginLeft": 0,
+                  "marginRight": 0,
+                  "marginTop": 0,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+                Object {},
+              ]
+            }
+            textAlignVertical="center"
+            underlineColorAndroid="transparent"
+          />
+        </View>
       </View>
     </View>
-    <View
-      style={
-        Object {
-          "marginTop": 1,
-          "transform": Array [
-            Object {
-              "translateY": -13,
-            },
-          ],
-          "zIndex": -1,
-        }
-      }
-    />
   </View>
   <View
     style={
@@ -17187,19 +17527,6 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
         </Text>
       </View>
     </View>
-    <View
-      style={
-        Object {
-          "marginTop": 1,
-          "transform": Array [
-            Object {
-              "translateY": -13,
-            },
-          ],
-          "zIndex": -1,
-        }
-      }
-    />
   </View>
   <View
     style={
@@ -17276,19 +17603,6 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
         }
       />
     </View>
-    <View
-      style={
-        Object {
-          "marginTop": 1,
-          "transform": Array [
-            Object {
-              "translateY": -13,
-            },
-          ],
-          "zIndex": -1,
-        }
-      }
-    />
   </View>
 </View>
 `;
@@ -17368,39 +17682,6 @@ exports[`Storyshots Molecules/FormItem Error 1`] = `
         FormItem Children
       </Text>
     </View>
-    <View
-      style={
-        Object {
-          "marginTop": 1,
-          "transform": Array [
-            Object {
-              "translateY": -13,
-            },
-          ],
-          "zIndex": -1,
-        }
-      }
-    >
-      <Text
-        color="error"
-        size={2}
-        style={
-          Array [
-            Object {
-              "color": "transparent",
-              "flexShrink": 1,
-              "flexWrap": "wrap",
-              "fontFamily": "NotoSansKR-Regular",
-              "fontSize": 14,
-              "lineHeight": 22,
-            },
-            Object {},
-          ]
-        }
-      >
-        Error message
-      </Text>
-    </View>
   </View>
   <View
     style={
@@ -17459,19 +17740,6 @@ exports[`Storyshots Molecules/FormItem Error 1`] = `
         FormItem Children
       </Text>
     </View>
-    <View
-      style={
-        Object {
-          "marginTop": 1,
-          "transform": Array [
-            Object {
-              "translateY": -13,
-            },
-          ],
-          "zIndex": -1,
-        }
-      }
-    />
   </View>
 </View>
 `;
@@ -17551,19 +17819,6 @@ exports[`Storyshots Molecules/FormItem Footer 1`] = `
         FormItem Children
       </Text>
     </View>
-    <View
-      style={
-        Object {
-          "marginTop": 1,
-          "transform": Array [
-            Object {
-              "translateY": -13,
-            },
-          ],
-          "zIndex": -1,
-        }
-      }
-    />
   </View>
   <View
     style={
@@ -17622,19 +17877,6 @@ exports[`Storyshots Molecules/FormItem Footer 1`] = `
         FormItem Children
       </Text>
     </View>
-    <View
-      style={
-        Object {
-          "marginTop": 1,
-          "transform": Array [
-            Object {
-              "translateY": -13,
-            },
-          ],
-          "zIndex": -1,
-        }
-      }
-    />
     <View
       style={
         Array [
@@ -17723,19 +17965,6 @@ exports[`Storyshots Molecules/FormItem Footer 1`] = `
         FormItem Children
       </Text>
     </View>
-    <View
-      style={
-        Object {
-          "marginTop": 1,
-          "transform": Array [
-            Object {
-              "translateY": -13,
-            },
-          ],
-          "zIndex": -1,
-        }
-      }
-    />
     <View
       style={
         Array [
@@ -17844,19 +18073,6 @@ exports[`Storyshots Molecules/FormItem Label 1`] = `
         FormItem Children
       </Text>
     </View>
-    <View
-      style={
-        Object {
-          "marginTop": 1,
-          "transform": Array [
-            Object {
-              "translateY": -13,
-            },
-          ],
-          "zIndex": -1,
-        }
-      }
-    />
   </View>
 </View>
 `;
@@ -17949,19 +18165,6 @@ exports[`Storyshots Molecules/FormItem Rules 1`] = `
         FormItem Children
       </Text>
     </View>
-    <View
-      style={
-        Object {
-          "marginTop": 1,
-          "transform": Array [
-            Object {
-              "translateY": -13,
-            },
-          ],
-          "zIndex": -1,
-        }
-      }
-    />
   </View>
   <View
     style={
@@ -18020,19 +18223,6 @@ exports[`Storyshots Molecules/FormItem Rules 1`] = `
         FormItem Children
       </Text>
     </View>
-    <View
-      style={
-        Object {
-          "marginTop": 1,
-          "transform": Array [
-            Object {
-              "translateY": -13,
-            },
-          ],
-          "zIndex": -1,
-        }
-      }
-    />
   </View>
 </View>
 `;
@@ -20217,50 +20407,51 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             ]
           }
         >
-          <TextInput
-            allowFontScaling={true}
-            defaultValue="test@drcha.com"
-            editable={true}
-            onChangeText={[Function]}
-            placeholder="example@drcha.com"
-            placeholderTextColor="#C6CACF"
-            rejectResponderTermination={true}
-            secureTextEntry={false}
+          <View
             style={
               Array [
                 Object {
-                  "fontSize": 14,
-                  "height": 22,
-                  "marginBottom": 0,
-                  "marginLeft": 0,
-                  "marginRight": 0,
-                  "marginTop": 0,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
+                  "flexDirection": "row",
+                  "width": "100%",
                 },
-                Object {},
               ]
             }
-            textAlignVertical="center"
-            underlineColorAndroid="transparent"
-          />
+          >
+            <TextInput
+              allowFontScaling={true}
+              defaultValue="test@drcha.com"
+              editable={true}
+              onChangeText={[Function]}
+              placeholder="example@drcha.com"
+              placeholderTextColor="#C6CACF"
+              rejectResponderTermination={true}
+              secureTextEntry={false}
+              style={
+                Array [
+                  Object {
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                    "fontSize": 14,
+                    "height": 22,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "marginTop": 0,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                  },
+                  Object {},
+                ]
+              }
+              textAlignVertical="center"
+              underlineColorAndroid="transparent"
+            />
+          </View>
         </View>
       </View>
-      <View
-        style={
-          Object {
-            "marginTop": 1,
-            "transform": Array [
-              Object {
-                "translateY": -13,
-              },
-            ],
-            "zIndex": -1,
-          }
-        }
-      />
     </View>
     <View
       first={false}
@@ -20349,98 +20540,97 @@ exports[`Storyshots Organisms/Form Default 1`] = `
             ]
           }
         >
-          <TextInput
-            allowFontScaling={true}
-            defaultValue="1234"
-            editable={true}
-            onChangeText={[Function]}
-            placeholder="****"
-            placeholderTextColor="#C6CACF"
-            rejectResponderTermination={true}
-            secureTextEntry={true}
+          <View
             style={
               Array [
                 Object {
-                  "fontSize": 14,
-                  "height": 22,
-                  "marginBottom": 0,
-                  "marginLeft": 0,
-                  "marginRight": 0,
-                  "marginTop": 0,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
+                  "flexDirection": "row",
+                  "width": "100%",
                 },
-                Object {},
               ]
             }
-            textAlignVertical="center"
-            underlineColorAndroid="transparent"
-          />
-          <View
-            accessible={true}
-            focusable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "marginBottom": -4,
-                "marginLeft": -4,
-                "marginRight": -4,
-                "marginTop": -4,
-                "opacity": 1,
-                "paddingBottom": 4,
-                "paddingLeft": 4,
-                "paddingRight": 4,
-                "paddingTop": 4,
-                "position": "absolute",
-                "right": 8,
-              }
-            }
           >
-            <Image
-              disabled={false}
-              source={
-                Object {
-                  "testUri": "../../../src/assets/icons/eye/eye-opened.png",
-                }
-              }
+            <TextInput
+              allowFontScaling={true}
+              defaultValue="1234"
+              editable={true}
+              onChangeText={[Function]}
+              placeholder="****"
+              placeholderTextColor="#C6CACF"
+              rejectResponderTermination={true}
+              secureTextEntry={true}
               style={
                 Array [
                   Object {
-                    "height": 24,
-                    "resizeMode": "contain",
-                    "width": 24,
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                    "fontSize": 14,
+                    "height": 22,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "marginTop": 0,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
                   },
                   Object {},
                 ]
               }
+              textAlignVertical="center"
+              underlineColorAndroid="transparent"
             />
+            <View
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "marginBottom": -4,
+                  "marginLeft": -4,
+                  "marginRight": -4,
+                  "marginTop": -4,
+                  "opacity": 1,
+                  "paddingBottom": 4,
+                  "paddingLeft": 4,
+                  "paddingRight": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Image
+                disabled={false}
+                source={
+                  Object {
+                    "testUri": "../../../src/assets/icons/eye/eye-opened.png",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "height": 24,
+                      "resizeMode": "contain",
+                      "width": 24,
+                    },
+                    Object {},
+                  ]
+                }
+              />
+            </View>
           </View>
         </View>
       </View>
-      <View
-        style={
-          Object {
-            "marginTop": 1,
-            "transform": Array [
-              Object {
-                "translateY": -13,
-              },
-            ],
-            "zIndex": -1,
-          }
-        }
-      />
     </View>
     <View
       first={false}
@@ -20652,19 +20842,6 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           </Text>
         </View>
       </View>
-      <View
-        style={
-          Object {
-            "marginTop": 1,
-            "transform": Array [
-              Object {
-                "translateY": -13,
-              },
-            ],
-            "zIndex": -1,
-          }
-        }
-      />
     </View>
     <View
       first={false}
@@ -20756,19 +20933,6 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           }
         />
       </View>
-      <View
-        style={
-          Object {
-            "marginTop": 1,
-            "transform": Array [
-              Object {
-                "translateY": -13,
-              },
-            ],
-            "zIndex": -1,
-          }
-        }
-      />
     </View>
   </View>
 </View>
