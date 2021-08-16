@@ -79,16 +79,16 @@ storiesOf('Atoms/Tooltip', module)
     return (
       <>
         <Tooltip message="Top Tooltip" location="top">
-          <Button>Sample Button</Button>
+          <Button inline>Sample Button</Button>
         </Tooltip>
         <Tooltip message="Right Tooltip" location="right">
-          <Button>Sample Button</Button>
+          <Button inline>Sample Button</Button>
         </Tooltip>
         <Tooltip message="Left Tooltip" location="left">
-          <Button>Sample Button</Button>
+          <Button inline>Sample Button</Button>
         </Tooltip>
         <Tooltip message="Bottom Tooltip" location="bottom">
-          <Button>Sample Button</Button>
+          <Button inline>Sample Button</Button>
         </Tooltip>
       </>
     );
