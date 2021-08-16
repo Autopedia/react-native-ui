@@ -24,6 +24,8 @@
   - 코드 리팩터링
 - `v1.2.2` : 2021.08.04
   - [Tooltip 업데이트](https://docs.google.com/document/d/1I83eZ3mjerENqyh6B91ohNUWS2H9F_Rl8e8ZRRVa5VQ/edit)
+- `v1.2.3` : 2021.08.16
+  - [1차 QA 수정사항 반영](https://docs.google.com/document/d/1hmMIlYXe-M7M_q2eLDeJRA8iX2duu7KD-vI8jL3E14I/edit)
 
 ---
 
