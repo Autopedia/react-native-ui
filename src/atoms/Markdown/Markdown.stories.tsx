@@ -37,6 +37,22 @@ storiesOf('Atoms/Markdown', module)
       </>
     );
   })
+  .add('size', () => {
+    return (
+      <>
+        <Markdown selectable size="XXS">
+          Markdown Size XXS
+        </Markdown>
+        <Markdown selectable>default Markdown Size XS</Markdown>
+        <Markdown selectable size="S">
+          Markdown Size S
+        </Markdown>
+        <Markdown selectable size="M">
+          Markdown Size M
+        </Markdown>
+      </>
+    );
+  })
   .add('Selectable', () => {
     return (
       <>
