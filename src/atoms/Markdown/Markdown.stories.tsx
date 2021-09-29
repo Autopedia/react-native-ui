@@ -37,6 +37,22 @@ storiesOf('Atoms/Markdown', module)
       </>
     );
   })
+  .add('linkColor', () => {
+    return (
+      <>
+        <Markdown selectable>default https://doctor-cha.com/</Markdown>
+        <Markdown selectable linkColor="red">
+          red https://doctor-cha.com/
+        </Markdown>
+        <Markdown selectable linkColor="blue">
+          blue https://doctor-cha.com/
+        </Markdown>
+        <Markdown selectable linkColor="#E3E3E3">
+          #E3E3E3 https://doctor-cha.com/
+        </Markdown>
+      </>
+    );
+  })
   .add('size', () => {
     return (
       <>
