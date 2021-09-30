@@ -192,7 +192,7 @@ const SHeader = styled.Text<SHeaderProps>`
     } else if (props.error) {
       return `color: ${systemColors.ERROR}`;
     } else {
-      return `color: ${grayscaleColors.GRAY_400}`;
+      return `color: ${grayscaleColors.GRAY_600}`;
     }
   }}
 `;
