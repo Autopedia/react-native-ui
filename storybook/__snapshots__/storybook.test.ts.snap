@@ -6220,6 +6220,127 @@ exports[`Storyshots Atoms/Markdown TextColor 1`] = `
 </View>
 `;
 
+exports[`Storyshots Atoms/Markdown size 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#1F1F1F",
+        "fontSize": 12,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 12,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      Markdown Size XXS
+    </Text>
+  </Text>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#1F1F1F",
+        "fontSize": 14,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 14,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      default Markdown Size XS
+    </Text>
+  </Text>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#1F1F1F",
+        "fontSize": 16,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      Markdown Size S
+    </Text>
+  </Text>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#1F1F1F",
+        "fontSize": 20,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 20,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      Markdown Size M
+    </Text>
+  </Text>
+</View>
+`;
+
 exports[`Storyshots Atoms/Message/CardMessage Playground 1`] = `
 <View
   style={
@@ -10083,7 +10204,7 @@ exports[`Storyshots Atoms/TextInput Label 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -10304,7 +10425,7 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -10398,7 +10519,7 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -10495,7 +10616,7 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -10612,7 +10733,7 @@ exports[`Storyshots Atoms/TextInput Placeholder 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -10730,7 +10851,7 @@ exports[`Storyshots Atoms/TextInput Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -10852,7 +10973,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -10949,7 +11070,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -11092,7 +11213,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -11770,7 +11891,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -11900,7 +12021,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -12055,7 +12176,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -12191,7 +12312,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
