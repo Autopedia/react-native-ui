@@ -10083,7 +10083,7 @@ exports[`Storyshots Atoms/TextInput Label 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -10304,7 +10304,7 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -10398,7 +10398,7 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -10495,7 +10495,7 @@ exports[`Storyshots Atoms/TextInput Multiline 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -10612,7 +10612,7 @@ exports[`Storyshots Atoms/TextInput Placeholder 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -10730,7 +10730,7 @@ exports[`Storyshots Atoms/TextInput Playground 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -10852,7 +10852,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -10949,7 +10949,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -11092,7 +11092,7 @@ exports[`Storyshots Atoms/TextInput SecureTextEntry 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -11770,7 +11770,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -11900,7 +11900,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -12055,7 +12055,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
@@ -12191,7 +12191,7 @@ exports[`Storyshots Atoms/TextInput Suffix 1`] = `
         style={
           Array [
             Object {
-              "color": "#C6CACF",
+              "color": "#5F656A",
               "fontFamily": "NotoSansKR-Medium",
               "lineHeight": 20,
               "marginBottom": 10,
