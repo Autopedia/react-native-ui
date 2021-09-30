@@ -5904,7 +5904,7 @@ exports[`Storyshots Atoms/Markdown Pattern 1`] = `
             "lineHeight": 22,
           },
           Object {
-            "textDecorationLine": "underline",
+            "color": "#007AFF",
           },
         ]
       }
@@ -6017,7 +6017,7 @@ Markdown Normal
             "lineHeight": 22,
           },
           Object {
-            "textDecorationLine": "underline",
+            "color": "#007AFF",
           },
         ]
       }
@@ -6215,6 +6215,195 @@ exports[`Storyshots Atoms/Markdown TextColor 1`] = `
       }
     >
       #E3E3E3 Markdown
+    </Text>
+  </Text>
+</View>
+`;
+
+exports[`Storyshots Atoms/Markdown linkColor 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#1F1F1F",
+        "fontSize": 14,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 14,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      default 
+    </Text>
+    <Text
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 14,
+            "lineHeight": 22,
+          },
+          Object {
+            "color": "#007AFF",
+          },
+        ]
+      }
+    >
+      https://doctor-cha.com/
+    </Text>
+  </Text>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#1F1F1F",
+        "fontSize": 14,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 14,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      red 
+    </Text>
+    <Text
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 14,
+            "lineHeight": 22,
+          },
+          Object {
+            "color": "red",
+          },
+        ]
+      }
+    >
+      https://doctor-cha.com/
+    </Text>
+  </Text>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#1F1F1F",
+        "fontSize": 14,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 14,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      blue 
+    </Text>
+    <Text
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 14,
+            "lineHeight": 22,
+          },
+          Object {
+            "color": "blue",
+          },
+        ]
+      }
+    >
+      https://doctor-cha.com/
+    </Text>
+  </Text>
+  <Text
+    selectable={true}
+    style={
+      Object {
+        "color": "#1F1F1F",
+        "fontSize": 14,
+        "lineHeight": 22,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 14,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      #E3E3E3 
+    </Text>
+    <Text
+      onPress={[Function]}
+      style={
+        Array [
+          Object {
+            "color": "#1F1F1F",
+            "fontSize": 14,
+            "lineHeight": 22,
+          },
+          Object {
+            "color": "#E3E3E3",
+          },
+        ]
+      }
+    >
+      https://doctor-cha.com/
     </Text>
   </Text>
 </View>
