@@ -12,11 +12,12 @@ interface MarkdownProps {
   textColor?: string;
   selectable: boolean;
   children?: ReactNode;
+  size?: keyof typeof fonts.size;
 }
 
 export const Markdown: React.FC<MarkdownProps> = React.memo(
-  ({ children, textColor = colors.ON_BACKGROUND, selectable }) => {
-    const mdTextStyle = markdownTextStyle(textColor);
+  ({ children, textColor = colors.ON_BACKGROUND, size = 'XS', selectable }) => {
+    const mdTextStyle = markdownTextStyle(textColor, size);
     return (
       <ParsedText
         selectable={selectable}
@@ -45,11 +46,14 @@ export const Markdown: React.FC<MarkdownProps> = React.memo(
   },
 );
 
-const markdownTextStyle = (textColor: string) => {
+const markdownTextStyle = (
+  textColor: string,
+  size: keyof typeof fonts.size,
+) => {
   return StyleSheet.create({
     text: {
       color: textColor,
-      fontSize: fonts.size.XS,
+      fontSize: fonts.size[size],
       lineHeight: fonts.lineHeight.XS,
     },
     bold: {
