@@ -53,7 +53,6 @@ storiesOf('Atoms/SelectOption', module)
           selected={false}
           disabled
           label="Inline label disabled"
-          color="black"
           layout="inline"
           onPress={e => action('onPress')(e)}
         />
