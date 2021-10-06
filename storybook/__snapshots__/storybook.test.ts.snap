@@ -9599,6 +9599,7 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
         "borderWidth": 1,
         "flexDirection": "row",
         "justifyContent": "center",
+        "marginBottom": 4,
         "marginRight": 4,
         "opacity": 1,
         "paddingBottom": 10,
@@ -9644,6 +9645,7 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
         "borderWidth": 1,
         "flexDirection": "row",
         "justifyContent": "center",
+        "marginBottom": 4,
         "marginRight": 4,
         "opacity": 1,
         "paddingBottom": 10,
@@ -9691,6 +9693,7 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
         "borderWidth": 1,
         "flexDirection": "row",
         "justifyContent": "center",
+        "marginBottom": 4,
         "marginRight": 4,
         "opacity": 1,
         "paddingBottom": 10,
@@ -9701,7 +9704,6 @@ exports[`Storyshots Atoms/SelectOption InLine 1`] = `
     }
   >
     <Text
-      color="black"
       disabled={true}
       layout="inline"
       selected={false}
@@ -9759,6 +9761,7 @@ exports[`Storyshots Atoms/SelectOption Playground 1`] = `
         "borderWidth": 1,
         "flexDirection": "row",
         "justifyContent": "center",
+        "marginBottom": 4,
         "marginRight": 4,
         "opacity": 1,
         "paddingBottom": 10,
@@ -17707,11 +17710,12 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "borderColor": "rgba(0, 0, 0, 0.5)",
+            "borderColor": "#DFE3E9",
             "borderRadius": 20,
             "borderWidth": 1,
             "flexDirection": "row",
             "justifyContent": "center",
+            "marginBottom": 4,
             "marginRight": 4,
             "opacity": 1,
             "paddingBottom": 10,
@@ -17754,11 +17758,12 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "borderColor": "rgba(0, 0, 0, 0.5)",
+            "borderColor": "#DFE3E9",
             "borderRadius": 20,
             "borderWidth": 1,
             "flexDirection": "row",
             "justifyContent": "center",
+            "marginBottom": 4,
             "marginRight": 4,
             "opacity": 1,
             "paddingBottom": 10,
@@ -17801,11 +17806,12 @@ exports[`Storyshots Molecules/FormItem Children 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "borderColor": "rgba(0, 0, 0, 0.5)",
+            "borderColor": "#DFE3E9",
             "borderRadius": 20,
             "borderWidth": 1,
             "flexDirection": "row",
             "justifyContent": "center",
+            "marginBottom": 4,
             "marginRight": 4,
             "opacity": 1,
             "paddingBottom": 10,
@@ -19340,11 +19346,12 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
+          "marginBottom": 4,
           "marginRight": 4,
           "opacity": 1,
           "paddingBottom": 10,
@@ -19387,11 +19394,12 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
+          "marginBottom": 4,
           "marginRight": 4,
           "opacity": 1,
           "paddingBottom": 10,
@@ -19434,11 +19442,12 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
+          "marginBottom": 4,
           "marginRight": 4,
           "opacity": 1,
           "paddingBottom": 10,
@@ -19495,7 +19504,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -19543,7 +19552,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -19611,7 +19620,7 @@ exports[`Storyshots Molecules/Select Layout 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -19703,11 +19712,12 @@ exports[`Storyshots Molecules/Select Options 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
+          "marginBottom": 4,
           "marginRight": 4,
           "opacity": 1,
           "paddingBottom": 10,
@@ -19750,11 +19760,12 @@ exports[`Storyshots Molecules/Select Options 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
+          "marginBottom": 4,
           "marginRight": 4,
           "opacity": 1,
           "paddingBottom": 10,
@@ -19797,11 +19808,12 @@ exports[`Storyshots Molecules/Select Options 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
+          "marginBottom": 4,
           "marginRight": 4,
           "opacity": 1,
           "paddingBottom": 10,
@@ -19882,6 +19894,7 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
+          "marginBottom": 4,
           "marginRight": 4,
           "opacity": 1,
           "paddingBottom": 10,
@@ -19927,11 +19940,12 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
+          "marginBottom": 4,
           "marginRight": 4,
           "opacity": 1,
           "paddingBottom": 10,
@@ -19978,11 +19992,12 @@ exports[`Storyshots Molecules/Select Playground 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "flexDirection": "row",
           "justifyContent": "center",
+          "marginBottom": 4,
           "marginRight": 4,
           "opacity": 1,
           "paddingBottom": 10,
@@ -20064,7 +20079,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -20113,7 +20128,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -20183,7 +20198,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -20246,7 +20261,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -20295,7 +20310,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -20365,7 +20380,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -20428,7 +20443,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -20477,7 +20492,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -20547,7 +20562,7 @@ exports[`Storyshots Molecules/Select Size 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "borderColor": "rgba(0, 0, 0, 0.5)",
+          "borderColor": "#DFE3E9",
           "borderRadius": 20,
           "borderWidth": 1,
           "marginBottom": 2,
@@ -21022,6 +21037,7 @@ exports[`Storyshots Organisms/Form Default 1`] = `
               "borderWidth": 1,
               "flexDirection": "row",
               "justifyContent": "center",
+              "marginBottom": 4,
               "marginRight": 4,
               "opacity": 1,
               "paddingBottom": 10,
@@ -21065,11 +21081,12 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "borderColor": "rgba(0, 0, 0, 0.5)",
+              "borderColor": "#DFE3E9",
               "borderRadius": 20,
               "borderWidth": 1,
               "flexDirection": "row",
               "justifyContent": "center",
+              "marginBottom": 4,
               "marginRight": 4,
               "opacity": 1,
               "paddingBottom": 10,
@@ -21114,11 +21131,12 @@ exports[`Storyshots Organisms/Form Default 1`] = `
           onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "borderColor": "rgba(0, 0, 0, 0.5)",
+              "borderColor": "#DFE3E9",
               "borderRadius": 20,
               "borderWidth": 1,
               "flexDirection": "row",
               "justifyContent": "center",
+              "marginBottom": 4,
               "marginRight": 4,
               "opacity": 1,
               "paddingBottom": 10,
