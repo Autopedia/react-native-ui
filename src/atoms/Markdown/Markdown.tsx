@@ -62,7 +62,7 @@ const markdownTextStyle = (style: {
     text: {
       color: style.textColor,
       fontSize: fonts.size[style.size],
-      lineHeight: fonts.lineHeight.XS,
+      lineHeight: fonts.lineHeight[style.size],
     },
     bold: {
       fontWeight: 'bold',
