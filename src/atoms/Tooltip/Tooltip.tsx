@@ -208,7 +208,7 @@ const SHorizontalTail = styled.View<TailProps>`
   height: 0;
   border-right-width: 6px;
   border-left-width: 6px;
-  border-color: tan;
+  border-color: transparent;
   ${props =>
     props.location === 'right'
       ? `

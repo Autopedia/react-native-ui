@@ -6433,7 +6433,7 @@ exports[`Storyshots Atoms/Markdown size 1`] = `
       Object {
         "color": "#1F1F1F",
         "fontSize": 12,
-        "lineHeight": 22,
+        "lineHeight": 19,
       }
     }
   >
@@ -6443,7 +6443,7 @@ exports[`Storyshots Atoms/Markdown size 1`] = `
           Object {
             "color": "#1F1F1F",
             "fontSize": 12,
-            "lineHeight": 22,
+            "lineHeight": 19,
           },
           undefined,
         ]
@@ -6483,7 +6483,7 @@ exports[`Storyshots Atoms/Markdown size 1`] = `
       Object {
         "color": "#1F1F1F",
         "fontSize": 16,
-        "lineHeight": 22,
+        "lineHeight": 26,
       }
     }
   >
@@ -6493,7 +6493,7 @@ exports[`Storyshots Atoms/Markdown size 1`] = `
           Object {
             "color": "#1F1F1F",
             "fontSize": 16,
-            "lineHeight": 22,
+            "lineHeight": 26,
           },
           undefined,
         ]
@@ -6508,7 +6508,7 @@ exports[`Storyshots Atoms/Markdown size 1`] = `
       Object {
         "color": "#1F1F1F",
         "fontSize": 20,
-        "lineHeight": 22,
+        "lineHeight": 29,
       }
     }
   >
@@ -6518,7 +6518,7 @@ exports[`Storyshots Atoms/Markdown size 1`] = `
           Object {
             "color": "#1F1F1F",
             "fontSize": 20,
-            "lineHeight": 22,
+            "lineHeight": 29,
           },
           undefined,
         ]
@@ -13076,7 +13076,7 @@ exports[`Storyshots Atoms/Tooltip Children 1`] = `
             Array [
               Object {
                 "borderBottomWidth": 0,
-                "borderColor": "tan",
+                "borderColor": "transparent",
                 "borderLeftWidth": 6,
                 "borderRightWidth": 6,
                 "borderTopColor": "#2E3032",
@@ -14048,7 +14048,7 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
               Object {
                 "borderBottomColor": "#2E3032",
                 "borderBottomWidth": 12,
-                "borderColor": "tan",
+                "borderColor": "transparent",
                 "borderLeftWidth": 6,
                 "borderRightWidth": 6,
                 "borderTopWidth": 0,
@@ -14209,7 +14209,7 @@ exports[`Storyshots Atoms/Tooltip Position 1`] = `
             Array [
               Object {
                 "borderBottomWidth": 0,
-                "borderColor": "tan",
+                "borderColor": "transparent",
                 "borderLeftWidth": 6,
                 "borderRightWidth": 6,
                 "borderTopColor": "#2E3032",
