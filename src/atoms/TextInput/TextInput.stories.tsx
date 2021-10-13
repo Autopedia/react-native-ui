@@ -78,6 +78,12 @@ storiesOf('Atoms/TextInput', module)
           defaultValue={longText}
           onChangeText={v => action('onChangeText')(v)}
         />
+        <TextInput
+          label="Multi line without numberOfLines prop"
+          multiline
+          defaultValue={longText}
+          onChangeText={v => action('onChangeText')(v)}
+        />
       </>
     );
   })

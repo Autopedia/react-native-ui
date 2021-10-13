@@ -1,1 +1,1 @@
-export { PostMessage } from './PostMessage';
+export * from './PostMessage';

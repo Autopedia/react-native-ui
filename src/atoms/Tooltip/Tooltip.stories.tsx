@@ -1,12 +1,14 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { number, select, text } from '@storybook/addon-knobs';
+import { boolean, number, select, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 
 import CenterContainerDecorator from '../../decorators/center-container.decorator';
 import SThemeDecorator from '../../decorators/styled-components.decorator';
 import Button from '../Button';
+import Icon from '../Icon';
+import Typography from '../Typography';
 import { Tooltip } from './Tooltip';
 
 storiesOf('Atoms/Tooltip', module)
@@ -29,9 +31,45 @@ storiesOf('Atoms/Tooltip', module)
         message={text('children', 'Tooltip')}
         location={location}
         tailPosition={tailPosition}
+        autoHide={boolean('autoHide', false)}
+        duration={number('duration', 4000)}
         offset={number('offset', 10, {
           min: 0,
         })}
+      >
+        <Button inline>Sample Button</Button>
+      </Tooltip>
+    );
+  })
+  .add('AutoHide', () => {
+    return (
+      <Tooltip
+        message="AutoHide Tooltip"
+        location="top"
+        autoHide
+        duration={4000}
+      >
+        <Button inline>Sample Button</Button>
+      </Tooltip>
+    );
+  })
+  .add('Children', () => {
+    return (
+      <>
+        <Tooltip message="Tooltip with Typography" location="top">
+          <Typography.Paragraph size={1}>Typography</Typography.Paragraph>
+        </Tooltip>
+        <Tooltip message="Tooltip with Icon" location="left">
+          <Icon source={require('../../assets/icons/camera/camera.png')} />
+        </Tooltip>
+      </>
+    );
+  })
+  .add('Message', () => {
+    return (
+      <Tooltip
+        message="Looooooooooooooooooooooooooooooooooooooooong Toooooooooooltip"
+        location="top"
       >
         <Button>Sample Button</Button>
       </Tooltip>
@@ -41,16 +79,16 @@ storiesOf('Atoms/Tooltip', module)
     return (
       <>
         <Tooltip message="Top Tooltip" location="top">
-          <Button>Sample Button</Button>
+          <Button inline>Sample Button</Button>
         </Tooltip>
         <Tooltip message="Right Tooltip" location="right">
-          <Button>Sample Button</Button>
+          <Button inline>Sample Button</Button>
         </Tooltip>
         <Tooltip message="Left Tooltip" location="left">
-          <Button>Sample Button</Button>
+          <Button inline>Sample Button</Button>
         </Tooltip>
         <Tooltip message="Bottom Tooltip" location="bottom">
-          <Button>Sample Button</Button>
+          <Button inline>Sample Button</Button>
         </Tooltip>
       </>
     );

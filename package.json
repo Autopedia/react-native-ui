@@ -1,7 +1,7 @@
 {
-  "name": "@drcha/react-native-ui",
+  "name": "@autopedia/react-native-ui",
   "description": "A React Native UI components for React Native apps of doctor-cha services.",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -30,9 +30,7 @@
   "dependencies": {
     "color": "^3.1.3",
     "lodash": "^4.17.21",
-    "react": "17.0.1",
     "react-hook-form": "^7.8.4",
-    "react-native": "0.64.0",
     "react-native-actionsheet": "^2.4.2",
     "react-native-fast-image": "^8.3.4",
     "react-native-gesture-handler": "^1.10.3",
@@ -86,7 +84,9 @@
     "jest-fetch-mock": "^3.0.3",
     "jest-styled-components": "^7.0.4",
     "metro-react-native-babel-preset": "^0.64.0",
+    "react": "17.0.1",
     "react-dom": "^17.0.2",
+    "react-native": "0.64.0",
     "react-test-renderer": "17.0.1",
     "ts-jest": "^26.5.6",
     "typescript": "^4.1.4",

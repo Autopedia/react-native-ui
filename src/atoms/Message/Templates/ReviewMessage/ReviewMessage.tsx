@@ -1,7 +1,8 @@
 import React from 'react';
 import { Platform } from 'react-native';
-import { ReviewMessageProps } from '../../Message.types';
+
 import Button from '../../../../atoms/Button';
+import { ReviewMessageProps } from '../../Message.types';
 import { CardMessage } from '../CardMessage';
 
 export const ReviewMessage: React.FC<ReviewMessageProps> = ({

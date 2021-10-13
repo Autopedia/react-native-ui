@@ -1,5 +1,6 @@
 import { Dimensions } from 'react-native';
 import styled from 'styled-components/native';
+
 import ProgressiveImage from '../../atoms/ProgressiveImage';
 import base from '../../styles/base';
 import colors from '../../styles/colors';

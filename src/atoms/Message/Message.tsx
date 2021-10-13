@@ -1,21 +1,21 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import { MessageProps } from './Message.types';
 
+import { MessageProps } from './Message.types';
 import {
-  TextMessage,
-  ImageMessage,
-  VideoMessage,
-  ShopMessage,
-  EndConfirmedMessage,
-  EventMessage,
-  PostMessage,
   CounselCaseMessage,
-  FeedbackMessage,
-  ReviewMessage,
+  EndConfirmedMessage,
   EndMessage,
+  EventMessage,
+  FeedbackMessage,
+  ImageMessage,
   OutdatedMessage,
+  PostMessage,
+  ReviewMessage,
+  ShopMessage,
+  TextMessage,
   UnhandledMessage,
+  VideoMessage,
 } from './Templates';
 
 export const Message: React.FC<MessageProps> = props => {

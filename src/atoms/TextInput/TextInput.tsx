@@ -117,25 +117,27 @@ const TextInput = forwardRef(
               {props.success || props.error?.message || props.label}
             </SHeader>
           )}
-          <STextInput
-            ref={ref}
-            {...textInputProps}
-            textAlignVertical="center"
-            placeholderTextColor={grayscaleColors.GRAY_400}
-          />
-          {props.secureTextEntry && (
-            <SIcon
-              disabled={props.disabled || false}
-              onPress={() => {
-                setShowText(prev => (props.disabled ? false : !prev));
-              }}
-              source={
-                showText
-                  ? require('../../assets/icons/eye/eye-closed.png')
-                  : require('../../assets/icons/eye/eye-opened.png')
-              }
+          <STextInputWrapper>
+            <STextInput
+              ref={ref}
+              {...textInputProps}
+              textAlignVertical="center"
+              placeholderTextColor={grayscaleColors.GRAY_400}
             />
-          )}
+            {props.secureTextEntry && (
+              <SIcon
+                disabled={props.disabled || false}
+                onPress={() => {
+                  setShowText(showText => !showText);
+                }}
+                source={
+                  showText
+                    ? require('../../assets/icons/eye/eye-closed.png')
+                    : require('../../assets/icons/eye/eye-opened.png')
+                }
+              />
+            )}
+          </STextInputWrapper>
         </SContainer>
         {props.suffix && (
           <SSuffix disabled={props.disabled}>
@@ -183,18 +185,25 @@ const SContainer = styled.View<SContainerProps>`
 const SHeader = styled.Text<SHeaderProps>`
   margin-bottom: 10px;
   font-family: ${fonts.family.MEDIUM};
+  line-height: 20px;
   ${props => {
     if (props.success) {
       return `color: ${systemColors.SUCCESS}`;
     } else if (props.error) {
       return `color: ${systemColors.ERROR}`;
     } else {
-      return `color: ${grayscaleColors.GRAY_400}`;
+      return `color: ${grayscaleColors.GRAY_600}`;
     }
   }}
 `;
 
+const STextInputWrapper = styled.View`
+  flex-direction: row;
+  width: 100%;
+`;
+
 const STextInput = styled.TextInput<STextInputProps>`
+  flex: 1;
   padding: 0px;
   margin: 0px;
   font-size: ${fonts.size.XS}px;
@@ -221,10 +230,7 @@ const STextInput = styled.TextInput<STextInputProps>`
 `;
 STextInput.displayName = 'RNTextInput';
 
-const SIcon = styled(Icon)`
-  position: absolute;
-  right: 8px;
-`;
+const SIcon = styled(Icon)``;
 SIcon.displayName = 'SecureTextEntryToggle';
 
 const SSuffix = styled.View<SFixProps>`

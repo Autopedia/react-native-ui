@@ -87,6 +87,6 @@ describe('[TextInput] Unit Test', () => {
     const textInput = wrapper.find('RNTextInput');
     const textInputProps = textInput.props() as { secureTextEntry?: boolean };
 
-    expect(textInputProps.secureTextEntry).toBe(false);
+    expect(textInputProps.secureTextEntry).toBeFalsy();
   });
 });

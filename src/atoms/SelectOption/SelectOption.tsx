@@ -96,6 +96,7 @@ const SContainer = styled.TouchableOpacity<SContainerProps>`
           flex-direction: row;
           justify-content: center;
           margin-right: 4px;
+          margin-bottom: 4px;
         `;
     }
   }}
@@ -110,7 +111,9 @@ const SContainer = styled.TouchableOpacity<SContainerProps>`
   /* selected */
   ${props => {
     const color = getValidatedColor(props.color || 'black');
-    const unselectedColor = Color(color).alpha(0.5).string();
+    const unselectedColor = props.color
+      ? Color(color).alpha(0.5).string()
+      : colors.GRAY_300;
 
     return `
       border-color: ${props.selected ? color : unselectedColor};

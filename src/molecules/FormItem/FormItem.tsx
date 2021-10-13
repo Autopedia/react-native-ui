@@ -26,11 +26,11 @@ const FormItem = <V extends unknown>(props: FormItemProps<V>) => {
   const [errorY] = React.useState(new Animated.Value(-(Fonts.size.XXS + 1)));
   React.useEffect(() => {
     if (props.error) {
-      Animated.spring(errorY, { toValue: 0, useNativeDriver: true }).start();
+      Animated.spring(errorY, { toValue: 0, useNativeDriver: false }).start();
     } else {
       Animated.spring(errorY, {
         toValue: -(Fonts.size.XXS + 1),
-        useNativeDriver: true,
+        useNativeDriver: false,
       }).start();
     }
   }, [props.error]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -42,19 +42,6 @@ const FormItem = <V extends unknown>(props: FormItemProps<V>) => {
     <SContainer {...containerProps}>
       {props.label && <FormLabel {...formLabelProps}>{props.label}</FormLabel>}
       {props.children}
-      <Animated.View
-        style={{
-          marginTop: 1,
-          zIndex: -1,
-          transform: [{ translateY: errorY }],
-        }}
-      >
-        {props.error?.message ? (
-          <SError size={2} color="error">
-            {props.error.message || '입력값을 확인해주세요'}
-          </SError>
-        ) : null}
-      </Animated.View>
       {props.footer && (
         <SFooterContainer>
           {typeof props.footer === 'string' ? (

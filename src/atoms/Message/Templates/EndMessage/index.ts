@@ -1,1 +1,1 @@
-export { EndMessage } from './EndMessage';
+export * from './EndMessage';

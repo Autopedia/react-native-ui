@@ -4,9 +4,11 @@
 
 import 'react-native';
 import 'jest-styled-components';
-import React from 'react';
-import { FeedbackMessage } from './FeedbackMessage';
+
 import { shallow } from 'enzyme';
+import React from 'react';
+
+import { FeedbackMessage } from './FeedbackMessage';
 import { Alert, Linking } from 'react-native';
 
 describe('[Message/FeedbackMessage] Unit Test', () => {

@@ -19,6 +19,19 @@
     - [Button, Icon, Typography](https://docs.google.com/document/d/10oiqZ-lLql5v4gNO-X3vF-aue9uDXUeeR9nrgUnOLfw/edit#heading=h.bqfs6i8j7ud5)
     - [TextInput](https://docs.google.com/document/d/1YNn6NmqP2v-MbngT72wdEpkwSpAhukDiRIa2G6kQtx4/edit#)
   - 사용하지 않는 컴포넌트 제거
+- `v1.2.1` : 2021.07.28
+  - import, export 구조 정리
+  - 코드 리팩터링
+- `v1.2.2` : 2021.08.04
+  - [Tooltip 업데이트](https://docs.google.com/document/d/1I83eZ3mjerENqyh6B91ohNUWS2H9F_Rl8e8ZRRVa5VQ/edit)
+- `v1.2.3` : 2021.08.16
+  - [1차 QA 수정사항 반영](https://docs.google.com/document/d/1hmMIlYXe-M7M_q2eLDeJRA8iX2duu7KD-vI8jL3E14I/edit)
+- `v1.2.4` : 2021.08.24
+  - RNDebugger 관련 이슈 해결 (dependency 문제)
+  - 사용하지 않는 아이콘 제거
+- `v2.0.0` : 2021.10.13
+  - Markdown 업데이트
+  - TextInput 업데이트
 
 ---
 

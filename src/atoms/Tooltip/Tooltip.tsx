@@ -1,5 +1,11 @@
 import React from 'react';
-import { LayoutChangeEvent, StyleProp, ViewStyle } from 'react-native';
+import {
+  Animated,
+  Easing,
+  LayoutChangeEvent,
+  StyleProp,
+  ViewStyle,
+} from 'react-native';
 import styled from 'styled-components/native';
 
 import { grayscaleColors } from '../../styles/grayscale-colors';
@@ -10,6 +16,8 @@ type TooltipProps = {
   location?: 'top' | 'right' | 'bottom' | 'left';
   tailPosition?: 'left' | 'center' | 'right';
   offset?: number;
+  autoHide?: boolean;
+  duration?: number;
   style?: StyleProp<ViewStyle>;
 };
 
@@ -18,6 +26,8 @@ export const Tooltip: React.FC<TooltipProps> = ({
   location = 'bottom',
   tailPosition = 'center',
   offset = 10,
+  autoHide,
+  duration = 4000,
   style,
   children,
 }) => {
@@ -28,9 +38,23 @@ export const Tooltip: React.FC<TooltipProps> = ({
     },
   );
 
+  const tooltipAnimValue = React.useRef(new Animated.Value(1)).current;
+
   const tailProps: TailProps = {
     location,
     tailPosition,
+  };
+
+  const hideTooltip = () => {
+    Animated.sequence([
+      Animated.delay(duration),
+      Animated.timing(tooltipAnimValue, {
+        toValue: 0,
+        duration: 1000,
+        easing: Easing.inOut(Easing.quad),
+        useNativeDriver: false,
+      }),
+    ]).start();
   };
 
   const onLayout = (e: LayoutChangeEvent) => {
@@ -40,8 +64,17 @@ export const Tooltip: React.FC<TooltipProps> = ({
     setLayout(layout);
   };
 
+  React.useEffect(() => {
+    if (autoHide) {
+      hideTooltip();
+    }
+  }, []);
+
   return (
-    <SContainer onLayout={onLayout}>
+    <SContainer
+      onLayout={onLayout}
+      vertical={location === 'top' || location === 'bottom'}
+    >
       {children}
       <STooltip
         location={location}
@@ -49,7 +82,7 @@ export const Tooltip: React.FC<TooltipProps> = ({
         offset={offset}
         layoutHeight={layout.height}
         layoutWidth={layout.width}
-        style={style}
+        style={[style, { opacity: autoHide ? tooltipAnimValue : 1 }]}
       >
         <SContent>
           <SMessage>{message}</SMessage>
@@ -73,42 +106,47 @@ export type STooltipProps = Omit<TooltipProps, 'message' | 'children'> & {
 
 type TailProps = Pick<TooltipProps, 'location' | 'tailPosition'>;
 
-const SContainer = styled.View`
+const SContainer = styled.View<{ vertical: boolean }>`
   position: relative;
+  flex-direction: ${props => (props.vertical ? 'column' : 'row')};
+  align-items: center;
 `;
 
-const STooltip = styled.View<STooltipProps>`
+const STooltip = styled(Animated.View)<STooltipProps>`
   position: absolute;
+  justify-content: center;
 
   ${props => {
     switch (props.location) {
       case 'top':
         return `
-          align-self: center;
+          align-items: center;
           bottom: ${props.layoutHeight + props.offset}px;
         `;
       case 'right':
         return `
-          height: ${props.layoutHeight}px;
-          justify-content: center;
+          align-items: flex-start;
           left: ${props.layoutWidth + props.offset}px;
         `;
       case 'bottom':
         return `
-          align-self: center;
+          align-items: center;
           top: ${props.layoutHeight + props.offset}px;
         `;
       case 'left':
         return `  
-          height: ${props.layoutHeight}px;
-          justify-content: center;
+          align-items: flex-end;
           right: ${props.layoutWidth + props.offset}px;
         `;
     }
   }}
 `;
 
+STooltip.displayName = 'Tooltip';
+
 const SContent = styled.View`
+  flex-direction: row;
+  align-items: center;
   padding: 10px;
   background-color: ${grayscaleColors.GRAY_800};
   border-radius: 20px;
@@ -168,17 +206,21 @@ const SHorizontalTailContainer = styled.View<TailProps>`
 const SHorizontalTail = styled.View<TailProps>`
   width: 0;
   height: 0;
-  border-top-width: 6px;
-  border-bottom-width: 6px;
+  border-right-width: 6px;
+  border-left-width: 6px;
   border-color: transparent;
   ${props =>
-    props.location === 'left'
-      ? `border-right-width: 0px;
-         border-left-width: 12px;
-         border-left-color: ${grayscaleColors.GRAY_800}
-      `
-      : `border-left-width: 0px;
-         border-right-width: 12px;
-         border-right-color: ${grayscaleColors.GRAY_800}
-      `};
+    props.location === 'right'
+      ? `
+      border-bottom-width: 12px;
+      border-top-width: 0px;
+      border-bottom-color: ${grayscaleColors.GRAY_800}
+  `
+      : `
+      border-top-width: 12px;
+      border-bottom-width: 0px;
+      border-top-color: ${grayscaleColors.GRAY_800}
+  `}
+
+  transform: rotate(-90deg);
 `;

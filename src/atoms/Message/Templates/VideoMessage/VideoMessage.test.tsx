@@ -4,10 +4,12 @@
 
 import 'react-native';
 import 'jest-styled-components';
-import React from 'react';
-import { VideoMessage } from './VideoMessage';
+
 import { shallow } from 'enzyme';
+import React from 'react';
+
 import { LocalSource } from '../../../../global/types';
+import { VideoMessage } from './VideoMessage';
 
 describe('[Message/VideoMessage] Unit Test', () => {
   beforeEach(() => {

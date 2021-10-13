@@ -10,13 +10,21 @@ const PHONENUMBER_PATTERN = /^\d{2,3}-\d{3,4}-\d{4}$/gm;
 
 interface MarkdownProps {
   textColor?: string;
+  linkColor?: string;
   selectable: boolean;
   children?: ReactNode;
+  size?: keyof typeof fonts.size;
 }
 
 export const Markdown: React.FC<MarkdownProps> = React.memo(
-  ({ children, textColor = colors.ON_BACKGROUND, selectable }) => {
-    const mdTextStyle = markdownTextStyle(textColor);
+  ({
+    children,
+    textColor = colors.ON_BACKGROUND,
+    linkColor = colors.PRIMARY,
+    size = 'XS',
+    selectable,
+  }) => {
+    const mdTextStyle = markdownTextStyle({ textColor, size, linkColor });
     return (
       <ParsedText
         selectable={selectable}
@@ -45,18 +53,22 @@ export const Markdown: React.FC<MarkdownProps> = React.memo(
   },
 );
 
-const markdownTextStyle = (textColor: string) => {
+const markdownTextStyle = (style: {
+  textColor: string;
+  linkColor: string;
+  size: keyof typeof fonts.size;
+}) => {
   return StyleSheet.create({
     text: {
-      color: textColor,
-      fontSize: fonts.size.XS,
-      lineHeight: fonts.lineHeight.XS,
+      color: style.textColor,
+      fontSize: fonts.size[style.size],
+      lineHeight: fonts.lineHeight[style.size],
     },
     bold: {
       fontWeight: 'bold',
     },
     url: {
-      textDecorationLine: 'underline',
+      color: style.linkColor,
     },
     phone: {
       textDecorationLine: 'underline',

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Alert } from 'react-native';
-import { EndMessageProps } from '../../Message.types';
+
 import Button from '../../../../atoms/Button';
+import { EndMessageProps } from '../../Message.types';
 import { CardMessage } from '../CardMessage';
-import { systemColors } from '../../../../styles/system-colors';
 
 export const EndMessage: React.FC<EndMessageProps> = ({
   onPressFinish,
