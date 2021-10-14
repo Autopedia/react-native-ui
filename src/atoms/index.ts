@@ -13,7 +13,6 @@ import TextInput from './TextInput';
 import Typography from './Typography';
 
 export * from './Tooltip';
-export * from './Toast';
 export * from './LoadingDots';
 export * from './Markdown';
 export * from './Message';
