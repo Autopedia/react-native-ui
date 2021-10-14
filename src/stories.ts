@@ -12,7 +12,6 @@ import './atoms/ProgressiveImage/ProgressiveImage.stories';
 import './atoms/Sign/Sign.stories';
 import './atoms/Switch/Switch.stories';
 import './atoms/TextInput/TextInput.stories';
-import './atoms/Toast/Toast.stories';
 import './atoms/Typography/Typography.stories';
 import './atoms/SelectOption/SelectOption.stories';
 import './atoms/Tooltip/Tooltip.stories';
