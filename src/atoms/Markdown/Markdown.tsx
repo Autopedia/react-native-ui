@@ -76,18 +76,29 @@ const markdownTextStyle = (style: {
   });
 };
 
-const handleUrlPress = async (url: string) => {
-  let openUrl = url;
-  if (!url.startsWith('http')) {
-    openUrl = `http://${url}`;
-  }
-  const valid = await Linking.canOpenURL(openUrl);
-  if (valid) await Linking.openURL(openUrl);
+const openURL = async (url: string) => {
+  const valid = await Linking.canOpenURL(url);
+  if (valid) await Linking.openURL(url);
   else
     Alert.alert(
       '링크 접속 불가',
       '연결중 문제가 발생했습니다. 직접 복사하여 브라우저에서 시도해주세요',
     );
+};
+
+const handleUrlPress = async (url: string) => {
+  let link = url;
+  if (!url.startsWith('http')) {
+    link = `https://${url}`;
+    const valid = await Linking.canOpenURL(link);
+    if (valid) await Linking.openURL(link);
+    else {
+      link = `http://${url}`;
+      await openURL(link);
+    }
+  } else {
+    await openURL(link);
+  }
 };
 
 const handlePhonePress = (phoneNumber: string) => {
