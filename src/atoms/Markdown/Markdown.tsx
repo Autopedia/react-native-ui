@@ -77,8 +77,12 @@ const markdownTextStyle = (style: {
 };
 
 const handleUrlPress = async (url: string) => {
-  const valid = await Linking.canOpenURL(url);
-  if (valid) await Linking.openURL(url);
+  let openUrl = url;
+  if (!url.startsWith('http')) {
+    openUrl = `http://${url}`;
+  }
+  const valid = await Linking.canOpenURL(openUrl);
+  if (valid) await Linking.openURL(openUrl);
   else
     Alert.alert(
       '링크 접속 불가',
