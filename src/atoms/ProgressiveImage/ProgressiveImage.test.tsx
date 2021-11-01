@@ -56,4 +56,20 @@ describe('[ProgressiveImage] Unit Test', () => {
       require('../../assets/images/image-fallback.png'),
     );
   });
+
+  it('should refresh an image after error', () => {
+    const wrapper = shallow(
+      <ProgressiveImage source={{ uri: 'https://picsum.photos/200/300' }} />,
+    );
+    wrapper.find('FastImage').simulate('error');
+    expect(wrapper.find('Refresh').exists()).toBeTruthy();
+
+    wrapper.find('Refresh').simulate('press');
+
+    expect(wrapper.find('Overlay').exists()).toBeTruthy();
+    expect(wrapper.find('Refresh').exists()).toBeFalsy();
+
+    wrapper.find('FastImage').simulate('load');
+    expect(wrapper.find('Overlay').exists()).toBeFalsy();
+  });
 });

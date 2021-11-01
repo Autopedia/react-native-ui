@@ -6672,6 +6672,8 @@ exports[`Storyshots Atoms/Message/CounselCaseMessage Playground 1`] = `
         style={
           Array [
             Object {
+              "alignItems": "center",
+              "justifyContent": "center",
               "position": "relative",
             },
           ]
@@ -7074,6 +7076,8 @@ exports[`Storyshots Atoms/Message/EventMessage Playground 1`] = `
       style={
         Array [
           Object {
+            "alignItems": "center",
+            "justifyContent": "center",
             "position": "relative",
           },
         ]
@@ -7403,6 +7407,8 @@ exports[`Storyshots Atoms/Message/ImageMessage Playground 1`] = `
         style={
           Array [
             Object {
+              "alignItems": "center",
+              "justifyContent": "center",
               "position": "relative",
             },
           ]
@@ -7699,6 +7705,8 @@ exports[`Storyshots Atoms/Message/PostMessage Playground 1`] = `
         style={
           Array [
             Object {
+              "alignItems": "center",
+              "justifyContent": "center",
               "position": "relative",
             },
           ]
@@ -8592,6 +8600,8 @@ exports[`Storyshots Atoms/ProgressiveImage Fail 1`] = `
     style={
       Array [
         Object {
+          "alignItems": "center",
+          "justifyContent": "center",
           "position": "relative",
         },
       ]
@@ -8691,6 +8701,8 @@ exports[`Storyshots Atoms/ProgressiveImage Image 1`] = `
     style={
       Array [
         Object {
+          "alignItems": "center",
+          "justifyContent": "center",
           "position": "relative",
         },
       ]
@@ -8790,6 +8802,8 @@ exports[`Storyshots Atoms/ProgressiveImage Loading 1`] = `
     style={
       Array [
         Object {
+          "alignItems": "center",
+          "justifyContent": "center",
           "position": "relative",
         },
       ]
