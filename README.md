@@ -35,6 +35,8 @@
 - `v2.0.2` : 2021.10.14
   - Markdown 링크 연결 이슈 해결
   - Toast 컴포넌트 제거
+- `v2.0.3` : 2021.10.14
+  - ProgressiveImage refresh 기능 추가
 
 ---
 
