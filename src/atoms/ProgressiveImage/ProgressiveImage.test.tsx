@@ -56,4 +56,20 @@ describe('[ProgressiveImage] Unit Test', () => {
       require('../../assets/images/image-fallback.png'),
     );
   });
+
+  it('should refresh an image after error', () => {
+    const imageUrl =
+      'https://cdn.doctor-cha.com/user-content/cks5fnv7s266764nmbigw5d7e/ckuw6j4qq0000t4kqdscb37fh.jpeg';
+    const wrapper = shallow(<ProgressiveImage source={{ uri: imageUrl }} />);
+    wrapper.find('FastImage').simulate('error');
+    expect(wrapper.find('Refresh').exists()).toBeTruthy();
+
+    wrapper.find('Refresh').simulate('press');
+
+    expect(wrapper.find('Overlay').exists()).toBeTruthy();
+    expect(wrapper.find('Refresh').exists()).toBeFalsy();
+
+    wrapper.find('FastImage').simulate('load');
+    expect(wrapper.find('Overlay').exists()).toBeFalsy();
+  });
 });
