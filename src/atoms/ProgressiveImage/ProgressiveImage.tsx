@@ -44,12 +44,13 @@ const ProgressiveImage: React.FC<FastImageProps> = props => {
         />
       )}
       {error && (
-        <SRefresh
-          size="lg"
-          color={Colors.PRIMARY}
-          source={require('../../assets/icons/refresh/refresh.png')}
-          onPress={refreshImage}
-        />
+        <SRefreshConateinr onPress={refreshImage}>
+          <Icon
+            size="lg"
+            color={Colors.BLACK}
+            source={require('../../assets/icons/refresh/refresh.png')}
+          />
+        </SRefreshConateinr>
       )}
       <FastImage {...props} source={source} onLoad={onLoad} onError={onError} />
     </SContainer>
@@ -58,6 +59,8 @@ const ProgressiveImage: React.FC<FastImageProps> = props => {
 
 const SContainer = styled.View`
   position: relative;
+  justify-content: center;
+  align-items: center;
 `;
 
 const SOverlay = styled(LinearGradient)`
@@ -69,17 +72,18 @@ const SOverlay = styled(LinearGradient)`
 
 SOverlay.displayName = 'Overlay';
 
-const SRefresh = styled(Icon)`
+const SRefreshConateinr = styled.Pressable`
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
   position: absolute;
   z-index: 1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   align-self: center;
   justify-content: center;
+  align-items: center;
+  background-color: ${Colors.GRAY_200};
 `;
 
-SRefresh.displayName = 'Refresh';
+SRefreshConateinr.displayName = 'Refresh';
 
 export default ProgressiveImage;
