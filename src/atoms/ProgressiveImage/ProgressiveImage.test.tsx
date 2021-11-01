@@ -58,9 +58,9 @@ describe('[ProgressiveImage] Unit Test', () => {
   });
 
   it('should refresh an image after error', () => {
-    const imageUrl =
-      'https://cdn.doctor-cha.com/user-content/cks5fnv7s266764nmbigw5d7e/ckuw6j4qq0000t4kqdscb37fh.jpeg';
-    const wrapper = shallow(<ProgressiveImage source={{ uri: imageUrl }} />);
+    const wrapper = shallow(
+      <ProgressiveImage source={{ uri: 'https://picsum.photos/200/300' }} />,
+    );
     wrapper.find('FastImage').simulate('error');
     expect(wrapper.find('Refresh').exists()).toBeTruthy();
 

@@ -12,6 +12,7 @@ import { Alert, Linking, Text, View } from 'react-native';
 describe('[Markdown] Unit Test', () => {
   const mockCanOpenURL = jest.fn();
   const urlMock = 'https://doctor-cha.com';
+  const urlMockWithOutHttp = 'www.doctorcha.com';
   const phoneNumberMock = '010-1234-1234';
 
   beforeEach(() => {
@@ -65,6 +66,30 @@ describe('[Markdown] Unit Test', () => {
 
     expect(Linking.openURL).not.toBeCalled();
     expect(Alert.alert).toBeCalledTimes(1);
+  });
+
+  it('should call link with https', async () => {
+    mockCanOpenURL.mockReturnValue(true);
+    const wrapper = shallow(
+      <Markdown selectable>{urlMockWithOutHttp}</Markdown>,
+    );
+    const buttonText = wrapper.dive().findWhere(w => w.prop('onPress'));
+
+    await buttonText.simulate('press');
+
+    expect(Linking.canOpenURL).toBeCalledWith(`https://${urlMockWithOutHttp}`);
+  });
+
+  it('should call link with http', async () => {
+    mockCanOpenURL.mockReturnValue(false);
+    const wrapper = shallow(
+      <Markdown selectable>{urlMockWithOutHttp}</Markdown>,
+    );
+    const buttonText = wrapper.dive().findWhere(w => w.prop('onPress'));
+
+    await buttonText.simulate('press');
+
+    expect(Linking.canOpenURL).toBeCalledWith(`http://${urlMockWithOutHttp}`);
   });
 
   it('should call when phone number text pressed', () => {
