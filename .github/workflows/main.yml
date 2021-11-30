@@ -16,9 +16,9 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v2
       - name: Install dependencies
-        run: npm install
+        run: yarn install
       - name: Run unit tests
-        run: npm run test:cov
+        run: yarn test:cov
       - name: Codecov
         uses: codecov/codecov-action@v1.5.2
         with:
