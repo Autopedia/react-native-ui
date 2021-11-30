@@ -35,6 +35,10 @@ const ProgressiveImage: React.FC<FastImageProps> = props => {
     setSource(props.source);
   };
 
+  React.useEffect(() => {
+    setSource(props.source);
+  }, [props.source]);
+
   return (
     <SContainer>
       {loading && (
