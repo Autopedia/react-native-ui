@@ -4,6 +4,7 @@ import {
   Easing,
   LayoutChangeEvent,
   StyleProp,
+  TextStyle,
   ViewStyle,
 } from 'react-native';
 import styled from 'styled-components/native';
@@ -19,6 +20,8 @@ type TooltipProps = {
   autoHide?: boolean;
   duration?: number;
   style?: StyleProp<ViewStyle>;
+  textStyle?: StyleProp<TextStyle>;
+  color?: string;
 };
 
 export const Tooltip: React.FC<TooltipProps> = ({
@@ -29,6 +32,8 @@ export const Tooltip: React.FC<TooltipProps> = ({
   autoHide,
   duration = 4000,
   style,
+  textStyle,
+  color,
   children,
 }) => {
   const [layout, setLayout] = React.useState<{ width: number; height: number }>(
@@ -43,6 +48,7 @@ export const Tooltip: React.FC<TooltipProps> = ({
   const tailProps: TailProps = {
     location,
     tailPosition,
+    color,
   };
 
   const hideTooltip = () => {
@@ -82,10 +88,10 @@ export const Tooltip: React.FC<TooltipProps> = ({
         offset={offset}
         layoutHeight={layout.height}
         layoutWidth={layout.width}
-        style={[style, { opacity: autoHide ? tooltipAnimValue : 1 }]}
+        style={[{ opacity: autoHide ? tooltipAnimValue : 1 }]}
       >
-        <SContent>
-          <SMessage>{message}</SMessage>
+        <SContent color={color} style={style}>
+          <SMessage style={textStyle}>{message}</SMessage>
         </SContent>
         {location === 'top' || location === 'bottom' ? (
           <SVerticalTail {...tailProps} />
@@ -104,7 +110,7 @@ export type STooltipProps = Omit<TooltipProps, 'message' | 'children'> & {
   layoutHeight: number;
 };
 
-type TailProps = Pick<TooltipProps, 'location' | 'tailPosition'>;
+type TailProps = Pick<TooltipProps, 'location' | 'tailPosition' | 'color'>;
 
 const SContainer = styled.View<{ vertical: boolean }>`
   position: relative;
@@ -144,11 +150,11 @@ const STooltip = styled(Animated.View)<STooltipProps>`
 
 STooltip.displayName = 'Tooltip';
 
-const SContent = styled.View`
+const SContent = styled.View<{ color?: string }>`
   flex-direction: row;
   align-items: center;
   padding: 10px;
-  background-color: ${grayscaleColors.GRAY_800};
+  background-color: ${({ color }) => color || grayscaleColors.GRAY_800};
   border-radius: 20px;
 `;
 
@@ -168,13 +174,13 @@ const SVerticalTail = styled.View<TailProps>`
       ? `
       border-bottom-width: 12px;
       border-top-width: 0px;
-      border-bottom-color: ${grayscaleColors.GRAY_800}
+      border-bottom-color: ${props.color || grayscaleColors.GRAY_800}
       top: -10px;
   `
       : `
       border-top-width: 12px;
       border-bottom-width: 0px;
-      border-top-color: ${grayscaleColors.GRAY_800}
+      border-top-color: ${props.color || grayscaleColors.GRAY_800}
       bottom: -10px;
   `}
 
@@ -214,12 +220,12 @@ const SHorizontalTail = styled.View<TailProps>`
       ? `
       border-bottom-width: 12px;
       border-top-width: 0px;
-      border-bottom-color: ${grayscaleColors.GRAY_800}
+      border-bottom-color: ${props.color || grayscaleColors.GRAY_800}
   `
       : `
       border-top-width: 12px;
       border-bottom-width: 0px;
-      border-top-color: ${grayscaleColors.GRAY_800}
+      border-top-color: ${props.color || grayscaleColors.GRAY_800}
   `}
 
   transform: rotate(-90deg);

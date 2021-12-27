@@ -37,6 +37,10 @@
   - Toast 컴포넌트 제거
 - `v2.0.3` : 2021.10.14
   - ProgressiveImage refresh 기능 추가
+- `v2.0.4` : 2021.11.30
+  - ProgressiveImage source변경시 리렌더 처리 추가
+- `v2.0.5` : 2021.12.28
+  - Tooltip color, textStyle prop 추가
 
 ---
 
