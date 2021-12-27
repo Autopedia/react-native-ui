@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { boolean, number, select, text } from '@storybook/addon-knobs';
+import { boolean, color, number, select, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 
 import CenterContainerDecorator from '../../decorators/center-container.decorator';
@@ -10,6 +10,7 @@ import Button from '../Button';
 import Icon from '../Icon';
 import Typography from '../Typography';
 import { Tooltip } from './Tooltip';
+import { grayscaleColors } from '../../styles/grayscale-colors';
 
 storiesOf('Atoms/Tooltip', module)
   .addDecorator(SThemeDecorator)
@@ -28,7 +29,7 @@ storiesOf('Atoms/Tooltip', module)
 
     return (
       <Tooltip
-        message={text('children', 'Tooltip')}
+        message={text('message', 'Tooltip')}
         location={location}
         tailPosition={tailPosition}
         autoHide={boolean('autoHide', false)}
@@ -36,6 +37,7 @@ storiesOf('Atoms/Tooltip', module)
         offset={number('offset', 10, {
           min: 0,
         })}
+        color={color('color', grayscaleColors.GRAY_800)}
       >
         <Button inline>Sample Button</Button>
       </Tooltip>
@@ -165,6 +167,21 @@ storiesOf('Atoms/Tooltip', module)
           offset={20}
         >
           <Button>Sample Button</Button>
+        </Tooltip>
+      </>
+    );
+  })
+  .add('Custom style', () => {
+    return (
+      <>
+        <Tooltip
+          message="Tooltip message style"
+          location="bottom"
+          color="#007AFF"
+          style={{ paddingLeft: 24, paddingRight: 24 }}
+          textStyle={{ fontWeight: 'bold' }}
+        >
+          <Button inline>Sample Button</Button>
         </Tooltip>
       </>
     );
