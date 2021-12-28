@@ -13033,6 +13033,181 @@ exports[`Storyshots Atoms/Tooltip Children 1`] = `
 </View>
 `;
 
+exports[`Storyshots Atoms/Tooltip Custom style 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "position": "relative",
+        },
+      ]
+    }
+    vertical={true}
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      inline={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 1000,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 14,
+          },
+          Object {
+            "backgroundColor": "#EEF2F6",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <Text
+          includeFontPadding={false}
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#5F656A",
+                "fontFamily": "NotoSansKR-Medium",
+                "fontSize": 16,
+                "lineHeight": 26,
+                "textAlign": "center",
+              },
+            ]
+          }
+          textColor="#5F656A"
+          textDisabledColor="#C6CACF"
+        >
+          Sample Button
+        </Text>
+      </View>
+    </View>
+    <View
+      layoutHeight={0}
+      layoutWidth={0}
+      location="bottom"
+      offset={10}
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "opacity": 1,
+          "position": "absolute",
+          "top": 10,
+        }
+      }
+      tailPosition="center"
+    >
+      <View
+        color="#007AFF"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#007AFF",
+              "borderRadius": 20,
+              "flexDirection": "row",
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+            Object {
+              "paddingLeft": 24,
+              "paddingRight": 24,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+              },
+              Object {
+                "fontWeight": "bold",
+              },
+            ]
+          }
+        >
+          Tooltip message style
+        </Text>
+      </View>
+      <View
+        color="#007AFF"
+        location="bottom"
+        style={
+          Array [
+            Object {
+              "alignSelf": "center",
+              "borderBottomColor": "#007AFF",
+              "borderBottomWidth": 12,
+              "borderColor": "transparent",
+              "borderLeftWidth": 6,
+              "borderRightWidth": 6,
+              "borderTopWidth": 0,
+              "height": 0,
+              "position": "absolute",
+              "top": -10,
+              "width": 0,
+            },
+          ]
+        }
+        tailPosition="center"
+      />
+    </View>
+  </View>
+</View>
+`;
+
 exports[`Storyshots Atoms/Tooltip Message 1`] = `
 <View
   style={
@@ -13623,6 +13798,7 @@ exports[`Storyshots Atoms/Tooltip Playground 1`] = `
       tailPosition="center"
     >
       <View
+        color="#2E3032"
         style={
           Array [
             Object {
@@ -13651,6 +13827,7 @@ exports[`Storyshots Atoms/Tooltip Playground 1`] = `
         </Text>
       </View>
       <View
+        color="#2E3032"
         location="bottom"
         style={
           Array [
