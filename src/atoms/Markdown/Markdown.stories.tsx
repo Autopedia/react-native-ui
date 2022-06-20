@@ -80,10 +80,18 @@ storiesOf('Atoms/Markdown', module)
   .add('Pattern', () => {
     return (
       <>
-        <Markdown selectable>default Markdown</Markdown>
-        <Markdown selectable>**Bold Markdown**</Markdown>
-        <Markdown selectable>010-1234-5678</Markdown>
-        <Markdown selectable>https://doctor-cha.com/</Markdown>
+        <Markdown
+          selectable
+        >{`default Markdown\n**Bold Markdwon 굵은 글씨**\n010-1234-1234 전화번호도 기입\n\n[@brooky:https://google.com][@james:https://google.com] [#키워드:https://doctor-cha.com]\n\nhttps://www.doctor-cha.com\nwww.google.com 직접 입력된 주소\n[hello 안녕](https://doctor-cha.com/)`}</Markdown>
+      </>
+    );
+  })
+  .add('Heading', () => {
+    return (
+      <>
+        <Markdown
+          selectable
+        >{`# 제목1 Heading 1\ndefault Markdown\n## 제목2 Heading2\n### 제목3 Heading3 Test\n기본 텍스트 디폴트`}</Markdown>
       </>
     );
   });
