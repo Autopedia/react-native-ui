@@ -29,7 +29,7 @@ export const Markdown: React.FC<MarkdownProps> = React.memo(
   ({
     children,
     textColor = colors.ON_BACKGROUND,
-    linkColor = colors.PRIMARY,
+    linkColor = colors.PRIMARY_DARK,
     size = 'XS',
     selectable,
   }) => {
@@ -143,6 +143,7 @@ const markdownTextStyle = (style: {
     },
     url: {
       color: style.linkColor,
+      textDecorationLine: 'underline',
     },
     phone: {
       textDecorationLine: 'underline',

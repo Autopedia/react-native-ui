@@ -83,6 +83,9 @@ storiesOf('Atoms/Markdown', module)
         <Markdown
           selectable
         >{`default Markdown\n**Bold Markdwon 굵은 글씨**\n010-1234-1234 전화번호도 기입\n\n[@brooky:https://google.com][@james:https://google.com] [#키워드:https://doctor-cha.com]\n\nhttps://www.doctor-cha.com\nwww.google.com 직접 입력된 주소\n[hello 안녕](https://doctor-cha.com/)`}</Markdown>
+        <Markdown
+          selectable
+        >{`본 쿠폰은 매장 사정에 따라 사전 고지 없이 변경이나 조기 종료될 수 있습니다. 꼭 매장 확인 후 방문해주세요. [팀카본 매장 확인하기](https://doctor-cha.com/)으로 오세요`}</Markdown>
       </>
     );
   })
