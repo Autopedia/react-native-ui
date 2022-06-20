@@ -1,7 +1,7 @@
 {
   "name": "@autopedia/react-native-ui",
   "description": "A React Native UI components for React Native apps of doctor-cha services.",
-  "version": "2.0.6",
+  "version": "2.0.5",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [

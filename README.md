@@ -41,8 +41,6 @@
   - ProgressiveImage source변경시 리렌더 처리 추가
 - `v2.0.5` : 2021.12.28
   - Tooltip color, textStyle prop 추가
-- `v2.0.6` : 2022.06.20
-  - Markdown 업데이트(Heading, Italic, Link, Mention, Hashtag 지원)
 
 ---
 
