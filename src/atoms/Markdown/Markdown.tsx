@@ -8,7 +8,7 @@ import fonts from '../../styles/fonts';
 const BOLD_PATTERN = /\*\*(\S(.*?\S)?)\*\*/gm; // **Bold**
 const ITALIC_PATTERN = /\*(\S(.*?\S)?)\*/gm; // *Italic*
 const BOLDITALIC_PATTERN = /\*\*\*(\S(.*?\S)?)\*\*\*/gm; // ***Italic***
-const PHONENUMBER_PATTERN = /\d{2,3}-\d{3,4}-\d{4}/; // 010-1234-1234
+const PHONENUMBER_PATTERN = /(\d{2,4}-\d{3,4}-\d{4})|(\d{4}-\d{4})/; // 010-1234-1234
 const MENTION_PATTERN = /\[(@[^:]+):([^\]]+)\]/; // [@username:url]
 const HASHTAG_PATTERN = /\[(#[^:]+):([^\]]+)\]/; // [#keyword:url]
 const LINK_PATTERN = /\[([^\]]+)\]\(([^\)]+)\)/; // [text](url)
