@@ -45,6 +45,8 @@
   - Markdown 업데이트(Heading, Italic, Link, Mention, Hashtag 지원)
 - `v2.0.7` : 2022.06.21
   - lib 배포 이슈 핫픽스
+- `v2.0.8` : 2022.08.03
+  - Markdown 업데이트(PhoneNumber 0507, 1588 번호 지원)
 
 ---
 
