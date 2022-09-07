@@ -1,4 +1,5 @@
 import lodash from 'lodash';
+import { Platform } from 'react-native';
 
 import { scale } from './scale';
 
@@ -23,16 +24,29 @@ const lineHeight = {
   XXL: scale(55),
 };
 
-const family = {
-  THIN: 'NotoSansKR-Thin',
-  LIGHT: 'NotoSansKR-Light',
-  REGULAR: 'NotoSansKR-Regular',
-  MEDIUM: 'NotoSansKR-Medium',
-  BOLD: 'NotoSansKR-Bold',
-  BLACK: 'NotoSansKR-Black',
+type fontFamily = { THIN: string; LIGHT: string; REGULAR: string; MEDIUM: string; BOLD: string; BLACK: string; }
+
+let family: fontFamily = Platform.OS === 'android' ? {
+  THIN: 'Roboto-Thin',
+  LIGHT: 'Roboto-Light',
+  REGULAR: 'Roboto-Regular',
+  MEDIUM: 'Roboto-Medium',
+  BOLD: 'Roboto-Bold',
+  BLACK: 'Roboto-Black',
+} : {
+  THIN: 'AppleSDGothicNeo-Thin',
+  LIGHT: 'AppleSDGothicNeo-Light',
+  REGULAR: 'AppleSDGothicNeo-Regular',
+  MEDIUM: 'AppleSDGothicNeo-Medium',
+  BOLD: 'AppleSDGothicNeo-Bold',
+  BLACK: 'AppleSDGothicNeo-Black',
 };
 
-const fonts = { size, lineHeight, family };
+const setFontFamily = (fontFamily: fontFamily) => {
+  fonts.family = fontFamily;
+}
+
+const fonts = { size, lineHeight, family, setFontFamily };
 
 export default fonts;
 export const fontsTheme = {

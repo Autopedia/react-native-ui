@@ -7,7 +7,6 @@ import './atoms/Icon/Icon.stories';
 import './atoms/LoadingDots/LoadingDots.stories';
 import './atoms/LoadingOverlay/LoadingOverlay.stories';
 import './atoms/Markdown/Markdown.stories';
-import './atoms/Message/Message.stories';
 import './atoms/ProgressiveImage/ProgressiveImage.stories';
 import './atoms/Sign/Sign.stories';
 import './atoms/Switch/Switch.stories';
