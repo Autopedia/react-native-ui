@@ -11,15 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		14E6F9C60CF5409FBD93F296 /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 86087D6F1A6D4105B51D971F /* NotoSansKR-Regular.otf */; };
-		1A3B03DA81284B2887F7A4D4 /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FDB3DF7390B54E8281CD8C83 /* NotoSansKR-Medium.otf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8659F7FC1B9E4A329FC8571C /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A36B31BB7144A76BCF69FA7 /* NotoSansKR-Black.otf */; };
-		86F47E57A9DA45D69E615B2B /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0FA2246112EC446095DD3EFA /* NotoSansKR-Bold.otf */; };
 		9399BB92B966662EA25545B5 /* libPods-ReactNativeUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 516A2A6FE59D276BDBE23606 /* libPods-ReactNativeUI.a */; };
-		9C7DC2D224EE41EEAEC79E29 /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2920CCEEBC464F098DDC56D6 /* NotoSansKR-Thin.otf */; };
 		BDBDAAF243C26A809A152237 /* libPods-ReactNativeUI-ReactNativeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1B908B5BB2E073DD318182 /* libPods-ReactNativeUI-ReactNativeUITests.a */; };
-		DFE69A223F7B4A1181890C90 /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D21306B629284270957FE486 /* NotoSansKR-Light.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -268,12 +262,6 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				8659F7FC1B9E4A329FC8571C /* NotoSansKR-Black.otf in Resources */,
-				86F47E57A9DA45D69E615B2B /* NotoSansKR-Bold.otf in Resources */,
-				DFE69A223F7B4A1181890C90 /* NotoSansKR-Light.otf in Resources */,
-				1A3B03DA81284B2887F7A4D4 /* NotoSansKR-Medium.otf in Resources */,
-				14E6F9C60CF5409FBD93F296 /* NotoSansKR-Regular.otf in Resources */,
-				9C7DC2D224EE41EEAEC79E29 /* NotoSansKR-Thin.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

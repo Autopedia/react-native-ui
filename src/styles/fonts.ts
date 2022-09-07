@@ -23,14 +23,18 @@ const lineHeight = {
   XXL: scale(55),
 };
 
-const family = {
-  THIN: 'NotoSansKR-Thin',
-  LIGHT: 'NotoSansKR-Light',
-  REGULAR: 'NotoSansKR-Regular',
-  MEDIUM: 'NotoSansKR-Medium',
-  BOLD: 'NotoSansKR-Bold',
-  BLACK: 'NotoSansKR-Black',
+let family = {
+  THIN: 'Pretendard-Thin',
+  LIGHT: 'Pretendard-Light',
+  REGULAR: 'Pretendard-Regular',
+  MEDIUM: 'Pretendard-Medium',
+  BOLD: 'Pretendard-Bold',
+  BLACK: 'Pretendard-Black',
 };
+
+const setFontFamily = (fontFamily: { THIN: string; LIGHT: string; REGULAR: string; MEDIUM: string; BOLD: string; BLACK: string; }) => {
+  family = fontFamily;
+}
 
 const fonts = { size, lineHeight, family };
 
