@@ -47,6 +47,10 @@
   - lib 배포 이슈 핫픽스
 - `v2.0.8` : 2022.08.03
   - Markdown 업데이트(PhoneNumber 0507, 1588 번호 지원)
+- `v2.1.0` : 2022.09.07
+  - Message Atom 삭제
+  - NotoSans KR 폰트 삭제 (Pretendard 본 앱 반영을 위한 삭제)
+  - 사용하지 않는 라이브러리 삭제
 
 ---
 
