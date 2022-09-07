@@ -1,4 +1,5 @@
 import lodash from 'lodash';
+import { Platform } from 'react-native';
 
 import { scale } from './scale';
 
@@ -23,20 +24,29 @@ const lineHeight = {
   XXL: scale(55),
 };
 
-let family = {
-  THIN: 'Pretendard-Thin',
-  LIGHT: 'Pretendard-Light',
-  REGULAR: 'Pretendard-Regular',
-  MEDIUM: 'Pretendard-Medium',
-  BOLD: 'Pretendard-Bold',
-  BLACK: 'Pretendard-Black',
+type fontFamily = { THIN: string; LIGHT: string; REGULAR: string; MEDIUM: string; BOLD: string; BLACK: string; }
+
+let family: fontFamily = Platform.OS === 'android' ? {
+  THIN: 'Roboto-Thin',
+  LIGHT: 'Roboto-Light',
+  REGULAR: 'Roboto-Regular',
+  MEDIUM: 'Roboto-Medium',
+  BOLD: 'Roboto-Bold',
+  BLACK: 'Roboto-Black',
+} : {
+  THIN: 'AppleSDGothicNeo-Thin',
+  LIGHT: 'AppleSDGothicNeo-Light',
+  REGULAR: 'AppleSDGothicNeo-Regular',
+  MEDIUM: 'AppleSDGothicNeo-Medium',
+  BOLD: 'AppleSDGothicNeo-Bold',
+  BLACK: 'AppleSDGothicNeo-Black',
 };
 
-const setFontFamily = (fontFamily: { THIN: string; LIGHT: string; REGULAR: string; MEDIUM: string; BOLD: string; BLACK: string; }) => {
-  family = fontFamily;
+const setFontFamily = (fontFamily: fontFamily) => {
+  fonts.family = fontFamily;
 }
 
-const fonts = { size, lineHeight, family };
+const fonts = { size, lineHeight, family, setFontFamily };
 
 export default fonts;
 export const fontsTheme = {

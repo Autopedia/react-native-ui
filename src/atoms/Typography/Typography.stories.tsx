@@ -7,6 +7,7 @@ import { HeadingSize, ParagraphSize } from './Typography.types';
 import Typography from './Typography';
 import CenterContainerDecorator from '../../decorators/center-container.decorator';
 import { systemColors } from '../../styles/system-colors';
+import fonts from '../../styles/fonts';
 
 const { Heading, Paragraph, Caption } = Typography;
 
@@ -127,11 +128,11 @@ storiesOf('Atoms/Typography', module)
     return (
       <>
         <Paragraph size={1} fontWeight="bold">
-          Bold Paragraph
+          Bold Paragraph - {fonts.family['BOLD']}
         </Paragraph>
-        <Paragraph size={1}>Normal Paragraph</Paragraph>
+        <Paragraph size={1}>Regular Paragraph - {fonts.family['REGULAR']}</Paragraph>
         <Paragraph size={1} fontWeight="light">
-          Light Paragraph
+          Light Paragraph {fonts.family['LIGHT']}
         </Paragraph>
       </>
     );
